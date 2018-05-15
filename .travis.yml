@@ -1,0 +1,14 @@
+language: node_js
+sudo: false
+node_js:
+  - 8
+cache:
+  yarn: true
+  directories:
+    - node_modules
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.6.0
+install:
+  - yarn
+script:
+  - yarn test
