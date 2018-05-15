@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions'
 
 import Btn from '../src/components/Button.vue'
 
-storiesOf('btn', module)
+storiesOf('Button', module)
   .add('Fill/Default Button', () => ({
     components: { Btn },
     template: '<btn @click="action">Fill Button</btn>',

@@ -66,33 +66,33 @@ button {
 
 .fill {
   color: #fff;
-  background-image: linear-gradient(108deg, #714bfe, #6047fa 51%, #5727e1);
+  background-image: var(--btnGradient);
 }
 
 .outline {
-  color: #6047fa;
+  color: var(--purple);
   background-color: #fff;
-  border: 0.5px solid #6047fa;
+  border: 0.5px solid var(--purple);
 }
 
 .dark {
-  background-color: #1f346c;
-  border-color: #1f346c;
+  background-color: var(--darkPurple);
+  border-color: var(--darkPurple);
   background-image: none;
 }
 .danger {
-  background-color: #e44646;
-  border-color: #e44646;
+  background-color: var(--danger);
+  border-color: var(--danger);
   background-image: none;
 }
 
 .outline.dark {
-  color: #1f346c;
+  color: var(--darkPurple);
   background-color: #fff;
 }
 
 .outline.danger {
-  color: #e44646;
+  color: var(--danger);
   background-color: #fff;
 }
 
