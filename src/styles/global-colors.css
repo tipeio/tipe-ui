@@ -1,3 +1,6 @@
 :root {
-  --mainColor: red;
+  --purple: #6047fa;
+  --danger: #e44646;
+  --darkPurple: #1f346c;
+  --btnGradient: linear-gradient(108deg, #714bfe, #6047fa 51%, #5727e1);
 }
