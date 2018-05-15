@@ -7,12 +7,20 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "vue": "^2.5.16"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.4",
+    "@storybook/addon-knobs": "^3.4.4",
+    "@storybook/addon-links": "^3.4.4",
+    "@storybook/addon-notes": "^3.4.4",
+    "@storybook/addons": "^3.4.4",
+    "@storybook/vue": "^3.4.4",
     "@vue/cli-plugin-babel": "^3.0.0-beta.10",
     "@vue/cli-plugin-e2e-cypress": "^3.0.0-beta.10",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.10",
@@ -21,11 +29,20 @@
     "@vue/eslint-config-prettier": "^3.0.0-beta.10",
     "@vue/test-utils": "^1.0.0-beta.10",
     "babel-core": "^7.0.0-0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
     "babel-jest": "^22.0.4",
+    "babel-preset-vue": "^2.0.2",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "vue-loader": "^13.0.5",
     "lint-staged": "^6.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
-    "vue-template-compiler": "^2.5.13"
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.6.0"
   },
   "browserslist": [
     "> 1%",
