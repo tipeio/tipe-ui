@@ -18,14 +18,19 @@ export default {
 }
 </script>
 
+
 <style scoped>
+:root {
+  --mainColor: red;
+}
+
 button {
-  border: '1px solid #eee';
-  border-radius: 3;
-  background-color: '#FFFFFF';
-  cursor: 'pointer';
-  font-size: 15;
-  padding: '3px 10px';
-  margin: 10;
+  border: 1px solid var(--mainColor);
+  border-radius: 3px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 3px 10px;
+  margin: 10px;
 }
 </style>

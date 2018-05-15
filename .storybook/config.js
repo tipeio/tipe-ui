@@ -1,4 +1,5 @@
-import { configure } from '@storybook/vue';
+import { configure } from '@storybook/vue'
+import '../src/styles/global-colors.css'
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../stories', true, /.stories.js$/);
