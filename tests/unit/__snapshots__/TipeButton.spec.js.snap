@@ -6,6 +6,7 @@ VueWrapper {
   "_emittedByOrder": Array [],
   "element": <button
     class="medium purple"
+    data-tipe-ui="TipeButton"
   />,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
@@ -20,6 +21,7 @@ VueWrapper {
     "$createElement": [Function],
     "$el": <button
       class="medium purple"
+      data-tipe-ui="TipeButton"
     />,
     "$emit": [Function],
     "$listeners": Object {},
@@ -301,6 +303,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -588,6 +591,9 @@ VueWrapper {
         "componentOptions": undefined,
         "context": [Circular],
         "data": Object {
+          "attrs": Object {
+            "data-tipe-ui": "TipeButton",
+          },
           "class": Object {
             "medium": true,
             "outline": false,
@@ -599,6 +605,7 @@ VueWrapper {
         },
         "elm": <button
           class="medium purple"
+          data-tipe-ui="TipeButton"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -1210,6 +1217,9 @@ VueWrapper {
       "componentOptions": undefined,
       "context": [Circular],
       "data": Object {
+        "attrs": Object {
+          "data-tipe-ui": "TipeButton",
+        },
         "class": Object {
           "medium": true,
           "outline": false,
@@ -1221,6 +1231,7 @@ VueWrapper {
       },
       "elm": <button
         class="medium purple"
+        data-tipe-ui="TipeButton"
       />,
       "fnContext": undefined,
       "fnOptions": undefined,
@@ -1833,6 +1844,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -2114,6 +2126,7 @@ VueWrapper {
         "$createElement": [Function],
         "$el": <button
           class="medium purple"
+          data-tipe-ui="TipeButton"
         />,
         "$emit": [Function],
         "$listeners": Object {},
@@ -3565,6 +3578,9 @@ VueWrapper {
       "onClick": [Function],
     },
     "data": Object {
+      "attrs": Object {
+        "data-tipe-ui": "TipeButton",
+      },
       "class": Object {
         "medium": true,
         "outline": false,
@@ -3576,6 +3592,7 @@ VueWrapper {
     },
     "elm": <button
       class="medium purple"
+      data-tipe-ui="TipeButton"
     />,
     "fnContext": undefined,
     "fnOptions": undefined,
@@ -3602,6 +3619,7 @@ VueWrapper {
   "_emittedByOrder": Array [],
   "element": <button
     class="medium danger"
+    data-tipe-ui="TipeButton"
   />,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
@@ -3616,6 +3634,7 @@ VueWrapper {
     "$createElement": [Function],
     "$el": <button
       class="medium danger"
+      data-tipe-ui="TipeButton"
     />,
     "$emit": [Function],
     "$listeners": Object {},
@@ -3900,6 +3919,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium danger"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -4190,6 +4210,9 @@ VueWrapper {
         "componentOptions": undefined,
         "context": [Circular],
         "data": Object {
+          "attrs": Object {
+            "data-tipe-ui": "TipeButton",
+          },
           "class": Object {
             "danger": true,
             "medium": true,
@@ -4201,6 +4224,7 @@ VueWrapper {
         },
         "elm": <button
           class="medium danger"
+          data-tipe-ui="TipeButton"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -4812,6 +4836,9 @@ VueWrapper {
       "componentOptions": undefined,
       "context": [Circular],
       "data": Object {
+        "attrs": Object {
+          "data-tipe-ui": "TipeButton",
+        },
         "class": Object {
           "danger": true,
           "medium": true,
@@ -4823,6 +4850,7 @@ VueWrapper {
       },
       "elm": <button
         class="medium danger"
+        data-tipe-ui="TipeButton"
       />,
       "fnContext": undefined,
       "fnOptions": undefined,
@@ -5435,6 +5463,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium danger"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -5719,6 +5748,7 @@ VueWrapper {
         "$createElement": [Function],
         "$el": <button
           class="medium danger"
+          data-tipe-ui="TipeButton"
         />,
         "$emit": [Function],
         "$listeners": Object {},
@@ -7173,6 +7203,9 @@ VueWrapper {
       "onClick": [Function],
     },
     "data": Object {
+      "attrs": Object {
+        "data-tipe-ui": "TipeButton",
+      },
       "class": Object {
         "danger": true,
         "medium": true,
@@ -7184,6 +7217,7 @@ VueWrapper {
     },
     "elm": <button
       class="medium danger"
+      data-tipe-ui="TipeButton"
     />,
     "fnContext": undefined,
     "fnOptions": undefined,
@@ -7210,6 +7244,7 @@ VueWrapper {
   "_emittedByOrder": Array [],
   "element": <button
     class="medium danger outline"
+    data-tipe-ui="TipeButton"
   />,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
@@ -7224,6 +7259,7 @@ VueWrapper {
     "$createElement": [Function],
     "$el": <button
       class="medium danger outline"
+      data-tipe-ui="TipeButton"
     />,
     "$emit": [Function],
     "$listeners": Object {},
@@ -7509,6 +7545,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium danger outline"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -7800,6 +7837,9 @@ VueWrapper {
         "componentOptions": undefined,
         "context": [Circular],
         "data": Object {
+          "attrs": Object {
+            "data-tipe-ui": "TipeButton",
+          },
           "class": Object {
             "danger": true,
             "medium": true,
@@ -7811,6 +7851,7 @@ VueWrapper {
         },
         "elm": <button
           class="medium danger outline"
+          data-tipe-ui="TipeButton"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -8422,6 +8463,9 @@ VueWrapper {
       "componentOptions": undefined,
       "context": [Circular],
       "data": Object {
+        "attrs": Object {
+          "data-tipe-ui": "TipeButton",
+        },
         "class": Object {
           "danger": true,
           "medium": true,
@@ -8433,6 +8477,7 @@ VueWrapper {
       },
       "elm": <button
         class="medium danger outline"
+        data-tipe-ui="TipeButton"
       />,
       "fnContext": undefined,
       "fnOptions": undefined,
@@ -9045,6 +9090,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium danger outline"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -9330,6 +9376,7 @@ VueWrapper {
         "$createElement": [Function],
         "$el": <button
           class="medium danger outline"
+          data-tipe-ui="TipeButton"
         />,
         "$emit": [Function],
         "$listeners": Object {},
@@ -10785,6 +10832,9 @@ VueWrapper {
       "onClick": [Function],
     },
     "data": Object {
+      "attrs": Object {
+        "data-tipe-ui": "TipeButton",
+      },
       "class": Object {
         "danger": true,
         "medium": true,
@@ -10796,6 +10846,7 @@ VueWrapper {
     },
     "elm": <button
       class="medium danger outline"
+      data-tipe-ui="TipeButton"
     />,
     "fnContext": undefined,
     "fnOptions": undefined,
@@ -10822,6 +10873,7 @@ VueWrapper {
   "_emittedByOrder": Array [],
   "element": <button
     class="medium dark-purple"
+    data-tipe-ui="TipeButton"
   />,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
@@ -10836,6 +10888,7 @@ VueWrapper {
     "$createElement": [Function],
     "$el": <button
       class="medium dark-purple"
+      data-tipe-ui="TipeButton"
     />,
     "$emit": [Function],
     "$listeners": Object {},
@@ -11120,6 +11173,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium dark-purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -11410,6 +11464,9 @@ VueWrapper {
         "componentOptions": undefined,
         "context": [Circular],
         "data": Object {
+          "attrs": Object {
+            "data-tipe-ui": "TipeButton",
+          },
           "class": Object {
             "dark-purple": true,
             "medium": true,
@@ -11421,6 +11478,7 @@ VueWrapper {
         },
         "elm": <button
           class="medium dark-purple"
+          data-tipe-ui="TipeButton"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -12032,6 +12090,9 @@ VueWrapper {
       "componentOptions": undefined,
       "context": [Circular],
       "data": Object {
+        "attrs": Object {
+          "data-tipe-ui": "TipeButton",
+        },
         "class": Object {
           "dark-purple": true,
           "medium": true,
@@ -12043,6 +12104,7 @@ VueWrapper {
       },
       "elm": <button
         class="medium dark-purple"
+        data-tipe-ui="TipeButton"
       />,
       "fnContext": undefined,
       "fnOptions": undefined,
@@ -12655,6 +12717,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium dark-purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -12939,6 +13002,7 @@ VueWrapper {
         "$createElement": [Function],
         "$el": <button
           class="medium dark-purple"
+          data-tipe-ui="TipeButton"
         />,
         "$emit": [Function],
         "$listeners": Object {},
@@ -14393,6 +14457,9 @@ VueWrapper {
       "onClick": [Function],
     },
     "data": Object {
+      "attrs": Object {
+        "data-tipe-ui": "TipeButton",
+      },
       "class": Object {
         "dark-purple": true,
         "medium": true,
@@ -14404,6 +14471,7 @@ VueWrapper {
     },
     "elm": <button
       class="medium dark-purple"
+      data-tipe-ui="TipeButton"
     />,
     "fnContext": undefined,
     "fnOptions": undefined,
@@ -14430,6 +14498,7 @@ VueWrapper {
   "_emittedByOrder": Array [],
   "element": <button
     class="medium purple outline"
+    data-tipe-ui="TipeButton"
   />,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
@@ -14444,6 +14513,7 @@ VueWrapper {
     "$createElement": [Function],
     "$el": <button
       class="medium purple outline"
+      data-tipe-ui="TipeButton"
     />,
     "$emit": [Function],
     "$listeners": Object {},
@@ -14728,6 +14798,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium purple outline"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -15018,6 +15089,9 @@ VueWrapper {
         "componentOptions": undefined,
         "context": [Circular],
         "data": Object {
+          "attrs": Object {
+            "data-tipe-ui": "TipeButton",
+          },
           "class": Object {
             "medium": true,
             "outline": true,
@@ -15029,6 +15103,7 @@ VueWrapper {
         },
         "elm": <button
           class="medium purple outline"
+          data-tipe-ui="TipeButton"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -15640,6 +15715,9 @@ VueWrapper {
       "componentOptions": undefined,
       "context": [Circular],
       "data": Object {
+        "attrs": Object {
+          "data-tipe-ui": "TipeButton",
+        },
         "class": Object {
           "medium": true,
           "outline": true,
@@ -15651,6 +15729,7 @@ VueWrapper {
       },
       "elm": <button
         class="medium purple outline"
+        data-tipe-ui="TipeButton"
       />,
       "fnContext": undefined,
       "fnOptions": undefined,
@@ -16263,6 +16342,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium purple outline"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -16547,6 +16627,7 @@ VueWrapper {
         "$createElement": [Function],
         "$el": <button
           class="medium purple outline"
+          data-tipe-ui="TipeButton"
         />,
         "$emit": [Function],
         "$listeners": Object {},
@@ -18001,6 +18082,9 @@ VueWrapper {
       "onClick": [Function],
     },
     "data": Object {
+      "attrs": Object {
+        "data-tipe-ui": "TipeButton",
+      },
       "class": Object {
         "medium": true,
         "outline": true,
@@ -18012,6 +18096,7 @@ VueWrapper {
     },
     "elm": <button
       class="medium purple outline"
+      data-tipe-ui="TipeButton"
     />,
     "fnContext": undefined,
     "fnOptions": undefined,
@@ -18038,6 +18123,7 @@ VueWrapper {
   "_emittedByOrder": Array [],
   "element": <button
     class="large purple"
+    data-tipe-ui="TipeButton"
   />,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
@@ -18052,6 +18138,7 @@ VueWrapper {
     "$createElement": [Function],
     "$el": <button
       class="large purple"
+      data-tipe-ui="TipeButton"
     />,
     "$emit": [Function],
     "$listeners": Object {},
@@ -18336,6 +18423,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="large purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -18626,6 +18714,9 @@ VueWrapper {
         "componentOptions": undefined,
         "context": [Circular],
         "data": Object {
+          "attrs": Object {
+            "data-tipe-ui": "TipeButton",
+          },
           "class": Object {
             "large": true,
             "outline": false,
@@ -18637,6 +18728,7 @@ VueWrapper {
         },
         "elm": <button
           class="large purple"
+          data-tipe-ui="TipeButton"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -19248,6 +19340,9 @@ VueWrapper {
       "componentOptions": undefined,
       "context": [Circular],
       "data": Object {
+        "attrs": Object {
+          "data-tipe-ui": "TipeButton",
+        },
         "class": Object {
           "large": true,
           "outline": false,
@@ -19259,6 +19354,7 @@ VueWrapper {
       },
       "elm": <button
         class="large purple"
+        data-tipe-ui="TipeButton"
       />,
       "fnContext": undefined,
       "fnOptions": undefined,
@@ -19871,6 +19967,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="large purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -20155,6 +20252,7 @@ VueWrapper {
         "$createElement": [Function],
         "$el": <button
           class="large purple"
+          data-tipe-ui="TipeButton"
         />,
         "$emit": [Function],
         "$listeners": Object {},
@@ -21609,6 +21707,9 @@ VueWrapper {
       "onClick": [Function],
     },
     "data": Object {
+      "attrs": Object {
+        "data-tipe-ui": "TipeButton",
+      },
       "class": Object {
         "large": true,
         "outline": false,
@@ -21620,6 +21721,7 @@ VueWrapper {
     },
     "elm": <button
       class="large purple"
+      data-tipe-ui="TipeButton"
     />,
     "fnContext": undefined,
     "fnOptions": undefined,
@@ -21646,6 +21748,7 @@ VueWrapper {
   "_emittedByOrder": Array [],
   "element": <button
     class="medium purple"
+    data-tipe-ui="TipeButton"
   />,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
@@ -21660,6 +21763,7 @@ VueWrapper {
     "$createElement": [Function],
     "$el": <button
       class="medium purple"
+      data-tipe-ui="TipeButton"
     />,
     "$emit": [Function],
     "$listeners": Object {},
@@ -21944,6 +22048,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -22234,6 +22339,9 @@ VueWrapper {
         "componentOptions": undefined,
         "context": [Circular],
         "data": Object {
+          "attrs": Object {
+            "data-tipe-ui": "TipeButton",
+          },
           "class": Object {
             "medium": true,
             "outline": false,
@@ -22245,6 +22353,7 @@ VueWrapper {
         },
         "elm": <button
           class="medium purple"
+          data-tipe-ui="TipeButton"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -22856,6 +22965,9 @@ VueWrapper {
       "componentOptions": undefined,
       "context": [Circular],
       "data": Object {
+        "attrs": Object {
+          "data-tipe-ui": "TipeButton",
+        },
         "class": Object {
           "medium": true,
           "outline": false,
@@ -22867,6 +22979,7 @@ VueWrapper {
       },
       "elm": <button
         class="medium purple"
+        data-tipe-ui="TipeButton"
       />,
       "fnContext": undefined,
       "fnOptions": undefined,
@@ -23479,6 +23592,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -23763,6 +23877,7 @@ VueWrapper {
         "$createElement": [Function],
         "$el": <button
           class="medium purple"
+          data-tipe-ui="TipeButton"
         />,
         "$emit": [Function],
         "$listeners": Object {},
@@ -25217,6 +25332,9 @@ VueWrapper {
       "onClick": [Function],
     },
     "data": Object {
+      "attrs": Object {
+        "data-tipe-ui": "TipeButton",
+      },
       "class": Object {
         "medium": true,
         "outline": false,
@@ -25228,6 +25346,7 @@ VueWrapper {
     },
     "elm": <button
       class="medium purple"
+      data-tipe-ui="TipeButton"
     />,
     "fnContext": undefined,
     "fnOptions": undefined,
@@ -25254,6 +25373,7 @@ VueWrapper {
   "_emittedByOrder": Array [],
   "element": <button
     class="medium dark-purple"
+    data-tipe-ui="TipeButton"
   />,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
@@ -25268,6 +25388,7 @@ VueWrapper {
     "$createElement": [Function],
     "$el": <button
       class="medium dark-purple"
+      data-tipe-ui="TipeButton"
     />,
     "$emit": [Function],
     "$listeners": Object {},
@@ -25553,6 +25674,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium dark-purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -25844,6 +25966,9 @@ VueWrapper {
         "componentOptions": undefined,
         "context": [Circular],
         "data": Object {
+          "attrs": Object {
+            "data-tipe-ui": "TipeButton",
+          },
           "class": Object {
             "dark-purple": true,
             "medium": true,
@@ -25855,6 +25980,7 @@ VueWrapper {
         },
         "elm": <button
           class="medium dark-purple"
+          data-tipe-ui="TipeButton"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -26466,6 +26592,9 @@ VueWrapper {
       "componentOptions": undefined,
       "context": [Circular],
       "data": Object {
+        "attrs": Object {
+          "data-tipe-ui": "TipeButton",
+        },
         "class": Object {
           "dark-purple": true,
           "medium": true,
@@ -26477,6 +26606,7 @@ VueWrapper {
       },
       "elm": <button
         class="medium dark-purple"
+        data-tipe-ui="TipeButton"
       />,
       "fnContext": undefined,
       "fnOptions": undefined,
@@ -27089,6 +27219,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium dark-purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -27374,6 +27505,7 @@ VueWrapper {
         "$createElement": [Function],
         "$el": <button
           class="medium dark-purple"
+          data-tipe-ui="TipeButton"
         />,
         "$emit": [Function],
         "$listeners": Object {},
@@ -28829,6 +28961,9 @@ VueWrapper {
       "onClick": [Function],
     },
     "data": Object {
+      "attrs": Object {
+        "data-tipe-ui": "TipeButton",
+      },
       "class": Object {
         "dark-purple": true,
         "medium": true,
@@ -28840,6 +28975,7 @@ VueWrapper {
     },
     "elm": <button
       class="medium dark-purple"
+      data-tipe-ui="TipeButton"
     />,
     "fnContext": undefined,
     "fnOptions": undefined,
@@ -28866,6 +29002,7 @@ VueWrapper {
   "_emittedByOrder": Array [],
   "element": <button
     class="medium purple"
+    data-tipe-ui="TipeButton"
   />,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
@@ -28880,6 +29017,7 @@ VueWrapper {
     "$createElement": [Function],
     "$el": <button
       class="medium purple"
+      data-tipe-ui="TipeButton"
     />,
     "$emit": [Function],
     "$listeners": Object {},
@@ -29164,6 +29302,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -29454,6 +29593,9 @@ VueWrapper {
         "componentOptions": undefined,
         "context": [Circular],
         "data": Object {
+          "attrs": Object {
+            "data-tipe-ui": "TipeButton",
+          },
           "class": Object {
             "medium": true,
             "outline": false,
@@ -29465,6 +29607,7 @@ VueWrapper {
         },
         "elm": <button
           class="medium purple"
+          data-tipe-ui="TipeButton"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -30076,6 +30219,9 @@ VueWrapper {
       "componentOptions": undefined,
       "context": [Circular],
       "data": Object {
+        "attrs": Object {
+          "data-tipe-ui": "TipeButton",
+        },
         "class": Object {
           "medium": true,
           "outline": false,
@@ -30087,6 +30233,7 @@ VueWrapper {
       },
       "elm": <button
         class="medium purple"
+        data-tipe-ui="TipeButton"
       />,
       "fnContext": undefined,
       "fnOptions": undefined,
@@ -30699,6 +30846,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="medium purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -30983,6 +31131,7 @@ VueWrapper {
         "$createElement": [Function],
         "$el": <button
           class="medium purple"
+          data-tipe-ui="TipeButton"
         />,
         "$emit": [Function],
         "$listeners": Object {},
@@ -32437,6 +32586,9 @@ VueWrapper {
       "onClick": [Function],
     },
     "data": Object {
+      "attrs": Object {
+        "data-tipe-ui": "TipeButton",
+      },
       "class": Object {
         "medium": true,
         "outline": false,
@@ -32448,6 +32600,7 @@ VueWrapper {
     },
     "elm": <button
       class="medium purple"
+      data-tipe-ui="TipeButton"
     />,
     "fnContext": undefined,
     "fnOptions": undefined,
@@ -32474,6 +32627,7 @@ VueWrapper {
   "_emittedByOrder": Array [],
   "element": <button
     class="small purple"
+    data-tipe-ui="TipeButton"
   />,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
@@ -32488,6 +32642,7 @@ VueWrapper {
     "$createElement": [Function],
     "$el": <button
       class="small purple"
+      data-tipe-ui="TipeButton"
     />,
     "$emit": [Function],
     "$listeners": Object {},
@@ -32772,6 +32927,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="small purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -33062,6 +33218,9 @@ VueWrapper {
         "componentOptions": undefined,
         "context": [Circular],
         "data": Object {
+          "attrs": Object {
+            "data-tipe-ui": "TipeButton",
+          },
           "class": Object {
             "outline": false,
             "purple": true,
@@ -33073,6 +33232,7 @@ VueWrapper {
         },
         "elm": <button
           class="small purple"
+          data-tipe-ui="TipeButton"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -33684,6 +33844,9 @@ VueWrapper {
       "componentOptions": undefined,
       "context": [Circular],
       "data": Object {
+        "attrs": Object {
+          "data-tipe-ui": "TipeButton",
+        },
         "class": Object {
           "outline": false,
           "purple": true,
@@ -33695,6 +33858,7 @@ VueWrapper {
       },
       "elm": <button
         class="small purple"
+        data-tipe-ui="TipeButton"
       />,
       "fnContext": undefined,
       "fnOptions": undefined,
@@ -34307,6 +34471,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="small purple"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -34591,6 +34756,7 @@ VueWrapper {
         "$createElement": [Function],
         "$el": <button
           class="small purple"
+          data-tipe-ui="TipeButton"
         />,
         "$emit": [Function],
         "$listeners": Object {},
@@ -36045,6 +36211,9 @@ VueWrapper {
       "onClick": [Function],
     },
     "data": Object {
+      "attrs": Object {
+        "data-tipe-ui": "TipeButton",
+      },
       "class": Object {
         "outline": false,
         "purple": true,
@@ -36056,6 +36225,7 @@ VueWrapper {
     },
     "elm": <button
       class="small purple"
+      data-tipe-ui="TipeButton"
     />,
     "fnContext": undefined,
     "fnOptions": undefined,
@@ -36082,6 +36252,7 @@ VueWrapper {
   "_emittedByOrder": Array [],
   "element": <button
     class="small purple outline"
+    data-tipe-ui="TipeButton"
   />,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
@@ -36096,6 +36267,7 @@ VueWrapper {
     "$createElement": [Function],
     "$el": <button
       class="small purple outline"
+      data-tipe-ui="TipeButton"
     />,
     "$emit": [Function],
     "$listeners": Object {},
@@ -36382,6 +36554,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="small purple outline"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -36674,6 +36847,9 @@ VueWrapper {
         "componentOptions": undefined,
         "context": [Circular],
         "data": Object {
+          "attrs": Object {
+            "data-tipe-ui": "TipeButton",
+          },
           "class": Object {
             "outline": true,
             "purple": true,
@@ -36685,6 +36861,7 @@ VueWrapper {
         },
         "elm": <button
           class="small purple outline"
+          data-tipe-ui="TipeButton"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -37296,6 +37473,9 @@ VueWrapper {
       "componentOptions": undefined,
       "context": [Circular],
       "data": Object {
+        "attrs": Object {
+          "data-tipe-ui": "TipeButton",
+        },
         "class": Object {
           "outline": true,
           "purple": true,
@@ -37307,6 +37487,7 @@ VueWrapper {
       },
       "elm": <button
         class="small purple outline"
+        data-tipe-ui="TipeButton"
       />,
       "fnContext": undefined,
       "fnOptions": undefined,
@@ -37919,6 +38100,7 @@ VueWrapper {
       "$createElement": [Function],
       "$el": <button
         class="small purple outline"
+        data-tipe-ui="TipeButton"
       />,
       "$emit": [Function],
       "$listeners": Object {},
@@ -38205,6 +38387,7 @@ VueWrapper {
         "$createElement": [Function],
         "$el": <button
           class="small purple outline"
+          data-tipe-ui="TipeButton"
         />,
         "$emit": [Function],
         "$listeners": Object {},
@@ -39661,6 +39844,9 @@ VueWrapper {
       "onClick": [Function],
     },
     "data": Object {
+      "attrs": Object {
+        "data-tipe-ui": "TipeButton",
+      },
       "class": Object {
         "outline": true,
         "purple": true,
@@ -39672,6 +39858,7 @@ VueWrapper {
     },
     "elm": <button
       class="small purple outline"
+      data-tipe-ui="TipeButton"
     />,
     "fnContext": undefined,
     "fnOptions": undefined,
