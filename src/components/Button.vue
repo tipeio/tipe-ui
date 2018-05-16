@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'Button',
+  name: 'TipeButton',
   props: {
     type: {
       type: String,
@@ -55,55 +55,57 @@ function isValidProp(value, arr) {
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 button {
   cursor: pointer;
   padding: 10px 20px;
   margin: 10px;
   border-radius: 5px;
   border: none;
-}
+  &.fill {
+    color: #fff;
+    background-image: var(--btnGradient);
 
-.fill {
-  color: #fff;
-  background-image: var(--btnGradient);
-}
+    &.dark {
+      background-color: var(--darkPurple);
+      border-color: var(--darkPurple);
+      background-image: none;
+    }
 
-.outline {
-  color: var(--purple);
-  background-color: #fff;
-  border: 0.5px solid var(--purple);
-}
+    &.danger {
+      background-color: var(--danger);
+      border-color: var(--danger);
+      background-image: none;
+    }
+  }
 
-.dark {
-  background-color: var(--darkPurple);
-  border-color: var(--darkPurple);
-  background-image: none;
-}
-.danger {
-  background-color: var(--danger);
-  border-color: var(--danger);
-  background-image: none;
-}
+  &.outline {
+    color: var(--purple);
+    background-color: #fff;
+    border: 0.5px solid var(--purple);
 
-.outline.dark {
-  color: var(--darkPurple);
-  background-color: #fff;
-}
+    &.dark {
+      color: var(--darkPurple);
+      background-color: #fff;
+      border-color: var(--darkPurple);
+    }
 
-.outline.danger {
-  color: var(--danger);
-  background-color: #fff;
-}
+    &.danger {
+      color: var(--danger);
+      background-color: #fff;
+      border-color: var(--danger);
+    }
+  }
 
-.small {
-  font-size: 0.75rem;
-}
-.medium {
-  font-size: 1.25rem;
-}
+  &.small {
+    font-size: 0.75rem;
+  }
+  &.medium {
+    font-size: 1.25rem;
+  }
 
-.large {
-  font-size: 1.5rem;
+  &.large {
+    font-size: 1.5rem;
+  }
 }
 </style>
