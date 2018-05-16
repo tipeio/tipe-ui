@@ -12,7 +12,7 @@ storiesOf('Button', module)
   .add('Outline Button', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button type="outline" @click="action">Outline Button</tipe-button>',
+      '<tipe-button outline @click="action">Outline Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('Small Button', () => ({
@@ -36,30 +36,30 @@ storiesOf('Button', module)
   .add('Danger Button', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button btnStyle="danger" @click="action">Danger Button</tipe-button>',
+      '<tipe-button color="danger" @click="action">Danger Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('Dark Button', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button btnStyle="dark" dark @click="action">Dark Button</tipe-button>',
+      '<tipe-button color="dark-purple" dark @click="action">Dark Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('Danger Outline Button', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button btnStyle="danger" type="outline" @click="action">Danger Outline</tipe-button>',
+      '<tipe-button color="danger" outline @click="action">Danger Outline</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('Dark Outline Button', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button btnStyle="dark" type="outline" @click="action">Dark Outline</tipe-button>',
+      '<tipe-button color="dark-purple" outline @click="action">Dark Outline</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('Small Outline Danger Button', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button btnStyle="danger" size="small" type="outline" @click="action">Small Outline Danger</tipe-button>',
+      '<tipe-button color="danger" size="small" outline @click="action">Small Outline Danger</tipe-button>',
     methods: { action: action('clicked') }
   }))
