@@ -43,7 +43,6 @@ export default {
 }
 
 button {
-  cursor: pointer;
   padding: 10px 20px;
   margin: 10px;
   border-radius: 5px;
