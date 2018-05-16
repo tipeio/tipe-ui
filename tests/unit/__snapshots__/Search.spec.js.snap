@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MyButton.vue renders 1`] = `
+exports[`Search.vue renders 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
-  "element": <button />,
+  "element": <input />,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
   "options": Object {
@@ -16,7 +16,7 @@ VueWrapper {
     "$attrs": Object {},
     "$children": Array [],
     "$createElement": [Function],
-    "$el": <button />,
+    "$el": <input />,
     "$emit": [Function],
     "$listeners": Object {},
     "$options": Object {
@@ -51,7 +51,7 @@ VueWrapper {
       "methods": Object {
         "onClick": [Function],
       },
-      "name": "MyButton",
+      "name": "TipeSearch",
       "provide": [Function],
       "render": [Function],
       "staticRenderFns": Array [],
@@ -79,7 +79,7 @@ VueWrapper {
       "$attrs": Object {},
       "$children": Array [],
       "$createElement": [Function],
-      "$el": <button />,
+      "$el": <input />,
       "$emit": [Function],
       "$listeners": Object {},
       "$options": Object {
@@ -114,7 +114,7 @@ VueWrapper {
         "methods": Object {
           "onClick": [Function],
         },
-        "name": "MyButton",
+        "name": "TipeSearch",
         "provide": [Function],
         "render": [Function],
         "staticRenderFns": Array [],
@@ -145,7 +145,7 @@ VueWrapper {
       "_vnode": VNode {
         "asyncFactory": undefined,
         "asyncMeta": undefined,
-        "children": Array [],
+        "children": undefined,
         "componentInstance": undefined,
         "componentOptions": undefined,
         "context": [Circular],
@@ -154,7 +154,7 @@ VueWrapper {
             "click": [Function],
           },
         },
-        "elm": <button />,
+        "elm": <input />,
         "fnContext": undefined,
         "fnOptions": undefined,
         "fnScopeId": undefined,
@@ -168,7 +168,7 @@ VueWrapper {
         "ns": undefined,
         "parent": undefined,
         "raw": false,
-        "tag": "button",
+        "tag": "input",
         "text": undefined,
       },
       "_watcher": Watcher {
@@ -221,7 +221,7 @@ VueWrapper {
     "_vnode": VNode {
       "asyncFactory": undefined,
       "asyncMeta": undefined,
-      "children": Array [],
+      "children": undefined,
       "componentInstance": undefined,
       "componentOptions": undefined,
       "context": [Circular],
@@ -230,7 +230,7 @@ VueWrapper {
           "click": [Function],
         },
       },
-      "elm": <button />,
+      "elm": <input />,
       "fnContext": undefined,
       "fnOptions": undefined,
       "fnScopeId": undefined,
@@ -244,7 +244,7 @@ VueWrapper {
       "ns": undefined,
       "parent": undefined,
       "raw": false,
-      "tag": "button",
+      "tag": "input",
       "text": undefined,
     },
     "_watcher": Watcher {
@@ -294,14 +294,14 @@ VueWrapper {
   "vnode": VNode {
     "asyncFactory": undefined,
     "asyncMeta": undefined,
-    "children": Array [],
+    "children": undefined,
     "componentInstance": undefined,
     "componentOptions": undefined,
     "context": VueComponent {
       "$attrs": Object {},
       "$children": Array [],
       "$createElement": [Function],
-      "$el": <button />,
+      "$el": <input />,
       "$emit": [Function],
       "$listeners": Object {},
       "$options": Object {
@@ -336,7 +336,7 @@ VueWrapper {
         "methods": Object {
           "onClick": [Function],
         },
-        "name": "MyButton",
+        "name": "TipeSearch",
         "provide": [Function],
         "render": [Function],
         "staticRenderFns": Array [],
@@ -364,7 +364,7 @@ VueWrapper {
         "$attrs": Object {},
         "$children": Array [],
         "$createElement": [Function],
-        "$el": <button />,
+        "$el": <input />,
         "$emit": [Function],
         "$listeners": Object {},
         "$options": Object {
@@ -399,7 +399,7 @@ VueWrapper {
           "methods": Object {
             "onClick": [Function],
           },
-          "name": "MyButton",
+          "name": "TipeSearch",
           "provide": [Function],
           "render": [Function],
           "staticRenderFns": Array [],
@@ -525,7 +525,7 @@ VueWrapper {
         "click": [Function],
       },
     },
-    "elm": <button />,
+    "elm": <input />,
     "fnContext": undefined,
     "fnOptions": undefined,
     "fnScopeId": undefined,
@@ -539,7 +539,7 @@ VueWrapper {
     "ns": undefined,
     "parent": undefined,
     "raw": false,
-    "tag": "button",
+    "tag": "input",
     "text": undefined,
   },
 }
