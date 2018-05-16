@@ -64,11 +64,11 @@ button {
   border: none;
   &.fill {
     color: #fff;
-    background-image: var(--btnGradient);
+    background-image: var(--btn-gradient);
 
     &.dark {
-      background-color: var(--darkPurple);
-      border-color: var(--darkPurple);
+      background-color: var(--purple-dark);
+      border-color: var(--purple-dark);
       background-image: none;
     }
 
@@ -85,9 +85,9 @@ button {
     border: 0.5px solid var(--purple);
 
     &.dark {
-      color: var(--darkPurple);
+      color: var(--purple-dark);
       background-color: #fff;
-      border-color: var(--darkPurple);
+      border-color: var(--purple-dark);
     }
 
     &.danger {
