@@ -2,14 +2,16 @@
   <div :data-tipe-ui="$options.name">
     <tipe-search class="search"/>
     <tipe-profile-image
+      :url="profileImageUrl"
       class="menu"
-      @click="dosomething"
     />
     <tipe-seperator class="seperator"/>
   </div>
 </template>
 
 <script>
+import vueTypes from 'vue-types'
+
 import TipeSearch from '../components/Search'
 import TipeProfileImage from '../components/ProfileImage'
 import TipeSeperator from '../components/Seperator'
@@ -21,10 +23,8 @@ export default {
     TipeProfileImage,
     TipeSeperator
   },
-  methods: {
-    dosomething() {
-      console.log('haha')
-    }
+  props: {
+    profileImageUrl: vueTypes.string
   }
 }
 </script>
