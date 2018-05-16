@@ -1,3 +1,13 @@
 :root {
-  --mainColor: red;
+  /* grays */
+  --gray-light: rgb(231, 233, 234);
+  --gray-lightest: rgb(250, 251, 255);
+
+  /* purples */
+  --purple: rgb(109, 75, 254);
+  --purple-light: rgb(197, 183, 254);
+
+  /* text */
+  --text-gray-dark: rgba(31, 52, 108, 0.61);
+  --text-gray-normal: rgba(31, 52, 108, 0.4);
 }
