@@ -1,6 +1,16 @@
 :root {
-  --purple: #6047fa;
+  /* grays */
+  --gray-light: rgb(231, 233, 234);
+  --gray-lightest: rgb(250, 251, 255);
+
+  /* purples */
+  --purple: rgb(109, 75, 254);
+  --purple-light: rgb(197, 183, 254);
+  --dark-purple: #1f346c;
+
   --danger: #e44646;
-  --darkPurple: #1f346c;
-  --btnGradient: linear-gradient(108deg, #714bfe, #6047fa 51%, #5727e1);
+
+  /* text */
+  --text-gray-dark: rgba(31, 52, 108, 0.61);
+  --text-gray-normal: rgba(31, 52, 108, 0.4);
 }

@@ -4177,11 +4177,21 @@ eslint-plugin-standard@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-standard/-/eslint-plugin-standard-3.1.0.tgz#2a9e21259ba4c47c02d53b2d0c9135d4b1022d47"
 
+eslint-plugin-vue-types@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue-types/-/eslint-plugin-vue-types-0.1.0.tgz#26a3b88b71a2ab3ba771738a2cbc36602817edf4"
+  dependencies:
+    eslint-rule-composer "^0.3.0"
+
 eslint-plugin-vue@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-4.5.0.tgz#09d6597f4849e31a3846c2c395fccf17685b69c3"
   dependencies:
     vue-eslint-parser "^2.0.3"
+
+eslint-rule-composer@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-rule-composer/-/eslint-rule-composer-0.3.0.tgz#79320c927b0c5c0d3d3d2b76c8b4a488f25bbaf9"
 
 eslint-scope@^3.7.1, eslint-scope@~3.7.1:
   version "3.7.1"
@@ -6565,7 +6575,7 @@ lodash.isarray@^3.0.0:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
 
-lodash.isplainobject@^4.0.6:
+lodash.isplainobject@4.0.6, lodash.isplainobject@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
 
@@ -10258,6 +10268,12 @@ vue-template-compiler@^2.5.13, vue-template-compiler@^2.5.16:
 vue-template-es2015-compiler@^1.5.3, vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
+
+vue-types@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/vue-types/-/vue-types-1.2.3.tgz#550777d60e459c9c4c54a5a0f0f97dc981bbab9f"
+  dependencies:
+    lodash.isplainobject "4.0.6"
 
 vue@^2.5.16:
   version "2.5.16"
