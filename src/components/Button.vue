@@ -36,6 +36,12 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+@define-mixin outline $color {
+  border: 0.5px solid $color;
+  color: $color;
+  background-color: #fff;
+}
+
 button {
   cursor: pointer;
   padding: 10px 20px;
@@ -43,33 +49,26 @@ button {
   border-radius: 5px;
   border: none;
   color: #fff;
-  background-color: #fff;
 
   &.purple {
-    color: #fff;
     background-image: var(--purple-gradient);
     &.outline {
-      border: 0.5px solid var(--purple);
-      color: var(--purple);
       background-image: none;
+      @mixin outline var(--purple);
     }
   }
 
   &.dark-purple {
     background-color: var(--purple-dark);
     &.outline {
-      border: 0.5px solid var(--purple-dark);
-      color: var(--purple-dark);
-      background-color: #fff;
+      @mixin outline var(--purple-dark);
     }
   }
 
   &.danger {
     background-color: var(--danger);
     &.outline {
-      border: 0.5px solid var(--danger);
-      color: var(--danger);
-      background-color: #fff;
+      @mixin outline var(--danger);
     }
   }
 
