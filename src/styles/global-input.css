@@ -1,0 +1,9 @@
+input,
+button,
+textarea {
+  outline: none;
+}
+
+button {
+  cursor: pointer
+}
