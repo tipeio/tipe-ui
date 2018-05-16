@@ -1,5 +1,5 @@
 <template>
-  <button data-tipe-ui="TipeProfileImage">
+  <button :data-tipe-ui="$options.name">
     <TipeImage
       :url="url"
       class="image"
@@ -18,7 +18,7 @@ export default {
     TipeImage
   },
   props: {
-    url: vueTypes.string.def('http://placekitten.com/50/50')
+    url: vueTypes.string.def('')
   },
   computed: {
     style() {
@@ -35,8 +35,8 @@ export default {
   border: none;
   padding: 0;
   margin: 0;
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 3.125rem;
+  width: 3.125rem;
 }
 
 .image {
