@@ -10,12 +10,13 @@
     "precommit": "lint && test"
   },
   "dependencies": {
-    "faker": "^4.1.0",
     "vue": "^2.5.16",
     "vue-types": "^1.2.3",
     "xstate": "^3.2.1"
   },
   "devDependencies": {
+    "faker": "^4.1.0",
+    "postcss-mixins": "^6.2.0",
     "@storybook/addon-actions": "^3.4.4",
     "@storybook/addon-knobs": "^3.4.4",
     "@storybook/addon-links": "^3.4.4",
