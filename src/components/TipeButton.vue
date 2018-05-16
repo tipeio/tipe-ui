@@ -1,5 +1,6 @@
 <template>
   <button
+    :data-tipe-ui="$options.name"
     :class="classObject"
     @click="onClick"
   >
