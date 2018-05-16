@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
 
-import TipeButton from '../src/components/Button.vue'
+import TipeButton from '../src/components/TipeButton.vue'
 import '../src/styles/globals.css'
 
 storiesOf('Button', module)
