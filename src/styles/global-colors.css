@@ -6,7 +6,7 @@
   /* purples */
   --purple: rgb(109, 75, 254);
   --purple-light: rgb(197, 183, 254);
-  --purple-dark: #1f346c;
+  --purple-dark: rgb(31, 52, 108);
   --purple-gradient: linear-gradient(108deg, #714bfe, #6047fa 51%, #5727e1);
 
   --danger: #e44646;

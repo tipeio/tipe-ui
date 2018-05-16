@@ -42,6 +42,17 @@ export default {
   background-color: #fff;
 }
 
+@define-mixin hover-outline $color {
+  background-color: $color;
+  color: #fff;
+}
+
+@define-mixin hover-fill $color {
+  border: 0.5px solid color($color lightness(40%));
+  color: #fff;
+  background-color: color($color lightness(40%));
+}
+
 button {
   padding: 10px 20px;
   margin: 10px;
@@ -54,6 +65,12 @@ button {
     &.outline {
       background-image: none;
       @mixin outline var(--purple);
+      &:hover {
+        @mixin hover-outline var(--purple);
+      }
+    }
+    &:hover {
+      @mixin hover-fill var(--purple);
     }
   }
 
@@ -61,6 +78,12 @@ button {
     background-color: var(--purple-dark);
     &.outline {
       @mixin outline var(--purple-dark);
+      &:hover {
+        @mixin hover-outline var(--purple-dark);
+      }
+    }
+    &:hover {
+      @mixin hover-fill var(--purple);
     }
   }
 
@@ -68,6 +91,12 @@ button {
     background-color: var(--danger);
     &.outline {
       @mixin outline var(--danger);
+      &:hover {
+        @mixin hover-outline var(--danger);
+      }
+    }
+    &:hover {
+      @mixin hover-fill var(--danger);
     }
   }
 

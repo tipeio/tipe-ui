@@ -10,7 +10,6 @@
     "precommit": "lint && test"
   },
   "dependencies": {
-    "postcss-mixins": "^6.2.0",
     "vue": "^2.5.16",
     "vue-types": "^1.2.3"
   },
@@ -49,9 +48,11 @@
     "file-loader": "^1.1.4",
     "lint-staged": "^6.0.0",
     "postcss": "^6.0.22",
+    "postcss-color-function": "^4.0.1",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^11.1.0",
     "postcss-loader": "^2.1.5",
+    "postcss-mixins": "^6.2.0",
     "style-loader": "^0.21.0",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.5.13",
