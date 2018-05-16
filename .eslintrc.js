@@ -13,8 +13,13 @@ module.exports = {
     'prettier',
     'prettier/standard',
     'plugin:vue/recommended',
+    'plugin:vue/strongly-recommended',
+    'plugin:vue-types/strongly-recommended',
     'plugin:jest/recommended'
   ],
+  settings: {
+    'vue-types/namespace': ['vueTypes']
+  },
   plugins: ['vue', 'prettier', 'jest'],
   rules: {
     'prettier/prettier': 'error',
