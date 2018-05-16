@@ -28,7 +28,7 @@ module.exports = {
       'error',
       { max: 250, skipBlankLines: true, skipComments: true }
     ],
-    "semi": [2, 'never']
+    semi: [2, 'never']
   },
   globals: {
     ENV: true
