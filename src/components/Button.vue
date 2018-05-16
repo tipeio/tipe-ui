@@ -8,22 +8,22 @@
 </template>
 
 <script>
-import VueTypes from 'vue-types'
+import vueTypes from 'vue-types'
 
 export default {
   name: 'TipeButton',
   props: {
-    type: VueTypes.oneOf(['fill', 'outline']).def('fill'),
-    size: VueTypes.oneOf(['small', 'medium', 'large']).def('medium'),
-    btnStyle: VueTypes.oneOf(['danger', 'dark', '']).def('')
+    size: vueTypes.oneOf(['small', 'medium', 'large']).def('medium'),
+    outline: vueTypes.bool.def(false),
+    color: vueTypes.oneOf(['purple', 'danger', 'dark-purple']).def('purple')
   },
   computed: {
     classObject: function() {
-      const { type, size, btnStyle } = this
+      const { color, size, outline } = this
       return {
-        [type]: true,
-        [btnStyle]: !!btnStyle,
-        [size]: true
+        [size]: true,
+        [color]: true,
+        outline
       }
     }
   },
@@ -42,38 +42,34 @@ button {
   margin: 10px;
   border-radius: 5px;
   border: none;
-  &.fill {
+  color: #fff;
+  background-color: #fff;
+
+  &.purple {
     color: #fff;
-    background-image: var(--btn-gradient);
-
-    &.dark {
-      background-color: var(--purple-dark);
-      border-color: var(--purple-dark);
-      background-image: none;
-    }
-
-    &.danger {
-      background-color: var(--danger);
-      border-color: var(--danger);
+    background-image: var(--purple-gradient);
+    &.outline {
+      border: 0.5px solid var(--purple);
+      color: var(--purple);
       background-image: none;
     }
   }
 
-  &.outline {
-    color: var(--purple);
-    background-color: #fff;
-    border: 0.5px solid var(--purple);
-
-    &.dark {
+  &.dark-purple {
+    background-color: var(--purple-dark);
+    &.outline {
+      border: 0.5px solid var(--purple-dark);
       color: var(--purple-dark);
       background-color: #fff;
-      border-color: var(--purple-dark);
     }
+  }
 
-    &.danger {
+  &.danger {
+    background-color: var(--danger);
+    &.outline {
+      border: 0.5px solid var(--danger);
       color: var(--danger);
       background-color: #fff;
-      border-color: var(--danger);
     }
   }
 
