@@ -42,6 +42,7 @@ export default {
 [data-tipe-ui='TipeSearch'] > input {
   flex: 1;
   margin-left: 0.437rem;
+  margin-right: 0.437rem;
   border: none;
   border-radius: 0;
   color: var(--text-gray);
