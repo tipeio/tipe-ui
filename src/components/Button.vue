@@ -8,31 +8,14 @@
 </template>
 
 <script>
+import VueTypes from 'vue-types'
+
 export default {
   name: 'TipeButton',
   props: {
-    type: {
-      type: String,
-      default() {
-        return 'fill'
-      },
-      validator: value => isValidProp(value, ['fill', 'outline'])
-    },
-    size: {
-      type: String,
-      default() {
-        return 'medium'
-      },
-      validator: value => isValidProp(value, ['small', 'medium', 'large'])
-    },
-    btnStyle: {
-      type: String,
-      required: false,
-      default() {
-        return ''
-      },
-      validator: value => isValidProp(value, ['danger', 'dark', ''])
-    }
+    type: VueTypes.oneOf(['fill', 'outline']).def('fill'),
+    size: VueTypes.oneOf(['small', 'medium', 'large']).def('medium'),
+    btnStyle: VueTypes.oneOf(['danger', 'dark', '']).def('')
   },
   computed: {
     classObject: function() {
@@ -49,9 +32,6 @@ export default {
       this.$emit('click')
     }
   }
-}
-function isValidProp(value, arr) {
-  return arr.indexOf(value) !== -1
 }
 </script>
 
