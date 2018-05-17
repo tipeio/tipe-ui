@@ -19,7 +19,7 @@ export default {
 
 <style lang='postcss' scoped>
 .card {
-  border: solid 1px #e9eff4;
+  border: solid 1px var(--gray-blue-light);
   border-radius: 5px;
   background-color: #fff;
   height: 53px;
@@ -29,7 +29,7 @@ export default {
   align-items: center;
 
   &:hover {
-    background-color: black;
+    background-color: var(--gray-blue-light);
   }
 
   & .content {
@@ -45,7 +45,6 @@ export default {
   }
 
   & .dots {
-    justify-self: end;
     margin-right: 15px;
   }
 }
