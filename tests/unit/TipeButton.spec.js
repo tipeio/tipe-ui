@@ -1,6 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
 import TipeButton from '@/components/TipeButton.vue'
-import sinon from 'sinon'
 
 describe('TipeButton.vue', () => {
   it('renders a defaut button', () => {
@@ -99,12 +98,12 @@ describe('TipeButton.vue', () => {
     expect(wrapper.classes()).not.toContain('outline')
   })
   it('should emit an onclick event', () => {
-    const action = sinon.stub()
+    const action = jest.fn()
     const wrapper = shallowMount(TipeButton, {
       propsData: { '@click': action }
     })
     wrapper.setMethods({ action: action('clicked') })
     wrapper.trigger('click')
-    expect(action.called).toBe(true)
+    expect(action.mock.calls).toHaveLength(1)
   })
 })

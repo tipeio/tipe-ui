@@ -51,17 +51,17 @@ export default {
 }
 
 @define-mixin hover-fill $color {
-  border: 0.5px solid color($color lightness(40%));
   color: #fff;
-  background-color: color($color lightness(40%));
+  background-color: $color;
 }
 
 button {
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
+  display: flex;
+  border-radius: 3px;
   border: none;
   color: #fff;
+  justify-content: center;
+  align-items: center;
 
   &.purple {
     background-image: var(--purple-gradient);
@@ -118,14 +118,20 @@ button {
   }
 
   &.small {
-    font-size: 0.75rem;
+    height: 1.75rem;
+    font-size: 0.6875rem;
+    padding: 0 1rem;
   }
   &.medium {
-    font-size: 1.25rem;
+    height: 2.5rem;
+    font-size: 0.8125rem;
+    padding: 0 1.25rem;
   }
 
   &.large {
-    font-size: 1.5rem;
+    height: 3.25rem;
+    font-size: 0.9375rem;
+    padding: 0 1.5rem;
   }
 }
 </style>
