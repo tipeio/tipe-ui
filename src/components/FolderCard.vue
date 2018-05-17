@@ -2,10 +2,8 @@
   <div 
     :data-tipe-ui="$options.name" 
     class="card">
-    <div class="content">
-      <div>꠸</div>
-      <p><slot /></p>
-    </div>
+    <div class="folder">꠸</div>
+    <div class="label"><p><slot /></p></div>
     <div class="dots">⁞</div>
   </div>
 </template>
@@ -18,34 +16,39 @@ export default {
 
 
 <style lang='postcss' scoped>
+@define-mixin icons $color {
+  display: flex;
+  flex: 0 0 3rem;
+  justify-content: center;
+}
+
 .card {
   border: solid 1px var(--gray-blue-light);
   border-radius: 5px;
   background-color: #fff;
-  height: 53px;
+  height: 3.3125rem;
   width: 263px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 
   &:hover {
     background-color: var(--gray-blue-light);
   }
 
-  & .content {
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-
-    & p {
-      color: #323c47;
-      font-size: 1.25rem;
-      margin-left: 15px;
-    }
+  & .dots {
+    @mixin icons;
   }
 
-  & .dots {
-    margin-right: 15px;
+  & .folder {
+    @mixin icons;
+  }
+
+  & .label {
+    display: flex;
+    flex: 1 1 auto;
+    color: #323c47;
+    font-size: 0.8125rem;
   }
 }
 </style>
