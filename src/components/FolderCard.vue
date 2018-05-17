@@ -2,7 +2,7 @@
   <div 
     :data-tipe-ui="$options.name" 
     class="card">
-    <div class="title">
+    <div class="content">
       <div>꠸</div>
       <p><slot /></p>
     </div>
@@ -28,7 +28,7 @@ export default {
   justify-content: space-between;
   align-items: center;
 
-  & .title {
+  & .content {
     display: flex;
     align-items: center;
     margin-left: 15px;
