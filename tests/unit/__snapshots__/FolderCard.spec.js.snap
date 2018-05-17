@@ -9,12 +9,14 @@ VueWrapper {
     data-tipe-ui="FolderCard"
   >
     <div
-      class="content"
+      class="folder"
     >
-      <div>
-        ꠸
-      </div>
-       
+      ꠸
+    </div>
+     
+    <div
+      class="label"
+    >
       <p />
     </div>
      
@@ -40,12 +42,14 @@ VueWrapper {
       data-tipe-ui="FolderCard"
     >
       <div
-        class="content"
+        class="folder"
       >
-        <div>
-          ꠸
-        </div>
-         
+        ꠸
+      </div>
+       
+      <div
+        class="label"
+      >
         <p />
       </div>
        
@@ -120,12 +124,14 @@ VueWrapper {
         data-tipe-ui="FolderCard"
       >
         <div
-          class="content"
+          class="folder"
         >
-          <div>
-            ꠸
-          </div>
-           
+          ꠸
+        </div>
+         
+        <div
+          class="label"
+        >
           <p />
         </div>
          
@@ -206,65 +212,12 @@ VueWrapper {
               VNode {
                 "asyncFactory": undefined,
                 "asyncMeta": undefined,
-                "children": Array [
-                  VNode {
-                    "asyncFactory": undefined,
-                    "asyncMeta": undefined,
-                    "children": undefined,
-                    "componentInstance": undefined,
-                    "componentOptions": undefined,
-                    "context": undefined,
-                    "data": undefined,
-                    "elm": ꠸,
-                    "fnContext": undefined,
-                    "fnOptions": undefined,
-                    "fnScopeId": undefined,
-                    "isAsyncPlaceholder": false,
-                    "isCloned": false,
-                    "isComment": false,
-                    "isOnce": false,
-                    "isRootInsert": false,
-                    "isStatic": false,
-                    "key": undefined,
-                    "ns": undefined,
-                    "parent": undefined,
-                    "raw": false,
-                    "tag": undefined,
-                    "text": "꠸",
-                  },
-                ],
-                "componentInstance": undefined,
-                "componentOptions": undefined,
-                "context": [Circular],
-                "data": undefined,
-                "elm": <div>
-                  ꠸
-                </div>,
-                "fnContext": undefined,
-                "fnOptions": undefined,
-                "fnScopeId": undefined,
-                "isAsyncPlaceholder": false,
-                "isCloned": false,
-                "isComment": false,
-                "isOnce": false,
-                "isRootInsert": false,
-                "isStatic": false,
-                "key": undefined,
-                "ns": undefined,
-                "parent": undefined,
-                "raw": false,
-                "tag": "div",
-                "text": undefined,
-              },
-              VNode {
-                "asyncFactory": undefined,
-                "asyncMeta": undefined,
                 "children": undefined,
                 "componentInstance": undefined,
                 "componentOptions": undefined,
                 "context": undefined,
                 "data": undefined,
-                "elm":  ,
+                "elm": ꠸,
                 "fnContext": undefined,
                 "fnOptions": undefined,
                 "fnScopeId": undefined,
@@ -279,8 +232,65 @@ VueWrapper {
                 "parent": undefined,
                 "raw": false,
                 "tag": undefined,
-                "text": " ",
+                "text": "꠸",
               },
+            ],
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": [Circular],
+            "data": Object {
+              "staticClass": "folder",
+            },
+            "elm": <div
+              class="folder"
+            >
+              ꠸
+            </div>,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": "div",
+            "text": undefined,
+          },
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": undefined,
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": undefined,
+            "data": undefined,
+            "elm":  ,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": undefined,
+            "text": " ",
+          },
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": Array [
               VNode {
                 "asyncFactory": undefined,
                 "asyncMeta": undefined,
@@ -311,15 +321,11 @@ VueWrapper {
             "componentOptions": undefined,
             "context": [Circular],
             "data": Object {
-              "staticClass": "content",
+              "staticClass": "label",
             },
             "elm": <div
-              class="content"
+              class="label"
             >
-              <div>
-                ꠸
-              </div>
-               
               <p />
             </div>,
             "fnContext": undefined,
@@ -435,12 +441,14 @@ VueWrapper {
           data-tipe-ui="FolderCard"
         >
           <div
-            class="content"
+            class="folder"
           >
-            <div>
-              ꠸
-            </div>
-             
+            ꠸
+          </div>
+           
+          <div
+            class="label"
+          >
             <p />
           </div>
            
@@ -523,65 +531,12 @@ VueWrapper {
             VNode {
               "asyncFactory": undefined,
               "asyncMeta": undefined,
-              "children": Array [
-                VNode {
-                  "asyncFactory": undefined,
-                  "asyncMeta": undefined,
-                  "children": undefined,
-                  "componentInstance": undefined,
-                  "componentOptions": undefined,
-                  "context": undefined,
-                  "data": undefined,
-                  "elm": ꠸,
-                  "fnContext": undefined,
-                  "fnOptions": undefined,
-                  "fnScopeId": undefined,
-                  "isAsyncPlaceholder": false,
-                  "isCloned": false,
-                  "isComment": false,
-                  "isOnce": false,
-                  "isRootInsert": false,
-                  "isStatic": false,
-                  "key": undefined,
-                  "ns": undefined,
-                  "parent": undefined,
-                  "raw": false,
-                  "tag": undefined,
-                  "text": "꠸",
-                },
-              ],
-              "componentInstance": undefined,
-              "componentOptions": undefined,
-              "context": [Circular],
-              "data": undefined,
-              "elm": <div>
-                ꠸
-              </div>,
-              "fnContext": undefined,
-              "fnOptions": undefined,
-              "fnScopeId": undefined,
-              "isAsyncPlaceholder": false,
-              "isCloned": false,
-              "isComment": false,
-              "isOnce": false,
-              "isRootInsert": false,
-              "isStatic": false,
-              "key": undefined,
-              "ns": undefined,
-              "parent": undefined,
-              "raw": false,
-              "tag": "div",
-              "text": undefined,
-            },
-            VNode {
-              "asyncFactory": undefined,
-              "asyncMeta": undefined,
               "children": undefined,
               "componentInstance": undefined,
               "componentOptions": undefined,
               "context": undefined,
               "data": undefined,
-              "elm":  ,
+              "elm": ꠸,
               "fnContext": undefined,
               "fnOptions": undefined,
               "fnScopeId": undefined,
@@ -596,8 +551,65 @@ VueWrapper {
               "parent": undefined,
               "raw": false,
               "tag": undefined,
-              "text": " ",
+              "text": "꠸",
             },
+          ],
+          "componentInstance": undefined,
+          "componentOptions": undefined,
+          "context": [Circular],
+          "data": Object {
+            "staticClass": "folder",
+          },
+          "elm": <div
+            class="folder"
+          >
+            ꠸
+          </div>,
+          "fnContext": undefined,
+          "fnOptions": undefined,
+          "fnScopeId": undefined,
+          "isAsyncPlaceholder": false,
+          "isCloned": false,
+          "isComment": false,
+          "isOnce": false,
+          "isRootInsert": false,
+          "isStatic": false,
+          "key": undefined,
+          "ns": undefined,
+          "parent": undefined,
+          "raw": false,
+          "tag": "div",
+          "text": undefined,
+        },
+        VNode {
+          "asyncFactory": undefined,
+          "asyncMeta": undefined,
+          "children": undefined,
+          "componentInstance": undefined,
+          "componentOptions": undefined,
+          "context": undefined,
+          "data": undefined,
+          "elm":  ,
+          "fnContext": undefined,
+          "fnOptions": undefined,
+          "fnScopeId": undefined,
+          "isAsyncPlaceholder": false,
+          "isCloned": false,
+          "isComment": false,
+          "isOnce": false,
+          "isRootInsert": false,
+          "isStatic": false,
+          "key": undefined,
+          "ns": undefined,
+          "parent": undefined,
+          "raw": false,
+          "tag": undefined,
+          "text": " ",
+        },
+        VNode {
+          "asyncFactory": undefined,
+          "asyncMeta": undefined,
+          "children": Array [
             VNode {
               "asyncFactory": undefined,
               "asyncMeta": undefined,
@@ -628,15 +640,11 @@ VueWrapper {
           "componentOptions": undefined,
           "context": [Circular],
           "data": Object {
-            "staticClass": "content",
+            "staticClass": "label",
           },
           "elm": <div
-            class="content"
+            class="label"
           >
-            <div>
-              ꠸
-            </div>
-             
             <p />
           </div>,
           "fnContext": undefined,
@@ -752,12 +760,14 @@ VueWrapper {
         data-tipe-ui="FolderCard"
       >
         <div
-          class="content"
+          class="folder"
         >
-          <div>
-            ꠸
-          </div>
-           
+          ꠸
+        </div>
+         
+        <div
+          class="label"
+        >
           <p />
         </div>
          
@@ -837,248 +847,222 @@ VueWrapper {
           VNode {
             "asyncFactory": undefined,
             "asyncMeta": undefined,
-            "children": Array [
-              VNode {
-                "asyncFactory": undefined,
-                "asyncMeta": undefined,
-                "children": undefined,
-                "componentInstance": undefined,
-                "componentOptions": undefined,
-                "context": undefined,
-                "data": undefined,
-                "elm": ꠸,
-                "fnContext": undefined,
-                "fnOptions": undefined,
-                "fnScopeId": undefined,
-                "isAsyncPlaceholder": false,
-                "isCloned": false,
-                "isComment": false,
-                "isOnce": false,
-                "isRootInsert": false,
-                "isStatic": false,
-                "key": undefined,
-                "ns": undefined,
-                "parent": undefined,
-                "raw": false,
-                "tag": undefined,
-                "text": "꠸",
-              },
-            ],
+            "children": undefined,
             "componentInstance": undefined,
             "componentOptions": undefined,
-            "context": VueComponent {
-              "$attrs": Object {},
-              "$children": Array [],
-              "$createElement": [Function],
-              "$el": <div
-                class="card"
-                data-tipe-ui="FolderCard"
-              >
-                <div
-                  class="content"
-                >
-                  <div>
-                    ꠸
-                  </div>
-                   
-                  <p />
-                </div>
-                 
-                <div
-                  class="dots"
-                >
-                  ⁞
-                </div>
-              </div>,
-              "$emit": [Function],
-              "$listeners": Object {},
-              "$options": Object {
+            "context": undefined,
+            "data": undefined,
+            "elm": ꠸,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": undefined,
+            "text": "꠸",
+          },
+        ],
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": VueComponent {
+          "$attrs": Object {},
+          "$children": Array [],
+          "$createElement": [Function],
+          "$el": <div
+            class="card"
+            data-tipe-ui="FolderCard"
+          >
+            <div
+              class="folder"
+            >
+              ꠸
+            </div>
+             
+            <div
+              class="label"
+            >
+              <p />
+            </div>
+             
+            <div
+              class="dots"
+            >
+              ⁞
+            </div>
+          </div>,
+          "$emit": [Function],
+          "$listeners": Object {},
+          "$options": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "_base": [Function],
+            "_parentElm": null,
+            "_refElm": null,
+            "beforeCreate": Array [
+              [Function],
+            ],
+            "components": Object {
+              "transition": Object {
                 "_Ctor": Object {
                   "1": [Function],
                 },
-                "_base": [Function],
-                "_parentElm": null,
-                "_refElm": null,
-                "beforeCreate": Array [
-                  [Function],
-                ],
-                "components": Object {
-                  "transition": Object {
-                    "_Ctor": Object {
-                      "1": [Function],
-                    },
-                    "name": "transition",
-                    "render": [Function],
-                  },
-                  "transition-group": Object {
-                    "_Ctor": Object {
-                      "1": [Function],
-                    },
-                    "name": "transition-group",
-                    "render": [Function],
-                  },
-                },
-                "directives": Object {},
-                "filters": Object {},
-                "logModifiedComponents": true,
-                "methods": undefined,
-                "name": "FolderCard",
-                "provide": [Function],
+                "name": "transition",
                 "render": [Function],
-                "staticRenderFns": Array [],
               },
-              "$parent": undefined,
-              "$refs": Object {},
-              "$root": [Circular],
-              "$scopedSlots": Object {},
-              "$slots": Object {},
-              "$vnode": undefined,
-              "__emitted": Object {},
-              "__emittedByOrder": Array [],
-              "_c": [Function],
-              "_data": Object {},
-              "_directInactive": false,
-              "_events": Object {},
-              "_hasHookEvent": false,
-              "_inactive": null,
-              "_isBeingDestroyed": false,
-              "_isDestroyed": false,
-              "_isMounted": true,
-              "_isVue": true,
-              "_provided": undefined,
-              "_renderProxy": VueComponent {
-                "$attrs": Object {},
-                "$children": Array [],
-                "$createElement": [Function],
-                "$el": <div
-                  class="card"
-                  data-tipe-ui="FolderCard"
-                >
-                  <div
-                    class="content"
-                  >
-                    <div>
-                      ꠸
-                    </div>
-                     
-                    <p />
-                  </div>
-                   
-                  <div
-                    class="dots"
-                  >
-                    ⁞
-                  </div>
-                </div>,
-                "$emit": [Function],
-                "$listeners": Object {},
-                "$options": Object {
+              "transition-group": Object {
+                "_Ctor": Object {
+                  "1": [Function],
+                },
+                "name": "transition-group",
+                "render": [Function],
+              },
+            },
+            "directives": Object {},
+            "filters": Object {},
+            "logModifiedComponents": true,
+            "methods": undefined,
+            "name": "FolderCard",
+            "provide": [Function],
+            "render": [Function],
+            "staticRenderFns": Array [],
+          },
+          "$parent": undefined,
+          "$refs": Object {},
+          "$root": [Circular],
+          "$scopedSlots": Object {},
+          "$slots": Object {},
+          "$vnode": undefined,
+          "__emitted": Object {},
+          "__emittedByOrder": Array [],
+          "_c": [Function],
+          "_data": Object {},
+          "_directInactive": false,
+          "_events": Object {},
+          "_hasHookEvent": false,
+          "_inactive": null,
+          "_isBeingDestroyed": false,
+          "_isDestroyed": false,
+          "_isMounted": true,
+          "_isVue": true,
+          "_provided": undefined,
+          "_renderProxy": VueComponent {
+            "$attrs": Object {},
+            "$children": Array [],
+            "$createElement": [Function],
+            "$el": <div
+              class="card"
+              data-tipe-ui="FolderCard"
+            >
+              <div
+                class="folder"
+              >
+                ꠸
+              </div>
+               
+              <div
+                class="label"
+              >
+                <p />
+              </div>
+               
+              <div
+                class="dots"
+              >
+                ⁞
+              </div>
+            </div>,
+            "$emit": [Function],
+            "$listeners": Object {},
+            "$options": Object {
+              "_Ctor": Object {
+                "1": [Function],
+              },
+              "_base": [Function],
+              "_parentElm": null,
+              "_refElm": null,
+              "beforeCreate": Array [
+                [Function],
+              ],
+              "components": Object {
+                "transition": Object {
                   "_Ctor": Object {
                     "1": [Function],
                   },
-                  "_base": [Function],
-                  "_parentElm": null,
-                  "_refElm": null,
-                  "beforeCreate": Array [
-                    [Function],
-                  ],
-                  "components": Object {
-                    "transition": Object {
-                      "_Ctor": Object {
-                        "1": [Function],
-                      },
-                      "name": "transition",
-                      "render": [Function],
-                    },
-                    "transition-group": Object {
-                      "_Ctor": Object {
-                        "1": [Function],
-                      },
-                      "name": "transition-group",
-                      "render": [Function],
-                    },
-                  },
-                  "directives": Object {},
-                  "filters": Object {},
-                  "logModifiedComponents": true,
-                  "methods": undefined,
-                  "name": "FolderCard",
-                  "provide": [Function],
+                  "name": "transition",
                   "render": [Function],
-                  "staticRenderFns": Array [],
                 },
-                "$parent": undefined,
-                "$refs": Object {},
-                "$root": [Circular],
-                "$scopedSlots": Object {},
-                "$slots": Object {},
-                "$vnode": undefined,
-                "__emitted": Object {},
-                "__emittedByOrder": Array [],
-                "_c": [Function],
-                "_data": Object {},
-                "_directInactive": false,
-                "_events": Object {},
-                "_hasHookEvent": false,
-                "_inactive": null,
-                "_isBeingDestroyed": false,
-                "_isDestroyed": false,
-                "_isMounted": true,
-                "_isVue": true,
-                "_provided": undefined,
-                "_renderProxy": [Circular],
-                "_self": [Circular],
-                "_staticTrees": null,
-                "_uid": 0,
-                "_vnode": [Circular],
-                "_watcher": Watcher {
-                  "active": true,
-                  "cb": [Function],
-                  "deep": false,
-                  "depIds": Set {},
-                  "deps": Array [],
-                  "dirty": false,
-                  "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                  "getter": [Function],
-                  "id": 1,
-                  "lazy": false,
-                  "newDepIds": Set {},
-                  "newDeps": Array [],
-                  "sync": true,
-                  "user": false,
-                  "value": undefined,
-                  "vm": [Circular],
-                },
-                "_watchers": Array [
-                  Watcher {
-                    "active": true,
-                    "cb": [Function],
-                    "deep": false,
-                    "depIds": Set {},
-                    "deps": Array [],
-                    "dirty": false,
-                    "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                    "getter": [Function],
-                    "id": 1,
-                    "lazy": false,
-                    "newDepIds": Set {},
-                    "newDeps": Array [],
-                    "sync": true,
-                    "user": false,
-                    "value": undefined,
-                    "vm": [Circular],
+                "transition-group": Object {
+                  "_Ctor": Object {
+                    "1": [Function],
                   },
-                ],
+                  "name": "transition-group",
+                  "render": [Function],
+                },
               },
-              "_self": [Circular],
-              "_staticTrees": null,
-              "_uid": 0,
-              "_vnode": [Circular],
-              "_watcher": Watcher {
+              "directives": Object {},
+              "filters": Object {},
+              "logModifiedComponents": true,
+              "methods": undefined,
+              "name": "FolderCard",
+              "provide": [Function],
+              "render": [Function],
+              "staticRenderFns": Array [],
+            },
+            "$parent": undefined,
+            "$refs": Object {},
+            "$root": [Circular],
+            "$scopedSlots": Object {},
+            "$slots": Object {},
+            "$vnode": undefined,
+            "__emitted": Object {},
+            "__emittedByOrder": Array [],
+            "_c": [Function],
+            "_data": Object {},
+            "_directInactive": false,
+            "_events": Object {},
+            "_hasHookEvent": false,
+            "_inactive": null,
+            "_isBeingDestroyed": false,
+            "_isDestroyed": false,
+            "_isMounted": true,
+            "_isVue": true,
+            "_provided": undefined,
+            "_renderProxy": [Circular],
+            "_self": [Circular],
+            "_staticTrees": null,
+            "_uid": 0,
+            "_vnode": [Circular],
+            "_watcher": Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {},
+              "deps": Array [],
+              "dirty": false,
+              "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+              "getter": [Function],
+              "id": 1,
+              "lazy": false,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": undefined,
+              "vm": [Circular],
+            },
+            "_watchers": Array [
+              Watcher {
                 "active": true,
                 "cb": [Function],
                 "deep": false,
@@ -1098,74 +1082,108 @@ VueWrapper {
                 "value": undefined,
                 "vm": [Circular],
               },
-              "_watchers": Array [
-                Watcher {
-                  "active": true,
-                  "cb": [Function],
-                  "deep": false,
-                  "depIds": Set {},
-                  "deps": Array [],
-                  "dirty": false,
-                  "expression": "function () {
+            ],
+          },
+          "_self": [Circular],
+          "_staticTrees": null,
+          "_uid": 0,
+          "_vnode": [Circular],
+          "_watcher": Watcher {
+            "active": true,
+            "cb": [Function],
+            "deep": false,
+            "depIds": Set {},
+            "deps": Array [],
+            "dirty": false,
+            "expression": "function () {
       vm._update(vm._render(), hydrating);
     }",
-                  "getter": [Function],
-                  "id": 1,
-                  "lazy": false,
-                  "newDepIds": Set {},
-                  "newDeps": Array [],
-                  "sync": true,
-                  "user": false,
-                  "value": undefined,
-                  "vm": [Circular],
-                },
-              ],
+            "getter": [Function],
+            "id": 1,
+            "lazy": false,
+            "newDepIds": Set {},
+            "newDeps": Array [],
+            "sync": true,
+            "user": false,
+            "value": undefined,
+            "vm": [Circular],
+          },
+          "_watchers": Array [
+            Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {},
+              "deps": Array [],
+              "dirty": false,
+              "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+              "getter": [Function],
+              "id": 1,
+              "lazy": false,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": undefined,
+              "vm": [Circular],
             },
-            "data": undefined,
-            "elm": <div>
-              ꠸
-            </div>,
-            "fnContext": undefined,
-            "fnOptions": undefined,
-            "fnScopeId": undefined,
-            "isAsyncPlaceholder": false,
-            "isCloned": false,
-            "isComment": false,
-            "isOnce": false,
-            "isRootInsert": false,
-            "isStatic": false,
-            "key": undefined,
-            "ns": undefined,
-            "parent": undefined,
-            "raw": false,
-            "tag": "div",
-            "text": undefined,
-          },
-          VNode {
-            "asyncFactory": undefined,
-            "asyncMeta": undefined,
-            "children": undefined,
-            "componentInstance": undefined,
-            "componentOptions": undefined,
-            "context": undefined,
-            "data": undefined,
-            "elm":  ,
-            "fnContext": undefined,
-            "fnOptions": undefined,
-            "fnScopeId": undefined,
-            "isAsyncPlaceholder": false,
-            "isCloned": false,
-            "isComment": false,
-            "isOnce": false,
-            "isRootInsert": false,
-            "isStatic": false,
-            "key": undefined,
-            "ns": undefined,
-            "parent": undefined,
-            "raw": false,
-            "tag": undefined,
-            "text": " ",
-          },
+          ],
+        },
+        "data": Object {
+          "staticClass": "folder",
+        },
+        "elm": <div
+          class="folder"
+        >
+          ꠸
+        </div>,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": false,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": "div",
+        "text": undefined,
+      },
+      VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": undefined,
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": undefined,
+        "data": undefined,
+        "elm":  ,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": false,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": undefined,
+        "text": " ",
+      },
+      VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": Array [
           VNode {
             "asyncFactory": undefined,
             "asyncMeta": undefined,
@@ -1181,12 +1199,14 @@ VueWrapper {
                 data-tipe-ui="FolderCard"
               >
                 <div
-                  class="content"
+                  class="folder"
                 >
-                  <div>
-                    ꠸
-                  </div>
-                   
+                  ꠸
+                </div>
+                 
+                <div
+                  class="label"
+                >
                   <p />
                 </div>
                  
@@ -1261,12 +1281,14 @@ VueWrapper {
                   data-tipe-ui="FolderCard"
                 >
                   <div
-                    class="content"
+                    class="folder"
                   >
-                    <div>
-                      ꠸
-                    </div>
-                     
+                    ꠸
+                  </div>
+                   
+                  <div
+                    class="label"
+                  >
                     <p />
                   </div>
                    
@@ -1457,12 +1479,14 @@ VueWrapper {
             data-tipe-ui="FolderCard"
           >
             <div
-              class="content"
+              class="folder"
             >
-              <div>
-                ꠸
-              </div>
-               
+              ꠸
+            </div>
+             
+            <div
+              class="label"
+            >
               <p />
             </div>
              
@@ -1537,12 +1561,14 @@ VueWrapper {
               data-tipe-ui="FolderCard"
             >
               <div
-                class="content"
+                class="folder"
               >
-                <div>
-                  ꠸
-                </div>
-                 
+                ꠸
+              </div>
+               
+              <div
+                class="label"
+              >
                 <p />
               </div>
                
@@ -1704,15 +1730,11 @@ VueWrapper {
           ],
         },
         "data": Object {
-          "staticClass": "content",
+          "staticClass": "label",
         },
         "elm": <div
-          class="content"
+          class="label"
         >
-          <div>
-            ꠸
-          </div>
-           
           <p />
         </div>,
         "fnContext": undefined,
@@ -1797,12 +1819,14 @@ VueWrapper {
             data-tipe-ui="FolderCard"
           >
             <div
-              class="content"
+              class="folder"
             >
-              <div>
-                ꠸
-              </div>
-               
+              ꠸
+            </div>
+             
+            <div
+              class="label"
+            >
               <p />
             </div>
              
@@ -1877,12 +1901,14 @@ VueWrapper {
               data-tipe-ui="FolderCard"
             >
               <div
-                class="content"
+                class="folder"
               >
-                <div>
-                  ꠸
-                </div>
-                 
+                ꠸
+              </div>
+               
+              <div
+                class="label"
+              >
                 <p />
               </div>
                
@@ -2079,12 +2105,14 @@ VueWrapper {
         data-tipe-ui="FolderCard"
       >
         <div
-          class="content"
+          class="folder"
         >
-          <div>
-            ꠸
-          </div>
-           
+          ꠸
+        </div>
+         
+        <div
+          class="label"
+        >
           <p />
         </div>
          
@@ -2159,12 +2187,14 @@ VueWrapper {
           data-tipe-ui="FolderCard"
         >
           <div
-            class="content"
+            class="folder"
           >
-            <div>
-              ꠸
-            </div>
-             
+            ꠸
+          </div>
+           
+          <div
+            class="label"
+          >
             <p />
           </div>
            
@@ -2336,12 +2366,14 @@ VueWrapper {
       data-tipe-ui="FolderCard"
     >
       <div
-        class="content"
+        class="folder"
       >
-        <div>
-          ꠸
-        </div>
-         
+        ꠸
+      </div>
+       
+      <div
+        class="label"
+      >
         <p />
       </div>
        
@@ -2379,12 +2411,14 @@ VueWrapper {
     data-tipe-ui="FolderCard"
   >
     <div
-      class="content"
+      class="folder"
     >
-      <div>
-        ꠸
-      </div>
-       
+      ꠸
+    </div>
+     
+    <div
+      class="label"
+    >
       <p />
     </div>
      
@@ -2410,12 +2444,14 @@ VueWrapper {
       data-tipe-ui="FolderCard"
     >
       <div
-        class="content"
+        class="folder"
       >
-        <div>
-          ꠸
-        </div>
-         
+        ꠸
+      </div>
+       
+      <div
+        class="label"
+      >
         <p />
       </div>
        
@@ -2490,12 +2526,14 @@ VueWrapper {
         data-tipe-ui="FolderCard"
       >
         <div
-          class="content"
+          class="folder"
         >
-          <div>
-            ꠸
-          </div>
-           
+          ꠸
+        </div>
+         
+        <div
+          class="label"
+        >
           <p />
         </div>
          
@@ -2576,65 +2614,12 @@ VueWrapper {
               VNode {
                 "asyncFactory": undefined,
                 "asyncMeta": undefined,
-                "children": Array [
-                  VNode {
-                    "asyncFactory": undefined,
-                    "asyncMeta": undefined,
-                    "children": undefined,
-                    "componentInstance": undefined,
-                    "componentOptions": undefined,
-                    "context": undefined,
-                    "data": undefined,
-                    "elm": ꠸,
-                    "fnContext": undefined,
-                    "fnOptions": undefined,
-                    "fnScopeId": undefined,
-                    "isAsyncPlaceholder": false,
-                    "isCloned": false,
-                    "isComment": false,
-                    "isOnce": false,
-                    "isRootInsert": false,
-                    "isStatic": false,
-                    "key": undefined,
-                    "ns": undefined,
-                    "parent": undefined,
-                    "raw": false,
-                    "tag": undefined,
-                    "text": "꠸",
-                  },
-                ],
-                "componentInstance": undefined,
-                "componentOptions": undefined,
-                "context": [Circular],
-                "data": undefined,
-                "elm": <div>
-                  ꠸
-                </div>,
-                "fnContext": undefined,
-                "fnOptions": undefined,
-                "fnScopeId": undefined,
-                "isAsyncPlaceholder": false,
-                "isCloned": false,
-                "isComment": false,
-                "isOnce": false,
-                "isRootInsert": false,
-                "isStatic": false,
-                "key": undefined,
-                "ns": undefined,
-                "parent": undefined,
-                "raw": false,
-                "tag": "div",
-                "text": undefined,
-              },
-              VNode {
-                "asyncFactory": undefined,
-                "asyncMeta": undefined,
                 "children": undefined,
                 "componentInstance": undefined,
                 "componentOptions": undefined,
                 "context": undefined,
                 "data": undefined,
-                "elm":  ,
+                "elm": ꠸,
                 "fnContext": undefined,
                 "fnOptions": undefined,
                 "fnScopeId": undefined,
@@ -2649,8 +2634,65 @@ VueWrapper {
                 "parent": undefined,
                 "raw": false,
                 "tag": undefined,
-                "text": " ",
+                "text": "꠸",
               },
+            ],
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": [Circular],
+            "data": Object {
+              "staticClass": "folder",
+            },
+            "elm": <div
+              class="folder"
+            >
+              ꠸
+            </div>,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": "div",
+            "text": undefined,
+          },
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": undefined,
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": undefined,
+            "data": undefined,
+            "elm":  ,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": undefined,
+            "text": " ",
+          },
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": Array [
               VNode {
                 "asyncFactory": undefined,
                 "asyncMeta": undefined,
@@ -2681,15 +2723,11 @@ VueWrapper {
             "componentOptions": undefined,
             "context": [Circular],
             "data": Object {
-              "staticClass": "content",
+              "staticClass": "label",
             },
             "elm": <div
-              class="content"
+              class="label"
             >
-              <div>
-                ꠸
-              </div>
-               
               <p />
             </div>,
             "fnContext": undefined,
@@ -2805,12 +2843,14 @@ VueWrapper {
           data-tipe-ui="FolderCard"
         >
           <div
-            class="content"
+            class="folder"
           >
-            <div>
-              ꠸
-            </div>
-             
+            ꠸
+          </div>
+           
+          <div
+            class="label"
+          >
             <p />
           </div>
            
@@ -2893,65 +2933,12 @@ VueWrapper {
             VNode {
               "asyncFactory": undefined,
               "asyncMeta": undefined,
-              "children": Array [
-                VNode {
-                  "asyncFactory": undefined,
-                  "asyncMeta": undefined,
-                  "children": undefined,
-                  "componentInstance": undefined,
-                  "componentOptions": undefined,
-                  "context": undefined,
-                  "data": undefined,
-                  "elm": ꠸,
-                  "fnContext": undefined,
-                  "fnOptions": undefined,
-                  "fnScopeId": undefined,
-                  "isAsyncPlaceholder": false,
-                  "isCloned": false,
-                  "isComment": false,
-                  "isOnce": false,
-                  "isRootInsert": false,
-                  "isStatic": false,
-                  "key": undefined,
-                  "ns": undefined,
-                  "parent": undefined,
-                  "raw": false,
-                  "tag": undefined,
-                  "text": "꠸",
-                },
-              ],
-              "componentInstance": undefined,
-              "componentOptions": undefined,
-              "context": [Circular],
-              "data": undefined,
-              "elm": <div>
-                ꠸
-              </div>,
-              "fnContext": undefined,
-              "fnOptions": undefined,
-              "fnScopeId": undefined,
-              "isAsyncPlaceholder": false,
-              "isCloned": false,
-              "isComment": false,
-              "isOnce": false,
-              "isRootInsert": false,
-              "isStatic": false,
-              "key": undefined,
-              "ns": undefined,
-              "parent": undefined,
-              "raw": false,
-              "tag": "div",
-              "text": undefined,
-            },
-            VNode {
-              "asyncFactory": undefined,
-              "asyncMeta": undefined,
               "children": undefined,
               "componentInstance": undefined,
               "componentOptions": undefined,
               "context": undefined,
               "data": undefined,
-              "elm":  ,
+              "elm": ꠸,
               "fnContext": undefined,
               "fnOptions": undefined,
               "fnScopeId": undefined,
@@ -2966,8 +2953,65 @@ VueWrapper {
               "parent": undefined,
               "raw": false,
               "tag": undefined,
-              "text": " ",
+              "text": "꠸",
             },
+          ],
+          "componentInstance": undefined,
+          "componentOptions": undefined,
+          "context": [Circular],
+          "data": Object {
+            "staticClass": "folder",
+          },
+          "elm": <div
+            class="folder"
+          >
+            ꠸
+          </div>,
+          "fnContext": undefined,
+          "fnOptions": undefined,
+          "fnScopeId": undefined,
+          "isAsyncPlaceholder": false,
+          "isCloned": false,
+          "isComment": false,
+          "isOnce": false,
+          "isRootInsert": false,
+          "isStatic": false,
+          "key": undefined,
+          "ns": undefined,
+          "parent": undefined,
+          "raw": false,
+          "tag": "div",
+          "text": undefined,
+        },
+        VNode {
+          "asyncFactory": undefined,
+          "asyncMeta": undefined,
+          "children": undefined,
+          "componentInstance": undefined,
+          "componentOptions": undefined,
+          "context": undefined,
+          "data": undefined,
+          "elm":  ,
+          "fnContext": undefined,
+          "fnOptions": undefined,
+          "fnScopeId": undefined,
+          "isAsyncPlaceholder": false,
+          "isCloned": false,
+          "isComment": false,
+          "isOnce": false,
+          "isRootInsert": false,
+          "isStatic": false,
+          "key": undefined,
+          "ns": undefined,
+          "parent": undefined,
+          "raw": false,
+          "tag": undefined,
+          "text": " ",
+        },
+        VNode {
+          "asyncFactory": undefined,
+          "asyncMeta": undefined,
+          "children": Array [
             VNode {
               "asyncFactory": undefined,
               "asyncMeta": undefined,
@@ -2998,15 +3042,11 @@ VueWrapper {
           "componentOptions": undefined,
           "context": [Circular],
           "data": Object {
-            "staticClass": "content",
+            "staticClass": "label",
           },
           "elm": <div
-            class="content"
+            class="label"
           >
-            <div>
-              ꠸
-            </div>
-             
             <p />
           </div>,
           "fnContext": undefined,
@@ -3122,12 +3162,14 @@ VueWrapper {
         data-tipe-ui="FolderCard"
       >
         <div
-          class="content"
+          class="folder"
         >
-          <div>
-            ꠸
-          </div>
-           
+          ꠸
+        </div>
+         
+        <div
+          class="label"
+        >
           <p />
         </div>
          
@@ -3207,248 +3249,222 @@ VueWrapper {
           VNode {
             "asyncFactory": undefined,
             "asyncMeta": undefined,
-            "children": Array [
-              VNode {
-                "asyncFactory": undefined,
-                "asyncMeta": undefined,
-                "children": undefined,
-                "componentInstance": undefined,
-                "componentOptions": undefined,
-                "context": undefined,
-                "data": undefined,
-                "elm": ꠸,
-                "fnContext": undefined,
-                "fnOptions": undefined,
-                "fnScopeId": undefined,
-                "isAsyncPlaceholder": false,
-                "isCloned": false,
-                "isComment": false,
-                "isOnce": false,
-                "isRootInsert": false,
-                "isStatic": false,
-                "key": undefined,
-                "ns": undefined,
-                "parent": undefined,
-                "raw": false,
-                "tag": undefined,
-                "text": "꠸",
-              },
-            ],
+            "children": undefined,
             "componentInstance": undefined,
             "componentOptions": undefined,
-            "context": VueComponent {
-              "$attrs": Object {},
-              "$children": Array [],
-              "$createElement": [Function],
-              "$el": <div
-                class="card"
-                data-tipe-ui="FolderCard"
-              >
-                <div
-                  class="content"
-                >
-                  <div>
-                    ꠸
-                  </div>
-                   
-                  <p />
-                </div>
-                 
-                <div
-                  class="dots"
-                >
-                  ⁞
-                </div>
-              </div>,
-              "$emit": [Function],
-              "$listeners": Object {},
-              "$options": Object {
+            "context": undefined,
+            "data": undefined,
+            "elm": ꠸,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": undefined,
+            "text": "꠸",
+          },
+        ],
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": VueComponent {
+          "$attrs": Object {},
+          "$children": Array [],
+          "$createElement": [Function],
+          "$el": <div
+            class="card"
+            data-tipe-ui="FolderCard"
+          >
+            <div
+              class="folder"
+            >
+              ꠸
+            </div>
+             
+            <div
+              class="label"
+            >
+              <p />
+            </div>
+             
+            <div
+              class="dots"
+            >
+              ⁞
+            </div>
+          </div>,
+          "$emit": [Function],
+          "$listeners": Object {},
+          "$options": Object {
+            "_Ctor": Object {
+              "5": [Function],
+            },
+            "_base": [Function],
+            "_parentElm": null,
+            "_refElm": null,
+            "beforeCreate": Array [
+              [Function],
+            ],
+            "components": Object {
+              "transition": Object {
                 "_Ctor": Object {
                   "5": [Function],
                 },
-                "_base": [Function],
-                "_parentElm": null,
-                "_refElm": null,
-                "beforeCreate": Array [
-                  [Function],
-                ],
-                "components": Object {
-                  "transition": Object {
-                    "_Ctor": Object {
-                      "5": [Function],
-                    },
-                    "name": "transition",
-                    "render": [Function],
-                  },
-                  "transition-group": Object {
-                    "_Ctor": Object {
-                      "5": [Function],
-                    },
-                    "name": "transition-group",
-                    "render": [Function],
-                  },
-                },
-                "directives": Object {},
-                "filters": Object {},
-                "logModifiedComponents": true,
-                "methods": undefined,
-                "name": "FolderCard",
-                "provide": [Function],
+                "name": "transition",
                 "render": [Function],
-                "staticRenderFns": Array [],
               },
-              "$parent": undefined,
-              "$refs": Object {},
-              "$root": [Circular],
-              "$scopedSlots": Object {},
-              "$slots": Object {},
-              "$vnode": undefined,
-              "__emitted": Object {},
-              "__emittedByOrder": Array [],
-              "_c": [Function],
-              "_data": Object {},
-              "_directInactive": false,
-              "_events": Object {},
-              "_hasHookEvent": false,
-              "_inactive": null,
-              "_isBeingDestroyed": false,
-              "_isDestroyed": false,
-              "_isMounted": true,
-              "_isVue": true,
-              "_provided": undefined,
-              "_renderProxy": VueComponent {
-                "$attrs": Object {},
-                "$children": Array [],
-                "$createElement": [Function],
-                "$el": <div
-                  class="card"
-                  data-tipe-ui="FolderCard"
-                >
-                  <div
-                    class="content"
-                  >
-                    <div>
-                      ꠸
-                    </div>
-                     
-                    <p />
-                  </div>
-                   
-                  <div
-                    class="dots"
-                  >
-                    ⁞
-                  </div>
-                </div>,
-                "$emit": [Function],
-                "$listeners": Object {},
-                "$options": Object {
+              "transition-group": Object {
+                "_Ctor": Object {
+                  "5": [Function],
+                },
+                "name": "transition-group",
+                "render": [Function],
+              },
+            },
+            "directives": Object {},
+            "filters": Object {},
+            "logModifiedComponents": true,
+            "methods": undefined,
+            "name": "FolderCard",
+            "provide": [Function],
+            "render": [Function],
+            "staticRenderFns": Array [],
+          },
+          "$parent": undefined,
+          "$refs": Object {},
+          "$root": [Circular],
+          "$scopedSlots": Object {},
+          "$slots": Object {},
+          "$vnode": undefined,
+          "__emitted": Object {},
+          "__emittedByOrder": Array [],
+          "_c": [Function],
+          "_data": Object {},
+          "_directInactive": false,
+          "_events": Object {},
+          "_hasHookEvent": false,
+          "_inactive": null,
+          "_isBeingDestroyed": false,
+          "_isDestroyed": false,
+          "_isMounted": true,
+          "_isVue": true,
+          "_provided": undefined,
+          "_renderProxy": VueComponent {
+            "$attrs": Object {},
+            "$children": Array [],
+            "$createElement": [Function],
+            "$el": <div
+              class="card"
+              data-tipe-ui="FolderCard"
+            >
+              <div
+                class="folder"
+              >
+                ꠸
+              </div>
+               
+              <div
+                class="label"
+              >
+                <p />
+              </div>
+               
+              <div
+                class="dots"
+              >
+                ⁞
+              </div>
+            </div>,
+            "$emit": [Function],
+            "$listeners": Object {},
+            "$options": Object {
+              "_Ctor": Object {
+                "5": [Function],
+              },
+              "_base": [Function],
+              "_parentElm": null,
+              "_refElm": null,
+              "beforeCreate": Array [
+                [Function],
+              ],
+              "components": Object {
+                "transition": Object {
                   "_Ctor": Object {
                     "5": [Function],
                   },
-                  "_base": [Function],
-                  "_parentElm": null,
-                  "_refElm": null,
-                  "beforeCreate": Array [
-                    [Function],
-                  ],
-                  "components": Object {
-                    "transition": Object {
-                      "_Ctor": Object {
-                        "5": [Function],
-                      },
-                      "name": "transition",
-                      "render": [Function],
-                    },
-                    "transition-group": Object {
-                      "_Ctor": Object {
-                        "5": [Function],
-                      },
-                      "name": "transition-group",
-                      "render": [Function],
-                    },
-                  },
-                  "directives": Object {},
-                  "filters": Object {},
-                  "logModifiedComponents": true,
-                  "methods": undefined,
-                  "name": "FolderCard",
-                  "provide": [Function],
+                  "name": "transition",
                   "render": [Function],
-                  "staticRenderFns": Array [],
                 },
-                "$parent": undefined,
-                "$refs": Object {},
-                "$root": [Circular],
-                "$scopedSlots": Object {},
-                "$slots": Object {},
-                "$vnode": undefined,
-                "__emitted": Object {},
-                "__emittedByOrder": Array [],
-                "_c": [Function],
-                "_data": Object {},
-                "_directInactive": false,
-                "_events": Object {},
-                "_hasHookEvent": false,
-                "_inactive": null,
-                "_isBeingDestroyed": false,
-                "_isDestroyed": false,
-                "_isMounted": true,
-                "_isVue": true,
-                "_provided": undefined,
-                "_renderProxy": [Circular],
-                "_self": [Circular],
-                "_staticTrees": null,
-                "_uid": 1,
-                "_vnode": [Circular],
-                "_watcher": Watcher {
-                  "active": true,
-                  "cb": [Function],
-                  "deep": false,
-                  "depIds": Set {},
-                  "deps": Array [],
-                  "dirty": false,
-                  "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                  "getter": [Function],
-                  "id": 2,
-                  "lazy": false,
-                  "newDepIds": Set {},
-                  "newDeps": Array [],
-                  "sync": true,
-                  "user": false,
-                  "value": undefined,
-                  "vm": [Circular],
-                },
-                "_watchers": Array [
-                  Watcher {
-                    "active": true,
-                    "cb": [Function],
-                    "deep": false,
-                    "depIds": Set {},
-                    "deps": Array [],
-                    "dirty": false,
-                    "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                    "getter": [Function],
-                    "id": 2,
-                    "lazy": false,
-                    "newDepIds": Set {},
-                    "newDeps": Array [],
-                    "sync": true,
-                    "user": false,
-                    "value": undefined,
-                    "vm": [Circular],
+                "transition-group": Object {
+                  "_Ctor": Object {
+                    "5": [Function],
                   },
-                ],
+                  "name": "transition-group",
+                  "render": [Function],
+                },
               },
-              "_self": [Circular],
-              "_staticTrees": null,
-              "_uid": 1,
-              "_vnode": [Circular],
-              "_watcher": Watcher {
+              "directives": Object {},
+              "filters": Object {},
+              "logModifiedComponents": true,
+              "methods": undefined,
+              "name": "FolderCard",
+              "provide": [Function],
+              "render": [Function],
+              "staticRenderFns": Array [],
+            },
+            "$parent": undefined,
+            "$refs": Object {},
+            "$root": [Circular],
+            "$scopedSlots": Object {},
+            "$slots": Object {},
+            "$vnode": undefined,
+            "__emitted": Object {},
+            "__emittedByOrder": Array [],
+            "_c": [Function],
+            "_data": Object {},
+            "_directInactive": false,
+            "_events": Object {},
+            "_hasHookEvent": false,
+            "_inactive": null,
+            "_isBeingDestroyed": false,
+            "_isDestroyed": false,
+            "_isMounted": true,
+            "_isVue": true,
+            "_provided": undefined,
+            "_renderProxy": [Circular],
+            "_self": [Circular],
+            "_staticTrees": null,
+            "_uid": 1,
+            "_vnode": [Circular],
+            "_watcher": Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {},
+              "deps": Array [],
+              "dirty": false,
+              "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+              "getter": [Function],
+              "id": 2,
+              "lazy": false,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": undefined,
+              "vm": [Circular],
+            },
+            "_watchers": Array [
+              Watcher {
                 "active": true,
                 "cb": [Function],
                 "deep": false,
@@ -3468,74 +3484,108 @@ VueWrapper {
                 "value": undefined,
                 "vm": [Circular],
               },
-              "_watchers": Array [
-                Watcher {
-                  "active": true,
-                  "cb": [Function],
-                  "deep": false,
-                  "depIds": Set {},
-                  "deps": Array [],
-                  "dirty": false,
-                  "expression": "function () {
+            ],
+          },
+          "_self": [Circular],
+          "_staticTrees": null,
+          "_uid": 1,
+          "_vnode": [Circular],
+          "_watcher": Watcher {
+            "active": true,
+            "cb": [Function],
+            "deep": false,
+            "depIds": Set {},
+            "deps": Array [],
+            "dirty": false,
+            "expression": "function () {
       vm._update(vm._render(), hydrating);
     }",
-                  "getter": [Function],
-                  "id": 2,
-                  "lazy": false,
-                  "newDepIds": Set {},
-                  "newDeps": Array [],
-                  "sync": true,
-                  "user": false,
-                  "value": undefined,
-                  "vm": [Circular],
-                },
-              ],
+            "getter": [Function],
+            "id": 2,
+            "lazy": false,
+            "newDepIds": Set {},
+            "newDeps": Array [],
+            "sync": true,
+            "user": false,
+            "value": undefined,
+            "vm": [Circular],
+          },
+          "_watchers": Array [
+            Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {},
+              "deps": Array [],
+              "dirty": false,
+              "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+              "getter": [Function],
+              "id": 2,
+              "lazy": false,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": undefined,
+              "vm": [Circular],
             },
-            "data": undefined,
-            "elm": <div>
-              ꠸
-            </div>,
-            "fnContext": undefined,
-            "fnOptions": undefined,
-            "fnScopeId": undefined,
-            "isAsyncPlaceholder": false,
-            "isCloned": false,
-            "isComment": false,
-            "isOnce": false,
-            "isRootInsert": false,
-            "isStatic": false,
-            "key": undefined,
-            "ns": undefined,
-            "parent": undefined,
-            "raw": false,
-            "tag": "div",
-            "text": undefined,
-          },
-          VNode {
-            "asyncFactory": undefined,
-            "asyncMeta": undefined,
-            "children": undefined,
-            "componentInstance": undefined,
-            "componentOptions": undefined,
-            "context": undefined,
-            "data": undefined,
-            "elm":  ,
-            "fnContext": undefined,
-            "fnOptions": undefined,
-            "fnScopeId": undefined,
-            "isAsyncPlaceholder": false,
-            "isCloned": false,
-            "isComment": false,
-            "isOnce": false,
-            "isRootInsert": false,
-            "isStatic": false,
-            "key": undefined,
-            "ns": undefined,
-            "parent": undefined,
-            "raw": false,
-            "tag": undefined,
-            "text": " ",
-          },
+          ],
+        },
+        "data": Object {
+          "staticClass": "folder",
+        },
+        "elm": <div
+          class="folder"
+        >
+          ꠸
+        </div>,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": false,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": "div",
+        "text": undefined,
+      },
+      VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": undefined,
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": undefined,
+        "data": undefined,
+        "elm":  ,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": false,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": undefined,
+        "text": " ",
+      },
+      VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": Array [
           VNode {
             "asyncFactory": undefined,
             "asyncMeta": undefined,
@@ -3551,12 +3601,14 @@ VueWrapper {
                 data-tipe-ui="FolderCard"
               >
                 <div
-                  class="content"
+                  class="folder"
                 >
-                  <div>
-                    ꠸
-                  </div>
-                   
+                  ꠸
+                </div>
+                 
+                <div
+                  class="label"
+                >
                   <p />
                 </div>
                  
@@ -3631,12 +3683,14 @@ VueWrapper {
                   data-tipe-ui="FolderCard"
                 >
                   <div
-                    class="content"
+                    class="folder"
                   >
-                    <div>
-                      ꠸
-                    </div>
-                     
+                    ꠸
+                  </div>
+                   
+                  <div
+                    class="label"
+                  >
                     <p />
                   </div>
                    
@@ -3827,12 +3881,14 @@ VueWrapper {
             data-tipe-ui="FolderCard"
           >
             <div
-              class="content"
+              class="folder"
             >
-              <div>
-                ꠸
-              </div>
-               
+              ꠸
+            </div>
+             
+            <div
+              class="label"
+            >
               <p />
             </div>
              
@@ -3907,12 +3963,14 @@ VueWrapper {
               data-tipe-ui="FolderCard"
             >
               <div
-                class="content"
+                class="folder"
               >
-                <div>
-                  ꠸
-                </div>
-                 
+                ꠸
+              </div>
+               
+              <div
+                class="label"
+              >
                 <p />
               </div>
                
@@ -4074,15 +4132,11 @@ VueWrapper {
           ],
         },
         "data": Object {
-          "staticClass": "content",
+          "staticClass": "label",
         },
         "elm": <div
-          class="content"
+          class="label"
         >
-          <div>
-            ꠸
-          </div>
-           
           <p />
         </div>,
         "fnContext": undefined,
@@ -4167,12 +4221,14 @@ VueWrapper {
             data-tipe-ui="FolderCard"
           >
             <div
-              class="content"
+              class="folder"
             >
-              <div>
-                ꠸
-              </div>
-               
+              ꠸
+            </div>
+             
+            <div
+              class="label"
+            >
               <p />
             </div>
              
@@ -4247,12 +4303,14 @@ VueWrapper {
               data-tipe-ui="FolderCard"
             >
               <div
-                class="content"
+                class="folder"
               >
-                <div>
-                  ꠸
-                </div>
-                 
+                ꠸
+              </div>
+               
+              <div
+                class="label"
+              >
                 <p />
               </div>
                
@@ -4449,12 +4507,14 @@ VueWrapper {
         data-tipe-ui="FolderCard"
       >
         <div
-          class="content"
+          class="folder"
         >
-          <div>
-            ꠸
-          </div>
-           
+          ꠸
+        </div>
+         
+        <div
+          class="label"
+        >
           <p />
         </div>
          
@@ -4529,12 +4589,14 @@ VueWrapper {
           data-tipe-ui="FolderCard"
         >
           <div
-            class="content"
+            class="folder"
           >
-            <div>
-              ꠸
-            </div>
-             
+            ꠸
+          </div>
+           
+          <div
+            class="label"
+          >
             <p />
           </div>
            
@@ -4706,12 +4768,14 @@ VueWrapper {
       data-tipe-ui="FolderCard"
     >
       <div
-        class="content"
+        class="folder"
       >
-        <div>
-          ꠸
-        </div>
-         
+        ꠸
+      </div>
+       
+      <div
+        class="label"
+      >
         <p />
       </div>
        

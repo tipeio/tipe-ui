@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import Image from '@/components/Image.vue'
+import Image from '@/components/Image'
 import faker from 'faker'
 
 describe('Image', () => {
