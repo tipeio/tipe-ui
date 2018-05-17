@@ -7,7 +7,7 @@
     "test": "vue-cli-service test:unit",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "precommit": "lint && test"
+    "precommit": "lint-staged && lint && test"
   },
   "dependencies": {
     "vue": "^2.5.16",
@@ -48,7 +48,8 @@
     "eslint-plugin-vue-types": "^0.1.0",
     "faker": "^4.1.0",
     "file-loader": "^1.1.4",
-    "lint-staged": "^6.0.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.0",
     "postcss": "^6.0.22",
     "postcss-color-function": "^4.0.1",
     "postcss-cssnext": "^3.1.0",
@@ -63,22 +64,13 @@
     "vue-template-compiler": "^2.5.13",
     "webpack": "^3.6.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "*.js": ["vue-cli-service lint", "git add"],
+    "*.vue": ["vue-cli-service lint", "git add"],
+    "*.{vue,js,json,css,md}": ["prettier --write", "git add"]
   }
 }
