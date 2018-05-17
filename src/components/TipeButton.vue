@@ -51,9 +51,8 @@ export default {
 }
 
 @define-mixin hover-fill $color {
-  border: 0.5px solid color($color lightness(40%));
   color: #fff;
-  background-color: color($color lightness(40%));
+  background-color: $color;
 }
 
 button {
@@ -73,7 +72,7 @@ button {
       }
     }
     &:hover {
-      @mixin hover-fill var(--purple);
+      @mixin hover-fill var(--purple-light);
     }
   }
 
@@ -100,7 +99,7 @@ button {
       }
     }
     &:hover {
-      @mixin hover-fill var(--gray-blue-light);
+      @mixin hover-fill var(--gray-light);
     }
   }
 
