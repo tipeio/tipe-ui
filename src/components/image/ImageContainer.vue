@@ -10,7 +10,7 @@
 import vueTypes from 'vue-types'
 import { Machine } from 'xstate'
 import TipeImage from './Image.vue'
-import imageLoader from '@/libs/imageLoader'
+import imageLoader from '../../libs/imageLoader'
 
 const status = Machine({
   initial: 'waiting',
