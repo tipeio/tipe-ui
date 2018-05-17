@@ -4,7 +4,7 @@
     class="card">
     <div class="icon"><icon icon="folder"/></div>
     <div class="label"><p><slot /></p></div>
-    <div class="icon"><icon icon="dots"/></div>
+    <div class="icon"><icon icon="options"/></div>
   </div>
 </template>
 
