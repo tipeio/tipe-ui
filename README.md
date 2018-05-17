@@ -32,7 +32,7 @@ The TipeButton component currently supports `size`, `outline`, and `color` props
   * Default Value: `medium`
 * Color
   * Type: String
-  * Valid Props: `purple`, `dark-purple`, `danger`
+  * Valid Props: `purple`, `dark-purple`, `danger`, `gray`
   * Default: `purple`
 * Outline
   * Type: Boolean
