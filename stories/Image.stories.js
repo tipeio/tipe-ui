@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/vue'
 
-import TipeImage from '@/components/Image/index.vue'
+import TipeImage from '@/components/image/image.vue'
 
 const style = {
   height: '100px',
