@@ -1,6 +1,7 @@
-input,
-button,
-textarea {
+input:focus,
+button:focus,
+textarea:focus,
+*:focus {
   outline: none;
 }
 

@@ -1,18 +1,23 @@
 <template>
-  <div
-    :class="size"
-    :data-tipe-ui="$options.name"
-  />
+  <object
+    :data="src"
+    type="image/svg+xml">
+    <img :src="src" >
+  </object>
 </template>
 
 <script>
+import vueTypes from 'vue-types'
+
 export default {
-  name: 'TipeIcon'
+  name: 'TipeIcon',
+  props: {
+    icon: vueTypes.string
+  },
+  computed: {
+    src() {
+      return require(`../icons/${this.icon}.svg`)
+    }
+  }
 }
 </script>
-
-<style scoped>
-[data-tipe-ui='TipeIcon'] {
-  background-color: red;
-}
-</style>
