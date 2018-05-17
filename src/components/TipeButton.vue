@@ -16,7 +16,9 @@ export default {
   props: {
     size: vueTypes.oneOf(['small', 'medium', 'large']).def('medium'),
     outline: vueTypes.bool.def(false),
-    color: vueTypes.oneOf(['purple', 'danger', 'dark-purple']).def('purple')
+    color: vueTypes
+      .oneOf(['purple', 'danger', 'dark-purple', 'gray'])
+      .def('purple')
   },
   computed: {
     classObject: function() {
@@ -38,7 +40,7 @@ export default {
 
 <style lang="postcss" scoped>
 @define-mixin outline $color {
-  border: 0.5px solid $color;
+  border: 1px solid $color;
   color: $color;
   background-color: #fff;
 }
@@ -85,6 +87,20 @@ button {
     }
     &:hover {
       @mixin hover-fill var(--purple);
+    }
+  }
+
+  &.gray {
+    background-color: var(--gray-blue-light);
+    &.outline {
+      @mixin outline var(--gray-blue-light);
+      color: var(--text-gray-dark);
+      &:hover {
+        @mixin hover-outline var(--gray-blue-light);
+      }
+    }
+    &:hover {
+      @mixin hover-fill var(--gray-blue-light);
     }
   }
 
