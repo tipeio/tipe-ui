@@ -64,3 +64,9 @@ storiesOf('Button', module)
       '<tipe-button color="danger" size="small" outline @click="action">Small Outline Danger</tipe-button>',
     methods: { action: action('clicked') }
   }))
+  .add('Large Outline Grey Button', () => ({
+    components: { TipeButton },
+    template:
+      '<tipe-button color="gray" size="large" outline @click="action">Large Outline Gray</tipe-button>',
+    methods: { action: action('clicked') }
+  }))

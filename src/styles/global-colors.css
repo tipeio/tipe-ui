@@ -1,6 +1,7 @@
 :root {
   /* grays */
   --gray-light: rgb(231, 233, 234);
+  --gray-blue-light: rgb(233, 239, 244);
   --gray-lightest: rgb(250, 251, 255);
 
   /* purples */
@@ -14,4 +15,5 @@
   /* text */
   --text-gray-dark: rgba(31, 52, 108, 0.61);
   --text-gray-normal: rgba(31, 52, 108, 0.4);
+  --text-gray-dark: rgb(50, 60, 71);
 }
