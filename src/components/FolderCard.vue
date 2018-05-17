@@ -2,15 +2,19 @@
   <div 
     :data-tipe-ui="$options.name" 
     class="card">
-    <div class="folder">꠸</div>
+    <div class="folder"><icon icon="folder"/></div>
     <div class="label"><p><slot /></p></div>
-    <div class="dots">⁞</div>
+    <div class="dots"><icon icon="dots"/></div>
   </div>
 </template>
 
 <script>
+import Icon from './Icon.vue'
 export default {
-  name: 'FolderCard'
+  name: 'FolderCard',
+  components: {
+    Icon
+  }
 }
 </script>
 
