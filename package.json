@@ -53,6 +53,9 @@
     "postcss-import": "^11.1.0",
     "postcss-loader": "^2.1.5",
     "style-loader": "^0.21.0",
+    "svg-sprite-loader": "^3.7.3",
+    "svgo": "^1.0.5",
+    "svgo-loader": "^2.1.0",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.5.13",
     "webpack": "^3.6.0"
