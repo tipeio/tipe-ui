@@ -2,21 +2,21 @@
   <div 
     :data-tipe-ui="$options.name" 
     class="card">
-    <div class="content">
-      <div>꠸</div>
-      <p><slot /></p>
-    </div>
+    <div class="file"><icon icon="file"/></div>
+    <div class="label"><p><slot /></p></div>
     <div 
       v-if="recent" 
-      class="dot">⦁</div>
+      class="dot"><icon icon="dot"/></div>
   </div>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
+import Icon from './Icon.vue'
 
 export default {
   name: 'DocCard',
+  components: { Icon },
   props: {
     recent: vueTypes.bool.def(false)
   }
@@ -25,12 +25,17 @@ export default {
 
 
 <style lang='postcss' scoped>
+@define-mixin icon {
+  display: flex;
+  flex: 0 0 3rem;
+  justify-content: center;
+}
 .card {
   border: solid 1px var(--gray-blue-light);
   border-radius: 5px;
   background-color: #fff;
   height: 53px;
-  width: 263px;
+  width: 178px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,21 +44,22 @@ export default {
     background-color: var(--gray-blue-light);
   }
 
-  & .content {
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-
-    & p {
-      color: #323c47;
-      font-size: 1.25rem;
-      margin-left: 15px;
-    }
+  & .file {
+    @mixin icon;
   }
 
   & .dot {
-    margin: 5px 5px 0 0;
+    @mixin icon;
     align-self: flex-start;
+    justify-content: flex-end;
+    padding: 5px 5px 0 0;
+  }
+
+  & .label {
+    display: flex;
+    flex: 1 1 auto;
+    color: #323c47;
+    font-size: 0.8125rem;
   }
 }
 </style>
