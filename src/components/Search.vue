@@ -1,9 +1,12 @@
 <template>
   <div :data-tipe-ui="$options.name">
-    <type-icon class="search-icon" />
+    <type-icon
+      class="search-icon"
+      icon="search"
+    />
     <input
       type="search"
-      placeholder="Find everthing"
+      placeholder="Find everthing..."
     >
   </div>
 </template>
