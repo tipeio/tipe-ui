@@ -53,7 +53,6 @@
     "postcss-import": "^11.1.0",
     "postcss-loader": "^2.1.5",
     "postcss-mixins": "^6.2.0",
-    "sinon": "^5.0.7",
     "style-loader": "^0.21.0",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.5.13",
