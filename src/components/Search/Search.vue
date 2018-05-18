@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import TypeIcon from './Icon'
+import TypeIcon from '../Icon'
 
 export default {
   name: 'TipeSearch',
