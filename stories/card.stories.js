@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue'
 
-import FolderCard from '../src/components/FolderCard.vue'
-import DocCard from '../src/components/DocCard.vue'
+import FolderCard from '../src/components/FolderCard'
+import DocCard from '../src/components/DocCard'
 
 storiesOf('Cards', module)
   .add('Folder Card', () => ({

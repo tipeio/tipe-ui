@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import FolderCard from '@/components/FolderCard.vue'
+import FolderCard from '@/components/FolderCard'
 
 describe('FolderCard.vue', () => {
   it('renders', () => {

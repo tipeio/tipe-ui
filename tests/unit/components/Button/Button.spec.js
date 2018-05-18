@@ -1,23 +1,23 @@
 import { shallowMount } from '@vue/test-utils'
-import TipeButton from '@/components/TipeButton.vue'
+import Button from '@/components/Button'
 
-describe('TipeButton.vue', () => {
+describe('Button.vue', () => {
   it('renders a defaut button', () => {
-    const wrapper = shallowMount(TipeButton)
+    const wrapper = shallowMount(Button)
     expect(wrapper).toMatchSnapshot()
     expect(wrapper.classes()).toContain('purple')
     expect(wrapper.classes()).toContain('medium')
     expect(wrapper.classes()).not.toContain('outline')
   })
   it('should render a default outline button', () => {
-    const wrapper = shallowMount(TipeButton, { propsData: { outline: true } })
+    const wrapper = shallowMount(Button, { propsData: { outline: true } })
     expect(wrapper).toMatchSnapshot()
     expect(wrapper.classes()).toContain('outline')
     expect(wrapper.classes()).toContain('purple')
     expect(wrapper.classes()).toContain('medium')
   })
   it('should render a small button', () => {
-    const wrapper = shallowMount(TipeButton, {
+    const wrapper = shallowMount(Button, {
       propsData: { size: 'small' }
     })
     expect(wrapper).toMatchSnapshot()
@@ -26,7 +26,7 @@ describe('TipeButton.vue', () => {
     expect(wrapper.classes()).not.toContain('outline')
   })
   it('should render a medium button', () => {
-    const wrapper = shallowMount(TipeButton, {
+    const wrapper = shallowMount(Button, {
       propsData: { size: 'medium' }
     })
     expect(wrapper).toMatchSnapshot()
@@ -35,7 +35,7 @@ describe('TipeButton.vue', () => {
     expect(wrapper.classes()).not.toContain('outline')
   })
   it('should render a large button', () => {
-    const wrapper = shallowMount(TipeButton, {
+    const wrapper = shallowMount(Button, {
       propsData: { size: 'large' }
     })
     expect(wrapper).toMatchSnapshot()
@@ -44,7 +44,7 @@ describe('TipeButton.vue', () => {
     expect(wrapper.classes()).not.toContain('outline')
   })
   it('should render a purple button', () => {
-    const wrapper = shallowMount(TipeButton, {
+    const wrapper = shallowMount(Button, {
       propsData: { color: 'purple' }
     })
     expect(wrapper).toMatchSnapshot()
@@ -53,7 +53,7 @@ describe('TipeButton.vue', () => {
     expect(wrapper.classes()).not.toContain('outline')
   })
   it('should render a dark purple button', () => {
-    const wrapper = shallowMount(TipeButton, {
+    const wrapper = shallowMount(Button, {
       propsData: { color: 'dark-purple' }
     })
     expect(wrapper).toMatchSnapshot()
@@ -62,7 +62,7 @@ describe('TipeButton.vue', () => {
     expect(wrapper.classes()).not.toContain('outline')
   })
   it('should render a danger button', () => {
-    const wrapper = shallowMount(TipeButton, {
+    const wrapper = shallowMount(Button, {
       propsData: { color: 'danger' }
     })
     expect(wrapper).toMatchSnapshot()
@@ -71,7 +71,7 @@ describe('TipeButton.vue', () => {
     expect(wrapper.classes()).not.toContain('outline')
   })
   it('should render a danger outline button', () => {
-    const wrapper = shallowMount(TipeButton, {
+    const wrapper = shallowMount(Button, {
       propsData: { outline: true, color: 'danger' }
     })
     expect(wrapper).toMatchSnapshot()
@@ -80,7 +80,7 @@ describe('TipeButton.vue', () => {
     expect(wrapper.classes()).toContain('outline')
   })
   it('should render a small purple outline button', () => {
-    const wrapper = shallowMount(TipeButton, {
+    const wrapper = shallowMount(Button, {
       propsData: { color: 'purple', outline: true, size: 'small' }
     })
     expect(wrapper).toMatchSnapshot()
@@ -89,7 +89,7 @@ describe('TipeButton.vue', () => {
     expect(wrapper.classes()).toContain('outline')
   })
   it('should render a medium dark purple button', () => {
-    const wrapper = shallowMount(TipeButton, {
+    const wrapper = shallowMount(Button, {
       propsData: { color: 'dark-purple', size: 'medium' }
     })
     expect(wrapper).toMatchSnapshot()
@@ -99,7 +99,7 @@ describe('TipeButton.vue', () => {
   })
   it('should emit an onclick event', () => {
     const action = jest.fn()
-    const wrapper = shallowMount(TipeButton, {
+    const wrapper = shallowMount(Button, {
       propsData: { '@click': action }
     })
     wrapper.setMethods({ action: action('clicked') })
