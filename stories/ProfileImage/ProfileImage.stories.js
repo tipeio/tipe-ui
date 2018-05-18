@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/vue'
 
-import TipeProfileImage from '../src/components/ProfileImage.vue'
+import TipeProfileImage from '../../src/components/ProfileImage'
 
 storiesOf('Profile Image', module)
   .add('no profile image', () => ({

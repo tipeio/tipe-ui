@@ -10,7 +10,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import TipeImage from './Image'
+import TipeImage from '../Image'
 
 export default {
   name: 'TipeProfileImage',
