@@ -2,6 +2,7 @@ import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
 
 import TipeButton from '../src/components/TipeButton.vue'
+
 import '../src/styles/globals.css'
 
 storiesOf('Button', module)
@@ -68,5 +69,11 @@ storiesOf('Button', module)
     components: { TipeButton },
     template:
       '<tipe-button color="gray" size="large" outline @click="action">Large Outline Gray</tipe-button>',
+    methods: { action: action('clicked') }
+  }))
+  .add('Icon Button', () => ({
+    components: { TipeButton },
+    template:
+      '<tipe-button color="purple" size="small" icon="plus" @click="action">Icon Button</tipe-button>',
     methods: { action: action('clicked') }
   }))

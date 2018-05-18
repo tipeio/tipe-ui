@@ -4,21 +4,28 @@
     :class="classObject"
     @click="onClick"
   >
+    <icon 
+      v-if="icon" 
+      :icon="icon" 
+      class="icon" />
     <slot />
   </button>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
+import Icon from './Icon.vue'
 
 export default {
   name: 'TipeButton',
+  components: { Icon },
   props: {
     size: vueTypes.oneOf(['small', 'medium', 'large']).def('medium'),
     outline: vueTypes.bool.def(false),
     color: vueTypes
       .oneOf(['purple', 'danger', 'dark-purple', 'gray'])
-      .def('purple')
+      .def('purple'),
+    icon: vueTypes.string.def('')
   },
   computed: {
     classObject: function() {
@@ -62,6 +69,11 @@ button {
   color: #fff;
   justify-content: center;
   align-items: center;
+
+  & .icon {
+    padding-right: 10px;
+    color: #fff;
+  }
 
   &.purple {
     background-image: var(--purple-gradient);
