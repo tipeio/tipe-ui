@@ -64,3 +64,17 @@ Example
 ```
 <tipe-image url="http://placekitten.com/200/300"  alt="a kitten" />
 ```
+
+### TipeIcon
+
+The TipeImage component currently supports `icon`. See inside `src/icons` for supported icons.
+
+* icon
+  * Type: String
+  * Default Value: `''`
+
+Example
+
+```
+<tipe-icon icon="plus" />
+```
