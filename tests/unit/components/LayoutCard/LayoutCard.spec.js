@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import LayoutCard from '@/components/LayoutCard.vue'
+import LayoutCard from '@/components/LayoutCard'
 
 describe('LayoutCard.vue', () => {
   it('renders', () => {
