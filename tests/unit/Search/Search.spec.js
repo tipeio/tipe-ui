@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
-import Search from '@/components/Search.vue'
-import Icon from '@/components/Icon.vue'
+import Search from '@/components/Search'
+import Icon from '@/components/Icon'
 
 describe('Search', () => {
   it('has correct data-tipe-iu attibute', () => {
