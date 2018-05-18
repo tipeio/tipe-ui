@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/vue'
-import TipeTopbar from '../src/components/Topbar.vue'
+import TipeTopbar from '../../src/components/Topbar'
 
 storiesOf('Topbar', module).add('default', () => ({
   components: { TipeTopbar },

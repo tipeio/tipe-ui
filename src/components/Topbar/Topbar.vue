@@ -12,9 +12,9 @@
 <script>
 import vueTypes from 'vue-types'
 
-import TipeSearch from './Search'
-import TipeProfileImage from './ProfileImage'
-import TipeSeperator from './Seperator'
+import TipeSearch from '../Search'
+import TipeProfileImage from '../ProfileImage'
+import TipeSeperator from '../Seperator'
 
 export default {
   name: 'TipeTopbar',
