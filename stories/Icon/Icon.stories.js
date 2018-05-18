@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/vue'
 
-import TipeIcon from '../src/components/Icon.vue'
+import TipeIcon from '../../src/components/Icon'
 
 const style = () => ({
   height: '1rem',
