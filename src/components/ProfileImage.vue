@@ -37,6 +37,7 @@ export default {
   margin: 0;
   height: 3.125rem;
   width: 3.125rem;
+  background-color: transparent;
 }
 
 .image {
