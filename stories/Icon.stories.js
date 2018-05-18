@@ -43,3 +43,13 @@ storiesOf('Icon', module)
     computed: { style },
     template: '<tipe-icon :style="style" icon="settings" />'
   }))
+  .add('options', () => ({
+    components: { TipeIcon },
+    computed: { style },
+    template: '<tipe-icon :style="style" icon="options" />'
+  }))
+  .add('dot', () => ({
+    components: { TipeIcon },
+    computed: { style },
+    template: '<tipe-icon :style="style" icon="dot" />'
+  }))
