@@ -3,18 +3,6 @@
     :data-tipe-ui="$options.name"
     :style="style"
   >
-    <div
-      v-if="status === 'waiting'"
-      class="waiting"
-    >
-      loading...
-    </div>
-    <div
-      v-else-if="status === 'error'"
-      class="error"
-    >
-      error
-    </div>
     <img
       :alt="alt"
       :src="url"
@@ -29,8 +17,7 @@ export default {
   name: 'TipeImage',
   props: {
     alt: vueTypes.string.def(''),
-    url: vueTypes.string.def(''),
-    status: vueTypes.string
+    url: vueTypes.string.def('')
   },
   computed: {
     style() {

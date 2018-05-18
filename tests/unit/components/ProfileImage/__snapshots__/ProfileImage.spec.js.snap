@@ -78,7 +78,6 @@ VueWrapper {
           "_propKeys": Array [
             "alt",
             "url",
-            "imageLoader",
           ],
           "_refElm": null,
           "_renderChildren": undefined,
@@ -152,7 +151,6 @@ VueWrapper {
         "_isVue": true,
         "_props": Object {
           "alt": "user profile image",
-          "imageLoader": [Function],
           "url": "http://placekitten.com/200/300",
         },
         "_renderProxy": VueComponent {
@@ -214,7 +212,6 @@ VueWrapper {
             "_propKeys": Array [
               "alt",
               "url",
-              "imageLoader",
             ],
             "_refElm": null,
             "_renderChildren": undefined,
@@ -288,7 +285,6 @@ VueWrapper {
           "_isVue": true,
           "_props": Object {
             "alt": "user profile image",
-            "imageLoader": [Function],
             "url": "http://placekitten.com/200/300",
           },
           "_renderProxy": [Circular],
@@ -563,10 +559,6 @@ VueWrapper {
               "default": "",
               "type": [Function],
             },
-            "imageLoader": Object {
-              "default": [Function],
-              "type": [Function],
-            },
             "url": Object {
               "default": "",
               "type": [Function],
@@ -719,7 +711,6 @@ VueWrapper {
             "_propKeys": Array [
               "alt",
               "url",
-              "imageLoader",
             ],
             "_refElm": null,
             "_renderChildren": undefined,
@@ -793,7 +784,6 @@ VueWrapper {
           "_isVue": true,
           "_props": Object {
             "alt": "user profile image",
-            "imageLoader": [Function],
             "url": "http://placekitten.com/200/300",
           },
           "_renderProxy": VueComponent {
@@ -855,7 +845,6 @@ VueWrapper {
               "_propKeys": Array [
                 "alt",
                 "url",
-                "imageLoader",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -929,7 +918,6 @@ VueWrapper {
             "_isVue": true,
             "_props": Object {
               "alt": "user profile image",
-              "imageLoader": [Function],
               "url": "http://placekitten.com/200/300",
             },
             "_renderProxy": [Circular],
@@ -1204,10 +1192,6 @@ VueWrapper {
                 "default": "",
                 "type": [Function],
               },
-              "imageLoader": Object {
-                "default": [Function],
-                "type": [Function],
-              },
               "url": Object {
                 "default": "",
                 "type": [Function],
@@ -1325,7 +1309,6 @@ VueWrapper {
                 "_propKeys": Array [
                   "alt",
                   "url",
-                  "imageLoader",
                 ],
                 "_refElm": null,
                 "_renderChildren": undefined,
@@ -1355,7 +1338,6 @@ VueWrapper {
               "_isVue": true,
               "_props": Object {
                 "alt": "user profile image",
-                "imageLoader": [Function],
                 "url": "http://placekitten.com/200/300",
               },
               "_renderProxy": VueComponent {
@@ -1373,7 +1355,6 @@ VueWrapper {
                   "_propKeys": Array [
                     "alt",
                     "url",
-                    "imageLoader",
                   ],
                   "_refElm": null,
                   "_renderChildren": undefined,
@@ -1403,7 +1384,6 @@ VueWrapper {
                 "_isVue": true,
                 "_props": Object {
                   "alt": "user profile image",
-                  "imageLoader": [Function],
                   "url": "http://placekitten.com/200/300",
                 },
                 "_renderProxy": [Circular],
@@ -1733,7 +1713,6 @@ VueWrapper {
               "_propKeys": Array [
                 "alt",
                 "url",
-                "imageLoader",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -1763,7 +1742,6 @@ VueWrapper {
             "_isVue": true,
             "_props": Object {
               "alt": "user profile image",
-              "imageLoader": [Function],
               "url": "http://placekitten.com/200/300",
             },
             "_renderProxy": VueComponent {
@@ -1781,7 +1759,6 @@ VueWrapper {
                 "_propKeys": Array [
                   "alt",
                   "url",
-                  "imageLoader",
                 ],
                 "_refElm": null,
                 "_renderChildren": undefined,
@@ -1811,7 +1788,6 @@ VueWrapper {
               "_isVue": true,
               "_props": Object {
                 "alt": "user profile image",
-                "imageLoader": [Function],
                 "url": "http://placekitten.com/200/300",
               },
               "_renderProxy": [Circular],
@@ -2138,7 +2114,6 @@ VueWrapper {
             "_propKeys": Array [
               "alt",
               "url",
-              "imageLoader",
             ],
             "_refElm": null,
             "_renderChildren": undefined,
@@ -2185,10 +2160,6 @@ VueWrapper {
                     "props": Object {
                       "alt": Object {
                         "default": "",
-                        "type": [Function],
-                      },
-                      "imageLoader": Object {
-                        "default": [Function],
                         "type": [Function],
                       },
                       "url": Object {
@@ -2324,10 +2295,6 @@ VueWrapper {
                       "props": Object {
                         "alt": Object {
                           "default": "",
-                          "type": [Function],
-                        },
-                        "imageLoader": Object {
-                          "default": [Function],
                           "type": [Function],
                         },
                         "url": Object {
@@ -2649,10 +2616,6 @@ VueWrapper {
                       "default": "",
                       "type": [Function],
                     },
-                    "imageLoader": Object {
-                      "default": [Function],
-                      "type": [Function],
-                    },
                     "url": Object {
                       "default": "",
                       "type": [Function],
@@ -2786,10 +2749,6 @@ VueWrapper {
                     "props": Object {
                       "alt": Object {
                         "default": "",
-                        "type": [Function],
-                      },
-                      "imageLoader": Object {
-                        "default": [Function],
                         "type": [Function],
                       },
                       "url": Object {
@@ -3107,10 +3066,6 @@ VueWrapper {
                       "default": "",
                       "type": [Function],
                     },
-                    "imageLoader": Object {
-                      "default": [Function],
-                      "type": [Function],
-                    },
                     "url": Object {
                       "default": "",
                       "type": [Function],
@@ -3244,10 +3199,6 @@ VueWrapper {
                     "props": Object {
                       "alt": Object {
                         "default": "",
-                        "type": [Function],
-                      },
-                      "imageLoader": Object {
-                        "default": [Function],
                         "type": [Function],
                       },
                       "url": Object {
@@ -3536,7 +3487,6 @@ VueWrapper {
           "_isVue": true,
           "_props": Object {
             "alt": "user profile image",
-            "imageLoader": [Function],
             "url": "http://placekitten.com/200/300",
           },
           "_renderProxy": VueComponent {
@@ -3554,7 +3504,6 @@ VueWrapper {
               "_propKeys": Array [
                 "alt",
                 "url",
-                "imageLoader",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -3601,10 +3550,6 @@ VueWrapper {
                       "props": Object {
                         "alt": Object {
                           "default": "",
-                          "type": [Function],
-                        },
-                        "imageLoader": Object {
-                          "default": [Function],
                           "type": [Function],
                         },
                         "url": Object {
@@ -3740,10 +3685,6 @@ VueWrapper {
                         "props": Object {
                           "alt": Object {
                             "default": "",
-                            "type": [Function],
-                          },
-                          "imageLoader": Object {
-                            "default": [Function],
                             "type": [Function],
                           },
                           "url": Object {
@@ -4065,10 +4006,6 @@ VueWrapper {
                         "default": "",
                         "type": [Function],
                       },
-                      "imageLoader": Object {
-                        "default": [Function],
-                        "type": [Function],
-                      },
                       "url": Object {
                         "default": "",
                         "type": [Function],
@@ -4202,10 +4139,6 @@ VueWrapper {
                       "props": Object {
                         "alt": Object {
                           "default": "",
-                          "type": [Function],
-                        },
-                        "imageLoader": Object {
-                          "default": [Function],
                           "type": [Function],
                         },
                         "url": Object {
@@ -4523,10 +4456,6 @@ VueWrapper {
                         "default": "",
                         "type": [Function],
                       },
-                      "imageLoader": Object {
-                        "default": [Function],
-                        "type": [Function],
-                      },
                       "url": Object {
                         "default": "",
                         "type": [Function],
@@ -4660,10 +4589,6 @@ VueWrapper {
                       "props": Object {
                         "alt": Object {
                           "default": "",
-                          "type": [Function],
-                        },
-                        "imageLoader": Object {
-                          "default": [Function],
                           "type": [Function],
                         },
                         "url": Object {
@@ -4952,7 +4877,6 @@ VueWrapper {
             "_isVue": true,
             "_props": Object {
               "alt": "user profile image",
-              "imageLoader": [Function],
               "url": "http://placekitten.com/200/300",
             },
             "_renderProxy": [Circular],
@@ -5126,7 +5050,6 @@ VueWrapper {
                 "_propKeys": Array [
                   "alt",
                   "url",
-                  "imageLoader",
                 ],
                 "_refElm": null,
                 "_renderChildren": undefined,
@@ -5156,7 +5079,6 @@ VueWrapper {
               "_isVue": true,
               "_props": Object {
                 "alt": "user profile image",
-                "imageLoader": [Function],
                 "url": "http://placekitten.com/200/300",
               },
               "_renderProxy": VueComponent {
@@ -5174,7 +5096,6 @@ VueWrapper {
                   "_propKeys": Array [
                     "alt",
                     "url",
-                    "imageLoader",
                   ],
                   "_refElm": null,
                   "_renderChildren": undefined,
@@ -5204,7 +5125,6 @@ VueWrapper {
                 "_isVue": true,
                 "_props": Object {
                   "alt": "user profile image",
-                  "imageLoader": [Function],
                   "url": "http://placekitten.com/200/300",
                 },
                 "_renderProxy": [Circular],
@@ -5391,10 +5311,6 @@ VueWrapper {
                     "default": "",
                     "type": [Function],
                   },
-                  "imageLoader": Object {
-                    "default": [Function],
-                    "type": [Function],
-                  },
                   "url": Object {
                     "default": "",
                     "type": [Function],
@@ -5503,7 +5419,6 @@ VueWrapper {
                   "_propKeys": Array [
                     "alt",
                     "url",
-                    "imageLoader",
                   ],
                   "_refElm": null,
                   "_renderChildren": undefined,
@@ -5533,7 +5448,6 @@ VueWrapper {
                 "_isVue": true,
                 "_props": Object {
                   "alt": "user profile image",
-                  "imageLoader": [Function],
                   "url": "http://placekitten.com/200/300",
                 },
                 "_renderProxy": VueComponent {
@@ -5551,7 +5465,6 @@ VueWrapper {
                     "_propKeys": Array [
                       "alt",
                       "url",
-                      "imageLoader",
                     ],
                     "_refElm": null,
                     "_renderChildren": undefined,
@@ -5581,7 +5494,6 @@ VueWrapper {
                   "_isVue": true,
                   "_props": Object {
                     "alt": "user profile image",
-                    "imageLoader": [Function],
                     "url": "http://placekitten.com/200/300",
                   },
                   "_renderProxy": [Circular],
@@ -5766,10 +5678,6 @@ VueWrapper {
                   "props": Object {
                     "alt": Object {
                       "default": "",
-                      "type": [Function],
-                    },
-                    "imageLoader": Object {
-                      "default": [Function],
                       "type": [Function],
                     },
                     "url": Object {
@@ -6135,7 +6043,6 @@ VueWrapper {
             "_propKeys": Array [
               "alt",
               "url",
-              "imageLoader",
             ],
             "_refElm": null,
             "_renderChildren": undefined,
@@ -6209,7 +6116,6 @@ VueWrapper {
           "_isVue": true,
           "_props": Object {
             "alt": "user profile image",
-            "imageLoader": [Function],
             "url": "http://placekitten.com/200/300",
           },
           "_renderProxy": VueComponent {
@@ -6271,7 +6177,6 @@ VueWrapper {
               "_propKeys": Array [
                 "alt",
                 "url",
-                "imageLoader",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -6345,7 +6250,6 @@ VueWrapper {
             "_isVue": true,
             "_props": Object {
               "alt": "user profile image",
-              "imageLoader": [Function],
               "url": "http://placekitten.com/200/300",
             },
             "_renderProxy": [Circular],
@@ -6620,10 +6524,6 @@ VueWrapper {
                 "default": "",
                 "type": [Function],
               },
-              "imageLoader": Object {
-                "default": [Function],
-                "type": [Function],
-              },
               "url": Object {
                 "default": "",
                 "type": [Function],
@@ -6776,7 +6676,6 @@ VueWrapper {
               "_propKeys": Array [
                 "alt",
                 "url",
-                "imageLoader",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -6850,7 +6749,6 @@ VueWrapper {
             "_isVue": true,
             "_props": Object {
               "alt": "user profile image",
-              "imageLoader": [Function],
               "url": "http://placekitten.com/200/300",
             },
             "_renderProxy": VueComponent {
@@ -6912,7 +6810,6 @@ VueWrapper {
                 "_propKeys": Array [
                   "alt",
                   "url",
-                  "imageLoader",
                 ],
                 "_refElm": null,
                 "_renderChildren": undefined,
@@ -6986,7 +6883,6 @@ VueWrapper {
               "_isVue": true,
               "_props": Object {
                 "alt": "user profile image",
-                "imageLoader": [Function],
                 "url": "http://placekitten.com/200/300",
               },
               "_renderProxy": [Circular],
@@ -7259,10 +7155,6 @@ VueWrapper {
               "props": Object {
                 "alt": Object {
                   "default": "",
-                  "type": [Function],
-                },
-                "imageLoader": Object {
-                  "default": [Function],
                   "type": [Function],
                 },
                 "url": Object {

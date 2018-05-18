@@ -1,16 +1,17 @@
 <template>
-  <tipe-image
-    :url="url"
-    :alt="alt"
-    :status="status"
-  />
+  <error-template v-if="status === 'error'"/>
+  <tipe-image v-else-if="status === 'ok'"/>
+  <waiting-template v-else/>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
 import { Machine } from 'xstate'
-import TipeImage from './Image.vue'
 import imageLoader from '../../libs/imageLoader'
+
+import TipeImage from './Image.vue'
+import ErrorTemplate from './templates/ErrorTemplate.vue'
+import WaitingTemplate from './templates/WaitingTemplate.vue'
 
 const status = Machine({
   initial: 'waiting',
@@ -29,12 +30,14 @@ const status = Machine({
 export default {
   name: 'TipeImageContainer',
   components: {
-    TipeImage
+    TipeImage,
+    ErrorTemplate,
+    WaitingTemplate
   },
   props: {
     alt: vueTypes.string.def(''),
     url: vueTypes.string.def(''),
-    imageLoader: vueTypes.func.def(imageLoader)
+    __imageLoader__: vueTypes.func.def(imageLoader)
   },
   data() {
     return {
@@ -55,7 +58,7 @@ export default {
       this.status = status.transition(this.status, 'error').value
     },
     load() {
-      this.imageLoader(this.url)
+      this.__imageLoader__(this.url)
         .then(this.ok)
         .catch(this.error)
     }
