@@ -1,5 +1,6 @@
 <template>
   <object
+    :data-tipe-ui="$options.name"
     :data="src"
     type="image/svg+xml">
     <img :src="src" >
