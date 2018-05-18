@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import DocCard from '@/components/DocCard.vue'
+import DocCard from '@/components/DocCard'
 
 describe('DocCard.vue', () => {
   it('renders', () => {

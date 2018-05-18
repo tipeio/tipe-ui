@@ -12,7 +12,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import Icon from './Icon.vue'
+import Icon from '../Icon.vue'
 
 export default {
   name: 'DocCard',
