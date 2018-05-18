@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TipeButton.vue renders a defaut button 1`] = `
+exports[`Button.vue renders a defaut button 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -4158,7 +4158,7 @@ VueWrapper {
 }
 `;
 
-exports[`TipeButton.vue should render a danger button 1`] = `
+exports[`Button.vue should render a danger button 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -8328,7 +8328,7 @@ VueWrapper {
 }
 `;
 
-exports[`TipeButton.vue should render a danger outline button 1`] = `
+exports[`Button.vue should render a danger outline button 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -12502,7 +12502,7 @@ VueWrapper {
 }
 `;
 
-exports[`TipeButton.vue should render a dark purple button 1`] = `
+exports[`Button.vue should render a dark purple button 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -16672,7 +16672,7 @@ VueWrapper {
 }
 `;
 
-exports[`TipeButton.vue should render a default outline button 1`] = `
+exports[`Button.vue should render a default outline button 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -20842,7 +20842,7 @@ VueWrapper {
 }
 `;
 
-exports[`TipeButton.vue should render a large button 1`] = `
+exports[`Button.vue should render a large button 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -25012,7 +25012,7 @@ VueWrapper {
 }
 `;
 
-exports[`TipeButton.vue should render a medium button 1`] = `
+exports[`Button.vue should render a medium button 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -29182,7 +29182,7 @@ VueWrapper {
 }
 `;
 
-exports[`TipeButton.vue should render a medium dark purple button 1`] = `
+exports[`Button.vue should render a medium dark purple button 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -33356,7 +33356,7 @@ VueWrapper {
 }
 `;
 
-exports[`TipeButton.vue should render a purple button 1`] = `
+exports[`Button.vue should render a purple button 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -37526,7 +37526,7 @@ VueWrapper {
 }
 `;
 
-exports[`TipeButton.vue should render a small button 1`] = `
+exports[`Button.vue should render a small button 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -41696,7 +41696,7 @@ VueWrapper {
 }
 `;
 
-exports[`TipeButton.vue should render a small purple outline button 1`] = `
+exports[`Button.vue should render a small purple outline button 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],

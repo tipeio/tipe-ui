@@ -22,9 +22,9 @@ yarn storybook
 
 ## Components
 
-### TipeButton
+### Button
 
-The TipeButton component currently supports `size`, `outline`, and `color` props.
+The Button component currently supports `size`, `outline`, and `color` props.
 
 * Size
   * Type: String
