@@ -47,3 +47,20 @@ Example
 ```
 <tipe-button outline @click="action">Outline Button</tipe-button>
 ```
+
+### TipeImage
+
+The TipeImage component currently supports `url` and `alt`.
+
+* url
+  * Type: String
+  * Default Value: `''`
+* alt
+  * Type: String
+  * Default: `''`
+
+Example
+
+```
+<tipe-image url="http://placekitten.com/200/300"  alt="a kitten" />
+```
