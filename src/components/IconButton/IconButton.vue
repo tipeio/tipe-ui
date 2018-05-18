@@ -19,7 +19,7 @@ export default {
   components: { Icon },
   props: {
     round: vueTypes.bool.def(false),
-    icon: vueTypes.string.def('settings').isRequired
+    icon: vueTypes.string.isRequired
   },
   computed: {
     classObject: function() {

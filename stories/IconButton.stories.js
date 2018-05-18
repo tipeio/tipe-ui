@@ -8,11 +8,11 @@ import '../src/styles/globals.css'
 storiesOf('Icon Button', module)
   .add('icon button', () => ({
     components: { IconButton },
-    template: '<icon-button icon="folder" @click="action"/>',
+    template: '<icon-button icon="delete" @click="action"/>',
     methods: { action: action('clicked') }
   }))
   .add('round icon button', () => ({
     components: { IconButton },
-    template: '<icon-button round icon="sign-out" @click="action"/>',
+    template: '<icon-button round icon="equalizer" @click="action"/>',
     methods: { action: action('clicked') }
   }))
