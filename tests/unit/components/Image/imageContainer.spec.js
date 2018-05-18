@@ -1,47 +1,51 @@
 import { shallowMount } from '@vue/test-utils'
 import ImageContainer from '@/components/Image/ImageContainer.vue'
+import Image from '@/components/Image/Image.vue'
+import ErrorTemplate from '@/components/Image/templates/ErrorTemplate.vue'
+import WaitingTemplate from '@/components/Image/templates/WaitingTemplate.vue'
+import faker from 'faker'
+import mockImageLoader from '../../utils/mockImageLoader'
 
 describe('Image Container', () => {
-  it('name is TipeImageContainer', () => {
-    const wrapper = shallowMount(ImageContainer)
-    expect(wrapper.name()).toBe('TipeImageContainer')
-  })
+  describe('<template>', () => {
+    it('matches previous snapshot', () => {
+      const wrapper = shallowMount(ImageContainer)
 
-  it('image is loading', () => {
-    const wrapper = shallowMount(ImageContainer)
-
-    expect(wrapper.vm.status).toBe('waiting')
-  })
-
-  it('image has loaded', async () => {
-    let res
-    const Image = new Promise(resolve => {
-      res = resolve
+      expect(wrapper).toMatchSnapshot()
     })
-    const imageLoader = () => Image
-    const propsData = { imageLoader }
-    const wrapper = shallowMount(ImageContainer, { propsData })
-
-    res()
-    await Image
-
-    expect(wrapper.vm.status).toBe('ok')
   })
 
-  it('image failed to load', async () => {
-    let rej
-    const Image = new Promise((resolve, reject) => {
-      rej = reject
+  describe(':props', () => {
+    it(':url(invalid) - should render ErrorTemplate', () => {
+      const imageLoader = mockImageLoader()
+      const propsData = {
+        __imageLoader__: imageLoader
+      }
+      const wrapper = shallowMount(ImageContainer, { propsData })
+
+      imageLoader.reject()
+      expect(wrapper.find(ErrorTemplate).exists()).toBe(true)
     })
 
-    const imageLoader = () => Image
-    const propsData = { imageLoader }
-    const wrapper = shallowMount(ImageContainer, { propsData })
+    it(':url(loading) - should render WaitingTemplate', () => {
+      const propsData = {
+        url: faker.internet.url()
+      }
+      const wrapper = shallowMount(ImageContainer, { propsData })
 
-    try {
-      await rej()
-    } catch (error) {
-      expect(wrapper.vm.status).toBe('error')
-    }
+      expect(wrapper.find(WaitingTemplate).exists()).toBe(true)
+    })
+
+    it(':url(done) - should render WaitingTemplate', () => {
+      const imageLoader = mockImageLoader()
+      const propsData = {
+        url: faker.internet.url(),
+        __imageLoader__: imageLoader
+      }
+      const wrapper = shallowMount(ImageContainer, { propsData })
+
+      imageLoader.resolve()
+      expect(wrapper.find(Image).exists()).toBe(true)
+    })
   })
 })
