@@ -1,6 +1,6 @@
 <template>
-  <div 
-    :data-tipe-ui="$options.name" 
+  <div
+    :data-tipe-ui="$options.name"
     class="card">
     <div class="icon"><icon icon="folder"/></div>
     <div class="label"><p><slot /></p></div>
