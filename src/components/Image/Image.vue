@@ -3,6 +3,18 @@
     :data-tipe-ui="$options.name"
     :style="style"
   >
+    <div
+      v-if="status === 'waiting'"
+      class="waiting"
+    >
+      loading...
+    </div>
+    <div
+      v-else-if="status === 'error'"
+      class="error"
+    >
+      error
+    </div>
     <img
       :alt="alt"
       :src="url"
@@ -12,58 +24,19 @@
 
 <script>
 import vueTypes from 'vue-types'
-import { Machine } from 'xstate'
-
-const status = Machine({
-  initial: 'waiting',
-  states: {
-    waiting: {
-      on: {
-        done: 'ok',
-        error: 'error'
-      }
-    },
-    ok: {},
-    error: {}
-  }
-})
 
 export default {
   name: 'TipeImage',
   props: {
     alt: vueTypes.string.def(''),
-    url: vueTypes.string.def('')
-  },
-  data() {
-    return {
-      status: status.initial
-    }
+    url: vueTypes.string.def(''),
+    status: vueTypes.string
   },
   computed: {
     style() {
       return {
         backgroundImage: `url(${this.url})`
       }
-    }
-  },
-  beforeMount() {
-    this.load()
-  },
-  beforeUpdated() {
-    this.load()
-  },
-  methods: {
-    ok() {
-      this.status = status.transition(this.status, 'done').value
-    },
-    error() {
-      this.status = status.transition(this.status, 'error').value
-    },
-    load() {
-      const image = new Image()
-      image.onload = this.ok.bind(this)
-      image.onerror = this.error.bind(this)
-      image.src = this.url
     }
   }
 }
@@ -89,5 +62,17 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.waiting,
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.01);
+  font-size: 0.8125rem;
+  color: var(--text-gray);
 }
 </style>

@@ -1,11 +1,13 @@
 import { storiesOf } from '@storybook/vue'
 
-import TipeImage from '../src/components/Image.vue'
+import TipeImage from '../src/components/Image/'
 
 const style = {
   height: '100px',
   width: '100px'
 }
+
+const imageLoader = () => new Promise()
 
 storiesOf('Image', module)
   .add('ok', () => ({
@@ -22,4 +24,16 @@ storiesOf('Image', module)
       style: () => style
     },
     template: '<tipe-image :style="style" />'
+  }))
+  .add('waiting', () => ({
+    components: { TipeImage },
+    data() {
+      return {
+        imageLoader
+      }
+    },
+    computed: {
+      style: () => style
+    },
+    template: '<tipe-image :imageLoader="imageLoader" :style="style" />'
   }))
