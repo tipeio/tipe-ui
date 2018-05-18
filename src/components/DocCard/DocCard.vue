@@ -1,18 +1,18 @@
 <template>
-  <div 
-    :data-tipe-ui="$options.name" 
+  <div
+    :data-tipe-ui="$options.name"
     class="card">
     <div class="file"><icon icon="file"/></div>
     <div class="label"><p><slot /></p></div>
-    <div 
-      v-if="recent" 
+    <div
+      v-if="recent"
       class="dot"><icon icon="dot"/></div>
   </div>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
-import Icon from '../Icon.vue'
+import Icon from './Icon'
 
 export default {
   name: 'DocCard',
