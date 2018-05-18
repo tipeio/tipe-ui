@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import ImageContainer from '@/components/image/ImageContainer.vue'
+import ImageContainer from '@/components/Image/ImageContainer.vue'
 
 describe('Image Container', () => {
   it('name is TipeImageContainer', () => {
