@@ -7,7 +7,7 @@ const style = {
   width: '100px'
 }
 
-const imageLoader = () => new Promise()
+const imageLoader = () => new Promise(() => {})
 
 storiesOf('Image', module)
   .add('ok', () => ({
@@ -16,7 +16,7 @@ storiesOf('Image', module)
       style: () => style
     },
     template:
-      '<tipe-image url="http://placekitten.com/200/200" :style="style" />'
+      '<tipe-image url="http://placekitten.com/200/200" :style="style"/>'
   }))
   .add('error', () => ({
     components: { TipeImage },
@@ -35,5 +35,5 @@ storiesOf('Image', module)
     computed: {
       style: () => style
     },
-    template: '<tipe-image :imageLoader="imageLoader" :style="style" />'
+    template: '<tipe-image :imageLoader="imageLoader" :style="style"/>'
   }))
