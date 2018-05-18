@@ -9,15 +9,7 @@ storiesOf('Cards', module)
     components: { FolderCard },
     template: '<folder-card>Hero Sections</folder-card>'
   }))
-  .add('Doc Card default', () => ({
-    components: { DocCard },
-    template: '<doc-card>About</doc-card>'
-  }))
-  .add('Doc Card recent', () => ({
-    components: { DocCard },
-    template: '<doc-card recent>About</doc-card>'
-  .add('Layout Card', () => ({
+  .add('Layout Card with a Folder Card inside', () => ({
     components: { LayoutCard, FolderCard },
-    template:
-      '<layout-card><folder-card>Hero Sections</folder-card></layout-card>'
+    template: '<layout-card><h1>Hello World</h1></layout-card>'
   }))

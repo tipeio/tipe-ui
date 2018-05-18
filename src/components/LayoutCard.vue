@@ -1,7 +1,8 @@
 <template>
   <div 
     :data-tipe-ui="$options.name" 
-    class="card">
+    class="card"
+  >
     <slot/>
   </div>
 </template>
@@ -16,12 +17,10 @@ export default {
 <style lang='postcss' scoped>
 .card {
   border: solid 1px var(--gray-blue-light);
-  border-radius: 5px;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
   background-color: #fff;
-  height: 100%;
   width: 100%;
   display: flex;
-  padding: 15px;
-  margin: 10px;
 }
 </style>
