@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import Seperator from '@/components/Seperator.vue'
+import Seperator from '@/components/Seperator'
 
 describe('Seperator', () => {
   it('has correct data-tipe-iu attibute', () => {
