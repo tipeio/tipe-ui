@@ -8,7 +8,7 @@ import '../src/styles/globals.css'
 storiesOf('Icon Button', module)
   .add('icon button', () => ({
     components: { IconButton },
-    template: '<icon-button icon="delete" @click="action"/>',
+    template: '<icon-button icon="trash" @click="action"/>',
     methods: { action: action('clicked') }
   }))
   .add('round icon button', () => ({

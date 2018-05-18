@@ -1,9 +1,8 @@
 <template>
-  <object
-    :data="src"
+  <img 
+    :data="src" 
+    :src="src" 
     type="image/svg+xml">
-    <img :src="src" >
-  </object>
 </template>
 
 <script>
