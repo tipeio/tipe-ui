@@ -14,7 +14,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import Icon from './Icon'
+import Icon from '../Icon'
 
 export default {
   name: 'TipeButton',
