@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icon matches previous snapshot 1`] = `
+exports[`Icon <template> matches previous snapshot 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -77,9 +77,6 @@ VueWrapper {
           "default": "",
           "type": [Function],
         },
-      },
-      "propsData": Object {
-        "icon": "folder",
       },
       "provide": [Function],
       "render": [Function],
@@ -160,7 +157,7 @@ VueWrapper {
     "_isMounted": true,
     "_isVue": true,
     "_props": Object {
-      "icon": "folder",
+      "icon": "",
     },
     "_provided": undefined,
     "_renderProxy": VueComponent {
@@ -220,9 +217,6 @@ VueWrapper {
             "default": "",
             "type": [Function],
           },
-        },
-        "propsData": Object {
-          "icon": "folder",
         },
         "provide": [Function],
         "render": [Function],
@@ -303,7 +297,7 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "icon": "folder",
+        "icon": "",
       },
       "_provided": undefined,
       "_renderProxy": [Circular],
@@ -853,9 +847,6 @@ VueWrapper {
                 "type": [Function],
               },
             },
-            "propsData": Object {
-              "icon": "folder",
-            },
             "provide": [Function],
             "render": [Function],
             "staticRenderFns": Array [],
@@ -935,7 +926,7 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "icon": "folder",
+            "icon": "",
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
@@ -995,9 +986,6 @@ VueWrapper {
                   "default": "",
                   "type": [Function],
                 },
-              },
-              "propsData": Object {
-                "icon": "folder",
               },
               "provide": [Function],
               "render": [Function],
@@ -1078,7 +1066,7 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "icon": "folder",
+              "icon": "",
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -1505,9 +1493,6 @@ VueWrapper {
             "type": [Function],
           },
         },
-        "propsData": Object {
-          "icon": "folder",
-        },
         "provide": [Function],
         "render": [Function],
         "staticRenderFns": Array [],
@@ -1587,7 +1572,7 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "icon": "folder",
+        "icon": "",
       },
       "_provided": undefined,
       "_renderProxy": VueComponent {
@@ -1647,9 +1632,6 @@ VueWrapper {
               "default": "",
               "type": [Function],
             },
-          },
-          "propsData": Object {
-            "icon": "folder",
           },
           "provide": [Function],
           "render": [Function],
@@ -1730,7 +1712,7 @@ VueWrapper {
         "_isMounted": true,
         "_isVue": true,
         "_props": Object {
-          "icon": "folder",
+          "icon": "",
         },
         "_provided": undefined,
         "_renderProxy": [Circular],

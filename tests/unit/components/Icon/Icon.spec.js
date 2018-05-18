@@ -2,17 +2,17 @@ import { shallowMount } from '@vue/test-utils'
 import Icon from '@/components/Icon'
 
 describe('Icon', () => {
-  it('matches previous snapshot', () => {
-    const propsData = { icon: 'folder' }
-    const wrapper = shallowMount(Icon, { propsData })
+  describe('<template>', () => {
+    it('matches previous snapshot', () => {
+      const wrapper = shallowMount(Icon)
 
-    expect(wrapper).toMatchSnapshot()
-  })
+      expect(wrapper).toMatchSnapshot()
+    })
 
-  it('has correct data-tipe-iu attibute', () => {
-    const propsData = { icon: 'folder' }
-    const wrapper = shallowMount(Icon, { propsData })
+    it('has correct data-tipe-iu attibute', () => {
+      const wrapper = shallowMount(Icon)
 
-    expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeIcon')
+      expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeIcon')
+    })
   })
 })
