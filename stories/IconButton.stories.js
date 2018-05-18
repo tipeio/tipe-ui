@@ -13,6 +13,6 @@ storiesOf('Icon Button', module)
   }))
   .add('round icon button', () => ({
     components: { IconButton },
-    template: '<icon-button round icon="folder" @click="action"/>',
+    template: '<icon-button round icon="sign-out" @click="action"/>',
     methods: { action: action('clicked') }
   }))

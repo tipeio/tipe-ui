@@ -1,0 +1,24 @@
+
+<svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="20.7595802%" y1="21.3909582%" x2="106.147124%" y2="112.488626%" id="linearGradient-1">
+            <stop stop-color="#714BFE" offset="0%"></stop>
+            <stop stop-color="#6047FA" offset="51.0853452%"></stop>
+            <stop stop-color="#5727E1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile---Slide-Out" transform="translate(-238.000000, -203.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group-6" transform="translate(18.000000, 0.000000)">
+                <g id="Group-Copy-2" transform="translate(36.000000, 187.000000)">
+                    <g id="Group-7" transform="translate(7.000000, 0.000000)">
+                        <g id="sign-out" transform="translate(177.000000, 16.000000)">
+                            <path d="M10.5,15.375 C10.5,16.4105339 9.66053391,17.25 8.625,17.25 L0.75,17.25 L0.75,0.75 L8.625,0.75 C9.66053391,0.75 10.5,1.58946609 10.5,2.625 L10.5,6.375 L11.25,6.375 L11.25,2.625 C11.25,1.17525253 10.0747475,8.87714298e-17 8.625,0 L0,0 L0,18 L8.625,18 C10.0747475,18 11.25,16.8247475 11.25,15.375 L11.25,11.625 L10.5,11.625 L10.5,15.375 Z" id="Shape"></path>
+                            <polygon id="Shape" points="13.05375 5.55375 12.52125 6.0825 15.06375 8.625 6.375 8.625 6.375 9.375 15.06375 9.375 12.52125 11.9175 13.05375 12.44625 16.5 9"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

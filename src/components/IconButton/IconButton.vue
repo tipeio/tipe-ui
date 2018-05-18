@@ -51,10 +51,5 @@ button {
     border-radius: 3.125rem;
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.1);
   }
-
-  & .icon {
-    height: 1.25rem;
-    width: 1.25rem;
-  }
 }
 </style>
