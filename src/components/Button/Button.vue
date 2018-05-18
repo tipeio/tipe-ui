@@ -4,9 +4,9 @@
     :class="classObject"
     @click="onClick"
   >
-    <icon 
-      v-if="icon" 
-      :icon="icon" 
+    <icon
+      v-if="icon"
+      :icon="icon"
       class="icon" />
     <slot />
   </button>
@@ -14,7 +14,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import Icon from '../Icon.vue'
+import Icon from './Icon'
 
 export default {
   name: 'TipeButton',
