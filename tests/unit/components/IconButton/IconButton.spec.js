@@ -16,4 +16,13 @@ describe('Button.vue', () => {
     expect(wrapper).toMatchSnapshot()
     expect(wrapper.classes()).toContain('round')
   })
+  it('should emit an onclick event', () => {
+    const action = jest.fn()
+    const wrapper = shallowMount(IconButton, {
+      propsData: { '@click': action, icon: 'trash' }
+    })
+    wrapper.setMethods({ action: action('clicked') })
+    wrapper.trigger('click')
+    expect(action.mock.calls).toHaveLength(1)
+  })
 })
