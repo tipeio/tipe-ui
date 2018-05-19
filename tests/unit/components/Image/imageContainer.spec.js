@@ -36,7 +36,7 @@ describe('Image Container', () => {
       expect(wrapper.find(WaitingTemplate).exists()).toBe(true)
     })
 
-    it(':url(done) - should render WaitingTemplate', () => {
+    it(':url(done) - should render Image', () => {
       const imageLoader = mockImageLoader()
       const propsData = {
         url: faker.internet.url(),
@@ -46,6 +46,18 @@ describe('Image Container', () => {
 
       imageLoader.resolve()
       expect(wrapper.find(Image).exists()).toBe(true)
+    })
+
+    it(':url(done) - should pass url to Image', () => {
+      const imageLoader = mockImageLoader()
+      const propsData = {
+        url: faker.internet.url(),
+        __imageLoader__: imageLoader
+      }
+      const wrapper = shallowMount(ImageContainer, { propsData })
+
+      imageLoader.resolve()
+      expect(wrapper.find(Image).props().url).toBe(propsData.url)
     })
   })
 })

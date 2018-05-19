@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/vue'
 
-import TipeImage from '../src/components/Image'
+import TipeImage from '../../src/components/Image'
 
 const style = {
   height: '100px',
@@ -35,5 +35,5 @@ storiesOf('Image', module)
     computed: {
       style: () => style
     },
-    template: '<tipe-image :imageLoader="imageLoader" :style="style"/>'
+    template: '<tipe-image :__imageLoader__="imageLoader" :style="style"/>'
   }))
