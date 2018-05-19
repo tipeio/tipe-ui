@@ -1,7 +1,10 @@
 <template>
-  <error-template v-if="status === 'error'"/>
-  <tipe-image v-else-if="status === 'ok'"/>
-  <waiting-template v-else/>
+  <waiting-template v-if="status === 'waiting'"/>
+  <tipe-image
+    v-else-if="status === 'ok'"
+    :url="url"
+  />
+  <error-template v-else/>
 </template>
 
 <script>

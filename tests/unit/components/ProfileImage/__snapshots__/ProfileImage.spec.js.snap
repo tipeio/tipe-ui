@@ -78,6 +78,7 @@ VueWrapper {
           "_propKeys": Array [
             "alt",
             "url",
+            "__imageLoader__",
           ],
           "_refElm": null,
           "_renderChildren": undefined,
@@ -150,6 +151,7 @@ VueWrapper {
         "_isMounted": true,
         "_isVue": true,
         "_props": Object {
+          "__imageLoader__": [Function],
           "alt": "user profile image",
           "url": "http://placekitten.com/200/300",
         },
@@ -212,6 +214,7 @@ VueWrapper {
             "_propKeys": Array [
               "alt",
               "url",
+              "__imageLoader__",
             ],
             "_refElm": null,
             "_renderChildren": undefined,
@@ -284,6 +287,7 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
+            "__imageLoader__": [Function],
             "alt": "user profile image",
             "url": "http://placekitten.com/200/300",
           },
@@ -555,6 +559,10 @@ VueWrapper {
           "normalizedStyle": undefined,
           "on": undefined,
           "props": Object {
+            "__imageLoader__": Object {
+              "default": [Function],
+              "type": [Function],
+            },
             "alt": Object {
               "default": "",
               "type": [Function],
@@ -711,6 +719,7 @@ VueWrapper {
             "_propKeys": Array [
               "alt",
               "url",
+              "__imageLoader__",
             ],
             "_refElm": null,
             "_renderChildren": undefined,
@@ -783,6 +792,7 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
+            "__imageLoader__": [Function],
             "alt": "user profile image",
             "url": "http://placekitten.com/200/300",
           },
@@ -845,6 +855,7 @@ VueWrapper {
               "_propKeys": Array [
                 "alt",
                 "url",
+                "__imageLoader__",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -917,6 +928,7 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
+              "__imageLoader__": [Function],
               "alt": "user profile image",
               "url": "http://placekitten.com/200/300",
             },
@@ -1188,6 +1200,10 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__imageLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
               "alt": Object {
                 "default": "",
                 "type": [Function],
@@ -1309,6 +1325,7 @@ VueWrapper {
                 "_propKeys": Array [
                   "alt",
                   "url",
+                  "__imageLoader__",
                 ],
                 "_refElm": null,
                 "_renderChildren": undefined,
@@ -1337,6 +1354,7 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
+                "__imageLoader__": [Function],
                 "alt": "user profile image",
                 "url": "http://placekitten.com/200/300",
               },
@@ -1355,6 +1373,7 @@ VueWrapper {
                   "_propKeys": Array [
                     "alt",
                     "url",
+                    "__imageLoader__",
                   ],
                   "_refElm": null,
                   "_renderChildren": undefined,
@@ -1383,6 +1402,7 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
+                  "__imageLoader__": [Function],
                   "alt": "user profile image",
                   "url": "http://placekitten.com/200/300",
                 },
@@ -1713,6 +1733,7 @@ VueWrapper {
               "_propKeys": Array [
                 "alt",
                 "url",
+                "__imageLoader__",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -1741,6 +1762,7 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
+              "__imageLoader__": [Function],
               "alt": "user profile image",
               "url": "http://placekitten.com/200/300",
             },
@@ -1759,6 +1781,7 @@ VueWrapper {
                 "_propKeys": Array [
                   "alt",
                   "url",
+                  "__imageLoader__",
                 ],
                 "_refElm": null,
                 "_renderChildren": undefined,
@@ -1787,6 +1810,7 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
+                "__imageLoader__": [Function],
                 "alt": "user profile image",
                 "url": "http://placekitten.com/200/300",
               },
@@ -2114,6 +2138,7 @@ VueWrapper {
             "_propKeys": Array [
               "alt",
               "url",
+              "__imageLoader__",
             ],
             "_refElm": null,
             "_renderChildren": undefined,
@@ -2158,6 +2183,10 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
+                      "__imageLoader__": Object {
+                        "default": [Function],
+                        "type": [Function],
+                      },
                       "alt": Object {
                         "default": "",
                         "type": [Function],
@@ -2293,6 +2322,10 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
+                        "__imageLoader__": Object {
+                          "default": [Function],
+                          "type": [Function],
+                        },
                         "alt": Object {
                           "default": "",
                           "type": [Function],
@@ -2612,6 +2645,10 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
+                    "__imageLoader__": Object {
+                      "default": [Function],
+                      "type": [Function],
+                    },
                     "alt": Object {
                       "default": "",
                       "type": [Function],
@@ -2747,6 +2784,10 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
+                      "__imageLoader__": Object {
+                        "default": [Function],
+                        "type": [Function],
+                      },
                       "alt": Object {
                         "default": "",
                         "type": [Function],
@@ -3062,6 +3103,10 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
+                    "__imageLoader__": Object {
+                      "default": [Function],
+                      "type": [Function],
+                    },
                     "alt": Object {
                       "default": "",
                       "type": [Function],
@@ -3197,6 +3242,10 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
+                      "__imageLoader__": Object {
+                        "default": [Function],
+                        "type": [Function],
+                      },
                       "alt": Object {
                         "default": "",
                         "type": [Function],
@@ -3486,6 +3535,7 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
+            "__imageLoader__": [Function],
             "alt": "user profile image",
             "url": "http://placekitten.com/200/300",
           },
@@ -3504,6 +3554,7 @@ VueWrapper {
               "_propKeys": Array [
                 "alt",
                 "url",
+                "__imageLoader__",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -3548,6 +3599,10 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
+                        "__imageLoader__": Object {
+                          "default": [Function],
+                          "type": [Function],
+                        },
                         "alt": Object {
                           "default": "",
                           "type": [Function],
@@ -3683,6 +3738,10 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
+                          "__imageLoader__": Object {
+                            "default": [Function],
+                            "type": [Function],
+                          },
                           "alt": Object {
                             "default": "",
                             "type": [Function],
@@ -4002,6 +4061,10 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
+                      "__imageLoader__": Object {
+                        "default": [Function],
+                        "type": [Function],
+                      },
                       "alt": Object {
                         "default": "",
                         "type": [Function],
@@ -4137,6 +4200,10 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
+                        "__imageLoader__": Object {
+                          "default": [Function],
+                          "type": [Function],
+                        },
                         "alt": Object {
                           "default": "",
                           "type": [Function],
@@ -4452,6 +4519,10 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
+                      "__imageLoader__": Object {
+                        "default": [Function],
+                        "type": [Function],
+                      },
                       "alt": Object {
                         "default": "",
                         "type": [Function],
@@ -4587,6 +4658,10 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
+                        "__imageLoader__": Object {
+                          "default": [Function],
+                          "type": [Function],
+                        },
                         "alt": Object {
                           "default": "",
                           "type": [Function],
@@ -4876,6 +4951,7 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
+              "__imageLoader__": [Function],
               "alt": "user profile image",
               "url": "http://placekitten.com/200/300",
             },
@@ -5050,6 +5126,7 @@ VueWrapper {
                 "_propKeys": Array [
                   "alt",
                   "url",
+                  "__imageLoader__",
                 ],
                 "_refElm": null,
                 "_renderChildren": undefined,
@@ -5078,6 +5155,7 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
+                "__imageLoader__": [Function],
                 "alt": "user profile image",
                 "url": "http://placekitten.com/200/300",
               },
@@ -5096,6 +5174,7 @@ VueWrapper {
                   "_propKeys": Array [
                     "alt",
                     "url",
+                    "__imageLoader__",
                   ],
                   "_refElm": null,
                   "_renderChildren": undefined,
@@ -5124,6 +5203,7 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
+                  "__imageLoader__": [Function],
                   "alt": "user profile image",
                   "url": "http://placekitten.com/200/300",
                 },
@@ -5307,6 +5387,10 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
+                  "__imageLoader__": Object {
+                    "default": [Function],
+                    "type": [Function],
+                  },
                   "alt": Object {
                     "default": "",
                     "type": [Function],
@@ -5419,6 +5503,7 @@ VueWrapper {
                   "_propKeys": Array [
                     "alt",
                     "url",
+                    "__imageLoader__",
                   ],
                   "_refElm": null,
                   "_renderChildren": undefined,
@@ -5447,6 +5532,7 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
+                  "__imageLoader__": [Function],
                   "alt": "user profile image",
                   "url": "http://placekitten.com/200/300",
                 },
@@ -5465,6 +5551,7 @@ VueWrapper {
                     "_propKeys": Array [
                       "alt",
                       "url",
+                      "__imageLoader__",
                     ],
                     "_refElm": null,
                     "_renderChildren": undefined,
@@ -5493,6 +5580,7 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
+                    "__imageLoader__": [Function],
                     "alt": "user profile image",
                     "url": "http://placekitten.com/200/300",
                   },
@@ -5676,6 +5764,10 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
+                    "__imageLoader__": Object {
+                      "default": [Function],
+                      "type": [Function],
+                    },
                     "alt": Object {
                       "default": "",
                       "type": [Function],
@@ -6043,6 +6135,7 @@ VueWrapper {
             "_propKeys": Array [
               "alt",
               "url",
+              "__imageLoader__",
             ],
             "_refElm": null,
             "_renderChildren": undefined,
@@ -6115,6 +6208,7 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
+            "__imageLoader__": [Function],
             "alt": "user profile image",
             "url": "http://placekitten.com/200/300",
           },
@@ -6177,6 +6271,7 @@ VueWrapper {
               "_propKeys": Array [
                 "alt",
                 "url",
+                "__imageLoader__",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -6249,6 +6344,7 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
+              "__imageLoader__": [Function],
               "alt": "user profile image",
               "url": "http://placekitten.com/200/300",
             },
@@ -6520,6 +6616,10 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__imageLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
               "alt": Object {
                 "default": "",
                 "type": [Function],
@@ -6676,6 +6776,7 @@ VueWrapper {
               "_propKeys": Array [
                 "alt",
                 "url",
+                "__imageLoader__",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -6748,6 +6849,7 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
+              "__imageLoader__": [Function],
               "alt": "user profile image",
               "url": "http://placekitten.com/200/300",
             },
@@ -6810,6 +6912,7 @@ VueWrapper {
                 "_propKeys": Array [
                   "alt",
                   "url",
+                  "__imageLoader__",
                 ],
                 "_refElm": null,
                 "_renderChildren": undefined,
@@ -6882,6 +6985,7 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
+                "__imageLoader__": [Function],
                 "alt": "user profile image",
                 "url": "http://placekitten.com/200/300",
               },
@@ -7153,6 +7257,10 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
+                "__imageLoader__": Object {
+                  "default": [Function],
+                  "type": [Function],
+                },
                 "alt": Object {
                   "default": "",
                   "type": [Function],
