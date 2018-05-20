@@ -1,3 +1,11 @@
+input,
+button,
+textarea {
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
 input:focus,
 button:focus,
 textarea:focus,
@@ -7,4 +15,8 @@ textarea:focus,
 
 button {
   cursor: pointer;
+}
+
+input {
+  border-radius: 0;
 }

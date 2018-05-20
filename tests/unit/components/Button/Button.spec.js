@@ -52,33 +52,6 @@ describe('Button.vue', () => {
     expect(wrapper.classes()).toContain('medium')
     expect(wrapper.classes()).not.toContain('outline')
   })
-  it('should render a dark purple button', () => {
-    const wrapper = shallowMount(Button, {
-      propsData: { color: 'dark-purple' }
-    })
-    expect(wrapper).toMatchSnapshot()
-    expect(wrapper.classes()).toContain('dark-purple')
-    expect(wrapper.classes()).toContain('medium')
-    expect(wrapper.classes()).not.toContain('outline')
-  })
-  it('should render a danger button', () => {
-    const wrapper = shallowMount(Button, {
-      propsData: { color: 'danger' }
-    })
-    expect(wrapper).toMatchSnapshot()
-    expect(wrapper.classes()).toContain('danger')
-    expect(wrapper.classes()).toContain('medium')
-    expect(wrapper.classes()).not.toContain('outline')
-  })
-  it('should render a danger outline button', () => {
-    const wrapper = shallowMount(Button, {
-      propsData: { outline: true, color: 'danger' }
-    })
-    expect(wrapper).toMatchSnapshot()
-    expect(wrapper.classes()).toContain('danger')
-    expect(wrapper.classes()).toContain('medium')
-    expect(wrapper.classes()).toContain('outline')
-  })
   it('should render a small purple outline button', () => {
     const wrapper = shallowMount(Button, {
       propsData: { color: 'purple', outline: true, size: 'small' }
@@ -87,15 +60,6 @@ describe('Button.vue', () => {
     expect(wrapper.classes()).toContain('purple')
     expect(wrapper.classes()).toContain('small')
     expect(wrapper.classes()).toContain('outline')
-  })
-  it('should render a medium dark purple button', () => {
-    const wrapper = shallowMount(Button, {
-      propsData: { color: 'dark-purple', size: 'medium' }
-    })
-    expect(wrapper).toMatchSnapshot()
-    expect(wrapper.classes()).toContain('dark-purple')
-    expect(wrapper.classes()).toContain('medium')
-    expect(wrapper.classes()).not.toContain('outline')
   })
   it('should emit an onclick event', () => {
     const action = jest.fn()

@@ -4,28 +4,47 @@
     :class="classObject"
     @click="onClick"
   >
-    <icon
-      v-if="icon"
-      :icon="icon"
-      class="icon" />
-    <slot />
+    <div class="layout">
+      <div
+        v-if="iconBefore"
+        class="icon-container"
+      >
+        <tipe-icon
+          :icon="iconBefore"
+          class="icon"
+        />
+      </div>
+      <div
+        v-if="$slots.default"
+        class="label">
+        <slot />
+      </div>
+      <div
+        v-if="iconAfter"
+        class="icon-container"
+      >
+        <tipe-icon
+          :icon="iconAfter"
+          class="icon"
+        />
+      </div>
+    </div>
   </button>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
-import Icon from '../Icon'
+import TipeIcon from '../Icon'
 
 export default {
   name: 'TipeButton',
-  components: { Icon },
+  components: { TipeIcon },
   props: {
     size: vueTypes.oneOf(['small', 'medium', 'large']).def('medium'),
     outline: vueTypes.bool.def(false),
-    color: vueTypes
-      .oneOf(['purple', 'danger', 'dark-purple', 'gray'])
-      .def('purple'),
-    icon: vueTypes.string.def('')
+    color: vueTypes.oneOf(['purple', 'gray']).def('purple'),
+    iconBefore: vueTypes.string.def(''),
+    iconAfter: vueTypes.string.def('')
   },
   computed: {
     classObject: function() {
@@ -33,6 +52,8 @@ export default {
       return {
         [size]: true,
         [color]: true,
+        has_icon_before: !!this.iconBefore,
+        has_icon_after: !!this.iconAfter,
         outline
       }
     }
@@ -45,105 +66,106 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped>
-@define-mixin outline $color {
-  border: 1px solid $color;
-  color: $color;
-  background-color: #fff;
-}
-
-@define-mixin hover-outline $color {
-  background-color: $color;
-  color: #fff;
-}
-
-@define-mixin hover-fill $color {
-  color: #fff;
-  background-color: $color;
-}
-
+<style scoped>
 button {
-  display: flex;
+  height: 2.5rem;
   border-radius: 3px;
+  margin: 0;
+  padding: 0;
   border: none;
   color: #fff;
+}
+
+.layout {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  height: 100%;
+  color: inherit;
+}
+
+.icon-container {
+  display: flex;
+  width: 3.125rem;
   justify-content: center;
   align-items: center;
+}
 
-  & .icon {
-    padding-right: 10px;
-    color: #fff;
-  }
+.icon {
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
 
-  &.purple {
-    background-image: var(--purple-gradient);
-    &.outline {
-      background-image: none;
-      @mixin outline var(--purple);
-      &:hover {
-        @mixin hover-outline var(--purple);
-      }
-    }
-    &:hover {
-      @mixin hover-fill var(--purple);
-    }
-  }
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+}
 
-  &.dark-purple {
-    background-color: var(--purple-dark);
-    &.outline {
-      @mixin outline var(--purple-dark);
-      &:hover {
-        @mixin hover-outline var(--purple-dark);
-      }
-    }
-    &:hover {
-      @mixin hover-fill var(--purple);
-    }
-  }
+button.has_icon_before .label {
+  padding-left: 0;
+}
 
-  &.gray {
-    background-color: var(--gray-blue-light);
-    &.outline {
-      @mixin outline var(--gray-blue-light);
-      color: var(--text-gray-dark);
-      &:hover {
-        @mixin hover-outline var(--gray-blue-light);
-      }
-    }
-    &:hover {
-      @mixin hover-fill var(--gray-blue-light);
-    }
-  }
+button.has_icon_after .label {
+  padding-right: 0;
+}
 
-  &.danger {
-    background-color: var(--danger);
-    &.outline {
-      @mixin outline var(--danger);
-      &:hover {
-        @mixin hover-outline var(--danger);
-      }
-    }
-    &:hover {
-      @mixin hover-fill var(--danger);
-    }
-  }
+/*
+Sizes
+*/
 
-  &.small {
-    height: 1.75rem;
-    font-size: 0.6875rem;
-    padding: 0 1rem;
-  }
-  &.medium {
-    height: 2.5rem;
-    font-size: 0.8125rem;
-    padding: 0 1.25rem;
-  }
+button.small {
+  height: 1.75rem;
+}
 
-  &.large {
-    height: 3.25rem;
-    font-size: 0.9375rem;
-    padding: 0 1.5rem;
-  }
+button.medium {
+  height: 2.5rem;
+}
+
+button.large {
+  height: 3.25rem;
+}
+
+button.small .label,
+button.medium .label {
+  font-size: 0.8125rem;
+}
+
+button.large .label {
+  font-size: 0.875rem;
+}
+
+/*
+Colors
+*/
+
+/* fill */
+button.purple {
+  background-color: var(--purple);
+}
+
+button.gray {
+  background-color: var(--gray-blue-light);
+}
+
+/* outline */
+button.outline {
+  background: transparent;
+  border-style: solid;
+  border-width: 1px;
+}
+
+button.outline.purple {
+  border-color: var(--purple);
+  color: var(--purple);
+}
+
+button.outline.gray {
+  border-color: var(--gray-blue-light);
+  color: var(--text-gray-dark);
 }
 </style>
