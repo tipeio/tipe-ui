@@ -78,3 +78,36 @@ Example
 ```
 <tipe-icon icon="plus" />
 ```
+
+### Sidebar
+
+Used as the main navigation between pages.
+
+_:props_
+
+:links - [{
+icon: String,
+label: String,
+url: String,
+active: boolean
+}]
+
+Example
+
+```
+<tipe-sidebar
+  :links="[
+    {
+      icon: 'content-icon',
+      label: 'content,
+      url: '/content'
+    },
+    {
+      icon: 'media-icon',
+      label: 'media'
+      url: '/media'
+      active: true
+    }
+  ]"
+/>
+```
