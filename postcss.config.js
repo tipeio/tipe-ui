@@ -3,6 +3,7 @@ module.exports = {
     'postcss-import': {},
     'postcss-cssnext': {},
     cssnano: {},
-    'postcss-mixins': {}
+    'postcss-mixins': {},
+    'postcss-for': {}
   }
 }

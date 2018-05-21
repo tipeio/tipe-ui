@@ -8025,6 +8025,13 @@ postcss-font-variant@^3.0.0:
   dependencies:
     postcss "^6.0.1"
 
+postcss-for@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/postcss-for/-/postcss-for-2.1.1.tgz#841378c0ef909d50e1980d5aa71e6a340e728fcd"
+  dependencies:
+    postcss "^5.0.0"
+    postcss-simple-vars "^2.0.0"
+
 postcss-image-set-polyfill@^0.3.5:
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/postcss-image-set-polyfill/-/postcss-image-set-polyfill-0.3.5.tgz#0f193413700cf1f82bd39066ef016d65a4a18181"
@@ -8299,6 +8306,12 @@ postcss-selector-parser@^3.1.1:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
+postcss-simple-vars@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-simple-vars/-/postcss-simple-vars-2.0.0.tgz#d0a1091b0da22b79507028f7b22b976c0a60b8d5"
+  dependencies:
+    postcss "^5.0.21"
+
 postcss-simple-vars@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/postcss-simple-vars/-/postcss-simple-vars-4.1.0.tgz#043248cfef8d3f51b3486a28c09f8375dbf1b2f9"
@@ -8342,7 +8355,7 @@ postcss-zindex@^2.0.1:
     postcss "^5.0.4"
     uniqs "^2.0.0"
 
-postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.2, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.6, postcss@^5.0.8, postcss@^5.2.16, postcss@^5.2.17:
+postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.2, postcss@^5.0.21, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.6, postcss@^5.0.8, postcss@^5.2.16, postcss@^5.2.17:
   version "5.2.18"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.18.tgz#badfa1497d46244f6390f58b319830d9107853c5"
   dependencies:
