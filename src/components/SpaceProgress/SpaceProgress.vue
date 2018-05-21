@@ -3,9 +3,11 @@
     <p class="title">Space</p>
     <div class="progress">
       <div class="outter-bar"/>
-      <div class="inner-bar"/>
+      <div 
+        :class="percent" 
+        class="inner-bar"/>
     </div>
-    <p class="subtitle">{{ usedSpace }} / {{ totalSpace }}</p>
+    <p class="subtitle">{{ usedSpace }}{{ unit }} / {{ totalSpace }}{{ unit }}</p>
   </div>
 </template>
 
@@ -15,9 +17,17 @@ import vueTypes from 'vue-types'
 export default {
   name: 'SpaceProgress',
   props: {
-    percent: vueTypes.string,
-    totalSpace: vueTypes.string,
-    usedSpace: vueTypes.string
+    totalSpace: vueTypes.number,
+    usedSpace: vueTypes.number,
+    unit: vueTypes.string
+  },
+  computed: {
+    percent: function() {
+      const { usedSpace, totalSpace } = this
+      return {
+        ['column-end-' + Math.trunc(usedSpace / totalSpace * 100)]: true
+      }
+    }
   }
 }
 </script>
@@ -44,6 +54,7 @@ export default {
 
 .progress {
   display: grid;
+  grid-template-columns: repeat(100, 1.1px);
 }
 
 .outter-bar {
@@ -57,12 +68,17 @@ export default {
 }
 
 .inner-bar {
-  width: 34px;
   height: 3px;
   border-radius: 6px;
   background-color: var(--purple);
   z-index: 1;
   grid-row-start: 1;
   grid-column-start: 1;
+}
+
+@for $i from 0 to 100 {
+  .column-end-$i {
+    grid-column-end: $i;
+  }
 }
 </style>
