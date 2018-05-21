@@ -10,6 +10,7 @@
   --purple-dark: rgb(31, 52, 108);
   --purple-gradient: linear-gradient(108deg, #714bfe, #6047fa 51%, #5727e1);
   --purple-transparent: rgba(105, 73, 252, 0.1);
+  --purple-transparent-light: rgba(93, 59, 241, 0.1);
 
   --danger: #e44646;
 
@@ -20,5 +21,6 @@
   --danger: #e44646;
   --darkPurple: #1f346c;
   --btnGradient: linear-gradient(108deg, #714bfe, #6047fa 51%, #5727e1);
-  --text-gray-dark: rgb(50, 60, 71);
+  --text-gray: rgb(50, 60, 71);
+  --text-gray-light: rgb(152, 152, 152);
 }
