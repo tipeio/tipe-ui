@@ -9,6 +9,7 @@
   --purple-light: rgb(197, 183, 254);
   --purple-dark: rgb(31, 52, 108);
   --purple-gradient: linear-gradient(108deg, #714bfe, #6047fa 51%, #5727e1);
+  --purple-transparent: rgba(105, 73, 252, 0.1);
 
   --danger: #e44646;
 
