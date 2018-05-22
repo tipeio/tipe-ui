@@ -5,7 +5,8 @@
       @click="onClick">
       <p class="title" >{{ text.toUpperCase() }}</p>
       <tipe-icon
-        icon="plus"
+        :class="{open}"
+        icon="arrow-down"
         class="icon"
       />
     </div>
@@ -58,6 +59,11 @@ export default {
     & .icon {
       display: flex;
       flex: 0 0 2rem;
+      transition: transform 250ms ease-in-out;
+
+      &.open {
+        transform: rotate(-180deg);
+      }
     }
     & p {
       margin: 0;
