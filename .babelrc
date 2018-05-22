@@ -1,6 +1,11 @@
 {
-  "presets": [
-    "@vue/app",
-    "vue"
+  "presets": ["@vue/app", "vue"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src/**"]
+      }
+    ]
   ]
 }
