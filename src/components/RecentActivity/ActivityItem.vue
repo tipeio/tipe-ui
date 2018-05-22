@@ -33,7 +33,8 @@ export default {
 .item {
   display: flex;
   align-items: flex-start;
-
+  width: 100%;
+  margin-top: 1rem;
   & .icon {
     display: flex;
     flex: 0 0 1.5rem;
