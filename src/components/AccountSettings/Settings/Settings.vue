@@ -1,7 +1,13 @@
 <template>
   <accordian text="Settings"><tipe-switch 
-    text="File Sharing" 
-    sublabel="Turn on to share your file changes and updates" /><tipe-switch text="Backup" /></accordian>
+    v-model="sharing"
+    :value="sharing"
+    text="File Sharing"
+    sublabel="Turn on to share your file changes and updates" /><tipe-switch 
+      v-model="backup" 
+      :value="backup" 
+      text="Backup" />
+  </accordian>
 </template>
 
 <script>
@@ -14,8 +20,8 @@ export default {
     Accordian,
     TipeSwitch
   },
-  data: function() {
-    return {}
+  data() {
+    return { sharing: false, backup: true }
   }
 }
 </script>

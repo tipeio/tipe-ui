@@ -7,7 +7,10 @@
       <label class="switch">
         <input 
           :id="text +'-switch'" 
-          type="checkbox">
+          v-model="inputVal"
+          :value="value"
+          type="checkbox"
+        >
         <span class="slider round"/>
       </label>
     </div>
@@ -24,7 +27,16 @@ export default {
   name: 'TipeSwitch',
   props: {
     text: vueTypes.string,
-    sublabel: vueTypes.string
+    sublabel: vueTypes.string,
+    value: vueTypes.boolean
+  },
+  data() {
+    return { inputVal: this.value }
+  },
+  watch: {
+    inputVal(val) {
+      this.$emit('input', val)
+    }
   }
 }
 </script>
