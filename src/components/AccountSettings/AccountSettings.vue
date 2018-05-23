@@ -10,11 +10,7 @@
       </div>
       <accordian text="Folder Details"/>
       <accordian text="Settings"><tipe-switch text="File Sharing" /><tipe-switch text="Backup" /></accordian>
-      <accordian text="Recent Activity"><activity-item 
-        title="Sam Smith update api key" 
-        time="a moment ago"/><activity-item 
-          title="Sam Smith update api key" 
-          time="a moment ago"/></accordian>
+      <recent-activity />
     </div>
   </div>
 </template>
@@ -24,7 +20,7 @@ import IconBadge from '../IconBadge'
 import Accordian from '../Accordian'
 import SpaceProgress from '../SpaceProgress'
 import TipeSwitch from '../Switch'
-import ActivityItem from '../RecentActivity/ActivityItem'
+import RecentActivity from '../RecentActivity'
 
 export default {
   name: 'AccountSettings',
@@ -33,7 +29,7 @@ export default {
     Accordian,
     SpaceProgress,
     TipeSwitch,
-    ActivityItem
+    RecentActivity
   }
 }
 </script> 

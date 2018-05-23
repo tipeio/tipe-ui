@@ -6,8 +6,8 @@
       />
     </div>
     <div class="text">
-      <p class="title">{{ title }}</p>
-      <p class="time">{{ time }}</p>
+      <p class="title">{{ item.title }}</p>
+      <p class="time">{{ item.time }}</p>
     </div>
 
   </div>
@@ -23,8 +23,7 @@ export default {
     TipeIcon
   },
   props: {
-    title: vueTypes.string,
-    time: vueTypes.string
+    item: vueTypes.object
   }
 }
 </script>
