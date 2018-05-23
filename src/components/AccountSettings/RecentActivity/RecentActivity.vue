@@ -10,7 +10,7 @@
 
 <script>
 import ActivityItem from './ActivityItem'
-import Accordian from '../Accordian'
+import Accordian from '../../Accordian'
 
 export default {
   name: 'RecentActivity',

@@ -10,7 +10,7 @@
           unit="GB" />
       </div>
       <accordian text="Folder Details"/>
-      <accordian text="Settings"><tipe-switch text="File Sharing" /><tipe-switch text="Backup" /></accordian>
+      <tipe-settings />
       <recent-activity />
     </div>
   </div>
@@ -20,8 +20,8 @@
 import IconBadge from '../IconBadge'
 import Accordian from '../Accordian'
 import TipeProgress from '../Progress'
-import TipeSwitch from '../Switch'
-import RecentActivity from '../RecentActivity'
+import RecentActivity from './RecentActivity'
+import TipeSettings from './Settings'
 
 export default {
   name: 'AccountSettings',
@@ -29,8 +29,8 @@ export default {
     IconBadge,
     Accordian,
     TipeProgress,
-    TipeSwitch,
-    RecentActivity
+    RecentActivity,
+    TipeSettings
   }
 }
 </script> 
@@ -38,7 +38,7 @@ export default {
 <style scoped lang="postcss">
 .grid {
   display: grid;
-  width: 252px;
+  width: 100%;
   grid-template-columns: 1rem auto 1rem;
   grid-template-areas:
     '. . .'
