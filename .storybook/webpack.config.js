@@ -1,4 +1,4 @@
-import path from 'path'
+const path = require('path')
 
 module.exports = (baseConfig, env, defaultConfig) => {
   defaultConfig.module.rules.push({
@@ -10,6 +10,14 @@ module.exports = (baseConfig, env, defaultConfig) => {
     ],
     include: path.join(__dirname, '/src')
   })
+
+  defaultConfig.resolve = {
+    extensions: ['.js', '.vue', '.json'],
+    alias: {
+      vue$: 'vue/dist/vue.esm.js',
+      '@': path.join(__dirname, '..', 'src')
+    }
+  }
 
   return defaultConfig
 }
