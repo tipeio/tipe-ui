@@ -2,10 +2,11 @@
   <div class="grid">
     <div class="panel-content">
       <div class="row">
-        <icon-badge icon="file" />
-        <space-progress 
-          :used-space="8.08" 
-          :total-space="40" 
+        <icon-badge icon="rocket" />
+        <tipe-progress 
+          :used="8.08" 
+          :total="40"
+          title="Space" 
           unit="GB" />
       </div>
       <accordian text="Folder Details"/>
@@ -18,7 +19,7 @@
 <script>
 import IconBadge from '../IconBadge'
 import Accordian from '../Accordian'
-import SpaceProgress from '../SpaceProgress'
+import TipeProgress from '../Progress'
 import TipeSwitch from '../Switch'
 import RecentActivity from '../RecentActivity'
 
@@ -27,7 +28,7 @@ export default {
   components: {
     IconBadge,
     Accordian,
-    SpaceProgress,
+    TipeProgress,
     TipeSwitch,
     RecentActivity
   }
