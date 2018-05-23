@@ -1,13 +1,13 @@
 <template>
   <div class="column">
-    <p class="title">Space</p>
+    <p class="title">{{ title }}</p>
     <div class="progress">
       <div class="outter-bar"/>
       <div 
         :class="percent" 
         class="inner-bar"/>
     </div>
-    <p class="subtitle">{{ usedSpace }}{{ unit }} / {{ totalSpace }}{{ unit }}</p>
+    <p class="subtitle">{{ used }}{{ unit }} / {{ total }}{{ unit }}</p>
   </div>
 </template>
 
@@ -15,17 +15,18 @@
 import vueTypes from 'vue-types'
 
 export default {
-  name: 'SpaceProgress',
+  name: 'TipeProgress',
   props: {
-    totalSpace: vueTypes.number,
-    usedSpace: vueTypes.number,
-    unit: vueTypes.string
+    total: vueTypes.number,
+    used: vueTypes.number,
+    unit: vueTypes.string.def(''),
+    title: vueTypes.string
   },
   computed: {
     percent: function() {
-      const { usedSpace, totalSpace } = this
+      const { used, total } = this
       return {
-        ['column-end-' + Math.trunc(usedSpace / totalSpace * 100)]: true
+        ['column-end-' + Math.trunc(used / total * 100)]: true
       }
     }
   }
