@@ -1,18 +1,42 @@
 <template>
-  <label class="switch">
-    <input type="checkbox">
-    <span class="slider round"/>
-  </label>
+  <div class="wrapper" >
+    <label 
+      :for="text + '-switch'" 
+      class="label">{{ text }}</label>
+    <label class="switch">
+      <input 
+        :id="text +'-switch'" 
+        type="checkbox">
+      <span class="slider round"/>
+    </label>
+  </div>
 </template>
 
 <script>
+import vueTypes from 'vue-types'
+
 export default {
-  name: 'TipeSwitch'
+  name: 'TipeSwitch',
+  props: {
+    text: vueTypes.string
+  }
 }
 </script>
 
 <style scoped lang="postcss">
 /* The switch - the box around the slider */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  color: var(--text-gray);
+  font-size: 0.8125rem;
+}
+
 .switch {
   position: relative;
   display: inline-block;

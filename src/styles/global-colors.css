@@ -21,7 +21,7 @@
   --danger: #e44646;
   --darkPurple: #1f346c;
   --btnGradient: linear-gradient(108deg, #714bfe, #6047fa 51%, #5727e1);
-  --text-gray: rgb(50, 60, 71);
+  --text-gray: rgb(50, 60, 71); /* or #323c47 */
   --text-gray-light: rgb(152, 152, 152);
   --text-gray-blue-light: rgb(188, 199, 207);
 }
