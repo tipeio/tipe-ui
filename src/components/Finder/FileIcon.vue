@@ -1,0 +1,84 @@
+<template>
+  <div :data-tipe-ui="$options.name">
+    <button
+      class="file-icon"
+    >
+      <tipe-icon :icon="icon" />
+    </button>
+    <button
+      class="label"
+    >
+      {{ file.label }}
+    </button>
+    <button
+      class="options-icon"
+    >
+      <tipe-icon icon="options" />
+    </button>
+  </div>
+</template>
+
+<script>
+import vueTypes from 'vue-types'
+import TipeIcon from '../Icon'
+
+export default {
+  name: 'TipeFileIcon',
+  components: {
+    TipeIcon
+  },
+  props: {
+    file: vueTypes.shape({
+      type: vueTypes.string,
+      label: vueTypes.string
+    })
+  },
+  computed: {
+    icon() {
+      return {
+        document: 'file',
+        folder: 'folder'
+      }[this.file.type]
+    }
+  }
+}
+</script>
+
+<style lang="postcss" scoped>
+[data-tipe-ui='TypeFileIcon'] {
+  height: 100%;
+  width: 100%;
+  min-width: 9rem;
+  min-height: 3rem;
+  display: grid;
+  grid-template-columns: 3.75rem 1fr 3rem;
+  border: 1px solid var(--gray-blue-light);
+  border-radius: 0.3125rem;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.file-icon,
+.options-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgb(31, 52, 108);
+  font-size: 0.8125rem;
+}
+</style>
