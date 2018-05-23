@@ -1,14 +1,19 @@
 <template>
   <div class="wrapper" >
-    <label 
-      :for="text + '-switch'" 
-      class="label">{{ text }}</label>
-    <label class="switch">
-      <input 
-        :id="text +'-switch'" 
-        type="checkbox">
-      <span class="slider round"/>
-    </label>
+    <div class="row">
+      <label 
+        :for="text + '-switch'" 
+        class="label">{{ text }}</label>
+      <label class="switch">
+        <input 
+          :id="text +'-switch'" 
+          type="checkbox">
+        <span class="slider round"/>
+      </label>
+    </div>
+    <p 
+      v-if="sublabel" 
+      class="sublabel">{{ sublabel }}</p>
   </div>
 </template>
 
@@ -18,7 +23,8 @@ import vueTypes from 'vue-types'
 export default {
   name: 'TipeSwitch',
   props: {
-    text: vueTypes.string
+    text: vueTypes.string,
+    sublabel: vueTypes.string
   }
 }
 </script>
@@ -28,14 +34,30 @@ export default {
 
 .wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+
+  & .row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .label {
   color: var(--text-gray);
   font-size: 0.8125rem;
   margin: 0.625rem 0;
+}
+
+.sublabel {
+  color: var(--text-gray-light);
+  font-size: 0.615rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 90%;
 }
 
 .switch {
