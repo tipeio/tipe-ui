@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-[data-tipe-ui='TypeFileIcon'] {
+[data-tipe-ui='TipeFileIcon'] {
   height: 100%;
   width: 100%;
   min-width: 9rem;
