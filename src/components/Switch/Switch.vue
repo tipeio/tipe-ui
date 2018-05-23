@@ -35,6 +35,7 @@ export default {
 .label {
   color: var(--text-gray);
   font-size: 0.8125rem;
+  margin: 0.625rem 0;
 }
 
 .switch {
