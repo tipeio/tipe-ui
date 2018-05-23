@@ -40,8 +40,8 @@ export default {
 .switch {
   position: relative;
   display: inline-block;
-  width: 56px;
-  height: 24px;
+  width: 26px;
+  height: 12px;
   /* Hide default HTML checkbox */
 
   input {
@@ -62,7 +62,7 @@ export default {
   background-color: rgba(152, 152, 152, 0.11);
 
   &.round {
-    border-radius: 24px;
+    border-radius: 12px;
     &:before {
       border-radius: 50%;
     }
@@ -71,12 +71,12 @@ export default {
   &:before {
     position: absolute;
     content: '';
-    height: 26px;
-    width: 26px;
+    height: 12px;
+    width: 12px;
     left: 0px;
-    bottom: -3px;
+    bottom: -1px;
     background-color: white;
-    border: 2px #d0d7dd solid;
+    border: 1px #d0d7dd solid;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -85,15 +85,15 @@ export default {
 input:checked {
   & + .slider:before {
     left: 1px;
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px);
   }
 
   & + .slider {
     background-image: var(--purple-gradient);
     left: 0;
-    width: 56px !important;
+    width: 26px !important;
     position: absolute;
     cursor: pointer;
     top: 0;
