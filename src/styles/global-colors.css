@@ -1,27 +1,27 @@
 :root {
   /* grays */
-  --gray-light: rgb(231, 233, 234);
-  --gray-blue-light: rgb(233, 239, 244);
-  --gray-lightest: rgb(250, 251, 255);
+  --gray-light: rgb(231, 233, 234); /* or #e7e9ea */
+  --gray-blue-light: rgb(233, 239, 244); /* or #e9eff4 */
+  --gray-lightest: rgb(250, 251, 255) /* #fafbff */;
 
   /* purples */
-  --purple: rgb(109, 75, 254);
-  --purple-light: rgb(197, 183, 254);
-  --purple-dark: rgb(31, 52, 108);
+  --purple: rgb(109, 75, 254); /* or #6d4bfe */
+  --purple-light: rgb(197, 183, 254); /* or #c5b7fe */
+  --purple-dark: rgb(31, 52, 108); /* or #1f346c */
   --purple-gradient: linear-gradient(108deg, #714bfe, #6047fa 51%, #5727e1);
-  --purple-transparent: rgba(105, 73, 252, 0.1);
-  --purple-transparent-light: rgba(93, 59, 241, 0.1);
+  --purple-transparent: rgba(105, 73, 252, 0.1); /* or #6949fc */
+  --purple-transparent-light: rgba(93, 59, 241, 0.1); /* or #5d3bf1 */
 
   --danger: #e44646;
 
   /* text */
-  --text-gray-dark: rgba(31, 52, 108, 0.61);
-  --text-gray-normal: rgba(31, 52, 108, 0.4);
+  --text-gray-dark: rgba(31, 52, 108, 0.61) /* or #1f346c */;
+  --text-gray-normal: rgba(31, 52, 108, 0.4) /* or #1f346c */;
   --purple: #6047fa;
   --danger: #e44646;
   --darkPurple: #1f346c;
   --btnGradient: linear-gradient(108deg, #714bfe, #6047fa 51%, #5727e1);
   --text-gray: rgb(50, 60, 71); /* or #323c47 */
-  --text-gray-light: rgb(152, 152, 152);
-  --text-gray-blue-light: rgb(188, 199, 207);
+  --text-gray-light: rgb(152, 152, 152); /* or #989898 */
+  --text-gray-blue-light: rgb(188, 199, 207); /* or #bcc7cf */
 }
