@@ -43,8 +43,8 @@ export default {
   display: inline-block;
   width: 26px;
   height: 12px;
+  margin: 0 5px;
   /* Hide default HTML checkbox */
-
   input {
     display: none;
   }
@@ -61,7 +61,6 @@ export default {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   background-color: rgba(152, 152, 152, 0.11);
-
   &.round {
     border-radius: 12px;
     &:before {
