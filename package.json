@@ -15,6 +15,7 @@
     "xstate": "^3.2.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.47",
     "@storybook/addon-actions": "^3.4.4",
     "@storybook/addon-knobs": "^3.4.4",
     "@storybook/addon-links": "^3.4.4",

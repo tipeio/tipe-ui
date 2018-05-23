@@ -15,7 +15,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import TipeIcon from '../Icon'
+import TipeIcon from '../../Icon'
 
 export default {
   name: 'ActivityItem',
