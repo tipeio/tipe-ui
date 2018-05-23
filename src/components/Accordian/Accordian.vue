@@ -49,16 +49,15 @@ export default {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  width: 199px;
+  width: 100%;
 
   & .row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    height: 2.5rem;
+    height: 2rem;
     width: 100%;
     border-bottom: 1px solid #eeeeee;
-    margin: 4px 0;
 
     & .icon {
       display: flex;
