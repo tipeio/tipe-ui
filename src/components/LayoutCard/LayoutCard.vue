@@ -1,6 +1,6 @@
 <template>
-  <div 
-    :data-tipe-ui="$options.name" 
+  <div
+    :data-tipe-ui="$options.name"
     class="card"
   >
     <slot/>
@@ -21,6 +21,7 @@ export default {
   border-radius: 4px;
   background-color: #fff;
   width: 100%;
+  height: 100%;
   display: flex;
 }
 </style>
