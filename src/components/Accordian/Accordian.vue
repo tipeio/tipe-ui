@@ -1,8 +1,10 @@
 <template>
-  <div class="content">
+  <div 
+    class="content" 
+    @click="onClick">
     <div 
       class="row" 
-      @click="onClick">
+    >
       <p class="title" >{{ text.toUpperCase() }}</p>
       <tipe-icon
         :class="{open}"
@@ -30,7 +32,7 @@ export default {
     TipeIcon
   },
   props: {
-    text: vueTypes.string
+    text: vueTypes.string.isRequired
   },
   data: function() {
     return {
