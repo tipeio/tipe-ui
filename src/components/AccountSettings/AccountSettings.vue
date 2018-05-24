@@ -1,18 +1,19 @@
 <template>
-  <div class="grid">
-    <div class="panel-content">
-      <div class="row">
-        <icon-badge icon="rocket" />
-        <tipe-progress 
-          :used="8.08" 
-          :total="40"
-          title="Space" 
-          unit="GB" />
-      </div>
-      <accordian text="Folder Details"/>
-      <tipe-settings />
-      <recent-activity />
+  <div class="panel-content">
+    <div class="row">
+      <icon-badge 
+        icon="rocket" 
+        height="20px" 
+        width="20px"/>
+      <tipe-progress 
+        :used="8.08" 
+        :total="40"
+        title="Space" 
+        unit="GB" />
     </div>
+    <accordian text="Folder Details"/>
+    <tipe-settings />
+    <recent-activity />
   </div>
 </template>
 
@@ -36,20 +37,13 @@ export default {
 </script> 
 
 <style scoped lang="postcss">
-.grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1rem auto 1rem;
-  grid-template-areas:
-    '. . .'
-    '. content .'
-    '. . .';
-}
+/* grid-area is rendering as a for some season */
 .panel-content {
   display: grid;
-  grid-area: content;
+  grid-area: accountSettings;
   grid-auto-flow: row;
   grid-row-gap: 1.5rem;
+  width: 100%;
 }
 
 .row {
