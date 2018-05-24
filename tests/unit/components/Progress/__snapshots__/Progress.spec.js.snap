@@ -10,7 +10,7 @@ VueWrapper {
     <p
       class="title"
     >
-      
+      Progress
     </p>
      
     <div
@@ -21,14 +21,14 @@ VueWrapper {
       />
        
       <div
-        class="inner-bar column-end-NaN"
+        class="inner-bar column-end-20"
       />
     </div>
      
     <p
       class="subtitle"
     >
-      0 / 0
+      20 / 100
     </p>
   </div>,
   "isFunctionalComponent": undefined,
@@ -48,7 +48,7 @@ VueWrapper {
       <p
         class="title"
       >
-        
+        Progress
       </p>
        
       <div
@@ -59,14 +59,14 @@ VueWrapper {
         />
          
         <div
-          class="inner-bar column-end-NaN"
+          class="inner-bar column-end-20"
         />
       </div>
        
       <p
         class="subtitle"
       >
-        0 / 0
+        20 / 100
       </p>
     </div>,
     "$emit": [Function],
@@ -114,10 +114,12 @@ VueWrapper {
       "props": Object {
         "title": Object {
           "default": "",
+          "required": true,
           "type": [Function],
         },
         "total": Object {
           "default": 0,
+          "required": true,
           "type": [Function],
         },
         "unit": Object {
@@ -126,8 +128,14 @@ VueWrapper {
         },
         "used": Object {
           "default": 0,
+          "required": true,
           "type": [Function],
         },
+      },
+      "propsData": Object {
+        "title": "Progress",
+        "total": 100,
+        "used": 20,
       },
       "provide": [Function],
       "render": [Function],
@@ -279,7 +287,7 @@ VueWrapper {
         "sync": true,
         "user": false,
         "value": Object {
-          "column-end-NaN": true,
+          "column-end-20": true,
         },
         "vm": [Circular],
       },
@@ -294,10 +302,10 @@ VueWrapper {
     "_isMounted": true,
     "_isVue": true,
     "_props": Object {
-      "title": "",
-      "total": 0,
+      "title": "Progress",
+      "total": 100,
       "unit": "",
-      "used": 0,
+      "used": 20,
     },
     "_provided": undefined,
     "_renderProxy": VueComponent {
@@ -310,7 +318,7 @@ VueWrapper {
         <p
           class="title"
         >
-          
+          Progress
         </p>
          
         <div
@@ -321,14 +329,14 @@ VueWrapper {
           />
            
           <div
-            class="inner-bar column-end-NaN"
+            class="inner-bar column-end-20"
           />
         </div>
          
         <p
           class="subtitle"
         >
-          0 / 0
+          20 / 100
         </p>
       </div>,
       "$emit": [Function],
@@ -376,10 +384,12 @@ VueWrapper {
         "props": Object {
           "title": Object {
             "default": "",
+            "required": true,
             "type": [Function],
           },
           "total": Object {
             "default": 0,
+            "required": true,
             "type": [Function],
           },
           "unit": Object {
@@ -388,8 +398,14 @@ VueWrapper {
           },
           "used": Object {
             "default": 0,
+            "required": true,
             "type": [Function],
           },
+        },
+        "propsData": Object {
+          "title": "Progress",
+          "total": 100,
+          "used": 20,
         },
         "provide": [Function],
         "render": [Function],
@@ -541,7 +557,7 @@ VueWrapper {
           "sync": true,
           "user": false,
           "value": Object {
-            "column-end-NaN": true,
+            "column-end-20": true,
           },
           "vm": [Circular],
         },
@@ -556,10 +572,10 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "title": "",
-        "total": 0,
+        "title": "Progress",
+        "total": 100,
         "unit": "",
-        "used": 0,
+        "used": 20,
       },
       "_provided": undefined,
       "_renderProxy": [Circular],
@@ -582,7 +598,7 @@ VueWrapper {
                 "componentOptions": undefined,
                 "context": undefined,
                 "data": undefined,
-                "elm": ,
+                "elm": Progress,
                 "fnContext": undefined,
                 "fnOptions": undefined,
                 "fnScopeId": undefined,
@@ -597,7 +613,7 @@ VueWrapper {
                 "parent": undefined,
                 "raw": false,
                 "tag": undefined,
-                "text": "",
+                "text": "Progress",
               },
             ],
             "componentInstance": undefined,
@@ -609,7 +625,7 @@ VueWrapper {
             "elm": <p
               class="title"
             >
-              
+              Progress
             </p>,
             "fnContext": undefined,
             "fnOptions": undefined,
@@ -719,12 +735,12 @@ VueWrapper {
                 "context": [Circular],
                 "data": Object {
                   "class": Object {
-                    "column-end-NaN": true,
+                    "column-end-20": true,
                   },
                   "staticClass": "inner-bar",
                 },
                 "elm": <div
-                  class="inner-bar column-end-NaN"
+                  class="inner-bar column-end-20"
                 />,
                 "fnContext": undefined,
                 "fnOptions": undefined,
@@ -757,7 +773,7 @@ VueWrapper {
               />
                
               <div
-                class="inner-bar column-end-NaN"
+                class="inner-bar column-end-20"
               />
             </div>,
             "fnContext": undefined,
@@ -813,7 +829,7 @@ VueWrapper {
                 "componentOptions": undefined,
                 "context": undefined,
                 "data": undefined,
-                "elm": 0 / 0,
+                "elm": 20 / 100,
                 "fnContext": undefined,
                 "fnOptions": undefined,
                 "fnScopeId": undefined,
@@ -828,7 +844,7 @@ VueWrapper {
                 "parent": undefined,
                 "raw": false,
                 "tag": undefined,
-                "text": "0 / 0",
+                "text": "20 / 100",
               },
             ],
             "componentInstance": undefined,
@@ -840,7 +856,7 @@ VueWrapper {
             "elm": <p
               class="subtitle"
             >
-              0 / 0
+              20 / 100
             </p>,
             "fnContext": undefined,
             "fnOptions": undefined,
@@ -871,7 +887,7 @@ VueWrapper {
           <p
             class="title"
           >
-            
+            Progress
           </p>
            
           <div
@@ -882,14 +898,14 @@ VueWrapper {
             />
              
             <div
-              class="inner-bar column-end-NaN"
+              class="inner-bar column-end-20"
             />
           </div>
            
           <p
             class="subtitle"
           >
-            0 / 0
+            20 / 100
           </p>
         </div>,
         "fnContext": undefined,
@@ -963,7 +979,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "vm": [Circular],
               },
@@ -1007,7 +1023,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "vm": [Circular],
               },
@@ -1173,7 +1189,7 @@ VueWrapper {
           "sync": true,
           "user": false,
           "value": Object {
-            "column-end-NaN": true,
+            "column-end-20": true,
           },
           "vm": [Circular],
         },
@@ -1232,7 +1248,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "column-end-NaN": true,
+                    "column-end-20": true,
                   },
                   "vm": [Circular],
                 },
@@ -1276,7 +1292,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "column-end-NaN": true,
+                    "column-end-20": true,
                   },
                   "vm": [Circular],
                 },
@@ -1326,7 +1342,7 @@ VueWrapper {
               "componentOptions": undefined,
               "context": undefined,
               "data": undefined,
-              "elm": ,
+              "elm": Progress,
               "fnContext": undefined,
               "fnOptions": undefined,
               "fnScopeId": undefined,
@@ -1341,7 +1357,7 @@ VueWrapper {
               "parent": undefined,
               "raw": false,
               "tag": undefined,
-              "text": "",
+              "text": "Progress",
             },
           ],
           "componentInstance": undefined,
@@ -1353,7 +1369,7 @@ VueWrapper {
           "elm": <p
             class="title"
           >
-            
+            Progress
           </p>,
           "fnContext": undefined,
           "fnOptions": undefined,
@@ -1463,12 +1479,12 @@ VueWrapper {
               "context": [Circular],
               "data": Object {
                 "class": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "staticClass": "inner-bar",
               },
               "elm": <div
-                class="inner-bar column-end-NaN"
+                class="inner-bar column-end-20"
               />,
               "fnContext": undefined,
               "fnOptions": undefined,
@@ -1501,7 +1517,7 @@ VueWrapper {
             />
              
             <div
-              class="inner-bar column-end-NaN"
+              class="inner-bar column-end-20"
             />
           </div>,
           "fnContext": undefined,
@@ -1557,7 +1573,7 @@ VueWrapper {
               "componentOptions": undefined,
               "context": undefined,
               "data": undefined,
-              "elm": 0 / 0,
+              "elm": 20 / 100,
               "fnContext": undefined,
               "fnOptions": undefined,
               "fnScopeId": undefined,
@@ -1572,7 +1588,7 @@ VueWrapper {
               "parent": undefined,
               "raw": false,
               "tag": undefined,
-              "text": "0 / 0",
+              "text": "20 / 100",
             },
           ],
           "componentInstance": undefined,
@@ -1584,7 +1600,7 @@ VueWrapper {
           "elm": <p
             class="subtitle"
           >
-            0 / 0
+            20 / 100
           </p>,
           "fnContext": undefined,
           "fnOptions": undefined,
@@ -1615,7 +1631,7 @@ VueWrapper {
         <p
           class="title"
         >
-          
+          Progress
         </p>
          
         <div
@@ -1626,14 +1642,14 @@ VueWrapper {
           />
            
           <div
-            class="inner-bar column-end-NaN"
+            class="inner-bar column-end-20"
           />
         </div>
          
         <p
           class="subtitle"
         >
-          0 / 0
+          20 / 100
         </p>
       </div>,
       "fnContext": undefined,
@@ -1707,7 +1723,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "column-end-NaN": true,
+                "column-end-20": true,
               },
               "vm": [Circular],
             },
@@ -1751,7 +1767,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "column-end-NaN": true,
+                "column-end-20": true,
               },
               "vm": [Circular],
             },
@@ -1917,7 +1933,7 @@ VueWrapper {
         "sync": true,
         "user": false,
         "value": Object {
-          "column-end-NaN": true,
+          "column-end-20": true,
         },
         "vm": [Circular],
       },
@@ -1976,7 +1992,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "vm": [Circular],
               },
@@ -2020,7 +2036,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "vm": [Circular],
               },
@@ -2067,7 +2083,7 @@ VueWrapper {
             "componentOptions": undefined,
             "context": undefined,
             "data": undefined,
-            "elm": ,
+            "elm": Progress,
             "fnContext": undefined,
             "fnOptions": undefined,
             "fnScopeId": undefined,
@@ -2082,7 +2098,7 @@ VueWrapper {
             "parent": undefined,
             "raw": false,
             "tag": undefined,
-            "text": "",
+            "text": "Progress",
           },
         ],
         "componentInstance": undefined,
@@ -2097,7 +2113,7 @@ VueWrapper {
             <p
               class="title"
             >
-              
+              Progress
             </p>
              
             <div
@@ -2108,14 +2124,14 @@ VueWrapper {
               />
                
               <div
-                class="inner-bar column-end-NaN"
+                class="inner-bar column-end-20"
               />
             </div>
              
             <p
               class="subtitle"
             >
-              0 / 0
+              20 / 100
             </p>
           </div>,
           "$emit": [Function],
@@ -2163,10 +2179,12 @@ VueWrapper {
             "props": Object {
               "title": Object {
                 "default": "",
+                "required": true,
                 "type": [Function],
               },
               "total": Object {
                 "default": 0,
+                "required": true,
                 "type": [Function],
               },
               "unit": Object {
@@ -2175,8 +2193,14 @@ VueWrapper {
               },
               "used": Object {
                 "default": 0,
+                "required": true,
                 "type": [Function],
               },
+            },
+            "propsData": Object {
+              "title": "Progress",
+              "total": 100,
+              "used": 20,
             },
             "provide": [Function],
             "render": [Function],
@@ -2328,7 +2352,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "column-end-NaN": true,
+                "column-end-20": true,
               },
               "vm": [Circular],
             },
@@ -2343,10 +2367,10 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "title": "",
-            "total": 0,
+            "title": "Progress",
+            "total": 100,
             "unit": "",
-            "used": 0,
+            "used": 20,
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
@@ -2359,7 +2383,7 @@ VueWrapper {
               <p
                 class="title"
               >
-                
+                Progress
               </p>
                
               <div
@@ -2370,14 +2394,14 @@ VueWrapper {
                 />
                  
                 <div
-                  class="inner-bar column-end-NaN"
+                  class="inner-bar column-end-20"
                 />
               </div>
                
               <p
                 class="subtitle"
               >
-                0 / 0
+                20 / 100
               </p>
             </div>,
             "$emit": [Function],
@@ -2425,10 +2449,12 @@ VueWrapper {
               "props": Object {
                 "title": Object {
                   "default": "",
+                  "required": true,
                   "type": [Function],
                 },
                 "total": Object {
                   "default": 0,
+                  "required": true,
                   "type": [Function],
                 },
                 "unit": Object {
@@ -2437,8 +2463,14 @@ VueWrapper {
                 },
                 "used": Object {
                   "default": 0,
+                  "required": true,
                   "type": [Function],
                 },
+              },
+              "propsData": Object {
+                "title": "Progress",
+                "total": 100,
+                "used": 20,
               },
               "provide": [Function],
               "render": [Function],
@@ -2590,7 +2622,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "vm": [Circular],
               },
@@ -2605,10 +2637,10 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "title": "",
-              "total": 0,
+              "title": "Progress",
+              "total": 100,
               "unit": "",
-              "used": 0,
+              "used": 20,
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -2671,7 +2703,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "column-end-NaN": true,
+                        "column-end-20": true,
                       },
                       "vm": [Circular],
                     },
@@ -2715,7 +2747,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "column-end-NaN": true,
+                        "column-end-20": true,
                       },
                       "vm": [Circular],
                     },
@@ -2881,7 +2913,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "vm": [Circular],
               },
@@ -2940,7 +2972,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "column-end-NaN": true,
+                          "column-end-20": true,
                         },
                         "vm": [Circular],
                       },
@@ -2984,7 +3016,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "column-end-NaN": true,
+                          "column-end-20": true,
                         },
                         "vm": [Circular],
                       },
@@ -3074,7 +3106,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "column-end-NaN": true,
+                      "column-end-20": true,
                     },
                     "vm": [Circular],
                   },
@@ -3118,7 +3150,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "column-end-NaN": true,
+                      "column-end-20": true,
                     },
                     "vm": [Circular],
                   },
@@ -3284,7 +3316,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "column-end-NaN": true,
+                "column-end-20": true,
               },
               "vm": [Circular],
             },
@@ -3343,7 +3375,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "column-end-NaN": true,
+                        "column-end-20": true,
                       },
                       "vm": [Circular],
                     },
@@ -3387,7 +3419,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "column-end-NaN": true,
+                        "column-end-20": true,
                       },
                       "vm": [Circular],
                     },
@@ -3424,7 +3456,7 @@ VueWrapper {
         "elm": <p
           class="title"
         >
-          
+          Progress
         </p>,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -3487,7 +3519,7 @@ VueWrapper {
                 <p
                   class="title"
                 >
-                  
+                  Progress
                 </p>
                  
                 <div
@@ -3498,14 +3530,14 @@ VueWrapper {
                   />
                    
                   <div
-                    class="inner-bar column-end-NaN"
+                    class="inner-bar column-end-20"
                   />
                 </div>
                  
                 <p
                   class="subtitle"
                 >
-                  0 / 0
+                  20 / 100
                 </p>
               </div>,
               "$emit": [Function],
@@ -3553,10 +3585,12 @@ VueWrapper {
                 "props": Object {
                   "title": Object {
                     "default": "",
+                    "required": true,
                     "type": [Function],
                   },
                   "total": Object {
                     "default": 0,
+                    "required": true,
                     "type": [Function],
                   },
                   "unit": Object {
@@ -3565,8 +3599,14 @@ VueWrapper {
                   },
                   "used": Object {
                     "default": 0,
+                    "required": true,
                     "type": [Function],
                   },
+                },
+                "propsData": Object {
+                  "title": "Progress",
+                  "total": 100,
+                  "used": 20,
                 },
                 "provide": [Function],
                 "render": [Function],
@@ -3718,7 +3758,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "column-end-NaN": true,
+                    "column-end-20": true,
                   },
                   "vm": [Circular],
                 },
@@ -3733,10 +3773,10 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "title": "",
-                "total": 0,
+                "title": "Progress",
+                "total": 100,
                 "unit": "",
-                "used": 0,
+                "used": 20,
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -3749,7 +3789,7 @@ VueWrapper {
                   <p
                     class="title"
                   >
-                    
+                    Progress
                   </p>
                    
                   <div
@@ -3760,14 +3800,14 @@ VueWrapper {
                     />
                      
                     <div
-                      class="inner-bar column-end-NaN"
+                      class="inner-bar column-end-20"
                     />
                   </div>
                    
                   <p
                     class="subtitle"
                   >
-                    0 / 0
+                    20 / 100
                   </p>
                 </div>,
                 "$emit": [Function],
@@ -3815,10 +3855,12 @@ VueWrapper {
                   "props": Object {
                     "title": Object {
                       "default": "",
+                      "required": true,
                       "type": [Function],
                     },
                     "total": Object {
                       "default": 0,
+                      "required": true,
                       "type": [Function],
                     },
                     "unit": Object {
@@ -3827,8 +3869,14 @@ VueWrapper {
                     },
                     "used": Object {
                       "default": 0,
+                      "required": true,
                       "type": [Function],
                     },
+                  },
+                  "propsData": Object {
+                    "title": "Progress",
+                    "total": 100,
+                    "used": 20,
                   },
                   "provide": [Function],
                   "render": [Function],
@@ -3980,7 +4028,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "column-end-NaN": true,
+                      "column-end-20": true,
                     },
                     "vm": [Circular],
                   },
@@ -3995,10 +4043,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "title": "",
-                  "total": 0,
+                  "title": "Progress",
+                  "total": 100,
                   "unit": "",
-                  "used": 0,
+                  "used": 20,
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -4061,7 +4109,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "column-end-NaN": true,
+                            "column-end-20": true,
                           },
                           "vm": [Circular],
                         },
@@ -4105,7 +4153,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "column-end-NaN": true,
+                            "column-end-20": true,
                           },
                           "vm": [Circular],
                         },
@@ -4271,7 +4319,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "column-end-NaN": true,
+                      "column-end-20": true,
                     },
                     "vm": [Circular],
                   },
@@ -4330,7 +4378,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "column-end-NaN": true,
+                              "column-end-20": true,
                             },
                             "vm": [Circular],
                           },
@@ -4374,7 +4422,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "column-end-NaN": true,
+                              "column-end-20": true,
                             },
                             "vm": [Circular],
                           },
@@ -4464,7 +4512,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "column-end-NaN": true,
+                          "column-end-20": true,
                         },
                         "vm": [Circular],
                       },
@@ -4508,7 +4556,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "column-end-NaN": true,
+                          "column-end-20": true,
                         },
                         "vm": [Circular],
                       },
@@ -4674,7 +4722,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "column-end-NaN": true,
+                    "column-end-20": true,
                   },
                   "vm": [Circular],
                 },
@@ -4733,7 +4781,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "column-end-NaN": true,
+                            "column-end-20": true,
                           },
                           "vm": [Circular],
                         },
@@ -4777,7 +4825,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "column-end-NaN": true,
+                            "column-end-20": true,
                           },
                           "vm": [Circular],
                         },
@@ -4871,7 +4919,7 @@ VueWrapper {
                 <p
                   class="title"
                 >
-                  
+                  Progress
                 </p>
                  
                 <div
@@ -4882,14 +4930,14 @@ VueWrapper {
                   />
                    
                   <div
-                    class="inner-bar column-end-NaN"
+                    class="inner-bar column-end-20"
                   />
                 </div>
                  
                 <p
                   class="subtitle"
                 >
-                  0 / 0
+                  20 / 100
                 </p>
               </div>,
               "$emit": [Function],
@@ -4937,10 +4985,12 @@ VueWrapper {
                 "props": Object {
                   "title": Object {
                     "default": "",
+                    "required": true,
                     "type": [Function],
                   },
                   "total": Object {
                     "default": 0,
+                    "required": true,
                     "type": [Function],
                   },
                   "unit": Object {
@@ -4949,8 +4999,14 @@ VueWrapper {
                   },
                   "used": Object {
                     "default": 0,
+                    "required": true,
                     "type": [Function],
                   },
+                },
+                "propsData": Object {
+                  "title": "Progress",
+                  "total": 100,
+                  "used": 20,
                 },
                 "provide": [Function],
                 "render": [Function],
@@ -5102,7 +5158,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "column-end-NaN": true,
+                    "column-end-20": true,
                   },
                   "vm": [Circular],
                 },
@@ -5117,10 +5173,10 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "title": "",
-                "total": 0,
+                "title": "Progress",
+                "total": 100,
                 "unit": "",
-                "used": 0,
+                "used": 20,
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -5133,7 +5189,7 @@ VueWrapper {
                   <p
                     class="title"
                   >
-                    
+                    Progress
                   </p>
                    
                   <div
@@ -5144,14 +5200,14 @@ VueWrapper {
                     />
                      
                     <div
-                      class="inner-bar column-end-NaN"
+                      class="inner-bar column-end-20"
                     />
                   </div>
                    
                   <p
                     class="subtitle"
                   >
-                    0 / 0
+                    20 / 100
                   </p>
                 </div>,
                 "$emit": [Function],
@@ -5199,10 +5255,12 @@ VueWrapper {
                   "props": Object {
                     "title": Object {
                       "default": "",
+                      "required": true,
                       "type": [Function],
                     },
                     "total": Object {
                       "default": 0,
+                      "required": true,
                       "type": [Function],
                     },
                     "unit": Object {
@@ -5211,8 +5269,14 @@ VueWrapper {
                     },
                     "used": Object {
                       "default": 0,
+                      "required": true,
                       "type": [Function],
                     },
+                  },
+                  "propsData": Object {
+                    "title": "Progress",
+                    "total": 100,
+                    "used": 20,
                   },
                   "provide": [Function],
                   "render": [Function],
@@ -5364,7 +5428,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "column-end-NaN": true,
+                      "column-end-20": true,
                     },
                     "vm": [Circular],
                   },
@@ -5379,10 +5443,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "title": "",
-                  "total": 0,
+                  "title": "Progress",
+                  "total": 100,
                   "unit": "",
-                  "used": 0,
+                  "used": 20,
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -5445,7 +5509,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "column-end-NaN": true,
+                            "column-end-20": true,
                           },
                           "vm": [Circular],
                         },
@@ -5489,7 +5553,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "column-end-NaN": true,
+                            "column-end-20": true,
                           },
                           "vm": [Circular],
                         },
@@ -5655,7 +5719,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "column-end-NaN": true,
+                      "column-end-20": true,
                     },
                     "vm": [Circular],
                   },
@@ -5714,7 +5778,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "column-end-NaN": true,
+                              "column-end-20": true,
                             },
                             "vm": [Circular],
                           },
@@ -5758,7 +5822,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "column-end-NaN": true,
+                              "column-end-20": true,
                             },
                             "vm": [Circular],
                           },
@@ -5848,7 +5912,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "column-end-NaN": true,
+                          "column-end-20": true,
                         },
                         "vm": [Circular],
                       },
@@ -5892,7 +5956,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "column-end-NaN": true,
+                          "column-end-20": true,
                         },
                         "vm": [Circular],
                       },
@@ -6058,7 +6122,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "column-end-NaN": true,
+                    "column-end-20": true,
                   },
                   "vm": [Circular],
                 },
@@ -6117,7 +6181,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "column-end-NaN": true,
+                            "column-end-20": true,
                           },
                           "vm": [Circular],
                         },
@@ -6161,7 +6225,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "column-end-NaN": true,
+                            "column-end-20": true,
                           },
                           "vm": [Circular],
                         },
@@ -6194,12 +6258,12 @@ VueWrapper {
             },
             "data": Object {
               "class": Object {
-                "column-end-NaN": true,
+                "column-end-20": true,
               },
               "staticClass": "inner-bar",
             },
             "elm": <div
-              class="inner-bar column-end-NaN"
+              class="inner-bar column-end-20"
             />,
             "fnContext": undefined,
             "fnOptions": undefined,
@@ -6230,7 +6294,7 @@ VueWrapper {
             <p
               class="title"
             >
-              
+              Progress
             </p>
              
             <div
@@ -6241,14 +6305,14 @@ VueWrapper {
               />
                
               <div
-                class="inner-bar column-end-NaN"
+                class="inner-bar column-end-20"
               />
             </div>
              
             <p
               class="subtitle"
             >
-              0 / 0
+              20 / 100
             </p>
           </div>,
           "$emit": [Function],
@@ -6296,10 +6360,12 @@ VueWrapper {
             "props": Object {
               "title": Object {
                 "default": "",
+                "required": true,
                 "type": [Function],
               },
               "total": Object {
                 "default": 0,
+                "required": true,
                 "type": [Function],
               },
               "unit": Object {
@@ -6308,8 +6374,14 @@ VueWrapper {
               },
               "used": Object {
                 "default": 0,
+                "required": true,
                 "type": [Function],
               },
+            },
+            "propsData": Object {
+              "title": "Progress",
+              "total": 100,
+              "used": 20,
             },
             "provide": [Function],
             "render": [Function],
@@ -6461,7 +6533,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "column-end-NaN": true,
+                "column-end-20": true,
               },
               "vm": [Circular],
             },
@@ -6476,10 +6548,10 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "title": "",
-            "total": 0,
+            "title": "Progress",
+            "total": 100,
             "unit": "",
-            "used": 0,
+            "used": 20,
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
@@ -6492,7 +6564,7 @@ VueWrapper {
               <p
                 class="title"
               >
-                
+                Progress
               </p>
                
               <div
@@ -6503,14 +6575,14 @@ VueWrapper {
                 />
                  
                 <div
-                  class="inner-bar column-end-NaN"
+                  class="inner-bar column-end-20"
                 />
               </div>
                
               <p
                 class="subtitle"
               >
-                0 / 0
+                20 / 100
               </p>
             </div>,
             "$emit": [Function],
@@ -6558,10 +6630,12 @@ VueWrapper {
               "props": Object {
                 "title": Object {
                   "default": "",
+                  "required": true,
                   "type": [Function],
                 },
                 "total": Object {
                   "default": 0,
+                  "required": true,
                   "type": [Function],
                 },
                 "unit": Object {
@@ -6570,8 +6644,14 @@ VueWrapper {
                 },
                 "used": Object {
                   "default": 0,
+                  "required": true,
                   "type": [Function],
                 },
+              },
+              "propsData": Object {
+                "title": "Progress",
+                "total": 100,
+                "used": 20,
               },
               "provide": [Function],
               "render": [Function],
@@ -6723,7 +6803,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "vm": [Circular],
               },
@@ -6738,10 +6818,10 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "title": "",
-              "total": 0,
+              "title": "Progress",
+              "total": 100,
               "unit": "",
-              "used": 0,
+              "used": 20,
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -6804,7 +6884,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "column-end-NaN": true,
+                        "column-end-20": true,
                       },
                       "vm": [Circular],
                     },
@@ -6848,7 +6928,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "column-end-NaN": true,
+                        "column-end-20": true,
                       },
                       "vm": [Circular],
                     },
@@ -7014,7 +7094,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "vm": [Circular],
               },
@@ -7073,7 +7153,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "column-end-NaN": true,
+                          "column-end-20": true,
                         },
                         "vm": [Circular],
                       },
@@ -7117,7 +7197,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "column-end-NaN": true,
+                          "column-end-20": true,
                         },
                         "vm": [Circular],
                       },
@@ -7207,7 +7287,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "column-end-NaN": true,
+                      "column-end-20": true,
                     },
                     "vm": [Circular],
                   },
@@ -7251,7 +7331,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "column-end-NaN": true,
+                      "column-end-20": true,
                     },
                     "vm": [Circular],
                   },
@@ -7417,7 +7497,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "column-end-NaN": true,
+                "column-end-20": true,
               },
               "vm": [Circular],
             },
@@ -7476,7 +7556,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "column-end-NaN": true,
+                        "column-end-20": true,
                       },
                       "vm": [Circular],
                     },
@@ -7520,7 +7600,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "column-end-NaN": true,
+                        "column-end-20": true,
                       },
                       "vm": [Circular],
                     },
@@ -7562,7 +7642,7 @@ VueWrapper {
           />
            
           <div
-            class="inner-bar column-end-NaN"
+            class="inner-bar column-end-20"
           />
         </div>,
         "fnContext": undefined,
@@ -7618,7 +7698,7 @@ VueWrapper {
             "componentOptions": undefined,
             "context": undefined,
             "data": undefined,
-            "elm": 0 / 0,
+            "elm": 20 / 100,
             "fnContext": undefined,
             "fnOptions": undefined,
             "fnScopeId": undefined,
@@ -7633,7 +7713,7 @@ VueWrapper {
             "parent": undefined,
             "raw": false,
             "tag": undefined,
-            "text": "0 / 0",
+            "text": "20 / 100",
           },
         ],
         "componentInstance": undefined,
@@ -7648,7 +7728,7 @@ VueWrapper {
             <p
               class="title"
             >
-              
+              Progress
             </p>
              
             <div
@@ -7659,14 +7739,14 @@ VueWrapper {
               />
                
               <div
-                class="inner-bar column-end-NaN"
+                class="inner-bar column-end-20"
               />
             </div>
              
             <p
               class="subtitle"
             >
-              0 / 0
+              20 / 100
             </p>
           </div>,
           "$emit": [Function],
@@ -7714,10 +7794,12 @@ VueWrapper {
             "props": Object {
               "title": Object {
                 "default": "",
+                "required": true,
                 "type": [Function],
               },
               "total": Object {
                 "default": 0,
+                "required": true,
                 "type": [Function],
               },
               "unit": Object {
@@ -7726,8 +7808,14 @@ VueWrapper {
               },
               "used": Object {
                 "default": 0,
+                "required": true,
                 "type": [Function],
               },
+            },
+            "propsData": Object {
+              "title": "Progress",
+              "total": 100,
+              "used": 20,
             },
             "provide": [Function],
             "render": [Function],
@@ -7879,7 +7967,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "column-end-NaN": true,
+                "column-end-20": true,
               },
               "vm": [Circular],
             },
@@ -7894,10 +7982,10 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "title": "",
-            "total": 0,
+            "title": "Progress",
+            "total": 100,
             "unit": "",
-            "used": 0,
+            "used": 20,
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
@@ -7910,7 +7998,7 @@ VueWrapper {
               <p
                 class="title"
               >
-                
+                Progress
               </p>
                
               <div
@@ -7921,14 +8009,14 @@ VueWrapper {
                 />
                  
                 <div
-                  class="inner-bar column-end-NaN"
+                  class="inner-bar column-end-20"
                 />
               </div>
                
               <p
                 class="subtitle"
               >
-                0 / 0
+                20 / 100
               </p>
             </div>,
             "$emit": [Function],
@@ -7976,10 +8064,12 @@ VueWrapper {
               "props": Object {
                 "title": Object {
                   "default": "",
+                  "required": true,
                   "type": [Function],
                 },
                 "total": Object {
                   "default": 0,
+                  "required": true,
                   "type": [Function],
                 },
                 "unit": Object {
@@ -7988,8 +8078,14 @@ VueWrapper {
                 },
                 "used": Object {
                   "default": 0,
+                  "required": true,
                   "type": [Function],
                 },
+              },
+              "propsData": Object {
+                "title": "Progress",
+                "total": 100,
+                "used": 20,
               },
               "provide": [Function],
               "render": [Function],
@@ -8141,7 +8237,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "vm": [Circular],
               },
@@ -8156,10 +8252,10 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "title": "",
-              "total": 0,
+              "title": "Progress",
+              "total": 100,
               "unit": "",
-              "used": 0,
+              "used": 20,
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -8222,7 +8318,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "column-end-NaN": true,
+                        "column-end-20": true,
                       },
                       "vm": [Circular],
                     },
@@ -8266,7 +8362,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "column-end-NaN": true,
+                        "column-end-20": true,
                       },
                       "vm": [Circular],
                     },
@@ -8432,7 +8528,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "vm": [Circular],
               },
@@ -8491,7 +8587,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "column-end-NaN": true,
+                          "column-end-20": true,
                         },
                         "vm": [Circular],
                       },
@@ -8535,7 +8631,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "column-end-NaN": true,
+                          "column-end-20": true,
                         },
                         "vm": [Circular],
                       },
@@ -8625,7 +8721,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "column-end-NaN": true,
+                      "column-end-20": true,
                     },
                     "vm": [Circular],
                   },
@@ -8669,7 +8765,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "column-end-NaN": true,
+                      "column-end-20": true,
                     },
                     "vm": [Circular],
                   },
@@ -8835,7 +8931,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "column-end-NaN": true,
+                "column-end-20": true,
               },
               "vm": [Circular],
             },
@@ -8894,7 +8990,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "column-end-NaN": true,
+                        "column-end-20": true,
                       },
                       "vm": [Circular],
                     },
@@ -8938,7 +9034,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "column-end-NaN": true,
+                        "column-end-20": true,
                       },
                       "vm": [Circular],
                     },
@@ -8975,7 +9071,7 @@ VueWrapper {
         "elm": <p
           class="subtitle"
         >
-          0 / 0
+          20 / 100
         </p>,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -9006,7 +9102,7 @@ VueWrapper {
         <p
           class="title"
         >
-          
+          Progress
         </p>
          
         <div
@@ -9017,14 +9113,14 @@ VueWrapper {
           />
            
           <div
-            class="inner-bar column-end-NaN"
+            class="inner-bar column-end-20"
           />
         </div>
          
         <p
           class="subtitle"
         >
-          0 / 0
+          20 / 100
         </p>
       </div>,
       "$emit": [Function],
@@ -9072,10 +9168,12 @@ VueWrapper {
         "props": Object {
           "title": Object {
             "default": "",
+            "required": true,
             "type": [Function],
           },
           "total": Object {
             "default": 0,
+            "required": true,
             "type": [Function],
           },
           "unit": Object {
@@ -9084,8 +9182,14 @@ VueWrapper {
           },
           "used": Object {
             "default": 0,
+            "required": true,
             "type": [Function],
           },
+        },
+        "propsData": Object {
+          "title": "Progress",
+          "total": 100,
+          "used": 20,
         },
         "provide": [Function],
         "render": [Function],
@@ -9237,7 +9341,7 @@ VueWrapper {
           "sync": true,
           "user": false,
           "value": Object {
-            "column-end-NaN": true,
+            "column-end-20": true,
           },
           "vm": [Circular],
         },
@@ -9252,10 +9356,10 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "title": "",
-        "total": 0,
+        "title": "Progress",
+        "total": 100,
         "unit": "",
-        "used": 0,
+        "used": 20,
       },
       "_provided": undefined,
       "_renderProxy": VueComponent {
@@ -9268,7 +9372,7 @@ VueWrapper {
           <p
             class="title"
           >
-            
+            Progress
           </p>
            
           <div
@@ -9279,14 +9383,14 @@ VueWrapper {
             />
              
             <div
-              class="inner-bar column-end-NaN"
+              class="inner-bar column-end-20"
             />
           </div>
            
           <p
             class="subtitle"
           >
-            0 / 0
+            20 / 100
           </p>
         </div>,
         "$emit": [Function],
@@ -9334,10 +9438,12 @@ VueWrapper {
           "props": Object {
             "title": Object {
               "default": "",
+              "required": true,
               "type": [Function],
             },
             "total": Object {
               "default": 0,
+              "required": true,
               "type": [Function],
             },
             "unit": Object {
@@ -9346,8 +9452,14 @@ VueWrapper {
             },
             "used": Object {
               "default": 0,
+              "required": true,
               "type": [Function],
             },
+          },
+          "propsData": Object {
+            "title": "Progress",
+            "total": 100,
+            "used": 20,
           },
           "provide": [Function],
           "render": [Function],
@@ -9499,7 +9611,7 @@ VueWrapper {
             "sync": true,
             "user": false,
             "value": Object {
-              "column-end-NaN": true,
+              "column-end-20": true,
             },
             "vm": [Circular],
           },
@@ -9514,10 +9626,10 @@ VueWrapper {
         "_isMounted": true,
         "_isVue": true,
         "_props": Object {
-          "title": "",
-          "total": 0,
+          "title": "Progress",
+          "total": 100,
           "unit": "",
-          "used": 0,
+          "used": 20,
         },
         "_provided": undefined,
         "_renderProxy": [Circular],
@@ -9580,7 +9692,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "column-end-NaN": true,
+                    "column-end-20": true,
                   },
                   "vm": [Circular],
                 },
@@ -9624,7 +9736,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "column-end-NaN": true,
+                    "column-end-20": true,
                   },
                   "vm": [Circular],
                 },
@@ -9790,7 +9902,7 @@ VueWrapper {
             "sync": true,
             "user": false,
             "value": Object {
-              "column-end-NaN": true,
+              "column-end-20": true,
             },
             "vm": [Circular],
           },
@@ -9849,7 +9961,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "column-end-NaN": true,
+                      "column-end-20": true,
                     },
                     "vm": [Circular],
                   },
@@ -9893,7 +10005,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "column-end-NaN": true,
+                      "column-end-20": true,
                     },
                     "vm": [Circular],
                   },
@@ -9983,7 +10095,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "vm": [Circular],
               },
@@ -10027,7 +10139,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "column-end-NaN": true,
+                  "column-end-20": true,
                 },
                 "vm": [Circular],
               },
@@ -10193,7 +10305,7 @@ VueWrapper {
           "sync": true,
           "user": false,
           "value": Object {
-            "column-end-NaN": true,
+            "column-end-20": true,
           },
           "vm": [Circular],
         },
@@ -10252,7 +10364,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "column-end-NaN": true,
+                    "column-end-20": true,
                   },
                   "vm": [Circular],
                 },
@@ -10296,7 +10408,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "column-end-NaN": true,
+                    "column-end-20": true,
                   },
                   "vm": [Circular],
                 },
@@ -10336,7 +10448,7 @@ VueWrapper {
       <p
         class="title"
       >
-        
+        Progress
       </p>
        
       <div
@@ -10347,14 +10459,14 @@ VueWrapper {
         />
          
         <div
-          class="inner-bar column-end-NaN"
+          class="inner-bar column-end-20"
         />
       </div>
        
       <p
         class="subtitle"
       >
-        0 / 0
+        20 / 100
       </p>
     </div>,
     "fnContext": undefined,

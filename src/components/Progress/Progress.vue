@@ -17,10 +17,10 @@ import vueTypes from 'vue-types'
 export default {
   name: 'TipeProgress',
   props: {
-    total: vueTypes.number,
-    used: vueTypes.number,
+    total: vueTypes.number.isRequired,
+    used: vueTypes.number.isRequired,
     unit: vueTypes.string.def(''),
-    title: vueTypes.string
+    title: vueTypes.string.isRequired
   },
   computed: {
     percent: function() {
