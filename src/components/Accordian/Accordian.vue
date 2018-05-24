@@ -8,6 +8,8 @@
         :class="{open}"
         icon="arrow-down"
         class="icon"
+        width="9px"
+        height="6px"
       />
     </div>
     <div 
