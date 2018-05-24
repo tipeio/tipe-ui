@@ -10,7 +10,6 @@
           v-model="inputVal"
           :value="value"
           type="checkbox"
-          name="test"
         >
         <span class="slider round"/>
       </label>
@@ -27,7 +26,7 @@ import vueTypes from 'vue-types'
 export default {
   name: 'TipeSwitch',
   props: {
-    text: vueTypes.string,
+    text: vueTypes.string.isRequired,
     sublabel: vueTypes.string,
     value: vueTypes.boolean,
     onCheck: vueTypes.func
