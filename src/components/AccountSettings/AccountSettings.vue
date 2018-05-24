@@ -2,7 +2,10 @@
   <div class="grid">
     <div class="panel-content">
       <div class="row">
-        <icon-badge icon="rocket" />
+        <icon-badge 
+          icon="rocket" 
+          height="20px" 
+          width="20px"/>
         <tipe-progress 
           :used="8.08" 
           :total="40"
