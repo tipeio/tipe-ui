@@ -1,10 +1,9 @@
 import { shallowMount } from '@vue/test-utils'
 import Icon from '@/components/Icon'
-import faker from 'faker'
 
 const mockIconLoader = () => ({
   viewBox: '0 0 20 20',
-  id: faker.lorem.word()
+  id: 'test'
 })
 
 describe('Icon', () => {
