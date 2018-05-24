@@ -2,7 +2,7 @@
   <tipe-card :data-tipe-ui="$options.name">
     <div :class="$style.layout">
       <div :class="$style.header">
-        <div class="title">Folder</div>
+        <div :class="$style.title">Folder</div>
         <tipe-button
           size="small"
           icon-before="plus"
