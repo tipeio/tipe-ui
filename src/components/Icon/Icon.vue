@@ -3,7 +3,7 @@
     :data-tipe-ui="$options.name"
     :height="height"
     :width="width"
-    viewBox="src.viewBox"
+    :viewBox="src.viewBox"
   >
     <use :xlink:href="src.id" />
   </svg>
