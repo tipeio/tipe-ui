@@ -74,8 +74,20 @@ VueWrapper {
           "normalizedStyle": undefined,
           "on": undefined,
           "props": Object {
+            "__iconLoader__": Object {
+              "default": [Function],
+              "type": [Function],
+            },
+            "height": Object {
+              "default": "1rem",
+              "type": [Function],
+            },
             "icon": Object {
-              "default": "",
+              "default": "plus",
+              "type": [Function],
+            },
+            "width": Object {
+              "default": "1rem",
               "type": [Function],
             },
           },
@@ -592,8 +604,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -4103,8 +4127,20 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
+                  "__iconLoader__": Object {
+                    "default": [Function],
+                    "type": [Function],
+                  },
+                  "height": Object {
+                    "default": "1rem",
+                    "type": [Function],
+                  },
                   "icon": Object {
-                    "default": "",
+                    "default": "plus",
+                    "type": [Function],
+                  },
+                  "width": Object {
+                    "default": "1rem",
                     "type": [Function],
                   },
                 },
@@ -4621,8 +4657,20 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
+                    "__iconLoader__": Object {
+                      "default": [Function],
+                      "type": [Function],
+                    },
+                    "height": Object {
+                      "default": "1rem",
+                      "type": [Function],
+                    },
                     "icon": Object {
-                      "default": "",
+                      "default": "plus",
+                      "type": [Function],
+                    },
+                    "width": Object {
+                      "default": "1rem",
                       "type": [Function],
                     },
                   },
@@ -7601,8 +7649,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -8119,8 +8179,20 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
+                "__iconLoader__": Object {
+                  "default": [Function],
+                  "type": [Function],
+                },
+                "height": Object {
+                  "default": "1rem",
+                  "type": [Function],
+                },
                 "icon": Object {
-                  "default": "",
+                  "default": "plus",
+                  "type": [Function],
+                },
+                "width": Object {
+                  "default": "1rem",
                   "type": [Function],
                 },
               },
@@ -11141,8 +11213,20 @@ VueWrapper {
           "normalizedStyle": undefined,
           "on": undefined,
           "props": Object {
+            "__iconLoader__": Object {
+              "default": [Function],
+              "type": [Function],
+            },
+            "height": Object {
+              "default": "1rem",
+              "type": [Function],
+            },
             "icon": Object {
-              "default": "",
+              "default": "plus",
+              "type": [Function],
+            },
+            "width": Object {
+              "default": "1rem",
               "type": [Function],
             },
           },
@@ -11662,8 +11746,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -15176,8 +15272,20 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
+                  "__iconLoader__": Object {
+                    "default": [Function],
+                    "type": [Function],
+                  },
+                  "height": Object {
+                    "default": "1rem",
+                    "type": [Function],
+                  },
                   "icon": Object {
-                    "default": "",
+                    "default": "plus",
+                    "type": [Function],
+                  },
+                  "width": Object {
+                    "default": "1rem",
                     "type": [Function],
                   },
                 },
@@ -15697,8 +15805,20 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
+                    "__iconLoader__": Object {
+                      "default": [Function],
+                      "type": [Function],
+                    },
+                    "height": Object {
+                      "default": "1rem",
+                      "type": [Function],
+                    },
                     "icon": Object {
-                      "default": "",
+                      "default": "plus",
+                      "type": [Function],
+                    },
+                    "width": Object {
+                      "default": "1rem",
                       "type": [Function],
                     },
                   },
@@ -18680,8 +18800,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -19201,8 +19333,20 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
+                "__iconLoader__": Object {
+                  "default": [Function],
+                  "type": [Function],
+                },
+                "height": Object {
+                  "default": "1rem",
+                  "type": [Function],
+                },
                 "icon": Object {
-                  "default": "",
+                  "default": "plus",
+                  "type": [Function],
+                },
+                "width": Object {
+                  "default": "1rem",
                   "type": [Function],
                 },
               },
@@ -22226,8 +22370,20 @@ VueWrapper {
           "normalizedStyle": undefined,
           "on": undefined,
           "props": Object {
+            "__iconLoader__": Object {
+              "default": [Function],
+              "type": [Function],
+            },
+            "height": Object {
+              "default": "1rem",
+              "type": [Function],
+            },
             "icon": Object {
-              "default": "",
+              "default": "plus",
+              "type": [Function],
+            },
+            "width": Object {
+              "default": "1rem",
               "type": [Function],
             },
           },
@@ -22747,8 +22903,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -26261,8 +26429,20 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
+                  "__iconLoader__": Object {
+                    "default": [Function],
+                    "type": [Function],
+                  },
+                  "height": Object {
+                    "default": "1rem",
+                    "type": [Function],
+                  },
                   "icon": Object {
-                    "default": "",
+                    "default": "plus",
+                    "type": [Function],
+                  },
+                  "width": Object {
+                    "default": "1rem",
                     "type": [Function],
                   },
                 },
@@ -26782,8 +26962,20 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
+                    "__iconLoader__": Object {
+                      "default": [Function],
+                      "type": [Function],
+                    },
+                    "height": Object {
+                      "default": "1rem",
+                      "type": [Function],
+                    },
                     "icon": Object {
-                      "default": "",
+                      "default": "plus",
+                      "type": [Function],
+                    },
+                    "width": Object {
+                      "default": "1rem",
                       "type": [Function],
                     },
                   },
@@ -29765,8 +29957,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -30286,8 +30490,20 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
+                "__iconLoader__": Object {
+                  "default": [Function],
+                  "type": [Function],
+                },
+                "height": Object {
+                  "default": "1rem",
+                  "type": [Function],
+                },
                 "icon": Object {
-                  "default": "",
+                  "default": "plus",
+                  "type": [Function],
+                },
+                "width": Object {
+                  "default": "1rem",
                   "type": [Function],
                 },
               },
@@ -33311,8 +33527,20 @@ VueWrapper {
           "normalizedStyle": undefined,
           "on": undefined,
           "props": Object {
+            "__iconLoader__": Object {
+              "default": [Function],
+              "type": [Function],
+            },
+            "height": Object {
+              "default": "1rem",
+              "type": [Function],
+            },
             "icon": Object {
-              "default": "",
+              "default": "plus",
+              "type": [Function],
+            },
+            "width": Object {
+              "default": "1rem",
               "type": [Function],
             },
           },
@@ -33832,8 +34060,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -37346,8 +37586,20 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
+                  "__iconLoader__": Object {
+                    "default": [Function],
+                    "type": [Function],
+                  },
+                  "height": Object {
+                    "default": "1rem",
+                    "type": [Function],
+                  },
                   "icon": Object {
-                    "default": "",
+                    "default": "plus",
+                    "type": [Function],
+                  },
+                  "width": Object {
+                    "default": "1rem",
                     "type": [Function],
                   },
                 },
@@ -37867,8 +38119,20 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
+                    "__iconLoader__": Object {
+                      "default": [Function],
+                      "type": [Function],
+                    },
+                    "height": Object {
+                      "default": "1rem",
+                      "type": [Function],
+                    },
                     "icon": Object {
-                      "default": "",
+                      "default": "plus",
+                      "type": [Function],
+                    },
+                    "width": Object {
+                      "default": "1rem",
                       "type": [Function],
                     },
                   },
@@ -40850,8 +41114,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -41371,8 +41647,20 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
+                "__iconLoader__": Object {
+                  "default": [Function],
+                  "type": [Function],
+                },
+                "height": Object {
+                  "default": "1rem",
+                  "type": [Function],
+                },
                 "icon": Object {
-                  "default": "",
+                  "default": "plus",
+                  "type": [Function],
+                },
+                "width": Object {
+                  "default": "1rem",
                   "type": [Function],
                 },
               },
@@ -44396,8 +44684,20 @@ VueWrapper {
           "normalizedStyle": undefined,
           "on": undefined,
           "props": Object {
+            "__iconLoader__": Object {
+              "default": [Function],
+              "type": [Function],
+            },
+            "height": Object {
+              "default": "1rem",
+              "type": [Function],
+            },
             "icon": Object {
-              "default": "",
+              "default": "plus",
+              "type": [Function],
+            },
+            "width": Object {
+              "default": "1rem",
               "type": [Function],
             },
           },
@@ -44917,8 +45217,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -48431,8 +48743,20 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
+                  "__iconLoader__": Object {
+                    "default": [Function],
+                    "type": [Function],
+                  },
+                  "height": Object {
+                    "default": "1rem",
+                    "type": [Function],
+                  },
                   "icon": Object {
-                    "default": "",
+                    "default": "plus",
+                    "type": [Function],
+                  },
+                  "width": Object {
+                    "default": "1rem",
                     "type": [Function],
                   },
                 },
@@ -48952,8 +49276,20 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
+                    "__iconLoader__": Object {
+                      "default": [Function],
+                      "type": [Function],
+                    },
+                    "height": Object {
+                      "default": "1rem",
+                      "type": [Function],
+                    },
                     "icon": Object {
-                      "default": "",
+                      "default": "plus",
+                      "type": [Function],
+                    },
+                    "width": Object {
+                      "default": "1rem",
                       "type": [Function],
                     },
                   },
@@ -51935,8 +52271,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -52456,8 +52804,20 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
+                "__iconLoader__": Object {
+                  "default": [Function],
+                  "type": [Function],
+                },
+                "height": Object {
+                  "default": "1rem",
+                  "type": [Function],
+                },
                 "icon": Object {
-                  "default": "",
+                  "default": "plus",
+                  "type": [Function],
+                },
+                "width": Object {
+                  "default": "1rem",
                   "type": [Function],
                 },
               },
@@ -55481,8 +55841,20 @@ VueWrapper {
           "normalizedStyle": undefined,
           "on": undefined,
           "props": Object {
+            "__iconLoader__": Object {
+              "default": [Function],
+              "type": [Function],
+            },
+            "height": Object {
+              "default": "1rem",
+              "type": [Function],
+            },
             "icon": Object {
-              "default": "",
+              "default": "plus",
+              "type": [Function],
+            },
+            "width": Object {
+              "default": "1rem",
               "type": [Function],
             },
           },
@@ -56002,8 +56374,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -59516,8 +59900,20 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
+                  "__iconLoader__": Object {
+                    "default": [Function],
+                    "type": [Function],
+                  },
+                  "height": Object {
+                    "default": "1rem",
+                    "type": [Function],
+                  },
                   "icon": Object {
-                    "default": "",
+                    "default": "plus",
+                    "type": [Function],
+                  },
+                  "width": Object {
+                    "default": "1rem",
                     "type": [Function],
                   },
                 },
@@ -60037,8 +60433,20 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
+                    "__iconLoader__": Object {
+                      "default": [Function],
+                      "type": [Function],
+                    },
+                    "height": Object {
+                      "default": "1rem",
+                      "type": [Function],
+                    },
                     "icon": Object {
-                      "default": "",
+                      "default": "plus",
+                      "type": [Function],
+                    },
+                    "width": Object {
+                      "default": "1rem",
                       "type": [Function],
                     },
                   },
@@ -63020,8 +63428,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -63541,8 +63961,20 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
+                "__iconLoader__": Object {
+                  "default": [Function],
+                  "type": [Function],
+                },
+                "height": Object {
+                  "default": "1rem",
+                  "type": [Function],
+                },
                 "icon": Object {
-                  "default": "",
+                  "default": "plus",
+                  "type": [Function],
+                },
+                "width": Object {
+                  "default": "1rem",
                   "type": [Function],
                 },
               },
@@ -66566,8 +66998,20 @@ VueWrapper {
           "normalizedStyle": undefined,
           "on": undefined,
           "props": Object {
+            "__iconLoader__": Object {
+              "default": [Function],
+              "type": [Function],
+            },
+            "height": Object {
+              "default": "1rem",
+              "type": [Function],
+            },
             "icon": Object {
-              "default": "",
+              "default": "plus",
+              "type": [Function],
+            },
+            "width": Object {
+              "default": "1rem",
               "type": [Function],
             },
           },
@@ -67089,8 +67533,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -70605,8 +71061,20 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
+                  "__iconLoader__": Object {
+                    "default": [Function],
+                    "type": [Function],
+                  },
+                  "height": Object {
+                    "default": "1rem",
+                    "type": [Function],
+                  },
                   "icon": Object {
-                    "default": "",
+                    "default": "plus",
+                    "type": [Function],
+                  },
+                  "width": Object {
+                    "default": "1rem",
                     "type": [Function],
                   },
                 },
@@ -71128,8 +71596,20 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
+                    "__iconLoader__": Object {
+                      "default": [Function],
+                      "type": [Function],
+                    },
+                    "height": Object {
+                      "default": "1rem",
+                      "type": [Function],
+                    },
                     "icon": Object {
-                      "default": "",
+                      "default": "plus",
+                      "type": [Function],
+                    },
+                    "width": Object {
+                      "default": "1rem",
                       "type": [Function],
                     },
                   },
@@ -74113,8 +74593,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -74636,8 +75128,20 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
+                "__iconLoader__": Object {
+                  "default": [Function],
+                  "type": [Function],
+                },
+                "height": Object {
+                  "default": "1rem",
+                  "type": [Function],
+                },
                 "icon": Object {
-                  "default": "",
+                  "default": "plus",
+                  "type": [Function],
+                },
+                "width": Object {
+                  "default": "1rem",
                   "type": [Function],
                 },
               },

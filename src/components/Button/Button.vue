@@ -85,14 +85,28 @@ button {
 
 .icon-container {
   display: flex;
-  width: 3.125rem;
   justify-content: center;
   align-items: center;
 }
 
-.icon {
+button.medium .icon-container,
+button.large .icon-container {
+  width: 3.125rem;
+}
+
+button.small .icon-container {
+  width: 1.8125rem;
+}
+
+button.medium .icon,
+button.large .icon {
   height: 0.8125rem;
   width: 0.8125rem;
+}
+
+button.small .icon {
+  height: 0.5625rem;
+  width: 0.5625rem;
 }
 
 .label {
@@ -102,8 +116,17 @@ button {
   color: inherit;
   overflow: hidden;
   white-space: nowrap;
+}
+
+button.medium .label,
+button.large .label {
   padding-left: 1.5625rem;
   padding-right: 1.5625rem;
+}
+
+button.small .label {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 button.has_icon_before .label {
@@ -132,11 +155,11 @@ button.large {
 
 button.small .label,
 button.medium .label {
-  font-size: 0.8125rem;
+  font-size: 0.6875rem;
 }
 
 button.large .label {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
 }
 
 /*
