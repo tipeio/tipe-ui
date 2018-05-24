@@ -19,7 +19,7 @@ export default {
     TipeIcon
   },
   props: {
-    icon: vueTypes.string
+    icon: vueTypes.string.isRequired
   }
 }
 </script>
