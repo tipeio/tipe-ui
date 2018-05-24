@@ -4,15 +4,16 @@ exports[`Icon <template> matches previous snapshot 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
-  "element": <object
-    data="test-file-stub"
+  "element": <svg
     data-tipe-ui="TipeIcon"
-    type="image/svg+xml"
+    height="1rem"
+    viewBox="src.viewBox"
+    width="1rem"
   >
-    <img
-      src="test-file-stub"
+    <use
+      xlink:href="#maxime"
     />
-  </object>,
+  </svg>,
   "isFunctionalComponent": undefined,
   "isVueComponent": true,
   "options": Object {
@@ -24,15 +25,16 @@ VueWrapper {
     "$attrs": Object {},
     "$children": Array [],
     "$createElement": [Function],
-    "$el": <object
-      data="test-file-stub"
+    "$el": <svg
       data-tipe-ui="TipeIcon"
-      type="image/svg+xml"
+      height="1rem"
+      viewBox="src.viewBox"
+      width="1rem"
     >
-      <img
-        src="test-file-stub"
+      <use
+        xlink:href="#maxime"
       />
-    </object>,
+    </svg>,
     "$emit": [Function],
     "$listeners": Object {},
     "$options": Object {
@@ -43,6 +45,9 @@ VueWrapper {
       "_parentElm": null,
       "_propKeys": Array [
         "icon",
+        "height",
+        "width",
+        "__iconLoader__",
       ],
       "_refElm": null,
       "beforeCreate": Array [
@@ -73,10 +78,25 @@ VueWrapper {
       "methods": undefined,
       "name": "TipeIcon",
       "props": Object {
-        "icon": Object {
-          "default": "",
+        "__iconLoader__": Object {
+          "default": [Function],
           "type": [Function],
         },
+        "height": Object {
+          "default": "1rem",
+          "type": [Function],
+        },
+        "icon": Object {
+          "default": "plus",
+          "type": [Function],
+        },
+        "width": Object {
+          "default": "1rem",
+          "type": [Function],
+        },
+      },
+      "propsData": Object {
+        "__iconLoader__": [Function],
       },
       "provide": [Function],
       "render": [Function],
@@ -97,9 +117,66 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
+          5,
           2,
         },
         "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              [Circular],
+              Watcher {
+                "active": true,
+                "cb": [Function],
+                "deep": false,
+                "depIds": Set {
+                  3,
+                  4,
+                  2,
+                  5,
+                },
+                "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 3,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 4,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                      [Circular],
+                    ],
+                  },
+                  [Circular],
+                ],
+                "dirty": false,
+                "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                "getter": [Function],
+                "id": 2,
+                "lazy": false,
+                "newDepIds": Set {},
+                "newDeps": Array [],
+                "sync": true,
+                "user": false,
+                "value": undefined,
+                "vm": [Circular],
+              },
+            ],
+          },
           Dep {
             "_sortedId": 0,
             "id": 2,
@@ -110,10 +187,35 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  3,
+                  4,
                   2,
+                  5,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 3,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 4,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   [Circular],
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                      [Circular],
+                    ],
+                  },
                 ],
                 "dirty": false,
                 "expression": "function () {
@@ -134,7 +236,14 @@ VueWrapper {
         ],
         "dirty": false,
         "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
         "getter": [Function],
         "id": 1,
@@ -143,7 +252,10 @@ VueWrapper {
         "newDeps": Array [],
         "sync": true,
         "user": false,
-        "value": "test-file-stub",
+        "value": Object {
+          "id": "#maxime",
+          "viewBox": "0 0 20 20",
+        },
         "vm": [Circular],
       },
     },
@@ -157,22 +269,26 @@ VueWrapper {
     "_isMounted": true,
     "_isVue": true,
     "_props": Object {
-      "icon": "",
+      "__iconLoader__": [Function],
+      "height": "1rem",
+      "icon": "plus",
+      "width": "1rem",
     },
     "_provided": undefined,
     "_renderProxy": VueComponent {
       "$attrs": Object {},
       "$children": Array [],
       "$createElement": [Function],
-      "$el": <object
-        data="test-file-stub"
+      "$el": <svg
         data-tipe-ui="TipeIcon"
-        type="image/svg+xml"
+        height="1rem"
+        viewBox="src.viewBox"
+        width="1rem"
       >
-        <img
-          src="test-file-stub"
+        <use
+          xlink:href="#maxime"
         />
-      </object>,
+      </svg>,
       "$emit": [Function],
       "$listeners": Object {},
       "$options": Object {
@@ -183,6 +299,9 @@ VueWrapper {
         "_parentElm": null,
         "_propKeys": Array [
           "icon",
+          "height",
+          "width",
+          "__iconLoader__",
         ],
         "_refElm": null,
         "beforeCreate": Array [
@@ -213,10 +332,25 @@ VueWrapper {
         "methods": undefined,
         "name": "TipeIcon",
         "props": Object {
-          "icon": Object {
-            "default": "",
+          "__iconLoader__": Object {
+            "default": [Function],
             "type": [Function],
           },
+          "height": Object {
+            "default": "1rem",
+            "type": [Function],
+          },
+          "icon": Object {
+            "default": "plus",
+            "type": [Function],
+          },
+          "width": Object {
+            "default": "1rem",
+            "type": [Function],
+          },
+        },
+        "propsData": Object {
+          "__iconLoader__": [Function],
         },
         "provide": [Function],
         "render": [Function],
@@ -237,9 +371,66 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
+            5,
             2,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+                Watcher {
+                  "active": true,
+                  "cb": [Function],
+                  "deep": false,
+                  "depIds": Set {
+                    3,
+                    4,
+                    2,
+                    5,
+                  },
+                  "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 3,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 4,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
+                    [Circular],
+                  ],
+                  "dirty": false,
+                  "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                  "getter": [Function],
+                  "id": 2,
+                  "lazy": false,
+                  "newDepIds": Set {},
+                  "newDeps": Array [],
+                  "sync": true,
+                  "user": false,
+                  "value": undefined,
+                  "vm": [Circular],
+                },
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 2,
@@ -250,10 +441,35 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    3,
+                    4,
                     2,
+                    5,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 3,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 4,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     [Circular],
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
                   ],
                   "dirty": false,
                   "expression": "function () {
@@ -274,7 +490,14 @@ VueWrapper {
           ],
           "dirty": false,
           "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
           "getter": [Function],
           "id": 1,
@@ -283,7 +506,10 @@ VueWrapper {
           "newDeps": Array [],
           "sync": true,
           "user": false,
-          "value": "test-file-stub",
+          "value": Object {
+            "id": "#maxime",
+            "viewBox": "0 0 20 20",
+          },
           "vm": [Circular],
         },
       },
@@ -297,7 +523,10 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "icon": "",
+        "__iconLoader__": [Function],
+        "height": "1rem",
+        "icon": "plus",
+        "width": "1rem",
       },
       "_provided": undefined,
       "_renderProxy": [Circular],
@@ -317,11 +546,11 @@ VueWrapper {
             "context": [Circular],
             "data": Object {
               "attrs": Object {
-                "src": "test-file-stub",
+                "xlink:href": "#maxime",
               },
             },
-            "elm": <img
-              src="test-file-stub"
+            "elm": <use
+              xlink:href="#maxime"
             />,
             "fnContext": undefined,
             "fnOptions": undefined,
@@ -333,10 +562,10 @@ VueWrapper {
             "isRootInsert": false,
             "isStatic": false,
             "key": undefined,
-            "ns": undefined,
+            "ns": "svg",
             "parent": undefined,
             "raw": false,
-            "tag": "img",
+            "tag": "use",
             "text": undefined,
           },
         ],
@@ -345,20 +574,22 @@ VueWrapper {
         "context": [Circular],
         "data": Object {
           "attrs": Object {
-            "data": "test-file-stub",
             "data-tipe-ui": "TipeIcon",
-            "type": "image/svg+xml",
+            "height": "1rem",
+            "viewBox": "src.viewBox",
+            "width": "1rem",
           },
         },
-        "elm": <object
-          data="test-file-stub"
+        "elm": <svg
           data-tipe-ui="TipeIcon"
-          type="image/svg+xml"
+          height="1rem"
+          viewBox="src.viewBox"
+          width="1rem"
         >
-          <img
-            src="test-file-stub"
+          <use
+            xlink:href="#maxime"
           />
-        </object>,
+        </svg>,
         "fnContext": undefined,
         "fnOptions": undefined,
         "fnScopeId": undefined,
@@ -369,10 +600,10 @@ VueWrapper {
         "isRootInsert": true,
         "isStatic": false,
         "key": undefined,
-        "ns": undefined,
+        "ns": "svg",
         "parent": undefined,
         "raw": false,
-        "tag": "object",
+        "tag": "svg",
         "text": undefined,
       },
       "_watcher": Watcher {
@@ -380,9 +611,26 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
+          3,
+          4,
           2,
+          5,
         },
         "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 3,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 4,
+            "subs": Array [
+              [Circular],
+            ],
+          },
           Dep {
             "_sortedId": 0,
             "id": 2,
@@ -392,14 +640,30 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                      [Circular],
+                    ],
+                  },
                   [Circular],
                 ],
                 "dirty": false,
                 "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                 "getter": [Function],
                 "id": 1,
@@ -408,7 +672,60 @@ VueWrapper {
                 "newDeps": Array [],
                 "sync": true,
                 "user": false,
-                "value": "test-file-stub",
+                "value": Object {
+                  "id": "#maxime",
+                  "viewBox": "0 0 20 20",
+                },
+                "vm": [Circular],
+              },
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              Watcher {
+                "active": true,
+                "cb": [Function],
+                "deep": false,
+                "depIds": Set {
+                  5,
+                  2,
+                },
+                "deps": Array [
+                  [Circular],
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                      [Circular],
+                    ],
+                  },
+                ],
+                "dirty": false,
+                "expression": "function src() {
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
+    }",
+                "getter": [Function],
+                "id": 1,
+                "lazy": true,
+                "newDepIds": Set {},
+                "newDeps": Array [],
+                "sync": true,
+                "user": false,
+                "value": Object {
+                  "id": "#maxime",
+                  "viewBox": "0 0 20 20",
+                },
                 "vm": [Circular],
               },
               [Circular],
@@ -435,9 +752,66 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
+            5,
             2,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+                Watcher {
+                  "active": true,
+                  "cb": [Function],
+                  "deep": false,
+                  "depIds": Set {
+                    3,
+                    4,
+                    2,
+                    5,
+                  },
+                  "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 3,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 4,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
+                    [Circular],
+                  ],
+                  "dirty": false,
+                  "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                  "getter": [Function],
+                  "id": 2,
+                  "lazy": false,
+                  "newDepIds": Set {},
+                  "newDeps": Array [],
+                  "sync": true,
+                  "user": false,
+                  "value": undefined,
+                  "vm": [Circular],
+                },
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 2,
@@ -448,10 +822,35 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    3,
+                    4,
                     2,
+                    5,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 3,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 4,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     [Circular],
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
                   ],
                   "dirty": false,
                   "expression": "function () {
@@ -472,7 +871,14 @@ VueWrapper {
           ],
           "dirty": false,
           "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
           "getter": [Function],
           "id": 1,
@@ -481,7 +887,10 @@ VueWrapper {
           "newDeps": Array [],
           "sync": true,
           "user": false,
-          "value": "test-file-stub",
+          "value": Object {
+            "id": "#maxime",
+            "viewBox": "0 0 20 20",
+          },
           "vm": [Circular],
         },
         Watcher {
@@ -489,9 +898,26 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
+            3,
+            4,
             2,
+            5,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 3,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 4,
+              "subs": Array [
+                [Circular],
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 2,
@@ -501,14 +927,30 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
                     [Circular],
                   ],
                   "dirty": false,
                   "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                   "getter": [Function],
                   "id": 1,
@@ -517,7 +959,60 @@ VueWrapper {
                   "newDeps": Array [],
                   "sync": true,
                   "user": false,
-                  "value": "test-file-stub",
+                  "value": Object {
+                    "id": "#maxime",
+                    "viewBox": "0 0 20 20",
+                  },
+                  "vm": [Circular],
+                },
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                Watcher {
+                  "active": true,
+                  "cb": [Function],
+                  "deep": false,
+                  "depIds": Set {
+                    5,
+                    2,
+                  },
+                  "deps": Array [
+                    [Circular],
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
+                  ],
+                  "dirty": false,
+                  "expression": "function src() {
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
+    }",
+                  "getter": [Function],
+                  "id": 1,
+                  "lazy": true,
+                  "newDepIds": Set {},
+                  "newDeps": Array [],
+                  "sync": true,
+                  "user": false,
+                  "value": Object {
+                    "id": "#maxime",
+                    "viewBox": "0 0 20 20",
+                  },
                   "vm": [Circular],
                 },
                 [Circular],
@@ -556,11 +1051,11 @@ VueWrapper {
           "context": [Circular],
           "data": Object {
             "attrs": Object {
-              "src": "test-file-stub",
+              "xlink:href": "#maxime",
             },
           },
-          "elm": <img
-            src="test-file-stub"
+          "elm": <use
+            xlink:href="#maxime"
           />,
           "fnContext": undefined,
           "fnOptions": undefined,
@@ -572,10 +1067,10 @@ VueWrapper {
           "isRootInsert": false,
           "isStatic": false,
           "key": undefined,
-          "ns": undefined,
+          "ns": "svg",
           "parent": undefined,
           "raw": false,
-          "tag": "img",
+          "tag": "use",
           "text": undefined,
         },
       ],
@@ -584,20 +1079,22 @@ VueWrapper {
       "context": [Circular],
       "data": Object {
         "attrs": Object {
-          "data": "test-file-stub",
           "data-tipe-ui": "TipeIcon",
-          "type": "image/svg+xml",
+          "height": "1rem",
+          "viewBox": "src.viewBox",
+          "width": "1rem",
         },
       },
-      "elm": <object
-        data="test-file-stub"
+      "elm": <svg
         data-tipe-ui="TipeIcon"
-        type="image/svg+xml"
+        height="1rem"
+        viewBox="src.viewBox"
+        width="1rem"
       >
-        <img
-          src="test-file-stub"
+        <use
+          xlink:href="#maxime"
         />
-      </object>,
+      </svg>,
       "fnContext": undefined,
       "fnOptions": undefined,
       "fnScopeId": undefined,
@@ -608,10 +1105,10 @@ VueWrapper {
       "isRootInsert": true,
       "isStatic": false,
       "key": undefined,
-      "ns": undefined,
+      "ns": "svg",
       "parent": undefined,
       "raw": false,
-      "tag": "object",
+      "tag": "svg",
       "text": undefined,
     },
     "_watcher": Watcher {
@@ -619,9 +1116,26 @@ VueWrapper {
       "cb": [Function],
       "deep": false,
       "depIds": Set {
+        3,
+        4,
         2,
+        5,
       },
       "deps": Array [
+        Dep {
+          "_sortedId": 0,
+          "id": 3,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 4,
+          "subs": Array [
+            [Circular],
+          ],
+        },
         Dep {
           "_sortedId": 0,
           "id": 2,
@@ -631,14 +1145,30 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
+                5,
                 2,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                    [Circular],
+                  ],
+                },
                 [Circular],
               ],
               "dirty": false,
               "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
               "getter": [Function],
               "id": 1,
@@ -647,7 +1177,60 @@ VueWrapper {
               "newDeps": Array [],
               "sync": true,
               "user": false,
-              "value": "test-file-stub",
+              "value": Object {
+                "id": "#maxime",
+                "viewBox": "0 0 20 20",
+              },
+              "vm": [Circular],
+            },
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 5,
+          "subs": Array [
+            Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {
+                5,
+                2,
+              },
+              "deps": Array [
+                [Circular],
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                    [Circular],
+                  ],
+                },
+              ],
+              "dirty": false,
+              "expression": "function src() {
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
+    }",
+              "getter": [Function],
+              "id": 1,
+              "lazy": true,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": Object {
+                "id": "#maxime",
+                "viewBox": "0 0 20 20",
+              },
               "vm": [Circular],
             },
             [Circular],
@@ -674,9 +1257,66 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
+          5,
           2,
         },
         "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              [Circular],
+              Watcher {
+                "active": true,
+                "cb": [Function],
+                "deep": false,
+                "depIds": Set {
+                  3,
+                  4,
+                  2,
+                  5,
+                },
+                "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 3,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 4,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                      [Circular],
+                    ],
+                  },
+                  [Circular],
+                ],
+                "dirty": false,
+                "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                "getter": [Function],
+                "id": 2,
+                "lazy": false,
+                "newDepIds": Set {},
+                "newDeps": Array [],
+                "sync": true,
+                "user": false,
+                "value": undefined,
+                "vm": [Circular],
+              },
+            ],
+          },
           Dep {
             "_sortedId": 0,
             "id": 2,
@@ -687,10 +1327,35 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  3,
+                  4,
                   2,
+                  5,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 3,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 4,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   [Circular],
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                      [Circular],
+                    ],
+                  },
                 ],
                 "dirty": false,
                 "expression": "function () {
@@ -711,7 +1376,14 @@ VueWrapper {
         ],
         "dirty": false,
         "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
         "getter": [Function],
         "id": 1,
@@ -720,7 +1392,10 @@ VueWrapper {
         "newDeps": Array [],
         "sync": true,
         "user": false,
-        "value": "test-file-stub",
+        "value": Object {
+          "id": "#maxime",
+          "viewBox": "0 0 20 20",
+        },
         "vm": [Circular],
       },
       Watcher {
@@ -728,9 +1403,26 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
+          3,
+          4,
           2,
+          5,
         },
         "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 3,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 4,
+            "subs": Array [
+              [Circular],
+            ],
+          },
           Dep {
             "_sortedId": 0,
             "id": 2,
@@ -740,14 +1432,30 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                      [Circular],
+                    ],
+                  },
                   [Circular],
                 ],
                 "dirty": false,
                 "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                 "getter": [Function],
                 "id": 1,
@@ -756,7 +1464,60 @@ VueWrapper {
                 "newDeps": Array [],
                 "sync": true,
                 "user": false,
-                "value": "test-file-stub",
+                "value": Object {
+                  "id": "#maxime",
+                  "viewBox": "0 0 20 20",
+                },
+                "vm": [Circular],
+              },
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              Watcher {
+                "active": true,
+                "cb": [Function],
+                "deep": false,
+                "depIds": Set {
+                  5,
+                  2,
+                },
+                "deps": Array [
+                  [Circular],
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                      [Circular],
+                    ],
+                  },
+                ],
+                "dirty": false,
+                "expression": "function src() {
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
+    }",
+                "getter": [Function],
+                "id": 1,
+                "lazy": true,
+                "newDepIds": Set {},
+                "newDeps": Array [],
+                "sync": true,
+                "user": false,
+                "value": Object {
+                  "id": "#maxime",
+                  "viewBox": "0 0 20 20",
+                },
                 "vm": [Circular],
               },
               [Circular],
@@ -793,15 +1554,16 @@ VueWrapper {
           "$attrs": Object {},
           "$children": Array [],
           "$createElement": [Function],
-          "$el": <object
-            data="test-file-stub"
+          "$el": <svg
             data-tipe-ui="TipeIcon"
-            type="image/svg+xml"
+            height="1rem"
+            viewBox="src.viewBox"
+            width="1rem"
           >
-            <img
-              src="test-file-stub"
+            <use
+              xlink:href="#maxime"
             />
-          </object>,
+          </svg>,
           "$emit": [Function],
           "$listeners": Object {},
           "$options": Object {
@@ -812,6 +1574,9 @@ VueWrapper {
             "_parentElm": null,
             "_propKeys": Array [
               "icon",
+              "height",
+              "width",
+              "__iconLoader__",
             ],
             "_refElm": null,
             "beforeCreate": Array [
@@ -842,10 +1607,25 @@ VueWrapper {
             "methods": undefined,
             "name": "TipeIcon",
             "props": Object {
-              "icon": Object {
-                "default": "",
+              "__iconLoader__": Object {
+                "default": [Function],
                 "type": [Function],
               },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
+              "icon": Object {
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
+            },
+            "propsData": Object {
+              "__iconLoader__": [Function],
             },
             "provide": [Function],
             "render": [Function],
@@ -866,9 +1646,66 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
+                5,
                 2,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                    Watcher {
+                      "active": true,
+                      "cb": [Function],
+                      "deep": false,
+                      "depIds": Set {
+                        3,
+                        4,
+                        2,
+                        5,
+                      },
+                      "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 3,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 4,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                            [Circular],
+                          ],
+                        },
+                        [Circular],
+                      ],
+                      "dirty": false,
+                      "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                      "getter": [Function],
+                      "id": 2,
+                      "lazy": false,
+                      "newDepIds": Set {},
+                      "newDeps": Array [],
+                      "sync": true,
+                      "user": false,
+                      "value": undefined,
+                      "vm": [Circular],
+                    },
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 2,
@@ -879,10 +1716,35 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        3,
+                        4,
                         2,
+                        5,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 3,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 4,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         [Circular],
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                            [Circular],
+                          ],
+                        },
                       ],
                       "dirty": false,
                       "expression": "function () {
@@ -903,7 +1765,14 @@ VueWrapper {
               ],
               "dirty": false,
               "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
               "getter": [Function],
               "id": 1,
@@ -912,7 +1781,10 @@ VueWrapper {
               "newDeps": Array [],
               "sync": true,
               "user": false,
-              "value": "test-file-stub",
+              "value": Object {
+                "id": "#maxime",
+                "viewBox": "0 0 20 20",
+              },
               "vm": [Circular],
             },
           },
@@ -926,22 +1798,26 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "icon": "",
+            "__iconLoader__": [Function],
+            "height": "1rem",
+            "icon": "plus",
+            "width": "1rem",
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
             "$attrs": Object {},
             "$children": Array [],
             "$createElement": [Function],
-            "$el": <object
-              data="test-file-stub"
+            "$el": <svg
               data-tipe-ui="TipeIcon"
-              type="image/svg+xml"
+              height="1rem"
+              viewBox="src.viewBox"
+              width="1rem"
             >
-              <img
-                src="test-file-stub"
+              <use
+                xlink:href="#maxime"
               />
-            </object>,
+            </svg>,
             "$emit": [Function],
             "$listeners": Object {},
             "$options": Object {
@@ -952,6 +1828,9 @@ VueWrapper {
               "_parentElm": null,
               "_propKeys": Array [
                 "icon",
+                "height",
+                "width",
+                "__iconLoader__",
               ],
               "_refElm": null,
               "beforeCreate": Array [
@@ -982,10 +1861,25 @@ VueWrapper {
               "methods": undefined,
               "name": "TipeIcon",
               "props": Object {
-                "icon": Object {
-                  "default": "",
+                "__iconLoader__": Object {
+                  "default": [Function],
                   "type": [Function],
                 },
+                "height": Object {
+                  "default": "1rem",
+                  "type": [Function],
+                },
+                "icon": Object {
+                  "default": "plus",
+                  "type": [Function],
+                },
+                "width": Object {
+                  "default": "1rem",
+                  "type": [Function],
+                },
+              },
+              "propsData": Object {
+                "__iconLoader__": [Function],
               },
               "provide": [Function],
               "render": [Function],
@@ -1006,9 +1900,66 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                      Watcher {
+                        "active": true,
+                        "cb": [Function],
+                        "deep": false,
+                        "depIds": Set {
+                          3,
+                          4,
+                          2,
+                          5,
+                        },
+                        "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 3,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 4,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 2,
+                            "subs": Array [
+                              [Circular],
+                              [Circular],
+                            ],
+                          },
+                          [Circular],
+                        ],
+                        "dirty": false,
+                        "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                        "getter": [Function],
+                        "id": 2,
+                        "lazy": false,
+                        "newDepIds": Set {},
+                        "newDeps": Array [],
+                        "sync": true,
+                        "user": false,
+                        "value": undefined,
+                        "vm": [Circular],
+                      },
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 2,
@@ -1019,10 +1970,35 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          3,
+                          4,
                           2,
+                          5,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 3,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 4,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           [Circular],
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                              [Circular],
+                            ],
+                          },
                         ],
                         "dirty": false,
                         "expression": "function () {
@@ -1043,7 +2019,14 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                 "getter": [Function],
                 "id": 1,
@@ -1052,7 +2035,10 @@ VueWrapper {
                 "newDeps": Array [],
                 "sync": true,
                 "user": false,
-                "value": "test-file-stub",
+                "value": Object {
+                  "id": "#maxime",
+                  "viewBox": "0 0 20 20",
+                },
                 "vm": [Circular],
               },
             },
@@ -1066,7 +2052,10 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "icon": "",
+              "__iconLoader__": [Function],
+              "height": "1rem",
+              "icon": "plus",
+              "width": "1rem",
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -1079,9 +2068,26 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
+                3,
+                4,
                 2,
+                5,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 3,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 4,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 2,
@@ -1091,14 +2097,30 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                            [Circular],
+                          ],
+                        },
                         [Circular],
                       ],
                       "dirty": false,
                       "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                       "getter": [Function],
                       "id": 1,
@@ -1107,7 +2129,60 @@ VueWrapper {
                       "newDeps": Array [],
                       "sync": true,
                       "user": false,
-                      "value": "test-file-stub",
+                      "value": Object {
+                        "id": "#maxime",
+                        "viewBox": "0 0 20 20",
+                      },
+                      "vm": [Circular],
+                    },
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    Watcher {
+                      "active": true,
+                      "cb": [Function],
+                      "deep": false,
+                      "depIds": Set {
+                        5,
+                        2,
+                      },
+                      "deps": Array [
+                        [Circular],
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                            [Circular],
+                          ],
+                        },
+                      ],
+                      "dirty": false,
+                      "expression": "function src() {
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
+    }",
+                      "getter": [Function],
+                      "id": 1,
+                      "lazy": true,
+                      "newDepIds": Set {},
+                      "newDeps": Array [],
+                      "sync": true,
+                      "user": false,
+                      "value": Object {
+                        "id": "#maxime",
+                        "viewBox": "0 0 20 20",
+                      },
                       "vm": [Circular],
                     },
                     [Circular],
@@ -1134,9 +2209,66 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                      Watcher {
+                        "active": true,
+                        "cb": [Function],
+                        "deep": false,
+                        "depIds": Set {
+                          3,
+                          4,
+                          2,
+                          5,
+                        },
+                        "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 3,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 4,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 2,
+                            "subs": Array [
+                              [Circular],
+                              [Circular],
+                            ],
+                          },
+                          [Circular],
+                        ],
+                        "dirty": false,
+                        "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                        "getter": [Function],
+                        "id": 2,
+                        "lazy": false,
+                        "newDepIds": Set {},
+                        "newDeps": Array [],
+                        "sync": true,
+                        "user": false,
+                        "value": undefined,
+                        "vm": [Circular],
+                      },
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 2,
@@ -1147,10 +2279,35 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          3,
+                          4,
                           2,
+                          5,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 3,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 4,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           [Circular],
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                              [Circular],
+                            ],
+                          },
                         ],
                         "dirty": false,
                         "expression": "function () {
@@ -1171,7 +2328,14 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                 "getter": [Function],
                 "id": 1,
@@ -1180,7 +2344,10 @@ VueWrapper {
                 "newDeps": Array [],
                 "sync": true,
                 "user": false,
-                "value": "test-file-stub",
+                "value": Object {
+                  "id": "#maxime",
+                  "viewBox": "0 0 20 20",
+                },
                 "vm": [Circular],
               },
               Watcher {
@@ -1188,9 +2355,26 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  3,
+                  4,
                   2,
+                  5,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 3,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 4,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 2,
@@ -1200,14 +2384,30 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                              [Circular],
+                            ],
+                          },
                           [Circular],
                         ],
                         "dirty": false,
                         "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                         "getter": [Function],
                         "id": 1,
@@ -1216,7 +2416,60 @@ VueWrapper {
                         "newDeps": Array [],
                         "sync": true,
                         "user": false,
-                        "value": "test-file-stub",
+                        "value": Object {
+                          "id": "#maxime",
+                          "viewBox": "0 0 20 20",
+                        },
+                        "vm": [Circular],
+                      },
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      Watcher {
+                        "active": true,
+                        "cb": [Function],
+                        "deep": false,
+                        "depIds": Set {
+                          5,
+                          2,
+                        },
+                        "deps": Array [
+                          [Circular],
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 2,
+                            "subs": Array [
+                              [Circular],
+                              [Circular],
+                            ],
+                          },
+                        ],
+                        "dirty": false,
+                        "expression": "function src() {
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
+    }",
+                        "getter": [Function],
+                        "id": 1,
+                        "lazy": true,
+                        "newDepIds": Set {},
+                        "newDeps": Array [],
+                        "sync": true,
+                        "user": false,
+                        "value": Object {
+                          "id": "#maxime",
+                          "viewBox": "0 0 20 20",
+                        },
                         "vm": [Circular],
                       },
                       [Circular],
@@ -1248,9 +2501,26 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
+              3,
+              4,
               2,
+              5,
             },
             "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 3,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 4,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
               Dep {
                 "_sortedId": 0,
                 "id": 2,
@@ -1260,14 +2530,30 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
+                      5,
                       2,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                          [Circular],
+                        ],
+                      },
                       [Circular],
                     ],
                     "dirty": false,
                     "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                     "getter": [Function],
                     "id": 1,
@@ -1276,7 +2562,60 @@ VueWrapper {
                     "newDeps": Array [],
                     "sync": true,
                     "user": false,
-                    "value": "test-file-stub",
+                    "value": Object {
+                      "id": "#maxime",
+                      "viewBox": "0 0 20 20",
+                    },
+                    "vm": [Circular],
+                  },
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  Watcher {
+                    "active": true,
+                    "cb": [Function],
+                    "deep": false,
+                    "depIds": Set {
+                      5,
+                      2,
+                    },
+                    "deps": Array [
+                      [Circular],
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                          [Circular],
+                        ],
+                      },
+                    ],
+                    "dirty": false,
+                    "expression": "function src() {
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
+    }",
+                    "getter": [Function],
+                    "id": 1,
+                    "lazy": true,
+                    "newDepIds": Set {},
+                    "newDeps": Array [],
+                    "sync": true,
+                    "user": false,
+                    "value": Object {
+                      "id": "#maxime",
+                      "viewBox": "0 0 20 20",
+                    },
                     "vm": [Circular],
                   },
                   [Circular],
@@ -1303,9 +2642,66 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
+                5,
                 2,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                    Watcher {
+                      "active": true,
+                      "cb": [Function],
+                      "deep": false,
+                      "depIds": Set {
+                        3,
+                        4,
+                        2,
+                        5,
+                      },
+                      "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 3,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 4,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                            [Circular],
+                          ],
+                        },
+                        [Circular],
+                      ],
+                      "dirty": false,
+                      "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                      "getter": [Function],
+                      "id": 2,
+                      "lazy": false,
+                      "newDepIds": Set {},
+                      "newDeps": Array [],
+                      "sync": true,
+                      "user": false,
+                      "value": undefined,
+                      "vm": [Circular],
+                    },
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 2,
@@ -1316,10 +2712,35 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        3,
+                        4,
                         2,
+                        5,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 3,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 4,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         [Circular],
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                            [Circular],
+                          ],
+                        },
                       ],
                       "dirty": false,
                       "expression": "function () {
@@ -1340,7 +2761,14 @@ VueWrapper {
               ],
               "dirty": false,
               "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
               "getter": [Function],
               "id": 1,
@@ -1349,7 +2777,10 @@ VueWrapper {
               "newDeps": Array [],
               "sync": true,
               "user": false,
-              "value": "test-file-stub",
+              "value": Object {
+                "id": "#maxime",
+                "viewBox": "0 0 20 20",
+              },
               "vm": [Circular],
             },
             Watcher {
@@ -1357,9 +2788,26 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
+                3,
+                4,
                 2,
+                5,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 3,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 4,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 2,
@@ -1369,14 +2817,30 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                            [Circular],
+                          ],
+                        },
                         [Circular],
                       ],
                       "dirty": false,
                       "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                       "getter": [Function],
                       "id": 1,
@@ -1385,7 +2849,60 @@ VueWrapper {
                       "newDeps": Array [],
                       "sync": true,
                       "user": false,
-                      "value": "test-file-stub",
+                      "value": Object {
+                        "id": "#maxime",
+                        "viewBox": "0 0 20 20",
+                      },
+                      "vm": [Circular],
+                    },
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    Watcher {
+                      "active": true,
+                      "cb": [Function],
+                      "deep": false,
+                      "depIds": Set {
+                        5,
+                        2,
+                      },
+                      "deps": Array [
+                        [Circular],
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                            [Circular],
+                          ],
+                        },
+                      ],
+                      "dirty": false,
+                      "expression": "function src() {
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
+    }",
+                      "getter": [Function],
+                      "id": 1,
+                      "lazy": true,
+                      "newDepIds": Set {},
+                      "newDeps": Array [],
+                      "sync": true,
+                      "user": false,
+                      "value": Object {
+                        "id": "#maxime",
+                        "viewBox": "0 0 20 20",
+                      },
                       "vm": [Circular],
                     },
                     [Circular],
@@ -1410,11 +2927,11 @@ VueWrapper {
         },
         "data": Object {
           "attrs": Object {
-            "src": "test-file-stub",
+            "xlink:href": "#maxime",
           },
         },
-        "elm": <img
-          src="test-file-stub"
+        "elm": <use
+          xlink:href="#maxime"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -1426,10 +2943,10 @@ VueWrapper {
         "isRootInsert": false,
         "isStatic": false,
         "key": undefined,
-        "ns": undefined,
+        "ns": "svg",
         "parent": undefined,
         "raw": false,
-        "tag": "img",
+        "tag": "use",
         "text": undefined,
       },
     ],
@@ -1439,15 +2956,16 @@ VueWrapper {
       "$attrs": Object {},
       "$children": Array [],
       "$createElement": [Function],
-      "$el": <object
-        data="test-file-stub"
+      "$el": <svg
         data-tipe-ui="TipeIcon"
-        type="image/svg+xml"
+        height="1rem"
+        viewBox="src.viewBox"
+        width="1rem"
       >
-        <img
-          src="test-file-stub"
+        <use
+          xlink:href="#maxime"
         />
-      </object>,
+      </svg>,
       "$emit": [Function],
       "$listeners": Object {},
       "$options": Object {
@@ -1458,6 +2976,9 @@ VueWrapper {
         "_parentElm": null,
         "_propKeys": Array [
           "icon",
+          "height",
+          "width",
+          "__iconLoader__",
         ],
         "_refElm": null,
         "beforeCreate": Array [
@@ -1488,10 +3009,25 @@ VueWrapper {
         "methods": undefined,
         "name": "TipeIcon",
         "props": Object {
-          "icon": Object {
-            "default": "",
+          "__iconLoader__": Object {
+            "default": [Function],
             "type": [Function],
           },
+          "height": Object {
+            "default": "1rem",
+            "type": [Function],
+          },
+          "icon": Object {
+            "default": "plus",
+            "type": [Function],
+          },
+          "width": Object {
+            "default": "1rem",
+            "type": [Function],
+          },
+        },
+        "propsData": Object {
+          "__iconLoader__": [Function],
         },
         "provide": [Function],
         "render": [Function],
@@ -1512,9 +3048,66 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
+            5,
             2,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+                Watcher {
+                  "active": true,
+                  "cb": [Function],
+                  "deep": false,
+                  "depIds": Set {
+                    3,
+                    4,
+                    2,
+                    5,
+                  },
+                  "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 3,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 4,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
+                    [Circular],
+                  ],
+                  "dirty": false,
+                  "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                  "getter": [Function],
+                  "id": 2,
+                  "lazy": false,
+                  "newDepIds": Set {},
+                  "newDeps": Array [],
+                  "sync": true,
+                  "user": false,
+                  "value": undefined,
+                  "vm": [Circular],
+                },
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 2,
@@ -1525,10 +3118,35 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    3,
+                    4,
                     2,
+                    5,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 3,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 4,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     [Circular],
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
                   ],
                   "dirty": false,
                   "expression": "function () {
@@ -1549,7 +3167,14 @@ VueWrapper {
           ],
           "dirty": false,
           "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
           "getter": [Function],
           "id": 1,
@@ -1558,7 +3183,10 @@ VueWrapper {
           "newDeps": Array [],
           "sync": true,
           "user": false,
-          "value": "test-file-stub",
+          "value": Object {
+            "id": "#maxime",
+            "viewBox": "0 0 20 20",
+          },
           "vm": [Circular],
         },
       },
@@ -1572,22 +3200,26 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "icon": "",
+        "__iconLoader__": [Function],
+        "height": "1rem",
+        "icon": "plus",
+        "width": "1rem",
       },
       "_provided": undefined,
       "_renderProxy": VueComponent {
         "$attrs": Object {},
         "$children": Array [],
         "$createElement": [Function],
-        "$el": <object
-          data="test-file-stub"
+        "$el": <svg
           data-tipe-ui="TipeIcon"
-          type="image/svg+xml"
+          height="1rem"
+          viewBox="src.viewBox"
+          width="1rem"
         >
-          <img
-            src="test-file-stub"
+          <use
+            xlink:href="#maxime"
           />
-        </object>,
+        </svg>,
         "$emit": [Function],
         "$listeners": Object {},
         "$options": Object {
@@ -1598,6 +3230,9 @@ VueWrapper {
           "_parentElm": null,
           "_propKeys": Array [
             "icon",
+            "height",
+            "width",
+            "__iconLoader__",
           ],
           "_refElm": null,
           "beforeCreate": Array [
@@ -1628,10 +3263,25 @@ VueWrapper {
           "methods": undefined,
           "name": "TipeIcon",
           "props": Object {
-            "icon": Object {
-              "default": "",
+            "__iconLoader__": Object {
+              "default": [Function],
               "type": [Function],
             },
+            "height": Object {
+              "default": "1rem",
+              "type": [Function],
+            },
+            "icon": Object {
+              "default": "plus",
+              "type": [Function],
+            },
+            "width": Object {
+              "default": "1rem",
+              "type": [Function],
+            },
+          },
+          "propsData": Object {
+            "__iconLoader__": [Function],
           },
           "provide": [Function],
           "render": [Function],
@@ -1652,9 +3302,66 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
+              5,
               2,
             },
             "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  [Circular],
+                  Watcher {
+                    "active": true,
+                    "cb": [Function],
+                    "deep": false,
+                    "depIds": Set {
+                      3,
+                      4,
+                      2,
+                      5,
+                    },
+                    "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 3,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 4,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                          [Circular],
+                        ],
+                      },
+                      [Circular],
+                    ],
+                    "dirty": false,
+                    "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                    "getter": [Function],
+                    "id": 2,
+                    "lazy": false,
+                    "newDepIds": Set {},
+                    "newDeps": Array [],
+                    "sync": true,
+                    "user": false,
+                    "value": undefined,
+                    "vm": [Circular],
+                  },
+                ],
+              },
               Dep {
                 "_sortedId": 0,
                 "id": 2,
@@ -1665,10 +3372,35 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
+                      3,
+                      4,
                       2,
+                      5,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 3,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 4,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       [Circular],
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                          [Circular],
+                        ],
+                      },
                     ],
                     "dirty": false,
                     "expression": "function () {
@@ -1689,7 +3421,14 @@ VueWrapper {
             ],
             "dirty": false,
             "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
             "getter": [Function],
             "id": 1,
@@ -1698,7 +3437,10 @@ VueWrapper {
             "newDeps": Array [],
             "sync": true,
             "user": false,
-            "value": "test-file-stub",
+            "value": Object {
+              "id": "#maxime",
+              "viewBox": "0 0 20 20",
+            },
             "vm": [Circular],
           },
         },
@@ -1712,7 +3454,10 @@ VueWrapper {
         "_isMounted": true,
         "_isVue": true,
         "_props": Object {
-          "icon": "",
+          "__iconLoader__": [Function],
+          "height": "1rem",
+          "icon": "plus",
+          "width": "1rem",
         },
         "_provided": undefined,
         "_renderProxy": [Circular],
@@ -1725,9 +3470,26 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
+            3,
+            4,
             2,
+            5,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 3,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 4,
+              "subs": Array [
+                [Circular],
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 2,
@@ -1737,14 +3499,30 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
                     [Circular],
                   ],
                   "dirty": false,
                   "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                   "getter": [Function],
                   "id": 1,
@@ -1753,7 +3531,60 @@ VueWrapper {
                   "newDeps": Array [],
                   "sync": true,
                   "user": false,
-                  "value": "test-file-stub",
+                  "value": Object {
+                    "id": "#maxime",
+                    "viewBox": "0 0 20 20",
+                  },
+                  "vm": [Circular],
+                },
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                Watcher {
+                  "active": true,
+                  "cb": [Function],
+                  "deep": false,
+                  "depIds": Set {
+                    5,
+                    2,
+                  },
+                  "deps": Array [
+                    [Circular],
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
+                  ],
+                  "dirty": false,
+                  "expression": "function src() {
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
+    }",
+                  "getter": [Function],
+                  "id": 1,
+                  "lazy": true,
+                  "newDepIds": Set {},
+                  "newDeps": Array [],
+                  "sync": true,
+                  "user": false,
+                  "value": Object {
+                    "id": "#maxime",
+                    "viewBox": "0 0 20 20",
+                  },
                   "vm": [Circular],
                 },
                 [Circular],
@@ -1780,9 +3611,66 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
+              5,
               2,
             },
             "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  [Circular],
+                  Watcher {
+                    "active": true,
+                    "cb": [Function],
+                    "deep": false,
+                    "depIds": Set {
+                      3,
+                      4,
+                      2,
+                      5,
+                    },
+                    "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 3,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 4,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                          [Circular],
+                        ],
+                      },
+                      [Circular],
+                    ],
+                    "dirty": false,
+                    "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                    "getter": [Function],
+                    "id": 2,
+                    "lazy": false,
+                    "newDepIds": Set {},
+                    "newDeps": Array [],
+                    "sync": true,
+                    "user": false,
+                    "value": undefined,
+                    "vm": [Circular],
+                  },
+                ],
+              },
               Dep {
                 "_sortedId": 0,
                 "id": 2,
@@ -1793,10 +3681,35 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
+                      3,
+                      4,
                       2,
+                      5,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 3,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 4,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       [Circular],
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                          [Circular],
+                        ],
+                      },
                     ],
                     "dirty": false,
                     "expression": "function () {
@@ -1817,7 +3730,14 @@ VueWrapper {
             ],
             "dirty": false,
             "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
             "getter": [Function],
             "id": 1,
@@ -1826,7 +3746,10 @@ VueWrapper {
             "newDeps": Array [],
             "sync": true,
             "user": false,
-            "value": "test-file-stub",
+            "value": Object {
+              "id": "#maxime",
+              "viewBox": "0 0 20 20",
+            },
             "vm": [Circular],
           },
           Watcher {
@@ -1834,9 +3757,26 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
+              3,
+              4,
               2,
+              5,
             },
             "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 3,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 4,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
               Dep {
                 "_sortedId": 0,
                 "id": 2,
@@ -1846,14 +3786,30 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
+                      5,
                       2,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                          [Circular],
+                        ],
+                      },
                       [Circular],
                     ],
                     "dirty": false,
                     "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                     "getter": [Function],
                     "id": 1,
@@ -1862,7 +3818,60 @@ VueWrapper {
                     "newDeps": Array [],
                     "sync": true,
                     "user": false,
-                    "value": "test-file-stub",
+                    "value": Object {
+                      "id": "#maxime",
+                      "viewBox": "0 0 20 20",
+                    },
+                    "vm": [Circular],
+                  },
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  Watcher {
+                    "active": true,
+                    "cb": [Function],
+                    "deep": false,
+                    "depIds": Set {
+                      5,
+                      2,
+                    },
+                    "deps": Array [
+                      [Circular],
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                          [Circular],
+                        ],
+                      },
+                    ],
+                    "dirty": false,
+                    "expression": "function src() {
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
+    }",
+                    "getter": [Function],
+                    "id": 1,
+                    "lazy": true,
+                    "newDepIds": Set {},
+                    "newDeps": Array [],
+                    "sync": true,
+                    "user": false,
+                    "value": Object {
+                      "id": "#maxime",
+                      "viewBox": "0 0 20 20",
+                    },
                     "vm": [Circular],
                   },
                   [Circular],
@@ -1894,9 +3903,26 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
+          3,
+          4,
           2,
+          5,
         },
         "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 3,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 4,
+            "subs": Array [
+              [Circular],
+            ],
+          },
           Dep {
             "_sortedId": 0,
             "id": 2,
@@ -1906,14 +3932,30 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                      [Circular],
+                    ],
+                  },
                   [Circular],
                 ],
                 "dirty": false,
                 "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                 "getter": [Function],
                 "id": 1,
@@ -1922,7 +3964,60 @@ VueWrapper {
                 "newDeps": Array [],
                 "sync": true,
                 "user": false,
-                "value": "test-file-stub",
+                "value": Object {
+                  "id": "#maxime",
+                  "viewBox": "0 0 20 20",
+                },
+                "vm": [Circular],
+              },
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              Watcher {
+                "active": true,
+                "cb": [Function],
+                "deep": false,
+                "depIds": Set {
+                  5,
+                  2,
+                },
+                "deps": Array [
+                  [Circular],
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                      [Circular],
+                    ],
+                  },
+                ],
+                "dirty": false,
+                "expression": "function src() {
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
+    }",
+                "getter": [Function],
+                "id": 1,
+                "lazy": true,
+                "newDepIds": Set {},
+                "newDeps": Array [],
+                "sync": true,
+                "user": false,
+                "value": Object {
+                  "id": "#maxime",
+                  "viewBox": "0 0 20 20",
+                },
                 "vm": [Circular],
               },
               [Circular],
@@ -1949,9 +4044,66 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
+            5,
             2,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+                Watcher {
+                  "active": true,
+                  "cb": [Function],
+                  "deep": false,
+                  "depIds": Set {
+                    3,
+                    4,
+                    2,
+                    5,
+                  },
+                  "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 3,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 4,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
+                    [Circular],
+                  ],
+                  "dirty": false,
+                  "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                  "getter": [Function],
+                  "id": 2,
+                  "lazy": false,
+                  "newDepIds": Set {},
+                  "newDeps": Array [],
+                  "sync": true,
+                  "user": false,
+                  "value": undefined,
+                  "vm": [Circular],
+                },
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 2,
@@ -1962,10 +4114,35 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    3,
+                    4,
                     2,
+                    5,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 3,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 4,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     [Circular],
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
                   ],
                   "dirty": false,
                   "expression": "function () {
@@ -1986,7 +4163,14 @@ VueWrapper {
           ],
           "dirty": false,
           "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
           "getter": [Function],
           "id": 1,
@@ -1995,7 +4179,10 @@ VueWrapper {
           "newDeps": Array [],
           "sync": true,
           "user": false,
-          "value": "test-file-stub",
+          "value": Object {
+            "id": "#maxime",
+            "viewBox": "0 0 20 20",
+          },
           "vm": [Circular],
         },
         Watcher {
@@ -2003,9 +4190,26 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
+            3,
+            4,
             2,
+            5,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 3,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 4,
+              "subs": Array [
+                [Circular],
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 2,
@@ -2015,14 +4219,30 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
                     [Circular],
                   ],
                   "dirty": false,
                   "expression": "function src() {
-      return require(\\"../../icons/\\".concat(this.icon, \\".svg\\"));
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
     }",
                   "getter": [Function],
                   "id": 1,
@@ -2031,7 +4251,60 @@ VueWrapper {
                   "newDeps": Array [],
                   "sync": true,
                   "user": false,
-                  "value": "test-file-stub",
+                  "value": Object {
+                    "id": "#maxime",
+                    "viewBox": "0 0 20 20",
+                  },
+                  "vm": [Circular],
+                },
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                Watcher {
+                  "active": true,
+                  "cb": [Function],
+                  "deep": false,
+                  "depIds": Set {
+                    5,
+                    2,
+                  },
+                  "deps": Array [
+                    [Circular],
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                        [Circular],
+                      ],
+                    },
+                  ],
+                  "dirty": false,
+                  "expression": "function src() {
+      var _this$__iconLoader__ = this.__iconLoader__(this.icon),
+          viewBox = _this$__iconLoader__.viewBox,
+          id = _this$__iconLoader__.id;
+
+      return {
+        viewBox: viewBox,
+        id: \\"#\\".concat(id)
+      };
+    }",
+                  "getter": [Function],
+                  "id": 1,
+                  "lazy": true,
+                  "newDepIds": Set {},
+                  "newDeps": Array [],
+                  "sync": true,
+                  "user": false,
+                  "value": Object {
+                    "id": "#maxime",
+                    "viewBox": "0 0 20 20",
+                  },
                   "vm": [Circular],
                 },
                 [Circular],
@@ -2056,20 +4329,22 @@ VueWrapper {
     },
     "data": Object {
       "attrs": Object {
-        "data": "test-file-stub",
         "data-tipe-ui": "TipeIcon",
-        "type": "image/svg+xml",
+        "height": "1rem",
+        "viewBox": "src.viewBox",
+        "width": "1rem",
       },
     },
-    "elm": <object
-      data="test-file-stub"
+    "elm": <svg
       data-tipe-ui="TipeIcon"
-      type="image/svg+xml"
+      height="1rem"
+      viewBox="src.viewBox"
+      width="1rem"
     >
-      <img
-        src="test-file-stub"
+      <use
+        xlink:href="#maxime"
       />
-    </object>,
+    </svg>,
     "fnContext": undefined,
     "fnOptions": undefined,
     "fnScopeId": undefined,
@@ -2080,10 +4355,10 @@ VueWrapper {
     "isRootInsert": true,
     "isStatic": false,
     "key": undefined,
-    "ns": undefined,
+    "ns": "svg",
     "parent": undefined,
     "raw": false,
-    "tag": "object",
+    "tag": "svg",
     "text": undefined,
   },
 }
