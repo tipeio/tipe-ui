@@ -1,23 +1,33 @@
 <template>
-  <object
+  <svg
     :data-tipe-ui="$options.name"
-    :data="src"
-    type="image/svg+xml">
-    <img :src="src" >
-  </object>
+    :height="height"
+    :width="width"
+    viewBox="src.viewBox"
+  >
+    <use :xlink:href="src.id" />
+  </svg>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
+import iconLoader from '@/libs/iconLoader'
 
 export default {
   name: 'TipeIcon',
   props: {
-    icon: vueTypes.string
+    icon: vueTypes.string.def('plus'),
+    height: vueTypes.string.def('1rem'),
+    width: vueTypes.string.def('1rem'),
+    __iconLoader__: vueTypes.func.def(iconLoader)
   },
   computed: {
     src() {
-      return require(`../../icons/${this.icon}.svg`)
+      const { viewBox, id } = this.__iconLoader__(this.icon)
+      return {
+        viewBox,
+        id: `#${id}`
+      }
     }
   }
 }
