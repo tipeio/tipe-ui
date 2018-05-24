@@ -778,6 +778,13 @@
     react-inspector "^2.2.2"
     uuid "^3.2.1"
 
+"@storybook/addon-centered@^3.4.5":
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-centered/-/addon-centered-3.4.5.tgz#dcd5a5f45f6cf5ff6525c4ad6c04b17d07de7df9"
+  dependencies:
+    babel-runtime "^6.26.0"
+    global "^4.3.2"
+
 "@storybook/addon-knobs@^3.4.4":
   version "3.4.4"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-3.4.4.tgz#96043d68ac382084a9e9d208a084fe58e968377f"

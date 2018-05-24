@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.47",
     "@storybook/addon-actions": "^3.4.4",
+    "@storybook/addon-centered": "^3.4.5",
     "@storybook/addon-knobs": "^3.4.4",
     "@storybook/addon-links": "^3.4.4",
     "@storybook/addon-notes": "^3.4.4",
