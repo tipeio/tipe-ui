@@ -2,6 +2,7 @@
   <accordian text="Settings"><tipe-switch 
     v-model="sharing"
     :value="sharing"
+    :on-check="onCheck"
     text="File Sharing"
     sublabel="Turn on to share your file changes and updates" /><tipe-switch 
       v-model="backup" 
@@ -22,6 +23,11 @@ export default {
   },
   data() {
     return { sharing: false, backup: true }
+  },
+  methods: {
+    onCheck(val) {
+      console.log('Checked!', val)
+    }
   }
 }
 </script>
