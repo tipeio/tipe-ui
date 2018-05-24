@@ -59,6 +59,7 @@
     "postcss-import": "^11.1.0",
     "postcss-loader": "^2.1.5",
     "postcss-mixins": "^6.2.0",
+    "postcss-nesting": "^5.0.0",
     "style-loader": "^0.21.0",
     "svg-sprite-loader": "^3.7.3",
     "svgo": "^1.0.5",

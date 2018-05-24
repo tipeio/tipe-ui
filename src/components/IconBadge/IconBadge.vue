@@ -3,6 +3,8 @@
     <tipe-icon
       :icon="icon"
       class="icon"
+      height="1.25rem"
+      width="1.25rem"
     />
   </div>
 </template>
