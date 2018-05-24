@@ -10,6 +10,7 @@
           v-model="inputVal"
           :value="value"
           type="checkbox"
+          name="test"
         >
         <span class="slider round"/>
       </label>
@@ -28,7 +29,8 @@ export default {
   props: {
     text: vueTypes.string,
     sublabel: vueTypes.string,
-    value: vueTypes.boolean
+    value: vueTypes.boolean,
+    onCheck: vueTypes.func
   },
   data() {
     return { inputVal: this.value }
@@ -36,6 +38,7 @@ export default {
   watch: {
     inputVal(val) {
       this.$emit('input', val)
+      this.onCheck(val)
     }
   }
 }
