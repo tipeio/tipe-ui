@@ -1,4 +1,5 @@
-import { configure } from '@storybook/vue'
+import { configure, addDecorator } from '@storybook/vue'
+import centered from '@storybook/addon-centered'
 import '../src/styles/globals.css'
 
 // automatically import all files ending in *.stories.js
@@ -8,4 +9,5 @@ function loadStories() {
   stories.keys().forEach(filename => stories(filename))
 }
 
-configure(loadStories, module);
+addDecorator(centered)
+configure(loadStories, module)
