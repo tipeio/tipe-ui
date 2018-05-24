@@ -7,11 +7,11 @@ VueWrapper {
   "element": <svg
     data-tipe-ui="TipeIcon"
     height="1rem"
-    viewBox="src.viewBox"
+    viewBox="0 0 20 20"
     width="1rem"
   >
     <use
-      xlink:href="#maxime"
+      xlink:href="#eum"
     />
   </svg>,
   "isFunctionalComponent": undefined,
@@ -28,11 +28,11 @@ VueWrapper {
     "$el": <svg
       data-tipe-ui="TipeIcon"
       height="1rem"
-      viewBox="src.viewBox"
+      viewBox="0 0 20 20"
       width="1rem"
     >
       <use
-        xlink:href="#maxime"
+        xlink:href="#eum"
       />
     </svg>,
     "$emit": [Function],
@@ -253,7 +253,7 @@ VueWrapper {
         "sync": true,
         "user": false,
         "value": Object {
-          "id": "#maxime",
+          "id": "#eum",
           "viewBox": "0 0 20 20",
         },
         "vm": [Circular],
@@ -282,11 +282,11 @@ VueWrapper {
       "$el": <svg
         data-tipe-ui="TipeIcon"
         height="1rem"
-        viewBox="src.viewBox"
+        viewBox="0 0 20 20"
         width="1rem"
       >
         <use
-          xlink:href="#maxime"
+          xlink:href="#eum"
         />
       </svg>,
       "$emit": [Function],
@@ -507,7 +507,7 @@ VueWrapper {
           "sync": true,
           "user": false,
           "value": Object {
-            "id": "#maxime",
+            "id": "#eum",
             "viewBox": "0 0 20 20",
           },
           "vm": [Circular],
@@ -546,11 +546,11 @@ VueWrapper {
             "context": [Circular],
             "data": Object {
               "attrs": Object {
-                "xlink:href": "#maxime",
+                "xlink:href": "#eum",
               },
             },
             "elm": <use
-              xlink:href="#maxime"
+              xlink:href="#eum"
             />,
             "fnContext": undefined,
             "fnOptions": undefined,
@@ -576,18 +576,18 @@ VueWrapper {
           "attrs": Object {
             "data-tipe-ui": "TipeIcon",
             "height": "1rem",
-            "viewBox": "src.viewBox",
+            "viewBox": "0 0 20 20",
             "width": "1rem",
           },
         },
         "elm": <svg
           data-tipe-ui="TipeIcon"
           height="1rem"
-          viewBox="src.viewBox"
+          viewBox="0 0 20 20"
           width="1rem"
         >
           <use
-            xlink:href="#maxime"
+            xlink:href="#eum"
           />
         </svg>,
         "fnContext": undefined,
@@ -673,7 +673,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "id": "#maxime",
+                  "id": "#eum",
                   "viewBox": "0 0 20 20",
                 },
                 "vm": [Circular],
@@ -723,7 +723,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "id": "#maxime",
+                  "id": "#eum",
                   "viewBox": "0 0 20 20",
                 },
                 "vm": [Circular],
@@ -888,7 +888,7 @@ VueWrapper {
           "sync": true,
           "user": false,
           "value": Object {
-            "id": "#maxime",
+            "id": "#eum",
             "viewBox": "0 0 20 20",
           },
           "vm": [Circular],
@@ -960,7 +960,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "id": "#maxime",
+                    "id": "#eum",
                     "viewBox": "0 0 20 20",
                   },
                   "vm": [Circular],
@@ -1010,7 +1010,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "id": "#maxime",
+                    "id": "#eum",
                     "viewBox": "0 0 20 20",
                   },
                   "vm": [Circular],
@@ -1051,11 +1051,11 @@ VueWrapper {
           "context": [Circular],
           "data": Object {
             "attrs": Object {
-              "xlink:href": "#maxime",
+              "xlink:href": "#eum",
             },
           },
           "elm": <use
-            xlink:href="#maxime"
+            xlink:href="#eum"
           />,
           "fnContext": undefined,
           "fnOptions": undefined,
@@ -1081,18 +1081,18 @@ VueWrapper {
         "attrs": Object {
           "data-tipe-ui": "TipeIcon",
           "height": "1rem",
-          "viewBox": "src.viewBox",
+          "viewBox": "0 0 20 20",
           "width": "1rem",
         },
       },
       "elm": <svg
         data-tipe-ui="TipeIcon"
         height="1rem"
-        viewBox="src.viewBox"
+        viewBox="0 0 20 20"
         width="1rem"
       >
         <use
-          xlink:href="#maxime"
+          xlink:href="#eum"
         />
       </svg>,
       "fnContext": undefined,
@@ -1178,7 +1178,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "id": "#maxime",
+                "id": "#eum",
                 "viewBox": "0 0 20 20",
               },
               "vm": [Circular],
@@ -1228,7 +1228,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "id": "#maxime",
+                "id": "#eum",
                 "viewBox": "0 0 20 20",
               },
               "vm": [Circular],
@@ -1393,7 +1393,7 @@ VueWrapper {
         "sync": true,
         "user": false,
         "value": Object {
-          "id": "#maxime",
+          "id": "#eum",
           "viewBox": "0 0 20 20",
         },
         "vm": [Circular],
@@ -1465,7 +1465,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "id": "#maxime",
+                  "id": "#eum",
                   "viewBox": "0 0 20 20",
                 },
                 "vm": [Circular],
@@ -1515,7 +1515,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "id": "#maxime",
+                  "id": "#eum",
                   "viewBox": "0 0 20 20",
                 },
                 "vm": [Circular],
@@ -1557,11 +1557,11 @@ VueWrapper {
           "$el": <svg
             data-tipe-ui="TipeIcon"
             height="1rem"
-            viewBox="src.viewBox"
+            viewBox="0 0 20 20"
             width="1rem"
           >
             <use
-              xlink:href="#maxime"
+              xlink:href="#eum"
             />
           </svg>,
           "$emit": [Function],
@@ -1782,7 +1782,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "id": "#maxime",
+                "id": "#eum",
                 "viewBox": "0 0 20 20",
               },
               "vm": [Circular],
@@ -1811,11 +1811,11 @@ VueWrapper {
             "$el": <svg
               data-tipe-ui="TipeIcon"
               height="1rem"
-              viewBox="src.viewBox"
+              viewBox="0 0 20 20"
               width="1rem"
             >
               <use
-                xlink:href="#maxime"
+                xlink:href="#eum"
               />
             </svg>,
             "$emit": [Function],
@@ -2036,7 +2036,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "id": "#maxime",
+                  "id": "#eum",
                   "viewBox": "0 0 20 20",
                 },
                 "vm": [Circular],
@@ -2130,7 +2130,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "id": "#maxime",
+                        "id": "#eum",
                         "viewBox": "0 0 20 20",
                       },
                       "vm": [Circular],
@@ -2180,7 +2180,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "id": "#maxime",
+                        "id": "#eum",
                         "viewBox": "0 0 20 20",
                       },
                       "vm": [Circular],
@@ -2345,7 +2345,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "id": "#maxime",
+                  "id": "#eum",
                   "viewBox": "0 0 20 20",
                 },
                 "vm": [Circular],
@@ -2417,7 +2417,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "id": "#maxime",
+                          "id": "#eum",
                           "viewBox": "0 0 20 20",
                         },
                         "vm": [Circular],
@@ -2467,7 +2467,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "id": "#maxime",
+                          "id": "#eum",
                           "viewBox": "0 0 20 20",
                         },
                         "vm": [Circular],
@@ -2563,7 +2563,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "id": "#maxime",
+                      "id": "#eum",
                       "viewBox": "0 0 20 20",
                     },
                     "vm": [Circular],
@@ -2613,7 +2613,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "id": "#maxime",
+                      "id": "#eum",
                       "viewBox": "0 0 20 20",
                     },
                     "vm": [Circular],
@@ -2778,7 +2778,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "id": "#maxime",
+                "id": "#eum",
                 "viewBox": "0 0 20 20",
               },
               "vm": [Circular],
@@ -2850,7 +2850,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "id": "#maxime",
+                        "id": "#eum",
                         "viewBox": "0 0 20 20",
                       },
                       "vm": [Circular],
@@ -2900,7 +2900,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "id": "#maxime",
+                        "id": "#eum",
                         "viewBox": "0 0 20 20",
                       },
                       "vm": [Circular],
@@ -2927,11 +2927,11 @@ VueWrapper {
         },
         "data": Object {
           "attrs": Object {
-            "xlink:href": "#maxime",
+            "xlink:href": "#eum",
           },
         },
         "elm": <use
-          xlink:href="#maxime"
+          xlink:href="#eum"
         />,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -2959,11 +2959,11 @@ VueWrapper {
       "$el": <svg
         data-tipe-ui="TipeIcon"
         height="1rem"
-        viewBox="src.viewBox"
+        viewBox="0 0 20 20"
         width="1rem"
       >
         <use
-          xlink:href="#maxime"
+          xlink:href="#eum"
         />
       </svg>,
       "$emit": [Function],
@@ -3184,7 +3184,7 @@ VueWrapper {
           "sync": true,
           "user": false,
           "value": Object {
-            "id": "#maxime",
+            "id": "#eum",
             "viewBox": "0 0 20 20",
           },
           "vm": [Circular],
@@ -3213,11 +3213,11 @@ VueWrapper {
         "$el": <svg
           data-tipe-ui="TipeIcon"
           height="1rem"
-          viewBox="src.viewBox"
+          viewBox="0 0 20 20"
           width="1rem"
         >
           <use
-            xlink:href="#maxime"
+            xlink:href="#eum"
           />
         </svg>,
         "$emit": [Function],
@@ -3438,7 +3438,7 @@ VueWrapper {
             "sync": true,
             "user": false,
             "value": Object {
-              "id": "#maxime",
+              "id": "#eum",
               "viewBox": "0 0 20 20",
             },
             "vm": [Circular],
@@ -3532,7 +3532,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "id": "#maxime",
+                    "id": "#eum",
                     "viewBox": "0 0 20 20",
                   },
                   "vm": [Circular],
@@ -3582,7 +3582,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "id": "#maxime",
+                    "id": "#eum",
                     "viewBox": "0 0 20 20",
                   },
                   "vm": [Circular],
@@ -3747,7 +3747,7 @@ VueWrapper {
             "sync": true,
             "user": false,
             "value": Object {
-              "id": "#maxime",
+              "id": "#eum",
               "viewBox": "0 0 20 20",
             },
             "vm": [Circular],
@@ -3819,7 +3819,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "id": "#maxime",
+                      "id": "#eum",
                       "viewBox": "0 0 20 20",
                     },
                     "vm": [Circular],
@@ -3869,7 +3869,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "id": "#maxime",
+                      "id": "#eum",
                       "viewBox": "0 0 20 20",
                     },
                     "vm": [Circular],
@@ -3965,7 +3965,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "id": "#maxime",
+                  "id": "#eum",
                   "viewBox": "0 0 20 20",
                 },
                 "vm": [Circular],
@@ -4015,7 +4015,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "id": "#maxime",
+                  "id": "#eum",
                   "viewBox": "0 0 20 20",
                 },
                 "vm": [Circular],
@@ -4180,7 +4180,7 @@ VueWrapper {
           "sync": true,
           "user": false,
           "value": Object {
-            "id": "#maxime",
+            "id": "#eum",
             "viewBox": "0 0 20 20",
           },
           "vm": [Circular],
@@ -4252,7 +4252,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "id": "#maxime",
+                    "id": "#eum",
                     "viewBox": "0 0 20 20",
                   },
                   "vm": [Circular],
@@ -4302,7 +4302,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "id": "#maxime",
+                    "id": "#eum",
                     "viewBox": "0 0 20 20",
                   },
                   "vm": [Circular],
@@ -4331,18 +4331,18 @@ VueWrapper {
       "attrs": Object {
         "data-tipe-ui": "TipeIcon",
         "height": "1rem",
-        "viewBox": "src.viewBox",
+        "viewBox": "0 0 20 20",
         "width": "1rem",
       },
     },
     "elm": <svg
       data-tipe-ui="TipeIcon"
       height="1rem"
-      viewBox="src.viewBox"
+      viewBox="0 0 20 20"
       width="1rem"
     >
       <use
-        xlink:href="#maxime"
+        xlink:href="#eum"
       />
     </svg>,
     "fnContext": undefined,
