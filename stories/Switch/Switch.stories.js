@@ -8,5 +8,5 @@ const style = () => ({
 storiesOf('Tipe Switch', module).add('switch', () => ({
   components: { TipeSwitch },
   computed: { style },
-  template: '<div :style="style"><tipe-switch label="File Sharing" /></div>'
+  template: '<div :style="style"><tipe-switch text="File Sharing" /></div>'
 }))
