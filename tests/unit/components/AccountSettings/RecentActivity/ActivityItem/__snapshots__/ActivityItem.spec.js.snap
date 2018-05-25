@@ -19,7 +19,7 @@ VueWrapper {
       <p
         class="title"
       >
-        
+        Olivia broke all of the code
       </p>
        
       <p
@@ -549,7 +549,7 @@ VueWrapper {
         <p
           class="title"
         >
-          
+          Olivia broke all of the code
         </p>
          
         <p
@@ -639,6 +639,12 @@ VueWrapper {
           "type": [Function],
         },
       },
+      "propsData": Object {
+        "item": Object {
+          "subtitle": "about a minute ago",
+          "title": "Olivia broke all of the code",
+        },
+      },
       "provide": [Function],
       "render": [Function],
       "staticRenderFns": Array [],
@@ -662,7 +668,10 @@ VueWrapper {
     "_isMounted": true,
     "_isVue": true,
     "_props": Object {
-      "item": Object {},
+      "item": Object {
+        "subtitle": "about a minute ago",
+        "title": "Olivia broke all of the code",
+      },
     },
     "_provided": undefined,
     "_renderProxy": VueComponent {
@@ -1178,7 +1187,7 @@ VueWrapper {
           <p
             class="title"
           >
-            
+            Olivia broke all of the code
           </p>
            
           <p
@@ -1268,6 +1277,12 @@ VueWrapper {
             "type": [Function],
           },
         },
+        "propsData": Object {
+          "item": Object {
+            "subtitle": "about a minute ago",
+            "title": "Olivia broke all of the code",
+          },
+        },
         "provide": [Function],
         "render": [Function],
         "staticRenderFns": Array [],
@@ -1291,7 +1306,10 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "item": Object {},
+        "item": Object {
+          "subtitle": "about a minute ago",
+          "title": "Olivia broke all of the code",
+        },
       },
       "_provided": undefined,
       "_renderProxy": [Circular],
@@ -1658,7 +1676,7 @@ VueWrapper {
                     "componentOptions": undefined,
                     "context": undefined,
                     "data": undefined,
-                    "elm": ,
+                    "elm": Olivia broke all of the code,
                     "fnContext": undefined,
                     "fnOptions": undefined,
                     "fnScopeId": undefined,
@@ -1673,7 +1691,7 @@ VueWrapper {
                     "parent": undefined,
                     "raw": false,
                     "tag": undefined,
-                    "text": "",
+                    "text": "Olivia broke all of the code",
                   },
                 ],
                 "componentInstance": undefined,
@@ -1685,7 +1703,7 @@ VueWrapper {
                 "elm": <p
                   class="title"
                 >
-                  
+                  Olivia broke all of the code
                 </p>,
                 "fnContext": undefined,
                 "fnOptions": undefined,
@@ -1798,7 +1816,7 @@ VueWrapper {
               <p
                 class="title"
               >
-                
+                Olivia broke all of the code
               </p>
                
               <p
@@ -1845,7 +1863,7 @@ VueWrapper {
             <p
               class="title"
             >
-              
+              Olivia broke all of the code
             </p>
              
             <p
@@ -1876,10 +1894,18 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
-          3,
           2,
+          3,
+          4,
         },
         "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 2,
+            "subs": Array [
+              [Circular],
+            ],
+          },
           Dep {
             "_sortedId": 0,
             "id": 3,
@@ -1889,7 +1915,7 @@ VueWrapper {
           },
           Dep {
             "_sortedId": 0,
-            "id": 2,
+            "id": 4,
             "subs": Array [
               [Circular],
             ],
@@ -1915,10 +1941,18 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
-            3,
             2,
+            3,
+            4,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 2,
+              "subs": Array [
+                [Circular],
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 3,
@@ -1928,7 +1962,7 @@ VueWrapper {
             },
             Dep {
               "_sortedId": 0,
-              "id": 2,
+              "id": 4,
               "subs": Array [
                 [Circular],
               ],
@@ -2313,7 +2347,7 @@ VueWrapper {
                   "componentOptions": undefined,
                   "context": undefined,
                   "data": undefined,
-                  "elm": ,
+                  "elm": Olivia broke all of the code,
                   "fnContext": undefined,
                   "fnOptions": undefined,
                   "fnScopeId": undefined,
@@ -2328,7 +2362,7 @@ VueWrapper {
                   "parent": undefined,
                   "raw": false,
                   "tag": undefined,
-                  "text": "",
+                  "text": "Olivia broke all of the code",
                 },
               ],
               "componentInstance": undefined,
@@ -2340,7 +2374,7 @@ VueWrapper {
               "elm": <p
                 class="title"
               >
-                
+                Olivia broke all of the code
               </p>,
               "fnContext": undefined,
               "fnOptions": undefined,
@@ -2453,7 +2487,7 @@ VueWrapper {
             <p
               class="title"
             >
-              
+              Olivia broke all of the code
             </p>
              
             <p
@@ -2500,7 +2534,7 @@ VueWrapper {
           <p
             class="title"
           >
-            
+            Olivia broke all of the code
           </p>
            
           <p
@@ -2531,10 +2565,18 @@ VueWrapper {
       "cb": [Function],
       "deep": false,
       "depIds": Set {
-        3,
         2,
+        3,
+        4,
       },
       "deps": Array [
+        Dep {
+          "_sortedId": 0,
+          "id": 2,
+          "subs": Array [
+            [Circular],
+          ],
+        },
         Dep {
           "_sortedId": 0,
           "id": 3,
@@ -2544,7 +2586,7 @@ VueWrapper {
         },
         Dep {
           "_sortedId": 0,
-          "id": 2,
+          "id": 4,
           "subs": Array [
             [Circular],
           ],
@@ -2570,10 +2612,18 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
-          3,
           2,
+          3,
+          4,
         },
         "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 2,
+            "subs": Array [
+              [Circular],
+            ],
+          },
           Dep {
             "_sortedId": 0,
             "id": 3,
@@ -2583,7 +2633,7 @@ VueWrapper {
           },
           Dep {
             "_sortedId": 0,
-            "id": 2,
+            "id": 4,
             "subs": Array [
               [Circular],
             ],
@@ -2658,7 +2708,7 @@ VueWrapper {
                       <p
                         class="title"
                       >
-                        
+                        Olivia broke all of the code
                       </p>
                        
                       <p
@@ -2748,6 +2798,12 @@ VueWrapper {
                         "type": [Function],
                       },
                     },
+                    "propsData": Object {
+                      "item": Object {
+                        "subtitle": "about a minute ago",
+                        "title": "Olivia broke all of the code",
+                      },
+                    },
                     "provide": [Function],
                     "render": [Function],
                     "staticRenderFns": Array [],
@@ -2771,7 +2827,10 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "item": Object {},
+                    "item": Object {
+                      "subtitle": "about a minute ago",
+                      "title": "Olivia broke all of the code",
+                    },
                   },
                   "_provided": undefined,
                   "_renderProxy": VueComponent {
@@ -2795,7 +2854,7 @@ VueWrapper {
                         <p
                           class="title"
                         >
-                          
+                          Olivia broke all of the code
                         </p>
                          
                         <p
@@ -2885,6 +2944,12 @@ VueWrapper {
                           "type": [Function],
                         },
                       },
+                      "propsData": Object {
+                        "item": Object {
+                          "subtitle": "about a minute ago",
+                          "title": "Olivia broke all of the code",
+                        },
+                      },
                       "provide": [Function],
                       "render": [Function],
                       "staticRenderFns": Array [],
@@ -2908,7 +2973,10 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
-                      "item": Object {},
+                      "item": Object {
+                        "subtitle": "about a minute ago",
+                        "title": "Olivia broke all of the code",
+                      },
                     },
                     "_provided": undefined,
                     "_renderProxy": [Circular],
@@ -2921,10 +2989,18 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        3,
                         2,
+                        3,
+                        4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 3,
@@ -2934,7 +3010,7 @@ VueWrapper {
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 4,
                           "subs": Array [
                             [Circular],
                           ],
@@ -2960,10 +3036,18 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
-                          3,
                           2,
+                          3,
+                          4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 2,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           Dep {
                             "_sortedId": 0,
                             "id": 3,
@@ -2973,7 +3057,7 @@ VueWrapper {
                           },
                           Dep {
                             "_sortedId": 0,
-                            "id": 2,
+                            "id": 4,
                             "subs": Array [
                               [Circular],
                             ],
@@ -3004,10 +3088,18 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      3,
                       2,
+                      3,
+                      4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 3,
@@ -3017,7 +3109,7 @@ VueWrapper {
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 4,
                         "subs": Array [
                           [Circular],
                         ],
@@ -3043,10 +3135,18 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        3,
                         2,
+                        3,
+                        4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 3,
@@ -3056,7 +3156,7 @@ VueWrapper {
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 4,
                           "subs": Array [
                             [Circular],
                           ],
@@ -3103,7 +3203,7 @@ VueWrapper {
                     <p
                       class="title"
                     >
-                      
+                      Olivia broke all of the code
                     </p>
                      
                     <p
@@ -3193,6 +3293,12 @@ VueWrapper {
                       "type": [Function],
                     },
                   },
+                  "propsData": Object {
+                    "item": Object {
+                      "subtitle": "about a minute ago",
+                      "title": "Olivia broke all of the code",
+                    },
+                  },
                   "provide": [Function],
                   "render": [Function],
                   "staticRenderFns": Array [],
@@ -3216,7 +3322,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "item": Object {},
+                  "item": Object {
+                    "subtitle": "about a minute ago",
+                    "title": "Olivia broke all of the code",
+                  },
                 },
                 "_provided": undefined,
                 "_renderProxy": VueComponent {
@@ -3240,7 +3349,7 @@ VueWrapper {
                       <p
                         class="title"
                       >
-                        
+                        Olivia broke all of the code
                       </p>
                        
                       <p
@@ -3330,6 +3439,12 @@ VueWrapper {
                         "type": [Function],
                       },
                     },
+                    "propsData": Object {
+                      "item": Object {
+                        "subtitle": "about a minute ago",
+                        "title": "Olivia broke all of the code",
+                      },
+                    },
                     "provide": [Function],
                     "render": [Function],
                     "staticRenderFns": Array [],
@@ -3353,7 +3468,10 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "item": Object {},
+                    "item": Object {
+                      "subtitle": "about a minute ago",
+                      "title": "Olivia broke all of the code",
+                    },
                   },
                   "_provided": undefined,
                   "_renderProxy": [Circular],
@@ -3366,10 +3484,18 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      3,
                       2,
+                      3,
+                      4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 3,
@@ -3379,7 +3505,7 @@ VueWrapper {
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 4,
                         "subs": Array [
                           [Circular],
                         ],
@@ -3405,10 +3531,18 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        3,
                         2,
+                        3,
+                        4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 3,
@@ -3418,7 +3552,7 @@ VueWrapper {
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 4,
                           "subs": Array [
                             [Circular],
                           ],
@@ -3449,10 +3583,18 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    3,
                     2,
+                    3,
+                    4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 3,
@@ -3462,7 +3604,7 @@ VueWrapper {
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 4,
                       "subs": Array [
                         [Circular],
                       ],
@@ -3488,10 +3630,18 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      3,
                       2,
+                      3,
+                      4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 3,
@@ -3501,7 +3651,7 @@ VueWrapper {
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 4,
                         "subs": Array [
                           [Circular],
                         ],
@@ -3545,7 +3695,7 @@ VueWrapper {
                     <p
                       class="title"
                     >
-                      
+                      Olivia broke all of the code
                     </p>
                      
                     <p
@@ -3635,6 +3785,12 @@ VueWrapper {
                       "type": [Function],
                     },
                   },
+                  "propsData": Object {
+                    "item": Object {
+                      "subtitle": "about a minute ago",
+                      "title": "Olivia broke all of the code",
+                    },
+                  },
                   "provide": [Function],
                   "render": [Function],
                   "staticRenderFns": Array [],
@@ -3658,7 +3814,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "item": Object {},
+                  "item": Object {
+                    "subtitle": "about a minute ago",
+                    "title": "Olivia broke all of the code",
+                  },
                 },
                 "_provided": undefined,
                 "_renderProxy": VueComponent {
@@ -3682,7 +3841,7 @@ VueWrapper {
                       <p
                         class="title"
                       >
-                        
+                        Olivia broke all of the code
                       </p>
                        
                       <p
@@ -3772,6 +3931,12 @@ VueWrapper {
                         "type": [Function],
                       },
                     },
+                    "propsData": Object {
+                      "item": Object {
+                        "subtitle": "about a minute ago",
+                        "title": "Olivia broke all of the code",
+                      },
+                    },
                     "provide": [Function],
                     "render": [Function],
                     "staticRenderFns": Array [],
@@ -3795,7 +3960,10 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "item": Object {},
+                    "item": Object {
+                      "subtitle": "about a minute ago",
+                      "title": "Olivia broke all of the code",
+                    },
                   },
                   "_provided": undefined,
                   "_renderProxy": [Circular],
@@ -3808,10 +3976,18 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      3,
                       2,
+                      3,
+                      4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 3,
@@ -3821,7 +3997,7 @@ VueWrapper {
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 4,
                         "subs": Array [
                           [Circular],
                         ],
@@ -3847,10 +4023,18 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        3,
                         2,
+                        3,
+                        4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 3,
@@ -3860,7 +4044,7 @@ VueWrapper {
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 4,
                           "subs": Array [
                             [Circular],
                           ],
@@ -3891,10 +4075,18 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    3,
                     2,
+                    3,
+                    4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 3,
@@ -3904,7 +4096,7 @@ VueWrapper {
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 4,
                       "subs": Array [
                         [Circular],
                       ],
@@ -3930,10 +4122,18 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      3,
                       2,
+                      3,
+                      4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 3,
@@ -3943,7 +4143,7 @@ VueWrapper {
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 4,
                         "subs": Array [
                           [Circular],
                         ],
@@ -4027,7 +4227,7 @@ VueWrapper {
                         <p
                           class="title"
                         >
-                          
+                          Olivia broke all of the code
                         </p>
                          
                         <p
@@ -4117,6 +4317,12 @@ VueWrapper {
                           "type": [Function],
                         },
                       },
+                      "propsData": Object {
+                        "item": Object {
+                          "subtitle": "about a minute ago",
+                          "title": "Olivia broke all of the code",
+                        },
+                      },
                       "provide": [Function],
                       "render": [Function],
                       "staticRenderFns": Array [],
@@ -4140,7 +4346,10 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
-                      "item": Object {},
+                      "item": Object {
+                        "subtitle": "about a minute ago",
+                        "title": "Olivia broke all of the code",
+                      },
                     },
                     "_provided": undefined,
                     "_renderProxy": VueComponent {
@@ -4164,7 +4373,7 @@ VueWrapper {
                           <p
                             class="title"
                           >
-                            
+                            Olivia broke all of the code
                           </p>
                            
                           <p
@@ -4254,6 +4463,12 @@ VueWrapper {
                             "type": [Function],
                           },
                         },
+                        "propsData": Object {
+                          "item": Object {
+                            "subtitle": "about a minute ago",
+                            "title": "Olivia broke all of the code",
+                          },
+                        },
                         "provide": [Function],
                         "render": [Function],
                         "staticRenderFns": Array [],
@@ -4277,7 +4492,10 @@ VueWrapper {
                       "_isMounted": true,
                       "_isVue": true,
                       "_props": Object {
-                        "item": Object {},
+                        "item": Object {
+                          "subtitle": "about a minute ago",
+                          "title": "Olivia broke all of the code",
+                        },
                       },
                       "_provided": undefined,
                       "_renderProxy": [Circular],
@@ -4290,10 +4508,18 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
-                          3,
                           2,
+                          3,
+                          4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 2,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           Dep {
                             "_sortedId": 0,
                             "id": 3,
@@ -4303,7 +4529,7 @@ VueWrapper {
                           },
                           Dep {
                             "_sortedId": 0,
-                            "id": 2,
+                            "id": 4,
                             "subs": Array [
                               [Circular],
                             ],
@@ -4329,10 +4555,18 @@ VueWrapper {
                           "cb": [Function],
                           "deep": false,
                           "depIds": Set {
-                            3,
                             2,
+                            3,
+                            4,
                           },
                           "deps": Array [
+                            Dep {
+                              "_sortedId": 0,
+                              "id": 2,
+                              "subs": Array [
+                                [Circular],
+                              ],
+                            },
                             Dep {
                               "_sortedId": 0,
                               "id": 3,
@@ -4342,7 +4576,7 @@ VueWrapper {
                             },
                             Dep {
                               "_sortedId": 0,
-                              "id": 2,
+                              "id": 4,
                               "subs": Array [
                                 [Circular],
                               ],
@@ -4373,10 +4607,18 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        3,
                         2,
+                        3,
+                        4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 3,
@@ -4386,7 +4628,7 @@ VueWrapper {
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 4,
                           "subs": Array [
                             [Circular],
                           ],
@@ -4412,10 +4654,18 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
-                          3,
                           2,
+                          3,
+                          4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 2,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           Dep {
                             "_sortedId": 0,
                             "id": 3,
@@ -4425,7 +4675,7 @@ VueWrapper {
                           },
                           Dep {
                             "_sortedId": 0,
-                            "id": 2,
+                            "id": 4,
                             "subs": Array [
                               [Circular],
                             ],
@@ -4472,7 +4722,7 @@ VueWrapper {
                       <p
                         class="title"
                       >
-                        
+                        Olivia broke all of the code
                       </p>
                        
                       <p
@@ -4562,6 +4812,12 @@ VueWrapper {
                         "type": [Function],
                       },
                     },
+                    "propsData": Object {
+                      "item": Object {
+                        "subtitle": "about a minute ago",
+                        "title": "Olivia broke all of the code",
+                      },
+                    },
                     "provide": [Function],
                     "render": [Function],
                     "staticRenderFns": Array [],
@@ -4585,7 +4841,10 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "item": Object {},
+                    "item": Object {
+                      "subtitle": "about a minute ago",
+                      "title": "Olivia broke all of the code",
+                    },
                   },
                   "_provided": undefined,
                   "_renderProxy": VueComponent {
@@ -4609,7 +4868,7 @@ VueWrapper {
                         <p
                           class="title"
                         >
-                          
+                          Olivia broke all of the code
                         </p>
                          
                         <p
@@ -4699,6 +4958,12 @@ VueWrapper {
                           "type": [Function],
                         },
                       },
+                      "propsData": Object {
+                        "item": Object {
+                          "subtitle": "about a minute ago",
+                          "title": "Olivia broke all of the code",
+                        },
+                      },
                       "provide": [Function],
                       "render": [Function],
                       "staticRenderFns": Array [],
@@ -4722,7 +4987,10 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
-                      "item": Object {},
+                      "item": Object {
+                        "subtitle": "about a minute ago",
+                        "title": "Olivia broke all of the code",
+                      },
                     },
                     "_provided": undefined,
                     "_renderProxy": [Circular],
@@ -4735,10 +5003,18 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        3,
                         2,
+                        3,
+                        4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 3,
@@ -4748,7 +5024,7 @@ VueWrapper {
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 4,
                           "subs": Array [
                             [Circular],
                           ],
@@ -4774,10 +5050,18 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
-                          3,
                           2,
+                          3,
+                          4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 2,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           Dep {
                             "_sortedId": 0,
                             "id": 3,
@@ -4787,7 +5071,7 @@ VueWrapper {
                           },
                           Dep {
                             "_sortedId": 0,
-                            "id": 2,
+                            "id": 4,
                             "subs": Array [
                               [Circular],
                             ],
@@ -4818,10 +5102,18 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      3,
                       2,
+                      3,
+                      4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 3,
@@ -4831,7 +5123,7 @@ VueWrapper {
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 4,
                         "subs": Array [
                           [Circular],
                         ],
@@ -4857,10 +5149,18 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        3,
                         2,
+                        3,
+                        4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 3,
@@ -4870,7 +5170,7 @@ VueWrapper {
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 4,
                           "subs": Array [
                             [Circular],
                           ],
@@ -4914,7 +5214,7 @@ VueWrapper {
                       <p
                         class="title"
                       >
-                        
+                        Olivia broke all of the code
                       </p>
                        
                       <p
@@ -5004,6 +5304,12 @@ VueWrapper {
                         "type": [Function],
                       },
                     },
+                    "propsData": Object {
+                      "item": Object {
+                        "subtitle": "about a minute ago",
+                        "title": "Olivia broke all of the code",
+                      },
+                    },
                     "provide": [Function],
                     "render": [Function],
                     "staticRenderFns": Array [],
@@ -5027,7 +5333,10 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "item": Object {},
+                    "item": Object {
+                      "subtitle": "about a minute ago",
+                      "title": "Olivia broke all of the code",
+                    },
                   },
                   "_provided": undefined,
                   "_renderProxy": VueComponent {
@@ -5051,7 +5360,7 @@ VueWrapper {
                         <p
                           class="title"
                         >
-                          
+                          Olivia broke all of the code
                         </p>
                          
                         <p
@@ -5141,6 +5450,12 @@ VueWrapper {
                           "type": [Function],
                         },
                       },
+                      "propsData": Object {
+                        "item": Object {
+                          "subtitle": "about a minute ago",
+                          "title": "Olivia broke all of the code",
+                        },
+                      },
                       "provide": [Function],
                       "render": [Function],
                       "staticRenderFns": Array [],
@@ -5164,7 +5479,10 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
-                      "item": Object {},
+                      "item": Object {
+                        "subtitle": "about a minute ago",
+                        "title": "Olivia broke all of the code",
+                      },
                     },
                     "_provided": undefined,
                     "_renderProxy": [Circular],
@@ -5177,10 +5495,18 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        3,
                         2,
+                        3,
+                        4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 3,
@@ -5190,7 +5516,7 @@ VueWrapper {
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 4,
                           "subs": Array [
                             [Circular],
                           ],
@@ -5216,10 +5542,18 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
-                          3,
                           2,
+                          3,
+                          4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 2,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           Dep {
                             "_sortedId": 0,
                             "id": 3,
@@ -5229,7 +5563,7 @@ VueWrapper {
                           },
                           Dep {
                             "_sortedId": 0,
-                            "id": 2,
+                            "id": 4,
                             "subs": Array [
                               [Circular],
                             ],
@@ -5260,10 +5594,18 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      3,
                       2,
+                      3,
+                      4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 3,
@@ -5273,7 +5615,7 @@ VueWrapper {
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 4,
                         "subs": Array [
                           [Circular],
                         ],
@@ -5299,10 +5641,18 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        3,
                         2,
+                        3,
+                        4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 3,
@@ -5312,7 +5662,7 @@ VueWrapper {
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 4,
                           "subs": Array [
                             [Circular],
                           ],
@@ -5768,7 +6118,7 @@ VueWrapper {
                   <p
                     class="title"
                   >
-                    
+                    Olivia broke all of the code
                   </p>
                    
                   <p
@@ -5858,6 +6208,12 @@ VueWrapper {
                     "type": [Function],
                   },
                 },
+                "propsData": Object {
+                  "item": Object {
+                    "subtitle": "about a minute ago",
+                    "title": "Olivia broke all of the code",
+                  },
+                },
                 "provide": [Function],
                 "render": [Function],
                 "staticRenderFns": Array [],
@@ -5881,7 +6237,10 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "item": Object {},
+                "item": Object {
+                  "subtitle": "about a minute ago",
+                  "title": "Olivia broke all of the code",
+                },
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -6145,7 +6504,7 @@ VueWrapper {
                     <p
                       class="title"
                     >
-                      
+                      Olivia broke all of the code
                     </p>
                      
                     <p
@@ -6235,6 +6594,12 @@ VueWrapper {
                       "type": [Function],
                     },
                   },
+                  "propsData": Object {
+                    "item": Object {
+                      "subtitle": "about a minute ago",
+                      "title": "Olivia broke all of the code",
+                    },
+                  },
                   "provide": [Function],
                   "render": [Function],
                   "staticRenderFns": Array [],
@@ -6258,7 +6623,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "item": Object {},
+                  "item": Object {
+                    "subtitle": "about a minute ago",
+                    "title": "Olivia broke all of the code",
+                  },
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -6271,10 +6639,18 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    3,
                     2,
+                    3,
+                    4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 3,
@@ -6284,7 +6660,7 @@ VueWrapper {
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 4,
                       "subs": Array [
                         [Circular],
                       ],
@@ -6310,10 +6686,18 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      3,
                       2,
+                      3,
+                      4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 3,
@@ -6323,7 +6707,7 @@ VueWrapper {
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 4,
                         "subs": Array [
                           [Circular],
                         ],
@@ -6354,10 +6738,18 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
-                  3,
                   2,
+                  3,
+                  4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 3,
@@ -6367,7 +6759,7 @@ VueWrapper {
                   },
                   Dep {
                     "_sortedId": 0,
-                    "id": 2,
+                    "id": 4,
                     "subs": Array [
                       [Circular],
                     ],
@@ -6393,10 +6785,18 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    3,
                     2,
+                    3,
+                    4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 3,
@@ -6406,7 +6806,7 @@ VueWrapper {
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 4,
                       "subs": Array [
                         [Circular],
                       ],
@@ -6972,7 +7372,7 @@ VueWrapper {
               <p
                 class="title"
               >
-                
+                Olivia broke all of the code
               </p>
                
               <p
@@ -7062,6 +7462,12 @@ VueWrapper {
                 "type": [Function],
               },
             },
+            "propsData": Object {
+              "item": Object {
+                "subtitle": "about a minute ago",
+                "title": "Olivia broke all of the code",
+              },
+            },
             "provide": [Function],
             "render": [Function],
             "staticRenderFns": Array [],
@@ -7085,7 +7491,10 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "item": Object {},
+            "item": Object {
+              "subtitle": "about a minute ago",
+              "title": "Olivia broke all of the code",
+            },
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
@@ -7601,7 +8010,7 @@ VueWrapper {
                 <p
                   class="title"
                 >
-                  
+                  Olivia broke all of the code
                 </p>
                  
                 <p
@@ -7691,6 +8100,12 @@ VueWrapper {
                   "type": [Function],
                 },
               },
+              "propsData": Object {
+                "item": Object {
+                  "subtitle": "about a minute ago",
+                  "title": "Olivia broke all of the code",
+                },
+              },
               "provide": [Function],
               "render": [Function],
               "staticRenderFns": Array [],
@@ -7714,7 +8129,10 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "item": Object {},
+              "item": Object {
+                "subtitle": "about a minute ago",
+                "title": "Olivia broke all of the code",
+              },
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -7727,10 +8145,18 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
-                3,
                 2,
+                3,
+                4,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 3,
@@ -7740,7 +8166,7 @@ VueWrapper {
                 },
                 Dep {
                   "_sortedId": 0,
-                  "id": 2,
+                  "id": 4,
                   "subs": Array [
                     [Circular],
                   ],
@@ -7766,10 +8192,18 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
-                  3,
                   2,
+                  3,
+                  4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 3,
@@ -7779,7 +8213,7 @@ VueWrapper {
                   },
                   Dep {
                     "_sortedId": 0,
-                    "id": 2,
+                    "id": 4,
                     "subs": Array [
                       [Circular],
                     ],
@@ -7810,10 +8244,18 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
-              3,
               2,
+              3,
+              4,
             },
             "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 2,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
               Dep {
                 "_sortedId": 0,
                 "id": 3,
@@ -7823,7 +8265,7 @@ VueWrapper {
               },
               Dep {
                 "_sortedId": 0,
-                "id": 2,
+                "id": 4,
                 "subs": Array [
                   [Circular],
                 ],
@@ -7849,10 +8291,18 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
-                3,
                 2,
+                3,
+                4,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 3,
@@ -7862,7 +8312,7 @@ VueWrapper {
                 },
                 Dep {
                   "_sortedId": 0,
-                  "id": 2,
+                  "id": 4,
                   "subs": Array [
                     [Circular],
                   ],
@@ -7949,7 +8399,7 @@ VueWrapper {
                 "componentOptions": undefined,
                 "context": undefined,
                 "data": undefined,
-                "elm": ,
+                "elm": Olivia broke all of the code,
                 "fnContext": undefined,
                 "fnOptions": undefined,
                 "fnScopeId": undefined,
@@ -7964,7 +8414,7 @@ VueWrapper {
                 "parent": undefined,
                 "raw": false,
                 "tag": undefined,
-                "text": "",
+                "text": "Olivia broke all of the code",
               },
             ],
             "componentInstance": undefined,
@@ -8482,7 +8932,7 @@ VueWrapper {
                   <p
                     class="title"
                   >
-                    
+                    Olivia broke all of the code
                   </p>
                    
                   <p
@@ -8572,6 +9022,12 @@ VueWrapper {
                     "type": [Function],
                   },
                 },
+                "propsData": Object {
+                  "item": Object {
+                    "subtitle": "about a minute ago",
+                    "title": "Olivia broke all of the code",
+                  },
+                },
                 "provide": [Function],
                 "render": [Function],
                 "staticRenderFns": Array [],
@@ -8595,7 +9051,10 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "item": Object {},
+                "item": Object {
+                  "subtitle": "about a minute ago",
+                  "title": "Olivia broke all of the code",
+                },
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -9111,7 +9570,7 @@ VueWrapper {
                     <p
                       class="title"
                     >
-                      
+                      Olivia broke all of the code
                     </p>
                      
                     <p
@@ -9201,6 +9660,12 @@ VueWrapper {
                       "type": [Function],
                     },
                   },
+                  "propsData": Object {
+                    "item": Object {
+                      "subtitle": "about a minute ago",
+                      "title": "Olivia broke all of the code",
+                    },
+                  },
                   "provide": [Function],
                   "render": [Function],
                   "staticRenderFns": Array [],
@@ -9224,7 +9689,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "item": Object {},
+                  "item": Object {
+                    "subtitle": "about a minute ago",
+                    "title": "Olivia broke all of the code",
+                  },
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -9237,10 +9705,18 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    3,
                     2,
+                    3,
+                    4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 3,
@@ -9250,7 +9726,7 @@ VueWrapper {
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 4,
                       "subs": Array [
                         [Circular],
                       ],
@@ -9276,10 +9752,18 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      3,
                       2,
+                      3,
+                      4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 3,
@@ -9289,7 +9773,7 @@ VueWrapper {
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 4,
                         "subs": Array [
                           [Circular],
                         ],
@@ -9320,10 +9804,18 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
-                  3,
                   2,
+                  3,
+                  4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 3,
@@ -9333,7 +9825,7 @@ VueWrapper {
                   },
                   Dep {
                     "_sortedId": 0,
-                    "id": 2,
+                    "id": 4,
                     "subs": Array [
                       [Circular],
                     ],
@@ -9359,10 +9851,18 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    3,
                     2,
+                    3,
+                    4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 3,
@@ -9372,7 +9872,7 @@ VueWrapper {
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 4,
                       "subs": Array [
                         [Circular],
                       ],
@@ -9400,7 +9900,7 @@ VueWrapper {
             "elm": <p
               class="title"
             >
-              
+              Olivia broke all of the code
             </p>,
             "fnContext": undefined,
             "fnOptions": undefined,
@@ -9988,7 +10488,7 @@ VueWrapper {
                   <p
                     class="title"
                   >
-                    
+                    Olivia broke all of the code
                   </p>
                    
                   <p
@@ -10078,6 +10578,12 @@ VueWrapper {
                     "type": [Function],
                   },
                 },
+                "propsData": Object {
+                  "item": Object {
+                    "subtitle": "about a minute ago",
+                    "title": "Olivia broke all of the code",
+                  },
+                },
                 "provide": [Function],
                 "render": [Function],
                 "staticRenderFns": Array [],
@@ -10101,7 +10607,10 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "item": Object {},
+                "item": Object {
+                  "subtitle": "about a minute ago",
+                  "title": "Olivia broke all of the code",
+                },
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -10617,7 +11126,7 @@ VueWrapper {
                     <p
                       class="title"
                     >
-                      
+                      Olivia broke all of the code
                     </p>
                      
                     <p
@@ -10707,6 +11216,12 @@ VueWrapper {
                       "type": [Function],
                     },
                   },
+                  "propsData": Object {
+                    "item": Object {
+                      "subtitle": "about a minute ago",
+                      "title": "Olivia broke all of the code",
+                    },
+                  },
                   "provide": [Function],
                   "render": [Function],
                   "staticRenderFns": Array [],
@@ -10730,7 +11245,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "item": Object {},
+                  "item": Object {
+                    "subtitle": "about a minute ago",
+                    "title": "Olivia broke all of the code",
+                  },
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -10743,10 +11261,18 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    3,
                     2,
+                    3,
+                    4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 3,
@@ -10756,7 +11282,7 @@ VueWrapper {
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 4,
                       "subs": Array [
                         [Circular],
                       ],
@@ -10782,10 +11308,18 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      3,
                       2,
+                      3,
+                      4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 3,
@@ -10795,7 +11329,7 @@ VueWrapper {
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 4,
                         "subs": Array [
                           [Circular],
                         ],
@@ -10826,10 +11360,18 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
-                  3,
                   2,
+                  3,
+                  4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 3,
@@ -10839,7 +11381,7 @@ VueWrapper {
                   },
                   Dep {
                     "_sortedId": 0,
-                    "id": 2,
+                    "id": 4,
                     "subs": Array [
                       [Circular],
                     ],
@@ -10865,10 +11407,18 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    3,
                     2,
+                    3,
+                    4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 3,
@@ -10878,7 +11428,7 @@ VueWrapper {
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 4,
                       "subs": Array [
                         [Circular],
                       ],
@@ -11440,7 +11990,7 @@ VueWrapper {
               <p
                 class="title"
               >
-                
+                Olivia broke all of the code
               </p>
                
               <p
@@ -11530,6 +12080,12 @@ VueWrapper {
                 "type": [Function],
               },
             },
+            "propsData": Object {
+              "item": Object {
+                "subtitle": "about a minute ago",
+                "title": "Olivia broke all of the code",
+              },
+            },
             "provide": [Function],
             "render": [Function],
             "staticRenderFns": Array [],
@@ -11553,7 +12109,10 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "item": Object {},
+            "item": Object {
+              "subtitle": "about a minute ago",
+              "title": "Olivia broke all of the code",
+            },
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
@@ -12069,7 +12628,7 @@ VueWrapper {
                 <p
                   class="title"
                 >
-                  
+                  Olivia broke all of the code
                 </p>
                  
                 <p
@@ -12159,6 +12718,12 @@ VueWrapper {
                   "type": [Function],
                 },
               },
+              "propsData": Object {
+                "item": Object {
+                  "subtitle": "about a minute ago",
+                  "title": "Olivia broke all of the code",
+                },
+              },
               "provide": [Function],
               "render": [Function],
               "staticRenderFns": Array [],
@@ -12182,7 +12747,10 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "item": Object {},
+              "item": Object {
+                "subtitle": "about a minute ago",
+                "title": "Olivia broke all of the code",
+              },
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -12195,10 +12763,18 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
-                3,
                 2,
+                3,
+                4,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 3,
@@ -12208,7 +12784,7 @@ VueWrapper {
                 },
                 Dep {
                   "_sortedId": 0,
-                  "id": 2,
+                  "id": 4,
                   "subs": Array [
                     [Circular],
                   ],
@@ -12234,10 +12810,18 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
-                  3,
                   2,
+                  3,
+                  4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 3,
@@ -12247,7 +12831,7 @@ VueWrapper {
                   },
                   Dep {
                     "_sortedId": 0,
-                    "id": 2,
+                    "id": 4,
                     "subs": Array [
                       [Circular],
                     ],
@@ -12278,10 +12862,18 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
-              3,
               2,
+              3,
+              4,
             },
             "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 2,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
               Dep {
                 "_sortedId": 0,
                 "id": 3,
@@ -12291,7 +12883,7 @@ VueWrapper {
               },
               Dep {
                 "_sortedId": 0,
-                "id": 2,
+                "id": 4,
                 "subs": Array [
                   [Circular],
                 ],
@@ -12317,10 +12909,18 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
-                3,
                 2,
+                3,
+                4,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 3,
@@ -12330,7 +12930,7 @@ VueWrapper {
                 },
                 Dep {
                   "_sortedId": 0,
-                  "id": 2,
+                  "id": 4,
                   "subs": Array [
                     [Circular],
                   ],
@@ -12361,7 +12961,7 @@ VueWrapper {
           <p
             class="title"
           >
-            
+            Olivia broke all of the code
           </p>
            
           <p
@@ -12902,7 +13502,7 @@ VueWrapper {
           <p
             class="title"
           >
-            
+            Olivia broke all of the code
           </p>
            
           <p
@@ -12992,6 +13592,12 @@ VueWrapper {
             "type": [Function],
           },
         },
+        "propsData": Object {
+          "item": Object {
+            "subtitle": "about a minute ago",
+            "title": "Olivia broke all of the code",
+          },
+        },
         "provide": [Function],
         "render": [Function],
         "staticRenderFns": Array [],
@@ -13015,7 +13621,10 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "item": Object {},
+        "item": Object {
+          "subtitle": "about a minute ago",
+          "title": "Olivia broke all of the code",
+        },
       },
       "_provided": undefined,
       "_renderProxy": VueComponent {
@@ -13531,7 +14140,7 @@ VueWrapper {
             <p
               class="title"
             >
-              
+              Olivia broke all of the code
             </p>
              
             <p
@@ -13621,6 +14230,12 @@ VueWrapper {
               "type": [Function],
             },
           },
+          "propsData": Object {
+            "item": Object {
+              "subtitle": "about a minute ago",
+              "title": "Olivia broke all of the code",
+            },
+          },
           "provide": [Function],
           "render": [Function],
           "staticRenderFns": Array [],
@@ -13644,7 +14259,10 @@ VueWrapper {
         "_isMounted": true,
         "_isVue": true,
         "_props": Object {
-          "item": Object {},
+          "item": Object {
+            "subtitle": "about a minute ago",
+            "title": "Olivia broke all of the code",
+          },
         },
         "_provided": undefined,
         "_renderProxy": [Circular],
@@ -13657,10 +14275,18 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
-            3,
             2,
+            3,
+            4,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 2,
+              "subs": Array [
+                [Circular],
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 3,
@@ -13670,7 +14296,7 @@ VueWrapper {
             },
             Dep {
               "_sortedId": 0,
-              "id": 2,
+              "id": 4,
               "subs": Array [
                 [Circular],
               ],
@@ -13696,10 +14322,18 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
-              3,
               2,
+              3,
+              4,
             },
             "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 2,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
               Dep {
                 "_sortedId": 0,
                 "id": 3,
@@ -13709,7 +14343,7 @@ VueWrapper {
               },
               Dep {
                 "_sortedId": 0,
-                "id": 2,
+                "id": 4,
                 "subs": Array [
                   [Circular],
                 ],
@@ -13740,10 +14374,18 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
-          3,
           2,
+          3,
+          4,
         },
         "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 2,
+            "subs": Array [
+              [Circular],
+            ],
+          },
           Dep {
             "_sortedId": 0,
             "id": 3,
@@ -13753,7 +14395,7 @@ VueWrapper {
           },
           Dep {
             "_sortedId": 0,
-            "id": 2,
+            "id": 4,
             "subs": Array [
               [Circular],
             ],
@@ -13779,10 +14421,18 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
-            3,
             2,
+            3,
+            4,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 2,
+              "subs": Array [
+                [Circular],
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 3,
@@ -13792,7 +14442,7 @@ VueWrapper {
             },
             Dep {
               "_sortedId": 0,
-              "id": 2,
+              "id": 4,
               "subs": Array [
                 [Circular],
               ],
@@ -13832,7 +14482,7 @@ VueWrapper {
         <p
           class="title"
         >
-          
+          Olivia broke all of the code
         </p>
          
         <p
