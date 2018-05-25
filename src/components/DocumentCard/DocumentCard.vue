@@ -2,7 +2,7 @@
   <tipe-card :data-tipe-ui="$options.name">
     <div :class="$style.layout">
       <div :class="$style.header">
-        <div :class="$style.title">Folder</div>
+        <div :class="$style.title">Documents</div>
         <tipe-button
           size="small"
           icon-before="plus"
@@ -58,11 +58,15 @@ export default {
 }
 
 .body {
+  position: relative;
   overflow: hidden;
 }
 
 /* hide scrollbar */
 .scrollable {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
