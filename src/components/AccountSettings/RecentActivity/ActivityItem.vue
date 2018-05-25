@@ -23,7 +23,7 @@ export default {
     TipeIcon
   },
   props: {
-    item: vueTypes.object
+    item: vueTypes.object.isRequired
   }
 }
 </script>
