@@ -95,6 +95,9 @@ VueWrapper {
           },
           "_propKeys": Array [
             "icon",
+            "height",
+            "width",
+            "__iconLoader__",
           ],
           "_refElm": null,
           "_renderChildren": undefined,
@@ -164,7 +167,10 @@ VueWrapper {
         "_isMounted": true,
         "_isVue": true,
         "_props": Object {
+          "__iconLoader__": [Function],
+          "height": "1rem",
           "icon": "dot",
+          "width": "1rem",
         },
         "_renderProxy": VueComponent {
           "$attrs": Object {},
@@ -222,6 +228,9 @@ VueWrapper {
             },
             "_propKeys": Array [
               "icon",
+              "height",
+              "width",
+              "__iconLoader__",
             ],
             "_refElm": null,
             "_renderChildren": undefined,
@@ -291,7 +300,10 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
+            "__iconLoader__": [Function],
+            "height": "1rem",
             "icon": "dot",
+            "width": "1rem",
           },
           "_renderProxy": [Circular],
           "_self": [Circular],
@@ -556,8 +568,7 @@ VueWrapper {
       "_base": [Function],
       "_parentElm": null,
       "_propKeys": Array [
-        "title",
-        "time",
+        "item",
       ],
       "_refElm": null,
       "beforeCreate": Array [
@@ -578,8 +589,20 @@ VueWrapper {
           "normalizedStyle": undefined,
           "on": undefined,
           "props": Object {
+            "__iconLoader__": Object {
+              "default": [Function],
+              "type": [Function],
+            },
+            "height": Object {
+              "default": "1rem",
+              "type": [Function],
+            },
             "icon": Object {
-              "default": "",
+              "default": "plus",
+              "type": [Function],
+            },
+            "width": Object {
+              "default": "1rem",
               "type": [Function],
             },
           },
@@ -610,12 +633,8 @@ VueWrapper {
       "methods": undefined,
       "name": "ActivityItem",
       "props": Object {
-        "time": Object {
-          "default": "",
-          "type": [Function],
-        },
-        "title": Object {
-          "default": "",
+        "item": Object {
+          "default": [Function],
           "type": [Function],
         },
       },
@@ -642,8 +661,7 @@ VueWrapper {
     "_isMounted": true,
     "_isVue": true,
     "_props": Object {
-      "time": "",
-      "title": "",
+      "item": Object {},
     },
     "_provided": undefined,
     "_renderProxy": VueComponent {
@@ -705,6 +723,9 @@ VueWrapper {
             },
             "_propKeys": Array [
               "icon",
+              "height",
+              "width",
+              "__iconLoader__",
             ],
             "_refElm": null,
             "_renderChildren": undefined,
@@ -774,7 +795,10 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
+            "__iconLoader__": [Function],
+            "height": "1rem",
             "icon": "dot",
+            "width": "1rem",
           },
           "_renderProxy": VueComponent {
             "$attrs": Object {},
@@ -832,6 +856,9 @@ VueWrapper {
               },
               "_propKeys": Array [
                 "icon",
+                "height",
+                "width",
+                "__iconLoader__",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -901,7 +928,10 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
+              "__iconLoader__": [Function],
+              "height": "1rem",
               "icon": "dot",
+              "width": "1rem",
             },
             "_renderProxy": [Circular],
             "_self": [Circular],
@@ -1166,8 +1196,7 @@ VueWrapper {
         "_base": [Function],
         "_parentElm": null,
         "_propKeys": Array [
-          "title",
-          "time",
+          "item",
         ],
         "_refElm": null,
         "beforeCreate": Array [
@@ -1188,8 +1217,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -1220,12 +1261,8 @@ VueWrapper {
         "methods": undefined,
         "name": "ActivityItem",
         "props": Object {
-          "time": Object {
-            "default": "",
-            "type": [Function],
-          },
-          "title": Object {
-            "default": "",
+          "item": Object {
+            "default": [Function],
             "type": [Function],
           },
         },
@@ -1252,8 +1289,7 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "time": "",
-        "title": "",
+        "item": Object {},
       },
       "_provided": undefined,
       "_renderProxy": [Circular],
@@ -1286,6 +1322,9 @@ VueWrapper {
                     "_parentVnode": [Circular],
                     "_propKeys": Array [
                       "icon",
+                      "height",
+                      "width",
+                      "__iconLoader__",
                     ],
                     "_refElm": null,
                     "_renderChildren": undefined,
@@ -1313,7 +1352,10 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
+                    "__iconLoader__": [Function],
+                    "height": "1rem",
                     "icon": "dot",
+                    "width": "1rem",
                   },
                   "_renderProxy": VueComponent {
                     "$attrs": Object {},
@@ -1329,6 +1371,9 @@ VueWrapper {
                       "_parentVnode": [Circular],
                       "_propKeys": Array [
                         "icon",
+                        "height",
+                        "width",
+                        "__iconLoader__",
                       ],
                       "_refElm": null,
                       "_renderChildren": undefined,
@@ -1356,7 +1401,10 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
+                      "__iconLoader__": [Function],
+                      "height": "1rem",
                       "icon": "dot",
+                      "width": "1rem",
                     },
                     "_renderProxy": [Circular],
                     "_self": [Circular],
@@ -1826,20 +1874,20 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
-          2,
           3,
+          2,
         },
         "deps": Array [
           Dep {
             "_sortedId": 0,
-            "id": 2,
+            "id": 3,
             "subs": Array [
               [Circular],
             ],
           },
           Dep {
             "_sortedId": 0,
-            "id": 3,
+            "id": 2,
             "subs": Array [
               [Circular],
             ],
@@ -1865,20 +1913,20 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
-            2,
             3,
+            2,
           },
           "deps": Array [
             Dep {
               "_sortedId": 0,
-              "id": 2,
+              "id": 3,
               "subs": Array [
                 [Circular],
               ],
             },
             Dep {
               "_sortedId": 0,
-              "id": 3,
+              "id": 2,
               "subs": Array [
                 [Circular],
               ],
@@ -1929,6 +1977,9 @@ VueWrapper {
                   "_parentVnode": [Circular],
                   "_propKeys": Array [
                     "icon",
+                    "height",
+                    "width",
+                    "__iconLoader__",
                   ],
                   "_refElm": null,
                   "_renderChildren": undefined,
@@ -1956,7 +2007,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
+                  "__iconLoader__": [Function],
+                  "height": "1rem",
                   "icon": "dot",
+                  "width": "1rem",
                 },
                 "_renderProxy": VueComponent {
                   "$attrs": Object {},
@@ -1972,6 +2026,9 @@ VueWrapper {
                     "_parentVnode": [Circular],
                     "_propKeys": Array [
                       "icon",
+                      "height",
+                      "width",
+                      "__iconLoader__",
                     ],
                     "_refElm": null,
                     "_renderChildren": undefined,
@@ -1999,7 +2056,10 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
+                    "__iconLoader__": [Function],
+                    "height": "1rem",
                     "icon": "dot",
+                    "width": "1rem",
                   },
                   "_renderProxy": [Circular],
                   "_self": [Circular],
@@ -2469,20 +2529,20 @@ VueWrapper {
       "cb": [Function],
       "deep": false,
       "depIds": Set {
-        2,
         3,
+        2,
       },
       "deps": Array [
         Dep {
           "_sortedId": 0,
-          "id": 2,
+          "id": 3,
           "subs": Array [
             [Circular],
           ],
         },
         Dep {
           "_sortedId": 0,
-          "id": 3,
+          "id": 2,
           "subs": Array [
             [Circular],
           ],
@@ -2508,20 +2568,20 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
-          2,
           3,
+          2,
         },
         "deps": Array [
           Dep {
             "_sortedId": 0,
-            "id": 2,
+            "id": 3,
             "subs": Array [
               [Circular],
             ],
           },
           Dep {
             "_sortedId": 0,
-            "id": 3,
+            "id": 2,
             "subs": Array [
               [Circular],
             ],
@@ -2569,6 +2629,9 @@ VueWrapper {
                 "_parentVnode": [Circular],
                 "_propKeys": Array [
                   "icon",
+                  "height",
+                  "width",
+                  "__iconLoader__",
                 ],
                 "_refElm": null,
                 "_renderChildren": undefined,
@@ -2612,8 +2675,7 @@ VueWrapper {
                     "_base": [Function],
                     "_parentElm": null,
                     "_propKeys": Array [
-                      "title",
-                      "time",
+                      "item",
                     ],
                     "_refElm": null,
                     "beforeCreate": Array [
@@ -2634,8 +2696,20 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
+                          "__iconLoader__": Object {
+                            "default": [Function],
+                            "type": [Function],
+                          },
+                          "height": Object {
+                            "default": "1rem",
+                            "type": [Function],
+                          },
                           "icon": Object {
-                            "default": "",
+                            "default": "plus",
+                            "type": [Function],
+                          },
+                          "width": Object {
+                            "default": "1rem",
                             "type": [Function],
                           },
                         },
@@ -2666,12 +2740,8 @@ VueWrapper {
                     "methods": undefined,
                     "name": "ActivityItem",
                     "props": Object {
-                      "time": Object {
-                        "default": "",
-                        "type": [Function],
-                      },
-                      "title": Object {
-                        "default": "",
+                      "item": Object {
+                        "default": [Function],
                         "type": [Function],
                       },
                     },
@@ -2698,8 +2768,7 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "time": "",
-                    "title": "",
+                    "item": Object {},
                   },
                   "_provided": undefined,
                   "_renderProxy": VueComponent {
@@ -2742,8 +2811,7 @@ VueWrapper {
                       "_base": [Function],
                       "_parentElm": null,
                       "_propKeys": Array [
-                        "title",
-                        "time",
+                        "item",
                       ],
                       "_refElm": null,
                       "beforeCreate": Array [
@@ -2764,8 +2832,20 @@ VueWrapper {
                           "normalizedStyle": undefined,
                           "on": undefined,
                           "props": Object {
+                            "__iconLoader__": Object {
+                              "default": [Function],
+                              "type": [Function],
+                            },
+                            "height": Object {
+                              "default": "1rem",
+                              "type": [Function],
+                            },
                             "icon": Object {
-                              "default": "",
+                              "default": "plus",
+                              "type": [Function],
+                            },
+                            "width": Object {
+                              "default": "1rem",
                               "type": [Function],
                             },
                           },
@@ -2796,12 +2876,8 @@ VueWrapper {
                       "methods": undefined,
                       "name": "ActivityItem",
                       "props": Object {
-                        "time": Object {
-                          "default": "",
-                          "type": [Function],
-                        },
-                        "title": Object {
-                          "default": "",
+                        "item": Object {
+                          "default": [Function],
                           "type": [Function],
                         },
                       },
@@ -2828,8 +2904,7 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
-                      "time": "",
-                      "title": "",
+                      "item": Object {},
                     },
                     "_provided": undefined,
                     "_renderProxy": [Circular],
@@ -2842,20 +2917,20 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        2,
                         3,
+                        2,
                       },
                       "deps": Array [
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 3,
                           "subs": Array [
                             [Circular],
                           ],
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 3,
+                          "id": 2,
                           "subs": Array [
                             [Circular],
                           ],
@@ -2881,20 +2956,20 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
-                          2,
                           3,
+                          2,
                         },
                         "deps": Array [
                           Dep {
                             "_sortedId": 0,
-                            "id": 2,
+                            "id": 3,
                             "subs": Array [
                               [Circular],
                             ],
                           },
                           Dep {
                             "_sortedId": 0,
-                            "id": 3,
+                            "id": 2,
                             "subs": Array [
                               [Circular],
                             ],
@@ -2925,20 +3000,20 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      2,
                       3,
+                      2,
                     },
                     "deps": Array [
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 3,
                         "subs": Array [
                           [Circular],
                         ],
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 3,
+                        "id": 2,
                         "subs": Array [
                           [Circular],
                         ],
@@ -2964,20 +3039,20 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        2,
                         3,
+                        2,
                       },
                       "deps": Array [
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 3,
                           "subs": Array [
                             [Circular],
                           ],
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 3,
+                          "id": 2,
                           "subs": Array [
                             [Circular],
                           ],
@@ -3043,8 +3118,7 @@ VueWrapper {
                   "_base": [Function],
                   "_parentElm": null,
                   "_propKeys": Array [
-                    "title",
-                    "time",
+                    "item",
                   ],
                   "_refElm": null,
                   "beforeCreate": Array [
@@ -3065,8 +3139,20 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
+                        "__iconLoader__": Object {
+                          "default": [Function],
+                          "type": [Function],
+                        },
+                        "height": Object {
+                          "default": "1rem",
+                          "type": [Function],
+                        },
                         "icon": Object {
-                          "default": "",
+                          "default": "plus",
+                          "type": [Function],
+                        },
+                        "width": Object {
+                          "default": "1rem",
                           "type": [Function],
                         },
                       },
@@ -3097,12 +3183,8 @@ VueWrapper {
                   "methods": undefined,
                   "name": "ActivityItem",
                   "props": Object {
-                    "time": Object {
-                      "default": "",
-                      "type": [Function],
-                    },
-                    "title": Object {
-                      "default": "",
+                    "item": Object {
+                      "default": [Function],
                       "type": [Function],
                     },
                   },
@@ -3129,8 +3211,7 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "time": "",
-                  "title": "",
+                  "item": Object {},
                 },
                 "_provided": undefined,
                 "_renderProxy": VueComponent {
@@ -3173,8 +3254,7 @@ VueWrapper {
                     "_base": [Function],
                     "_parentElm": null,
                     "_propKeys": Array [
-                      "title",
-                      "time",
+                      "item",
                     ],
                     "_refElm": null,
                     "beforeCreate": Array [
@@ -3195,8 +3275,20 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
+                          "__iconLoader__": Object {
+                            "default": [Function],
+                            "type": [Function],
+                          },
+                          "height": Object {
+                            "default": "1rem",
+                            "type": [Function],
+                          },
                           "icon": Object {
-                            "default": "",
+                            "default": "plus",
+                            "type": [Function],
+                          },
+                          "width": Object {
+                            "default": "1rem",
                             "type": [Function],
                           },
                         },
@@ -3227,12 +3319,8 @@ VueWrapper {
                     "methods": undefined,
                     "name": "ActivityItem",
                     "props": Object {
-                      "time": Object {
-                        "default": "",
-                        "type": [Function],
-                      },
-                      "title": Object {
-                        "default": "",
+                      "item": Object {
+                        "default": [Function],
                         "type": [Function],
                       },
                     },
@@ -3259,8 +3347,7 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "time": "",
-                    "title": "",
+                    "item": Object {},
                   },
                   "_provided": undefined,
                   "_renderProxy": [Circular],
@@ -3273,20 +3360,20 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      2,
                       3,
+                      2,
                     },
                     "deps": Array [
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 3,
                         "subs": Array [
                           [Circular],
                         ],
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 3,
+                        "id": 2,
                         "subs": Array [
                           [Circular],
                         ],
@@ -3312,20 +3399,20 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        2,
                         3,
+                        2,
                       },
                       "deps": Array [
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 3,
                           "subs": Array [
                             [Circular],
                           ],
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 3,
+                          "id": 2,
                           "subs": Array [
                             [Circular],
                           ],
@@ -3356,20 +3443,20 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    2,
                     3,
+                    2,
                   },
                   "deps": Array [
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 3,
                       "subs": Array [
                         [Circular],
                       ],
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 3,
+                      "id": 2,
                       "subs": Array [
                         [Circular],
                       ],
@@ -3395,20 +3482,20 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      2,
                       3,
+                      2,
                     },
                     "deps": Array [
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 3,
                         "subs": Array [
                           [Circular],
                         ],
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 3,
+                        "id": 2,
                         "subs": Array [
                           [Circular],
                         ],
@@ -3471,8 +3558,7 @@ VueWrapper {
                   "_base": [Function],
                   "_parentElm": null,
                   "_propKeys": Array [
-                    "title",
-                    "time",
+                    "item",
                   ],
                   "_refElm": null,
                   "beforeCreate": Array [
@@ -3493,8 +3579,20 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
+                        "__iconLoader__": Object {
+                          "default": [Function],
+                          "type": [Function],
+                        },
+                        "height": Object {
+                          "default": "1rem",
+                          "type": [Function],
+                        },
                         "icon": Object {
-                          "default": "",
+                          "default": "plus",
+                          "type": [Function],
+                        },
+                        "width": Object {
+                          "default": "1rem",
                           "type": [Function],
                         },
                       },
@@ -3525,12 +3623,8 @@ VueWrapper {
                   "methods": undefined,
                   "name": "ActivityItem",
                   "props": Object {
-                    "time": Object {
-                      "default": "",
-                      "type": [Function],
-                    },
-                    "title": Object {
-                      "default": "",
+                    "item": Object {
+                      "default": [Function],
                       "type": [Function],
                     },
                   },
@@ -3557,8 +3651,7 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "time": "",
-                  "title": "",
+                  "item": Object {},
                 },
                 "_provided": undefined,
                 "_renderProxy": VueComponent {
@@ -3601,8 +3694,7 @@ VueWrapper {
                     "_base": [Function],
                     "_parentElm": null,
                     "_propKeys": Array [
-                      "title",
-                      "time",
+                      "item",
                     ],
                     "_refElm": null,
                     "beforeCreate": Array [
@@ -3623,8 +3715,20 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
+                          "__iconLoader__": Object {
+                            "default": [Function],
+                            "type": [Function],
+                          },
+                          "height": Object {
+                            "default": "1rem",
+                            "type": [Function],
+                          },
                           "icon": Object {
-                            "default": "",
+                            "default": "plus",
+                            "type": [Function],
+                          },
+                          "width": Object {
+                            "default": "1rem",
                             "type": [Function],
                           },
                         },
@@ -3655,12 +3759,8 @@ VueWrapper {
                     "methods": undefined,
                     "name": "ActivityItem",
                     "props": Object {
-                      "time": Object {
-                        "default": "",
-                        "type": [Function],
-                      },
-                      "title": Object {
-                        "default": "",
+                      "item": Object {
+                        "default": [Function],
                         "type": [Function],
                       },
                     },
@@ -3687,8 +3787,7 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "time": "",
-                    "title": "",
+                    "item": Object {},
                   },
                   "_provided": undefined,
                   "_renderProxy": [Circular],
@@ -3701,20 +3800,20 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      2,
                       3,
+                      2,
                     },
                     "deps": Array [
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 3,
                         "subs": Array [
                           [Circular],
                         ],
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 3,
+                        "id": 2,
                         "subs": Array [
                           [Circular],
                         ],
@@ -3740,20 +3839,20 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        2,
                         3,
+                        2,
                       },
                       "deps": Array [
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 3,
                           "subs": Array [
                             [Circular],
                           ],
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 3,
+                          "id": 2,
                           "subs": Array [
                             [Circular],
                           ],
@@ -3784,20 +3883,20 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    2,
                     3,
+                    2,
                   },
                   "deps": Array [
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 3,
                       "subs": Array [
                         [Circular],
                       ],
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 3,
+                      "id": 2,
                       "subs": Array [
                         [Circular],
                       ],
@@ -3823,20 +3922,20 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      2,
                       3,
+                      2,
                     },
                     "deps": Array [
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 3,
                         "subs": Array [
                           [Circular],
                         ],
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 3,
+                        "id": 2,
                         "subs": Array [
                           [Circular],
                         ],
@@ -3874,7 +3973,10 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
+                "__iconLoader__": [Function],
+                "height": "1rem",
                 "icon": "dot",
+                "width": "1rem",
               },
               "_renderProxy": VueComponent {
                 "$attrs": Object {},
@@ -3890,6 +3992,9 @@ VueWrapper {
                   "_parentVnode": [Circular],
                   "_propKeys": Array [
                     "icon",
+                    "height",
+                    "width",
+                    "__iconLoader__",
                   ],
                   "_refElm": null,
                   "_renderChildren": undefined,
@@ -3933,8 +4038,7 @@ VueWrapper {
                       "_base": [Function],
                       "_parentElm": null,
                       "_propKeys": Array [
-                        "title",
-                        "time",
+                        "item",
                       ],
                       "_refElm": null,
                       "beforeCreate": Array [
@@ -3955,8 +4059,20 @@ VueWrapper {
                           "normalizedStyle": undefined,
                           "on": undefined,
                           "props": Object {
+                            "__iconLoader__": Object {
+                              "default": [Function],
+                              "type": [Function],
+                            },
+                            "height": Object {
+                              "default": "1rem",
+                              "type": [Function],
+                            },
                             "icon": Object {
-                              "default": "",
+                              "default": "plus",
+                              "type": [Function],
+                            },
+                            "width": Object {
+                              "default": "1rem",
                               "type": [Function],
                             },
                           },
@@ -3987,12 +4103,8 @@ VueWrapper {
                       "methods": undefined,
                       "name": "ActivityItem",
                       "props": Object {
-                        "time": Object {
-                          "default": "",
-                          "type": [Function],
-                        },
-                        "title": Object {
-                          "default": "",
+                        "item": Object {
+                          "default": [Function],
                           "type": [Function],
                         },
                       },
@@ -4019,8 +4131,7 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
-                      "time": "",
-                      "title": "",
+                      "item": Object {},
                     },
                     "_provided": undefined,
                     "_renderProxy": VueComponent {
@@ -4063,8 +4174,7 @@ VueWrapper {
                         "_base": [Function],
                         "_parentElm": null,
                         "_propKeys": Array [
-                          "title",
-                          "time",
+                          "item",
                         ],
                         "_refElm": null,
                         "beforeCreate": Array [
@@ -4085,8 +4195,20 @@ VueWrapper {
                             "normalizedStyle": undefined,
                             "on": undefined,
                             "props": Object {
+                              "__iconLoader__": Object {
+                                "default": [Function],
+                                "type": [Function],
+                              },
+                              "height": Object {
+                                "default": "1rem",
+                                "type": [Function],
+                              },
                               "icon": Object {
-                                "default": "",
+                                "default": "plus",
+                                "type": [Function],
+                              },
+                              "width": Object {
+                                "default": "1rem",
                                 "type": [Function],
                               },
                             },
@@ -4117,12 +4239,8 @@ VueWrapper {
                         "methods": undefined,
                         "name": "ActivityItem",
                         "props": Object {
-                          "time": Object {
-                            "default": "",
-                            "type": [Function],
-                          },
-                          "title": Object {
-                            "default": "",
+                          "item": Object {
+                            "default": [Function],
                             "type": [Function],
                           },
                         },
@@ -4149,8 +4267,7 @@ VueWrapper {
                       "_isMounted": true,
                       "_isVue": true,
                       "_props": Object {
-                        "time": "",
-                        "title": "",
+                        "item": Object {},
                       },
                       "_provided": undefined,
                       "_renderProxy": [Circular],
@@ -4163,20 +4280,20 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
-                          2,
                           3,
+                          2,
                         },
                         "deps": Array [
                           Dep {
                             "_sortedId": 0,
-                            "id": 2,
+                            "id": 3,
                             "subs": Array [
                               [Circular],
                             ],
                           },
                           Dep {
                             "_sortedId": 0,
-                            "id": 3,
+                            "id": 2,
                             "subs": Array [
                               [Circular],
                             ],
@@ -4202,20 +4319,20 @@ VueWrapper {
                           "cb": [Function],
                           "deep": false,
                           "depIds": Set {
-                            2,
                             3,
+                            2,
                           },
                           "deps": Array [
                             Dep {
                               "_sortedId": 0,
-                              "id": 2,
+                              "id": 3,
                               "subs": Array [
                                 [Circular],
                               ],
                             },
                             Dep {
                               "_sortedId": 0,
-                              "id": 3,
+                              "id": 2,
                               "subs": Array [
                                 [Circular],
                               ],
@@ -4246,20 +4363,20 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        2,
                         3,
+                        2,
                       },
                       "deps": Array [
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 3,
                           "subs": Array [
                             [Circular],
                           ],
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 3,
+                          "id": 2,
                           "subs": Array [
                             [Circular],
                           ],
@@ -4285,20 +4402,20 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
-                          2,
                           3,
+                          2,
                         },
                         "deps": Array [
                           Dep {
                             "_sortedId": 0,
-                            "id": 2,
+                            "id": 3,
                             "subs": Array [
                               [Circular],
                             ],
                           },
                           Dep {
                             "_sortedId": 0,
-                            "id": 3,
+                            "id": 2,
                             "subs": Array [
                               [Circular],
                             ],
@@ -4364,8 +4481,7 @@ VueWrapper {
                     "_base": [Function],
                     "_parentElm": null,
                     "_propKeys": Array [
-                      "title",
-                      "time",
+                      "item",
                     ],
                     "_refElm": null,
                     "beforeCreate": Array [
@@ -4386,8 +4502,20 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
+                          "__iconLoader__": Object {
+                            "default": [Function],
+                            "type": [Function],
+                          },
+                          "height": Object {
+                            "default": "1rem",
+                            "type": [Function],
+                          },
                           "icon": Object {
-                            "default": "",
+                            "default": "plus",
+                            "type": [Function],
+                          },
+                          "width": Object {
+                            "default": "1rem",
                             "type": [Function],
                           },
                         },
@@ -4418,12 +4546,8 @@ VueWrapper {
                     "methods": undefined,
                     "name": "ActivityItem",
                     "props": Object {
-                      "time": Object {
-                        "default": "",
-                        "type": [Function],
-                      },
-                      "title": Object {
-                        "default": "",
+                      "item": Object {
+                        "default": [Function],
                         "type": [Function],
                       },
                     },
@@ -4450,8 +4574,7 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "time": "",
-                    "title": "",
+                    "item": Object {},
                   },
                   "_provided": undefined,
                   "_renderProxy": VueComponent {
@@ -4494,8 +4617,7 @@ VueWrapper {
                       "_base": [Function],
                       "_parentElm": null,
                       "_propKeys": Array [
-                        "title",
-                        "time",
+                        "item",
                       ],
                       "_refElm": null,
                       "beforeCreate": Array [
@@ -4516,8 +4638,20 @@ VueWrapper {
                           "normalizedStyle": undefined,
                           "on": undefined,
                           "props": Object {
+                            "__iconLoader__": Object {
+                              "default": [Function],
+                              "type": [Function],
+                            },
+                            "height": Object {
+                              "default": "1rem",
+                              "type": [Function],
+                            },
                             "icon": Object {
-                              "default": "",
+                              "default": "plus",
+                              "type": [Function],
+                            },
+                            "width": Object {
+                              "default": "1rem",
                               "type": [Function],
                             },
                           },
@@ -4548,12 +4682,8 @@ VueWrapper {
                       "methods": undefined,
                       "name": "ActivityItem",
                       "props": Object {
-                        "time": Object {
-                          "default": "",
-                          "type": [Function],
-                        },
-                        "title": Object {
-                          "default": "",
+                        "item": Object {
+                          "default": [Function],
                           "type": [Function],
                         },
                       },
@@ -4580,8 +4710,7 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
-                      "time": "",
-                      "title": "",
+                      "item": Object {},
                     },
                     "_provided": undefined,
                     "_renderProxy": [Circular],
@@ -4594,20 +4723,20 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        2,
                         3,
+                        2,
                       },
                       "deps": Array [
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 3,
                           "subs": Array [
                             [Circular],
                           ],
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 3,
+                          "id": 2,
                           "subs": Array [
                             [Circular],
                           ],
@@ -4633,20 +4762,20 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
-                          2,
                           3,
+                          2,
                         },
                         "deps": Array [
                           Dep {
                             "_sortedId": 0,
-                            "id": 2,
+                            "id": 3,
                             "subs": Array [
                               [Circular],
                             ],
                           },
                           Dep {
                             "_sortedId": 0,
-                            "id": 3,
+                            "id": 2,
                             "subs": Array [
                               [Circular],
                             ],
@@ -4677,20 +4806,20 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      2,
                       3,
+                      2,
                     },
                     "deps": Array [
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 3,
                         "subs": Array [
                           [Circular],
                         ],
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 3,
+                        "id": 2,
                         "subs": Array [
                           [Circular],
                         ],
@@ -4716,20 +4845,20 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        2,
                         3,
+                        2,
                       },
                       "deps": Array [
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 3,
                           "subs": Array [
                             [Circular],
                           ],
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 3,
+                          "id": 2,
                           "subs": Array [
                             [Circular],
                           ],
@@ -4792,8 +4921,7 @@ VueWrapper {
                     "_base": [Function],
                     "_parentElm": null,
                     "_propKeys": Array [
-                      "title",
-                      "time",
+                      "item",
                     ],
                     "_refElm": null,
                     "beforeCreate": Array [
@@ -4814,8 +4942,20 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
+                          "__iconLoader__": Object {
+                            "default": [Function],
+                            "type": [Function],
+                          },
+                          "height": Object {
+                            "default": "1rem",
+                            "type": [Function],
+                          },
                           "icon": Object {
-                            "default": "",
+                            "default": "plus",
+                            "type": [Function],
+                          },
+                          "width": Object {
+                            "default": "1rem",
                             "type": [Function],
                           },
                         },
@@ -4846,12 +4986,8 @@ VueWrapper {
                     "methods": undefined,
                     "name": "ActivityItem",
                     "props": Object {
-                      "time": Object {
-                        "default": "",
-                        "type": [Function],
-                      },
-                      "title": Object {
-                        "default": "",
+                      "item": Object {
+                        "default": [Function],
                         "type": [Function],
                       },
                     },
@@ -4878,8 +5014,7 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "time": "",
-                    "title": "",
+                    "item": Object {},
                   },
                   "_provided": undefined,
                   "_renderProxy": VueComponent {
@@ -4922,8 +5057,7 @@ VueWrapper {
                       "_base": [Function],
                       "_parentElm": null,
                       "_propKeys": Array [
-                        "title",
-                        "time",
+                        "item",
                       ],
                       "_refElm": null,
                       "beforeCreate": Array [
@@ -4944,8 +5078,20 @@ VueWrapper {
                           "normalizedStyle": undefined,
                           "on": undefined,
                           "props": Object {
+                            "__iconLoader__": Object {
+                              "default": [Function],
+                              "type": [Function],
+                            },
+                            "height": Object {
+                              "default": "1rem",
+                              "type": [Function],
+                            },
                             "icon": Object {
-                              "default": "",
+                              "default": "plus",
+                              "type": [Function],
+                            },
+                            "width": Object {
+                              "default": "1rem",
                               "type": [Function],
                             },
                           },
@@ -4976,12 +5122,8 @@ VueWrapper {
                       "methods": undefined,
                       "name": "ActivityItem",
                       "props": Object {
-                        "time": Object {
-                          "default": "",
-                          "type": [Function],
-                        },
-                        "title": Object {
-                          "default": "",
+                        "item": Object {
+                          "default": [Function],
                           "type": [Function],
                         },
                       },
@@ -5008,8 +5150,7 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
-                      "time": "",
-                      "title": "",
+                      "item": Object {},
                     },
                     "_provided": undefined,
                     "_renderProxy": [Circular],
@@ -5022,20 +5163,20 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        2,
                         3,
+                        2,
                       },
                       "deps": Array [
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 3,
                           "subs": Array [
                             [Circular],
                           ],
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 3,
+                          "id": 2,
                           "subs": Array [
                             [Circular],
                           ],
@@ -5061,20 +5202,20 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
-                          2,
                           3,
+                          2,
                         },
                         "deps": Array [
                           Dep {
                             "_sortedId": 0,
-                            "id": 2,
+                            "id": 3,
                             "subs": Array [
                               [Circular],
                             ],
                           },
                           Dep {
                             "_sortedId": 0,
-                            "id": 3,
+                            "id": 2,
                             "subs": Array [
                               [Circular],
                             ],
@@ -5105,20 +5246,20 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      2,
                       3,
+                      2,
                     },
                     "deps": Array [
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 3,
                         "subs": Array [
                           [Circular],
                         ],
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 3,
+                        "id": 2,
                         "subs": Array [
                           [Circular],
                         ],
@@ -5144,20 +5285,20 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        2,
                         3,
+                        2,
                       },
                       "deps": Array [
                         Dep {
                           "_sortedId": 0,
-                          "id": 2,
+                          "id": 3,
                           "subs": Array [
                             [Circular],
                           ],
                         },
                         Dep {
                           "_sortedId": 0,
-                          "id": 3,
+                          "id": 2,
                           "subs": Array [
                             [Circular],
                           ],
@@ -5195,7 +5336,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
+                  "__iconLoader__": [Function],
+                  "height": "1rem",
                   "icon": "dot",
+                  "width": "1rem",
                 },
                 "_renderProxy": [Circular],
                 "_self": [Circular],
@@ -5366,6 +5510,9 @@ VueWrapper {
                     "_parentVnode": [Circular],
                     "_propKeys": Array [
                       "icon",
+                      "height",
+                      "width",
+                      "__iconLoader__",
                     ],
                     "_refElm": null,
                     "_renderChildren": undefined,
@@ -5393,7 +5540,10 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
+                    "__iconLoader__": [Function],
+                    "height": "1rem",
                     "icon": "dot",
+                    "width": "1rem",
                   },
                   "_renderProxy": VueComponent {
                     "$attrs": Object {},
@@ -5409,6 +5559,9 @@ VueWrapper {
                       "_parentVnode": [Circular],
                       "_propKeys": Array [
                         "icon",
+                        "height",
+                        "width",
+                        "__iconLoader__",
                       ],
                       "_refElm": null,
                       "_renderChildren": undefined,
@@ -5436,7 +5589,10 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
+                      "__iconLoader__": [Function],
+                      "height": "1rem",
                       "icon": "dot",
+                      "width": "1rem",
                     },
                     "_renderProxy": [Circular],
                     "_self": [Circular],
@@ -5617,8 +5773,7 @@ VueWrapper {
                 "_base": [Function],
                 "_parentElm": null,
                 "_propKeys": Array [
-                  "title",
-                  "time",
+                  "item",
                 ],
                 "_refElm": null,
                 "beforeCreate": Array [
@@ -5639,8 +5794,20 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
+                      "__iconLoader__": Object {
+                        "default": [Function],
+                        "type": [Function],
+                      },
+                      "height": Object {
+                        "default": "1rem",
+                        "type": [Function],
+                      },
                       "icon": Object {
-                        "default": "",
+                        "default": "plus",
+                        "type": [Function],
+                      },
+                      "width": Object {
+                        "default": "1rem",
                         "type": [Function],
                       },
                     },
@@ -5671,12 +5838,8 @@ VueWrapper {
                 "methods": undefined,
                 "name": "ActivityItem",
                 "props": Object {
-                  "time": Object {
-                    "default": "",
-                    "type": [Function],
-                  },
-                  "title": Object {
-                    "default": "",
+                  "item": Object {
+                    "default": [Function],
                     "type": [Function],
                   },
                 },
@@ -5703,8 +5866,7 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "time": "",
-                "title": "",
+                "item": Object {},
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -5724,6 +5886,9 @@ VueWrapper {
                       "_parentVnode": [Circular],
                       "_propKeys": Array [
                         "icon",
+                        "height",
+                        "width",
+                        "__iconLoader__",
                       ],
                       "_refElm": null,
                       "_renderChildren": undefined,
@@ -5751,7 +5916,10 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
+                      "__iconLoader__": [Function],
+                      "height": "1rem",
                       "icon": "dot",
+                      "width": "1rem",
                     },
                     "_renderProxy": VueComponent {
                       "$attrs": Object {},
@@ -5767,6 +5935,9 @@ VueWrapper {
                         "_parentVnode": [Circular],
                         "_propKeys": Array [
                           "icon",
+                          "height",
+                          "width",
+                          "__iconLoader__",
                         ],
                         "_refElm": null,
                         "_renderChildren": undefined,
@@ -5794,7 +5965,10 @@ VueWrapper {
                       "_isMounted": true,
                       "_isVue": true,
                       "_props": Object {
+                        "__iconLoader__": [Function],
+                        "height": "1rem",
                         "icon": "dot",
+                        "width": "1rem",
                       },
                       "_renderProxy": [Circular],
                       "_self": [Circular],
@@ -5975,8 +6149,7 @@ VueWrapper {
                   "_base": [Function],
                   "_parentElm": null,
                   "_propKeys": Array [
-                    "title",
-                    "time",
+                    "item",
                   ],
                   "_refElm": null,
                   "beforeCreate": Array [
@@ -5997,8 +6170,20 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
+                        "__iconLoader__": Object {
+                          "default": [Function],
+                          "type": [Function],
+                        },
+                        "height": Object {
+                          "default": "1rem",
+                          "type": [Function],
+                        },
                         "icon": Object {
-                          "default": "",
+                          "default": "plus",
+                          "type": [Function],
+                        },
+                        "width": Object {
+                          "default": "1rem",
                           "type": [Function],
                         },
                       },
@@ -6029,12 +6214,8 @@ VueWrapper {
                   "methods": undefined,
                   "name": "ActivityItem",
                   "props": Object {
-                    "time": Object {
-                      "default": "",
-                      "type": [Function],
-                    },
-                    "title": Object {
-                      "default": "",
+                    "item": Object {
+                      "default": [Function],
                       "type": [Function],
                     },
                   },
@@ -6061,8 +6242,7 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "time": "",
-                  "title": "",
+                  "item": Object {},
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -6075,20 +6255,20 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    2,
                     3,
+                    2,
                   },
                   "deps": Array [
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 3,
                       "subs": Array [
                         [Circular],
                       ],
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 3,
+                      "id": 2,
                       "subs": Array [
                         [Circular],
                       ],
@@ -6114,20 +6294,20 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      2,
                       3,
+                      2,
                     },
                     "deps": Array [
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 3,
                         "subs": Array [
                           [Circular],
                         ],
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 3,
+                        "id": 2,
                         "subs": Array [
                           [Circular],
                         ],
@@ -6158,20 +6338,20 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
-                  2,
                   3,
+                  2,
                 },
                 "deps": Array [
                   Dep {
                     "_sortedId": 0,
-                    "id": 2,
+                    "id": 3,
                     "subs": Array [
                       [Circular],
                     ],
                   },
                   Dep {
                     "_sortedId": 0,
-                    "id": 3,
+                    "id": 2,
                     "subs": Array [
                       [Circular],
                     ],
@@ -6197,20 +6377,20 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    2,
                     3,
+                    2,
                   },
                   "deps": Array [
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 3,
                       "subs": Array [
                         [Circular],
                       ],
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 3,
+                      "id": 2,
                       "subs": Array [
                         [Circular],
                       ],
@@ -6322,6 +6502,9 @@ VueWrapper {
                 },
                 "_propKeys": Array [
                   "icon",
+                  "height",
+                  "width",
+                  "__iconLoader__",
                 ],
                 "_refElm": null,
                 "_renderChildren": undefined,
@@ -6391,7 +6574,10 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
+                "__iconLoader__": [Function],
+                "height": "1rem",
                 "icon": "dot",
+                "width": "1rem",
               },
               "_renderProxy": VueComponent {
                 "$attrs": Object {},
@@ -6449,6 +6635,9 @@ VueWrapper {
                   },
                   "_propKeys": Array [
                     "icon",
+                    "height",
+                    "width",
+                    "__iconLoader__",
                   ],
                   "_refElm": null,
                   "_renderChildren": undefined,
@@ -6518,7 +6707,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
+                  "__iconLoader__": [Function],
+                  "height": "1rem",
                   "icon": "dot",
+                  "width": "1rem",
                 },
                 "_renderProxy": [Circular],
                 "_self": [Circular],
@@ -6783,8 +6975,7 @@ VueWrapper {
             "_base": [Function],
             "_parentElm": null,
             "_propKeys": Array [
-              "title",
-              "time",
+              "item",
             ],
             "_refElm": null,
             "beforeCreate": Array [
@@ -6805,8 +6996,20 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
+                  "__iconLoader__": Object {
+                    "default": [Function],
+                    "type": [Function],
+                  },
+                  "height": Object {
+                    "default": "1rem",
+                    "type": [Function],
+                  },
                   "icon": Object {
-                    "default": "",
+                    "default": "plus",
+                    "type": [Function],
+                  },
+                  "width": Object {
+                    "default": "1rem",
                     "type": [Function],
                   },
                 },
@@ -6837,12 +7040,8 @@ VueWrapper {
             "methods": undefined,
             "name": "ActivityItem",
             "props": Object {
-              "time": Object {
-                "default": "",
-                "type": [Function],
-              },
-              "title": Object {
-                "default": "",
+              "item": Object {
+                "default": [Function],
                 "type": [Function],
               },
             },
@@ -6869,8 +7068,7 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "time": "",
-            "title": "",
+            "item": Object {},
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
@@ -6932,6 +7130,9 @@ VueWrapper {
                   },
                   "_propKeys": Array [
                     "icon",
+                    "height",
+                    "width",
+                    "__iconLoader__",
                   ],
                   "_refElm": null,
                   "_renderChildren": undefined,
@@ -7001,7 +7202,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
+                  "__iconLoader__": [Function],
+                  "height": "1rem",
                   "icon": "dot",
+                  "width": "1rem",
                 },
                 "_renderProxy": VueComponent {
                   "$attrs": Object {},
@@ -7059,6 +7263,9 @@ VueWrapper {
                     },
                     "_propKeys": Array [
                       "icon",
+                      "height",
+                      "width",
+                      "__iconLoader__",
                     ],
                     "_refElm": null,
                     "_renderChildren": undefined,
@@ -7128,7 +7335,10 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
+                    "__iconLoader__": [Function],
+                    "height": "1rem",
                     "icon": "dot",
+                    "width": "1rem",
                   },
                   "_renderProxy": [Circular],
                   "_self": [Circular],
@@ -7393,8 +7603,7 @@ VueWrapper {
               "_base": [Function],
               "_parentElm": null,
               "_propKeys": Array [
-                "title",
-                "time",
+                "item",
               ],
               "_refElm": null,
               "beforeCreate": Array [
@@ -7415,8 +7624,20 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
+                    "__iconLoader__": Object {
+                      "default": [Function],
+                      "type": [Function],
+                    },
+                    "height": Object {
+                      "default": "1rem",
+                      "type": [Function],
+                    },
                     "icon": Object {
-                      "default": "",
+                      "default": "plus",
+                      "type": [Function],
+                    },
+                    "width": Object {
+                      "default": "1rem",
                       "type": [Function],
                     },
                   },
@@ -7447,12 +7668,8 @@ VueWrapper {
               "methods": undefined,
               "name": "ActivityItem",
               "props": Object {
-                "time": Object {
-                  "default": "",
-                  "type": [Function],
-                },
-                "title": Object {
-                  "default": "",
+                "item": Object {
+                  "default": [Function],
                   "type": [Function],
                 },
               },
@@ -7479,8 +7696,7 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "time": "",
-              "title": "",
+              "item": Object {},
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -7493,20 +7709,20 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
-                2,
                 3,
+                2,
               },
               "deps": Array [
                 Dep {
                   "_sortedId": 0,
-                  "id": 2,
+                  "id": 3,
                   "subs": Array [
                     [Circular],
                   ],
                 },
                 Dep {
                   "_sortedId": 0,
-                  "id": 3,
+                  "id": 2,
                   "subs": Array [
                     [Circular],
                   ],
@@ -7532,20 +7748,20 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
-                  2,
                   3,
+                  2,
                 },
                 "deps": Array [
                   Dep {
                     "_sortedId": 0,
-                    "id": 2,
+                    "id": 3,
                     "subs": Array [
                       [Circular],
                     ],
                   },
                   Dep {
                     "_sortedId": 0,
-                    "id": 3,
+                    "id": 2,
                     "subs": Array [
                       [Circular],
                     ],
@@ -7576,20 +7792,20 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
-              2,
               3,
+              2,
             },
             "deps": Array [
               Dep {
                 "_sortedId": 0,
-                "id": 2,
+                "id": 3,
                 "subs": Array [
                   [Circular],
                 ],
               },
               Dep {
                 "_sortedId": 0,
-                "id": 3,
+                "id": 2,
                 "subs": Array [
                   [Circular],
                 ],
@@ -7615,20 +7831,20 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
-                2,
                 3,
+                2,
               },
               "deps": Array [
                 Dep {
                   "_sortedId": 0,
-                  "id": 2,
+                  "id": 3,
                   "subs": Array [
                     [Circular],
                   ],
                 },
                 Dep {
                   "_sortedId": 0,
-                  "id": 3,
+                  "id": 2,
                   "subs": Array [
                     [Circular],
                   ],
@@ -7794,6 +8010,9 @@ VueWrapper {
                     },
                     "_propKeys": Array [
                       "icon",
+                      "height",
+                      "width",
+                      "__iconLoader__",
                     ],
                     "_refElm": null,
                     "_renderChildren": undefined,
@@ -7863,7 +8082,10 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
+                    "__iconLoader__": [Function],
+                    "height": "1rem",
                     "icon": "dot",
+                    "width": "1rem",
                   },
                   "_renderProxy": VueComponent {
                     "$attrs": Object {},
@@ -7921,6 +8143,9 @@ VueWrapper {
                       },
                       "_propKeys": Array [
                         "icon",
+                        "height",
+                        "width",
+                        "__iconLoader__",
                       ],
                       "_refElm": null,
                       "_renderChildren": undefined,
@@ -7990,7 +8215,10 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
+                      "__iconLoader__": [Function],
+                      "height": "1rem",
                       "icon": "dot",
+                      "width": "1rem",
                     },
                     "_renderProxy": [Circular],
                     "_self": [Circular],
@@ -8255,8 +8483,7 @@ VueWrapper {
                 "_base": [Function],
                 "_parentElm": null,
                 "_propKeys": Array [
-                  "title",
-                  "time",
+                  "item",
                 ],
                 "_refElm": null,
                 "beforeCreate": Array [
@@ -8277,8 +8504,20 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
+                      "__iconLoader__": Object {
+                        "default": [Function],
+                        "type": [Function],
+                      },
+                      "height": Object {
+                        "default": "1rem",
+                        "type": [Function],
+                      },
                       "icon": Object {
-                        "default": "",
+                        "default": "plus",
+                        "type": [Function],
+                      },
+                      "width": Object {
+                        "default": "1rem",
                         "type": [Function],
                       },
                     },
@@ -8309,12 +8548,8 @@ VueWrapper {
                 "methods": undefined,
                 "name": "ActivityItem",
                 "props": Object {
-                  "time": Object {
-                    "default": "",
-                    "type": [Function],
-                  },
-                  "title": Object {
-                    "default": "",
+                  "item": Object {
+                    "default": [Function],
                     "type": [Function],
                   },
                 },
@@ -8341,8 +8576,7 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "time": "",
-                "title": "",
+                "item": Object {},
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -8404,6 +8638,9 @@ VueWrapper {
                       },
                       "_propKeys": Array [
                         "icon",
+                        "height",
+                        "width",
+                        "__iconLoader__",
                       ],
                       "_refElm": null,
                       "_renderChildren": undefined,
@@ -8473,7 +8710,10 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
+                      "__iconLoader__": [Function],
+                      "height": "1rem",
                       "icon": "dot",
+                      "width": "1rem",
                     },
                     "_renderProxy": VueComponent {
                       "$attrs": Object {},
@@ -8531,6 +8771,9 @@ VueWrapper {
                         },
                         "_propKeys": Array [
                           "icon",
+                          "height",
+                          "width",
+                          "__iconLoader__",
                         ],
                         "_refElm": null,
                         "_renderChildren": undefined,
@@ -8600,7 +8843,10 @@ VueWrapper {
                       "_isMounted": true,
                       "_isVue": true,
                       "_props": Object {
+                        "__iconLoader__": [Function],
+                        "height": "1rem",
                         "icon": "dot",
+                        "width": "1rem",
                       },
                       "_renderProxy": [Circular],
                       "_self": [Circular],
@@ -8865,8 +9111,7 @@ VueWrapper {
                   "_base": [Function],
                   "_parentElm": null,
                   "_propKeys": Array [
-                    "title",
-                    "time",
+                    "item",
                   ],
                   "_refElm": null,
                   "beforeCreate": Array [
@@ -8887,8 +9132,20 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
+                        "__iconLoader__": Object {
+                          "default": [Function],
+                          "type": [Function],
+                        },
+                        "height": Object {
+                          "default": "1rem",
+                          "type": [Function],
+                        },
                         "icon": Object {
-                          "default": "",
+                          "default": "plus",
+                          "type": [Function],
+                        },
+                        "width": Object {
+                          "default": "1rem",
                           "type": [Function],
                         },
                       },
@@ -8919,12 +9176,8 @@ VueWrapper {
                   "methods": undefined,
                   "name": "ActivityItem",
                   "props": Object {
-                    "time": Object {
-                      "default": "",
-                      "type": [Function],
-                    },
-                    "title": Object {
-                      "default": "",
+                    "item": Object {
+                      "default": [Function],
                       "type": [Function],
                     },
                   },
@@ -8951,8 +9204,7 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "time": "",
-                  "title": "",
+                  "item": Object {},
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -8965,20 +9217,20 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    2,
                     3,
+                    2,
                   },
                   "deps": Array [
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 3,
                       "subs": Array [
                         [Circular],
                       ],
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 3,
+                      "id": 2,
                       "subs": Array [
                         [Circular],
                       ],
@@ -9004,20 +9256,20 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      2,
                       3,
+                      2,
                     },
                     "deps": Array [
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 3,
                         "subs": Array [
                           [Circular],
                         ],
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 3,
+                        "id": 2,
                         "subs": Array [
                           [Circular],
                         ],
@@ -9048,20 +9300,20 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
-                  2,
                   3,
+                  2,
                 },
                 "deps": Array [
                   Dep {
                     "_sortedId": 0,
-                    "id": 2,
+                    "id": 3,
                     "subs": Array [
                       [Circular],
                     ],
                   },
                   Dep {
                     "_sortedId": 0,
-                    "id": 3,
+                    "id": 2,
                     "subs": Array [
                       [Circular],
                     ],
@@ -9087,20 +9339,20 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    2,
                     3,
+                    2,
                   },
                   "deps": Array [
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 3,
                       "subs": Array [
                         [Circular],
                       ],
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 3,
+                      "id": 2,
                       "subs": Array [
                         [Circular],
                       ],
@@ -9262,6 +9514,9 @@ VueWrapper {
                     },
                     "_propKeys": Array [
                       "icon",
+                      "height",
+                      "width",
+                      "__iconLoader__",
                     ],
                     "_refElm": null,
                     "_renderChildren": undefined,
@@ -9331,7 +9586,10 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
+                    "__iconLoader__": [Function],
+                    "height": "1rem",
                     "icon": "dot",
+                    "width": "1rem",
                   },
                   "_renderProxy": VueComponent {
                     "$attrs": Object {},
@@ -9389,6 +9647,9 @@ VueWrapper {
                       },
                       "_propKeys": Array [
                         "icon",
+                        "height",
+                        "width",
+                        "__iconLoader__",
                       ],
                       "_refElm": null,
                       "_renderChildren": undefined,
@@ -9458,7 +9719,10 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
+                      "__iconLoader__": [Function],
+                      "height": "1rem",
                       "icon": "dot",
+                      "width": "1rem",
                     },
                     "_renderProxy": [Circular],
                     "_self": [Circular],
@@ -9723,8 +9987,7 @@ VueWrapper {
                 "_base": [Function],
                 "_parentElm": null,
                 "_propKeys": Array [
-                  "title",
-                  "time",
+                  "item",
                 ],
                 "_refElm": null,
                 "beforeCreate": Array [
@@ -9745,8 +10008,20 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
+                      "__iconLoader__": Object {
+                        "default": [Function],
+                        "type": [Function],
+                      },
+                      "height": Object {
+                        "default": "1rem",
+                        "type": [Function],
+                      },
                       "icon": Object {
-                        "default": "",
+                        "default": "plus",
+                        "type": [Function],
+                      },
+                      "width": Object {
+                        "default": "1rem",
                         "type": [Function],
                       },
                     },
@@ -9777,12 +10052,8 @@ VueWrapper {
                 "methods": undefined,
                 "name": "ActivityItem",
                 "props": Object {
-                  "time": Object {
-                    "default": "",
-                    "type": [Function],
-                  },
-                  "title": Object {
-                    "default": "",
+                  "item": Object {
+                    "default": [Function],
                     "type": [Function],
                   },
                 },
@@ -9809,8 +10080,7 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "time": "",
-                "title": "",
+                "item": Object {},
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -9872,6 +10142,9 @@ VueWrapper {
                       },
                       "_propKeys": Array [
                         "icon",
+                        "height",
+                        "width",
+                        "__iconLoader__",
                       ],
                       "_refElm": null,
                       "_renderChildren": undefined,
@@ -9941,7 +10214,10 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
+                      "__iconLoader__": [Function],
+                      "height": "1rem",
                       "icon": "dot",
+                      "width": "1rem",
                     },
                     "_renderProxy": VueComponent {
                       "$attrs": Object {},
@@ -9999,6 +10275,9 @@ VueWrapper {
                         },
                         "_propKeys": Array [
                           "icon",
+                          "height",
+                          "width",
+                          "__iconLoader__",
                         ],
                         "_refElm": null,
                         "_renderChildren": undefined,
@@ -10068,7 +10347,10 @@ VueWrapper {
                       "_isMounted": true,
                       "_isVue": true,
                       "_props": Object {
+                        "__iconLoader__": [Function],
+                        "height": "1rem",
                         "icon": "dot",
+                        "width": "1rem",
                       },
                       "_renderProxy": [Circular],
                       "_self": [Circular],
@@ -10333,8 +10615,7 @@ VueWrapper {
                   "_base": [Function],
                   "_parentElm": null,
                   "_propKeys": Array [
-                    "title",
-                    "time",
+                    "item",
                   ],
                   "_refElm": null,
                   "beforeCreate": Array [
@@ -10355,8 +10636,20 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
+                        "__iconLoader__": Object {
+                          "default": [Function],
+                          "type": [Function],
+                        },
+                        "height": Object {
+                          "default": "1rem",
+                          "type": [Function],
+                        },
                         "icon": Object {
-                          "default": "",
+                          "default": "plus",
+                          "type": [Function],
+                        },
+                        "width": Object {
+                          "default": "1rem",
                           "type": [Function],
                         },
                       },
@@ -10387,12 +10680,8 @@ VueWrapper {
                   "methods": undefined,
                   "name": "ActivityItem",
                   "props": Object {
-                    "time": Object {
-                      "default": "",
-                      "type": [Function],
-                    },
-                    "title": Object {
-                      "default": "",
+                    "item": Object {
+                      "default": [Function],
                       "type": [Function],
                     },
                   },
@@ -10419,8 +10708,7 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "time": "",
-                  "title": "",
+                  "item": Object {},
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -10433,20 +10721,20 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    2,
                     3,
+                    2,
                   },
                   "deps": Array [
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 3,
                       "subs": Array [
                         [Circular],
                       ],
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 3,
+                      "id": 2,
                       "subs": Array [
                         [Circular],
                       ],
@@ -10472,20 +10760,20 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      2,
                       3,
+                      2,
                     },
                     "deps": Array [
                       Dep {
                         "_sortedId": 0,
-                        "id": 2,
+                        "id": 3,
                         "subs": Array [
                           [Circular],
                         ],
                       },
                       Dep {
                         "_sortedId": 0,
-                        "id": 3,
+                        "id": 2,
                         "subs": Array [
                           [Circular],
                         ],
@@ -10516,20 +10804,20 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
-                  2,
                   3,
+                  2,
                 },
                 "deps": Array [
                   Dep {
                     "_sortedId": 0,
-                    "id": 2,
+                    "id": 3,
                     "subs": Array [
                       [Circular],
                     ],
                   },
                   Dep {
                     "_sortedId": 0,
-                    "id": 3,
+                    "id": 2,
                     "subs": Array [
                       [Circular],
                     ],
@@ -10555,20 +10843,20 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    2,
                     3,
+                    2,
                   },
                   "deps": Array [
                     Dep {
                       "_sortedId": 0,
-                      "id": 2,
+                      "id": 3,
                       "subs": Array [
                         [Circular],
                       ],
                     },
                     Dep {
                       "_sortedId": 0,
-                      "id": 3,
+                      "id": 2,
                       "subs": Array [
                         [Circular],
                       ],
@@ -10676,6 +10964,9 @@ VueWrapper {
                 },
                 "_propKeys": Array [
                   "icon",
+                  "height",
+                  "width",
+                  "__iconLoader__",
                 ],
                 "_refElm": null,
                 "_renderChildren": undefined,
@@ -10745,7 +11036,10 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
+                "__iconLoader__": [Function],
+                "height": "1rem",
                 "icon": "dot",
+                "width": "1rem",
               },
               "_renderProxy": VueComponent {
                 "$attrs": Object {},
@@ -10803,6 +11097,9 @@ VueWrapper {
                   },
                   "_propKeys": Array [
                     "icon",
+                    "height",
+                    "width",
+                    "__iconLoader__",
                   ],
                   "_refElm": null,
                   "_renderChildren": undefined,
@@ -10872,7 +11169,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
+                  "__iconLoader__": [Function],
+                  "height": "1rem",
                   "icon": "dot",
+                  "width": "1rem",
                 },
                 "_renderProxy": [Circular],
                 "_self": [Circular],
@@ -11137,8 +11437,7 @@ VueWrapper {
             "_base": [Function],
             "_parentElm": null,
             "_propKeys": Array [
-              "title",
-              "time",
+              "item",
             ],
             "_refElm": null,
             "beforeCreate": Array [
@@ -11159,8 +11458,20 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
+                  "__iconLoader__": Object {
+                    "default": [Function],
+                    "type": [Function],
+                  },
+                  "height": Object {
+                    "default": "1rem",
+                    "type": [Function],
+                  },
                   "icon": Object {
-                    "default": "",
+                    "default": "plus",
+                    "type": [Function],
+                  },
+                  "width": Object {
+                    "default": "1rem",
                     "type": [Function],
                   },
                 },
@@ -11191,12 +11502,8 @@ VueWrapper {
             "methods": undefined,
             "name": "ActivityItem",
             "props": Object {
-              "time": Object {
-                "default": "",
-                "type": [Function],
-              },
-              "title": Object {
-                "default": "",
+              "item": Object {
+                "default": [Function],
                 "type": [Function],
               },
             },
@@ -11223,8 +11530,7 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "time": "",
-            "title": "",
+            "item": Object {},
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
@@ -11286,6 +11592,9 @@ VueWrapper {
                   },
                   "_propKeys": Array [
                     "icon",
+                    "height",
+                    "width",
+                    "__iconLoader__",
                   ],
                   "_refElm": null,
                   "_renderChildren": undefined,
@@ -11355,7 +11664,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
+                  "__iconLoader__": [Function],
+                  "height": "1rem",
                   "icon": "dot",
+                  "width": "1rem",
                 },
                 "_renderProxy": VueComponent {
                   "$attrs": Object {},
@@ -11413,6 +11725,9 @@ VueWrapper {
                     },
                     "_propKeys": Array [
                       "icon",
+                      "height",
+                      "width",
+                      "__iconLoader__",
                     ],
                     "_refElm": null,
                     "_renderChildren": undefined,
@@ -11482,7 +11797,10 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
+                    "__iconLoader__": [Function],
+                    "height": "1rem",
                     "icon": "dot",
+                    "width": "1rem",
                   },
                   "_renderProxy": [Circular],
                   "_self": [Circular],
@@ -11747,8 +12065,7 @@ VueWrapper {
               "_base": [Function],
               "_parentElm": null,
               "_propKeys": Array [
-                "title",
-                "time",
+                "item",
               ],
               "_refElm": null,
               "beforeCreate": Array [
@@ -11769,8 +12086,20 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
+                    "__iconLoader__": Object {
+                      "default": [Function],
+                      "type": [Function],
+                    },
+                    "height": Object {
+                      "default": "1rem",
+                      "type": [Function],
+                    },
                     "icon": Object {
-                      "default": "",
+                      "default": "plus",
+                      "type": [Function],
+                    },
+                    "width": Object {
+                      "default": "1rem",
                       "type": [Function],
                     },
                   },
@@ -11801,12 +12130,8 @@ VueWrapper {
               "methods": undefined,
               "name": "ActivityItem",
               "props": Object {
-                "time": Object {
-                  "default": "",
-                  "type": [Function],
-                },
-                "title": Object {
-                  "default": "",
+                "item": Object {
+                  "default": [Function],
                   "type": [Function],
                 },
               },
@@ -11833,8 +12158,7 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "time": "",
-              "title": "",
+              "item": Object {},
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -11847,20 +12171,20 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
-                2,
                 3,
+                2,
               },
               "deps": Array [
                 Dep {
                   "_sortedId": 0,
-                  "id": 2,
+                  "id": 3,
                   "subs": Array [
                     [Circular],
                   ],
                 },
                 Dep {
                   "_sortedId": 0,
-                  "id": 3,
+                  "id": 2,
                   "subs": Array [
                     [Circular],
                   ],
@@ -11886,20 +12210,20 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
-                  2,
                   3,
+                  2,
                 },
                 "deps": Array [
                   Dep {
                     "_sortedId": 0,
-                    "id": 2,
+                    "id": 3,
                     "subs": Array [
                       [Circular],
                     ],
                   },
                   Dep {
                     "_sortedId": 0,
-                    "id": 3,
+                    "id": 2,
                     "subs": Array [
                       [Circular],
                     ],
@@ -11930,20 +12254,20 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
-              2,
               3,
+              2,
             },
             "deps": Array [
               Dep {
                 "_sortedId": 0,
-                "id": 2,
+                "id": 3,
                 "subs": Array [
                   [Circular],
                 ],
               },
               Dep {
                 "_sortedId": 0,
-                "id": 3,
+                "id": 2,
                 "subs": Array [
                   [Circular],
                 ],
@@ -11969,20 +12293,20 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
-                2,
                 3,
+                2,
               },
               "deps": Array [
                 Dep {
                   "_sortedId": 0,
-                  "id": 2,
+                  "id": 3,
                   "subs": Array [
                     [Circular],
                   ],
                 },
                 Dep {
                   "_sortedId": 0,
-                  "id": 3,
+                  "id": 2,
                   "subs": Array [
                     [Circular],
                   ],
@@ -12100,6 +12424,9 @@ VueWrapper {
             },
             "_propKeys": Array [
               "icon",
+              "height",
+              "width",
+              "__iconLoader__",
             ],
             "_refElm": null,
             "_renderChildren": undefined,
@@ -12169,7 +12496,10 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
+            "__iconLoader__": [Function],
+            "height": "1rem",
             "icon": "dot",
+            "width": "1rem",
           },
           "_renderProxy": VueComponent {
             "$attrs": Object {},
@@ -12227,6 +12557,9 @@ VueWrapper {
               },
               "_propKeys": Array [
                 "icon",
+                "height",
+                "width",
+                "__iconLoader__",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -12296,7 +12629,10 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
+              "__iconLoader__": [Function],
+              "height": "1rem",
               "icon": "dot",
+              "width": "1rem",
             },
             "_renderProxy": [Circular],
             "_self": [Circular],
@@ -12561,8 +12897,7 @@ VueWrapper {
         "_base": [Function],
         "_parentElm": null,
         "_propKeys": Array [
-          "title",
-          "time",
+          "item",
         ],
         "_refElm": null,
         "beforeCreate": Array [
@@ -12583,8 +12918,20 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
+              "__iconLoader__": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "height": Object {
+                "default": "1rem",
+                "type": [Function],
+              },
               "icon": Object {
-                "default": "",
+                "default": "plus",
+                "type": [Function],
+              },
+              "width": Object {
+                "default": "1rem",
                 "type": [Function],
               },
             },
@@ -12615,12 +12962,8 @@ VueWrapper {
         "methods": undefined,
         "name": "ActivityItem",
         "props": Object {
-          "time": Object {
-            "default": "",
-            "type": [Function],
-          },
-          "title": Object {
-            "default": "",
+          "item": Object {
+            "default": [Function],
             "type": [Function],
           },
         },
@@ -12647,8 +12990,7 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "time": "",
-        "title": "",
+        "item": Object {},
       },
       "_provided": undefined,
       "_renderProxy": VueComponent {
@@ -12710,6 +13052,9 @@ VueWrapper {
               },
               "_propKeys": Array [
                 "icon",
+                "height",
+                "width",
+                "__iconLoader__",
               ],
               "_refElm": null,
               "_renderChildren": undefined,
@@ -12779,7 +13124,10 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
+              "__iconLoader__": [Function],
+              "height": "1rem",
               "icon": "dot",
+              "width": "1rem",
             },
             "_renderProxy": VueComponent {
               "$attrs": Object {},
@@ -12837,6 +13185,9 @@ VueWrapper {
                 },
                 "_propKeys": Array [
                   "icon",
+                  "height",
+                  "width",
+                  "__iconLoader__",
                 ],
                 "_refElm": null,
                 "_renderChildren": undefined,
@@ -12906,7 +13257,10 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
+                "__iconLoader__": [Function],
+                "height": "1rem",
                 "icon": "dot",
+                "width": "1rem",
               },
               "_renderProxy": [Circular],
               "_self": [Circular],
@@ -13171,8 +13525,7 @@ VueWrapper {
           "_base": [Function],
           "_parentElm": null,
           "_propKeys": Array [
-            "title",
-            "time",
+            "item",
           ],
           "_refElm": null,
           "beforeCreate": Array [
@@ -13193,8 +13546,20 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
+                "__iconLoader__": Object {
+                  "default": [Function],
+                  "type": [Function],
+                },
+                "height": Object {
+                  "default": "1rem",
+                  "type": [Function],
+                },
                 "icon": Object {
-                  "default": "",
+                  "default": "plus",
+                  "type": [Function],
+                },
+                "width": Object {
+                  "default": "1rem",
                   "type": [Function],
                 },
               },
@@ -13225,12 +13590,8 @@ VueWrapper {
           "methods": undefined,
           "name": "ActivityItem",
           "props": Object {
-            "time": Object {
-              "default": "",
-              "type": [Function],
-            },
-            "title": Object {
-              "default": "",
+            "item": Object {
+              "default": [Function],
               "type": [Function],
             },
           },
@@ -13257,8 +13618,7 @@ VueWrapper {
         "_isMounted": true,
         "_isVue": true,
         "_props": Object {
-          "time": "",
-          "title": "",
+          "item": Object {},
         },
         "_provided": undefined,
         "_renderProxy": [Circular],
@@ -13271,20 +13631,20 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
-            2,
             3,
+            2,
           },
           "deps": Array [
             Dep {
               "_sortedId": 0,
-              "id": 2,
+              "id": 3,
               "subs": Array [
                 [Circular],
               ],
             },
             Dep {
               "_sortedId": 0,
-              "id": 3,
+              "id": 2,
               "subs": Array [
                 [Circular],
               ],
@@ -13310,20 +13670,20 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
-              2,
               3,
+              2,
             },
             "deps": Array [
               Dep {
                 "_sortedId": 0,
-                "id": 2,
+                "id": 3,
                 "subs": Array [
                   [Circular],
                 ],
               },
               Dep {
                 "_sortedId": 0,
-                "id": 3,
+                "id": 2,
                 "subs": Array [
                   [Circular],
                 ],
@@ -13354,20 +13714,20 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
-          2,
           3,
+          2,
         },
         "deps": Array [
           Dep {
             "_sortedId": 0,
-            "id": 2,
+            "id": 3,
             "subs": Array [
               [Circular],
             ],
           },
           Dep {
             "_sortedId": 0,
-            "id": 3,
+            "id": 2,
             "subs": Array [
               [Circular],
             ],
@@ -13393,20 +13753,20 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
-            2,
             3,
+            2,
           },
           "deps": Array [
             Dep {
               "_sortedId": 0,
-              "id": 2,
+              "id": 3,
               "subs": Array [
                 [Circular],
               ],
             },
             Dep {
               "_sortedId": 0,
-              "id": 3,
+              "id": 2,
               "subs": Array [
                 [Circular],
               ],
