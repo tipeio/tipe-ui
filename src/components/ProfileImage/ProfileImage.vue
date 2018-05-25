@@ -21,7 +21,7 @@ export default {
     TipeImage
   },
   props: {
-    url: vueTypes.string.def('http://placekitten.com/200/300')
+    url: vueTypes.string
   },
   computed: {
     style() {
