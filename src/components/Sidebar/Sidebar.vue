@@ -34,15 +34,9 @@
 
 <script>
 import vueTypes from 'vue-types'
+import NavLink from '@/types/NavLink'
 import TipeSidebarLink from './SidebarLink.vue'
 import TipeSidebarButton from './SidebarButton.vue'
-
-const linkTypes = vueTypes.shape({
-  icon: vueTypes.string,
-  label: vueTypes.string,
-  url: vueTypes.string,
-  active: vueTypes.bool.def(false)
-})
 
 export default {
   name: 'TipeSidebar',
@@ -51,12 +45,12 @@ export default {
     TipeSidebarButton
   },
   props: {
-    links: vueTypes.arrayOf(linkTypes)
+    links: vueTypes.arrayOf(NavLink)
   },
   data() {
     return {
       bodyHovered: false,
-      compressed: false
+      compressed: true
     }
   },
   computed: {
@@ -77,7 +71,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 [data-tipe-ui='TipeSidebar'] {
   display: grid;
   height: 100%;
