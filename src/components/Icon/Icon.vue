@@ -1,8 +1,7 @@
 <template>
   <svg
     :data-tipe-ui="$options.name"
-    :height="height"
-    :width="width"
+    :style="styleObject"
     :viewBox="src.viewBox"
   >
     <use :xlink:href="src.id" />
@@ -27,6 +26,12 @@ export default {
       return {
         viewBox,
         id: `#${id}`
+      }
+    },
+    styleObject() {
+      return {
+        height: this.height,
+        width: this.width
       }
     }
   }
