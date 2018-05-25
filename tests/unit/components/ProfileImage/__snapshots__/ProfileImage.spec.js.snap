@@ -41,7 +41,7 @@ VueWrapper {
               "listeners": undefined,
               "propsData": Object {
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "tag": "TipeImage",
             },
@@ -85,7 +85,7 @@ VueWrapper {
           "parent": [Circular],
           "propsData": Object {
             "alt": "user profile image",
-            "url": "http://placekitten.com/200/300",
+            "url": "",
           },
         },
         "$parent": [Circular],
@@ -104,7 +104,7 @@ VueWrapper {
             "listeners": undefined,
             "propsData": Object {
               "alt": "user profile image",
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
             "tag": "TipeImage",
           },
@@ -153,7 +153,7 @@ VueWrapper {
         "_props": Object {
           "__imageLoader__": [Function],
           "alt": "user profile image",
-          "url": "http://placekitten.com/200/300",
+          "url": "",
         },
         "_renderProxy": VueComponent {
           "$attrs": Object {},
@@ -177,7 +177,7 @@ VueWrapper {
                 "listeners": undefined,
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "tag": "TipeImage",
               },
@@ -221,7 +221,7 @@ VueWrapper {
             "parent": [Circular],
             "propsData": Object {
               "alt": "user profile image",
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
           },
           "$parent": [Circular],
@@ -240,7 +240,7 @@ VueWrapper {
               "listeners": undefined,
               "propsData": Object {
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "tag": "TipeImage",
             },
@@ -289,7 +289,7 @@ VueWrapper {
           "_props": Object {
             "__imageLoader__": [Function],
             "alt": "user profile image",
-            "url": "http://placekitten.com/200/300",
+            "url": "",
           },
           "_renderProxy": [Circular],
           "_self": [Circular],
@@ -326,7 +326,7 @@ VueWrapper {
                 "listeners": undefined,
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "tag": "TipeImage",
               },
@@ -441,7 +441,7 @@ VueWrapper {
               "listeners": undefined,
               "propsData": Object {
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "tag": "TipeImage",
             },
@@ -603,7 +603,7 @@ VueWrapper {
       "name": "TipeProfileImage",
       "props": Object {
         "url": Object {
-          "default": "http://placekitten.com/200/300",
+          "default": "",
           "type": [Function],
         },
       },
@@ -654,7 +654,7 @@ VueWrapper {
     "_isMounted": true,
     "_isVue": true,
     "_props": Object {
-      "url": "http://placekitten.com/200/300",
+      "url": "",
     },
     "_provided": undefined,
     "_renderProxy": VueComponent {
@@ -682,7 +682,7 @@ VueWrapper {
                 "listeners": undefined,
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "tag": "TipeImage",
               },
@@ -726,7 +726,7 @@ VueWrapper {
             "parent": [Circular],
             "propsData": Object {
               "alt": "user profile image",
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
           },
           "$parent": [Circular],
@@ -745,7 +745,7 @@ VueWrapper {
               "listeners": undefined,
               "propsData": Object {
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "tag": "TipeImage",
             },
@@ -794,7 +794,7 @@ VueWrapper {
           "_props": Object {
             "__imageLoader__": [Function],
             "alt": "user profile image",
-            "url": "http://placekitten.com/200/300",
+            "url": "",
           },
           "_renderProxy": VueComponent {
             "$attrs": Object {},
@@ -818,7 +818,7 @@ VueWrapper {
                   "listeners": undefined,
                   "propsData": Object {
                     "alt": "user profile image",
-                    "url": "http://placekitten.com/200/300",
+                    "url": "",
                   },
                   "tag": "TipeImage",
                 },
@@ -862,7 +862,7 @@ VueWrapper {
               "parent": [Circular],
               "propsData": Object {
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
             },
             "$parent": [Circular],
@@ -881,7 +881,7 @@ VueWrapper {
                 "listeners": undefined,
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "tag": "TipeImage",
               },
@@ -930,7 +930,7 @@ VueWrapper {
             "_props": Object {
               "__imageLoader__": [Function],
               "alt": "user profile image",
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
             "_renderProxy": [Circular],
             "_self": [Circular],
@@ -967,7 +967,7 @@ VueWrapper {
                   "listeners": undefined,
                   "propsData": Object {
                     "alt": "user profile image",
-                    "url": "http://placekitten.com/200/300",
+                    "url": "",
                   },
                   "tag": "TipeImage",
                 },
@@ -1082,7 +1082,7 @@ VueWrapper {
                 "listeners": undefined,
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "tag": "TipeImage",
               },
@@ -1244,7 +1244,7 @@ VueWrapper {
         "name": "TipeProfileImage",
         "props": Object {
           "url": Object {
-            "default": "http://placekitten.com/200/300",
+            "default": "",
             "type": [Function],
           },
         },
@@ -1295,7 +1295,7 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "url": "http://placekitten.com/200/300",
+        "url": "",
       },
       "_provided": undefined,
       "_renderProxy": [Circular],
@@ -1332,7 +1332,7 @@ VueWrapper {
                 "parent": [Circular],
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
               },
               "$parent": [Circular],
@@ -1356,7 +1356,7 @@ VueWrapper {
               "_props": Object {
                 "__imageLoader__": [Function],
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "_renderProxy": VueComponent {
                 "$attrs": Object {},
@@ -1380,7 +1380,7 @@ VueWrapper {
                   "parent": [Circular],
                   "propsData": Object {
                     "alt": "user profile image",
-                    "url": "http://placekitten.com/200/300",
+                    "url": "",
                   },
                 },
                 "$parent": [Circular],
@@ -1404,7 +1404,7 @@ VueWrapper {
                 "_props": Object {
                   "__imageLoader__": [Function],
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "_renderProxy": [Circular],
                 "_self": [Circular],
@@ -1555,7 +1555,7 @@ VueWrapper {
               "listeners": undefined,
               "propsData": Object {
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "tag": "TipeImage",
             },
@@ -1740,7 +1740,7 @@ VueWrapper {
               "parent": [Circular],
               "propsData": Object {
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
             },
             "$parent": [Circular],
@@ -1764,7 +1764,7 @@ VueWrapper {
             "_props": Object {
               "__imageLoader__": [Function],
               "alt": "user profile image",
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
             "_renderProxy": VueComponent {
               "$attrs": Object {},
@@ -1788,7 +1788,7 @@ VueWrapper {
                 "parent": [Circular],
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
               },
               "$parent": [Circular],
@@ -1812,7 +1812,7 @@ VueWrapper {
               "_props": Object {
                 "__imageLoader__": [Function],
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "_renderProxy": [Circular],
               "_self": [Circular],
@@ -1963,7 +1963,7 @@ VueWrapper {
             "listeners": undefined,
             "propsData": Object {
               "alt": "user profile image",
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
             "tag": "TipeImage",
           },
@@ -2227,7 +2227,7 @@ VueWrapper {
                 "name": "TipeProfileImage",
                 "props": Object {
                   "url": Object {
-                    "default": "http://placekitten.com/200/300",
+                    "default": "",
                     "type": [Function],
                   },
                 },
@@ -2278,7 +2278,7 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -2366,7 +2366,7 @@ VueWrapper {
                   "name": "TipeProfileImage",
                   "props": Object {
                     "url": Object {
-                      "default": "http://placekitten.com/200/300",
+                      "default": "",
                       "type": [Function],
                     },
                   },
@@ -2417,7 +2417,7 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -2601,7 +2601,7 @@ VueWrapper {
             },
             "propsData": Object {
               "alt": "user profile image",
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
           },
           "$parent": VueComponent {
@@ -2689,7 +2689,7 @@ VueWrapper {
               "name": "TipeProfileImage",
               "props": Object {
                 "url": Object {
-                  "default": "http://placekitten.com/200/300",
+                  "default": "",
                   "type": [Function],
                 },
               },
@@ -2740,7 +2740,7 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
             "_provided": undefined,
             "_renderProxy": VueComponent {
@@ -2828,7 +2828,7 @@ VueWrapper {
                 "name": "TipeProfileImage",
                 "props": Object {
                   "url": Object {
-                    "default": "http://placekitten.com/200/300",
+                    "default": "",
                     "type": [Function],
                   },
                 },
@@ -2879,7 +2879,7 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "_provided": undefined,
               "_renderProxy": [Circular],
@@ -3147,7 +3147,7 @@ VueWrapper {
               "name": "TipeProfileImage",
               "props": Object {
                 "url": Object {
-                  "default": "http://placekitten.com/200/300",
+                  "default": "",
                   "type": [Function],
                 },
               },
@@ -3198,7 +3198,7 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
             "_provided": undefined,
             "_renderProxy": VueComponent {
@@ -3286,7 +3286,7 @@ VueWrapper {
                 "name": "TipeProfileImage",
                 "props": Object {
                   "url": Object {
-                    "default": "http://placekitten.com/200/300",
+                    "default": "",
                     "type": [Function],
                   },
                 },
@@ -3337,7 +3337,7 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "_provided": undefined,
               "_renderProxy": [Circular],
@@ -3537,7 +3537,7 @@ VueWrapper {
           "_props": Object {
             "__imageLoader__": [Function],
             "alt": "user profile image",
-            "url": "http://placekitten.com/200/300",
+            "url": "",
           },
           "_renderProxy": VueComponent {
             "$attrs": Object {},
@@ -3643,7 +3643,7 @@ VueWrapper {
                   "name": "TipeProfileImage",
                   "props": Object {
                     "url": Object {
-                      "default": "http://placekitten.com/200/300",
+                      "default": "",
                       "type": [Function],
                     },
                   },
@@ -3694,7 +3694,7 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "_provided": undefined,
                 "_renderProxy": VueComponent {
@@ -3782,7 +3782,7 @@ VueWrapper {
                     "name": "TipeProfileImage",
                     "props": Object {
                       "url": Object {
-                        "default": "http://placekitten.com/200/300",
+                        "default": "",
                         "type": [Function],
                       },
                     },
@@ -3833,7 +3833,7 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "url": "http://placekitten.com/200/300",
+                    "url": "",
                   },
                   "_provided": undefined,
                   "_renderProxy": [Circular],
@@ -4017,7 +4017,7 @@ VueWrapper {
               },
               "propsData": Object {
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
             },
             "$parent": VueComponent {
@@ -4105,7 +4105,7 @@ VueWrapper {
                 "name": "TipeProfileImage",
                 "props": Object {
                   "url": Object {
-                    "default": "http://placekitten.com/200/300",
+                    "default": "",
                     "type": [Function],
                   },
                 },
@@ -4156,7 +4156,7 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -4244,7 +4244,7 @@ VueWrapper {
                   "name": "TipeProfileImage",
                   "props": Object {
                     "url": Object {
-                      "default": "http://placekitten.com/200/300",
+                      "default": "",
                       "type": [Function],
                     },
                   },
@@ -4295,7 +4295,7 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -4563,7 +4563,7 @@ VueWrapper {
                 "name": "TipeProfileImage",
                 "props": Object {
                   "url": Object {
-                    "default": "http://placekitten.com/200/300",
+                    "default": "",
                     "type": [Function],
                   },
                 },
@@ -4614,7 +4614,7 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -4702,7 +4702,7 @@ VueWrapper {
                   "name": "TipeProfileImage",
                   "props": Object {
                     "url": Object {
-                      "default": "http://placekitten.com/200/300",
+                      "default": "",
                       "type": [Function],
                     },
                   },
@@ -4753,7 +4753,7 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -4953,7 +4953,7 @@ VueWrapper {
             "_props": Object {
               "__imageLoader__": [Function],
               "alt": "user profile image",
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
             "_renderProxy": [Circular],
             "_self": [Circular],
@@ -5104,7 +5104,7 @@ VueWrapper {
           "listeners": undefined,
           "propsData": Object {
             "alt": "user profile image",
-            "url": "http://placekitten.com/200/300",
+            "url": "",
           },
           "tag": "TipeImage",
         },
@@ -5133,7 +5133,7 @@ VueWrapper {
                 "parent": [Circular],
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
               },
               "$parent": [Circular],
@@ -5157,7 +5157,7 @@ VueWrapper {
               "_props": Object {
                 "__imageLoader__": [Function],
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "_renderProxy": VueComponent {
                 "$attrs": Object {},
@@ -5181,7 +5181,7 @@ VueWrapper {
                   "parent": [Circular],
                   "propsData": Object {
                     "alt": "user profile image",
-                    "url": "http://placekitten.com/200/300",
+                    "url": "",
                   },
                 },
                 "$parent": [Circular],
@@ -5205,7 +5205,7 @@ VueWrapper {
                 "_props": Object {
                   "__imageLoader__": [Function],
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "_renderProxy": [Circular],
                 "_self": [Circular],
@@ -5431,7 +5431,7 @@ VueWrapper {
             "name": "TipeProfileImage",
             "props": Object {
               "url": Object {
-                "default": "http://placekitten.com/200/300",
+                "default": "",
                 "type": [Function],
               },
             },
@@ -5482,7 +5482,7 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "url": "http://placekitten.com/200/300",
+            "url": "",
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
@@ -5510,7 +5510,7 @@ VueWrapper {
                   "parent": [Circular],
                   "propsData": Object {
                     "alt": "user profile image",
-                    "url": "http://placekitten.com/200/300",
+                    "url": "",
                   },
                 },
                 "$parent": [Circular],
@@ -5534,7 +5534,7 @@ VueWrapper {
                 "_props": Object {
                   "__imageLoader__": [Function],
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "_renderProxy": VueComponent {
                   "$attrs": Object {},
@@ -5558,7 +5558,7 @@ VueWrapper {
                     "parent": [Circular],
                     "propsData": Object {
                       "alt": "user profile image",
-                      "url": "http://placekitten.com/200/300",
+                      "url": "",
                     },
                   },
                   "$parent": [Circular],
@@ -5582,7 +5582,7 @@ VueWrapper {
                   "_props": Object {
                     "__imageLoader__": [Function],
                     "alt": "user profile image",
-                    "url": "http://placekitten.com/200/300",
+                    "url": "",
                   },
                   "_renderProxy": [Circular],
                   "_self": [Circular],
@@ -5808,7 +5808,7 @@ VueWrapper {
               "name": "TipeProfileImage",
               "props": Object {
                 "url": Object {
-                  "default": "http://placekitten.com/200/300",
+                  "default": "",
                   "type": [Function],
                 },
               },
@@ -5859,7 +5859,7 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -6098,7 +6098,7 @@ VueWrapper {
                 "listeners": undefined,
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "tag": "TipeImage",
               },
@@ -6142,7 +6142,7 @@ VueWrapper {
             "parent": [Circular],
             "propsData": Object {
               "alt": "user profile image",
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
           },
           "$parent": [Circular],
@@ -6161,7 +6161,7 @@ VueWrapper {
               "listeners": undefined,
               "propsData": Object {
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "tag": "TipeImage",
             },
@@ -6210,7 +6210,7 @@ VueWrapper {
           "_props": Object {
             "__imageLoader__": [Function],
             "alt": "user profile image",
-            "url": "http://placekitten.com/200/300",
+            "url": "",
           },
           "_renderProxy": VueComponent {
             "$attrs": Object {},
@@ -6234,7 +6234,7 @@ VueWrapper {
                   "listeners": undefined,
                   "propsData": Object {
                     "alt": "user profile image",
-                    "url": "http://placekitten.com/200/300",
+                    "url": "",
                   },
                   "tag": "TipeImage",
                 },
@@ -6278,7 +6278,7 @@ VueWrapper {
               "parent": [Circular],
               "propsData": Object {
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
             },
             "$parent": [Circular],
@@ -6297,7 +6297,7 @@ VueWrapper {
                 "listeners": undefined,
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "tag": "TipeImage",
               },
@@ -6346,7 +6346,7 @@ VueWrapper {
             "_props": Object {
               "__imageLoader__": [Function],
               "alt": "user profile image",
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
             "_renderProxy": [Circular],
             "_self": [Circular],
@@ -6383,7 +6383,7 @@ VueWrapper {
                   "listeners": undefined,
                   "propsData": Object {
                     "alt": "user profile image",
-                    "url": "http://placekitten.com/200/300",
+                    "url": "",
                   },
                   "tag": "TipeImage",
                 },
@@ -6498,7 +6498,7 @@ VueWrapper {
                 "listeners": undefined,
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "tag": "TipeImage",
               },
@@ -6660,7 +6660,7 @@ VueWrapper {
         "name": "TipeProfileImage",
         "props": Object {
           "url": Object {
-            "default": "http://placekitten.com/200/300",
+            "default": "",
             "type": [Function],
           },
         },
@@ -6711,7 +6711,7 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "url": "http://placekitten.com/200/300",
+        "url": "",
       },
       "_provided": undefined,
       "_renderProxy": VueComponent {
@@ -6739,7 +6739,7 @@ VueWrapper {
                   "listeners": undefined,
                   "propsData": Object {
                     "alt": "user profile image",
-                    "url": "http://placekitten.com/200/300",
+                    "url": "",
                   },
                   "tag": "TipeImage",
                 },
@@ -6783,7 +6783,7 @@ VueWrapper {
               "parent": [Circular],
               "propsData": Object {
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
             },
             "$parent": [Circular],
@@ -6802,7 +6802,7 @@ VueWrapper {
                 "listeners": undefined,
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
                 "tag": "TipeImage",
               },
@@ -6851,7 +6851,7 @@ VueWrapper {
             "_props": Object {
               "__imageLoader__": [Function],
               "alt": "user profile image",
-              "url": "http://placekitten.com/200/300",
+              "url": "",
             },
             "_renderProxy": VueComponent {
               "$attrs": Object {},
@@ -6875,7 +6875,7 @@ VueWrapper {
                     "listeners": undefined,
                     "propsData": Object {
                       "alt": "user profile image",
-                      "url": "http://placekitten.com/200/300",
+                      "url": "",
                     },
                     "tag": "TipeImage",
                   },
@@ -6919,7 +6919,7 @@ VueWrapper {
                 "parent": [Circular],
                 "propsData": Object {
                   "alt": "user profile image",
-                  "url": "http://placekitten.com/200/300",
+                  "url": "",
                 },
               },
               "$parent": [Circular],
@@ -6938,7 +6938,7 @@ VueWrapper {
                   "listeners": undefined,
                   "propsData": Object {
                     "alt": "user profile image",
-                    "url": "http://placekitten.com/200/300",
+                    "url": "",
                   },
                   "tag": "TipeImage",
                 },
@@ -6987,7 +6987,7 @@ VueWrapper {
               "_props": Object {
                 "__imageLoader__": [Function],
                 "alt": "user profile image",
-                "url": "http://placekitten.com/200/300",
+                "url": "",
               },
               "_renderProxy": [Circular],
               "_self": [Circular],
@@ -7024,7 +7024,7 @@ VueWrapper {
                     "listeners": undefined,
                     "propsData": Object {
                       "alt": "user profile image",
-                      "url": "http://placekitten.com/200/300",
+                      "url": "",
                     },
                     "tag": "TipeImage",
                   },
@@ -7139,7 +7139,7 @@ VueWrapper {
                   "listeners": undefined,
                   "propsData": Object {
                     "alt": "user profile image",
-                    "url": "http://placekitten.com/200/300",
+                    "url": "",
                   },
                   "tag": "TipeImage",
                 },
@@ -7301,7 +7301,7 @@ VueWrapper {
           "name": "TipeProfileImage",
           "props": Object {
             "url": Object {
-              "default": "http://placekitten.com/200/300",
+              "default": "",
               "type": [Function],
             },
           },
@@ -7352,7 +7352,7 @@ VueWrapper {
         "_isMounted": true,
         "_isVue": true,
         "_props": Object {
-          "url": "http://placekitten.com/200/300",
+          "url": "",
         },
         "_provided": undefined,
         "_renderProxy": [Circular],

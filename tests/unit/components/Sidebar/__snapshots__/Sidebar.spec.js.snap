@@ -5,7 +5,7 @@ VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
   "element": <div
-    class=""
+    class="compressed"
     data-tipe-ui="TipeSidebar"
   >
     <div
@@ -1031,7 +1031,7 @@ VueWrapper {
     ],
     "$createElement": [Function],
     "$el": <div
-      class=""
+      class="compressed"
       data-tipe-ui="TipeSidebar"
     >
       <div
@@ -1266,14 +1266,14 @@ VueWrapper {
         "sync": true,
         "user": false,
         "value": Object {
-          "compressed": false,
+          "compressed": true,
         },
         "vm": [Circular],
       },
     },
     "_data": Object {
       "bodyHovered": false,
-      "compressed": false,
+      "compressed": true,
     },
     "_directInactive": false,
     "_events": Object {},
@@ -2283,7 +2283,7 @@ VueWrapper {
       ],
       "$createElement": [Function],
       "$el": <div
-        class=""
+        class="compressed"
         data-tipe-ui="TipeSidebar"
       >
         <div
@@ -2518,14 +2518,14 @@ VueWrapper {
           "sync": true,
           "user": false,
           "value": Object {
-            "compressed": false,
+            "compressed": true,
           },
           "vm": [Circular],
         },
       },
       "_data": Object {
         "bodyHovered": false,
-        "compressed": false,
+        "compressed": true,
       },
       "_directInactive": false,
       "_events": Object {},
@@ -3297,11 +3297,11 @@ VueWrapper {
             "data-tipe-ui": "TipeSidebar",
           },
           "class": Object {
-            "compressed": false,
+            "compressed": true,
           },
         },
         "elm": <div
-          class=""
+          class="compressed"
           data-tipe-ui="TipeSidebar"
         >
           <div
@@ -3377,7 +3377,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "vm": [Circular],
               },
@@ -3469,7 +3469,7 @@ VueWrapper {
           "sync": true,
           "user": false,
           "value": Object {
-            "compressed": false,
+            "compressed": true,
           },
           "vm": [Circular],
         },
@@ -3534,7 +3534,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "vm": [Circular],
                 },
@@ -3565,7 +3565,7 @@ VueWrapper {
         },
       ],
       "bodyHovered": false,
-      "compressed": false,
+      "compressed": true,
       "toggleCompressed": [Function],
     },
     "_self": [Circular],
@@ -4325,11 +4325,11 @@ VueWrapper {
           "data-tipe-ui": "TipeSidebar",
         },
         "class": Object {
-          "compressed": false,
+          "compressed": true,
         },
       },
       "elm": <div
-        class=""
+        class="compressed"
         data-tipe-ui="TipeSidebar"
       >
         <div
@@ -4405,7 +4405,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "compressed": false,
+                "compressed": true,
               },
               "vm": [Circular],
             },
@@ -4497,7 +4497,7 @@ VueWrapper {
         "sync": true,
         "user": false,
         "value": Object {
-          "compressed": false,
+          "compressed": true,
         },
         "vm": [Circular],
       },
@@ -4562,7 +4562,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "vm": [Circular],
               },
@@ -4593,7 +4593,7 @@ VueWrapper {
       },
     ],
     "bodyHovered": false,
-    "compressed": false,
+    "compressed": true,
     "toggleCompressed": [Function],
   },
   "vnode": VNode {
@@ -5117,7 +5117,7 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <div
-                    class=""
+                    class="compressed"
                     data-tipe-ui="TipeSidebar"
                   >
                     <div
@@ -5352,14 +5352,14 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
                   },
                   "_data": Object {
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "_directInactive": false,
                   "_events": Object {},
@@ -5861,7 +5861,7 @@ VueWrapper {
                     ],
                     "$createElement": [Function],
                     "$el": <div
-                      class=""
+                      class="compressed"
                       data-tipe-ui="TipeSidebar"
                     >
                       <div
@@ -6096,14 +6096,14 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
                     },
                     "_data": Object {
                       "bodyHovered": false,
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "_directInactive": false,
                     "_events": Object {},
@@ -6159,7 +6159,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -6251,7 +6251,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -6316,7 +6316,7 @@ VueWrapper {
                                 "sync": true,
                                 "user": false,
                                 "value": Object {
-                                  "compressed": false,
+                                  "compressed": true,
                                 },
                                 "vm": [Circular],
                               },
@@ -6347,7 +6347,7 @@ VueWrapper {
                       },
                     ],
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                     "toggleCompressed": [Function],
                   },
                   "_self": [Circular],
@@ -6391,7 +6391,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -6483,7 +6483,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -6548,7 +6548,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -6579,7 +6579,7 @@ VueWrapper {
                     },
                   ],
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                   "toggleCompressed": [Function],
                 },
                 "propsData": Object {
@@ -7074,7 +7074,7 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <div
-                  class=""
+                  class="compressed"
                   data-tipe-ui="TipeSidebar"
                 >
                   <div
@@ -7309,14 +7309,14 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
                 },
                 "_data": Object {
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "_directInactive": false,
                 "_events": Object {},
@@ -7818,7 +7818,7 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <div
-                    class=""
+                    class="compressed"
                     data-tipe-ui="TipeSidebar"
                   >
                     <div
@@ -8053,14 +8053,14 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
                   },
                   "_data": Object {
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "_directInactive": false,
                   "_events": Object {},
@@ -8116,7 +8116,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -8208,7 +8208,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -8273,7 +8273,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -8304,7 +8304,7 @@ VueWrapper {
                     },
                   ],
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                   "toggleCompressed": [Function],
                 },
                 "_self": [Circular],
@@ -8348,7 +8348,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
@@ -8440,7 +8440,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
@@ -8505,7 +8505,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -8536,7 +8536,7 @@ VueWrapper {
                   },
                 ],
                 "bodyHovered": false,
-                "compressed": false,
+                "compressed": true,
                 "toggleCompressed": [Function],
               },
               "$refs": Object {},
@@ -9028,7 +9028,7 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <div
-                  class=""
+                  class="compressed"
                   data-tipe-ui="TipeSidebar"
                 >
                   <div
@@ -9263,14 +9263,14 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
                 },
                 "_data": Object {
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "_directInactive": false,
                 "_events": Object {},
@@ -9772,7 +9772,7 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <div
-                    class=""
+                    class="compressed"
                     data-tipe-ui="TipeSidebar"
                   >
                     <div
@@ -10007,14 +10007,14 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
                   },
                   "_data": Object {
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "_directInactive": false,
                   "_events": Object {},
@@ -10070,7 +10070,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -10162,7 +10162,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -10227,7 +10227,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -10258,7 +10258,7 @@ VueWrapper {
                     },
                   ],
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                   "toggleCompressed": [Function],
                 },
                 "_self": [Circular],
@@ -10302,7 +10302,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
@@ -10394,7 +10394,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
@@ -10459,7 +10459,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -10490,7 +10490,7 @@ VueWrapper {
                   },
                 ],
                 "bodyHovered": false,
-                "compressed": false,
+                "compressed": true,
                 "toggleCompressed": [Function],
               },
               "$scopedSlots": Object {},
@@ -11024,7 +11024,7 @@ VueWrapper {
                     ],
                     "$createElement": [Function],
                     "$el": <div
-                      class=""
+                      class="compressed"
                       data-tipe-ui="TipeSidebar"
                     >
                       <div
@@ -11259,14 +11259,14 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
                     },
                     "_data": Object {
                       "bodyHovered": false,
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "_directInactive": false,
                     "_events": Object {},
@@ -11768,7 +11768,7 @@ VueWrapper {
                       ],
                       "$createElement": [Function],
                       "$el": <div
-                        class=""
+                        class="compressed"
                         data-tipe-ui="TipeSidebar"
                       >
                         <div
@@ -12003,14 +12003,14 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
                       },
                       "_data": Object {
                         "bodyHovered": false,
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "_directInactive": false,
                       "_events": Object {},
@@ -12066,7 +12066,7 @@ VueWrapper {
                                 "sync": true,
                                 "user": false,
                                 "value": Object {
-                                  "compressed": false,
+                                  "compressed": true,
                                 },
                                 "vm": [Circular],
                               },
@@ -12158,7 +12158,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
@@ -12223,7 +12223,7 @@ VueWrapper {
                                   "sync": true,
                                   "user": false,
                                   "value": Object {
-                                    "compressed": false,
+                                    "compressed": true,
                                   },
                                   "vm": [Circular],
                                 },
@@ -12254,7 +12254,7 @@ VueWrapper {
                         },
                       ],
                       "bodyHovered": false,
-                      "compressed": false,
+                      "compressed": true,
                       "toggleCompressed": [Function],
                     },
                     "_self": [Circular],
@@ -12298,7 +12298,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -12390,7 +12390,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -12455,7 +12455,7 @@ VueWrapper {
                                 "sync": true,
                                 "user": false,
                                 "value": Object {
-                                  "compressed": false,
+                                  "compressed": true,
                                 },
                                 "vm": [Circular],
                               },
@@ -12486,7 +12486,7 @@ VueWrapper {
                       },
                     ],
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                     "toggleCompressed": [Function],
                   },
                   "propsData": Object {
@@ -12981,7 +12981,7 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <div
-                    class=""
+                    class="compressed"
                     data-tipe-ui="TipeSidebar"
                   >
                     <div
@@ -13216,14 +13216,14 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
                   },
                   "_data": Object {
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "_directInactive": false,
                   "_events": Object {},
@@ -13725,7 +13725,7 @@ VueWrapper {
                     ],
                     "$createElement": [Function],
                     "$el": <div
-                      class=""
+                      class="compressed"
                       data-tipe-ui="TipeSidebar"
                     >
                       <div
@@ -13960,14 +13960,14 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
                     },
                     "_data": Object {
                       "bodyHovered": false,
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "_directInactive": false,
                     "_events": Object {},
@@ -14023,7 +14023,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -14115,7 +14115,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -14180,7 +14180,7 @@ VueWrapper {
                                 "sync": true,
                                 "user": false,
                                 "value": Object {
-                                  "compressed": false,
+                                  "compressed": true,
                                 },
                                 "vm": [Circular],
                               },
@@ -14211,7 +14211,7 @@ VueWrapper {
                       },
                     ],
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                     "toggleCompressed": [Function],
                   },
                   "_self": [Circular],
@@ -14255,7 +14255,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -14347,7 +14347,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -14412,7 +14412,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -14443,7 +14443,7 @@ VueWrapper {
                     },
                   ],
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                   "toggleCompressed": [Function],
                 },
                 "$refs": Object {},
@@ -14935,7 +14935,7 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <div
-                    class=""
+                    class="compressed"
                     data-tipe-ui="TipeSidebar"
                   >
                     <div
@@ -15170,14 +15170,14 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
                   },
                   "_data": Object {
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "_directInactive": false,
                   "_events": Object {},
@@ -15679,7 +15679,7 @@ VueWrapper {
                     ],
                     "$createElement": [Function],
                     "$el": <div
-                      class=""
+                      class="compressed"
                       data-tipe-ui="TipeSidebar"
                     >
                       <div
@@ -15914,14 +15914,14 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
                     },
                     "_data": Object {
                       "bodyHovered": false,
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "_directInactive": false,
                     "_events": Object {},
@@ -15977,7 +15977,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -16069,7 +16069,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -16134,7 +16134,7 @@ VueWrapper {
                                 "sync": true,
                                 "user": false,
                                 "value": Object {
-                                  "compressed": false,
+                                  "compressed": true,
                                 },
                                 "vm": [Circular],
                               },
@@ -16165,7 +16165,7 @@ VueWrapper {
                       },
                     ],
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                     "toggleCompressed": [Function],
                   },
                   "_self": [Circular],
@@ -16209,7 +16209,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -16301,7 +16301,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -16366,7 +16366,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -16397,7 +16397,7 @@ VueWrapper {
                     },
                   ],
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                   "toggleCompressed": [Function],
                 },
                 "$scopedSlots": Object {},
@@ -17308,7 +17308,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <div
-                class=""
+                class="compressed"
                 data-tipe-ui="TipeSidebar"
               >
                 <div
@@ -17543,14 +17543,14 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "vm": [Circular],
                 },
               },
               "_data": Object {
                 "bodyHovered": false,
-                "compressed": false,
+                "compressed": true,
               },
               "_directInactive": false,
               "_events": Object {},
@@ -18296,7 +18296,7 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <div
-                  class=""
+                  class="compressed"
                   data-tipe-ui="TipeSidebar"
                 >
                   <div
@@ -18531,14 +18531,14 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
                 },
                 "_data": Object {
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "_directInactive": false,
                 "_events": Object {},
@@ -18594,7 +18594,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
@@ -18686,7 +18686,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
@@ -18751,7 +18751,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -18782,7 +18782,7 @@ VueWrapper {
                   },
                 ],
                 "bodyHovered": false,
-                "compressed": false,
+                "compressed": true,
                 "toggleCompressed": [Function],
               },
               "_self": [Circular],
@@ -18826,7 +18826,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -18918,7 +18918,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "vm": [Circular],
                 },
@@ -18983,7 +18983,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
@@ -19014,7 +19014,7 @@ VueWrapper {
                 },
               ],
               "bodyHovered": false,
-              "compressed": false,
+              "compressed": true,
               "toggleCompressed": [Function],
             },
             "data": Object {
@@ -20044,7 +20044,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <div
-            class=""
+            class="compressed"
             data-tipe-ui="TipeSidebar"
           >
             <div
@@ -20279,14 +20279,14 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "compressed": false,
+                "compressed": true,
               },
               "vm": [Circular],
             },
           },
           "_data": Object {
             "bodyHovered": false,
-            "compressed": false,
+            "compressed": true,
           },
           "_directInactive": false,
           "_events": Object {},
@@ -21296,7 +21296,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <div
-              class=""
+              class="compressed"
               data-tipe-ui="TipeSidebar"
             >
               <div
@@ -21531,14 +21531,14 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "vm": [Circular],
               },
             },
             "_data": Object {
               "bodyHovered": false,
-              "compressed": false,
+              "compressed": true,
             },
             "_directInactive": false,
             "_events": Object {},
@@ -21594,7 +21594,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -21686,7 +21686,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "vm": [Circular],
               },
@@ -21751,7 +21751,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -21782,7 +21782,7 @@ VueWrapper {
               },
             ],
             "bodyHovered": false,
-            "compressed": false,
+            "compressed": true,
             "toggleCompressed": [Function],
           },
           "_self": [Circular],
@@ -21826,7 +21826,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
@@ -21918,7 +21918,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "compressed": false,
+                "compressed": true,
               },
               "vm": [Circular],
             },
@@ -21983,7 +21983,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -22014,7 +22014,7 @@ VueWrapper {
             },
           ],
           "bodyHovered": false,
-          "compressed": false,
+          "compressed": true,
           "toggleCompressed": [Function],
         },
         "data": Object {
@@ -23072,7 +23072,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <div
-                class=""
+                class="compressed"
                 data-tipe-ui="TipeSidebar"
               >
                 <div
@@ -23307,14 +23307,14 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "vm": [Circular],
                 },
               },
               "_data": Object {
                 "bodyHovered": false,
-                "compressed": false,
+                "compressed": true,
               },
               "_directInactive": false,
               "_events": Object {},
@@ -24324,7 +24324,7 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <div
-                  class=""
+                  class="compressed"
                   data-tipe-ui="TipeSidebar"
                 >
                   <div
@@ -24559,14 +24559,14 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
                 },
                 "_data": Object {
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "_directInactive": false,
                 "_events": Object {},
@@ -24622,7 +24622,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
@@ -24714,7 +24714,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
@@ -24779,7 +24779,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -24810,7 +24810,7 @@ VueWrapper {
                   },
                 ],
                 "bodyHovered": false,
-                "compressed": false,
+                "compressed": true,
                 "toggleCompressed": [Function],
               },
               "_self": [Circular],
@@ -24854,7 +24854,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -24946,7 +24946,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "vm": [Circular],
                 },
@@ -25011,7 +25011,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
@@ -25042,7 +25042,7 @@ VueWrapper {
                 },
               ],
               "bodyHovered": false,
-              "compressed": false,
+              "compressed": true,
               "toggleCompressed": [Function],
             },
             "data": Object {
@@ -26066,7 +26066,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <div
-            class=""
+            class="compressed"
             data-tipe-ui="TipeSidebar"
           >
             <div
@@ -26301,14 +26301,14 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "compressed": false,
+                "compressed": true,
               },
               "vm": [Circular],
             },
           },
           "_data": Object {
             "bodyHovered": false,
-            "compressed": false,
+            "compressed": true,
           },
           "_directInactive": false,
           "_events": Object {},
@@ -27318,7 +27318,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <div
-              class=""
+              class="compressed"
               data-tipe-ui="TipeSidebar"
             >
               <div
@@ -27553,14 +27553,14 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "vm": [Circular],
               },
             },
             "_data": Object {
               "bodyHovered": false,
-              "compressed": false,
+              "compressed": true,
             },
             "_directInactive": false,
             "_events": Object {},
@@ -27616,7 +27616,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -27708,7 +27708,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "vm": [Circular],
               },
@@ -27773,7 +27773,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -27804,7 +27804,7 @@ VueWrapper {
               },
             ],
             "bodyHovered": false,
-            "compressed": false,
+            "compressed": true,
             "toggleCompressed": [Function],
           },
           "_self": [Circular],
@@ -27848,7 +27848,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
@@ -27940,7 +27940,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "compressed": false,
+                "compressed": true,
               },
               "vm": [Circular],
             },
@@ -28005,7 +28005,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -28036,7 +28036,7 @@ VueWrapper {
             },
           ],
           "bodyHovered": false,
-          "compressed": false,
+          "compressed": true,
           "toggleCompressed": [Function],
         },
         "data": Object {
@@ -28635,7 +28635,7 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <div
-                    class=""
+                    class="compressed"
                     data-tipe-ui="TipeSidebar"
                   >
                     <div
@@ -28870,14 +28870,14 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
                   },
                   "_data": Object {
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "_directInactive": false,
                   "_events": Object {},
@@ -29407,7 +29407,7 @@ VueWrapper {
                     ],
                     "$createElement": [Function],
                     "$el": <div
-                      class=""
+                      class="compressed"
                       data-tipe-ui="TipeSidebar"
                     >
                       <div
@@ -29642,14 +29642,14 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
                     },
                     "_data": Object {
                       "bodyHovered": false,
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "_directInactive": false,
                     "_events": Object {},
@@ -29705,7 +29705,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -29797,7 +29797,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -29862,7 +29862,7 @@ VueWrapper {
                                 "sync": true,
                                 "user": false,
                                 "value": Object {
-                                  "compressed": false,
+                                  "compressed": true,
                                 },
                                 "vm": [Circular],
                               },
@@ -29893,7 +29893,7 @@ VueWrapper {
                       },
                     ],
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                     "toggleCompressed": [Function],
                   },
                   "_self": [Circular],
@@ -29937,7 +29937,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -30029,7 +30029,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -30094,7 +30094,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -30125,7 +30125,7 @@ VueWrapper {
                     },
                   ],
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                   "toggleCompressed": [Function],
                 },
                 "propsData": Object {
@@ -30648,7 +30648,7 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <div
-                  class=""
+                  class="compressed"
                   data-tipe-ui="TipeSidebar"
                 >
                   <div
@@ -30883,14 +30883,14 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
                 },
                 "_data": Object {
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "_directInactive": false,
                 "_events": Object {},
@@ -31420,7 +31420,7 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <div
-                    class=""
+                    class="compressed"
                     data-tipe-ui="TipeSidebar"
                   >
                     <div
@@ -31655,14 +31655,14 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
                   },
                   "_data": Object {
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "_directInactive": false,
                   "_events": Object {},
@@ -31718,7 +31718,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -31810,7 +31810,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -31875,7 +31875,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -31906,7 +31906,7 @@ VueWrapper {
                     },
                   ],
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                   "toggleCompressed": [Function],
                 },
                 "_self": [Circular],
@@ -31950,7 +31950,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
@@ -32042,7 +32042,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
@@ -32107,7 +32107,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -32138,7 +32138,7 @@ VueWrapper {
                   },
                 ],
                 "bodyHovered": false,
-                "compressed": false,
+                "compressed": true,
                 "toggleCompressed": [Function],
               },
               "$refs": Object {},
@@ -32658,7 +32658,7 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <div
-                  class=""
+                  class="compressed"
                   data-tipe-ui="TipeSidebar"
                 >
                   <div
@@ -32893,14 +32893,14 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
                 },
                 "_data": Object {
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "_directInactive": false,
                 "_events": Object {},
@@ -33430,7 +33430,7 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <div
-                    class=""
+                    class="compressed"
                     data-tipe-ui="TipeSidebar"
                   >
                     <div
@@ -33665,14 +33665,14 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
                   },
                   "_data": Object {
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "_directInactive": false,
                   "_events": Object {},
@@ -33728,7 +33728,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -33820,7 +33820,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -33885,7 +33885,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -33916,7 +33916,7 @@ VueWrapper {
                     },
                   ],
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                   "toggleCompressed": [Function],
                 },
                 "_self": [Circular],
@@ -33960,7 +33960,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
@@ -34052,7 +34052,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
@@ -34117,7 +34117,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -34148,7 +34148,7 @@ VueWrapper {
                   },
                 ],
                 "bodyHovered": false,
-                "compressed": false,
+                "compressed": true,
                 "toggleCompressed": [Function],
               },
               "$scopedSlots": Object {},
@@ -34702,7 +34702,7 @@ VueWrapper {
                     ],
                     "$createElement": [Function],
                     "$el": <div
-                      class=""
+                      class="compressed"
                       data-tipe-ui="TipeSidebar"
                     >
                       <div
@@ -34937,14 +34937,14 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
                     },
                     "_data": Object {
                       "bodyHovered": false,
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "_directInactive": false,
                     "_events": Object {},
@@ -35474,7 +35474,7 @@ VueWrapper {
                       ],
                       "$createElement": [Function],
                       "$el": <div
-                        class=""
+                        class="compressed"
                         data-tipe-ui="TipeSidebar"
                       >
                         <div
@@ -35709,14 +35709,14 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
                       },
                       "_data": Object {
                         "bodyHovered": false,
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "_directInactive": false,
                       "_events": Object {},
@@ -35772,7 +35772,7 @@ VueWrapper {
                                 "sync": true,
                                 "user": false,
                                 "value": Object {
-                                  "compressed": false,
+                                  "compressed": true,
                                 },
                                 "vm": [Circular],
                               },
@@ -35864,7 +35864,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
@@ -35929,7 +35929,7 @@ VueWrapper {
                                   "sync": true,
                                   "user": false,
                                   "value": Object {
-                                    "compressed": false,
+                                    "compressed": true,
                                   },
                                   "vm": [Circular],
                                 },
@@ -35960,7 +35960,7 @@ VueWrapper {
                         },
                       ],
                       "bodyHovered": false,
-                      "compressed": false,
+                      "compressed": true,
                       "toggleCompressed": [Function],
                     },
                     "_self": [Circular],
@@ -36004,7 +36004,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -36096,7 +36096,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -36161,7 +36161,7 @@ VueWrapper {
                                 "sync": true,
                                 "user": false,
                                 "value": Object {
-                                  "compressed": false,
+                                  "compressed": true,
                                 },
                                 "vm": [Circular],
                               },
@@ -36192,7 +36192,7 @@ VueWrapper {
                       },
                     ],
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                     "toggleCompressed": [Function],
                   },
                   "propsData": Object {
@@ -36715,7 +36715,7 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <div
-                    class=""
+                    class="compressed"
                     data-tipe-ui="TipeSidebar"
                   >
                     <div
@@ -36950,14 +36950,14 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
                   },
                   "_data": Object {
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "_directInactive": false,
                   "_events": Object {},
@@ -37487,7 +37487,7 @@ VueWrapper {
                     ],
                     "$createElement": [Function],
                     "$el": <div
-                      class=""
+                      class="compressed"
                       data-tipe-ui="TipeSidebar"
                     >
                       <div
@@ -37722,14 +37722,14 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
                     },
                     "_data": Object {
                       "bodyHovered": false,
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "_directInactive": false,
                     "_events": Object {},
@@ -37785,7 +37785,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -37877,7 +37877,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -37942,7 +37942,7 @@ VueWrapper {
                                 "sync": true,
                                 "user": false,
                                 "value": Object {
-                                  "compressed": false,
+                                  "compressed": true,
                                 },
                                 "vm": [Circular],
                               },
@@ -37973,7 +37973,7 @@ VueWrapper {
                       },
                     ],
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                     "toggleCompressed": [Function],
                   },
                   "_self": [Circular],
@@ -38017,7 +38017,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -38109,7 +38109,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -38174,7 +38174,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -38205,7 +38205,7 @@ VueWrapper {
                     },
                   ],
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                   "toggleCompressed": [Function],
                 },
                 "$refs": Object {},
@@ -38725,7 +38725,7 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <div
-                    class=""
+                    class="compressed"
                     data-tipe-ui="TipeSidebar"
                   >
                     <div
@@ -38960,14 +38960,14 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
                   },
                   "_data": Object {
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "_directInactive": false,
                   "_events": Object {},
@@ -39497,7 +39497,7 @@ VueWrapper {
                     ],
                     "$createElement": [Function],
                     "$el": <div
-                      class=""
+                      class="compressed"
                       data-tipe-ui="TipeSidebar"
                     >
                       <div
@@ -39732,14 +39732,14 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
                     },
                     "_data": Object {
                       "bodyHovered": false,
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "_directInactive": false,
                     "_events": Object {},
@@ -39795,7 +39795,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -39887,7 +39887,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -39952,7 +39952,7 @@ VueWrapper {
                                 "sync": true,
                                 "user": false,
                                 "value": Object {
-                                  "compressed": false,
+                                  "compressed": true,
                                 },
                                 "vm": [Circular],
                               },
@@ -39983,7 +39983,7 @@ VueWrapper {
                       },
                     ],
                     "bodyHovered": false,
-                    "compressed": false,
+                    "compressed": true,
                     "toggleCompressed": [Function],
                   },
                   "_self": [Circular],
@@ -40027,7 +40027,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -40119,7 +40119,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -40184,7 +40184,7 @@ VueWrapper {
                               "sync": true,
                               "user": false,
                               "value": Object {
-                                "compressed": false,
+                                "compressed": true,
                               },
                               "vm": [Circular],
                             },
@@ -40215,7 +40215,7 @@ VueWrapper {
                     },
                   ],
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                   "toggleCompressed": [Function],
                 },
                 "$scopedSlots": Object {},
@@ -41132,7 +41132,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <div
-                class=""
+                class="compressed"
                 data-tipe-ui="TipeSidebar"
               >
                 <div
@@ -41367,14 +41367,14 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "vm": [Circular],
                 },
               },
               "_data": Object {
                 "bodyHovered": false,
-                "compressed": false,
+                "compressed": true,
               },
               "_directInactive": false,
               "_events": Object {},
@@ -42132,7 +42132,7 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <div
-                  class=""
+                  class="compressed"
                   data-tipe-ui="TipeSidebar"
                 >
                   <div
@@ -42367,14 +42367,14 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
                 },
                 "_data": Object {
                   "bodyHovered": false,
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "_directInactive": false,
                 "_events": Object {},
@@ -42430,7 +42430,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
@@ -42522,7 +42522,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
@@ -42587,7 +42587,7 @@ VueWrapper {
                             "sync": true,
                             "user": false,
                             "value": Object {
-                              "compressed": false,
+                              "compressed": true,
                             },
                             "vm": [Circular],
                           },
@@ -42618,7 +42618,7 @@ VueWrapper {
                   },
                 ],
                 "bodyHovered": false,
-                "compressed": false,
+                "compressed": true,
                 "toggleCompressed": [Function],
               },
               "_self": [Circular],
@@ -42662,7 +42662,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -42754,7 +42754,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "vm": [Circular],
                 },
@@ -42819,7 +42819,7 @@ VueWrapper {
                           "sync": true,
                           "user": false,
                           "value": Object {
-                            "compressed": false,
+                            "compressed": true,
                           },
                           "vm": [Circular],
                         },
@@ -42850,7 +42850,7 @@ VueWrapper {
                 },
               ],
               "bodyHovered": false,
-              "compressed": false,
+              "compressed": true,
               "toggleCompressed": [Function],
             },
             "data": Object {
@@ -43880,7 +43880,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <div
-            class=""
+            class="compressed"
             data-tipe-ui="TipeSidebar"
           >
             <div
@@ -44115,14 +44115,14 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "compressed": false,
+                "compressed": true,
               },
               "vm": [Circular],
             },
           },
           "_data": Object {
             "bodyHovered": false,
-            "compressed": false,
+            "compressed": true,
           },
           "_directInactive": false,
           "_events": Object {},
@@ -45132,7 +45132,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <div
-              class=""
+              class="compressed"
               data-tipe-ui="TipeSidebar"
             >
               <div
@@ -45367,14 +45367,14 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "vm": [Circular],
               },
             },
             "_data": Object {
               "bodyHovered": false,
-              "compressed": false,
+              "compressed": true,
             },
             "_directInactive": false,
             "_events": Object {},
@@ -45430,7 +45430,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -45522,7 +45522,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "vm": [Circular],
               },
@@ -45587,7 +45587,7 @@ VueWrapper {
                         "sync": true,
                         "user": false,
                         "value": Object {
-                          "compressed": false,
+                          "compressed": true,
                         },
                         "vm": [Circular],
                       },
@@ -45618,7 +45618,7 @@ VueWrapper {
               },
             ],
             "bodyHovered": false,
-            "compressed": false,
+            "compressed": true,
             "toggleCompressed": [Function],
           },
           "_self": [Circular],
@@ -45662,7 +45662,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
@@ -45754,7 +45754,7 @@ VueWrapper {
               "sync": true,
               "user": false,
               "value": Object {
-                "compressed": false,
+                "compressed": true,
               },
               "vm": [Circular],
             },
@@ -45819,7 +45819,7 @@ VueWrapper {
                       "sync": true,
                       "user": false,
                       "value": Object {
-                        "compressed": false,
+                        "compressed": true,
                       },
                       "vm": [Circular],
                     },
@@ -45850,7 +45850,7 @@ VueWrapper {
             },
           ],
           "bodyHovered": false,
-          "compressed": false,
+          "compressed": true,
           "toggleCompressed": [Function],
         },
         "data": Object {
@@ -46876,7 +46876,7 @@ VueWrapper {
       ],
       "$createElement": [Function],
       "$el": <div
-        class=""
+        class="compressed"
         data-tipe-ui="TipeSidebar"
       >
         <div
@@ -47111,14 +47111,14 @@ VueWrapper {
           "sync": true,
           "user": false,
           "value": Object {
-            "compressed": false,
+            "compressed": true,
           },
           "vm": [Circular],
         },
       },
       "_data": Object {
         "bodyHovered": false,
-        "compressed": false,
+        "compressed": true,
       },
       "_directInactive": false,
       "_events": Object {},
@@ -48128,7 +48128,7 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <div
-          class=""
+          class="compressed"
           data-tipe-ui="TipeSidebar"
         >
           <div
@@ -48363,14 +48363,14 @@ VueWrapper {
             "sync": true,
             "user": false,
             "value": Object {
-              "compressed": false,
+              "compressed": true,
             },
             "vm": [Circular],
           },
         },
         "_data": Object {
           "bodyHovered": false,
-          "compressed": false,
+          "compressed": true,
         },
         "_directInactive": false,
         "_events": Object {},
@@ -48426,7 +48426,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "vm": [Circular],
                 },
@@ -48518,7 +48518,7 @@ VueWrapper {
             "sync": true,
             "user": false,
             "value": Object {
-              "compressed": false,
+              "compressed": true,
             },
             "vm": [Circular],
           },
@@ -48583,7 +48583,7 @@ VueWrapper {
                     "sync": true,
                     "user": false,
                     "value": Object {
-                      "compressed": false,
+                      "compressed": true,
                     },
                     "vm": [Circular],
                   },
@@ -48614,7 +48614,7 @@ VueWrapper {
           },
         ],
         "bodyHovered": false,
-        "compressed": false,
+        "compressed": true,
         "toggleCompressed": [Function],
       },
       "_self": [Circular],
@@ -48658,7 +48658,7 @@ VueWrapper {
                 "sync": true,
                 "user": false,
                 "value": Object {
-                  "compressed": false,
+                  "compressed": true,
                 },
                 "vm": [Circular],
               },
@@ -48750,7 +48750,7 @@ VueWrapper {
           "sync": true,
           "user": false,
           "value": Object {
-            "compressed": false,
+            "compressed": true,
           },
           "vm": [Circular],
         },
@@ -48815,7 +48815,7 @@ VueWrapper {
                   "sync": true,
                   "user": false,
                   "value": Object {
-                    "compressed": false,
+                    "compressed": true,
                   },
                   "vm": [Circular],
                 },
@@ -48846,7 +48846,7 @@ VueWrapper {
         },
       ],
       "bodyHovered": false,
-      "compressed": false,
+      "compressed": true,
       "toggleCompressed": [Function],
     },
     "data": Object {
@@ -48854,11 +48854,11 @@ VueWrapper {
         "data-tipe-ui": "TipeSidebar",
       },
       "class": Object {
-        "compressed": false,
+        "compressed": true,
       },
     },
     "elm": <div
-      class=""
+      class="compressed"
       data-tipe-ui="TipeSidebar"
     >
       <div

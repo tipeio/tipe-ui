@@ -19,13 +19,7 @@ describe('ProfileImage', () => {
   })
 
   describe(':props', () => {
-    it('url should default to http://placekitten.com/200/300', () => {
-      const wrapper = shallowMount(ProfileImage)
-
-      expect(wrapper.props().url).toEqual('http://placekitten.com/200/300')
-    })
-
-    it('should pass url prop to Image', () => {
+    it('url: should pass url prop to Image', () => {
       const propsData = { url: faker.internet.url() }
       const wrapper = shallowMount(ProfileImage, { propsData })
       const imageWrapper = wrapper.find(TypeImage)
@@ -35,7 +29,7 @@ describe('ProfileImage', () => {
   })
 
   describe('@events', () => {
-    it('click', () => {
+    it('@click', () => {
       const wrapper = shallowMount(ProfileImage)
 
       wrapper.trigger('click')
