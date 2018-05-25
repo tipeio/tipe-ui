@@ -1,27 +1,33 @@
 <template>
   <div :data-tipe-ui="$options.name">
     <tipe-search class="search"/>
+    <tipe-button
+      outline
+      size="small"
+      color="purple-dark"
+    >
+      Documentation
+    </tipe-button>
     <tipe-profile-image
       :url="profileImageUrl"
-      class="menu"
+      class="profile-image"
     />
-    <tipe-seperator class="seperator"/>
   </div>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
 
-import TipeSearch from '../Search'
-import TipeProfileImage from '../ProfileImage'
-import TipeSeperator from '../Seperator'
+import TipeSearch from '@/components/Search'
+import TipeProfileImage from '@/components/ProfileImage'
+import TipeButton from '@/components/Button'
 
 export default {
   name: 'TipeTopbar',
   components: {
     TipeSearch,
     TipeProfileImage,
-    TipeSeperator
+    TipeButton
   },
   props: {
     profileImageUrl: vueTypes.string
@@ -29,31 +35,18 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 [data-tipe-ui='TipeTopbar'] {
   display: grid;
   width: 100%;
   height: 100%;
-  grid-template-areas:
-    'search menu'
-    'seperator seperator';
-  grid-template-columns: 1fr auto;
-  grid-template-rows: 1fr 1px;
+  grid-template-columns: 1fr auto auto;
+  grid-column-gap: 1.375rem;
   align-items: center;
-  padding: 0.4rem 1.4rem 0 1.4rem;
   box-sizing: border-box;
 }
 
-.search {
-  grid-area: search;
-}
-
-.menu {
-  grid-area: menu;
-}
-
-.seperator {
-  margin-top: 1.4rem;
-  grid-area: seperator;
+.profile-image >>> .image {
+  box-shadow: 0 0.125rem 0.875rem 0 rgba(0, 0, 0, 0.3);
 }
 </style>
