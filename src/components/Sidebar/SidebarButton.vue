@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 [data-tipe-ui='TipeSidebarButton'] {
   display: flex;
   flex-direction: row;
