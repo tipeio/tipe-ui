@@ -42,7 +42,7 @@ export default {
   props: {
     size: vueTypes.oneOf(['small', 'medium', 'large']).def('medium'),
     outline: vueTypes.bool.def(false),
-    color: vueTypes.oneOf(['purple', 'gray']).def('purple'),
+    color: vueTypes.oneOf(['purple', 'purple-dark', 'gray']).def('purple'),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def('')
   },
@@ -66,7 +66,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 button {
   height: 2.5rem;
   border-radius: 3px;
@@ -116,6 +116,7 @@ button.small .icon {
   color: inherit;
   overflow: hidden;
   white-space: nowrap;
+  line-height: 0.6875rem;
 }
 
 button.medium .label,
@@ -171,6 +172,10 @@ button.purple {
   background-color: var(--purple);
 }
 
+button.purple-dark {
+  background-color: var(--purple-dark);
+}
+
 button.gray {
   background-color: var(--gray-blue-light);
 }
@@ -185,6 +190,11 @@ button.outline {
 button.outline.purple {
   border-color: var(--purple);
   color: var(--purple);
+}
+
+button.outline.purple-dark {
+  border-color: var(--purple-dark);
+  color: var(--purple-dark);
 }
 
 button.outline.gray {
