@@ -45,8 +45,4 @@ export default {
   align-items: center;
   box-sizing: border-box;
 }
-
-.profile-image >>> .image {
-  box-shadow: 0 0.125rem 0.875rem 0 rgba(0, 0, 0, 0.3);
-}
 </style>

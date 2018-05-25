@@ -41,12 +41,13 @@ export default {
   height: 3.125rem;
   width: 3.125rem;
   background-color: transparent;
+  border-radius: 100%;
+  box-shadow: 0 0.125rem 0.875rem 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
 .image {
-  border-radius: 100%;
   border: none;
-  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
   background: no-repeat center;
   background-size: cover;
 }
