@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SpaceProgress.vue renders 1`] = `
+exports[`Progress.vue renders 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -10,7 +10,7 @@ VueWrapper {
     <p
       class="title"
     >
-      Space
+      
     </p>
      
     <div
@@ -48,7 +48,7 @@ VueWrapper {
       <p
         class="title"
       >
-        Space
+        
       </p>
        
       <div
@@ -78,9 +78,10 @@ VueWrapper {
       "_base": [Function],
       "_parentElm": null,
       "_propKeys": Array [
-        "totalSpace",
-        "usedSpace",
+        "total",
+        "used",
         "unit",
+        "title",
       ],
       "_refElm": null,
       "beforeCreate": Array [
@@ -109,9 +110,13 @@ VueWrapper {
       "filters": Object {},
       "logModifiedComponents": true,
       "methods": undefined,
-      "name": "SpaceProgress",
+      "name": "TipeProgress",
       "props": Object {
-        "totalSpace": Object {
+        "title": Object {
+          "default": "",
+          "type": [Function],
+        },
+        "total": Object {
           "default": 0,
           "type": [Function],
         },
@@ -119,7 +124,7 @@ VueWrapper {
           "default": "",
           "type": [Function],
         },
-        "usedSpace": Object {
+        "used": Object {
           "default": 0,
           "type": [Function],
         },
@@ -157,11 +162,19 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                   3,
                   4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 2,
@@ -205,11 +218,19 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                   3,
                   4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   [Circular],
                   Dep {
                     "_sortedId": 0,
@@ -246,9 +267,9 @@ VueWrapper {
         ],
         "dirty": false,
         "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
         "getter": [Function],
         "id": 1,
@@ -273,9 +294,10 @@ VueWrapper {
     "_isMounted": true,
     "_isVue": true,
     "_props": Object {
-      "totalSpace": 0,
+      "title": "",
+      "total": 0,
       "unit": "",
-      "usedSpace": 0,
+      "used": 0,
     },
     "_provided": undefined,
     "_renderProxy": VueComponent {
@@ -288,7 +310,7 @@ VueWrapper {
         <p
           class="title"
         >
-          Space
+          
         </p>
          
         <div
@@ -318,9 +340,10 @@ VueWrapper {
         "_base": [Function],
         "_parentElm": null,
         "_propKeys": Array [
-          "totalSpace",
-          "usedSpace",
+          "total",
+          "used",
           "unit",
+          "title",
         ],
         "_refElm": null,
         "beforeCreate": Array [
@@ -349,9 +372,13 @@ VueWrapper {
         "filters": Object {},
         "logModifiedComponents": true,
         "methods": undefined,
-        "name": "SpaceProgress",
+        "name": "TipeProgress",
         "props": Object {
-          "totalSpace": Object {
+          "title": Object {
+            "default": "",
+            "type": [Function],
+          },
+          "total": Object {
             "default": 0,
             "type": [Function],
           },
@@ -359,7 +386,7 @@ VueWrapper {
             "default": "",
             "type": [Function],
           },
-          "usedSpace": Object {
+          "used": Object {
             "default": 0,
             "type": [Function],
           },
@@ -397,11 +424,19 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                     3,
                     4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 2,
@@ -445,11 +480,19 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                     3,
                     4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     [Circular],
                     Dep {
                       "_sortedId": 0,
@@ -486,9 +529,9 @@ VueWrapper {
           ],
           "dirty": false,
           "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
           "getter": [Function],
           "id": 1,
@@ -513,9 +556,10 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "totalSpace": 0,
+        "title": "",
+        "total": 0,
         "unit": "",
-        "usedSpace": 0,
+        "used": 0,
       },
       "_provided": undefined,
       "_renderProxy": [Circular],
@@ -538,7 +582,7 @@ VueWrapper {
                 "componentOptions": undefined,
                 "context": undefined,
                 "data": undefined,
-                "elm": Space,
+                "elm": ,
                 "fnContext": undefined,
                 "fnOptions": undefined,
                 "fnScopeId": undefined,
@@ -553,7 +597,7 @@ VueWrapper {
                 "parent": undefined,
                 "raw": false,
                 "tag": undefined,
-                "text": "Space",
+                "text": "",
               },
             ],
             "componentInstance": undefined,
@@ -565,7 +609,7 @@ VueWrapper {
             "elm": <p
               class="title"
             >
-              Space
+              
             </p>,
             "fnContext": undefined,
             "fnOptions": undefined,
@@ -827,7 +871,7 @@ VueWrapper {
           <p
             class="title"
           >
-            Space
+            
           </p>
            
           <div
@@ -869,11 +913,19 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
+          5,
           2,
           3,
           4,
         },
         "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              [Circular],
+            ],
+          },
           Dep {
             "_sortedId": 0,
             "id": 2,
@@ -899,9 +951,9 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                 "getter": [Function],
                 "id": 1,
@@ -943,9 +995,9 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                 "getter": [Function],
                 "id": 1,
@@ -1004,11 +1056,19 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                     3,
                     4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 2,
@@ -1052,11 +1112,19 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                     3,
                     4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     [Circular],
                     Dep {
                       "_sortedId": 0,
@@ -1093,9 +1161,9 @@ VueWrapper {
           ],
           "dirty": false,
           "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
           "getter": [Function],
           "id": 1,
@@ -1114,11 +1182,19 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
+            5,
             2,
             3,
             4,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 2,
@@ -1144,9 +1220,9 @@ VueWrapper {
                   ],
                   "dirty": false,
                   "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                   "getter": [Function],
                   "id": 1,
@@ -1188,9 +1264,9 @@ VueWrapper {
                   ],
                   "dirty": false,
                   "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                   "getter": [Function],
                   "id": 1,
@@ -1250,7 +1326,7 @@ VueWrapper {
               "componentOptions": undefined,
               "context": undefined,
               "data": undefined,
-              "elm": Space,
+              "elm": ,
               "fnContext": undefined,
               "fnOptions": undefined,
               "fnScopeId": undefined,
@@ -1265,7 +1341,7 @@ VueWrapper {
               "parent": undefined,
               "raw": false,
               "tag": undefined,
-              "text": "Space",
+              "text": "",
             },
           ],
           "componentInstance": undefined,
@@ -1277,7 +1353,7 @@ VueWrapper {
           "elm": <p
             class="title"
           >
-            Space
+            
           </p>,
           "fnContext": undefined,
           "fnOptions": undefined,
@@ -1539,7 +1615,7 @@ VueWrapper {
         <p
           class="title"
         >
-          Space
+          
         </p>
          
         <div
@@ -1581,11 +1657,19 @@ VueWrapper {
       "cb": [Function],
       "deep": false,
       "depIds": Set {
+        5,
         2,
         3,
         4,
       },
       "deps": Array [
+        Dep {
+          "_sortedId": 0,
+          "id": 5,
+          "subs": Array [
+            [Circular],
+          ],
+        },
         Dep {
           "_sortedId": 0,
           "id": 2,
@@ -1611,9 +1695,9 @@ VueWrapper {
               ],
               "dirty": false,
               "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
               "getter": [Function],
               "id": 1,
@@ -1655,9 +1739,9 @@ VueWrapper {
               ],
               "dirty": false,
               "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
               "getter": [Function],
               "id": 1,
@@ -1716,11 +1800,19 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                   3,
                   4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 2,
@@ -1764,11 +1856,19 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                   3,
                   4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   [Circular],
                   Dep {
                     "_sortedId": 0,
@@ -1805,9 +1905,9 @@ VueWrapper {
         ],
         "dirty": false,
         "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
         "getter": [Function],
         "id": 1,
@@ -1826,11 +1926,19 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
+          5,
           2,
           3,
           4,
         },
         "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              [Circular],
+            ],
+          },
           Dep {
             "_sortedId": 0,
             "id": 2,
@@ -1856,9 +1964,9 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                 "getter": [Function],
                 "id": 1,
@@ -1900,9 +2008,9 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                 "getter": [Function],
                 "id": 1,
@@ -1959,7 +2067,7 @@ VueWrapper {
             "componentOptions": undefined,
             "context": undefined,
             "data": undefined,
-            "elm": Space,
+            "elm": ,
             "fnContext": undefined,
             "fnOptions": undefined,
             "fnScopeId": undefined,
@@ -1974,7 +2082,7 @@ VueWrapper {
             "parent": undefined,
             "raw": false,
             "tag": undefined,
-            "text": "Space",
+            "text": "",
           },
         ],
         "componentInstance": undefined,
@@ -1989,7 +2097,7 @@ VueWrapper {
             <p
               class="title"
             >
-              Space
+              
             </p>
              
             <div
@@ -2019,9 +2127,10 @@ VueWrapper {
             "_base": [Function],
             "_parentElm": null,
             "_propKeys": Array [
-              "totalSpace",
-              "usedSpace",
+              "total",
+              "used",
               "unit",
+              "title",
             ],
             "_refElm": null,
             "beforeCreate": Array [
@@ -2050,9 +2159,13 @@ VueWrapper {
             "filters": Object {},
             "logModifiedComponents": true,
             "methods": undefined,
-            "name": "SpaceProgress",
+            "name": "TipeProgress",
             "props": Object {
-              "totalSpace": Object {
+              "title": Object {
+                "default": "",
+                "type": [Function],
+              },
+              "total": Object {
                 "default": 0,
                 "type": [Function],
               },
@@ -2060,7 +2173,7 @@ VueWrapper {
                 "default": "",
                 "type": [Function],
               },
-              "usedSpace": Object {
+              "used": Object {
                 "default": 0,
                 "type": [Function],
               },
@@ -2098,11 +2211,19 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                         3,
                         4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 2,
@@ -2146,11 +2267,19 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                         3,
                         4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         [Circular],
                         Dep {
                           "_sortedId": 0,
@@ -2187,9 +2316,9 @@ VueWrapper {
               ],
               "dirty": false,
               "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
               "getter": [Function],
               "id": 1,
@@ -2214,9 +2343,10 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "totalSpace": 0,
+            "title": "",
+            "total": 0,
             "unit": "",
-            "usedSpace": 0,
+            "used": 0,
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
@@ -2229,7 +2359,7 @@ VueWrapper {
               <p
                 class="title"
               >
-                Space
+                
               </p>
                
               <div
@@ -2259,9 +2389,10 @@ VueWrapper {
               "_base": [Function],
               "_parentElm": null,
               "_propKeys": Array [
-                "totalSpace",
-                "usedSpace",
+                "total",
+                "used",
                 "unit",
+                "title",
               ],
               "_refElm": null,
               "beforeCreate": Array [
@@ -2290,9 +2421,13 @@ VueWrapper {
               "filters": Object {},
               "logModifiedComponents": true,
               "methods": undefined,
-              "name": "SpaceProgress",
+              "name": "TipeProgress",
               "props": Object {
-                "totalSpace": Object {
+                "title": Object {
+                  "default": "",
+                  "type": [Function],
+                },
+                "total": Object {
                   "default": 0,
                   "type": [Function],
                 },
@@ -2300,7 +2435,7 @@ VueWrapper {
                   "default": "",
                   "type": [Function],
                 },
-                "usedSpace": Object {
+                "used": Object {
                   "default": 0,
                   "type": [Function],
                 },
@@ -2338,11 +2473,19 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                           3,
                           4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           Dep {
                             "_sortedId": 0,
                             "id": 2,
@@ -2386,11 +2529,19 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                           3,
                           4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           [Circular],
                           Dep {
                             "_sortedId": 0,
@@ -2427,9 +2578,9 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                 "getter": [Function],
                 "id": 1,
@@ -2454,9 +2605,10 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "totalSpace": 0,
+              "title": "",
+              "total": 0,
               "unit": "",
-              "usedSpace": 0,
+              "used": 0,
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -2469,11 +2621,19 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
+                5,
                 2,
                 3,
                 4,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 2,
@@ -2499,9 +2659,9 @@ VueWrapper {
                       ],
                       "dirty": false,
                       "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                       "getter": [Function],
                       "id": 1,
@@ -2543,9 +2703,9 @@ VueWrapper {
                       ],
                       "dirty": false,
                       "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                       "getter": [Function],
                       "id": 1,
@@ -2604,11 +2764,19 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                           3,
                           4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           Dep {
                             "_sortedId": 0,
                             "id": 2,
@@ -2652,11 +2820,19 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                           3,
                           4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           [Circular],
                           Dep {
                             "_sortedId": 0,
@@ -2693,9 +2869,9 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                 "getter": [Function],
                 "id": 1,
@@ -2714,11 +2890,19 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                   3,
                   4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 2,
@@ -2744,9 +2928,9 @@ VueWrapper {
                         ],
                         "dirty": false,
                         "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                         "getter": [Function],
                         "id": 1,
@@ -2788,9 +2972,9 @@ VueWrapper {
                         ],
                         "dirty": false,
                         "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                         "getter": [Function],
                         "id": 1,
@@ -2840,11 +3024,19 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
+              5,
               2,
               3,
               4,
             },
             "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
               Dep {
                 "_sortedId": 0,
                 "id": 2,
@@ -2870,9 +3062,9 @@ VueWrapper {
                     ],
                     "dirty": false,
                     "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                     "getter": [Function],
                     "id": 1,
@@ -2914,9 +3106,9 @@ VueWrapper {
                     ],
                     "dirty": false,
                     "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                     "getter": [Function],
                     "id": 1,
@@ -2975,11 +3167,19 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                         3,
                         4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 2,
@@ -3023,11 +3223,19 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                         3,
                         4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         [Circular],
                         Dep {
                           "_sortedId": 0,
@@ -3064,9 +3272,9 @@ VueWrapper {
               ],
               "dirty": false,
               "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
               "getter": [Function],
               "id": 1,
@@ -3085,11 +3293,19 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
+                5,
                 2,
                 3,
                 4,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 2,
@@ -3115,9 +3331,9 @@ VueWrapper {
                       ],
                       "dirty": false,
                       "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                       "getter": [Function],
                       "id": 1,
@@ -3159,9 +3375,9 @@ VueWrapper {
                       ],
                       "dirty": false,
                       "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                       "getter": [Function],
                       "id": 1,
@@ -3208,7 +3424,7 @@ VueWrapper {
         "elm": <p
           class="title"
         >
-          Space
+          
         </p>,
         "fnContext": undefined,
         "fnOptions": undefined,
@@ -3271,7 +3487,7 @@ VueWrapper {
                 <p
                   class="title"
                 >
-                  Space
+                  
                 </p>
                  
                 <div
@@ -3301,9 +3517,10 @@ VueWrapper {
                 "_base": [Function],
                 "_parentElm": null,
                 "_propKeys": Array [
-                  "totalSpace",
-                  "usedSpace",
+                  "total",
+                  "used",
                   "unit",
+                  "title",
                 ],
                 "_refElm": null,
                 "beforeCreate": Array [
@@ -3332,9 +3549,13 @@ VueWrapper {
                 "filters": Object {},
                 "logModifiedComponents": true,
                 "methods": undefined,
-                "name": "SpaceProgress",
+                "name": "TipeProgress",
                 "props": Object {
-                  "totalSpace": Object {
+                  "title": Object {
+                    "default": "",
+                    "type": [Function],
+                  },
+                  "total": Object {
                     "default": 0,
                     "type": [Function],
                   },
@@ -3342,7 +3563,7 @@ VueWrapper {
                     "default": "",
                     "type": [Function],
                   },
-                  "usedSpace": Object {
+                  "used": Object {
                     "default": 0,
                     "type": [Function],
                   },
@@ -3380,11 +3601,19 @@ VueWrapper {
                           "cb": [Function],
                           "deep": false,
                           "depIds": Set {
+                            5,
                             2,
                             3,
                             4,
                           },
                           "deps": Array [
+                            Dep {
+                              "_sortedId": 0,
+                              "id": 5,
+                              "subs": Array [
+                                [Circular],
+                              ],
+                            },
                             Dep {
                               "_sortedId": 0,
                               "id": 2,
@@ -3428,11 +3657,19 @@ VueWrapper {
                           "cb": [Function],
                           "deep": false,
                           "depIds": Set {
+                            5,
                             2,
                             3,
                             4,
                           },
                           "deps": Array [
+                            Dep {
+                              "_sortedId": 0,
+                              "id": 5,
+                              "subs": Array [
+                                [Circular],
+                              ],
+                            },
                             [Circular],
                             Dep {
                               "_sortedId": 0,
@@ -3469,9 +3706,9 @@ VueWrapper {
                   ],
                   "dirty": false,
                   "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                   "getter": [Function],
                   "id": 1,
@@ -3496,9 +3733,10 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "totalSpace": 0,
+                "title": "",
+                "total": 0,
                 "unit": "",
-                "usedSpace": 0,
+                "used": 0,
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -3511,7 +3749,7 @@ VueWrapper {
                   <p
                     class="title"
                   >
-                    Space
+                    
                   </p>
                    
                   <div
@@ -3541,9 +3779,10 @@ VueWrapper {
                   "_base": [Function],
                   "_parentElm": null,
                   "_propKeys": Array [
-                    "totalSpace",
-                    "usedSpace",
+                    "total",
+                    "used",
                     "unit",
+                    "title",
                   ],
                   "_refElm": null,
                   "beforeCreate": Array [
@@ -3572,9 +3811,13 @@ VueWrapper {
                   "filters": Object {},
                   "logModifiedComponents": true,
                   "methods": undefined,
-                  "name": "SpaceProgress",
+                  "name": "TipeProgress",
                   "props": Object {
-                    "totalSpace": Object {
+                    "title": Object {
+                      "default": "",
+                      "type": [Function],
+                    },
+                    "total": Object {
                       "default": 0,
                       "type": [Function],
                     },
@@ -3582,7 +3825,7 @@ VueWrapper {
                       "default": "",
                       "type": [Function],
                     },
-                    "usedSpace": Object {
+                    "used": Object {
                       "default": 0,
                       "type": [Function],
                     },
@@ -3620,11 +3863,19 @@ VueWrapper {
                             "cb": [Function],
                             "deep": false,
                             "depIds": Set {
+                              5,
                               2,
                               3,
                               4,
                             },
                             "deps": Array [
+                              Dep {
+                                "_sortedId": 0,
+                                "id": 5,
+                                "subs": Array [
+                                  [Circular],
+                                ],
+                              },
                               Dep {
                                 "_sortedId": 0,
                                 "id": 2,
@@ -3668,11 +3919,19 @@ VueWrapper {
                             "cb": [Function],
                             "deep": false,
                             "depIds": Set {
+                              5,
                               2,
                               3,
                               4,
                             },
                             "deps": Array [
+                              Dep {
+                                "_sortedId": 0,
+                                "id": 5,
+                                "subs": Array [
+                                  [Circular],
+                                ],
+                              },
                               [Circular],
                               Dep {
                                 "_sortedId": 0,
@@ -3709,9 +3968,9 @@ VueWrapper {
                     ],
                     "dirty": false,
                     "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                     "getter": [Function],
                     "id": 1,
@@ -3736,9 +3995,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "totalSpace": 0,
+                  "title": "",
+                  "total": 0,
                   "unit": "",
-                  "usedSpace": 0,
+                  "used": 0,
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -3751,11 +4011,19 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                     3,
                     4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 2,
@@ -3781,9 +4049,9 @@ VueWrapper {
                           ],
                           "dirty": false,
                           "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                           "getter": [Function],
                           "id": 1,
@@ -3825,9 +4093,9 @@ VueWrapper {
                           ],
                           "dirty": false,
                           "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                           "getter": [Function],
                           "id": 1,
@@ -3886,11 +4154,19 @@ VueWrapper {
                             "cb": [Function],
                             "deep": false,
                             "depIds": Set {
+                              5,
                               2,
                               3,
                               4,
                             },
                             "deps": Array [
+                              Dep {
+                                "_sortedId": 0,
+                                "id": 5,
+                                "subs": Array [
+                                  [Circular],
+                                ],
+                              },
                               Dep {
                                 "_sortedId": 0,
                                 "id": 2,
@@ -3934,11 +4210,19 @@ VueWrapper {
                             "cb": [Function],
                             "deep": false,
                             "depIds": Set {
+                              5,
                               2,
                               3,
                               4,
                             },
                             "deps": Array [
+                              Dep {
+                                "_sortedId": 0,
+                                "id": 5,
+                                "subs": Array [
+                                  [Circular],
+                                ],
+                              },
                               [Circular],
                               Dep {
                                 "_sortedId": 0,
@@ -3975,9 +4259,9 @@ VueWrapper {
                     ],
                     "dirty": false,
                     "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                     "getter": [Function],
                     "id": 1,
@@ -3996,11 +4280,19 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
+                      5,
                       2,
                       3,
                       4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 2,
@@ -4026,9 +4318,9 @@ VueWrapper {
                             ],
                             "dirty": false,
                             "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                             "getter": [Function],
                             "id": 1,
@@ -4070,9 +4362,9 @@ VueWrapper {
                             ],
                             "dirty": false,
                             "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                             "getter": [Function],
                             "id": 1,
@@ -4122,11 +4414,19 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                   3,
                   4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 2,
@@ -4152,9 +4452,9 @@ VueWrapper {
                         ],
                         "dirty": false,
                         "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                         "getter": [Function],
                         "id": 1,
@@ -4196,9 +4496,9 @@ VueWrapper {
                         ],
                         "dirty": false,
                         "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                         "getter": [Function],
                         "id": 1,
@@ -4257,11 +4557,19 @@ VueWrapper {
                           "cb": [Function],
                           "deep": false,
                           "depIds": Set {
+                            5,
                             2,
                             3,
                             4,
                           },
                           "deps": Array [
+                            Dep {
+                              "_sortedId": 0,
+                              "id": 5,
+                              "subs": Array [
+                                [Circular],
+                              ],
+                            },
                             Dep {
                               "_sortedId": 0,
                               "id": 2,
@@ -4305,11 +4613,19 @@ VueWrapper {
                           "cb": [Function],
                           "deep": false,
                           "depIds": Set {
+                            5,
                             2,
                             3,
                             4,
                           },
                           "deps": Array [
+                            Dep {
+                              "_sortedId": 0,
+                              "id": 5,
+                              "subs": Array [
+                                [Circular],
+                              ],
+                            },
                             [Circular],
                             Dep {
                               "_sortedId": 0,
@@ -4346,9 +4662,9 @@ VueWrapper {
                   ],
                   "dirty": false,
                   "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                   "getter": [Function],
                   "id": 1,
@@ -4367,11 +4683,19 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                     3,
                     4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 2,
@@ -4397,9 +4721,9 @@ VueWrapper {
                           ],
                           "dirty": false,
                           "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                           "getter": [Function],
                           "id": 1,
@@ -4441,9 +4765,9 @@ VueWrapper {
                           ],
                           "dirty": false,
                           "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                           "getter": [Function],
                           "id": 1,
@@ -4547,7 +4871,7 @@ VueWrapper {
                 <p
                   class="title"
                 >
-                  Space
+                  
                 </p>
                  
                 <div
@@ -4577,9 +4901,10 @@ VueWrapper {
                 "_base": [Function],
                 "_parentElm": null,
                 "_propKeys": Array [
-                  "totalSpace",
-                  "usedSpace",
+                  "total",
+                  "used",
                   "unit",
+                  "title",
                 ],
                 "_refElm": null,
                 "beforeCreate": Array [
@@ -4608,9 +4933,13 @@ VueWrapper {
                 "filters": Object {},
                 "logModifiedComponents": true,
                 "methods": undefined,
-                "name": "SpaceProgress",
+                "name": "TipeProgress",
                 "props": Object {
-                  "totalSpace": Object {
+                  "title": Object {
+                    "default": "",
+                    "type": [Function],
+                  },
+                  "total": Object {
                     "default": 0,
                     "type": [Function],
                   },
@@ -4618,7 +4947,7 @@ VueWrapper {
                     "default": "",
                     "type": [Function],
                   },
-                  "usedSpace": Object {
+                  "used": Object {
                     "default": 0,
                     "type": [Function],
                   },
@@ -4656,11 +4985,19 @@ VueWrapper {
                           "cb": [Function],
                           "deep": false,
                           "depIds": Set {
+                            5,
                             2,
                             3,
                             4,
                           },
                           "deps": Array [
+                            Dep {
+                              "_sortedId": 0,
+                              "id": 5,
+                              "subs": Array [
+                                [Circular],
+                              ],
+                            },
                             Dep {
                               "_sortedId": 0,
                               "id": 2,
@@ -4704,11 +5041,19 @@ VueWrapper {
                           "cb": [Function],
                           "deep": false,
                           "depIds": Set {
+                            5,
                             2,
                             3,
                             4,
                           },
                           "deps": Array [
+                            Dep {
+                              "_sortedId": 0,
+                              "id": 5,
+                              "subs": Array [
+                                [Circular],
+                              ],
+                            },
                             [Circular],
                             Dep {
                               "_sortedId": 0,
@@ -4745,9 +5090,9 @@ VueWrapper {
                   ],
                   "dirty": false,
                   "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                   "getter": [Function],
                   "id": 1,
@@ -4772,9 +5117,10 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "totalSpace": 0,
+                "title": "",
+                "total": 0,
                 "unit": "",
-                "usedSpace": 0,
+                "used": 0,
               },
               "_provided": undefined,
               "_renderProxy": VueComponent {
@@ -4787,7 +5133,7 @@ VueWrapper {
                   <p
                     class="title"
                   >
-                    Space
+                    
                   </p>
                    
                   <div
@@ -4817,9 +5163,10 @@ VueWrapper {
                   "_base": [Function],
                   "_parentElm": null,
                   "_propKeys": Array [
-                    "totalSpace",
-                    "usedSpace",
+                    "total",
+                    "used",
                     "unit",
+                    "title",
                   ],
                   "_refElm": null,
                   "beforeCreate": Array [
@@ -4848,9 +5195,13 @@ VueWrapper {
                   "filters": Object {},
                   "logModifiedComponents": true,
                   "methods": undefined,
-                  "name": "SpaceProgress",
+                  "name": "TipeProgress",
                   "props": Object {
-                    "totalSpace": Object {
+                    "title": Object {
+                      "default": "",
+                      "type": [Function],
+                    },
+                    "total": Object {
                       "default": 0,
                       "type": [Function],
                     },
@@ -4858,7 +5209,7 @@ VueWrapper {
                       "default": "",
                       "type": [Function],
                     },
-                    "usedSpace": Object {
+                    "used": Object {
                       "default": 0,
                       "type": [Function],
                     },
@@ -4896,11 +5247,19 @@ VueWrapper {
                             "cb": [Function],
                             "deep": false,
                             "depIds": Set {
+                              5,
                               2,
                               3,
                               4,
                             },
                             "deps": Array [
+                              Dep {
+                                "_sortedId": 0,
+                                "id": 5,
+                                "subs": Array [
+                                  [Circular],
+                                ],
+                              },
                               Dep {
                                 "_sortedId": 0,
                                 "id": 2,
@@ -4944,11 +5303,19 @@ VueWrapper {
                             "cb": [Function],
                             "deep": false,
                             "depIds": Set {
+                              5,
                               2,
                               3,
                               4,
                             },
                             "deps": Array [
+                              Dep {
+                                "_sortedId": 0,
+                                "id": 5,
+                                "subs": Array [
+                                  [Circular],
+                                ],
+                              },
                               [Circular],
                               Dep {
                                 "_sortedId": 0,
@@ -4985,9 +5352,9 @@ VueWrapper {
                     ],
                     "dirty": false,
                     "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                     "getter": [Function],
                     "id": 1,
@@ -5012,9 +5379,10 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "totalSpace": 0,
+                  "title": "",
+                  "total": 0,
                   "unit": "",
-                  "usedSpace": 0,
+                  "used": 0,
                 },
                 "_provided": undefined,
                 "_renderProxy": [Circular],
@@ -5027,11 +5395,19 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                     3,
                     4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 2,
@@ -5057,9 +5433,9 @@ VueWrapper {
                           ],
                           "dirty": false,
                           "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                           "getter": [Function],
                           "id": 1,
@@ -5101,9 +5477,9 @@ VueWrapper {
                           ],
                           "dirty": false,
                           "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                           "getter": [Function],
                           "id": 1,
@@ -5162,11 +5538,19 @@ VueWrapper {
                             "cb": [Function],
                             "deep": false,
                             "depIds": Set {
+                              5,
                               2,
                               3,
                               4,
                             },
                             "deps": Array [
+                              Dep {
+                                "_sortedId": 0,
+                                "id": 5,
+                                "subs": Array [
+                                  [Circular],
+                                ],
+                              },
                               Dep {
                                 "_sortedId": 0,
                                 "id": 2,
@@ -5210,11 +5594,19 @@ VueWrapper {
                             "cb": [Function],
                             "deep": false,
                             "depIds": Set {
+                              5,
                               2,
                               3,
                               4,
                             },
                             "deps": Array [
+                              Dep {
+                                "_sortedId": 0,
+                                "id": 5,
+                                "subs": Array [
+                                  [Circular],
+                                ],
+                              },
                               [Circular],
                               Dep {
                                 "_sortedId": 0,
@@ -5251,9 +5643,9 @@ VueWrapper {
                     ],
                     "dirty": false,
                     "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                     "getter": [Function],
                     "id": 1,
@@ -5272,11 +5664,19 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
+                      5,
                       2,
                       3,
                       4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 2,
@@ -5302,9 +5702,9 @@ VueWrapper {
                             ],
                             "dirty": false,
                             "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                             "getter": [Function],
                             "id": 1,
@@ -5346,9 +5746,9 @@ VueWrapper {
                             ],
                             "dirty": false,
                             "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                             "getter": [Function],
                             "id": 1,
@@ -5398,11 +5798,19 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                   3,
                   4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 2,
@@ -5428,9 +5836,9 @@ VueWrapper {
                         ],
                         "dirty": false,
                         "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                         "getter": [Function],
                         "id": 1,
@@ -5472,9 +5880,9 @@ VueWrapper {
                         ],
                         "dirty": false,
                         "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                         "getter": [Function],
                         "id": 1,
@@ -5533,11 +5941,19 @@ VueWrapper {
                           "cb": [Function],
                           "deep": false,
                           "depIds": Set {
+                            5,
                             2,
                             3,
                             4,
                           },
                           "deps": Array [
+                            Dep {
+                              "_sortedId": 0,
+                              "id": 5,
+                              "subs": Array [
+                                [Circular],
+                              ],
+                            },
                             Dep {
                               "_sortedId": 0,
                               "id": 2,
@@ -5581,11 +5997,19 @@ VueWrapper {
                           "cb": [Function],
                           "deep": false,
                           "depIds": Set {
+                            5,
                             2,
                             3,
                             4,
                           },
                           "deps": Array [
+                            Dep {
+                              "_sortedId": 0,
+                              "id": 5,
+                              "subs": Array [
+                                [Circular],
+                              ],
+                            },
                             [Circular],
                             Dep {
                               "_sortedId": 0,
@@ -5622,9 +6046,9 @@ VueWrapper {
                   ],
                   "dirty": false,
                   "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                   "getter": [Function],
                   "id": 1,
@@ -5643,11 +6067,19 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                     3,
                     4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 2,
@@ -5673,9 +6105,9 @@ VueWrapper {
                           ],
                           "dirty": false,
                           "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                           "getter": [Function],
                           "id": 1,
@@ -5717,9 +6149,9 @@ VueWrapper {
                           ],
                           "dirty": false,
                           "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                           "getter": [Function],
                           "id": 1,
@@ -5798,7 +6230,7 @@ VueWrapper {
             <p
               class="title"
             >
-              Space
+              
             </p>
              
             <div
@@ -5828,9 +6260,10 @@ VueWrapper {
             "_base": [Function],
             "_parentElm": null,
             "_propKeys": Array [
-              "totalSpace",
-              "usedSpace",
+              "total",
+              "used",
               "unit",
+              "title",
             ],
             "_refElm": null,
             "beforeCreate": Array [
@@ -5859,9 +6292,13 @@ VueWrapper {
             "filters": Object {},
             "logModifiedComponents": true,
             "methods": undefined,
-            "name": "SpaceProgress",
+            "name": "TipeProgress",
             "props": Object {
-              "totalSpace": Object {
+              "title": Object {
+                "default": "",
+                "type": [Function],
+              },
+              "total": Object {
                 "default": 0,
                 "type": [Function],
               },
@@ -5869,7 +6306,7 @@ VueWrapper {
                 "default": "",
                 "type": [Function],
               },
-              "usedSpace": Object {
+              "used": Object {
                 "default": 0,
                 "type": [Function],
               },
@@ -5907,11 +6344,19 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                         3,
                         4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 2,
@@ -5955,11 +6400,19 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                         3,
                         4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         [Circular],
                         Dep {
                           "_sortedId": 0,
@@ -5996,9 +6449,9 @@ VueWrapper {
               ],
               "dirty": false,
               "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
               "getter": [Function],
               "id": 1,
@@ -6023,9 +6476,10 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "totalSpace": 0,
+            "title": "",
+            "total": 0,
             "unit": "",
-            "usedSpace": 0,
+            "used": 0,
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
@@ -6038,7 +6492,7 @@ VueWrapper {
               <p
                 class="title"
               >
-                Space
+                
               </p>
                
               <div
@@ -6068,9 +6522,10 @@ VueWrapper {
               "_base": [Function],
               "_parentElm": null,
               "_propKeys": Array [
-                "totalSpace",
-                "usedSpace",
+                "total",
+                "used",
                 "unit",
+                "title",
               ],
               "_refElm": null,
               "beforeCreate": Array [
@@ -6099,9 +6554,13 @@ VueWrapper {
               "filters": Object {},
               "logModifiedComponents": true,
               "methods": undefined,
-              "name": "SpaceProgress",
+              "name": "TipeProgress",
               "props": Object {
-                "totalSpace": Object {
+                "title": Object {
+                  "default": "",
+                  "type": [Function],
+                },
+                "total": Object {
                   "default": 0,
                   "type": [Function],
                 },
@@ -6109,7 +6568,7 @@ VueWrapper {
                   "default": "",
                   "type": [Function],
                 },
-                "usedSpace": Object {
+                "used": Object {
                   "default": 0,
                   "type": [Function],
                 },
@@ -6147,11 +6606,19 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                           3,
                           4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           Dep {
                             "_sortedId": 0,
                             "id": 2,
@@ -6195,11 +6662,19 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                           3,
                           4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           [Circular],
                           Dep {
                             "_sortedId": 0,
@@ -6236,9 +6711,9 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                 "getter": [Function],
                 "id": 1,
@@ -6263,9 +6738,10 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "totalSpace": 0,
+              "title": "",
+              "total": 0,
               "unit": "",
-              "usedSpace": 0,
+              "used": 0,
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -6278,11 +6754,19 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
+                5,
                 2,
                 3,
                 4,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 2,
@@ -6308,9 +6792,9 @@ VueWrapper {
                       ],
                       "dirty": false,
                       "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                       "getter": [Function],
                       "id": 1,
@@ -6352,9 +6836,9 @@ VueWrapper {
                       ],
                       "dirty": false,
                       "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                       "getter": [Function],
                       "id": 1,
@@ -6413,11 +6897,19 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                           3,
                           4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           Dep {
                             "_sortedId": 0,
                             "id": 2,
@@ -6461,11 +6953,19 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                           3,
                           4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           [Circular],
                           Dep {
                             "_sortedId": 0,
@@ -6502,9 +7002,9 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                 "getter": [Function],
                 "id": 1,
@@ -6523,11 +7023,19 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                   3,
                   4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 2,
@@ -6553,9 +7061,9 @@ VueWrapper {
                         ],
                         "dirty": false,
                         "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                         "getter": [Function],
                         "id": 1,
@@ -6597,9 +7105,9 @@ VueWrapper {
                         ],
                         "dirty": false,
                         "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                         "getter": [Function],
                         "id": 1,
@@ -6649,11 +7157,19 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
+              5,
               2,
               3,
               4,
             },
             "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
               Dep {
                 "_sortedId": 0,
                 "id": 2,
@@ -6679,9 +7195,9 @@ VueWrapper {
                     ],
                     "dirty": false,
                     "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                     "getter": [Function],
                     "id": 1,
@@ -6723,9 +7239,9 @@ VueWrapper {
                     ],
                     "dirty": false,
                     "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                     "getter": [Function],
                     "id": 1,
@@ -6784,11 +7300,19 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                         3,
                         4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 2,
@@ -6832,11 +7356,19 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                         3,
                         4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         [Circular],
                         Dep {
                           "_sortedId": 0,
@@ -6873,9 +7405,9 @@ VueWrapper {
               ],
               "dirty": false,
               "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
               "getter": [Function],
               "id": 1,
@@ -6894,11 +7426,19 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
+                5,
                 2,
                 3,
                 4,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 2,
@@ -6924,9 +7464,9 @@ VueWrapper {
                       ],
                       "dirty": false,
                       "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                       "getter": [Function],
                       "id": 1,
@@ -6968,9 +7508,9 @@ VueWrapper {
                       ],
                       "dirty": false,
                       "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                       "getter": [Function],
                       "id": 1,
@@ -7108,7 +7648,7 @@ VueWrapper {
             <p
               class="title"
             >
-              Space
+              
             </p>
              
             <div
@@ -7138,9 +7678,10 @@ VueWrapper {
             "_base": [Function],
             "_parentElm": null,
             "_propKeys": Array [
-              "totalSpace",
-              "usedSpace",
+              "total",
+              "used",
               "unit",
+              "title",
             ],
             "_refElm": null,
             "beforeCreate": Array [
@@ -7169,9 +7710,13 @@ VueWrapper {
             "filters": Object {},
             "logModifiedComponents": true,
             "methods": undefined,
-            "name": "SpaceProgress",
+            "name": "TipeProgress",
             "props": Object {
-              "totalSpace": Object {
+              "title": Object {
+                "default": "",
+                "type": [Function],
+              },
+              "total": Object {
                 "default": 0,
                 "type": [Function],
               },
@@ -7179,7 +7724,7 @@ VueWrapper {
                 "default": "",
                 "type": [Function],
               },
-              "usedSpace": Object {
+              "used": Object {
                 "default": 0,
                 "type": [Function],
               },
@@ -7217,11 +7762,19 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                         3,
                         4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 2,
@@ -7265,11 +7818,19 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                         3,
                         4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         [Circular],
                         Dep {
                           "_sortedId": 0,
@@ -7306,9 +7867,9 @@ VueWrapper {
               ],
               "dirty": false,
               "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
               "getter": [Function],
               "id": 1,
@@ -7333,9 +7894,10 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "totalSpace": 0,
+            "title": "",
+            "total": 0,
             "unit": "",
-            "usedSpace": 0,
+            "used": 0,
           },
           "_provided": undefined,
           "_renderProxy": VueComponent {
@@ -7348,7 +7910,7 @@ VueWrapper {
               <p
                 class="title"
               >
-                Space
+                
               </p>
                
               <div
@@ -7378,9 +7940,10 @@ VueWrapper {
               "_base": [Function],
               "_parentElm": null,
               "_propKeys": Array [
-                "totalSpace",
-                "usedSpace",
+                "total",
+                "used",
                 "unit",
+                "title",
               ],
               "_refElm": null,
               "beforeCreate": Array [
@@ -7409,9 +7972,13 @@ VueWrapper {
               "filters": Object {},
               "logModifiedComponents": true,
               "methods": undefined,
-              "name": "SpaceProgress",
+              "name": "TipeProgress",
               "props": Object {
-                "totalSpace": Object {
+                "title": Object {
+                  "default": "",
+                  "type": [Function],
+                },
+                "total": Object {
                   "default": 0,
                   "type": [Function],
                 },
@@ -7419,7 +7986,7 @@ VueWrapper {
                   "default": "",
                   "type": [Function],
                 },
-                "usedSpace": Object {
+                "used": Object {
                   "default": 0,
                   "type": [Function],
                 },
@@ -7457,11 +8024,19 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                           3,
                           4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           Dep {
                             "_sortedId": 0,
                             "id": 2,
@@ -7505,11 +8080,19 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                           3,
                           4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           [Circular],
                           Dep {
                             "_sortedId": 0,
@@ -7546,9 +8129,9 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                 "getter": [Function],
                 "id": 1,
@@ -7573,9 +8156,10 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "totalSpace": 0,
+              "title": "",
+              "total": 0,
               "unit": "",
-              "usedSpace": 0,
+              "used": 0,
             },
             "_provided": undefined,
             "_renderProxy": [Circular],
@@ -7588,11 +8172,19 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
+                5,
                 2,
                 3,
                 4,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 2,
@@ -7618,9 +8210,9 @@ VueWrapper {
                       ],
                       "dirty": false,
                       "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                       "getter": [Function],
                       "id": 1,
@@ -7662,9 +8254,9 @@ VueWrapper {
                       ],
                       "dirty": false,
                       "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                       "getter": [Function],
                       "id": 1,
@@ -7723,11 +8315,19 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                           3,
                           4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           Dep {
                             "_sortedId": 0,
                             "id": 2,
@@ -7771,11 +8371,19 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
+                          5,
                           2,
                           3,
                           4,
                         },
                         "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
                           [Circular],
                           Dep {
                             "_sortedId": 0,
@@ -7812,9 +8420,9 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                 "getter": [Function],
                 "id": 1,
@@ -7833,11 +8441,19 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
+                  5,
                   2,
                   3,
                   4,
                 },
                 "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
                   Dep {
                     "_sortedId": 0,
                     "id": 2,
@@ -7863,9 +8479,9 @@ VueWrapper {
                         ],
                         "dirty": false,
                         "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                         "getter": [Function],
                         "id": 1,
@@ -7907,9 +8523,9 @@ VueWrapper {
                         ],
                         "dirty": false,
                         "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                         "getter": [Function],
                         "id": 1,
@@ -7959,11 +8575,19 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
+              5,
               2,
               3,
               4,
             },
             "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
               Dep {
                 "_sortedId": 0,
                 "id": 2,
@@ -7989,9 +8613,9 @@ VueWrapper {
                     ],
                     "dirty": false,
                     "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                     "getter": [Function],
                     "id": 1,
@@ -8033,9 +8657,9 @@ VueWrapper {
                     ],
                     "dirty": false,
                     "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                     "getter": [Function],
                     "id": 1,
@@ -8094,11 +8718,19 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                         3,
                         4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         Dep {
                           "_sortedId": 0,
                           "id": 2,
@@ -8142,11 +8774,19 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
+                        5,
                         2,
                         3,
                         4,
                       },
                       "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
                         [Circular],
                         Dep {
                           "_sortedId": 0,
@@ -8183,9 +8823,9 @@ VueWrapper {
               ],
               "dirty": false,
               "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
               "getter": [Function],
               "id": 1,
@@ -8204,11 +8844,19 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
+                5,
                 2,
                 3,
                 4,
               },
               "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
                 Dep {
                   "_sortedId": 0,
                   "id": 2,
@@ -8234,9 +8882,9 @@ VueWrapper {
                       ],
                       "dirty": false,
                       "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                       "getter": [Function],
                       "id": 1,
@@ -8278,9 +8926,9 @@ VueWrapper {
                       ],
                       "dirty": false,
                       "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                       "getter": [Function],
                       "id": 1,
@@ -8358,7 +9006,7 @@ VueWrapper {
         <p
           class="title"
         >
-          Space
+          
         </p>
          
         <div
@@ -8388,9 +9036,10 @@ VueWrapper {
         "_base": [Function],
         "_parentElm": null,
         "_propKeys": Array [
-          "totalSpace",
-          "usedSpace",
+          "total",
+          "used",
           "unit",
+          "title",
         ],
         "_refElm": null,
         "beforeCreate": Array [
@@ -8419,9 +9068,13 @@ VueWrapper {
         "filters": Object {},
         "logModifiedComponents": true,
         "methods": undefined,
-        "name": "SpaceProgress",
+        "name": "TipeProgress",
         "props": Object {
-          "totalSpace": Object {
+          "title": Object {
+            "default": "",
+            "type": [Function],
+          },
+          "total": Object {
             "default": 0,
             "type": [Function],
           },
@@ -8429,7 +9082,7 @@ VueWrapper {
             "default": "",
             "type": [Function],
           },
-          "usedSpace": Object {
+          "used": Object {
             "default": 0,
             "type": [Function],
           },
@@ -8467,11 +9120,19 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                     3,
                     4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 2,
@@ -8515,11 +9176,19 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                     3,
                     4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     [Circular],
                     Dep {
                       "_sortedId": 0,
@@ -8556,9 +9225,9 @@ VueWrapper {
           ],
           "dirty": false,
           "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
           "getter": [Function],
           "id": 1,
@@ -8583,9 +9252,10 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "totalSpace": 0,
+        "title": "",
+        "total": 0,
         "unit": "",
-        "usedSpace": 0,
+        "used": 0,
       },
       "_provided": undefined,
       "_renderProxy": VueComponent {
@@ -8598,7 +9268,7 @@ VueWrapper {
           <p
             class="title"
           >
-            Space
+            
           </p>
            
           <div
@@ -8628,9 +9298,10 @@ VueWrapper {
           "_base": [Function],
           "_parentElm": null,
           "_propKeys": Array [
-            "totalSpace",
-            "usedSpace",
+            "total",
+            "used",
             "unit",
+            "title",
           ],
           "_refElm": null,
           "beforeCreate": Array [
@@ -8659,9 +9330,13 @@ VueWrapper {
           "filters": Object {},
           "logModifiedComponents": true,
           "methods": undefined,
-          "name": "SpaceProgress",
+          "name": "TipeProgress",
           "props": Object {
-            "totalSpace": Object {
+            "title": Object {
+              "default": "",
+              "type": [Function],
+            },
+            "total": Object {
               "default": 0,
               "type": [Function],
             },
@@ -8669,7 +9344,7 @@ VueWrapper {
               "default": "",
               "type": [Function],
             },
-            "usedSpace": Object {
+            "used": Object {
               "default": 0,
               "type": [Function],
             },
@@ -8707,11 +9382,19 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
+                      5,
                       2,
                       3,
                       4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 2,
@@ -8755,11 +9438,19 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
+                      5,
                       2,
                       3,
                       4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       [Circular],
                       Dep {
                         "_sortedId": 0,
@@ -8796,9 +9487,9 @@ VueWrapper {
             ],
             "dirty": false,
             "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
             "getter": [Function],
             "id": 1,
@@ -8823,9 +9514,10 @@ VueWrapper {
         "_isMounted": true,
         "_isVue": true,
         "_props": Object {
-          "totalSpace": 0,
+          "title": "",
+          "total": 0,
           "unit": "",
-          "usedSpace": 0,
+          "used": 0,
         },
         "_provided": undefined,
         "_renderProxy": [Circular],
@@ -8838,11 +9530,19 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
+            5,
             2,
             3,
             4,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 2,
@@ -8868,9 +9568,9 @@ VueWrapper {
                   ],
                   "dirty": false,
                   "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                   "getter": [Function],
                   "id": 1,
@@ -8912,9 +9612,9 @@ VueWrapper {
                   ],
                   "dirty": false,
                   "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                   "getter": [Function],
                   "id": 1,
@@ -8973,11 +9673,19 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
+                      5,
                       2,
                       3,
                       4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       Dep {
                         "_sortedId": 0,
                         "id": 2,
@@ -9021,11 +9729,19 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
+                      5,
                       2,
                       3,
                       4,
                     },
                     "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
                       [Circular],
                       Dep {
                         "_sortedId": 0,
@@ -9062,9 +9778,9 @@ VueWrapper {
             ],
             "dirty": false,
             "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
             "getter": [Function],
             "id": 1,
@@ -9083,11 +9799,19 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
+              5,
               2,
               3,
               4,
             },
             "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
               Dep {
                 "_sortedId": 0,
                 "id": 2,
@@ -9113,9 +9837,9 @@ VueWrapper {
                     ],
                     "dirty": false,
                     "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                     "getter": [Function],
                     "id": 1,
@@ -9157,9 +9881,9 @@ VueWrapper {
                     ],
                     "dirty": false,
                     "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                     "getter": [Function],
                     "id": 1,
@@ -9209,11 +9933,19 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
+          5,
           2,
           3,
           4,
         },
         "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              [Circular],
+            ],
+          },
           Dep {
             "_sortedId": 0,
             "id": 2,
@@ -9239,9 +9971,9 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                 "getter": [Function],
                 "id": 1,
@@ -9283,9 +10015,9 @@ VueWrapper {
                 ],
                 "dirty": false,
                 "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                 "getter": [Function],
                 "id": 1,
@@ -9344,11 +10076,19 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                     3,
                     4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     Dep {
                       "_sortedId": 0,
                       "id": 2,
@@ -9392,11 +10132,19 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
+                    5,
                     2,
                     3,
                     4,
                   },
                   "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
                     [Circular],
                     Dep {
                       "_sortedId": 0,
@@ -9433,9 +10181,9 @@ VueWrapper {
           ],
           "dirty": false,
           "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
           "getter": [Function],
           "id": 1,
@@ -9454,11 +10202,19 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
+            5,
             2,
             3,
             4,
           },
           "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+              ],
+            },
             Dep {
               "_sortedId": 0,
               "id": 2,
@@ -9484,9 +10240,9 @@ VueWrapper {
                   ],
                   "dirty": false,
                   "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                   "getter": [Function],
                   "id": 1,
@@ -9528,9 +10284,9 @@ VueWrapper {
                   ],
                   "dirty": false,
                   "expression": "function percent() {
-      var usedSpace = this.usedSpace,
-          totalSpace = this.totalSpace;
-      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(usedSpace / totalSpace * 100), true);
+      var used = this.used,
+          total = this.total;
+      return (0, _defineProperty2.default)({}, 'column-end-' + Math.trunc(used / total * 100), true);
     }",
                   "getter": [Function],
                   "id": 1,
@@ -9580,7 +10336,7 @@ VueWrapper {
       <p
         class="title"
       >
-        Space
+        
       </p>
        
       <div
