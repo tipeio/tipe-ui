@@ -8,11 +8,17 @@
         <div class="browser">
           <section class="finder-container">
             <header class="finder-header">Folders</header>
-            <tipe-finder />
+            <tipe-finder
+              :files="documents"
+              layout="grid"
+            />
           </section>
           <section class="finder-container">
             <header class="finder-header">Documents</header>
-            <tipe-finder />
+            <tipe-finder
+              :files="folders"
+              layout="grid"
+            />
           </section>
         </div>
       </div>
@@ -23,6 +29,7 @@
 <script>
 import vueTypes from 'vue-types'
 import LinkShape from '@/types/Link'
+import FileShape from '@/types/File'
 import TipeFinder from '@/components/Finder'
 import TipeBreadcrumbs from '@/components/Breadcrumbs'
 
@@ -33,7 +40,9 @@ export default {
     TipeBreadcrumbs
   },
   props: {
-    breadcrumbLinks: vueTypes.arrayOf(LinkShape)
+    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(LinkShape)),
+    folders: vueTypes.arrayOf(vueTypes.shape(FileShape)),
+    documents: vueTypes.arrayOf(vueTypes.shape(FileShape))
   }
 }
 </script>
@@ -48,7 +57,11 @@ export default {
 }
 
 .nav-container {
+  display: flex;
+  align-content: center;
+  justify-items: flex-start;
   background-color: var(--gray-lightest);
+  padding: 0 3rem;
 }
 
 .content-window {
@@ -69,6 +82,7 @@ export default {
 .browser {
   display: flex;
   flex-direction: column;
+  padding: 0 3rem;
 }
 
 .finder-container {

@@ -35,6 +35,7 @@ a {
   box-sizing: border-box;
   text-decoration: none;
   font-size: 0.8125rem;
+  background-color: #fff;
 }
 
 .icon-container {
