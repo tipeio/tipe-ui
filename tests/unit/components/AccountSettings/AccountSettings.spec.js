@@ -12,7 +12,7 @@ describe('Settings.vue', () => {
   })
   it('should have the pannel content class', () => {
     const wrapper = shallowMount(AccountSettings)
-    expect(wrapper.classes().contains('panel-content')).toBe(true)
+    expect(wrapper.classes()).toContain('panel-content')
   })
   it('should render the icon badge component', () => {
     const wrapper = shallowMount(AccountSettings)
