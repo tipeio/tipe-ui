@@ -9,14 +9,14 @@
           <section class="finder-container">
             <header class="finder-header">Folders</header>
             <tipe-finder
-              :files="documents"
+              :files="folders"
               layout="grid"
             />
           </section>
           <section class="finder-container">
             <header class="finder-header">Documents</header>
             <tipe-finder
-              :files="folders"
+              :files="documents"
               layout="grid"
             />
           </section>
@@ -60,8 +60,8 @@ export default {
   display: flex;
   align-content: center;
   justify-items: flex-start;
-  background-color: var(--gray-lightest);
-  padding: 0 3rem;
+  background-color: #f7f8fb;
+  padding: 0 4.375rem;
 }
 
 .content-window {
@@ -82,7 +82,7 @@ export default {
 .browser {
   display: flex;
   flex-direction: column;
-  padding: 0 3rem;
+  padding: 0 4.375rem;
 }
 
 .finder-container {
