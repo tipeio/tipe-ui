@@ -30,8 +30,8 @@ describe('ContentBrowser', () => {
       )
     })
 
-    it(':documents - should pass documents prop to the first Finder component', () => {
-      const propsData = { documents: [fileMock({ type: 'document' })] }
+    it(':documents - should pass folders prop to the first Finder component', () => {
+      const propsData = { folders: [fileMock({ type: 'folder' })] }
       const wrapper = shallowMount(ContentBrowser, { propsData })
 
       expect(
@@ -39,11 +39,11 @@ describe('ContentBrowser', () => {
           .findAll(Finder)
           .at(0)
           .props().files
-      ).toEqual(propsData.documents)
+      ).toEqual(propsData.folders)
     })
 
-    it(':documents - should pass folders prop to the second Finder component', () => {
-      const propsData = { folders: [fileMock({ type: 'folder' })] }
+    it(':documents - should pass documents prop to the second Finder component', () => {
+      const propsData = { documents: [fileMock({ type: 'document' })] }
       const wrapper = shallowMount(ContentBrowser, { propsData })
 
       expect(
@@ -51,7 +51,7 @@ describe('ContentBrowser', () => {
           .findAll(Finder)
           .at(1)
           .props().files
-      ).toEqual(propsData.folders)
+      ).toEqual(propsData.documents)
     })
   })
 })
