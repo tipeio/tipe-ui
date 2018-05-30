@@ -7,7 +7,7 @@
         <div class="image"><tipe-profile-image :url="member.url" /></div>
         <div class="column">
           <p class="name">{{ member.name }}</p>
-          <p class="small-text">{{ member.email }}</p>
+          <p class="small-text email">{{ member.email }}</p>
         </div>
       </td>
       <td class="row">
@@ -83,16 +83,19 @@ export default {
     justify-content: center;
 
     & .image {
+      display: flex;
       flex: 0 0 4rem;
+      justify-content: center;
     }
 
     & .column {
       display: flex;
       flex-direction: column;
       flex: 1 1 auto;
+      margin-left: 0.625rem;
 
       & .name {
-        color: var(--text-gray);
+        color: var(--darkPurple);
         font-size: 0.875rem;
         margin: 0;
       }
@@ -100,9 +103,13 @@ export default {
   }
 
   & .small-text {
-    color: var(--text-gray);
+    color: var(--darkPurple);
     font-size: 0.75rem;
     margin: 0;
+  }
+
+  & .email {
+    color: var(--midPurple);
   }
 }
 </style>

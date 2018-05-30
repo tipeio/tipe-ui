@@ -2,11 +2,26 @@
   <table class="table">
     <seperator />
     <tr class="table-heading">
-      <th class="start">NAME</th>
-      <th>ROLE</th>
-      <th>DATE JOINED</th>
-      <th>STATUS</th>
-      <th>ACTIONS</th>
+      <th class="start">NAME<span><icon 
+        icon="arrow-up" 
+        width="9px" 
+        height="6px"/></span></th>
+      <th>ROLE<span><icon 
+        icon="arrow-up" 
+        width="9px" 
+        height="6px"/></span></th>
+      <th>DATE JOINED<span><icon 
+        icon="arrow-up" 
+        width="9px" 
+        height="6px"/></span></th>
+      <th>STATUS<span><icon 
+        icon="arrow-up" 
+        width="9px" 
+        height="6px"/></span></th>
+      <th>ACTION<span><icon 
+        icon="arrow-up" 
+        width="9px" 
+        height="6px"/></span></th>
     </tr>
     <seperator />
     <table-row 
@@ -22,10 +37,11 @@
 import vueTypes from 'vue-types'
 import { TableRow } from '.'
 import Seperator from '../Seperator'
+import Icon from '../Icon'
 
 export default {
   name: 'Table',
-  components: { TableRow, Seperator },
+  components: { TableRow, Seperator, Icon },
   props: {
     members: vueTypes.array
   }
@@ -46,13 +62,19 @@ export default {
   padding: 0 1rem;
 
   & th {
-    color: var(--darkPurple);
-    font-size: 0.75rem;
-    display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+    display: flex;
+    color: var(--darkPurple);
+    font-size: 0.75rem;
     font-weight: bold;
+
+    & span {
+      display: flex;
+      flex: 0 0 1rem;
+      justify-content: flex-end;
+    }
 
     &.start {
       justify-content: flex-start;
