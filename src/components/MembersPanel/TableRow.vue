@@ -1,53 +1,57 @@
 <template>
-  <tr>
-    <div class="row">
-      <div class="image"><tipe-profile-image :url="member.url" /></div>
-      <div class="column">
-        <p class="name">{{ member.name }}</p>
-        <p class="small-text">{{ member.email }}</p>
-      </div>
-    </div>
-    <div class="row">
-      <p class="small-text">{{ member.role }}</p>
-    </div>
-    <div class="row">
-      <p class="small-text">{{ member.dateJoined }}</p>
-    </div>
-    <div class="row">
-      <p class="small-text">{{ member.status }}</p>
-    </div>
-    <div class="row">
-      <tipe-button 
-        size="small" 
-        color="none" 
-        icon-before="paper-airplane" 
-        @click="mail"/>
-      <tipe-button 
-        size="small" 
-        color="none" 
-        icon-before="trash" 
-        @click="deleteMember"/>
-    </div>
-  </tr>
+  <div class="padding">
+    <tr class="member-row">
+      <td class="row">
+        <div class="image"><tipe-profile-image :url="member.url" /></div>
+        <div class="column">
+          <p class="name">{{ member.name }}</p>
+          <p class="small-text">{{ member.email }}</p>
+        </div>
+      </td>
+      <td class="row">
+        <p class="small-text">{{ member.role }}</p>
+      </td>
+      <td class="row">
+        <p class="small-text">{{ member.dateJoined }}</p>
+      </td>
+      <td class="row">
+        <p class="small-text">{{ member.status }}</p>
+      </td>
+      <td class="row">
+        <tipe-button 
+          size="small" 
+          color="none" 
+          icon-before="paper-airplane" 
+          @click="mail"/>
+        <tipe-button 
+          size="small" 
+          color="none" 
+          icon-before="trash" 
+          @click="deleteMember"/>
+      </td>
+    </tr>
+    <seperator />
+  </div>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
 import TipeProfileImage from '../ProfileImage'
 import TipeButton from '../Button'
+import Seperator from '../Seperator'
 
 export default {
   name: 'TableRow',
-  components: { TipeProfileImage, TipeButton },
+  components: { TipeProfileImage, TipeButton, Seperator },
   props: {
     member: vueTypes.object
   },
   methods: {
     deleteMember() {
-      console.log('DELETE the member')
+      console.log('DELETE the member', this.member.id)
     },
     mail() {
-      console.log('Email the member?')
+      console.log('Email the member?', this.member.id)
     }
   }
 }
@@ -55,10 +59,14 @@ export default {
 
 
 <style lang='postcss' scoped>
-tr {
+.padding {
+  padding: 0 1rem;
+}
+.member-row {
   display: flex;
-  width: 100vw;
+  width: 100%;
   justify-content: space-evenly;
+  padding: 1rem 0;
 
   & .row {
     display: flex;
