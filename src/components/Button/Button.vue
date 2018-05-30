@@ -42,7 +42,9 @@ export default {
   props: {
     size: vueTypes.oneOf(['small', 'medium', 'large']).def('medium'),
     outline: vueTypes.bool.def(false),
-    color: vueTypes.oneOf(['purple', 'purple-dark', 'gray']).def('purple'),
+    color: vueTypes
+      .oneOf(['purple', 'purple-dark', 'gray', 'none'])
+      .def('purple'),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def('')
   },
@@ -180,6 +182,9 @@ button.gray {
   background-color: var(--gray-blue-light);
 }
 
+button.none {
+  background-color: none;
+}
 /* outline */
 button.outline {
   background: transparent;
