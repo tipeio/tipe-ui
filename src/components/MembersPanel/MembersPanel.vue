@@ -90,14 +90,14 @@ export default {
   padding: 1.125rem;
 
   & .text {
-    color: var(--text-gray);
+    color: var(--darkPurple);
     font-size: 0.875rem;
     margin: 0;
     margin-bottom: 3px;
   }
 
   & .small-text {
-    color: var(--text-gray);
+    color: var(--midPurple);
     font-size: 0.75rem;
     margin: 0;
   }
