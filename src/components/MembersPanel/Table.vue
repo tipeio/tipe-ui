@@ -2,26 +2,25 @@
   <table class="table">
     <seperator />
     <tr class="table-heading">
-      <th class="start">NAME<span><icon 
+      <th 
+        class="start" 
+        @click="sort('name')">NAME<span><icon 
+          icon="arrow-up" 
+          width="9px" 
+          height="6px"/></span></th>
+      <th @click="sort('role')">ROLE<span><icon 
         icon="arrow-up" 
         width="9px" 
         height="6px"/></span></th>
-      <th>ROLE<span><icon 
+      <th @click="sort('date')">DATE JOINED<span><icon 
         icon="arrow-up" 
         width="9px" 
         height="6px"/></span></th>
-      <th>DATE JOINED<span><icon 
+      <th @click="sort('status')">STATUS<span><icon 
         icon="arrow-up" 
         width="9px" 
         height="6px"/></span></th>
-      <th>STATUS<span><icon 
-        icon="arrow-up" 
-        width="9px" 
-        height="6px"/></span></th>
-      <th>ACTION<span><icon 
-        icon="arrow-up" 
-        width="9px" 
-        height="6px"/></span></th>
+      <th>ACTION</th>
     </tr>
     <seperator />
     <table-row 
@@ -44,6 +43,11 @@ export default {
   components: { TableRow, Seperator, Icon },
   props: {
     members: vueTypes.array
+  },
+  methods: {
+    sort(type) {
+      console.log('sorting', type)
+    }
   }
 }
 </script>
