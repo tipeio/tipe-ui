@@ -183,7 +183,7 @@ button.gray {
 }
 
 button.none {
-  background-color: none;
+  background-color: transparent;
 }
 /* outline */
 button.outline {
