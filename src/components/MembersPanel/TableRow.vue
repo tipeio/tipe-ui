@@ -1,6 +1,8 @@
 <template>
   <div class="padding">
-    <tr class="member-row">
+    <tr 
+      :class="{gray}" 
+      class="member-row">
       <td class="row">
         <div class="image"><tipe-profile-image :url="member.url" /></div>
         <div class="column">
@@ -44,7 +46,8 @@ export default {
   name: 'TableRow',
   components: { TipeProfileImage, TipeButton, Seperator },
   props: {
-    member: vueTypes.object
+    member: vueTypes.object,
+    gray: vueTypes.bool
   },
   methods: {
     deleteMember() {
@@ -64,9 +67,14 @@ export default {
 }
 .member-row {
   display: flex;
+  background-color: #fff;
   width: 100%;
   justify-content: space-evenly;
   padding: 1rem 0;
+
+  &.gray {
+    background-color: #f7f8fb;
+  }
 
   & .row {
     display: flex;
@@ -84,7 +92,7 @@ export default {
       flex: 1 1 auto;
 
       & .name {
-        color: #323c47;
+        color: var(--text-gray);
         font-size: 0.875rem;
         margin: 0;
       }
@@ -92,7 +100,7 @@ export default {
   }
 
   & .small-text {
-    color: #323c47;
+    color: var(--text-gray);
     font-size: 0.75rem;
     margin: 0;
   }
