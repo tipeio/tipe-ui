@@ -19,7 +19,8 @@
   --text-gray-normal: rgba(31, 52, 108, 0.4) /* or #1f346c */;
   --purple: #6047fa;
   --danger: #e44646;
-  --darkPurple: #1f346c;
+  --darkPurple: #1e346c;
+  --midPurple: #627098;
   --btnGradient: linear-gradient(108deg, #714bfe, #6047fa 51%, #5727e1);
   --text-gray: rgb(50, 60, 71); /* or #323c47 */
   --text-gray-light: rgb(152, 152, 152); /* or #989898 */
