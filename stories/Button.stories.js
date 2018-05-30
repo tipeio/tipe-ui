@@ -59,3 +59,9 @@ storiesOf('Button', module)
       '<tipe-button color="purple" size="medium" iconBefore="plus" @click="action"></tipe-button>',
     methods: { action: action('clicked') }
   }))
+  .add('icon only no backgound', () => ({
+    components: { TipeButton },
+    template:
+      '<tipe-button color="none" size="medium" iconBefore="plus" @click="action"></tipe-button>',
+    methods: { action: action('clicked') }
+  }))
