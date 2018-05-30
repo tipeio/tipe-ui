@@ -10,9 +10,10 @@
     </tr>
     <seperator />
     <table-row 
-      v-for="member in members" 
+      v-for="(member, index) in members" 
       :key="member.id" 
       :member="member"
+      :gray="index % 2 !== 0"
     />
   </table>
 </template>
@@ -45,12 +46,13 @@ export default {
   padding: 0 1rem;
 
   & th {
-    color: #323c47;
+    color: var(--darkPurple);
     font-size: 0.75rem;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 
     &.start {
       justify-content: flex-start;
