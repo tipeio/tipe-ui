@@ -58,7 +58,7 @@ export default {
   & .label {
     display: flex;
     flex: 1 1 auto;
-    color: #323c47;
+    color: var(--text-gray);
     font-size: 0.8125rem;
   }
 }
