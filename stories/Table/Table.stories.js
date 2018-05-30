@@ -2,10 +2,15 @@ import { storiesOf } from '@storybook/vue'
 
 import { TipeTable } from '../../src/components/MembersPanel'
 
+const style = () => ({
+  width: '1055px',
+  height: '737px'
+})
+
 storiesOf('Tipe Table', module).add('member table row', () => ({
   components: { TipeTable },
-  computed: { members },
-  template: '<tipe-table :members="members"/>'
+  computed: { members, style },
+  template: '<div :style="style"><tipe-table :members="members"/></style>'
 }))
 
 const members = () => [
