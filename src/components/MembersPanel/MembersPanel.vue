@@ -24,7 +24,7 @@ export default {
   components: { LayoutCard, TipeTable, TipeButton },
   data() {
     return {
-      members: createManyMocks(user, 7)
+      members: createManyMocks(user, 12)
     }
   }
 }
@@ -37,6 +37,7 @@ export default {
   grid-template-rows: 4rem auto;
   width: 100%;
 }
+
 .flex-row {
   display: flex;
   max-width: 100%;
