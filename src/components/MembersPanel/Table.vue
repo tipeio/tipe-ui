@@ -24,16 +24,13 @@
     </tr>
     <seperator />
     <div class="scrollable">
-      <div class="blah">
-        <table-row 
-          v-for="(member, index) in members" 
-          :key="member.id" 
-          :member="member"
-          :gray="index % 2 !== 0"
-        />
-      </div>
+      <table-row 
+        v-for="(member, index) in members" 
+        :key="member.id" 
+        :member="member"
+        :gray="index % 2 !== 0"
+      />
     </div>
-
   </table>
 </template>
 
