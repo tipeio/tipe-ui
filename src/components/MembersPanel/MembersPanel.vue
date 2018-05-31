@@ -6,7 +6,9 @@
           <p class="text">Members</p>
           <p class="small-text">Description text goes here</p>
         </div>
-        <tipe-button icon-before="plus">Add Member</tipe-button>
+        <tipe-button 
+          icon-before="plus" 
+          @click="modal">Add Member</tipe-button>
       </div>
       <tipe-table :members="members" />
     </div>
@@ -24,7 +26,13 @@ export default {
   components: { LayoutCard, TipeTable, TipeButton },
   data() {
     return {
-      members: createManyMocks(user, 12)
+      members: createManyMocks(user, 12),
+      modalOpen: false
+    }
+  },
+  methods: {
+    modal() {
+      this.modalOpen = !this.modalOpen
     }
   }
 }
