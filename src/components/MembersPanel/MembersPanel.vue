@@ -15,6 +15,7 @@
 
 <script>
 import { TipeTable } from '.'
+import { createManyMocks, user } from '../../mocks'
 import LayoutCard from '../LayoutCard'
 import TipeButton from '../Button'
 
@@ -23,53 +24,7 @@ export default {
   components: { LayoutCard, TipeTable, TipeButton },
   data() {
     return {
-      members: [
-        {
-          dateJoined: '05/02/2018',
-          id: '12',
-          name: 'Ada Miller',
-          email: 'ada_miller@gmail.com',
-          status: 'Active',
-          role: 'Owner',
-          url: 'http://placekitten.com/200/300'
-        },
-        {
-          dateJoined: '05/02/2018',
-          id: '34',
-          name: 'Ada Miller',
-          email: 'ada_miller@gmail.com',
-          status: 'Active',
-          role: 'Owner',
-          url: 'http://placekitten.com/200/300'
-        },
-        {
-          dateJoined: '05/02/2018',
-          id: '56',
-          name: 'Ada Miller',
-          email: 'ada_miller@gmail.com',
-          status: 'Active',
-          role: 'Owner',
-          url: 'http://placekitten.com/200/300'
-        },
-        {
-          dateJoined: '05/02/2018',
-          id: '78',
-          name: 'Ada Miller',
-          email: 'ada_miller@gmail.com',
-          status: 'Active',
-          role: 'Owner',
-          url: 'http://placekitten.com/200/300'
-        },
-        {
-          dateJoined: '05/02/2018',
-          id: '90',
-          name: 'Ada Miller',
-          email: 'ada_miller@gmail.com',
-          status: 'Active',
-          role: 'Owner',
-          url: 'http://placekitten.com/200/300'
-        }
-      ]
+      members: createManyMocks(user, 7)
     }
   }
 }
