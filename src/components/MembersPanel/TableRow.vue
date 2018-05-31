@@ -3,7 +3,7 @@
     <tr 
       :class="{gray}" 
       class="member-row">
-      <td class="row">
+      <td class="row info">
         <div class="image"><tipe-profile-image :url="member.profileImageUrl" /></div>
         <div class="column">
           <p class="name">{{ member.firstName }} {{ member.lastName }}</p>
@@ -81,6 +81,11 @@ export default {
     align-items: center;
     width: 100%;
     justify-content: center;
+
+    &.info {
+      display: flex;
+      flex: 0 0 30%;
+    }
 
     & .image {
       display: flex;
