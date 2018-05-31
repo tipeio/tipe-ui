@@ -40,7 +40,7 @@ export default {
   name: 'TipeButton',
   components: { TipeIcon },
   props: {
-    size: vueTypes.oneOf(['small', 'medium', 'large']).def('medium'),
+    size: vueTypes.oneOf(['small', 'medium', 'large', 'full']).def('medium'),
     outline: vueTypes.bool.def(false),
     color: vueTypes
       .oneOf(['purple', 'purple-dark', 'gray', 'none'])
@@ -156,12 +156,18 @@ button.large {
   height: 3.25rem;
 }
 
+button.full {
+  width: 100%;
+  height: 3.25rem;
+}
+
 button.small .label,
 button.medium .label {
   font-size: 0.6875rem;
 }
 
-button.large .label {
+button.large .label,
+button.full .label {
   font-size: 0.8125rem;
 }
 
