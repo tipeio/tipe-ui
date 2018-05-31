@@ -23,12 +23,17 @@
       <th>ACTION</th>
     </tr>
     <seperator />
-    <table-row 
-      v-for="(member, index) in members" 
-      :key="member.id" 
-      :member="member"
-      :gray="index % 2 !== 0"
-    />
+    <div class="scrollable">
+      <div class="blah">
+        <table-row 
+          v-for="(member, index) in members" 
+          :key="member.id" 
+          :member="member"
+          :gray="index % 2 !== 0"
+        />
+      </div>
+    </div>
+
   </table>
 </template>
 
@@ -57,7 +62,18 @@ export default {
 .table {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
+
+/* hide scrollbar */
+.scrollable {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 17px;
+  box-sizing: content-box;
+}
+
 .table-heading {
   display: flex;
   max-width: 100%;
