@@ -82,6 +82,8 @@ export default {
 
     &.start {
       justify-content: flex-start;
+      display: flex;
+      flex: 0 0 30%;
     }
   }
 }
