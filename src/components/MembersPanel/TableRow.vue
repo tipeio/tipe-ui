@@ -4,17 +4,17 @@
       :class="{gray}" 
       class="member-row">
       <td class="row">
-        <div class="image"><tipe-profile-image :url="member.url" /></div>
+        <div class="image"><tipe-profile-image :url="member.profileImageUrl" /></div>
         <div class="column">
-          <p class="name">{{ member.name }}</p>
+          <p class="name">{{ member.firstName }} {{ member.lastName }}</p>
           <p class="small-text email">{{ member.email }}</p>
         </div>
       </td>
       <td class="row">
-        <p class="small-text">{{ member.role }}</p>
+        <p class="small-text">{{ member.role.name }}</p>
       </td>
       <td class="row">
-        <p class="small-text">{{ member.dateJoined }}</p>
+        <p class="small-text">{{ member.createdAt }}</p>
       </td>
       <td class="row">
         <p class="small-text">{{ member.status }}</p>
