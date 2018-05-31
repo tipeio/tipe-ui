@@ -21,7 +21,7 @@ const grid = () => ({
   'grid-template-rows': '1rem auto 1rem',
   'grid-template-columns': '1rem auto 1rem',
   'grid-template-areas': `'. . .'
-    '. a .'
+    '. accountSettings .'
     '. . .'`
 })
 
