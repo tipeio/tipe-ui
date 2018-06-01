@@ -5,10 +5,16 @@
     />
     <section class="template-finder-section">
       <header>TEMPLATE</header>
-      <tipe-finder
-        :files="templates"
-        layout="grid"
-      />
+      <div class="content-window">
+        <div class="scrollable">
+          <div class="browser">
+            <tipe-finder
+              :files="templates"
+              layout="grid"
+            />
+          </div>
+        </div>
+      </div>
     </section>
   </section>
 </template>
@@ -32,15 +38,43 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+[data-tipe-ui='TipeNewDocument'] {
+  display: grid;
+  grid-template-rows: 11rem 1fr;
+  height: 100%;
+  width: 100%;
+}
+
 .template-finder-section {
-  padding-top: 3.625rem;
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+  height: 100%;
+  width: 100%;
 }
 
 .template-finder-section > header {
   color: var(--purple-dark);
   font-size: 1rem;
   font-weight: 600;
-  padding-bottom: 1.6875rem;
-  box-sizing: border-box;
+}
+
+.content-window {
+  position: relative;
+  overflow: hidden;
+}
+
+.scrollable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  padding-right: 17px;
+}
+
+.browser {
+  display: flex;
+  flex-direction: column;
 }
 </style>
