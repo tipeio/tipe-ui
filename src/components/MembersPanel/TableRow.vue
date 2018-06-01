@@ -24,7 +24,7 @@
           size="small" 
           color="none" 
           icon-before="paper-airplane" 
-          @click="mail"/>
+          @click="send"/>
         <tipe-button 
           size="small" 
           color="none" 
@@ -46,14 +46,14 @@ export default {
   name: 'TableRow',
   components: { TipeProfileImage, TipeButton, Seperator },
   props: {
-    member: vueTypes.object,
-    gray: vueTypes.bool
+    member: vueTypes.object.isRequired,
+    gray: vueTypes.bool.def(false)
   },
   methods: {
     deleteMember() {
       console.log('DELETE the member', this.member.id)
     },
-    mail() {
+    send() {
       console.log('Email the member?', this.member.id)
     }
   }
