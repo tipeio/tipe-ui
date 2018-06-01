@@ -37,3 +37,10 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss" scoped>
+[data-tipe-ui='TipeNewFile'] {
+  height: 100%;
+  width: 100%;
+}
+</style>
