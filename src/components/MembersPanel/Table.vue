@@ -41,10 +41,10 @@ import Seperator from '../Seperator'
 import Icon from '../Icon'
 
 export default {
-  name: 'Table',
+  name: 'TipeTable',
   components: { TableRow, Seperator, Icon },
   props: {
-    members: vueTypes.array
+    members: vueTypes.array.isRequired
   },
   methods: {
     sort(type) {
