@@ -6,7 +6,7 @@
       <td class="row info">
         <div class="image"><tipe-profile-image :url="member.profileImageUrl" /></div>
         <div class="column">
-          <p class="name">{{ member.firstName }} {{ member.lastName }}</p>
+          <p class="name-text">{{ member.firstName }} {{ member.lastName }}</p>
           <p class="small-text email">{{ member.email }}</p>
         </div>
       </td>
@@ -99,7 +99,7 @@ export default {
       flex: 1 1 auto;
       margin-left: 0.625rem;
 
-      & .name {
+      & .name-text {
         color: var(--darkPurple);
         font-size: 0.875rem;
         margin: 0;
