@@ -3,6 +3,7 @@
     <input
       :value="value"
       :placeholder="placeholder"
+      autofocus
     >
     <div class="message">
       {{ message }}
@@ -33,6 +34,7 @@ input {
   padding: 1.5rem 0;
   color: var(--purple-dark);
   box-sizing: border-box;
+  background-color: transparent;
 }
 
 input::-webkit-input-placeholder {
