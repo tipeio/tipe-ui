@@ -3,7 +3,7 @@ import MembersPanel from '@/components/MembersPanel'
 
 import LayoutCard from '@/components/LayoutCard'
 
-describe('Table.vue', () => {
+describe('MembersPanel.vue', () => {
   it('renders', () => {
     const wrapper = shallowMount(MembersPanel)
     expect(wrapper).toMatchSnapshot()
