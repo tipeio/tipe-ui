@@ -16,17 +16,19 @@
 </template>
 
 <script>
+import vueTypes from 'vue-types'
 import { TipeTable } from '.'
-import { createManyMocks, user } from '../../mocks'
 import LayoutCard from '../LayoutCard'
 import TipeButton from '../Button'
 
 export default {
   name: 'MembersPanel',
   components: { LayoutCard, TipeTable, TipeButton },
+  props: {
+    members: vueTypes.array.isRequired
+  },
   data() {
     return {
-      members: createManyMocks(user, 12),
       modalOpen: false
     }
   },
