@@ -1,1 +1,1 @@
-export SimpleInput from './SimpleInput.vue'
+export { default } from './Input.vue'

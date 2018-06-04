@@ -1,9 +1,9 @@
 import { storiesOf } from '@storybook/vue'
 
-import { SimpleInput } from '../../src/components/Input'
+import TipeInput from '../../src/components/Input'
 
 storiesOf('Input', module).add('simple input', () => ({
-  components: { SimpleInput },
+  components: { TipeInput },
   template:
-    '<simple-input textLabel="Email" textPlaceholder="Type your email here" inputType="email" />'
+    '<tipe-input textLabel="Email" textPlaceholder="Type your email here" inputType="email" />'
 }))

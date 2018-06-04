@@ -9,14 +9,20 @@
       <p class="title">Add Member</p>
       <avatar-upload />
       <form>
-        <simple-input 
+        <tipe-input 
           text-label="Name" 
           input-type="text" 
+          class="name"
           text-placeholder="Type your name here"/>
-        <simple-input 
+        <tipe-input 
           text-label="Email" 
+          class="email"
           input-type="email" 
           text-placeholder="Type your email here"/>
+        <tipe-select 
+          :options="options" 
+          class="role" 
+          text-label="Role" />
       </form>
     </div>
   </div>
@@ -28,15 +34,24 @@ import Icon from '../Icon'
 import TipeButton from '../Button'
 import Seperator from '../Seperator'
 import AvatarUpload from '../AvatarUpload'
-import { SimpleInput } from '../Input'
+import TipeInput from '../Input'
+import TipeSelect from '../Select'
 
 export default {
   name: 'AddMember',
-  components: { Icon, TipeButton, Seperator, AvatarUpload, SimpleInput },
+  components: {
+    Icon,
+    TipeButton,
+    Seperator,
+    AvatarUpload,
+    TipeInput,
+    TipeSelect
+  },
   data() {
     return {
       members: createManyMocks(user, 12),
-      modalOpen: false
+      modalOpen: false,
+      options: ['Owner', 'Admin']
     }
   },
   methods: {
@@ -54,7 +69,7 @@ export default {
   background-color: #fff;
   border-radius: 1rem;
   width: 550px;
-  height: 600px;
+  max-height: 100%;
   grid-template-columns: 3rem auto 3rem;
   grid-template-rows: 3rem auto 0 6rem;
   grid-template-areas:
@@ -99,6 +114,24 @@ export default {
   & form {
     display: grid;
     grid-row-gap: 1.25rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas:
+      'name name'
+      'email email'
+      'role date';
+
+    & .name {
+      grid-area: name;
+    }
+
+    & .email {
+      grid-area: email;
+    }
+
+    & .role {
+      grid-area: role;
+    }
   }
 }
 

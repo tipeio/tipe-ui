@@ -14,7 +14,7 @@
 import vueTypes from 'vue-types'
 
 export default {
-  name: 'AvatarUpload',
+  name: 'TipeInput',
   props: {
     textPlaceholder: vueTypes.string.isRequired,
     textLabel: vueTypes.string.isRequired,
