@@ -4,8 +4,9 @@
     :user="user"
   >
     <section class="stage">
-      <header class="breadcrumbs-container">
+      <header class="stage__header">
         <tipe-breadcrumbs :links="breadcrumbLinks"/>
+        <tipe-button size="small">Cancel</tipe-button>
       </header>
       <section class="new-file-container">
         <tipe-new-file
@@ -26,13 +27,15 @@ import Link from '@/types/Link'
 import TipeDashboardLayout from '@/layouts/Dashboard'
 import TipeBreadcrumbs from '@/components/Breadcrumbs'
 import TipeNewFile from '@/components/NewFile'
+import TipeButton from '@/components/Button'
 
 export default {
   name: 'TipeNewFilePage',
   components: {
     TipeDashboardLayout,
     TipeBreadcrumbs,
-    TipeNewFile
+    TipeNewFile,
+    TipeButton
   },
   props: {
     user: vueTypes.shape(UserShape),
@@ -52,8 +55,9 @@ export default {
   width: 100%;
 }
 
-.breadcrumbs-container {
-  display: flex;
+.stage__header {
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-content: center;
   justify-items: flex-start;
   background-color: #f7f8fb;
