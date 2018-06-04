@@ -1726,10 +1726,6 @@ VueWrapper {
           "normalizedStyle": undefined,
           "on": undefined,
           "props": Object {
-            "onCheck": Object {
-              "default": [Function],
-              "type": [Function],
-            },
             "sublabel": Object {
               "default": "",
               "type": [Function],
@@ -3513,10 +3509,6 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
-              "onCheck": Object {
-                "default": [Function],
-                "type": [Function],
-              },
               "sublabel": Object {
                 "default": "",
                 "type": [Function],
@@ -5578,10 +5570,6 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "onCheck": Object {
-                        "default": [Function],
-                        "type": [Function],
-                      },
                       "sublabel": Object {
                         "default": "",
                         "type": [Function],
@@ -5711,10 +5699,6 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "onCheck": Object {
-                          "default": [Function],
-                          "type": [Function],
-                        },
                         "sublabel": Object {
                           "default": "",
                           "type": [Function],
@@ -6088,10 +6072,6 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "onCheck": Object {
-                        "default": [Function],
-                        "type": [Function],
-                      },
                       "sublabel": Object {
                         "default": "",
                         "type": [Function],
@@ -6221,10 +6201,6 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "onCheck": Object {
-                          "default": [Function],
-                          "type": [Function],
-                        },
                         "sublabel": Object {
                           "default": "",
                           "type": [Function],
@@ -6557,10 +6533,6 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
-                  "onCheck": Object {
-                    "default": [Function],
-                    "type": [Function],
-                  },
                   "sublabel": Object {
                     "default": "",
                     "type": [Function],
@@ -6690,10 +6662,6 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
-                    "onCheck": Object {
-                      "default": [Function],
-                      "type": [Function],
-                    },
                     "sublabel": Object {
                       "default": "",
                       "type": [Function],
@@ -7002,10 +6970,6 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
-                "onCheck": Object {
-                  "default": [Function],
-                  "type": [Function],
-                },
                 "sublabel": Object {
                   "default": "",
                   "type": [Function],
@@ -7135,10 +7099,6 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
-                  "onCheck": Object {
-                    "default": [Function],
-                    "type": [Function],
-                  },
                   "sublabel": Object {
                     "default": "",
                     "type": [Function],
@@ -7444,10 +7404,6 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
-                "onCheck": Object {
-                  "default": [Function],
-                  "type": [Function],
-                },
                 "sublabel": Object {
                   "default": "",
                   "type": [Function],
@@ -7577,10 +7533,6 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
-                  "onCheck": Object {
-                    "default": [Function],
-                    "type": [Function],
-                  },
                   "sublabel": Object {
                     "default": "",
                     "type": [Function],
@@ -7906,10 +7858,6 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "onCheck": Object {
-                        "default": [Function],
-                        "type": [Function],
-                      },
                       "sublabel": Object {
                         "default": "",
                         "type": [Function],
@@ -8039,10 +7987,6 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "onCheck": Object {
-                          "default": [Function],
-                          "type": [Function],
-                        },
                         "sublabel": Object {
                           "default": "",
                           "type": [Function],
@@ -8416,10 +8360,6 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "onCheck": Object {
-                        "default": [Function],
-                        "type": [Function],
-                      },
                       "sublabel": Object {
                         "default": "",
                         "type": [Function],
@@ -8549,10 +8489,6 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "onCheck": Object {
-                          "default": [Function],
-                          "type": [Function],
-                        },
                         "sublabel": Object {
                           "default": "",
                           "type": [Function],
@@ -8937,10 +8873,6 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "onCheck": Object {
-                          "default": [Function],
-                          "type": [Function],
-                        },
                         "sublabel": Object {
                           "default": "",
                           "type": [Function],
@@ -9070,10 +9002,6 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
-                          "onCheck": Object {
-                            "default": [Function],
-                            "type": [Function],
-                          },
                           "sublabel": Object {
                             "default": "",
                             "type": [Function],
@@ -9447,10 +9375,6 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "onCheck": Object {
-                          "default": [Function],
-                          "type": [Function],
-                        },
                         "sublabel": Object {
                           "default": "",
                           "type": [Function],
@@ -9580,10 +9504,6 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
-                          "onCheck": Object {
-                            "default": [Function],
-                            "type": [Function],
-                          },
                           "sublabel": Object {
                             "default": "",
                             "type": [Function],
@@ -9916,10 +9836,6 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
-                    "onCheck": Object {
-                      "default": [Function],
-                      "type": [Function],
-                    },
                     "sublabel": Object {
                       "default": "",
                       "type": [Function],
@@ -10049,10 +9965,6 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "onCheck": Object {
-                        "default": [Function],
-                        "type": [Function],
-                      },
                       "sublabel": Object {
                         "default": "",
                         "type": [Function],
@@ -10361,10 +10273,6 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
-                  "onCheck": Object {
-                    "default": [Function],
-                    "type": [Function],
-                  },
                   "sublabel": Object {
                     "default": "",
                     "type": [Function],
@@ -10494,10 +10402,6 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
-                    "onCheck": Object {
-                      "default": [Function],
-                      "type": [Function],
-                    },
                     "sublabel": Object {
                       "default": "",
                       "type": [Function],
@@ -10803,10 +10707,6 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
-                  "onCheck": Object {
-                    "default": [Function],
-                    "type": [Function],
-                  },
                   "sublabel": Object {
                     "default": "",
                     "type": [Function],
@@ -10936,10 +10836,6 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
-                    "onCheck": Object {
-                      "default": [Function],
-                      "type": [Function],
-                    },
                     "sublabel": Object {
                       "default": "",
                       "type": [Function],
@@ -11265,10 +11161,6 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "onCheck": Object {
-                          "default": [Function],
-                          "type": [Function],
-                        },
                         "sublabel": Object {
                           "default": "",
                           "type": [Function],
@@ -11398,10 +11290,6 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
-                          "onCheck": Object {
-                            "default": [Function],
-                            "type": [Function],
-                          },
                           "sublabel": Object {
                             "default": "",
                             "type": [Function],
@@ -11775,10 +11663,6 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "onCheck": Object {
-                          "default": [Function],
-                          "type": [Function],
-                        },
                         "sublabel": Object {
                           "default": "",
                           "type": [Function],
@@ -11908,10 +11792,6 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
-                          "onCheck": Object {
-                            "default": [Function],
-                            "type": [Function],
-                          },
                           "sublabel": Object {
                             "default": "",
                             "type": [Function],
@@ -12801,10 +12681,6 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
-                    "onCheck": Object {
-                      "default": [Function],
-                      "type": [Function],
-                    },
                     "sublabel": Object {
                       "default": "",
                       "type": [Function],
@@ -13310,10 +13186,6 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "onCheck": Object {
-                        "default": [Function],
-                        "type": [Function],
-                      },
                       "sublabel": Object {
                         "default": "",
                         "type": [Function],
@@ -14065,10 +13937,6 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
-                    "onCheck": Object {
-                      "default": [Function],
-                      "type": [Function],
-                    },
                     "sublabel": Object {
                       "default": "",
                       "type": [Function],
@@ -14576,10 +14444,6 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "onCheck": Object {
-                        "default": [Function],
-                        "type": [Function],
-                      },
                       "sublabel": Object {
                         "default": "",
                         "type": [Function],
@@ -15618,10 +15482,6 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
-              "onCheck": Object {
-                "default": [Function],
-                "type": [Function],
-              },
               "sublabel": Object {
                 "default": "",
                 "type": [Function],
@@ -16451,10 +16311,6 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
-                "onCheck": Object {
-                  "default": [Function],
-                  "type": [Function],
-                },
                 "sublabel": Object {
                   "default": "",
                   "type": [Function],
