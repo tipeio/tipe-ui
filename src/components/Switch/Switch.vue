@@ -28,8 +28,7 @@ export default {
   props: {
     text: vueTypes.string.isRequired,
     sublabel: vueTypes.string,
-    value: vueTypes.boolean,
-    onCheck: vueTypes.func
+    value: vueTypes.boolean
   },
   methods: {
     onChange(event) {

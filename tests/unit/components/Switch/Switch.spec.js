@@ -46,15 +46,4 @@ describe('Progress.vue', () => {
     })
     expect(wrapper.props().value).toBe(true)
   })
-  it('should call onCheck prop on check', () => {
-    const action = jest.fn()
-    const wrapper = shallowMount(TipeSwitch, {
-      propsData: {
-        text: 'Share Location',
-        onCheck: action
-      }
-    })
-    wrapper.find('input').trigger('click')
-    expect(action.mock.calls).toHaveLength(1)
-  })
 })

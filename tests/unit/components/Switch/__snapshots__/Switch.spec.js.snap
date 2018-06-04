@@ -23,7 +23,6 @@ VueWrapper {
         <input
           id="Share Location-switch"
           type="checkbox"
-          value=""
         />
          
         <span
@@ -64,7 +63,6 @@ VueWrapper {
           <input
             id="Share Location-switch"
             type="checkbox"
-            value=""
           />
            
           <span
@@ -87,7 +85,6 @@ VueWrapper {
         "text",
         "sublabel",
         "value",
-        "onCheck",
       ],
       "_refElm": null,
       "beforeCreate": Array [
@@ -109,17 +106,14 @@ VueWrapper {
           "render": [Function],
         },
       },
-      "data": [Function],
       "directives": Object {},
       "filters": Object {},
       "logModifiedComponents": true,
-      "methods": undefined,
+      "methods": Object {
+        "onChange": [Function],
+      },
       "name": "TipeSwitch",
       "props": Object {
-        "onCheck": Object {
-          "default": [Function],
-          "type": [Function],
-        },
         "sublabel": Object {
           "default": "",
           "type": [Function],
@@ -139,7 +133,6 @@ VueWrapper {
       "provide": [Function],
       "render": [Function],
       "staticRenderFns": Array [],
-      "watch": Object {},
     },
     "$parent": undefined,
     "$refs": Object {},
@@ -150,9 +143,7 @@ VueWrapper {
     "__emitted": Object {},
     "__emittedByOrder": Array [],
     "_c": [Function],
-    "_data": Object {
-      "inputVal": undefined,
-    },
+    "_data": Object {},
     "_directInactive": false,
     "_events": Object {},
     "_hasHookEvent": false,
@@ -162,7 +153,6 @@ VueWrapper {
     "_isMounted": true,
     "_isVue": true,
     "_props": Object {
-      "onCheck": [Function],
       "sublabel": "",
       "text": "Share Location",
       "value": undefined,
@@ -191,7 +181,6 @@ VueWrapper {
             <input
               id="Share Location-switch"
               type="checkbox"
-              value=""
             />
              
             <span
@@ -214,7 +203,6 @@ VueWrapper {
           "text",
           "sublabel",
           "value",
-          "onCheck",
         ],
         "_refElm": null,
         "beforeCreate": Array [
@@ -236,17 +224,14 @@ VueWrapper {
             "render": [Function],
           },
         },
-        "data": [Function],
         "directives": Object {},
         "filters": Object {},
         "logModifiedComponents": true,
-        "methods": undefined,
+        "methods": Object {
+          "onChange": [Function],
+        },
         "name": "TipeSwitch",
         "props": Object {
-          "onCheck": Object {
-            "default": [Function],
-            "type": [Function],
-          },
           "sublabel": Object {
             "default": "",
             "type": [Function],
@@ -266,7 +251,6 @@ VueWrapper {
         "provide": [Function],
         "render": [Function],
         "staticRenderFns": Array [],
-        "watch": Object {},
       },
       "$parent": undefined,
       "$refs": Object {},
@@ -277,9 +261,7 @@ VueWrapper {
       "__emitted": Object {},
       "__emittedByOrder": Array [],
       "_c": [Function],
-      "_data": Object {
-        "inputVal": undefined,
-      },
+      "_data": Object {},
       "_directInactive": false,
       "_events": Object {},
       "_hasHookEvent": false,
@@ -289,7 +271,6 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "onCheck": [Function],
         "sublabel": "",
         "text": "Share Location",
         "value": undefined,
@@ -409,25 +390,8 @@ VueWrapper {
                         "id": "Share Location-switch",
                         "type": "checkbox",
                       },
-                      "directives": Array [
-                        Object {
-                          "def": Object {
-                            "componentUpdated": [Function],
-                            "inserted": [Function],
-                          },
-                          "expression": "inputVal",
-                          "modifiers": Object {},
-                          "name": "model",
-                          "rawName": "v-model",
-                          "value": undefined,
-                        },
-                      ],
                       "domProps": Object {
                         "checked": undefined,
-                        "value": undefined,
-                      },
-                      "hook": Object {
-                        "insert": [Function],
                       },
                       "on": Object {
                         "change": [Function],
@@ -436,7 +400,6 @@ VueWrapper {
                     "elm": <input
                       id="Share Location-switch"
                       type="checkbox"
-                      value=""
                     />,
                     "fnContext": undefined,
                     "fnOptions": undefined,
@@ -521,7 +484,6 @@ VueWrapper {
                   <input
                     id="Share Location-switch"
                     type="checkbox"
-                    value=""
                   />
                    
                   <span
@@ -567,7 +529,6 @@ VueWrapper {
                 <input
                   id="Share Location-switch"
                   type="checkbox"
-                  value=""
                 />
                  
                 <span
@@ -667,7 +628,6 @@ VueWrapper {
               <input
                 id="Share Location-switch"
                 type="checkbox"
-                value=""
               />
                
               <span
@@ -700,7 +660,6 @@ VueWrapper {
         "deep": false,
         "depIds": Set {
           2,
-          7,
           4,
           3,
         },
@@ -709,35 +668,6 @@ VueWrapper {
             "_sortedId": 0,
             "id": 2,
             "subs": Array [
-              [Circular],
-            ],
-          },
-          Dep {
-            "_sortedId": 0,
-            "id": 7,
-            "subs": Array [
-              Watcher {
-                "active": true,
-                "cb": [Function],
-                "deep": false,
-                "depIds": Set {
-                  7,
-                },
-                "deps": Array [
-                  [Circular],
-                ],
-                "dirty": false,
-                "expression": "inputVal",
-                "getter": [Function],
-                "id": 1,
-                "lazy": false,
-                "newDepIds": Set {},
-                "newDeps": Array [],
-                "sync": true,
-                "user": true,
-                "value": undefined,
-                "vm": [Circular],
-              },
               [Circular],
             ],
           },
@@ -761,7 +691,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
         "getter": [Function],
-        "id": 2,
+        "id": 1,
         "lazy": false,
         "newDepIds": Set {},
         "newDeps": Array [],
@@ -776,84 +706,7 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
-            7,
-          },
-          "deps": Array [
-            Dep {
-              "_sortedId": 0,
-              "id": 7,
-              "subs": Array [
-                [Circular],
-                Watcher {
-                  "active": true,
-                  "cb": [Function],
-                  "deep": false,
-                  "depIds": Set {
-                    2,
-                    7,
-                    4,
-                    3,
-                  },
-                  "deps": Array [
-                    Dep {
-                      "_sortedId": 0,
-                      "id": 2,
-                      "subs": Array [
-                        [Circular],
-                      ],
-                    },
-                    [Circular],
-                    Dep {
-                      "_sortedId": 0,
-                      "id": 4,
-                      "subs": Array [
-                        [Circular],
-                      ],
-                    },
-                    Dep {
-                      "_sortedId": 0,
-                      "id": 3,
-                      "subs": Array [
-                        [Circular],
-                      ],
-                    },
-                  ],
-                  "dirty": false,
-                  "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                  "getter": [Function],
-                  "id": 2,
-                  "lazy": false,
-                  "newDepIds": Set {},
-                  "newDeps": Array [],
-                  "sync": true,
-                  "user": false,
-                  "value": undefined,
-                  "vm": [Circular],
-                },
-              ],
-            },
-          ],
-          "dirty": false,
-          "expression": "inputVal",
-          "getter": [Function],
-          "id": 1,
-          "lazy": false,
-          "newDepIds": Set {},
-          "newDeps": Array [],
-          "sync": true,
-          "user": true,
-          "value": undefined,
-          "vm": [Circular],
-        },
-        Watcher {
-          "active": true,
-          "cb": [Function],
-          "deep": false,
-          "depIds": Set {
             2,
-            7,
             4,
             3,
           },
@@ -862,35 +715,6 @@ VueWrapper {
               "_sortedId": 0,
               "id": 2,
               "subs": Array [
-                [Circular],
-              ],
-            },
-            Dep {
-              "_sortedId": 0,
-              "id": 7,
-              "subs": Array [
-                Watcher {
-                  "active": true,
-                  "cb": [Function],
-                  "deep": false,
-                  "depIds": Set {
-                    7,
-                  },
-                  "deps": Array [
-                    [Circular],
-                  ],
-                  "dirty": false,
-                  "expression": "inputVal",
-                  "getter": [Function],
-                  "id": 1,
-                  "lazy": false,
-                  "newDepIds": Set {},
-                  "newDeps": Array [],
-                  "sync": true,
-                  "user": true,
-                  "value": undefined,
-                  "vm": [Circular],
-                },
                 [Circular],
               ],
             },
@@ -914,7 +738,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
           "getter": [Function],
-          "id": 2,
+          "id": 1,
           "lazy": false,
           "newDepIds": Set {},
           "newDeps": Array [],
@@ -924,7 +748,7 @@ VueWrapper {
           "vm": [Circular],
         },
       ],
-      "inputVal": undefined,
+      "onChange": [Function],
     },
     "_self": [Circular],
     "_staticTrees": null,
@@ -1039,25 +863,8 @@ VueWrapper {
                       "id": "Share Location-switch",
                       "type": "checkbox",
                     },
-                    "directives": Array [
-                      Object {
-                        "def": Object {
-                          "componentUpdated": [Function],
-                          "inserted": [Function],
-                        },
-                        "expression": "inputVal",
-                        "modifiers": Object {},
-                        "name": "model",
-                        "rawName": "v-model",
-                        "value": undefined,
-                      },
-                    ],
                     "domProps": Object {
                       "checked": undefined,
-                      "value": undefined,
-                    },
-                    "hook": Object {
-                      "insert": [Function],
                     },
                     "on": Object {
                       "change": [Function],
@@ -1066,7 +873,6 @@ VueWrapper {
                   "elm": <input
                     id="Share Location-switch"
                     type="checkbox"
-                    value=""
                   />,
                   "fnContext": undefined,
                   "fnOptions": undefined,
@@ -1151,7 +957,6 @@ VueWrapper {
                 <input
                   id="Share Location-switch"
                   type="checkbox"
-                  value=""
                 />
                  
                 <span
@@ -1197,7 +1002,6 @@ VueWrapper {
               <input
                 id="Share Location-switch"
                 type="checkbox"
-                value=""
               />
                
               <span
@@ -1297,7 +1101,6 @@ VueWrapper {
             <input
               id="Share Location-switch"
               type="checkbox"
-              value=""
             />
              
             <span
@@ -1330,7 +1133,6 @@ VueWrapper {
       "deep": false,
       "depIds": Set {
         2,
-        7,
         4,
         3,
       },
@@ -1339,35 +1141,6 @@ VueWrapper {
           "_sortedId": 0,
           "id": 2,
           "subs": Array [
-            [Circular],
-          ],
-        },
-        Dep {
-          "_sortedId": 0,
-          "id": 7,
-          "subs": Array [
-            Watcher {
-              "active": true,
-              "cb": [Function],
-              "deep": false,
-              "depIds": Set {
-                7,
-              },
-              "deps": Array [
-                [Circular],
-              ],
-              "dirty": false,
-              "expression": "inputVal",
-              "getter": [Function],
-              "id": 1,
-              "lazy": false,
-              "newDepIds": Set {},
-              "newDeps": Array [],
-              "sync": true,
-              "user": true,
-              "value": undefined,
-              "vm": [Circular],
-            },
             [Circular],
           ],
         },
@@ -1391,7 +1164,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
       "getter": [Function],
-      "id": 2,
+      "id": 1,
       "lazy": false,
       "newDepIds": Set {},
       "newDeps": Array [],
@@ -1406,84 +1179,7 @@ VueWrapper {
         "cb": [Function],
         "deep": false,
         "depIds": Set {
-          7,
-        },
-        "deps": Array [
-          Dep {
-            "_sortedId": 0,
-            "id": 7,
-            "subs": Array [
-              [Circular],
-              Watcher {
-                "active": true,
-                "cb": [Function],
-                "deep": false,
-                "depIds": Set {
-                  2,
-                  7,
-                  4,
-                  3,
-                },
-                "deps": Array [
-                  Dep {
-                    "_sortedId": 0,
-                    "id": 2,
-                    "subs": Array [
-                      [Circular],
-                    ],
-                  },
-                  [Circular],
-                  Dep {
-                    "_sortedId": 0,
-                    "id": 4,
-                    "subs": Array [
-                      [Circular],
-                    ],
-                  },
-                  Dep {
-                    "_sortedId": 0,
-                    "id": 3,
-                    "subs": Array [
-                      [Circular],
-                    ],
-                  },
-                ],
-                "dirty": false,
-                "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                "getter": [Function],
-                "id": 2,
-                "lazy": false,
-                "newDepIds": Set {},
-                "newDeps": Array [],
-                "sync": true,
-                "user": false,
-                "value": undefined,
-                "vm": [Circular],
-              },
-            ],
-          },
-        ],
-        "dirty": false,
-        "expression": "inputVal",
-        "getter": [Function],
-        "id": 1,
-        "lazy": false,
-        "newDepIds": Set {},
-        "newDeps": Array [],
-        "sync": true,
-        "user": true,
-        "value": undefined,
-        "vm": [Circular],
-      },
-      Watcher {
-        "active": true,
-        "cb": [Function],
-        "deep": false,
-        "depIds": Set {
           2,
-          7,
           4,
           3,
         },
@@ -1492,35 +1188,6 @@ VueWrapper {
             "_sortedId": 0,
             "id": 2,
             "subs": Array [
-              [Circular],
-            ],
-          },
-          Dep {
-            "_sortedId": 0,
-            "id": 7,
-            "subs": Array [
-              Watcher {
-                "active": true,
-                "cb": [Function],
-                "deep": false,
-                "depIds": Set {
-                  7,
-                },
-                "deps": Array [
-                  [Circular],
-                ],
-                "dirty": false,
-                "expression": "inputVal",
-                "getter": [Function],
-                "id": 1,
-                "lazy": false,
-                "newDepIds": Set {},
-                "newDeps": Array [],
-                "sync": true,
-                "user": true,
-                "value": undefined,
-                "vm": [Circular],
-              },
               [Circular],
             ],
           },
@@ -1544,7 +1211,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
         "getter": [Function],
-        "id": 2,
+        "id": 1,
         "lazy": false,
         "newDepIds": Set {},
         "newDeps": Array [],
@@ -1554,7 +1221,7 @@ VueWrapper {
         "vm": [Circular],
       },
     ],
-    "inputVal": undefined,
+    "onChange": [Function],
   },
   "vnode": VNode {
     "asyncFactory": undefined,
@@ -1619,7 +1286,6 @@ VueWrapper {
                     <input
                       id="Share Location-switch"
                       type="checkbox"
-                      value=""
                     />
                      
                     <span
@@ -1642,7 +1308,6 @@ VueWrapper {
                   "text",
                   "sublabel",
                   "value",
-                  "onCheck",
                 ],
                 "_refElm": null,
                 "beforeCreate": Array [
@@ -1664,17 +1329,14 @@ VueWrapper {
                     "render": [Function],
                   },
                 },
-                "data": [Function],
                 "directives": Object {},
                 "filters": Object {},
                 "logModifiedComponents": true,
-                "methods": undefined,
+                "methods": Object {
+                  "onChange": [Function],
+                },
                 "name": "TipeSwitch",
                 "props": Object {
-                  "onCheck": Object {
-                    "default": [Function],
-                    "type": [Function],
-                  },
                   "sublabel": Object {
                     "default": "",
                     "type": [Function],
@@ -1694,7 +1356,6 @@ VueWrapper {
                 "provide": [Function],
                 "render": [Function],
                 "staticRenderFns": Array [],
-                "watch": Object {},
               },
               "$parent": undefined,
               "$refs": Object {},
@@ -1705,9 +1366,7 @@ VueWrapper {
               "__emitted": Object {},
               "__emittedByOrder": Array [],
               "_c": [Function],
-              "_data": Object {
-                "inputVal": undefined,
-              },
+              "_data": Object {},
               "_directInactive": false,
               "_events": Object {},
               "_hasHookEvent": false,
@@ -1717,7 +1376,6 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "onCheck": [Function],
                 "sublabel": "",
                 "text": "Share Location",
                 "value": undefined,
@@ -1746,7 +1404,6 @@ VueWrapper {
                       <input
                         id="Share Location-switch"
                         type="checkbox"
-                        value=""
                       />
                        
                       <span
@@ -1769,7 +1426,6 @@ VueWrapper {
                     "text",
                     "sublabel",
                     "value",
-                    "onCheck",
                   ],
                   "_refElm": null,
                   "beforeCreate": Array [
@@ -1791,17 +1447,14 @@ VueWrapper {
                       "render": [Function],
                     },
                   },
-                  "data": [Function],
                   "directives": Object {},
                   "filters": Object {},
                   "logModifiedComponents": true,
-                  "methods": undefined,
+                  "methods": Object {
+                    "onChange": [Function],
+                  },
                   "name": "TipeSwitch",
                   "props": Object {
-                    "onCheck": Object {
-                      "default": [Function],
-                      "type": [Function],
-                    },
                     "sublabel": Object {
                       "default": "",
                       "type": [Function],
@@ -1821,7 +1474,6 @@ VueWrapper {
                   "provide": [Function],
                   "render": [Function],
                   "staticRenderFns": Array [],
-                  "watch": Object {},
                 },
                 "$parent": undefined,
                 "$refs": Object {},
@@ -1832,9 +1484,7 @@ VueWrapper {
                 "__emitted": Object {},
                 "__emittedByOrder": Array [],
                 "_c": [Function],
-                "_data": Object {
-                  "inputVal": undefined,
-                },
+                "_data": Object {},
                 "_directInactive": false,
                 "_events": Object {},
                 "_hasHookEvent": false,
@@ -1844,7 +1494,6 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "onCheck": [Function],
                   "sublabel": "",
                   "text": "Share Location",
                   "value": undefined,
@@ -1861,7 +1510,6 @@ VueWrapper {
                   "deep": false,
                   "depIds": Set {
                     2,
-                    7,
                     4,
                     3,
                   },
@@ -1870,35 +1518,6 @@ VueWrapper {
                       "_sortedId": 0,
                       "id": 2,
                       "subs": Array [
-                        [Circular],
-                      ],
-                    },
-                    Dep {
-                      "_sortedId": 0,
-                      "id": 7,
-                      "subs": Array [
-                        Watcher {
-                          "active": true,
-                          "cb": [Function],
-                          "deep": false,
-                          "depIds": Set {
-                            7,
-                          },
-                          "deps": Array [
-                            [Circular],
-                          ],
-                          "dirty": false,
-                          "expression": "inputVal",
-                          "getter": [Function],
-                          "id": 1,
-                          "lazy": false,
-                          "newDepIds": Set {},
-                          "newDeps": Array [],
-                          "sync": true,
-                          "user": true,
-                          "value": undefined,
-                          "vm": [Circular],
-                        },
                         [Circular],
                       ],
                     },
@@ -1922,7 +1541,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                   "getter": [Function],
-                  "id": 2,
+                  "id": 1,
                   "lazy": false,
                   "newDepIds": Set {},
                   "newDeps": Array [],
@@ -1937,84 +1556,7 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      7,
-                    },
-                    "deps": Array [
-                      Dep {
-                        "_sortedId": 0,
-                        "id": 7,
-                        "subs": Array [
-                          [Circular],
-                          Watcher {
-                            "active": true,
-                            "cb": [Function],
-                            "deep": false,
-                            "depIds": Set {
-                              2,
-                              7,
-                              4,
-                              3,
-                            },
-                            "deps": Array [
-                              Dep {
-                                "_sortedId": 0,
-                                "id": 2,
-                                "subs": Array [
-                                  [Circular],
-                                ],
-                              },
-                              [Circular],
-                              Dep {
-                                "_sortedId": 0,
-                                "id": 4,
-                                "subs": Array [
-                                  [Circular],
-                                ],
-                              },
-                              Dep {
-                                "_sortedId": 0,
-                                "id": 3,
-                                "subs": Array [
-                                  [Circular],
-                                ],
-                              },
-                            ],
-                            "dirty": false,
-                            "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                            "getter": [Function],
-                            "id": 2,
-                            "lazy": false,
-                            "newDepIds": Set {},
-                            "newDeps": Array [],
-                            "sync": true,
-                            "user": false,
-                            "value": undefined,
-                            "vm": [Circular],
-                          },
-                        ],
-                      },
-                    ],
-                    "dirty": false,
-                    "expression": "inputVal",
-                    "getter": [Function],
-                    "id": 1,
-                    "lazy": false,
-                    "newDepIds": Set {},
-                    "newDeps": Array [],
-                    "sync": true,
-                    "user": true,
-                    "value": undefined,
-                    "vm": [Circular],
-                  },
-                  Watcher {
-                    "active": true,
-                    "cb": [Function],
-                    "deep": false,
-                    "depIds": Set {
                       2,
-                      7,
                       4,
                       3,
                     },
@@ -2023,35 +1565,6 @@ VueWrapper {
                         "_sortedId": 0,
                         "id": 2,
                         "subs": Array [
-                          [Circular],
-                        ],
-                      },
-                      Dep {
-                        "_sortedId": 0,
-                        "id": 7,
-                        "subs": Array [
-                          Watcher {
-                            "active": true,
-                            "cb": [Function],
-                            "deep": false,
-                            "depIds": Set {
-                              7,
-                            },
-                            "deps": Array [
-                              [Circular],
-                            ],
-                            "dirty": false,
-                            "expression": "inputVal",
-                            "getter": [Function],
-                            "id": 1,
-                            "lazy": false,
-                            "newDepIds": Set {},
-                            "newDeps": Array [],
-                            "sync": true,
-                            "user": true,
-                            "value": undefined,
-                            "vm": [Circular],
-                          },
                           [Circular],
                         ],
                       },
@@ -2075,7 +1588,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                     "getter": [Function],
-                    "id": 2,
+                    "id": 1,
                     "lazy": false,
                     "newDepIds": Set {},
                     "newDeps": Array [],
@@ -2085,7 +1598,7 @@ VueWrapper {
                     "vm": [Circular],
                   },
                 ],
-                "inputVal": undefined,
+                "onChange": [Function],
               },
               "_self": [Circular],
               "_staticTrees": null,
@@ -2097,7 +1610,6 @@ VueWrapper {
                 "deep": false,
                 "depIds": Set {
                   2,
-                  7,
                   4,
                   3,
                 },
@@ -2106,35 +1618,6 @@ VueWrapper {
                     "_sortedId": 0,
                     "id": 2,
                     "subs": Array [
-                      [Circular],
-                    ],
-                  },
-                  Dep {
-                    "_sortedId": 0,
-                    "id": 7,
-                    "subs": Array [
-                      Watcher {
-                        "active": true,
-                        "cb": [Function],
-                        "deep": false,
-                        "depIds": Set {
-                          7,
-                        },
-                        "deps": Array [
-                          [Circular],
-                        ],
-                        "dirty": false,
-                        "expression": "inputVal",
-                        "getter": [Function],
-                        "id": 1,
-                        "lazy": false,
-                        "newDepIds": Set {},
-                        "newDeps": Array [],
-                        "sync": true,
-                        "user": true,
-                        "value": undefined,
-                        "vm": [Circular],
-                      },
                       [Circular],
                     ],
                   },
@@ -2158,7 +1641,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                 "getter": [Function],
-                "id": 2,
+                "id": 1,
                 "lazy": false,
                 "newDepIds": Set {},
                 "newDeps": Array [],
@@ -2173,84 +1656,7 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    7,
-                  },
-                  "deps": Array [
-                    Dep {
-                      "_sortedId": 0,
-                      "id": 7,
-                      "subs": Array [
-                        [Circular],
-                        Watcher {
-                          "active": true,
-                          "cb": [Function],
-                          "deep": false,
-                          "depIds": Set {
-                            2,
-                            7,
-                            4,
-                            3,
-                          },
-                          "deps": Array [
-                            Dep {
-                              "_sortedId": 0,
-                              "id": 2,
-                              "subs": Array [
-                                [Circular],
-                              ],
-                            },
-                            [Circular],
-                            Dep {
-                              "_sortedId": 0,
-                              "id": 4,
-                              "subs": Array [
-                                [Circular],
-                              ],
-                            },
-                            Dep {
-                              "_sortedId": 0,
-                              "id": 3,
-                              "subs": Array [
-                                [Circular],
-                              ],
-                            },
-                          ],
-                          "dirty": false,
-                          "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                          "getter": [Function],
-                          "id": 2,
-                          "lazy": false,
-                          "newDepIds": Set {},
-                          "newDeps": Array [],
-                          "sync": true,
-                          "user": false,
-                          "value": undefined,
-                          "vm": [Circular],
-                        },
-                      ],
-                    },
-                  ],
-                  "dirty": false,
-                  "expression": "inputVal",
-                  "getter": [Function],
-                  "id": 1,
-                  "lazy": false,
-                  "newDepIds": Set {},
-                  "newDeps": Array [],
-                  "sync": true,
-                  "user": true,
-                  "value": undefined,
-                  "vm": [Circular],
-                },
-                Watcher {
-                  "active": true,
-                  "cb": [Function],
-                  "deep": false,
-                  "depIds": Set {
                     2,
-                    7,
                     4,
                     3,
                   },
@@ -2259,35 +1665,6 @@ VueWrapper {
                       "_sortedId": 0,
                       "id": 2,
                       "subs": Array [
-                        [Circular],
-                      ],
-                    },
-                    Dep {
-                      "_sortedId": 0,
-                      "id": 7,
-                      "subs": Array [
-                        Watcher {
-                          "active": true,
-                          "cb": [Function],
-                          "deep": false,
-                          "depIds": Set {
-                            7,
-                          },
-                          "deps": Array [
-                            [Circular],
-                          ],
-                          "dirty": false,
-                          "expression": "inputVal",
-                          "getter": [Function],
-                          "id": 1,
-                          "lazy": false,
-                          "newDepIds": Set {},
-                          "newDeps": Array [],
-                          "sync": true,
-                          "user": true,
-                          "value": undefined,
-                          "vm": [Circular],
-                        },
                         [Circular],
                       ],
                     },
@@ -2311,7 +1688,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                   "getter": [Function],
-                  "id": 2,
+                  "id": 1,
                   "lazy": false,
                   "newDepIds": Set {},
                   "newDeps": Array [],
@@ -2321,7 +1698,7 @@ VueWrapper {
                   "vm": [Circular],
                 },
               ],
-              "inputVal": undefined,
+              "onChange": [Function],
             },
             "data": Object {
               "attrs": Object {
@@ -2409,7 +1786,6 @@ VueWrapper {
                         <input
                           id="Share Location-switch"
                           type="checkbox"
-                          value=""
                         />
                          
                         <span
@@ -2432,7 +1808,6 @@ VueWrapper {
                       "text",
                       "sublabel",
                       "value",
-                      "onCheck",
                     ],
                     "_refElm": null,
                     "beforeCreate": Array [
@@ -2454,17 +1829,14 @@ VueWrapper {
                         "render": [Function],
                       },
                     },
-                    "data": [Function],
                     "directives": Object {},
                     "filters": Object {},
                     "logModifiedComponents": true,
-                    "methods": undefined,
+                    "methods": Object {
+                      "onChange": [Function],
+                    },
                     "name": "TipeSwitch",
                     "props": Object {
-                      "onCheck": Object {
-                        "default": [Function],
-                        "type": [Function],
-                      },
                       "sublabel": Object {
                         "default": "",
                         "type": [Function],
@@ -2484,7 +1856,6 @@ VueWrapper {
                     "provide": [Function],
                     "render": [Function],
                     "staticRenderFns": Array [],
-                    "watch": Object {},
                   },
                   "$parent": undefined,
                   "$refs": Object {},
@@ -2495,9 +1866,7 @@ VueWrapper {
                   "__emitted": Object {},
                   "__emittedByOrder": Array [],
                   "_c": [Function],
-                  "_data": Object {
-                    "inputVal": undefined,
-                  },
+                  "_data": Object {},
                   "_directInactive": false,
                   "_events": Object {},
                   "_hasHookEvent": false,
@@ -2507,7 +1876,6 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "onCheck": [Function],
                     "sublabel": "",
                     "text": "Share Location",
                     "value": undefined,
@@ -2536,7 +1904,6 @@ VueWrapper {
                           <input
                             id="Share Location-switch"
                             type="checkbox"
-                            value=""
                           />
                            
                           <span
@@ -2559,7 +1926,6 @@ VueWrapper {
                         "text",
                         "sublabel",
                         "value",
-                        "onCheck",
                       ],
                       "_refElm": null,
                       "beforeCreate": Array [
@@ -2581,17 +1947,14 @@ VueWrapper {
                           "render": [Function],
                         },
                       },
-                      "data": [Function],
                       "directives": Object {},
                       "filters": Object {},
                       "logModifiedComponents": true,
-                      "methods": undefined,
+                      "methods": Object {
+                        "onChange": [Function],
+                      },
                       "name": "TipeSwitch",
                       "props": Object {
-                        "onCheck": Object {
-                          "default": [Function],
-                          "type": [Function],
-                        },
                         "sublabel": Object {
                           "default": "",
                           "type": [Function],
@@ -2611,7 +1974,6 @@ VueWrapper {
                       "provide": [Function],
                       "render": [Function],
                       "staticRenderFns": Array [],
-                      "watch": Object {},
                     },
                     "$parent": undefined,
                     "$refs": Object {},
@@ -2622,9 +1984,7 @@ VueWrapper {
                     "__emitted": Object {},
                     "__emittedByOrder": Array [],
                     "_c": [Function],
-                    "_data": Object {
-                      "inputVal": undefined,
-                    },
+                    "_data": Object {},
                     "_directInactive": false,
                     "_events": Object {},
                     "_hasHookEvent": false,
@@ -2634,7 +1994,6 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
-                      "onCheck": [Function],
                       "sublabel": "",
                       "text": "Share Location",
                       "value": undefined,
@@ -2651,7 +2010,6 @@ VueWrapper {
                       "deep": false,
                       "depIds": Set {
                         2,
-                        7,
                         4,
                         3,
                       },
@@ -2660,35 +2018,6 @@ VueWrapper {
                           "_sortedId": 0,
                           "id": 2,
                           "subs": Array [
-                            [Circular],
-                          ],
-                        },
-                        Dep {
-                          "_sortedId": 0,
-                          "id": 7,
-                          "subs": Array [
-                            Watcher {
-                              "active": true,
-                              "cb": [Function],
-                              "deep": false,
-                              "depIds": Set {
-                                7,
-                              },
-                              "deps": Array [
-                                [Circular],
-                              ],
-                              "dirty": false,
-                              "expression": "inputVal",
-                              "getter": [Function],
-                              "id": 1,
-                              "lazy": false,
-                              "newDepIds": Set {},
-                              "newDeps": Array [],
-                              "sync": true,
-                              "user": true,
-                              "value": undefined,
-                              "vm": [Circular],
-                            },
                             [Circular],
                           ],
                         },
@@ -2712,7 +2041,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                       "getter": [Function],
-                      "id": 2,
+                      "id": 1,
                       "lazy": false,
                       "newDepIds": Set {},
                       "newDeps": Array [],
@@ -2727,84 +2056,7 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
-                          7,
-                        },
-                        "deps": Array [
-                          Dep {
-                            "_sortedId": 0,
-                            "id": 7,
-                            "subs": Array [
-                              [Circular],
-                              Watcher {
-                                "active": true,
-                                "cb": [Function],
-                                "deep": false,
-                                "depIds": Set {
-                                  2,
-                                  7,
-                                  4,
-                                  3,
-                                },
-                                "deps": Array [
-                                  Dep {
-                                    "_sortedId": 0,
-                                    "id": 2,
-                                    "subs": Array [
-                                      [Circular],
-                                    ],
-                                  },
-                                  [Circular],
-                                  Dep {
-                                    "_sortedId": 0,
-                                    "id": 4,
-                                    "subs": Array [
-                                      [Circular],
-                                    ],
-                                  },
-                                  Dep {
-                                    "_sortedId": 0,
-                                    "id": 3,
-                                    "subs": Array [
-                                      [Circular],
-                                    ],
-                                  },
-                                ],
-                                "dirty": false,
-                                "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                                "getter": [Function],
-                                "id": 2,
-                                "lazy": false,
-                                "newDepIds": Set {},
-                                "newDeps": Array [],
-                                "sync": true,
-                                "user": false,
-                                "value": undefined,
-                                "vm": [Circular],
-                              },
-                            ],
-                          },
-                        ],
-                        "dirty": false,
-                        "expression": "inputVal",
-                        "getter": [Function],
-                        "id": 1,
-                        "lazy": false,
-                        "newDepIds": Set {},
-                        "newDeps": Array [],
-                        "sync": true,
-                        "user": true,
-                        "value": undefined,
-                        "vm": [Circular],
-                      },
-                      Watcher {
-                        "active": true,
-                        "cb": [Function],
-                        "deep": false,
-                        "depIds": Set {
                           2,
-                          7,
                           4,
                           3,
                         },
@@ -2813,35 +2065,6 @@ VueWrapper {
                             "_sortedId": 0,
                             "id": 2,
                             "subs": Array [
-                              [Circular],
-                            ],
-                          },
-                          Dep {
-                            "_sortedId": 0,
-                            "id": 7,
-                            "subs": Array [
-                              Watcher {
-                                "active": true,
-                                "cb": [Function],
-                                "deep": false,
-                                "depIds": Set {
-                                  7,
-                                },
-                                "deps": Array [
-                                  [Circular],
-                                ],
-                                "dirty": false,
-                                "expression": "inputVal",
-                                "getter": [Function],
-                                "id": 1,
-                                "lazy": false,
-                                "newDepIds": Set {},
-                                "newDeps": Array [],
-                                "sync": true,
-                                "user": true,
-                                "value": undefined,
-                                "vm": [Circular],
-                              },
                               [Circular],
                             ],
                           },
@@ -2865,7 +2088,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                         "getter": [Function],
-                        "id": 2,
+                        "id": 1,
                         "lazy": false,
                         "newDepIds": Set {},
                         "newDeps": Array [],
@@ -2875,7 +2098,7 @@ VueWrapper {
                         "vm": [Circular],
                       },
                     ],
-                    "inputVal": undefined,
+                    "onChange": [Function],
                   },
                   "_self": [Circular],
                   "_staticTrees": null,
@@ -2887,7 +2110,6 @@ VueWrapper {
                     "deep": false,
                     "depIds": Set {
                       2,
-                      7,
                       4,
                       3,
                     },
@@ -2896,35 +2118,6 @@ VueWrapper {
                         "_sortedId": 0,
                         "id": 2,
                         "subs": Array [
-                          [Circular],
-                        ],
-                      },
-                      Dep {
-                        "_sortedId": 0,
-                        "id": 7,
-                        "subs": Array [
-                          Watcher {
-                            "active": true,
-                            "cb": [Function],
-                            "deep": false,
-                            "depIds": Set {
-                              7,
-                            },
-                            "deps": Array [
-                              [Circular],
-                            ],
-                            "dirty": false,
-                            "expression": "inputVal",
-                            "getter": [Function],
-                            "id": 1,
-                            "lazy": false,
-                            "newDepIds": Set {},
-                            "newDeps": Array [],
-                            "sync": true,
-                            "user": true,
-                            "value": undefined,
-                            "vm": [Circular],
-                          },
                           [Circular],
                         ],
                       },
@@ -2948,7 +2141,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                     "getter": [Function],
-                    "id": 2,
+                    "id": 1,
                     "lazy": false,
                     "newDepIds": Set {},
                     "newDeps": Array [],
@@ -2963,84 +2156,7 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        7,
-                      },
-                      "deps": Array [
-                        Dep {
-                          "_sortedId": 0,
-                          "id": 7,
-                          "subs": Array [
-                            [Circular],
-                            Watcher {
-                              "active": true,
-                              "cb": [Function],
-                              "deep": false,
-                              "depIds": Set {
-                                2,
-                                7,
-                                4,
-                                3,
-                              },
-                              "deps": Array [
-                                Dep {
-                                  "_sortedId": 0,
-                                  "id": 2,
-                                  "subs": Array [
-                                    [Circular],
-                                  ],
-                                },
-                                [Circular],
-                                Dep {
-                                  "_sortedId": 0,
-                                  "id": 4,
-                                  "subs": Array [
-                                    [Circular],
-                                  ],
-                                },
-                                Dep {
-                                  "_sortedId": 0,
-                                  "id": 3,
-                                  "subs": Array [
-                                    [Circular],
-                                  ],
-                                },
-                              ],
-                              "dirty": false,
-                              "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                              "getter": [Function],
-                              "id": 2,
-                              "lazy": false,
-                              "newDepIds": Set {},
-                              "newDeps": Array [],
-                              "sync": true,
-                              "user": false,
-                              "value": undefined,
-                              "vm": [Circular],
-                            },
-                          ],
-                        },
-                      ],
-                      "dirty": false,
-                      "expression": "inputVal",
-                      "getter": [Function],
-                      "id": 1,
-                      "lazy": false,
-                      "newDepIds": Set {},
-                      "newDeps": Array [],
-                      "sync": true,
-                      "user": true,
-                      "value": undefined,
-                      "vm": [Circular],
-                    },
-                    Watcher {
-                      "active": true,
-                      "cb": [Function],
-                      "deep": false,
-                      "depIds": Set {
                         2,
-                        7,
                         4,
                         3,
                       },
@@ -3049,35 +2165,6 @@ VueWrapper {
                           "_sortedId": 0,
                           "id": 2,
                           "subs": Array [
-                            [Circular],
-                          ],
-                        },
-                        Dep {
-                          "_sortedId": 0,
-                          "id": 7,
-                          "subs": Array [
-                            Watcher {
-                              "active": true,
-                              "cb": [Function],
-                              "deep": false,
-                              "depIds": Set {
-                                7,
-                              },
-                              "deps": Array [
-                                [Circular],
-                              ],
-                              "dirty": false,
-                              "expression": "inputVal",
-                              "getter": [Function],
-                              "id": 1,
-                              "lazy": false,
-                              "newDepIds": Set {},
-                              "newDeps": Array [],
-                              "sync": true,
-                              "user": true,
-                              "value": undefined,
-                              "vm": [Circular],
-                            },
                             [Circular],
                           ],
                         },
@@ -3101,7 +2188,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                       "getter": [Function],
-                      "id": 2,
+                      "id": 1,
                       "lazy": false,
                       "newDepIds": Set {},
                       "newDeps": Array [],
@@ -3111,32 +2198,15 @@ VueWrapper {
                       "vm": [Circular],
                     },
                   ],
-                  "inputVal": undefined,
+                  "onChange": [Function],
                 },
                 "data": Object {
                   "attrs": Object {
                     "id": "Share Location-switch",
                     "type": "checkbox",
                   },
-                  "directives": Array [
-                    Object {
-                      "def": Object {
-                        "componentUpdated": [Function],
-                        "inserted": [Function],
-                      },
-                      "expression": "inputVal",
-                      "modifiers": Object {},
-                      "name": "model",
-                      "rawName": "v-model",
-                      "value": undefined,
-                    },
-                  ],
                   "domProps": Object {
                     "checked": undefined,
-                    "value": undefined,
-                  },
-                  "hook": Object {
-                    "insert": [Function],
                   },
                   "on": Object {
                     "change": [Function],
@@ -3145,7 +2215,6 @@ VueWrapper {
                 "elm": <input
                   id="Share Location-switch"
                   type="checkbox"
-                  value=""
                 />,
                 "fnContext": undefined,
                 "fnOptions": undefined,
@@ -3217,7 +2286,6 @@ VueWrapper {
                         <input
                           id="Share Location-switch"
                           type="checkbox"
-                          value=""
                         />
                          
                         <span
@@ -3240,7 +2308,6 @@ VueWrapper {
                       "text",
                       "sublabel",
                       "value",
-                      "onCheck",
                     ],
                     "_refElm": null,
                     "beforeCreate": Array [
@@ -3262,17 +2329,14 @@ VueWrapper {
                         "render": [Function],
                       },
                     },
-                    "data": [Function],
                     "directives": Object {},
                     "filters": Object {},
                     "logModifiedComponents": true,
-                    "methods": undefined,
+                    "methods": Object {
+                      "onChange": [Function],
+                    },
                     "name": "TipeSwitch",
                     "props": Object {
-                      "onCheck": Object {
-                        "default": [Function],
-                        "type": [Function],
-                      },
                       "sublabel": Object {
                         "default": "",
                         "type": [Function],
@@ -3292,7 +2356,6 @@ VueWrapper {
                     "provide": [Function],
                     "render": [Function],
                     "staticRenderFns": Array [],
-                    "watch": Object {},
                   },
                   "$parent": undefined,
                   "$refs": Object {},
@@ -3303,9 +2366,7 @@ VueWrapper {
                   "__emitted": Object {},
                   "__emittedByOrder": Array [],
                   "_c": [Function],
-                  "_data": Object {
-                    "inputVal": undefined,
-                  },
+                  "_data": Object {},
                   "_directInactive": false,
                   "_events": Object {},
                   "_hasHookEvent": false,
@@ -3315,7 +2376,6 @@ VueWrapper {
                   "_isMounted": true,
                   "_isVue": true,
                   "_props": Object {
-                    "onCheck": [Function],
                     "sublabel": "",
                     "text": "Share Location",
                     "value": undefined,
@@ -3344,7 +2404,6 @@ VueWrapper {
                           <input
                             id="Share Location-switch"
                             type="checkbox"
-                            value=""
                           />
                            
                           <span
@@ -3367,7 +2426,6 @@ VueWrapper {
                         "text",
                         "sublabel",
                         "value",
-                        "onCheck",
                       ],
                       "_refElm": null,
                       "beforeCreate": Array [
@@ -3389,17 +2447,14 @@ VueWrapper {
                           "render": [Function],
                         },
                       },
-                      "data": [Function],
                       "directives": Object {},
                       "filters": Object {},
                       "logModifiedComponents": true,
-                      "methods": undefined,
+                      "methods": Object {
+                        "onChange": [Function],
+                      },
                       "name": "TipeSwitch",
                       "props": Object {
-                        "onCheck": Object {
-                          "default": [Function],
-                          "type": [Function],
-                        },
                         "sublabel": Object {
                           "default": "",
                           "type": [Function],
@@ -3419,7 +2474,6 @@ VueWrapper {
                       "provide": [Function],
                       "render": [Function],
                       "staticRenderFns": Array [],
-                      "watch": Object {},
                     },
                     "$parent": undefined,
                     "$refs": Object {},
@@ -3430,9 +2484,7 @@ VueWrapper {
                     "__emitted": Object {},
                     "__emittedByOrder": Array [],
                     "_c": [Function],
-                    "_data": Object {
-                      "inputVal": undefined,
-                    },
+                    "_data": Object {},
                     "_directInactive": false,
                     "_events": Object {},
                     "_hasHookEvent": false,
@@ -3442,7 +2494,6 @@ VueWrapper {
                     "_isMounted": true,
                     "_isVue": true,
                     "_props": Object {
-                      "onCheck": [Function],
                       "sublabel": "",
                       "text": "Share Location",
                       "value": undefined,
@@ -3459,7 +2510,6 @@ VueWrapper {
                       "deep": false,
                       "depIds": Set {
                         2,
-                        7,
                         4,
                         3,
                       },
@@ -3468,35 +2518,6 @@ VueWrapper {
                           "_sortedId": 0,
                           "id": 2,
                           "subs": Array [
-                            [Circular],
-                          ],
-                        },
-                        Dep {
-                          "_sortedId": 0,
-                          "id": 7,
-                          "subs": Array [
-                            Watcher {
-                              "active": true,
-                              "cb": [Function],
-                              "deep": false,
-                              "depIds": Set {
-                                7,
-                              },
-                              "deps": Array [
-                                [Circular],
-                              ],
-                              "dirty": false,
-                              "expression": "inputVal",
-                              "getter": [Function],
-                              "id": 1,
-                              "lazy": false,
-                              "newDepIds": Set {},
-                              "newDeps": Array [],
-                              "sync": true,
-                              "user": true,
-                              "value": undefined,
-                              "vm": [Circular],
-                            },
                             [Circular],
                           ],
                         },
@@ -3520,7 +2541,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                       "getter": [Function],
-                      "id": 2,
+                      "id": 1,
                       "lazy": false,
                       "newDepIds": Set {},
                       "newDeps": Array [],
@@ -3535,84 +2556,7 @@ VueWrapper {
                         "cb": [Function],
                         "deep": false,
                         "depIds": Set {
-                          7,
-                        },
-                        "deps": Array [
-                          Dep {
-                            "_sortedId": 0,
-                            "id": 7,
-                            "subs": Array [
-                              [Circular],
-                              Watcher {
-                                "active": true,
-                                "cb": [Function],
-                                "deep": false,
-                                "depIds": Set {
-                                  2,
-                                  7,
-                                  4,
-                                  3,
-                                },
-                                "deps": Array [
-                                  Dep {
-                                    "_sortedId": 0,
-                                    "id": 2,
-                                    "subs": Array [
-                                      [Circular],
-                                    ],
-                                  },
-                                  [Circular],
-                                  Dep {
-                                    "_sortedId": 0,
-                                    "id": 4,
-                                    "subs": Array [
-                                      [Circular],
-                                    ],
-                                  },
-                                  Dep {
-                                    "_sortedId": 0,
-                                    "id": 3,
-                                    "subs": Array [
-                                      [Circular],
-                                    ],
-                                  },
-                                ],
-                                "dirty": false,
-                                "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                                "getter": [Function],
-                                "id": 2,
-                                "lazy": false,
-                                "newDepIds": Set {},
-                                "newDeps": Array [],
-                                "sync": true,
-                                "user": false,
-                                "value": undefined,
-                                "vm": [Circular],
-                              },
-                            ],
-                          },
-                        ],
-                        "dirty": false,
-                        "expression": "inputVal",
-                        "getter": [Function],
-                        "id": 1,
-                        "lazy": false,
-                        "newDepIds": Set {},
-                        "newDeps": Array [],
-                        "sync": true,
-                        "user": true,
-                        "value": undefined,
-                        "vm": [Circular],
-                      },
-                      Watcher {
-                        "active": true,
-                        "cb": [Function],
-                        "deep": false,
-                        "depIds": Set {
                           2,
-                          7,
                           4,
                           3,
                         },
@@ -3621,35 +2565,6 @@ VueWrapper {
                             "_sortedId": 0,
                             "id": 2,
                             "subs": Array [
-                              [Circular],
-                            ],
-                          },
-                          Dep {
-                            "_sortedId": 0,
-                            "id": 7,
-                            "subs": Array [
-                              Watcher {
-                                "active": true,
-                                "cb": [Function],
-                                "deep": false,
-                                "depIds": Set {
-                                  7,
-                                },
-                                "deps": Array [
-                                  [Circular],
-                                ],
-                                "dirty": false,
-                                "expression": "inputVal",
-                                "getter": [Function],
-                                "id": 1,
-                                "lazy": false,
-                                "newDepIds": Set {},
-                                "newDeps": Array [],
-                                "sync": true,
-                                "user": true,
-                                "value": undefined,
-                                "vm": [Circular],
-                              },
                               [Circular],
                             ],
                           },
@@ -3673,7 +2588,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                         "getter": [Function],
-                        "id": 2,
+                        "id": 1,
                         "lazy": false,
                         "newDepIds": Set {},
                         "newDeps": Array [],
@@ -3683,7 +2598,7 @@ VueWrapper {
                         "vm": [Circular],
                       },
                     ],
-                    "inputVal": undefined,
+                    "onChange": [Function],
                   },
                   "_self": [Circular],
                   "_staticTrees": null,
@@ -3695,7 +2610,6 @@ VueWrapper {
                     "deep": false,
                     "depIds": Set {
                       2,
-                      7,
                       4,
                       3,
                     },
@@ -3704,35 +2618,6 @@ VueWrapper {
                         "_sortedId": 0,
                         "id": 2,
                         "subs": Array [
-                          [Circular],
-                        ],
-                      },
-                      Dep {
-                        "_sortedId": 0,
-                        "id": 7,
-                        "subs": Array [
-                          Watcher {
-                            "active": true,
-                            "cb": [Function],
-                            "deep": false,
-                            "depIds": Set {
-                              7,
-                            },
-                            "deps": Array [
-                              [Circular],
-                            ],
-                            "dirty": false,
-                            "expression": "inputVal",
-                            "getter": [Function],
-                            "id": 1,
-                            "lazy": false,
-                            "newDepIds": Set {},
-                            "newDeps": Array [],
-                            "sync": true,
-                            "user": true,
-                            "value": undefined,
-                            "vm": [Circular],
-                          },
                           [Circular],
                         ],
                       },
@@ -3756,7 +2641,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                     "getter": [Function],
-                    "id": 2,
+                    "id": 1,
                     "lazy": false,
                     "newDepIds": Set {},
                     "newDeps": Array [],
@@ -3771,84 +2656,7 @@ VueWrapper {
                       "cb": [Function],
                       "deep": false,
                       "depIds": Set {
-                        7,
-                      },
-                      "deps": Array [
-                        Dep {
-                          "_sortedId": 0,
-                          "id": 7,
-                          "subs": Array [
-                            [Circular],
-                            Watcher {
-                              "active": true,
-                              "cb": [Function],
-                              "deep": false,
-                              "depIds": Set {
-                                2,
-                                7,
-                                4,
-                                3,
-                              },
-                              "deps": Array [
-                                Dep {
-                                  "_sortedId": 0,
-                                  "id": 2,
-                                  "subs": Array [
-                                    [Circular],
-                                  ],
-                                },
-                                [Circular],
-                                Dep {
-                                  "_sortedId": 0,
-                                  "id": 4,
-                                  "subs": Array [
-                                    [Circular],
-                                  ],
-                                },
-                                Dep {
-                                  "_sortedId": 0,
-                                  "id": 3,
-                                  "subs": Array [
-                                    [Circular],
-                                  ],
-                                },
-                              ],
-                              "dirty": false,
-                              "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                              "getter": [Function],
-                              "id": 2,
-                              "lazy": false,
-                              "newDepIds": Set {},
-                              "newDeps": Array [],
-                              "sync": true,
-                              "user": false,
-                              "value": undefined,
-                              "vm": [Circular],
-                            },
-                          ],
-                        },
-                      ],
-                      "dirty": false,
-                      "expression": "inputVal",
-                      "getter": [Function],
-                      "id": 1,
-                      "lazy": false,
-                      "newDepIds": Set {},
-                      "newDeps": Array [],
-                      "sync": true,
-                      "user": true,
-                      "value": undefined,
-                      "vm": [Circular],
-                    },
-                    Watcher {
-                      "active": true,
-                      "cb": [Function],
-                      "deep": false,
-                      "depIds": Set {
                         2,
-                        7,
                         4,
                         3,
                       },
@@ -3857,35 +2665,6 @@ VueWrapper {
                           "_sortedId": 0,
                           "id": 2,
                           "subs": Array [
-                            [Circular],
-                          ],
-                        },
-                        Dep {
-                          "_sortedId": 0,
-                          "id": 7,
-                          "subs": Array [
-                            Watcher {
-                              "active": true,
-                              "cb": [Function],
-                              "deep": false,
-                              "depIds": Set {
-                                7,
-                              },
-                              "deps": Array [
-                                [Circular],
-                              ],
-                              "dirty": false,
-                              "expression": "inputVal",
-                              "getter": [Function],
-                              "id": 1,
-                              "lazy": false,
-                              "newDepIds": Set {},
-                              "newDeps": Array [],
-                              "sync": true,
-                              "user": true,
-                              "value": undefined,
-                              "vm": [Circular],
-                            },
                             [Circular],
                           ],
                         },
@@ -3909,7 +2688,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                       "getter": [Function],
-                      "id": 2,
+                      "id": 1,
                       "lazy": false,
                       "newDepIds": Set {},
                       "newDeps": Array [],
@@ -3919,7 +2698,7 @@ VueWrapper {
                       "vm": [Circular],
                     },
                   ],
-                  "inputVal": undefined,
+                  "onChange": [Function],
                 },
                 "data": Object {
                   "staticClass": "slider round",
@@ -3969,7 +2748,6 @@ VueWrapper {
                     <input
                       id="Share Location-switch"
                       type="checkbox"
-                      value=""
                     />
                      
                     <span
@@ -3992,7 +2770,6 @@ VueWrapper {
                   "text",
                   "sublabel",
                   "value",
-                  "onCheck",
                 ],
                 "_refElm": null,
                 "beforeCreate": Array [
@@ -4014,17 +2791,14 @@ VueWrapper {
                     "render": [Function],
                   },
                 },
-                "data": [Function],
                 "directives": Object {},
                 "filters": Object {},
                 "logModifiedComponents": true,
-                "methods": undefined,
+                "methods": Object {
+                  "onChange": [Function],
+                },
                 "name": "TipeSwitch",
                 "props": Object {
-                  "onCheck": Object {
-                    "default": [Function],
-                    "type": [Function],
-                  },
                   "sublabel": Object {
                     "default": "",
                     "type": [Function],
@@ -4044,7 +2818,6 @@ VueWrapper {
                 "provide": [Function],
                 "render": [Function],
                 "staticRenderFns": Array [],
-                "watch": Object {},
               },
               "$parent": undefined,
               "$refs": Object {},
@@ -4055,9 +2828,7 @@ VueWrapper {
               "__emitted": Object {},
               "__emittedByOrder": Array [],
               "_c": [Function],
-              "_data": Object {
-                "inputVal": undefined,
-              },
+              "_data": Object {},
               "_directInactive": false,
               "_events": Object {},
               "_hasHookEvent": false,
@@ -4067,7 +2838,6 @@ VueWrapper {
               "_isMounted": true,
               "_isVue": true,
               "_props": Object {
-                "onCheck": [Function],
                 "sublabel": "",
                 "text": "Share Location",
                 "value": undefined,
@@ -4096,7 +2866,6 @@ VueWrapper {
                       <input
                         id="Share Location-switch"
                         type="checkbox"
-                        value=""
                       />
                        
                       <span
@@ -4119,7 +2888,6 @@ VueWrapper {
                     "text",
                     "sublabel",
                     "value",
-                    "onCheck",
                   ],
                   "_refElm": null,
                   "beforeCreate": Array [
@@ -4141,17 +2909,14 @@ VueWrapper {
                       "render": [Function],
                     },
                   },
-                  "data": [Function],
                   "directives": Object {},
                   "filters": Object {},
                   "logModifiedComponents": true,
-                  "methods": undefined,
+                  "methods": Object {
+                    "onChange": [Function],
+                  },
                   "name": "TipeSwitch",
                   "props": Object {
-                    "onCheck": Object {
-                      "default": [Function],
-                      "type": [Function],
-                    },
                     "sublabel": Object {
                       "default": "",
                       "type": [Function],
@@ -4171,7 +2936,6 @@ VueWrapper {
                   "provide": [Function],
                   "render": [Function],
                   "staticRenderFns": Array [],
-                  "watch": Object {},
                 },
                 "$parent": undefined,
                 "$refs": Object {},
@@ -4182,9 +2946,7 @@ VueWrapper {
                 "__emitted": Object {},
                 "__emittedByOrder": Array [],
                 "_c": [Function],
-                "_data": Object {
-                  "inputVal": undefined,
-                },
+                "_data": Object {},
                 "_directInactive": false,
                 "_events": Object {},
                 "_hasHookEvent": false,
@@ -4194,7 +2956,6 @@ VueWrapper {
                 "_isMounted": true,
                 "_isVue": true,
                 "_props": Object {
-                  "onCheck": [Function],
                   "sublabel": "",
                   "text": "Share Location",
                   "value": undefined,
@@ -4211,7 +2972,6 @@ VueWrapper {
                   "deep": false,
                   "depIds": Set {
                     2,
-                    7,
                     4,
                     3,
                   },
@@ -4220,35 +2980,6 @@ VueWrapper {
                       "_sortedId": 0,
                       "id": 2,
                       "subs": Array [
-                        [Circular],
-                      ],
-                    },
-                    Dep {
-                      "_sortedId": 0,
-                      "id": 7,
-                      "subs": Array [
-                        Watcher {
-                          "active": true,
-                          "cb": [Function],
-                          "deep": false,
-                          "depIds": Set {
-                            7,
-                          },
-                          "deps": Array [
-                            [Circular],
-                          ],
-                          "dirty": false,
-                          "expression": "inputVal",
-                          "getter": [Function],
-                          "id": 1,
-                          "lazy": false,
-                          "newDepIds": Set {},
-                          "newDeps": Array [],
-                          "sync": true,
-                          "user": true,
-                          "value": undefined,
-                          "vm": [Circular],
-                        },
                         [Circular],
                       ],
                     },
@@ -4272,7 +3003,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                   "getter": [Function],
-                  "id": 2,
+                  "id": 1,
                   "lazy": false,
                   "newDepIds": Set {},
                   "newDeps": Array [],
@@ -4287,84 +3018,7 @@ VueWrapper {
                     "cb": [Function],
                     "deep": false,
                     "depIds": Set {
-                      7,
-                    },
-                    "deps": Array [
-                      Dep {
-                        "_sortedId": 0,
-                        "id": 7,
-                        "subs": Array [
-                          [Circular],
-                          Watcher {
-                            "active": true,
-                            "cb": [Function],
-                            "deep": false,
-                            "depIds": Set {
-                              2,
-                              7,
-                              4,
-                              3,
-                            },
-                            "deps": Array [
-                              Dep {
-                                "_sortedId": 0,
-                                "id": 2,
-                                "subs": Array [
-                                  [Circular],
-                                ],
-                              },
-                              [Circular],
-                              Dep {
-                                "_sortedId": 0,
-                                "id": 4,
-                                "subs": Array [
-                                  [Circular],
-                                ],
-                              },
-                              Dep {
-                                "_sortedId": 0,
-                                "id": 3,
-                                "subs": Array [
-                                  [Circular],
-                                ],
-                              },
-                            ],
-                            "dirty": false,
-                            "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                            "getter": [Function],
-                            "id": 2,
-                            "lazy": false,
-                            "newDepIds": Set {},
-                            "newDeps": Array [],
-                            "sync": true,
-                            "user": false,
-                            "value": undefined,
-                            "vm": [Circular],
-                          },
-                        ],
-                      },
-                    ],
-                    "dirty": false,
-                    "expression": "inputVal",
-                    "getter": [Function],
-                    "id": 1,
-                    "lazy": false,
-                    "newDepIds": Set {},
-                    "newDeps": Array [],
-                    "sync": true,
-                    "user": true,
-                    "value": undefined,
-                    "vm": [Circular],
-                  },
-                  Watcher {
-                    "active": true,
-                    "cb": [Function],
-                    "deep": false,
-                    "depIds": Set {
                       2,
-                      7,
                       4,
                       3,
                     },
@@ -4373,35 +3027,6 @@ VueWrapper {
                         "_sortedId": 0,
                         "id": 2,
                         "subs": Array [
-                          [Circular],
-                        ],
-                      },
-                      Dep {
-                        "_sortedId": 0,
-                        "id": 7,
-                        "subs": Array [
-                          Watcher {
-                            "active": true,
-                            "cb": [Function],
-                            "deep": false,
-                            "depIds": Set {
-                              7,
-                            },
-                            "deps": Array [
-                              [Circular],
-                            ],
-                            "dirty": false,
-                            "expression": "inputVal",
-                            "getter": [Function],
-                            "id": 1,
-                            "lazy": false,
-                            "newDepIds": Set {},
-                            "newDeps": Array [],
-                            "sync": true,
-                            "user": true,
-                            "value": undefined,
-                            "vm": [Circular],
-                          },
                           [Circular],
                         ],
                       },
@@ -4425,7 +3050,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                     "getter": [Function],
-                    "id": 2,
+                    "id": 1,
                     "lazy": false,
                     "newDepIds": Set {},
                     "newDeps": Array [],
@@ -4435,7 +3060,7 @@ VueWrapper {
                     "vm": [Circular],
                   },
                 ],
-                "inputVal": undefined,
+                "onChange": [Function],
               },
               "_self": [Circular],
               "_staticTrees": null,
@@ -4447,7 +3072,6 @@ VueWrapper {
                 "deep": false,
                 "depIds": Set {
                   2,
-                  7,
                   4,
                   3,
                 },
@@ -4456,35 +3080,6 @@ VueWrapper {
                     "_sortedId": 0,
                     "id": 2,
                     "subs": Array [
-                      [Circular],
-                    ],
-                  },
-                  Dep {
-                    "_sortedId": 0,
-                    "id": 7,
-                    "subs": Array [
-                      Watcher {
-                        "active": true,
-                        "cb": [Function],
-                        "deep": false,
-                        "depIds": Set {
-                          7,
-                        },
-                        "deps": Array [
-                          [Circular],
-                        ],
-                        "dirty": false,
-                        "expression": "inputVal",
-                        "getter": [Function],
-                        "id": 1,
-                        "lazy": false,
-                        "newDepIds": Set {},
-                        "newDeps": Array [],
-                        "sync": true,
-                        "user": true,
-                        "value": undefined,
-                        "vm": [Circular],
-                      },
                       [Circular],
                     ],
                   },
@@ -4508,7 +3103,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                 "getter": [Function],
-                "id": 2,
+                "id": 1,
                 "lazy": false,
                 "newDepIds": Set {},
                 "newDeps": Array [],
@@ -4523,84 +3118,7 @@ VueWrapper {
                   "cb": [Function],
                   "deep": false,
                   "depIds": Set {
-                    7,
-                  },
-                  "deps": Array [
-                    Dep {
-                      "_sortedId": 0,
-                      "id": 7,
-                      "subs": Array [
-                        [Circular],
-                        Watcher {
-                          "active": true,
-                          "cb": [Function],
-                          "deep": false,
-                          "depIds": Set {
-                            2,
-                            7,
-                            4,
-                            3,
-                          },
-                          "deps": Array [
-                            Dep {
-                              "_sortedId": 0,
-                              "id": 2,
-                              "subs": Array [
-                                [Circular],
-                              ],
-                            },
-                            [Circular],
-                            Dep {
-                              "_sortedId": 0,
-                              "id": 4,
-                              "subs": Array [
-                                [Circular],
-                              ],
-                            },
-                            Dep {
-                              "_sortedId": 0,
-                              "id": 3,
-                              "subs": Array [
-                                [Circular],
-                              ],
-                            },
-                          ],
-                          "dirty": false,
-                          "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                          "getter": [Function],
-                          "id": 2,
-                          "lazy": false,
-                          "newDepIds": Set {},
-                          "newDeps": Array [],
-                          "sync": true,
-                          "user": false,
-                          "value": undefined,
-                          "vm": [Circular],
-                        },
-                      ],
-                    },
-                  ],
-                  "dirty": false,
-                  "expression": "inputVal",
-                  "getter": [Function],
-                  "id": 1,
-                  "lazy": false,
-                  "newDepIds": Set {},
-                  "newDeps": Array [],
-                  "sync": true,
-                  "user": true,
-                  "value": undefined,
-                  "vm": [Circular],
-                },
-                Watcher {
-                  "active": true,
-                  "cb": [Function],
-                  "deep": false,
-                  "depIds": Set {
                     2,
-                    7,
                     4,
                     3,
                   },
@@ -4609,35 +3127,6 @@ VueWrapper {
                       "_sortedId": 0,
                       "id": 2,
                       "subs": Array [
-                        [Circular],
-                      ],
-                    },
-                    Dep {
-                      "_sortedId": 0,
-                      "id": 7,
-                      "subs": Array [
-                        Watcher {
-                          "active": true,
-                          "cb": [Function],
-                          "deep": false,
-                          "depIds": Set {
-                            7,
-                          },
-                          "deps": Array [
-                            [Circular],
-                          ],
-                          "dirty": false,
-                          "expression": "inputVal",
-                          "getter": [Function],
-                          "id": 1,
-                          "lazy": false,
-                          "newDepIds": Set {},
-                          "newDeps": Array [],
-                          "sync": true,
-                          "user": true,
-                          "value": undefined,
-                          "vm": [Circular],
-                        },
                         [Circular],
                       ],
                     },
@@ -4661,7 +3150,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                   "getter": [Function],
-                  "id": 2,
+                  "id": 1,
                   "lazy": false,
                   "newDepIds": Set {},
                   "newDeps": Array [],
@@ -4671,7 +3160,7 @@ VueWrapper {
                   "vm": [Circular],
                 },
               ],
-              "inputVal": undefined,
+              "onChange": [Function],
             },
             "data": Object {
               "staticClass": "switch",
@@ -4682,7 +3171,6 @@ VueWrapper {
               <input
                 id="Share Location-switch"
                 type="checkbox"
-                value=""
               />
                
               <span
@@ -4731,7 +3219,6 @@ VueWrapper {
                 <input
                   id="Share Location-switch"
                   type="checkbox"
-                  value=""
                 />
                  
                 <span
@@ -4754,7 +3241,6 @@ VueWrapper {
               "text",
               "sublabel",
               "value",
-              "onCheck",
             ],
             "_refElm": null,
             "beforeCreate": Array [
@@ -4776,17 +3262,14 @@ VueWrapper {
                 "render": [Function],
               },
             },
-            "data": [Function],
             "directives": Object {},
             "filters": Object {},
             "logModifiedComponents": true,
-            "methods": undefined,
+            "methods": Object {
+              "onChange": [Function],
+            },
             "name": "TipeSwitch",
             "props": Object {
-              "onCheck": Object {
-                "default": [Function],
-                "type": [Function],
-              },
               "sublabel": Object {
                 "default": "",
                 "type": [Function],
@@ -4806,7 +3289,6 @@ VueWrapper {
             "provide": [Function],
             "render": [Function],
             "staticRenderFns": Array [],
-            "watch": Object {},
           },
           "$parent": undefined,
           "$refs": Object {},
@@ -4817,9 +3299,7 @@ VueWrapper {
           "__emitted": Object {},
           "__emittedByOrder": Array [],
           "_c": [Function],
-          "_data": Object {
-            "inputVal": undefined,
-          },
+          "_data": Object {},
           "_directInactive": false,
           "_events": Object {},
           "_hasHookEvent": false,
@@ -4829,7 +3309,6 @@ VueWrapper {
           "_isMounted": true,
           "_isVue": true,
           "_props": Object {
-            "onCheck": [Function],
             "sublabel": "",
             "text": "Share Location",
             "value": undefined,
@@ -4858,7 +3337,6 @@ VueWrapper {
                   <input
                     id="Share Location-switch"
                     type="checkbox"
-                    value=""
                   />
                    
                   <span
@@ -4881,7 +3359,6 @@ VueWrapper {
                 "text",
                 "sublabel",
                 "value",
-                "onCheck",
               ],
               "_refElm": null,
               "beforeCreate": Array [
@@ -4903,17 +3380,14 @@ VueWrapper {
                   "render": [Function],
                 },
               },
-              "data": [Function],
               "directives": Object {},
               "filters": Object {},
               "logModifiedComponents": true,
-              "methods": undefined,
+              "methods": Object {
+                "onChange": [Function],
+              },
               "name": "TipeSwitch",
               "props": Object {
-                "onCheck": Object {
-                  "default": [Function],
-                  "type": [Function],
-                },
                 "sublabel": Object {
                   "default": "",
                   "type": [Function],
@@ -4933,7 +3407,6 @@ VueWrapper {
               "provide": [Function],
               "render": [Function],
               "staticRenderFns": Array [],
-              "watch": Object {},
             },
             "$parent": undefined,
             "$refs": Object {},
@@ -4944,9 +3417,7 @@ VueWrapper {
             "__emitted": Object {},
             "__emittedByOrder": Array [],
             "_c": [Function],
-            "_data": Object {
-              "inputVal": undefined,
-            },
+            "_data": Object {},
             "_directInactive": false,
             "_events": Object {},
             "_hasHookEvent": false,
@@ -4956,7 +3427,6 @@ VueWrapper {
             "_isMounted": true,
             "_isVue": true,
             "_props": Object {
-              "onCheck": [Function],
               "sublabel": "",
               "text": "Share Location",
               "value": undefined,
@@ -4973,7 +3443,6 @@ VueWrapper {
               "deep": false,
               "depIds": Set {
                 2,
-                7,
                 4,
                 3,
               },
@@ -4982,35 +3451,6 @@ VueWrapper {
                   "_sortedId": 0,
                   "id": 2,
                   "subs": Array [
-                    [Circular],
-                  ],
-                },
-                Dep {
-                  "_sortedId": 0,
-                  "id": 7,
-                  "subs": Array [
-                    Watcher {
-                      "active": true,
-                      "cb": [Function],
-                      "deep": false,
-                      "depIds": Set {
-                        7,
-                      },
-                      "deps": Array [
-                        [Circular],
-                      ],
-                      "dirty": false,
-                      "expression": "inputVal",
-                      "getter": [Function],
-                      "id": 1,
-                      "lazy": false,
-                      "newDepIds": Set {},
-                      "newDeps": Array [],
-                      "sync": true,
-                      "user": true,
-                      "value": undefined,
-                      "vm": [Circular],
-                    },
                     [Circular],
                   ],
                 },
@@ -5034,7 +3474,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
               "getter": [Function],
-              "id": 2,
+              "id": 1,
               "lazy": false,
               "newDepIds": Set {},
               "newDeps": Array [],
@@ -5049,84 +3489,7 @@ VueWrapper {
                 "cb": [Function],
                 "deep": false,
                 "depIds": Set {
-                  7,
-                },
-                "deps": Array [
-                  Dep {
-                    "_sortedId": 0,
-                    "id": 7,
-                    "subs": Array [
-                      [Circular],
-                      Watcher {
-                        "active": true,
-                        "cb": [Function],
-                        "deep": false,
-                        "depIds": Set {
-                          2,
-                          7,
-                          4,
-                          3,
-                        },
-                        "deps": Array [
-                          Dep {
-                            "_sortedId": 0,
-                            "id": 2,
-                            "subs": Array [
-                              [Circular],
-                            ],
-                          },
-                          [Circular],
-                          Dep {
-                            "_sortedId": 0,
-                            "id": 4,
-                            "subs": Array [
-                              [Circular],
-                            ],
-                          },
-                          Dep {
-                            "_sortedId": 0,
-                            "id": 3,
-                            "subs": Array [
-                              [Circular],
-                            ],
-                          },
-                        ],
-                        "dirty": false,
-                        "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                        "getter": [Function],
-                        "id": 2,
-                        "lazy": false,
-                        "newDepIds": Set {},
-                        "newDeps": Array [],
-                        "sync": true,
-                        "user": false,
-                        "value": undefined,
-                        "vm": [Circular],
-                      },
-                    ],
-                  },
-                ],
-                "dirty": false,
-                "expression": "inputVal",
-                "getter": [Function],
-                "id": 1,
-                "lazy": false,
-                "newDepIds": Set {},
-                "newDeps": Array [],
-                "sync": true,
-                "user": true,
-                "value": undefined,
-                "vm": [Circular],
-              },
-              Watcher {
-                "active": true,
-                "cb": [Function],
-                "deep": false,
-                "depIds": Set {
                   2,
-                  7,
                   4,
                   3,
                 },
@@ -5135,35 +3498,6 @@ VueWrapper {
                     "_sortedId": 0,
                     "id": 2,
                     "subs": Array [
-                      [Circular],
-                    ],
-                  },
-                  Dep {
-                    "_sortedId": 0,
-                    "id": 7,
-                    "subs": Array [
-                      Watcher {
-                        "active": true,
-                        "cb": [Function],
-                        "deep": false,
-                        "depIds": Set {
-                          7,
-                        },
-                        "deps": Array [
-                          [Circular],
-                        ],
-                        "dirty": false,
-                        "expression": "inputVal",
-                        "getter": [Function],
-                        "id": 1,
-                        "lazy": false,
-                        "newDepIds": Set {},
-                        "newDeps": Array [],
-                        "sync": true,
-                        "user": true,
-                        "value": undefined,
-                        "vm": [Circular],
-                      },
                       [Circular],
                     ],
                   },
@@ -5187,7 +3521,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
                 "getter": [Function],
-                "id": 2,
+                "id": 1,
                 "lazy": false,
                 "newDepIds": Set {},
                 "newDeps": Array [],
@@ -5197,7 +3531,7 @@ VueWrapper {
                 "vm": [Circular],
               },
             ],
-            "inputVal": undefined,
+            "onChange": [Function],
           },
           "_self": [Circular],
           "_staticTrees": null,
@@ -5209,7 +3543,6 @@ VueWrapper {
             "deep": false,
             "depIds": Set {
               2,
-              7,
               4,
               3,
             },
@@ -5218,35 +3551,6 @@ VueWrapper {
                 "_sortedId": 0,
                 "id": 2,
                 "subs": Array [
-                  [Circular],
-                ],
-              },
-              Dep {
-                "_sortedId": 0,
-                "id": 7,
-                "subs": Array [
-                  Watcher {
-                    "active": true,
-                    "cb": [Function],
-                    "deep": false,
-                    "depIds": Set {
-                      7,
-                    },
-                    "deps": Array [
-                      [Circular],
-                    ],
-                    "dirty": false,
-                    "expression": "inputVal",
-                    "getter": [Function],
-                    "id": 1,
-                    "lazy": false,
-                    "newDepIds": Set {},
-                    "newDeps": Array [],
-                    "sync": true,
-                    "user": true,
-                    "value": undefined,
-                    "vm": [Circular],
-                  },
                   [Circular],
                 ],
               },
@@ -5270,7 +3574,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
             "getter": [Function],
-            "id": 2,
+            "id": 1,
             "lazy": false,
             "newDepIds": Set {},
             "newDeps": Array [],
@@ -5285,84 +3589,7 @@ VueWrapper {
               "cb": [Function],
               "deep": false,
               "depIds": Set {
-                7,
-              },
-              "deps": Array [
-                Dep {
-                  "_sortedId": 0,
-                  "id": 7,
-                  "subs": Array [
-                    [Circular],
-                    Watcher {
-                      "active": true,
-                      "cb": [Function],
-                      "deep": false,
-                      "depIds": Set {
-                        2,
-                        7,
-                        4,
-                        3,
-                      },
-                      "deps": Array [
-                        Dep {
-                          "_sortedId": 0,
-                          "id": 2,
-                          "subs": Array [
-                            [Circular],
-                          ],
-                        },
-                        [Circular],
-                        Dep {
-                          "_sortedId": 0,
-                          "id": 4,
-                          "subs": Array [
-                            [Circular],
-                          ],
-                        },
-                        Dep {
-                          "_sortedId": 0,
-                          "id": 3,
-                          "subs": Array [
-                            [Circular],
-                          ],
-                        },
-                      ],
-                      "dirty": false,
-                      "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                      "getter": [Function],
-                      "id": 2,
-                      "lazy": false,
-                      "newDepIds": Set {},
-                      "newDeps": Array [],
-                      "sync": true,
-                      "user": false,
-                      "value": undefined,
-                      "vm": [Circular],
-                    },
-                  ],
-                },
-              ],
-              "dirty": false,
-              "expression": "inputVal",
-              "getter": [Function],
-              "id": 1,
-              "lazy": false,
-              "newDepIds": Set {},
-              "newDeps": Array [],
-              "sync": true,
-              "user": true,
-              "value": undefined,
-              "vm": [Circular],
-            },
-            Watcher {
-              "active": true,
-              "cb": [Function],
-              "deep": false,
-              "depIds": Set {
                 2,
-                7,
                 4,
                 3,
               },
@@ -5371,35 +3598,6 @@ VueWrapper {
                   "_sortedId": 0,
                   "id": 2,
                   "subs": Array [
-                    [Circular],
-                  ],
-                },
-                Dep {
-                  "_sortedId": 0,
-                  "id": 7,
-                  "subs": Array [
-                    Watcher {
-                      "active": true,
-                      "cb": [Function],
-                      "deep": false,
-                      "depIds": Set {
-                        7,
-                      },
-                      "deps": Array [
-                        [Circular],
-                      ],
-                      "dirty": false,
-                      "expression": "inputVal",
-                      "getter": [Function],
-                      "id": 1,
-                      "lazy": false,
-                      "newDepIds": Set {},
-                      "newDeps": Array [],
-                      "sync": true,
-                      "user": true,
-                      "value": undefined,
-                      "vm": [Circular],
-                    },
                     [Circular],
                   ],
                 },
@@ -5423,7 +3621,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
               "getter": [Function],
-              "id": 2,
+              "id": 1,
               "lazy": false,
               "newDepIds": Set {},
               "newDeps": Array [],
@@ -5433,7 +3631,7 @@ VueWrapper {
               "vm": [Circular],
             },
           ],
-          "inputVal": undefined,
+          "onChange": [Function],
         },
         "data": Object {
           "staticClass": "row",
@@ -5454,7 +3652,6 @@ VueWrapper {
             <input
               id="Share Location-switch"
               type="checkbox"
-              value=""
             />
              
             <span
@@ -5554,7 +3751,6 @@ VueWrapper {
             <input
               id="Share Location-switch"
               type="checkbox"
-              value=""
             />
              
             <span
@@ -5577,7 +3773,6 @@ VueWrapper {
           "text",
           "sublabel",
           "value",
-          "onCheck",
         ],
         "_refElm": null,
         "beforeCreate": Array [
@@ -5599,17 +3794,14 @@ VueWrapper {
             "render": [Function],
           },
         },
-        "data": [Function],
         "directives": Object {},
         "filters": Object {},
         "logModifiedComponents": true,
-        "methods": undefined,
+        "methods": Object {
+          "onChange": [Function],
+        },
         "name": "TipeSwitch",
         "props": Object {
-          "onCheck": Object {
-            "default": [Function],
-            "type": [Function],
-          },
           "sublabel": Object {
             "default": "",
             "type": [Function],
@@ -5629,7 +3821,6 @@ VueWrapper {
         "provide": [Function],
         "render": [Function],
         "staticRenderFns": Array [],
-        "watch": Object {},
       },
       "$parent": undefined,
       "$refs": Object {},
@@ -5640,9 +3831,7 @@ VueWrapper {
       "__emitted": Object {},
       "__emittedByOrder": Array [],
       "_c": [Function],
-      "_data": Object {
-        "inputVal": undefined,
-      },
+      "_data": Object {},
       "_directInactive": false,
       "_events": Object {},
       "_hasHookEvent": false,
@@ -5652,7 +3841,6 @@ VueWrapper {
       "_isMounted": true,
       "_isVue": true,
       "_props": Object {
-        "onCheck": [Function],
         "sublabel": "",
         "text": "Share Location",
         "value": undefined,
@@ -5681,7 +3869,6 @@ VueWrapper {
               <input
                 id="Share Location-switch"
                 type="checkbox"
-                value=""
               />
                
               <span
@@ -5704,7 +3891,6 @@ VueWrapper {
             "text",
             "sublabel",
             "value",
-            "onCheck",
           ],
           "_refElm": null,
           "beforeCreate": Array [
@@ -5726,17 +3912,14 @@ VueWrapper {
               "render": [Function],
             },
           },
-          "data": [Function],
           "directives": Object {},
           "filters": Object {},
           "logModifiedComponents": true,
-          "methods": undefined,
+          "methods": Object {
+            "onChange": [Function],
+          },
           "name": "TipeSwitch",
           "props": Object {
-            "onCheck": Object {
-              "default": [Function],
-              "type": [Function],
-            },
             "sublabel": Object {
               "default": "",
               "type": [Function],
@@ -5756,7 +3939,6 @@ VueWrapper {
           "provide": [Function],
           "render": [Function],
           "staticRenderFns": Array [],
-          "watch": Object {},
         },
         "$parent": undefined,
         "$refs": Object {},
@@ -5767,9 +3949,7 @@ VueWrapper {
         "__emitted": Object {},
         "__emittedByOrder": Array [],
         "_c": [Function],
-        "_data": Object {
-          "inputVal": undefined,
-        },
+        "_data": Object {},
         "_directInactive": false,
         "_events": Object {},
         "_hasHookEvent": false,
@@ -5779,7 +3959,6 @@ VueWrapper {
         "_isMounted": true,
         "_isVue": true,
         "_props": Object {
-          "onCheck": [Function],
           "sublabel": "",
           "text": "Share Location",
           "value": undefined,
@@ -5796,7 +3975,6 @@ VueWrapper {
           "deep": false,
           "depIds": Set {
             2,
-            7,
             4,
             3,
           },
@@ -5805,35 +3983,6 @@ VueWrapper {
               "_sortedId": 0,
               "id": 2,
               "subs": Array [
-                [Circular],
-              ],
-            },
-            Dep {
-              "_sortedId": 0,
-              "id": 7,
-              "subs": Array [
-                Watcher {
-                  "active": true,
-                  "cb": [Function],
-                  "deep": false,
-                  "depIds": Set {
-                    7,
-                  },
-                  "deps": Array [
-                    [Circular],
-                  ],
-                  "dirty": false,
-                  "expression": "inputVal",
-                  "getter": [Function],
-                  "id": 1,
-                  "lazy": false,
-                  "newDepIds": Set {},
-                  "newDeps": Array [],
-                  "sync": true,
-                  "user": true,
-                  "value": undefined,
-                  "vm": [Circular],
-                },
                 [Circular],
               ],
             },
@@ -5857,7 +4006,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
           "getter": [Function],
-          "id": 2,
+          "id": 1,
           "lazy": false,
           "newDepIds": Set {},
           "newDeps": Array [],
@@ -5872,84 +4021,7 @@ VueWrapper {
             "cb": [Function],
             "deep": false,
             "depIds": Set {
-              7,
-            },
-            "deps": Array [
-              Dep {
-                "_sortedId": 0,
-                "id": 7,
-                "subs": Array [
-                  [Circular],
-                  Watcher {
-                    "active": true,
-                    "cb": [Function],
-                    "deep": false,
-                    "depIds": Set {
-                      2,
-                      7,
-                      4,
-                      3,
-                    },
-                    "deps": Array [
-                      Dep {
-                        "_sortedId": 0,
-                        "id": 2,
-                        "subs": Array [
-                          [Circular],
-                        ],
-                      },
-                      [Circular],
-                      Dep {
-                        "_sortedId": 0,
-                        "id": 4,
-                        "subs": Array [
-                          [Circular],
-                        ],
-                      },
-                      Dep {
-                        "_sortedId": 0,
-                        "id": 3,
-                        "subs": Array [
-                          [Circular],
-                        ],
-                      },
-                    ],
-                    "dirty": false,
-                    "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                    "getter": [Function],
-                    "id": 2,
-                    "lazy": false,
-                    "newDepIds": Set {},
-                    "newDeps": Array [],
-                    "sync": true,
-                    "user": false,
-                    "value": undefined,
-                    "vm": [Circular],
-                  },
-                ],
-              },
-            ],
-            "dirty": false,
-            "expression": "inputVal",
-            "getter": [Function],
-            "id": 1,
-            "lazy": false,
-            "newDepIds": Set {},
-            "newDeps": Array [],
-            "sync": true,
-            "user": true,
-            "value": undefined,
-            "vm": [Circular],
-          },
-          Watcher {
-            "active": true,
-            "cb": [Function],
-            "deep": false,
-            "depIds": Set {
               2,
-              7,
               4,
               3,
             },
@@ -5958,35 +4030,6 @@ VueWrapper {
                 "_sortedId": 0,
                 "id": 2,
                 "subs": Array [
-                  [Circular],
-                ],
-              },
-              Dep {
-                "_sortedId": 0,
-                "id": 7,
-                "subs": Array [
-                  Watcher {
-                    "active": true,
-                    "cb": [Function],
-                    "deep": false,
-                    "depIds": Set {
-                      7,
-                    },
-                    "deps": Array [
-                      [Circular],
-                    ],
-                    "dirty": false,
-                    "expression": "inputVal",
-                    "getter": [Function],
-                    "id": 1,
-                    "lazy": false,
-                    "newDepIds": Set {},
-                    "newDeps": Array [],
-                    "sync": true,
-                    "user": true,
-                    "value": undefined,
-                    "vm": [Circular],
-                  },
                   [Circular],
                 ],
               },
@@ -6010,7 +4053,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
             "getter": [Function],
-            "id": 2,
+            "id": 1,
             "lazy": false,
             "newDepIds": Set {},
             "newDeps": Array [],
@@ -6020,7 +4063,7 @@ VueWrapper {
             "vm": [Circular],
           },
         ],
-        "inputVal": undefined,
+        "onChange": [Function],
       },
       "_self": [Circular],
       "_staticTrees": null,
@@ -6032,7 +4075,6 @@ VueWrapper {
         "deep": false,
         "depIds": Set {
           2,
-          7,
           4,
           3,
         },
@@ -6041,35 +4083,6 @@ VueWrapper {
             "_sortedId": 0,
             "id": 2,
             "subs": Array [
-              [Circular],
-            ],
-          },
-          Dep {
-            "_sortedId": 0,
-            "id": 7,
-            "subs": Array [
-              Watcher {
-                "active": true,
-                "cb": [Function],
-                "deep": false,
-                "depIds": Set {
-                  7,
-                },
-                "deps": Array [
-                  [Circular],
-                ],
-                "dirty": false,
-                "expression": "inputVal",
-                "getter": [Function],
-                "id": 1,
-                "lazy": false,
-                "newDepIds": Set {},
-                "newDeps": Array [],
-                "sync": true,
-                "user": true,
-                "value": undefined,
-                "vm": [Circular],
-              },
               [Circular],
             ],
           },
@@ -6093,7 +4106,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
         "getter": [Function],
-        "id": 2,
+        "id": 1,
         "lazy": false,
         "newDepIds": Set {},
         "newDeps": Array [],
@@ -6108,84 +4121,7 @@ VueWrapper {
           "cb": [Function],
           "deep": false,
           "depIds": Set {
-            7,
-          },
-          "deps": Array [
-            Dep {
-              "_sortedId": 0,
-              "id": 7,
-              "subs": Array [
-                [Circular],
-                Watcher {
-                  "active": true,
-                  "cb": [Function],
-                  "deep": false,
-                  "depIds": Set {
-                    2,
-                    7,
-                    4,
-                    3,
-                  },
-                  "deps": Array [
-                    Dep {
-                      "_sortedId": 0,
-                      "id": 2,
-                      "subs": Array [
-                        [Circular],
-                      ],
-                    },
-                    [Circular],
-                    Dep {
-                      "_sortedId": 0,
-                      "id": 4,
-                      "subs": Array [
-                        [Circular],
-                      ],
-                    },
-                    Dep {
-                      "_sortedId": 0,
-                      "id": 3,
-                      "subs": Array [
-                        [Circular],
-                      ],
-                    },
-                  ],
-                  "dirty": false,
-                  "expression": "function () {
-      vm._update(vm._render(), hydrating);
-    }",
-                  "getter": [Function],
-                  "id": 2,
-                  "lazy": false,
-                  "newDepIds": Set {},
-                  "newDeps": Array [],
-                  "sync": true,
-                  "user": false,
-                  "value": undefined,
-                  "vm": [Circular],
-                },
-              ],
-            },
-          ],
-          "dirty": false,
-          "expression": "inputVal",
-          "getter": [Function],
-          "id": 1,
-          "lazy": false,
-          "newDepIds": Set {},
-          "newDeps": Array [],
-          "sync": true,
-          "user": true,
-          "value": undefined,
-          "vm": [Circular],
-        },
-        Watcher {
-          "active": true,
-          "cb": [Function],
-          "deep": false,
-          "depIds": Set {
             2,
-            7,
             4,
             3,
           },
@@ -6194,35 +4130,6 @@ VueWrapper {
               "_sortedId": 0,
               "id": 2,
               "subs": Array [
-                [Circular],
-              ],
-            },
-            Dep {
-              "_sortedId": 0,
-              "id": 7,
-              "subs": Array [
-                Watcher {
-                  "active": true,
-                  "cb": [Function],
-                  "deep": false,
-                  "depIds": Set {
-                    7,
-                  },
-                  "deps": Array [
-                    [Circular],
-                  ],
-                  "dirty": false,
-                  "expression": "inputVal",
-                  "getter": [Function],
-                  "id": 1,
-                  "lazy": false,
-                  "newDepIds": Set {},
-                  "newDeps": Array [],
-                  "sync": true,
-                  "user": true,
-                  "value": undefined,
-                  "vm": [Circular],
-                },
                 [Circular],
               ],
             },
@@ -6246,7 +4153,7 @@ VueWrapper {
       vm._update(vm._render(), hydrating);
     }",
           "getter": [Function],
-          "id": 2,
+          "id": 1,
           "lazy": false,
           "newDepIds": Set {},
           "newDeps": Array [],
@@ -6256,7 +4163,7 @@ VueWrapper {
           "vm": [Circular],
         },
       ],
-      "inputVal": undefined,
+      "onChange": [Function],
     },
     "data": Object {
       "staticClass": "wrapper",
@@ -6280,7 +4187,6 @@ VueWrapper {
           <input
             id="Share Location-switch"
             type="checkbox"
-            value=""
           />
            
           <span
