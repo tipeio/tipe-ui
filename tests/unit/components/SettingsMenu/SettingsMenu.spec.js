@@ -1,11 +1,16 @@
 import { shallowMount } from '@vue/test-utils'
+import { createRenderer } from 'vue-server-renderer'
 import SettingsMenu from '@/components/SettingsMenu'
 import Icon from '@/components/Icon'
 
 describe('SettingsMenu.vue', () => {
   it('renders', () => {
+    const renderer = createRenderer()
     const wrapper = shallowMount(SettingsMenu)
-    expect(wrapper).toMatchSnapshot()
+    renderer.renderToString(wrapper.vm, (err, str) => {
+      if (err) throw new Error(err)
+      expect(str).toMatchSnapshot()
+    })
   })
   it('renders the correct number of list items', () => {
     const wrapper = shallowMount(SettingsMenu)
