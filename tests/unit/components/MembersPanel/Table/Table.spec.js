@@ -3,7 +3,6 @@ import { TipeTable, TableRow } from '@/components/MembersPanel'
 import TipeScrollble from '@/components/Scrollable'
 import { createRenderer } from 'vue-server-renderer'
 import Icon from '@/components/Icon'
-import Seperator from '@/components/Seperator'
 
 describe('Table.vue', () => {
   it('renders', () => {
@@ -56,14 +55,6 @@ describe('Table.vue', () => {
       }
     })
     expect(wrapper.contains(Icon)).toBe(true)
-  })
-  it('should render the Seperator component', () => {
-    const wrapper = shallowMount(TipeTable, {
-      propsData: {
-        members
-      }
-    })
-    expect(wrapper.contains(Seperator)).toBe(true)
   })
   it('should emit the sort method', () => {
     const wrapper = shallowMount(TipeTable, {

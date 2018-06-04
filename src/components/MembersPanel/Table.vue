@@ -1,7 +1,6 @@
 <template>
   <table class="table">
     <tr class="table-heading">
-      <seperator />
       <th
         class="start"
         @click="sort('name')">NAME<span><icon
@@ -21,7 +20,6 @@
         width="9px"
         height="6px"/></span></th>
       <th>ACTION</th>
-      <seperator />
     </tr>
     <div class="table-body">
       <tipe-scrollable>
@@ -39,7 +37,6 @@
 <script>
 import vueTypes from 'vue-types'
 import { TableRow } from '.'
-import Seperator from '../Seperator'
 import Icon from '../Icon'
 import TipeScrollable from '@/components/Scrollable'
 
@@ -48,7 +45,6 @@ export default {
   components: {
     TipeScrollable,
     TableRow,
-    Seperator,
     Icon
   },
   props: {
