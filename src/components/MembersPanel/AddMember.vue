@@ -7,12 +7,17 @@
     <div class="seperator"><seperator /></div>
     <div class="content">
       <p class="title">Add Member</p>
-      <div class="add-avatar">
-        <div class="outside">
-          <div class="circle"/>
-        </div>
-        <p class="subtitle">Add avatar</p>
-      </div>
+      <avatar-upload />
+      <form>
+        <simple-input 
+          text-label="Name" 
+          input-type="text" 
+          text-placeholder="Type your name here"/>
+        <simple-input 
+          text-label="Email" 
+          input-type="email" 
+          text-placeholder="Type your email here"/>
+      </form>
     </div>
   </div>
 </template>
@@ -22,10 +27,12 @@ import { createManyMocks, user } from '../../mocks'
 import Icon from '../Icon'
 import TipeButton from '../Button'
 import Seperator from '../Seperator'
+import AvatarUpload from '../AvatarUpload'
+import { SimpleInput } from '../Input'
 
 export default {
   name: 'AddMember',
-  components: { Icon, TipeButton, Seperator },
+  components: { Icon, TipeButton, Seperator, AvatarUpload, SimpleInput },
   data() {
     return {
       members: createManyMocks(user, 12),
@@ -77,7 +84,6 @@ export default {
 .content {
   grid-area: content;
   display: grid;
-  justify-content: center;
   width: 100%;
   align-content: start;
   grid-row-gap: 2rem;
@@ -87,35 +93,12 @@ export default {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
+    justify-self: center;
   }
 
-  & .add-avatar {
+  & form {
     display: grid;
-    width: 100%;
-    grid-row-gap: 1rem;
-    justify-content: center;
-    align-content: start;
-
-    & .circle {
-      height: 100px;
-      width: 100px;
-      border-radius: 100%;
-      background-color: var(--gray-blue-light);
-    }
-
-    & .outside {
-      height: 100px;
-      width: 100px;
-      border-radius: 100%;
-      border: var(--text-gray-light) dashed 1px;
-    }
-
-    & .subtitle {
-      font-size: 1rem;
-      color: var(--text-gray-normal);
-      margin: 0;
-      text-align: center;
-    }
+    grid-row-gap: 1.25rem;
   }
 }
 
