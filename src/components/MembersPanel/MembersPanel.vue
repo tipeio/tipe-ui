@@ -6,8 +6,8 @@
           <p class="text">Members</p>
           <p class="small-text">Description text goes here</p>
         </div>
-        <tipe-button 
-          icon-before="plus" 
+        <tipe-button
+          icon-before="plus"
           @click="modal">Add Member</tipe-button>
       </div>
       <tipe-table :members="members" />
@@ -44,8 +44,10 @@ export default {
 <style lang='postcss' scoped>
 .grid {
   display: grid;
-  grid-template-rows: 4rem auto;
+  grid-template-rows: 4rem 1fr;
   width: 100%;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 .flex-row {

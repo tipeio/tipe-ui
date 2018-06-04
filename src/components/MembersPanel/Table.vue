@@ -1,35 +1,37 @@
 <template>
   <table class="table">
-    <seperator />
     <tr class="table-heading">
-      <th 
-        class="start" 
-        @click="sort('name')">NAME<span><icon 
-          icon="arrow-up" 
-          width="9px" 
+      <seperator />
+      <th
+        class="start"
+        @click="sort('name')">NAME<span><icon
+          icon="arrow-up"
+          width="9px"
           height="6px"/></span></th>
-      <th @click="sort('role')">ROLE<span><icon 
-        icon="arrow-up" 
-        width="9px" 
+      <th @click="sort('role')">ROLE<span><icon
+        icon="arrow-up"
+        width="9px"
         height="6px"/></span></th>
-      <th @click="sort('date')">DATE JOINED<span><icon 
-        icon="arrow-up" 
-        width="9px" 
+      <th @click="sort('date')">DATE JOINED<span><icon
+        icon="arrow-up"
+        width="9px"
         height="6px"/></span></th>
-      <th @click="sort('status')">STATUS<span><icon 
-        icon="arrow-up" 
-        width="9px" 
+      <th @click="sort('status')">STATUS<span><icon
+        icon="arrow-up"
+        width="9px"
         height="6px"/></span></th>
       <th>ACTION</th>
+      <seperator />
     </tr>
-    <seperator />
-    <div class="scrollable">
-      <table-row 
-        v-for="(member, index) in members" 
-        :key="member.id" 
-        :member="member"
-        :gray="index % 2 !== 0"
-      />
+    <div class="table-body">
+      <tipe-scrollable>
+        <table-row
+          v-for="(member, index) in members"
+          :key="member.id"
+          :member="member"
+          :gray="index % 2 !== 0"
+        />
+      </tipe-scrollable>
     </div>
   </table>
 </template>
@@ -39,10 +41,16 @@ import vueTypes from 'vue-types'
 import { TableRow } from '.'
 import Seperator from '../Seperator'
 import Icon from '../Icon'
+import TipeScrollable from '@/components/Scrollable'
 
 export default {
   name: 'TipeTable',
-  components: { TableRow, Seperator, Icon },
+  components: {
+    TipeScrollable,
+    TableRow,
+    Seperator,
+    Icon
+  },
   props: {
     members: vueTypes.array.isRequired
   },
@@ -59,24 +67,24 @@ export default {
 .table {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  display: grid;
+  grid-template-rows: 2.5rem 1fr;
 }
 
-/* hide scrollbar */
-.scrollable {
+.table-body {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
-  padding-right: 17px;
-  box-sizing: content-box;
 }
 
 .table-heading {
   display: flex;
-  max-width: 100%;
-  justify-content: space-evenly;
-  height: 2.5rem;
+  width: 100%;
+  height: 100%;
   padding: 0 1rem;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  border-top: 1px solid var(--gray-light);
+  border-bottom: 1px solid var(--gray-light);
 
   & th {
     width: 100%;
