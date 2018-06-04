@@ -1,17 +1,21 @@
 import { shallowMount } from '@vue/test-utils'
 import { TipeTable, TableRow } from '@/components/MembersPanel'
-
+import { createRenderer } from 'vue-server-renderer'
 import Icon from '@/components/Icon'
 import Seperator from '@/components/Seperator'
 
 describe('Table.vue', () => {
   it('renders', () => {
+    const renderer = createRenderer()
     const wrapper = shallowMount(TipeTable, {
       propsData: {
         members
       }
     })
-    expect(wrapper).toMatchSnapshot()
+    renderer.renderToString(wrapper.vm, (err, str) => {
+      if (err) throw new Error(err)
+      expect(str).toMatchSnapshot()
+    })
   })
   it('should pass the correct members prop', () => {
     const wrapper = shallowMount(TipeTable, {
