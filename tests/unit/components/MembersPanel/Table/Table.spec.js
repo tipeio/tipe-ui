@@ -1,5 +1,6 @@
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount, mount } from '@vue/test-utils'
 import { TipeTable, TableRow } from '@/components/MembersPanel'
+import TipeScrollble from '@/components/Scrollable'
 import { createRenderer } from 'vue-server-renderer'
 import Icon from '@/components/Icon'
 import Seperator from '@/components/Seperator'
@@ -34,11 +35,18 @@ describe('Table.vue', () => {
     expect(wrapper.classes()).toContain('table')
   })
   it('should render the TableRow component', () => {
-    const wrapper = shallowMount(TipeTable, {
+    const wrapper = mount(TipeTable, {
       propsData: {
         members
+      },
+      stubs: {
+        TipeScrollable: TipeScrollble,
+        TableRow: '<!---->',
+        Seperator: '<!---->',
+        Icon: '<!---->'
       }
     })
+
     expect(wrapper.contains(TableRow)).toBe(true)
   })
   it('should render the Icon component', () => {
