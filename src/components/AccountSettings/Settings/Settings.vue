@@ -1,13 +1,14 @@
 <template>
-  <accordian text="Settings"><tipe-switch 
-    v-model="sharing"
-    :value="sharing"
-    :on-check="onCheck"
-    text="File Sharing"
-    sublabel="Turn on to share your file changes and updates" /><tipe-switch 
-      v-model="backup" 
-      :value="backup" 
-      text="Backup" />
+  <accordian text="Settings">
+    <tipe-switch 
+      :value="sharing"
+      text="File Sharing"
+      sublabel="Turn on to share your file changes and updates"
+      @change="onChangeSharing" />
+    <tipe-switch
+      :value="backup"
+      text="Backup" 
+      @change="onChangeBackup" />
   </accordian>
 </template>
 
@@ -25,8 +26,11 @@ export default {
     return { sharing: false, backup: true }
   },
   methods: {
-    onCheck(val) {
-      console.log('Checked!', val)
+    onChangeSharing(val) {
+      this.sharing = val
+    },
+    onChangeBackup(val) {
+      this.backup = val
     }
   }
 }

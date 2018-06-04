@@ -7,9 +7,9 @@
       <label class="switch">
         <input 
           :id="text +'-switch'" 
-          v-model="inputVal"
-          :value="value"
+          :checked="value"
           type="checkbox"
+          @change="onChange"
         >
         <span class="slider round"/>
       </label>
@@ -31,13 +31,9 @@ export default {
     value: vueTypes.boolean,
     onCheck: vueTypes.func
   },
-  data() {
-    return { inputVal: this.value }
-  },
-  watch: {
-    inputVal(val) {
-      this.$emit('input', val)
-      this.onCheck(val)
+  methods: {
+    onChange(event) {
+      this.$emit('change', event.target.checked)
     }
   }
 }
