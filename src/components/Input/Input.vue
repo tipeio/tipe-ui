@@ -1,12 +1,17 @@
 <template>
-  <div class="input-flex">
+  <div 
+    :class="{success: status === 'success', error: status === 'error', warning: status === 'warning'}" 
+    class="input-flex">
     <label :htmlFor="textLabel">{{ textLabel }}</label>
     <input 
       :type="inputType" 
       :id="textLabel" 
       :placeholder="textPlaceholder" 
-      :value="textValue" 
+      :value="textValue"
       @change="onChange" >
+    <p 
+      v-if="message" 
+      class="message">{{ message }}</p>
   </div>
 </template>
 
@@ -22,7 +27,10 @@ export default {
   },
   data() {
     return {
-      textValue: ''
+      textValue: '',
+      valid: '',
+      message: '',
+      status: ''
     }
   },
   methods: {
@@ -54,6 +62,63 @@ export default {
     & ::placeholder {
       color: #b5baca;
       font-size: 0.875rem;
+    }
+
+    &:focus {
+      height: calc(2.5rem - 1px);
+      border-bottom: #b5baca solid 2px;
+    }
+  }
+
+  & .message {
+    font-size: 0.6875rem;
+    margin: 0;
+    margin-top: 6.5px;
+  }
+
+  &.success {
+    & input {
+      border-bottom: #16e4a4 solid 1px;
+      &:focus {
+        height: calc(2.5rem - 1px);
+        border-bottom: #16e4a4 solid 2px;
+      }
+    }
+  }
+
+  &.error {
+    & input {
+      border-bottom: #e44646 solid 1px;
+      &:focus {
+        height: calc(2.5rem - 1px);
+        border-bottom: #e44646 solid 2px;
+      }
+    }
+
+    & label {
+      color: #e44646;
+    }
+
+    & .message {
+      color: #e44646;
+    }
+  }
+
+  &.warning {
+    & input {
+      border-bottom: #f38438 solid 1px;
+      &:focus {
+        height: calc(2.5rem - 1px);
+        border-bottom: #f38438 solid 2px;
+      }
+    }
+
+    & label {
+      color: #f38438;
+    }
+
+    & .message {
+      color: #f38438;
     }
   }
 }
