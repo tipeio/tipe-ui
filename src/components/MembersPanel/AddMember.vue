@@ -51,7 +51,11 @@ export default {
     return {
       members: createManyMocks(user, 12),
       modalOpen: false,
-      options: ['Owner', 'Member', 'Manager']
+      options: [
+        { label: 'Owner', value: 'owner' },
+        { label: 'Member', value: 'member' },
+        { label: 'Manager', value: 'manager' }
+      ]
     }
   },
   methods: {

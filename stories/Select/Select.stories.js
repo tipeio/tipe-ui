@@ -2,7 +2,10 @@ import { storiesOf } from '@storybook/vue'
 
 import TipeSelect from '../../src/components/Select'
 
-const options = () => ['Owner', 'Admin']
+const options = () => [
+  { label: 'Owner', value: 'owner' },
+  { label: 'Admin', value: 'admin' }
+]
 const style = () => ({
   width: '300px'
 })

@@ -8,19 +8,19 @@
       <select>
         <option 
           v-for="option in options"
-          :value="option.toLowerCase()" 
-          :selected="value === option.toLowerCase()"
-          :key="option"
-          hidden>{{ option }}</option>
+          :value="option.value" 
+          :selected="value === option.value"
+          :key="option.value"
+          hidden>{{ option.label }}</option>
       </select>
       <div 
         v-if="open" 
         class="dropdown">
         <div 
           v-for="option in options"
-          :key="option" 
+          :key="option.value" 
           class="dropdown-item"
-          @click="onSelect(option.toLowerCase())"><p>{{ option }}</p></div>
+          @click="onSelect(option.value)"><p>{{ option.label }}</p></div>
       </div>
     </div>
   </div>
@@ -39,7 +39,7 @@ export default {
     return {
       textValue: '',
       open: false,
-      value: ''
+      value: this.options[0].value
     }
   },
   methods: {
@@ -50,7 +50,6 @@ export default {
       this.open = !this.open
     },
     onSelect(val) {
-      console.log(val)
       this.value = val
     }
   }
