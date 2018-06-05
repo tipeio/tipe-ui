@@ -1,13 +1,27 @@
 <template>
-  <div class="select-flex">
+  <div 
+    class="select-flex" 
+    @click="onClick">
     <label :htmlFor="textLabel">{{ textLabel }}</label>
 
     <div class="select">
       <select>
         <option 
-          v-for="option in options" 
-          :key="option">{{ option }}</option>
+          v-for="option in options"
+          :value="option.toLowerCase()" 
+          :selected="value === option.toLowerCase()"
+          :key="option"
+          hidden>{{ option }}</option>
       </select>
+      <div 
+        v-if="open" 
+        class="dropdown">
+        <div 
+          v-for="option in options"
+          :key="option" 
+          class="dropdown-item"
+          @click="onSelect(option.toLowerCase())"><p>{{ option }}</p></div>
+      </div>
     </div>
   </div>
 </template>
@@ -23,12 +37,21 @@ export default {
   },
   data() {
     return {
-      textValue: ''
+      textValue: '',
+      open: false,
+      value: ''
     }
   },
   methods: {
     onChange(event) {
       this.textValue = event.target.value
+    },
+    onClick() {
+      this.open = !this.open
+    },
+    onSelect(val) {
+      console.log(val)
+      this.value = val
     }
   }
 }
@@ -101,5 +124,39 @@ export default {
   border-color: #627098;
   right: 0.5em;
   z-index: 4;
+}
+
+.dropdown {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  z-index: 2;
+  box-shadow: 5px 20px 40px 0 rgba(0, 0, 0, 0.1);
+  padding: 0.6875rem 0;
+
+  & .dropdown-item {
+    height: 2.1875rem;
+    display: flex;
+    align-items: center;
+
+    & p {
+      color: #627098;
+      font-size: 0.8125rem;
+      margin: 0;
+      padding-left: 1.0625rem;
+    }
+
+    &:hover {
+      background-color: #f7f8fb;
+      border-left: 3px #1cc5bc solid;
+
+      & p {
+        padding-left: calc(1.0625rem - 3px);
+      }
+    }
+  }
+}
+
+.none {
+  display: none;
 }
 </style>

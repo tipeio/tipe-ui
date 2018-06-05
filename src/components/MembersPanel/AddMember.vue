@@ -51,7 +51,7 @@ export default {
     return {
       members: createManyMocks(user, 12),
       modalOpen: false,
-      options: ['Owner', 'Admin']
+      options: ['Owner', 'Member', 'Manager']
     }
   },
   methods: {
@@ -115,23 +115,6 @@ export default {
     display: grid;
     grid-row-gap: 1.25rem;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-columns: 1fr 1fr;
-    grid-template-areas:
-      'name name'
-      'email email'
-      'role date';
-
-    & .name {
-      grid-area: name;
-    }
-
-    & .email {
-      grid-area: email;
-    }
-
-    & .role {
-      grid-area: role;
-    }
   }
 }
 
