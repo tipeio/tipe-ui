@@ -1,29 +1,15 @@
 import { storiesOf } from '@storybook/vue'
-import faker from 'faker'
+import fileMock from '@/mocks/File'
+import createManyMocks from '@/mocks/createManyMocks'
 
 import TipeFinder from '@/components/Finder'
 
 const createStyle = () => ({
   height: '500px',
-  width: '500px'
+  width: '700px'
 })
 
-const fileTypes = ['document', 'folder']
-
-const createFile = () => ({
-  label: faker.lorem.words(3),
-  type: fileTypes[Math.floor(Math.random() * fileTypes.length)]
-})
-
-const createManyFiles = (num = 10) => {
-  const files = []
-
-  while (files.length < num) files.push(createFile())
-
-  return files
-}
-
-const files = createManyFiles(100)
+const files = createManyMocks(fileMock, 50)
 
 storiesOf('Finder', module)
   .add('empty', () => ({
@@ -34,7 +20,7 @@ storiesOf('Finder', module)
     },
     template: '<tipe-finder :style="styleObject" />'
   }))
-  .add('list', () => ({
+  .add('list, rectangle', () => ({
     components: { TipeFinder },
     computed: {
       styleObject: () => createStyle(),
@@ -42,7 +28,7 @@ storiesOf('Finder', module)
     },
     template: '<tipe-finder :style="styleObject" :files="files" />'
   }))
-  .add('grid', () => ({
+  .add('grid, rectangle', () => ({
     components: { TipeFinder },
     computed: {
       styleObject: () => createStyle(),
@@ -50,4 +36,22 @@ storiesOf('Finder', module)
     },
     template:
       '<tipe-finder layout="grid" :style="styleObject" :files="files" />'
+  }))
+  .add('list, square', () => ({
+    components: { TipeFinder },
+    computed: {
+      styleObject: () => createStyle(),
+      files: () => files
+    },
+    template:
+      '<tipe-finder :style="styleObject" :files="files" icon="square" />'
+  }))
+  .add('grid, square', () => ({
+    components: { TipeFinder },
+    computed: {
+      styleObject: () => createStyle(),
+      files: () => files
+    },
+    template:
+      '<tipe-finder layout="grid" :style="styleObject" :files="files" icon="square" />'
   }))

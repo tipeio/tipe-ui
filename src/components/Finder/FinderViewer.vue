@@ -9,6 +9,7 @@
           v-for="(file, i) in files"
           :key="i"
           :file="file"
+          :type="icon"
           class="item"
         />
       </div>
@@ -20,7 +21,7 @@
 import vueTypes from 'vue-types'
 import FileType from './FileType'
 
-import TypeFileIcon from './FileIcon.vue'
+import TypeFileIcon from './FileIcon'
 
 export default {
   name: 'TipeFinder',
@@ -29,13 +30,14 @@ export default {
   },
   props: {
     files: vueTypes.arrayOf(FileType).def([]),
-    layout: vueTypes.oneOf(['list', 'grid']).def('list')
+    layout: vueTypes.oneOf(['list', 'grid']).def('list'),
+    icon: vueTypes.oneOf(['rectangle', 'square']).def('rectangle')
   },
   computed: {
     layoutClass() {
       return {
         layout: true,
-        [this.layout]: true
+        [`${this.layout}-${this.icon}`]: true
       }
     }
   }
@@ -53,20 +55,30 @@ export default {
   height: 100%;
   overflow-y: scroll;
   padding-right: 17px;
+  padding-bottom: 1rem;
   box-sizing: content-box;
 }
 
-.layout.list {
+.layout.list-rectangle,
+.layout.list-square {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: max-content;
   grid-gap: 0.8rem;
 }
 
-.layout.grid {
+.layout.grid-rectangle {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
   grid-auto-rows: max-content;
   grid-gap: 0.8rem;
+}
+
+.layout.grid-square {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  grid-auto-rows: max-content;
+  grid-column-gap: 0.8rem;
+  grid-row-gap: 1.8rem;
 }
 </style>

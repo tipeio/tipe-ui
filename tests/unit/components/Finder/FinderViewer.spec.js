@@ -1,6 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
-import FinderViewer from '@/components/Finder/FinderViewer.vue'
-import FinderIcon from '@/components/Finder/FileIcon.vue'
+import { createRenderer } from 'vue-server-renderer'
+import FinderViewer from '@/components/Finder/FinderViewer'
+import FinderIcon from '@/components/Finder/FileIcon'
 import faker from 'faker'
 
 const createFile = () => ({
@@ -11,9 +12,13 @@ const createFile = () => ({
 describe('FinderViewer', () => {
   describe('<template>', () => {
     it('matches previous snapshot', () => {
+      const renderer = createRenderer()
       const wrapper = shallowMount(FinderViewer)
 
-      expect(wrapper).toMatchSnapshot()
+      renderer.renderToString(wrapper.vm, (err, str) => {
+        if (err) throw new Error(err)
+        expect(str).toMatchSnapshot()
+      })
     })
 
     it('has correct data-tipe-iu attibute', () => {
@@ -37,7 +42,7 @@ describe('FinderViewer', () => {
       const propsData = { layout: 'grid' }
       const wrapper = shallowMount(FinderViewer, { propsData })
 
-      expect(wrapper.find('.layout').classes()).toContain(propsData.layout)
+      expect(wrapper.find('.layout').classes()).toContain('grid-rectangle')
     })
   })
 })

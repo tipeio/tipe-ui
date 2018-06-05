@@ -4,6 +4,7 @@
     v-else
     :files="files"
     :layout="layout"
+    :icon="icon"
   />
 </template>
 
@@ -21,7 +22,8 @@ export default {
   },
   props: {
     files: vueTypes.arrayOf(FileType).def([]),
-    layout: vueTypes.oneOf(['list', 'grid']).def('list')
+    layout: vueTypes.oneOf(['list', 'grid']).def('list'),
+    icon: vueTypes.oneOf(['rectangle', 'square']).def('rectangle')
   },
   computed: {
     empty() {
