@@ -11,6 +11,7 @@
             <tipe-finder
               :files="templates"
               layout="grid"
+              icon="square"
             />
           </div>
         </div>

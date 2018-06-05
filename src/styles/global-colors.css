@@ -1,5 +1,6 @@
 :root {
   /* grays */
+  --gray: rgb(181, 186, 202); /* #b5baca */
   --gray-light: rgb(231, 233, 234); /* or #e7e9ea */
   --gray-blue-light: rgb(233, 239, 244); /* or #e9eff4 */
   --gray-lightest: rgb(250, 251, 255) /* #fafbff */;
