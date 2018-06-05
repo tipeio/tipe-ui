@@ -7,7 +7,7 @@
       :type="inputType" 
       :id="textLabel" 
       :placeholder="textPlaceholder" 
-      :value="textValue"
+      :value="value"
       @change="onChange" >
     <p 
       v-if="message" 
@@ -23,11 +23,11 @@ export default {
   props: {
     textPlaceholder: vueTypes.string.isRequired,
     textLabel: vueTypes.string.isRequired,
-    inputType: vueTypes.string.def('text')
+    inputType: vueTypes.string.def('text'),
+    value: vueTypes.string
   },
   data() {
     return {
-      textValue: '',
       valid: '',
       message: '',
       status: ''
@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     onChange(event) {
-      this.textValue = event.target.value
+      this.$emit('change', event.target.value)
     }
   }
 }

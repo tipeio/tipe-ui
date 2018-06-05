@@ -13,16 +13,20 @@
           text-label="Name" 
           input-type="text" 
           class="name"
-          text-placeholder="Type your name here"/>
+          text-placeholder="Type your name here"
+          @change="onChangeName"/>
         <tipe-input 
           text-label="Email" 
           class="email"
           input-type="email" 
-          text-placeholder="Type your email here"/>
+          text-placeholder="Type your email here"
+          @change="onChangeEmail"/>
         <tipe-select 
           :options="options" 
-          class="role" 
-          text-label="Role" />
+          :value="roleValue" 
+          class="role"
+          text-label="Role"
+          @change="onChangeRole" />
       </form>
     </div>
   </div>
@@ -55,12 +59,24 @@ export default {
         { label: 'Owner', value: 'owner' },
         { label: 'Member', value: 'member' },
         { label: 'Manager', value: 'manager' }
-      ]
+      ],
+      emailValue: '',
+      roleValue: 'member',
+      nameValue: ''
     }
   },
   methods: {
     modal() {
       this.modalOpen = !this.modalOpen
+    },
+    onChangeEmail(val) {
+      this.emailValue = val
+    },
+    onChangeRole(val) {
+      this.roleValue = val
+    },
+    onChangeName(val) {
+      this.nameValue = val
     }
   }
 }

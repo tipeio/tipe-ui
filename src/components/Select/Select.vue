@@ -20,7 +20,7 @@
           v-for="option in options"
           :key="option.value" 
           class="dropdown-item"
-          @click="onSelect(option.value)"><p>{{ option.label }}</p></div>
+          @click="onChange(option.value)"><p>{{ option.label }}</p></div>
       </div>
     </div>
   </div>
@@ -33,24 +33,20 @@ export default {
   name: 'TipeSelect',
   props: {
     textLabel: vueTypes.string.isRequired,
-    options: vueTypes.array.isRequired
+    options: vueTypes.array.isRequired,
+    value: vueTypes.string
   },
   data() {
     return {
-      textValue: '',
-      open: false,
-      value: this.options[0].value
+      open: false
     }
   },
   methods: {
-    onChange(event) {
-      this.textValue = event.target.value
-    },
     onClick() {
       this.open = !this.open
     },
-    onSelect(val) {
-      this.value = val
+    onChange(val) {
+      this.$emit('change', val)
     }
   }
 }
