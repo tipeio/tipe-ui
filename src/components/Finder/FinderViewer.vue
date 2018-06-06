@@ -19,7 +19,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import FileType from './FileType'
+import FileShape from '@/types/File'
 
 import TypeFileIcon from './FileIcon'
 
@@ -29,9 +29,9 @@ export default {
     TypeFileIcon
   },
   props: {
-    files: vueTypes.arrayOf(FileType).def([]),
+    files: vueTypes.arrayOf(vueTypes.shape(FileShape)).def([]),
     layout: vueTypes.oneOf(['list', 'grid']).def('list'),
-    icon: vueTypes.oneOf(['rectangle', 'square']).def('rectangle')
+    icon: vueTypes.oneOf(['rectangle', 'square', 'details']).def('rectangle')
   },
   computed: {
     layoutClass() {
@@ -64,21 +64,25 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: max-content;
-  grid-gap: 0.8rem;
+}
+
+.layout.list-details,
+.layout.grid-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
 }
 
 .layout.grid-rectangle {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
   grid-auto-rows: max-content;
-  grid-gap: 0.8rem;
 }
 
 .layout.grid-square {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
   grid-auto-rows: max-content;
-  grid-column-gap: 0.8rem;
   grid-row-gap: 1.8rem;
 }
 </style>

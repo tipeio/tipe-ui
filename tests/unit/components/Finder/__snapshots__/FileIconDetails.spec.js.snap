@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileIconDetails <template> matches previous snapshot 1`] = `
+<div data-tipe-ui="TipeFileIconDetails">
+  <button class="details-button">
+    <div class="details-layout">
+      <div class="icon-container">
+        <!---->
+      </div>
+      <div class="label">
+        hello world
+      </div>
+      <div class="created-by">
+        Created by test test
+      </div>
+      <div class="dot">
+        <!---->
+      </div>
+      <div class="updated-at">
+        Edited a few seconds ago
+      </div>
+    </div>
+  </button>
+  <!---->
+  <!---->
+</div>
+`;

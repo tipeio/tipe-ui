@@ -26,6 +26,7 @@
 
 <script>
 import vueTypes from 'vue-types'
+import FileShape from '@/types/File'
 import TipeIcon from '@/components/Icon'
 import TipeCue from './CueIcon'
 
@@ -36,10 +37,7 @@ export default {
     TipeCue
   },
   props: {
-    file: vueTypes.shape({
-      type: vueTypes.string,
-      label: vueTypes.string
-    })
+    file: vueTypes.shape(FileShape)
   },
   computed: {
     icon() {
