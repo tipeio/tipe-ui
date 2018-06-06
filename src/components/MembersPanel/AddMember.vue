@@ -97,14 +97,14 @@ export default {
       let status = valid === true ? 'success' : 'error'
       let message = status === 'error' ? 'Please enter a valid name' : ''
       return {
-        valid: this.nameValue !== '',
+        valid,
         status,
         message
       }
     },
     canSubmit() {
       return (
-        this.emailValidity.valid && this.nameValidity.valid && this.roleValue
+        this.emailValidity.valid && this.nameValidity.valid && !!this.roleValue
       )
     }
   },

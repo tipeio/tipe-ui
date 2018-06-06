@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddMember.vue renders 1`] = `
+<div class="grid">
+  <div class="close">
+    <!---->
+  </div>
+  <div class="content">
+    <p class="title">Add Member</p>
+    <!---->
+    <form>
+      <!---->
+      <!---->
+      <!---->
+      <div class="seperator">
+        <!---->
+      </div>
+      <div class="add-button">
+        <!---->
+      </div>
+    </form>
+  </div>
+</div>
+`;
