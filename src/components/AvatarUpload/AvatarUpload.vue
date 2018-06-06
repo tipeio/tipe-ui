@@ -1,7 +1,7 @@
 <template>
   <div 
     class="add-avatar" 
-    @click="onClick">
+    @click="$emit('click')">
     
     <svg 
       width="114px" 
@@ -57,12 +57,7 @@
 
 <script>
 export default {
-  name: 'AvatarUpload',
-  methods: {
-    onClick() {
-      console.log('image upload clicked')
-    }
-  }
+  name: 'AvatarUpload'
 }
 </script>
 
