@@ -64,6 +64,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: max-content;
+  grid-gap: 0.8rem;
 }
 
 .layout.list-details,
@@ -77,12 +78,13 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
   grid-auto-rows: max-content;
+  grid-gap: 0.8rem;
 }
 
 .layout.grid-square {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
   grid-auto-rows: max-content;
-  grid-row-gap: 1.8rem;
+  grid-gap: 0.8rem;
 }
 </style>

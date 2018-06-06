@@ -9,7 +9,7 @@ const createStyle = () => ({
   width: '700px'
 })
 
-const files = createManyMocks(fileMock, 2)
+const files = createManyMocks(fileMock, 20)
 
 storiesOf('Finder', module)
   .add('empty', () => ({
