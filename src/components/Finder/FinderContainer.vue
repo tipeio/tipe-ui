@@ -10,7 +10,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import FileType from './FileType.js'
+import FileShape from '@/types/File'
 import TypeFinderViewer from './FinderViewer.vue'
 import TypeFinderEmpty from './FinderEmpty.vue'
 
@@ -21,9 +21,9 @@ export default {
     TypeFinderEmpty
   },
   props: {
-    files: vueTypes.arrayOf(FileType).def([]),
+    files: vueTypes.arrayOf(vueTypes.shape(FileShape)).def([]),
     layout: vueTypes.oneOf(['list', 'grid']).def('list'),
-    icon: vueTypes.oneOf(['rectangle', 'square']).def('rectangle')
+    icon: vueTypes.oneOf(['rectangle', 'square', 'details']).def('rectangle')
   },
   computed: {
     empty() {

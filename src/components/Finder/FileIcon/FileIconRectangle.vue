@@ -20,6 +20,7 @@
 
 <script>
 import vueTypes from 'vue-types'
+import FileShape from '@/types/File'
 import TipeIcon from '@/components/Icon'
 
 export default {
@@ -28,10 +29,7 @@ export default {
     TipeIcon
   },
   props: {
-    file: vueTypes.shape({
-      type: vueTypes.string,
-      label: vueTypes.string
-    })
+    file: vueTypes.shape(FileShape)
   },
   computed: {
     icon() {

@@ -10,6 +10,7 @@
     "precommit": "lint-staged && lint && test"
   },
   "dependencies": {
+    "moment": "^2.22.2",
     "vue": "^2.5.16",
     "vue-types": "^1.2.3",
     "xstate": "^3.2.1"
