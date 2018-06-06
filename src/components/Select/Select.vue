@@ -34,7 +34,7 @@ export default {
   props: {
     textLabel: vueTypes.string.isRequired,
     options: vueTypes.array.isRequired,
-    value: vueTypes.string
+    value: vueTypes.string.isRequired
   },
   data() {
     return {
@@ -149,9 +149,5 @@ export default {
       }
     }
   }
-}
-
-.none {
-  display: none;
 }
 </style>

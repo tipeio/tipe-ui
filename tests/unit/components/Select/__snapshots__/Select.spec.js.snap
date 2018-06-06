@@ -1,0 +1,6538 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TipeSelect.vue renders 1`] = `
+VueWrapper {
+  "_emitted": Object {},
+  "_emittedByOrder": Array [],
+  "element": <div
+    class="select-flex"
+  >
+    <label
+      htmlfor="Role"
+    >
+      Role
+    </label>
+     
+    <div
+      class="select"
+    >
+      <select>
+        <option
+          hidden="hidden"
+          value="owner"
+        >
+          Owner
+        </option>
+        <option
+          hidden="hidden"
+          value="admin"
+        >
+          Admin
+        </option>
+      </select>
+       
+      <!---->
+    </div>
+  </div>,
+  "isFunctionalComponent": undefined,
+  "isVueComponent": true,
+  "options": Object {
+    "attachedToDocument": false,
+    "sync": true,
+  },
+  "version": 2.5,
+  "vm": VueComponent {
+    "$attrs": Object {},
+    "$children": Array [],
+    "$createElement": [Function],
+    "$el": <div
+      class="select-flex"
+    >
+      <label
+        htmlfor="Role"
+      >
+        Role
+      </label>
+       
+      <div
+        class="select"
+      >
+        <select>
+          <option
+            hidden="hidden"
+            value="owner"
+          >
+            Owner
+          </option>
+          <option
+            hidden="hidden"
+            value="admin"
+          >
+            Admin
+          </option>
+        </select>
+         
+        <!---->
+      </div>
+    </div>,
+    "$emit": [Function],
+    "$listeners": Object {},
+    "$options": Object {
+      "_Ctor": Object {
+        "1": [Function],
+      },
+      "_base": [Function],
+      "_parentElm": null,
+      "_propKeys": Array [
+        "textLabel",
+        "options",
+        "value",
+      ],
+      "_refElm": null,
+      "beforeCreate": Array [
+        [Function],
+      ],
+      "components": Object {
+        "transition": Object {
+          "_Ctor": Object {
+            "1": [Function],
+          },
+          "name": "transition",
+          "render": [Function],
+        },
+        "transition-group": Object {
+          "_Ctor": Object {
+            "1": [Function],
+          },
+          "name": "transition-group",
+          "render": [Function],
+        },
+      },
+      "data": [Function],
+      "directives": Object {},
+      "filters": Object {},
+      "logModifiedComponents": true,
+      "methods": Object {
+        "onChange": [Function],
+        "onClick": [Function],
+      },
+      "name": "TipeSelect",
+      "props": Object {
+        "options": Object {
+          "default": [Function],
+          "required": true,
+          "type": [Function],
+        },
+        "textLabel": Object {
+          "default": "",
+          "required": true,
+          "type": [Function],
+        },
+        "value": Object {
+          "default": "",
+          "required": true,
+          "type": [Function],
+        },
+      },
+      "propsData": Object {
+        "options": Array [
+          Object {
+            "label": "Owner",
+            "value": "owner",
+          },
+          Object {
+            "label": "Admin",
+            "value": "admin",
+          },
+        ],
+        "textLabel": "Role",
+        "value": "member",
+      },
+      "provide": [Function],
+      "render": [Function],
+      "staticRenderFns": Array [],
+    },
+    "$parent": undefined,
+    "$refs": Object {},
+    "$root": [Circular],
+    "$scopedSlots": Object {},
+    "$slots": Object {},
+    "$vnode": undefined,
+    "__emitted": Object {},
+    "__emittedByOrder": Array [],
+    "_c": [Function],
+    "_data": Object {
+      "open": false,
+    },
+    "_directInactive": false,
+    "_events": Object {},
+    "_hasHookEvent": false,
+    "_inactive": null,
+    "_isBeingDestroyed": false,
+    "_isDestroyed": false,
+    "_isMounted": true,
+    "_isVue": true,
+    "_props": Object {
+      "options": Array [
+        Object {
+          "label": "Owner",
+          "value": "owner",
+        },
+        Object {
+          "label": "Admin",
+          "value": "admin",
+        },
+      ],
+      "textLabel": "Role",
+      "value": "member",
+    },
+    "_provided": undefined,
+    "_renderProxy": VueComponent {
+      "$attrs": Object {},
+      "$children": Array [],
+      "$createElement": [Function],
+      "$el": <div
+        class="select-flex"
+      >
+        <label
+          htmlfor="Role"
+        >
+          Role
+        </label>
+         
+        <div
+          class="select"
+        >
+          <select>
+            <option
+              hidden="hidden"
+              value="owner"
+            >
+              Owner
+            </option>
+            <option
+              hidden="hidden"
+              value="admin"
+            >
+              Admin
+            </option>
+          </select>
+           
+          <!---->
+        </div>
+      </div>,
+      "$emit": [Function],
+      "$listeners": Object {},
+      "$options": Object {
+        "_Ctor": Object {
+          "1": [Function],
+        },
+        "_base": [Function],
+        "_parentElm": null,
+        "_propKeys": Array [
+          "textLabel",
+          "options",
+          "value",
+        ],
+        "_refElm": null,
+        "beforeCreate": Array [
+          [Function],
+        ],
+        "components": Object {
+          "transition": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "name": "transition",
+            "render": [Function],
+          },
+          "transition-group": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "name": "transition-group",
+            "render": [Function],
+          },
+        },
+        "data": [Function],
+        "directives": Object {},
+        "filters": Object {},
+        "logModifiedComponents": true,
+        "methods": Object {
+          "onChange": [Function],
+          "onClick": [Function],
+        },
+        "name": "TipeSelect",
+        "props": Object {
+          "options": Object {
+            "default": [Function],
+            "required": true,
+            "type": [Function],
+          },
+          "textLabel": Object {
+            "default": "",
+            "required": true,
+            "type": [Function],
+          },
+          "value": Object {
+            "default": "",
+            "required": true,
+            "type": [Function],
+          },
+        },
+        "propsData": Object {
+          "options": Array [
+            Object {
+              "label": "Owner",
+              "value": "owner",
+            },
+            Object {
+              "label": "Admin",
+              "value": "admin",
+            },
+          ],
+          "textLabel": "Role",
+          "value": "member",
+        },
+        "provide": [Function],
+        "render": [Function],
+        "staticRenderFns": Array [],
+      },
+      "$parent": undefined,
+      "$refs": Object {},
+      "$root": [Circular],
+      "$scopedSlots": Object {},
+      "$slots": Object {},
+      "$vnode": undefined,
+      "__emitted": Object {},
+      "__emittedByOrder": Array [],
+      "_c": [Function],
+      "_data": Object {
+        "open": false,
+      },
+      "_directInactive": false,
+      "_events": Object {},
+      "_hasHookEvent": false,
+      "_inactive": null,
+      "_isBeingDestroyed": false,
+      "_isDestroyed": false,
+      "_isMounted": true,
+      "_isVue": true,
+      "_props": Object {
+        "options": Array [
+          Object {
+            "label": "Owner",
+            "value": "owner",
+          },
+          Object {
+            "label": "Admin",
+            "value": "admin",
+          },
+        ],
+        "textLabel": "Role",
+        "value": "member",
+      },
+      "_provided": undefined,
+      "_renderProxy": [Circular],
+      "_self": [Circular],
+      "_staticTrees": null,
+      "_uid": 0,
+      "_vnode": VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": Array [
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": Array [
+              VNode {
+                "asyncFactory": undefined,
+                "asyncMeta": undefined,
+                "children": undefined,
+                "componentInstance": undefined,
+                "componentOptions": undefined,
+                "context": undefined,
+                "data": undefined,
+                "elm": Role,
+                "fnContext": undefined,
+                "fnOptions": undefined,
+                "fnScopeId": undefined,
+                "isAsyncPlaceholder": false,
+                "isCloned": false,
+                "isComment": false,
+                "isOnce": false,
+                "isRootInsert": false,
+                "isStatic": false,
+                "key": undefined,
+                "ns": undefined,
+                "parent": undefined,
+                "raw": false,
+                "tag": undefined,
+                "text": "Role",
+              },
+            ],
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": [Circular],
+            "data": Object {
+              "attrs": Object {
+                "htmlFor": "Role",
+              },
+            },
+            "elm": <label
+              htmlfor="Role"
+            >
+              Role
+            </label>,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": "label",
+            "text": undefined,
+          },
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": undefined,
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": undefined,
+            "data": undefined,
+            "elm":  ,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": undefined,
+            "text": " ",
+          },
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": Array [
+              VNode {
+                "asyncFactory": undefined,
+                "asyncMeta": undefined,
+                "children": Array [
+                  VNode {
+                    "asyncFactory": undefined,
+                    "asyncMeta": undefined,
+                    "children": Array [
+                      VNode {
+                        "asyncFactory": undefined,
+                        "asyncMeta": undefined,
+                        "children": undefined,
+                        "componentInstance": undefined,
+                        "componentOptions": undefined,
+                        "context": undefined,
+                        "data": undefined,
+                        "elm": Owner,
+                        "fnContext": undefined,
+                        "fnOptions": undefined,
+                        "fnScopeId": undefined,
+                        "isAsyncPlaceholder": false,
+                        "isCloned": false,
+                        "isComment": false,
+                        "isOnce": false,
+                        "isRootInsert": false,
+                        "isStatic": false,
+                        "key": undefined,
+                        "ns": undefined,
+                        "parent": undefined,
+                        "raw": false,
+                        "tag": undefined,
+                        "text": "Owner",
+                      },
+                    ],
+                    "componentInstance": undefined,
+                    "componentOptions": undefined,
+                    "context": [Circular],
+                    "data": Object {
+                      "attrs": Object {
+                        "hidden": "",
+                      },
+                      "domProps": Object {
+                        "selected": false,
+                        "value": "owner",
+                      },
+                      "key": "owner",
+                    },
+                    "elm": <option
+                      hidden="hidden"
+                      value="owner"
+                    >
+                      Owner
+                    </option>,
+                    "fnContext": undefined,
+                    "fnOptions": undefined,
+                    "fnScopeId": undefined,
+                    "isAsyncPlaceholder": false,
+                    "isCloned": false,
+                    "isComment": false,
+                    "isOnce": false,
+                    "isRootInsert": false,
+                    "isStatic": false,
+                    "key": "owner",
+                    "ns": undefined,
+                    "parent": undefined,
+                    "raw": false,
+                    "tag": "option",
+                    "text": undefined,
+                  },
+                  VNode {
+                    "asyncFactory": undefined,
+                    "asyncMeta": undefined,
+                    "children": Array [
+                      VNode {
+                        "asyncFactory": undefined,
+                        "asyncMeta": undefined,
+                        "children": undefined,
+                        "componentInstance": undefined,
+                        "componentOptions": undefined,
+                        "context": undefined,
+                        "data": undefined,
+                        "elm": Admin,
+                        "fnContext": undefined,
+                        "fnOptions": undefined,
+                        "fnScopeId": undefined,
+                        "isAsyncPlaceholder": false,
+                        "isCloned": false,
+                        "isComment": false,
+                        "isOnce": false,
+                        "isRootInsert": false,
+                        "isStatic": false,
+                        "key": undefined,
+                        "ns": undefined,
+                        "parent": undefined,
+                        "raw": false,
+                        "tag": undefined,
+                        "text": "Admin",
+                      },
+                    ],
+                    "componentInstance": undefined,
+                    "componentOptions": undefined,
+                    "context": [Circular],
+                    "data": Object {
+                      "attrs": Object {
+                        "hidden": "",
+                      },
+                      "domProps": Object {
+                        "selected": false,
+                        "value": "admin",
+                      },
+                      "key": "admin",
+                    },
+                    "elm": <option
+                      hidden="hidden"
+                      value="admin"
+                    >
+                      Admin
+                    </option>,
+                    "fnContext": undefined,
+                    "fnOptions": undefined,
+                    "fnScopeId": undefined,
+                    "isAsyncPlaceholder": false,
+                    "isCloned": false,
+                    "isComment": false,
+                    "isOnce": false,
+                    "isRootInsert": false,
+                    "isStatic": false,
+                    "key": "admin",
+                    "ns": undefined,
+                    "parent": undefined,
+                    "raw": false,
+                    "tag": "option",
+                    "text": undefined,
+                  },
+                ],
+                "componentInstance": undefined,
+                "componentOptions": undefined,
+                "context": [Circular],
+                "data": undefined,
+                "elm": <select>
+                  <option
+                    hidden="hidden"
+                    value="owner"
+                  >
+                    Owner
+                  </option>
+                  <option
+                    hidden="hidden"
+                    value="admin"
+                  >
+                    Admin
+                  </option>
+                </select>,
+                "fnContext": undefined,
+                "fnOptions": undefined,
+                "fnScopeId": undefined,
+                "isAsyncPlaceholder": false,
+                "isCloned": false,
+                "isComment": false,
+                "isOnce": false,
+                "isRootInsert": false,
+                "isStatic": false,
+                "key": undefined,
+                "ns": undefined,
+                "parent": undefined,
+                "raw": false,
+                "tag": "select",
+                "text": undefined,
+              },
+              VNode {
+                "asyncFactory": undefined,
+                "asyncMeta": undefined,
+                "children": undefined,
+                "componentInstance": undefined,
+                "componentOptions": undefined,
+                "context": undefined,
+                "data": undefined,
+                "elm":  ,
+                "fnContext": undefined,
+                "fnOptions": undefined,
+                "fnScopeId": undefined,
+                "isAsyncPlaceholder": false,
+                "isCloned": false,
+                "isComment": false,
+                "isOnce": false,
+                "isRootInsert": false,
+                "isStatic": false,
+                "key": undefined,
+                "ns": undefined,
+                "parent": undefined,
+                "raw": false,
+                "tag": undefined,
+                "text": " ",
+              },
+              VNode {
+                "asyncFactory": undefined,
+                "asyncMeta": undefined,
+                "children": undefined,
+                "componentInstance": undefined,
+                "componentOptions": undefined,
+                "context": undefined,
+                "data": undefined,
+                "elm": <!---->,
+                "fnContext": undefined,
+                "fnOptions": undefined,
+                "fnScopeId": undefined,
+                "isAsyncPlaceholder": false,
+                "isCloned": false,
+                "isComment": true,
+                "isOnce": false,
+                "isRootInsert": false,
+                "isStatic": false,
+                "key": undefined,
+                "ns": undefined,
+                "parent": undefined,
+                "raw": false,
+                "tag": undefined,
+                "text": "",
+              },
+            ],
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": [Circular],
+            "data": Object {
+              "staticClass": "select",
+            },
+            "elm": <div
+              class="select"
+            >
+              <select>
+                <option
+                  hidden="hidden"
+                  value="owner"
+                >
+                  Owner
+                </option>
+                <option
+                  hidden="hidden"
+                  value="admin"
+                >
+                  Admin
+                </option>
+              </select>
+               
+              <!---->
+            </div>,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": "div",
+            "text": undefined,
+          },
+        ],
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": [Circular],
+        "data": Object {
+          "on": Object {
+            "click": [Function],
+          },
+          "staticClass": "select-flex",
+        },
+        "elm": <div
+          class="select-flex"
+        >
+          <label
+            htmlfor="Role"
+          >
+            Role
+          </label>
+           
+          <div
+            class="select"
+          >
+            <select>
+              <option
+                hidden="hidden"
+                value="owner"
+              >
+                Owner
+              </option>
+              <option
+                hidden="hidden"
+                value="admin"
+              >
+                Admin
+              </option>
+            </select>
+             
+            <!---->
+          </div>
+        </div>,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": true,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": "div",
+        "text": undefined,
+      },
+      "_watcher": Watcher {
+        "active": true,
+        "cb": [Function],
+        "deep": false,
+        "depIds": Set {
+          2,
+          3,
+          4,
+          5,
+          8,
+          7,
+          11,
+          6,
+          10,
+          9,
+          13,
+        },
+        "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 2,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 3,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 4,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 8,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 7,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 11,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 6,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 10,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 9,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 13,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+        ],
+        "dirty": false,
+        "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+        "getter": [Function],
+        "id": 1,
+        "lazy": false,
+        "newDepIds": Set {},
+        "newDeps": Array [],
+        "sync": true,
+        "user": false,
+        "value": undefined,
+        "vm": [Circular],
+      },
+      "_watchers": Array [
+        Watcher {
+          "active": true,
+          "cb": [Function],
+          "deep": false,
+          "depIds": Set {
+            2,
+            3,
+            4,
+            5,
+            8,
+            7,
+            11,
+            6,
+            10,
+            9,
+            13,
+          },
+          "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 2,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 3,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 4,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 8,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 7,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 11,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 6,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 10,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 9,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 13,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+          ],
+          "dirty": false,
+          "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+          "getter": [Function],
+          "id": 1,
+          "lazy": false,
+          "newDepIds": Set {},
+          "newDeps": Array [],
+          "sync": true,
+          "user": false,
+          "value": undefined,
+          "vm": [Circular],
+        },
+      ],
+      "onChange": [Function],
+      "onClick": [Function],
+      "open": false,
+    },
+    "_self": [Circular],
+    "_staticTrees": null,
+    "_uid": 0,
+    "_vnode": VNode {
+      "asyncFactory": undefined,
+      "asyncMeta": undefined,
+      "children": Array [
+        VNode {
+          "asyncFactory": undefined,
+          "asyncMeta": undefined,
+          "children": Array [
+            VNode {
+              "asyncFactory": undefined,
+              "asyncMeta": undefined,
+              "children": undefined,
+              "componentInstance": undefined,
+              "componentOptions": undefined,
+              "context": undefined,
+              "data": undefined,
+              "elm": Role,
+              "fnContext": undefined,
+              "fnOptions": undefined,
+              "fnScopeId": undefined,
+              "isAsyncPlaceholder": false,
+              "isCloned": false,
+              "isComment": false,
+              "isOnce": false,
+              "isRootInsert": false,
+              "isStatic": false,
+              "key": undefined,
+              "ns": undefined,
+              "parent": undefined,
+              "raw": false,
+              "tag": undefined,
+              "text": "Role",
+            },
+          ],
+          "componentInstance": undefined,
+          "componentOptions": undefined,
+          "context": [Circular],
+          "data": Object {
+            "attrs": Object {
+              "htmlFor": "Role",
+            },
+          },
+          "elm": <label
+            htmlfor="Role"
+          >
+            Role
+          </label>,
+          "fnContext": undefined,
+          "fnOptions": undefined,
+          "fnScopeId": undefined,
+          "isAsyncPlaceholder": false,
+          "isCloned": false,
+          "isComment": false,
+          "isOnce": false,
+          "isRootInsert": false,
+          "isStatic": false,
+          "key": undefined,
+          "ns": undefined,
+          "parent": undefined,
+          "raw": false,
+          "tag": "label",
+          "text": undefined,
+        },
+        VNode {
+          "asyncFactory": undefined,
+          "asyncMeta": undefined,
+          "children": undefined,
+          "componentInstance": undefined,
+          "componentOptions": undefined,
+          "context": undefined,
+          "data": undefined,
+          "elm":  ,
+          "fnContext": undefined,
+          "fnOptions": undefined,
+          "fnScopeId": undefined,
+          "isAsyncPlaceholder": false,
+          "isCloned": false,
+          "isComment": false,
+          "isOnce": false,
+          "isRootInsert": false,
+          "isStatic": false,
+          "key": undefined,
+          "ns": undefined,
+          "parent": undefined,
+          "raw": false,
+          "tag": undefined,
+          "text": " ",
+        },
+        VNode {
+          "asyncFactory": undefined,
+          "asyncMeta": undefined,
+          "children": Array [
+            VNode {
+              "asyncFactory": undefined,
+              "asyncMeta": undefined,
+              "children": Array [
+                VNode {
+                  "asyncFactory": undefined,
+                  "asyncMeta": undefined,
+                  "children": Array [
+                    VNode {
+                      "asyncFactory": undefined,
+                      "asyncMeta": undefined,
+                      "children": undefined,
+                      "componentInstance": undefined,
+                      "componentOptions": undefined,
+                      "context": undefined,
+                      "data": undefined,
+                      "elm": Owner,
+                      "fnContext": undefined,
+                      "fnOptions": undefined,
+                      "fnScopeId": undefined,
+                      "isAsyncPlaceholder": false,
+                      "isCloned": false,
+                      "isComment": false,
+                      "isOnce": false,
+                      "isRootInsert": false,
+                      "isStatic": false,
+                      "key": undefined,
+                      "ns": undefined,
+                      "parent": undefined,
+                      "raw": false,
+                      "tag": undefined,
+                      "text": "Owner",
+                    },
+                  ],
+                  "componentInstance": undefined,
+                  "componentOptions": undefined,
+                  "context": [Circular],
+                  "data": Object {
+                    "attrs": Object {
+                      "hidden": "",
+                    },
+                    "domProps": Object {
+                      "selected": false,
+                      "value": "owner",
+                    },
+                    "key": "owner",
+                  },
+                  "elm": <option
+                    hidden="hidden"
+                    value="owner"
+                  >
+                    Owner
+                  </option>,
+                  "fnContext": undefined,
+                  "fnOptions": undefined,
+                  "fnScopeId": undefined,
+                  "isAsyncPlaceholder": false,
+                  "isCloned": false,
+                  "isComment": false,
+                  "isOnce": false,
+                  "isRootInsert": false,
+                  "isStatic": false,
+                  "key": "owner",
+                  "ns": undefined,
+                  "parent": undefined,
+                  "raw": false,
+                  "tag": "option",
+                  "text": undefined,
+                },
+                VNode {
+                  "asyncFactory": undefined,
+                  "asyncMeta": undefined,
+                  "children": Array [
+                    VNode {
+                      "asyncFactory": undefined,
+                      "asyncMeta": undefined,
+                      "children": undefined,
+                      "componentInstance": undefined,
+                      "componentOptions": undefined,
+                      "context": undefined,
+                      "data": undefined,
+                      "elm": Admin,
+                      "fnContext": undefined,
+                      "fnOptions": undefined,
+                      "fnScopeId": undefined,
+                      "isAsyncPlaceholder": false,
+                      "isCloned": false,
+                      "isComment": false,
+                      "isOnce": false,
+                      "isRootInsert": false,
+                      "isStatic": false,
+                      "key": undefined,
+                      "ns": undefined,
+                      "parent": undefined,
+                      "raw": false,
+                      "tag": undefined,
+                      "text": "Admin",
+                    },
+                  ],
+                  "componentInstance": undefined,
+                  "componentOptions": undefined,
+                  "context": [Circular],
+                  "data": Object {
+                    "attrs": Object {
+                      "hidden": "",
+                    },
+                    "domProps": Object {
+                      "selected": false,
+                      "value": "admin",
+                    },
+                    "key": "admin",
+                  },
+                  "elm": <option
+                    hidden="hidden"
+                    value="admin"
+                  >
+                    Admin
+                  </option>,
+                  "fnContext": undefined,
+                  "fnOptions": undefined,
+                  "fnScopeId": undefined,
+                  "isAsyncPlaceholder": false,
+                  "isCloned": false,
+                  "isComment": false,
+                  "isOnce": false,
+                  "isRootInsert": false,
+                  "isStatic": false,
+                  "key": "admin",
+                  "ns": undefined,
+                  "parent": undefined,
+                  "raw": false,
+                  "tag": "option",
+                  "text": undefined,
+                },
+              ],
+              "componentInstance": undefined,
+              "componentOptions": undefined,
+              "context": [Circular],
+              "data": undefined,
+              "elm": <select>
+                <option
+                  hidden="hidden"
+                  value="owner"
+                >
+                  Owner
+                </option>
+                <option
+                  hidden="hidden"
+                  value="admin"
+                >
+                  Admin
+                </option>
+              </select>,
+              "fnContext": undefined,
+              "fnOptions": undefined,
+              "fnScopeId": undefined,
+              "isAsyncPlaceholder": false,
+              "isCloned": false,
+              "isComment": false,
+              "isOnce": false,
+              "isRootInsert": false,
+              "isStatic": false,
+              "key": undefined,
+              "ns": undefined,
+              "parent": undefined,
+              "raw": false,
+              "tag": "select",
+              "text": undefined,
+            },
+            VNode {
+              "asyncFactory": undefined,
+              "asyncMeta": undefined,
+              "children": undefined,
+              "componentInstance": undefined,
+              "componentOptions": undefined,
+              "context": undefined,
+              "data": undefined,
+              "elm":  ,
+              "fnContext": undefined,
+              "fnOptions": undefined,
+              "fnScopeId": undefined,
+              "isAsyncPlaceholder": false,
+              "isCloned": false,
+              "isComment": false,
+              "isOnce": false,
+              "isRootInsert": false,
+              "isStatic": false,
+              "key": undefined,
+              "ns": undefined,
+              "parent": undefined,
+              "raw": false,
+              "tag": undefined,
+              "text": " ",
+            },
+            VNode {
+              "asyncFactory": undefined,
+              "asyncMeta": undefined,
+              "children": undefined,
+              "componentInstance": undefined,
+              "componentOptions": undefined,
+              "context": undefined,
+              "data": undefined,
+              "elm": <!---->,
+              "fnContext": undefined,
+              "fnOptions": undefined,
+              "fnScopeId": undefined,
+              "isAsyncPlaceholder": false,
+              "isCloned": false,
+              "isComment": true,
+              "isOnce": false,
+              "isRootInsert": false,
+              "isStatic": false,
+              "key": undefined,
+              "ns": undefined,
+              "parent": undefined,
+              "raw": false,
+              "tag": undefined,
+              "text": "",
+            },
+          ],
+          "componentInstance": undefined,
+          "componentOptions": undefined,
+          "context": [Circular],
+          "data": Object {
+            "staticClass": "select",
+          },
+          "elm": <div
+            class="select"
+          >
+            <select>
+              <option
+                hidden="hidden"
+                value="owner"
+              >
+                Owner
+              </option>
+              <option
+                hidden="hidden"
+                value="admin"
+              >
+                Admin
+              </option>
+            </select>
+             
+            <!---->
+          </div>,
+          "fnContext": undefined,
+          "fnOptions": undefined,
+          "fnScopeId": undefined,
+          "isAsyncPlaceholder": false,
+          "isCloned": false,
+          "isComment": false,
+          "isOnce": false,
+          "isRootInsert": false,
+          "isStatic": false,
+          "key": undefined,
+          "ns": undefined,
+          "parent": undefined,
+          "raw": false,
+          "tag": "div",
+          "text": undefined,
+        },
+      ],
+      "componentInstance": undefined,
+      "componentOptions": undefined,
+      "context": [Circular],
+      "data": Object {
+        "on": Object {
+          "click": [Function],
+        },
+        "staticClass": "select-flex",
+      },
+      "elm": <div
+        class="select-flex"
+      >
+        <label
+          htmlfor="Role"
+        >
+          Role
+        </label>
+         
+        <div
+          class="select"
+        >
+          <select>
+            <option
+              hidden="hidden"
+              value="owner"
+            >
+              Owner
+            </option>
+            <option
+              hidden="hidden"
+              value="admin"
+            >
+              Admin
+            </option>
+          </select>
+           
+          <!---->
+        </div>
+      </div>,
+      "fnContext": undefined,
+      "fnOptions": undefined,
+      "fnScopeId": undefined,
+      "isAsyncPlaceholder": false,
+      "isCloned": false,
+      "isComment": false,
+      "isOnce": false,
+      "isRootInsert": true,
+      "isStatic": false,
+      "key": undefined,
+      "ns": undefined,
+      "parent": undefined,
+      "raw": false,
+      "tag": "div",
+      "text": undefined,
+    },
+    "_watcher": Watcher {
+      "active": true,
+      "cb": [Function],
+      "deep": false,
+      "depIds": Set {
+        2,
+        3,
+        4,
+        5,
+        8,
+        7,
+        11,
+        6,
+        10,
+        9,
+        13,
+      },
+      "deps": Array [
+        Dep {
+          "_sortedId": 0,
+          "id": 2,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 3,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 4,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 5,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 8,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 7,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 11,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 6,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 10,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 9,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 13,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+      ],
+      "dirty": false,
+      "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+      "getter": [Function],
+      "id": 1,
+      "lazy": false,
+      "newDepIds": Set {},
+      "newDeps": Array [],
+      "sync": true,
+      "user": false,
+      "value": undefined,
+      "vm": [Circular],
+    },
+    "_watchers": Array [
+      Watcher {
+        "active": true,
+        "cb": [Function],
+        "deep": false,
+        "depIds": Set {
+          2,
+          3,
+          4,
+          5,
+          8,
+          7,
+          11,
+          6,
+          10,
+          9,
+          13,
+        },
+        "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 2,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 3,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 4,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 8,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 7,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 11,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 6,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 10,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 9,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 13,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+        ],
+        "dirty": false,
+        "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+        "getter": [Function],
+        "id": 1,
+        "lazy": false,
+        "newDepIds": Set {},
+        "newDeps": Array [],
+        "sync": true,
+        "user": false,
+        "value": undefined,
+        "vm": [Circular],
+      },
+    ],
+    "onChange": [Function],
+    "onClick": [Function],
+    "open": false,
+  },
+  "vnode": VNode {
+    "asyncFactory": undefined,
+    "asyncMeta": undefined,
+    "children": Array [
+      VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": Array [
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": undefined,
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": undefined,
+            "data": undefined,
+            "elm": Role,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": undefined,
+            "text": "Role",
+          },
+        ],
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": VueComponent {
+          "$attrs": Object {},
+          "$children": Array [],
+          "$createElement": [Function],
+          "$el": <div
+            class="select-flex"
+          >
+            <label
+              htmlfor="Role"
+            >
+              Role
+            </label>
+             
+            <div
+              class="select"
+            >
+              <select>
+                <option
+                  hidden="hidden"
+                  value="owner"
+                >
+                  Owner
+                </option>
+                <option
+                  hidden="hidden"
+                  value="admin"
+                >
+                  Admin
+                </option>
+              </select>
+               
+              <!---->
+            </div>
+          </div>,
+          "$emit": [Function],
+          "$listeners": Object {},
+          "$options": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "_base": [Function],
+            "_parentElm": null,
+            "_propKeys": Array [
+              "textLabel",
+              "options",
+              "value",
+            ],
+            "_refElm": null,
+            "beforeCreate": Array [
+              [Function],
+            ],
+            "components": Object {
+              "transition": Object {
+                "_Ctor": Object {
+                  "1": [Function],
+                },
+                "name": "transition",
+                "render": [Function],
+              },
+              "transition-group": Object {
+                "_Ctor": Object {
+                  "1": [Function],
+                },
+                "name": "transition-group",
+                "render": [Function],
+              },
+            },
+            "data": [Function],
+            "directives": Object {},
+            "filters": Object {},
+            "logModifiedComponents": true,
+            "methods": Object {
+              "onChange": [Function],
+              "onClick": [Function],
+            },
+            "name": "TipeSelect",
+            "props": Object {
+              "options": Object {
+                "default": [Function],
+                "required": true,
+                "type": [Function],
+              },
+              "textLabel": Object {
+                "default": "",
+                "required": true,
+                "type": [Function],
+              },
+              "value": Object {
+                "default": "",
+                "required": true,
+                "type": [Function],
+              },
+            },
+            "propsData": Object {
+              "options": Array [
+                Object {
+                  "label": "Owner",
+                  "value": "owner",
+                },
+                Object {
+                  "label": "Admin",
+                  "value": "admin",
+                },
+              ],
+              "textLabel": "Role",
+              "value": "member",
+            },
+            "provide": [Function],
+            "render": [Function],
+            "staticRenderFns": Array [],
+          },
+          "$parent": undefined,
+          "$refs": Object {},
+          "$root": [Circular],
+          "$scopedSlots": Object {},
+          "$slots": Object {},
+          "$vnode": undefined,
+          "__emitted": Object {},
+          "__emittedByOrder": Array [],
+          "_c": [Function],
+          "_data": Object {
+            "open": false,
+          },
+          "_directInactive": false,
+          "_events": Object {},
+          "_hasHookEvent": false,
+          "_inactive": null,
+          "_isBeingDestroyed": false,
+          "_isDestroyed": false,
+          "_isMounted": true,
+          "_isVue": true,
+          "_props": Object {
+            "options": Array [
+              Object {
+                "label": "Owner",
+                "value": "owner",
+              },
+              Object {
+                "label": "Admin",
+                "value": "admin",
+              },
+            ],
+            "textLabel": "Role",
+            "value": "member",
+          },
+          "_provided": undefined,
+          "_renderProxy": VueComponent {
+            "$attrs": Object {},
+            "$children": Array [],
+            "$createElement": [Function],
+            "$el": <div
+              class="select-flex"
+            >
+              <label
+                htmlfor="Role"
+              >
+                Role
+              </label>
+               
+              <div
+                class="select"
+              >
+                <select>
+                  <option
+                    hidden="hidden"
+                    value="owner"
+                  >
+                    Owner
+                  </option>
+                  <option
+                    hidden="hidden"
+                    value="admin"
+                  >
+                    Admin
+                  </option>
+                </select>
+                 
+                <!---->
+              </div>
+            </div>,
+            "$emit": [Function],
+            "$listeners": Object {},
+            "$options": Object {
+              "_Ctor": Object {
+                "1": [Function],
+              },
+              "_base": [Function],
+              "_parentElm": null,
+              "_propKeys": Array [
+                "textLabel",
+                "options",
+                "value",
+              ],
+              "_refElm": null,
+              "beforeCreate": Array [
+                [Function],
+              ],
+              "components": Object {
+                "transition": Object {
+                  "_Ctor": Object {
+                    "1": [Function],
+                  },
+                  "name": "transition",
+                  "render": [Function],
+                },
+                "transition-group": Object {
+                  "_Ctor": Object {
+                    "1": [Function],
+                  },
+                  "name": "transition-group",
+                  "render": [Function],
+                },
+              },
+              "data": [Function],
+              "directives": Object {},
+              "filters": Object {},
+              "logModifiedComponents": true,
+              "methods": Object {
+                "onChange": [Function],
+                "onClick": [Function],
+              },
+              "name": "TipeSelect",
+              "props": Object {
+                "options": Object {
+                  "default": [Function],
+                  "required": true,
+                  "type": [Function],
+                },
+                "textLabel": Object {
+                  "default": "",
+                  "required": true,
+                  "type": [Function],
+                },
+                "value": Object {
+                  "default": "",
+                  "required": true,
+                  "type": [Function],
+                },
+              },
+              "propsData": Object {
+                "options": Array [
+                  Object {
+                    "label": "Owner",
+                    "value": "owner",
+                  },
+                  Object {
+                    "label": "Admin",
+                    "value": "admin",
+                  },
+                ],
+                "textLabel": "Role",
+                "value": "member",
+              },
+              "provide": [Function],
+              "render": [Function],
+              "staticRenderFns": Array [],
+            },
+            "$parent": undefined,
+            "$refs": Object {},
+            "$root": [Circular],
+            "$scopedSlots": Object {},
+            "$slots": Object {},
+            "$vnode": undefined,
+            "__emitted": Object {},
+            "__emittedByOrder": Array [],
+            "_c": [Function],
+            "_data": Object {
+              "open": false,
+            },
+            "_directInactive": false,
+            "_events": Object {},
+            "_hasHookEvent": false,
+            "_inactive": null,
+            "_isBeingDestroyed": false,
+            "_isDestroyed": false,
+            "_isMounted": true,
+            "_isVue": true,
+            "_props": Object {
+              "options": Array [
+                Object {
+                  "label": "Owner",
+                  "value": "owner",
+                },
+                Object {
+                  "label": "Admin",
+                  "value": "admin",
+                },
+              ],
+              "textLabel": "Role",
+              "value": "member",
+            },
+            "_provided": undefined,
+            "_renderProxy": [Circular],
+            "_self": [Circular],
+            "_staticTrees": null,
+            "_uid": 0,
+            "_vnode": [Circular],
+            "_watcher": Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {
+                2,
+                3,
+                4,
+                5,
+                8,
+                7,
+                11,
+                6,
+                10,
+                9,
+                13,
+              },
+              "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 3,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 4,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 8,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 7,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 11,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 6,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 10,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 9,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 13,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+              ],
+              "dirty": false,
+              "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+              "getter": [Function],
+              "id": 1,
+              "lazy": false,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": undefined,
+              "vm": [Circular],
+            },
+            "_watchers": Array [
+              Watcher {
+                "active": true,
+                "cb": [Function],
+                "deep": false,
+                "depIds": Set {
+                  2,
+                  3,
+                  4,
+                  5,
+                  8,
+                  7,
+                  11,
+                  6,
+                  10,
+                  9,
+                  13,
+                },
+                "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 3,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 4,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 8,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 7,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 11,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 6,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 10,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 9,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 13,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                ],
+                "dirty": false,
+                "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                "getter": [Function],
+                "id": 1,
+                "lazy": false,
+                "newDepIds": Set {},
+                "newDeps": Array [],
+                "sync": true,
+                "user": false,
+                "value": undefined,
+                "vm": [Circular],
+              },
+            ],
+            "onChange": [Function],
+            "onClick": [Function],
+            "open": false,
+          },
+          "_self": [Circular],
+          "_staticTrees": null,
+          "_uid": 0,
+          "_vnode": [Circular],
+          "_watcher": Watcher {
+            "active": true,
+            "cb": [Function],
+            "deep": false,
+            "depIds": Set {
+              2,
+              3,
+              4,
+              5,
+              8,
+              7,
+              11,
+              6,
+              10,
+              9,
+              13,
+            },
+            "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 2,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 3,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 4,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 8,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 7,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 11,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 6,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 10,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 9,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 13,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+            ],
+            "dirty": false,
+            "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+            "getter": [Function],
+            "id": 1,
+            "lazy": false,
+            "newDepIds": Set {},
+            "newDeps": Array [],
+            "sync": true,
+            "user": false,
+            "value": undefined,
+            "vm": [Circular],
+          },
+          "_watchers": Array [
+            Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {
+                2,
+                3,
+                4,
+                5,
+                8,
+                7,
+                11,
+                6,
+                10,
+                9,
+                13,
+              },
+              "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 3,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 4,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 8,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 7,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 11,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 6,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 10,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 9,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 13,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+              ],
+              "dirty": false,
+              "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+              "getter": [Function],
+              "id": 1,
+              "lazy": false,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": undefined,
+              "vm": [Circular],
+            },
+          ],
+          "onChange": [Function],
+          "onClick": [Function],
+          "open": false,
+        },
+        "data": Object {
+          "attrs": Object {
+            "htmlFor": "Role",
+          },
+        },
+        "elm": <label
+          htmlfor="Role"
+        >
+          Role
+        </label>,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": false,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": "label",
+        "text": undefined,
+      },
+      VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": undefined,
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": undefined,
+        "data": undefined,
+        "elm":  ,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": false,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": undefined,
+        "text": " ",
+      },
+      VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": Array [
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": Array [
+              VNode {
+                "asyncFactory": undefined,
+                "asyncMeta": undefined,
+                "children": Array [
+                  VNode {
+                    "asyncFactory": undefined,
+                    "asyncMeta": undefined,
+                    "children": undefined,
+                    "componentInstance": undefined,
+                    "componentOptions": undefined,
+                    "context": undefined,
+                    "data": undefined,
+                    "elm": Owner,
+                    "fnContext": undefined,
+                    "fnOptions": undefined,
+                    "fnScopeId": undefined,
+                    "isAsyncPlaceholder": false,
+                    "isCloned": false,
+                    "isComment": false,
+                    "isOnce": false,
+                    "isRootInsert": false,
+                    "isStatic": false,
+                    "key": undefined,
+                    "ns": undefined,
+                    "parent": undefined,
+                    "raw": false,
+                    "tag": undefined,
+                    "text": "Owner",
+                  },
+                ],
+                "componentInstance": undefined,
+                "componentOptions": undefined,
+                "context": VueComponent {
+                  "$attrs": Object {},
+                  "$children": Array [],
+                  "$createElement": [Function],
+                  "$el": <div
+                    class="select-flex"
+                  >
+                    <label
+                      htmlfor="Role"
+                    >
+                      Role
+                    </label>
+                     
+                    <div
+                      class="select"
+                    >
+                      <select>
+                        <option
+                          hidden="hidden"
+                          value="owner"
+                        >
+                          Owner
+                        </option>
+                        <option
+                          hidden="hidden"
+                          value="admin"
+                        >
+                          Admin
+                        </option>
+                      </select>
+                       
+                      <!---->
+                    </div>
+                  </div>,
+                  "$emit": [Function],
+                  "$listeners": Object {},
+                  "$options": Object {
+                    "_Ctor": Object {
+                      "1": [Function],
+                    },
+                    "_base": [Function],
+                    "_parentElm": null,
+                    "_propKeys": Array [
+                      "textLabel",
+                      "options",
+                      "value",
+                    ],
+                    "_refElm": null,
+                    "beforeCreate": Array [
+                      [Function],
+                    ],
+                    "components": Object {
+                      "transition": Object {
+                        "_Ctor": Object {
+                          "1": [Function],
+                        },
+                        "name": "transition",
+                        "render": [Function],
+                      },
+                      "transition-group": Object {
+                        "_Ctor": Object {
+                          "1": [Function],
+                        },
+                        "name": "transition-group",
+                        "render": [Function],
+                      },
+                    },
+                    "data": [Function],
+                    "directives": Object {},
+                    "filters": Object {},
+                    "logModifiedComponents": true,
+                    "methods": Object {
+                      "onChange": [Function],
+                      "onClick": [Function],
+                    },
+                    "name": "TipeSelect",
+                    "props": Object {
+                      "options": Object {
+                        "default": [Function],
+                        "required": true,
+                        "type": [Function],
+                      },
+                      "textLabel": Object {
+                        "default": "",
+                        "required": true,
+                        "type": [Function],
+                      },
+                      "value": Object {
+                        "default": "",
+                        "required": true,
+                        "type": [Function],
+                      },
+                    },
+                    "propsData": Object {
+                      "options": Array [
+                        Object {
+                          "label": "Owner",
+                          "value": "owner",
+                        },
+                        Object {
+                          "label": "Admin",
+                          "value": "admin",
+                        },
+                      ],
+                      "textLabel": "Role",
+                      "value": "member",
+                    },
+                    "provide": [Function],
+                    "render": [Function],
+                    "staticRenderFns": Array [],
+                  },
+                  "$parent": undefined,
+                  "$refs": Object {},
+                  "$root": [Circular],
+                  "$scopedSlots": Object {},
+                  "$slots": Object {},
+                  "$vnode": undefined,
+                  "__emitted": Object {},
+                  "__emittedByOrder": Array [],
+                  "_c": [Function],
+                  "_data": Object {
+                    "open": false,
+                  },
+                  "_directInactive": false,
+                  "_events": Object {},
+                  "_hasHookEvent": false,
+                  "_inactive": null,
+                  "_isBeingDestroyed": false,
+                  "_isDestroyed": false,
+                  "_isMounted": true,
+                  "_isVue": true,
+                  "_props": Object {
+                    "options": Array [
+                      Object {
+                        "label": "Owner",
+                        "value": "owner",
+                      },
+                      Object {
+                        "label": "Admin",
+                        "value": "admin",
+                      },
+                    ],
+                    "textLabel": "Role",
+                    "value": "member",
+                  },
+                  "_provided": undefined,
+                  "_renderProxy": VueComponent {
+                    "$attrs": Object {},
+                    "$children": Array [],
+                    "$createElement": [Function],
+                    "$el": <div
+                      class="select-flex"
+                    >
+                      <label
+                        htmlfor="Role"
+                      >
+                        Role
+                      </label>
+                       
+                      <div
+                        class="select"
+                      >
+                        <select>
+                          <option
+                            hidden="hidden"
+                            value="owner"
+                          >
+                            Owner
+                          </option>
+                          <option
+                            hidden="hidden"
+                            value="admin"
+                          >
+                            Admin
+                          </option>
+                        </select>
+                         
+                        <!---->
+                      </div>
+                    </div>,
+                    "$emit": [Function],
+                    "$listeners": Object {},
+                    "$options": Object {
+                      "_Ctor": Object {
+                        "1": [Function],
+                      },
+                      "_base": [Function],
+                      "_parentElm": null,
+                      "_propKeys": Array [
+                        "textLabel",
+                        "options",
+                        "value",
+                      ],
+                      "_refElm": null,
+                      "beforeCreate": Array [
+                        [Function],
+                      ],
+                      "components": Object {
+                        "transition": Object {
+                          "_Ctor": Object {
+                            "1": [Function],
+                          },
+                          "name": "transition",
+                          "render": [Function],
+                        },
+                        "transition-group": Object {
+                          "_Ctor": Object {
+                            "1": [Function],
+                          },
+                          "name": "transition-group",
+                          "render": [Function],
+                        },
+                      },
+                      "data": [Function],
+                      "directives": Object {},
+                      "filters": Object {},
+                      "logModifiedComponents": true,
+                      "methods": Object {
+                        "onChange": [Function],
+                        "onClick": [Function],
+                      },
+                      "name": "TipeSelect",
+                      "props": Object {
+                        "options": Object {
+                          "default": [Function],
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "textLabel": Object {
+                          "default": "",
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "value": Object {
+                          "default": "",
+                          "required": true,
+                          "type": [Function],
+                        },
+                      },
+                      "propsData": Object {
+                        "options": Array [
+                          Object {
+                            "label": "Owner",
+                            "value": "owner",
+                          },
+                          Object {
+                            "label": "Admin",
+                            "value": "admin",
+                          },
+                        ],
+                        "textLabel": "Role",
+                        "value": "member",
+                      },
+                      "provide": [Function],
+                      "render": [Function],
+                      "staticRenderFns": Array [],
+                    },
+                    "$parent": undefined,
+                    "$refs": Object {},
+                    "$root": [Circular],
+                    "$scopedSlots": Object {},
+                    "$slots": Object {},
+                    "$vnode": undefined,
+                    "__emitted": Object {},
+                    "__emittedByOrder": Array [],
+                    "_c": [Function],
+                    "_data": Object {
+                      "open": false,
+                    },
+                    "_directInactive": false,
+                    "_events": Object {},
+                    "_hasHookEvent": false,
+                    "_inactive": null,
+                    "_isBeingDestroyed": false,
+                    "_isDestroyed": false,
+                    "_isMounted": true,
+                    "_isVue": true,
+                    "_props": Object {
+                      "options": Array [
+                        Object {
+                          "label": "Owner",
+                          "value": "owner",
+                        },
+                        Object {
+                          "label": "Admin",
+                          "value": "admin",
+                        },
+                      ],
+                      "textLabel": "Role",
+                      "value": "member",
+                    },
+                    "_provided": undefined,
+                    "_renderProxy": [Circular],
+                    "_self": [Circular],
+                    "_staticTrees": null,
+                    "_uid": 0,
+                    "_vnode": [Circular],
+                    "_watcher": Watcher {
+                      "active": true,
+                      "cb": [Function],
+                      "deep": false,
+                      "depIds": Set {
+                        2,
+                        3,
+                        4,
+                        5,
+                        8,
+                        7,
+                        11,
+                        6,
+                        10,
+                        9,
+                        13,
+                      },
+                      "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 3,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 4,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 8,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 7,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 11,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 6,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 10,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 9,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 13,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                      ],
+                      "dirty": false,
+                      "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                      "getter": [Function],
+                      "id": 1,
+                      "lazy": false,
+                      "newDepIds": Set {},
+                      "newDeps": Array [],
+                      "sync": true,
+                      "user": false,
+                      "value": undefined,
+                      "vm": [Circular],
+                    },
+                    "_watchers": Array [
+                      Watcher {
+                        "active": true,
+                        "cb": [Function],
+                        "deep": false,
+                        "depIds": Set {
+                          2,
+                          3,
+                          4,
+                          5,
+                          8,
+                          7,
+                          11,
+                          6,
+                          10,
+                          9,
+                          13,
+                        },
+                        "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 2,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 3,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 4,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 8,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 7,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 11,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 6,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 10,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 9,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 13,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                        ],
+                        "dirty": false,
+                        "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                        "getter": [Function],
+                        "id": 1,
+                        "lazy": false,
+                        "newDepIds": Set {},
+                        "newDeps": Array [],
+                        "sync": true,
+                        "user": false,
+                        "value": undefined,
+                        "vm": [Circular],
+                      },
+                    ],
+                    "onChange": [Function],
+                    "onClick": [Function],
+                    "open": false,
+                  },
+                  "_self": [Circular],
+                  "_staticTrees": null,
+                  "_uid": 0,
+                  "_vnode": [Circular],
+                  "_watcher": Watcher {
+                    "active": true,
+                    "cb": [Function],
+                    "deep": false,
+                    "depIds": Set {
+                      2,
+                      3,
+                      4,
+                      5,
+                      8,
+                      7,
+                      11,
+                      6,
+                      10,
+                      9,
+                      13,
+                    },
+                    "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 3,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 4,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 8,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 7,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 11,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 6,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 10,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 9,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 13,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                    ],
+                    "dirty": false,
+                    "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                    "getter": [Function],
+                    "id": 1,
+                    "lazy": false,
+                    "newDepIds": Set {},
+                    "newDeps": Array [],
+                    "sync": true,
+                    "user": false,
+                    "value": undefined,
+                    "vm": [Circular],
+                  },
+                  "_watchers": Array [
+                    Watcher {
+                      "active": true,
+                      "cb": [Function],
+                      "deep": false,
+                      "depIds": Set {
+                        2,
+                        3,
+                        4,
+                        5,
+                        8,
+                        7,
+                        11,
+                        6,
+                        10,
+                        9,
+                        13,
+                      },
+                      "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 3,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 4,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 8,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 7,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 11,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 6,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 10,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 9,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 13,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                      ],
+                      "dirty": false,
+                      "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                      "getter": [Function],
+                      "id": 1,
+                      "lazy": false,
+                      "newDepIds": Set {},
+                      "newDeps": Array [],
+                      "sync": true,
+                      "user": false,
+                      "value": undefined,
+                      "vm": [Circular],
+                    },
+                  ],
+                  "onChange": [Function],
+                  "onClick": [Function],
+                  "open": false,
+                },
+                "data": Object {
+                  "attrs": Object {
+                    "hidden": "",
+                  },
+                  "domProps": Object {
+                    "selected": false,
+                    "value": "owner",
+                  },
+                  "key": "owner",
+                },
+                "elm": <option
+                  hidden="hidden"
+                  value="owner"
+                >
+                  Owner
+                </option>,
+                "fnContext": undefined,
+                "fnOptions": undefined,
+                "fnScopeId": undefined,
+                "isAsyncPlaceholder": false,
+                "isCloned": false,
+                "isComment": false,
+                "isOnce": false,
+                "isRootInsert": false,
+                "isStatic": false,
+                "key": "owner",
+                "ns": undefined,
+                "parent": undefined,
+                "raw": false,
+                "tag": "option",
+                "text": undefined,
+              },
+              VNode {
+                "asyncFactory": undefined,
+                "asyncMeta": undefined,
+                "children": Array [
+                  VNode {
+                    "asyncFactory": undefined,
+                    "asyncMeta": undefined,
+                    "children": undefined,
+                    "componentInstance": undefined,
+                    "componentOptions": undefined,
+                    "context": undefined,
+                    "data": undefined,
+                    "elm": Admin,
+                    "fnContext": undefined,
+                    "fnOptions": undefined,
+                    "fnScopeId": undefined,
+                    "isAsyncPlaceholder": false,
+                    "isCloned": false,
+                    "isComment": false,
+                    "isOnce": false,
+                    "isRootInsert": false,
+                    "isStatic": false,
+                    "key": undefined,
+                    "ns": undefined,
+                    "parent": undefined,
+                    "raw": false,
+                    "tag": undefined,
+                    "text": "Admin",
+                  },
+                ],
+                "componentInstance": undefined,
+                "componentOptions": undefined,
+                "context": VueComponent {
+                  "$attrs": Object {},
+                  "$children": Array [],
+                  "$createElement": [Function],
+                  "$el": <div
+                    class="select-flex"
+                  >
+                    <label
+                      htmlfor="Role"
+                    >
+                      Role
+                    </label>
+                     
+                    <div
+                      class="select"
+                    >
+                      <select>
+                        <option
+                          hidden="hidden"
+                          value="owner"
+                        >
+                          Owner
+                        </option>
+                        <option
+                          hidden="hidden"
+                          value="admin"
+                        >
+                          Admin
+                        </option>
+                      </select>
+                       
+                      <!---->
+                    </div>
+                  </div>,
+                  "$emit": [Function],
+                  "$listeners": Object {},
+                  "$options": Object {
+                    "_Ctor": Object {
+                      "1": [Function],
+                    },
+                    "_base": [Function],
+                    "_parentElm": null,
+                    "_propKeys": Array [
+                      "textLabel",
+                      "options",
+                      "value",
+                    ],
+                    "_refElm": null,
+                    "beforeCreate": Array [
+                      [Function],
+                    ],
+                    "components": Object {
+                      "transition": Object {
+                        "_Ctor": Object {
+                          "1": [Function],
+                        },
+                        "name": "transition",
+                        "render": [Function],
+                      },
+                      "transition-group": Object {
+                        "_Ctor": Object {
+                          "1": [Function],
+                        },
+                        "name": "transition-group",
+                        "render": [Function],
+                      },
+                    },
+                    "data": [Function],
+                    "directives": Object {},
+                    "filters": Object {},
+                    "logModifiedComponents": true,
+                    "methods": Object {
+                      "onChange": [Function],
+                      "onClick": [Function],
+                    },
+                    "name": "TipeSelect",
+                    "props": Object {
+                      "options": Object {
+                        "default": [Function],
+                        "required": true,
+                        "type": [Function],
+                      },
+                      "textLabel": Object {
+                        "default": "",
+                        "required": true,
+                        "type": [Function],
+                      },
+                      "value": Object {
+                        "default": "",
+                        "required": true,
+                        "type": [Function],
+                      },
+                    },
+                    "propsData": Object {
+                      "options": Array [
+                        Object {
+                          "label": "Owner",
+                          "value": "owner",
+                        },
+                        Object {
+                          "label": "Admin",
+                          "value": "admin",
+                        },
+                      ],
+                      "textLabel": "Role",
+                      "value": "member",
+                    },
+                    "provide": [Function],
+                    "render": [Function],
+                    "staticRenderFns": Array [],
+                  },
+                  "$parent": undefined,
+                  "$refs": Object {},
+                  "$root": [Circular],
+                  "$scopedSlots": Object {},
+                  "$slots": Object {},
+                  "$vnode": undefined,
+                  "__emitted": Object {},
+                  "__emittedByOrder": Array [],
+                  "_c": [Function],
+                  "_data": Object {
+                    "open": false,
+                  },
+                  "_directInactive": false,
+                  "_events": Object {},
+                  "_hasHookEvent": false,
+                  "_inactive": null,
+                  "_isBeingDestroyed": false,
+                  "_isDestroyed": false,
+                  "_isMounted": true,
+                  "_isVue": true,
+                  "_props": Object {
+                    "options": Array [
+                      Object {
+                        "label": "Owner",
+                        "value": "owner",
+                      },
+                      Object {
+                        "label": "Admin",
+                        "value": "admin",
+                      },
+                    ],
+                    "textLabel": "Role",
+                    "value": "member",
+                  },
+                  "_provided": undefined,
+                  "_renderProxy": VueComponent {
+                    "$attrs": Object {},
+                    "$children": Array [],
+                    "$createElement": [Function],
+                    "$el": <div
+                      class="select-flex"
+                    >
+                      <label
+                        htmlfor="Role"
+                      >
+                        Role
+                      </label>
+                       
+                      <div
+                        class="select"
+                      >
+                        <select>
+                          <option
+                            hidden="hidden"
+                            value="owner"
+                          >
+                            Owner
+                          </option>
+                          <option
+                            hidden="hidden"
+                            value="admin"
+                          >
+                            Admin
+                          </option>
+                        </select>
+                         
+                        <!---->
+                      </div>
+                    </div>,
+                    "$emit": [Function],
+                    "$listeners": Object {},
+                    "$options": Object {
+                      "_Ctor": Object {
+                        "1": [Function],
+                      },
+                      "_base": [Function],
+                      "_parentElm": null,
+                      "_propKeys": Array [
+                        "textLabel",
+                        "options",
+                        "value",
+                      ],
+                      "_refElm": null,
+                      "beforeCreate": Array [
+                        [Function],
+                      ],
+                      "components": Object {
+                        "transition": Object {
+                          "_Ctor": Object {
+                            "1": [Function],
+                          },
+                          "name": "transition",
+                          "render": [Function],
+                        },
+                        "transition-group": Object {
+                          "_Ctor": Object {
+                            "1": [Function],
+                          },
+                          "name": "transition-group",
+                          "render": [Function],
+                        },
+                      },
+                      "data": [Function],
+                      "directives": Object {},
+                      "filters": Object {},
+                      "logModifiedComponents": true,
+                      "methods": Object {
+                        "onChange": [Function],
+                        "onClick": [Function],
+                      },
+                      "name": "TipeSelect",
+                      "props": Object {
+                        "options": Object {
+                          "default": [Function],
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "textLabel": Object {
+                          "default": "",
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "value": Object {
+                          "default": "",
+                          "required": true,
+                          "type": [Function],
+                        },
+                      },
+                      "propsData": Object {
+                        "options": Array [
+                          Object {
+                            "label": "Owner",
+                            "value": "owner",
+                          },
+                          Object {
+                            "label": "Admin",
+                            "value": "admin",
+                          },
+                        ],
+                        "textLabel": "Role",
+                        "value": "member",
+                      },
+                      "provide": [Function],
+                      "render": [Function],
+                      "staticRenderFns": Array [],
+                    },
+                    "$parent": undefined,
+                    "$refs": Object {},
+                    "$root": [Circular],
+                    "$scopedSlots": Object {},
+                    "$slots": Object {},
+                    "$vnode": undefined,
+                    "__emitted": Object {},
+                    "__emittedByOrder": Array [],
+                    "_c": [Function],
+                    "_data": Object {
+                      "open": false,
+                    },
+                    "_directInactive": false,
+                    "_events": Object {},
+                    "_hasHookEvent": false,
+                    "_inactive": null,
+                    "_isBeingDestroyed": false,
+                    "_isDestroyed": false,
+                    "_isMounted": true,
+                    "_isVue": true,
+                    "_props": Object {
+                      "options": Array [
+                        Object {
+                          "label": "Owner",
+                          "value": "owner",
+                        },
+                        Object {
+                          "label": "Admin",
+                          "value": "admin",
+                        },
+                      ],
+                      "textLabel": "Role",
+                      "value": "member",
+                    },
+                    "_provided": undefined,
+                    "_renderProxy": [Circular],
+                    "_self": [Circular],
+                    "_staticTrees": null,
+                    "_uid": 0,
+                    "_vnode": [Circular],
+                    "_watcher": Watcher {
+                      "active": true,
+                      "cb": [Function],
+                      "deep": false,
+                      "depIds": Set {
+                        2,
+                        3,
+                        4,
+                        5,
+                        8,
+                        7,
+                        11,
+                        6,
+                        10,
+                        9,
+                        13,
+                      },
+                      "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 3,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 4,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 8,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 7,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 11,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 6,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 10,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 9,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 13,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                      ],
+                      "dirty": false,
+                      "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                      "getter": [Function],
+                      "id": 1,
+                      "lazy": false,
+                      "newDepIds": Set {},
+                      "newDeps": Array [],
+                      "sync": true,
+                      "user": false,
+                      "value": undefined,
+                      "vm": [Circular],
+                    },
+                    "_watchers": Array [
+                      Watcher {
+                        "active": true,
+                        "cb": [Function],
+                        "deep": false,
+                        "depIds": Set {
+                          2,
+                          3,
+                          4,
+                          5,
+                          8,
+                          7,
+                          11,
+                          6,
+                          10,
+                          9,
+                          13,
+                        },
+                        "deps": Array [
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 2,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 3,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 4,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 5,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 8,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 7,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 11,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 6,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 10,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 9,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                          Dep {
+                            "_sortedId": 0,
+                            "id": 13,
+                            "subs": Array [
+                              [Circular],
+                            ],
+                          },
+                        ],
+                        "dirty": false,
+                        "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                        "getter": [Function],
+                        "id": 1,
+                        "lazy": false,
+                        "newDepIds": Set {},
+                        "newDeps": Array [],
+                        "sync": true,
+                        "user": false,
+                        "value": undefined,
+                        "vm": [Circular],
+                      },
+                    ],
+                    "onChange": [Function],
+                    "onClick": [Function],
+                    "open": false,
+                  },
+                  "_self": [Circular],
+                  "_staticTrees": null,
+                  "_uid": 0,
+                  "_vnode": [Circular],
+                  "_watcher": Watcher {
+                    "active": true,
+                    "cb": [Function],
+                    "deep": false,
+                    "depIds": Set {
+                      2,
+                      3,
+                      4,
+                      5,
+                      8,
+                      7,
+                      11,
+                      6,
+                      10,
+                      9,
+                      13,
+                    },
+                    "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 3,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 4,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 8,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 7,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 11,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 6,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 10,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 9,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 13,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                    ],
+                    "dirty": false,
+                    "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                    "getter": [Function],
+                    "id": 1,
+                    "lazy": false,
+                    "newDepIds": Set {},
+                    "newDeps": Array [],
+                    "sync": true,
+                    "user": false,
+                    "value": undefined,
+                    "vm": [Circular],
+                  },
+                  "_watchers": Array [
+                    Watcher {
+                      "active": true,
+                      "cb": [Function],
+                      "deep": false,
+                      "depIds": Set {
+                        2,
+                        3,
+                        4,
+                        5,
+                        8,
+                        7,
+                        11,
+                        6,
+                        10,
+                        9,
+                        13,
+                      },
+                      "deps": Array [
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 2,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 3,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 4,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 5,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 8,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 7,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 11,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 6,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 10,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 9,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                        Dep {
+                          "_sortedId": 0,
+                          "id": 13,
+                          "subs": Array [
+                            [Circular],
+                          ],
+                        },
+                      ],
+                      "dirty": false,
+                      "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                      "getter": [Function],
+                      "id": 1,
+                      "lazy": false,
+                      "newDepIds": Set {},
+                      "newDeps": Array [],
+                      "sync": true,
+                      "user": false,
+                      "value": undefined,
+                      "vm": [Circular],
+                    },
+                  ],
+                  "onChange": [Function],
+                  "onClick": [Function],
+                  "open": false,
+                },
+                "data": Object {
+                  "attrs": Object {
+                    "hidden": "",
+                  },
+                  "domProps": Object {
+                    "selected": false,
+                    "value": "admin",
+                  },
+                  "key": "admin",
+                },
+                "elm": <option
+                  hidden="hidden"
+                  value="admin"
+                >
+                  Admin
+                </option>,
+                "fnContext": undefined,
+                "fnOptions": undefined,
+                "fnScopeId": undefined,
+                "isAsyncPlaceholder": false,
+                "isCloned": false,
+                "isComment": false,
+                "isOnce": false,
+                "isRootInsert": false,
+                "isStatic": false,
+                "key": "admin",
+                "ns": undefined,
+                "parent": undefined,
+                "raw": false,
+                "tag": "option",
+                "text": undefined,
+              },
+            ],
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": VueComponent {
+              "$attrs": Object {},
+              "$children": Array [],
+              "$createElement": [Function],
+              "$el": <div
+                class="select-flex"
+              >
+                <label
+                  htmlfor="Role"
+                >
+                  Role
+                </label>
+                 
+                <div
+                  class="select"
+                >
+                  <select>
+                    <option
+                      hidden="hidden"
+                      value="owner"
+                    >
+                      Owner
+                    </option>
+                    <option
+                      hidden="hidden"
+                      value="admin"
+                    >
+                      Admin
+                    </option>
+                  </select>
+                   
+                  <!---->
+                </div>
+              </div>,
+              "$emit": [Function],
+              "$listeners": Object {},
+              "$options": Object {
+                "_Ctor": Object {
+                  "1": [Function],
+                },
+                "_base": [Function],
+                "_parentElm": null,
+                "_propKeys": Array [
+                  "textLabel",
+                  "options",
+                  "value",
+                ],
+                "_refElm": null,
+                "beforeCreate": Array [
+                  [Function],
+                ],
+                "components": Object {
+                  "transition": Object {
+                    "_Ctor": Object {
+                      "1": [Function],
+                    },
+                    "name": "transition",
+                    "render": [Function],
+                  },
+                  "transition-group": Object {
+                    "_Ctor": Object {
+                      "1": [Function],
+                    },
+                    "name": "transition-group",
+                    "render": [Function],
+                  },
+                },
+                "data": [Function],
+                "directives": Object {},
+                "filters": Object {},
+                "logModifiedComponents": true,
+                "methods": Object {
+                  "onChange": [Function],
+                  "onClick": [Function],
+                },
+                "name": "TipeSelect",
+                "props": Object {
+                  "options": Object {
+                    "default": [Function],
+                    "required": true,
+                    "type": [Function],
+                  },
+                  "textLabel": Object {
+                    "default": "",
+                    "required": true,
+                    "type": [Function],
+                  },
+                  "value": Object {
+                    "default": "",
+                    "required": true,
+                    "type": [Function],
+                  },
+                },
+                "propsData": Object {
+                  "options": Array [
+                    Object {
+                      "label": "Owner",
+                      "value": "owner",
+                    },
+                    Object {
+                      "label": "Admin",
+                      "value": "admin",
+                    },
+                  ],
+                  "textLabel": "Role",
+                  "value": "member",
+                },
+                "provide": [Function],
+                "render": [Function],
+                "staticRenderFns": Array [],
+              },
+              "$parent": undefined,
+              "$refs": Object {},
+              "$root": [Circular],
+              "$scopedSlots": Object {},
+              "$slots": Object {},
+              "$vnode": undefined,
+              "__emitted": Object {},
+              "__emittedByOrder": Array [],
+              "_c": [Function],
+              "_data": Object {
+                "open": false,
+              },
+              "_directInactive": false,
+              "_events": Object {},
+              "_hasHookEvent": false,
+              "_inactive": null,
+              "_isBeingDestroyed": false,
+              "_isDestroyed": false,
+              "_isMounted": true,
+              "_isVue": true,
+              "_props": Object {
+                "options": Array [
+                  Object {
+                    "label": "Owner",
+                    "value": "owner",
+                  },
+                  Object {
+                    "label": "Admin",
+                    "value": "admin",
+                  },
+                ],
+                "textLabel": "Role",
+                "value": "member",
+              },
+              "_provided": undefined,
+              "_renderProxy": VueComponent {
+                "$attrs": Object {},
+                "$children": Array [],
+                "$createElement": [Function],
+                "$el": <div
+                  class="select-flex"
+                >
+                  <label
+                    htmlfor="Role"
+                  >
+                    Role
+                  </label>
+                   
+                  <div
+                    class="select"
+                  >
+                    <select>
+                      <option
+                        hidden="hidden"
+                        value="owner"
+                      >
+                        Owner
+                      </option>
+                      <option
+                        hidden="hidden"
+                        value="admin"
+                      >
+                        Admin
+                      </option>
+                    </select>
+                     
+                    <!---->
+                  </div>
+                </div>,
+                "$emit": [Function],
+                "$listeners": Object {},
+                "$options": Object {
+                  "_Ctor": Object {
+                    "1": [Function],
+                  },
+                  "_base": [Function],
+                  "_parentElm": null,
+                  "_propKeys": Array [
+                    "textLabel",
+                    "options",
+                    "value",
+                  ],
+                  "_refElm": null,
+                  "beforeCreate": Array [
+                    [Function],
+                  ],
+                  "components": Object {
+                    "transition": Object {
+                      "_Ctor": Object {
+                        "1": [Function],
+                      },
+                      "name": "transition",
+                      "render": [Function],
+                    },
+                    "transition-group": Object {
+                      "_Ctor": Object {
+                        "1": [Function],
+                      },
+                      "name": "transition-group",
+                      "render": [Function],
+                    },
+                  },
+                  "data": [Function],
+                  "directives": Object {},
+                  "filters": Object {},
+                  "logModifiedComponents": true,
+                  "methods": Object {
+                    "onChange": [Function],
+                    "onClick": [Function],
+                  },
+                  "name": "TipeSelect",
+                  "props": Object {
+                    "options": Object {
+                      "default": [Function],
+                      "required": true,
+                      "type": [Function],
+                    },
+                    "textLabel": Object {
+                      "default": "",
+                      "required": true,
+                      "type": [Function],
+                    },
+                    "value": Object {
+                      "default": "",
+                      "required": true,
+                      "type": [Function],
+                    },
+                  },
+                  "propsData": Object {
+                    "options": Array [
+                      Object {
+                        "label": "Owner",
+                        "value": "owner",
+                      },
+                      Object {
+                        "label": "Admin",
+                        "value": "admin",
+                      },
+                    ],
+                    "textLabel": "Role",
+                    "value": "member",
+                  },
+                  "provide": [Function],
+                  "render": [Function],
+                  "staticRenderFns": Array [],
+                },
+                "$parent": undefined,
+                "$refs": Object {},
+                "$root": [Circular],
+                "$scopedSlots": Object {},
+                "$slots": Object {},
+                "$vnode": undefined,
+                "__emitted": Object {},
+                "__emittedByOrder": Array [],
+                "_c": [Function],
+                "_data": Object {
+                  "open": false,
+                },
+                "_directInactive": false,
+                "_events": Object {},
+                "_hasHookEvent": false,
+                "_inactive": null,
+                "_isBeingDestroyed": false,
+                "_isDestroyed": false,
+                "_isMounted": true,
+                "_isVue": true,
+                "_props": Object {
+                  "options": Array [
+                    Object {
+                      "label": "Owner",
+                      "value": "owner",
+                    },
+                    Object {
+                      "label": "Admin",
+                      "value": "admin",
+                    },
+                  ],
+                  "textLabel": "Role",
+                  "value": "member",
+                },
+                "_provided": undefined,
+                "_renderProxy": [Circular],
+                "_self": [Circular],
+                "_staticTrees": null,
+                "_uid": 0,
+                "_vnode": [Circular],
+                "_watcher": Watcher {
+                  "active": true,
+                  "cb": [Function],
+                  "deep": false,
+                  "depIds": Set {
+                    2,
+                    3,
+                    4,
+                    5,
+                    8,
+                    7,
+                    11,
+                    6,
+                    10,
+                    9,
+                    13,
+                  },
+                  "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 3,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 4,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 8,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 7,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 11,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 6,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 10,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 9,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 13,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                  ],
+                  "dirty": false,
+                  "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                  "getter": [Function],
+                  "id": 1,
+                  "lazy": false,
+                  "newDepIds": Set {},
+                  "newDeps": Array [],
+                  "sync": true,
+                  "user": false,
+                  "value": undefined,
+                  "vm": [Circular],
+                },
+                "_watchers": Array [
+                  Watcher {
+                    "active": true,
+                    "cb": [Function],
+                    "deep": false,
+                    "depIds": Set {
+                      2,
+                      3,
+                      4,
+                      5,
+                      8,
+                      7,
+                      11,
+                      6,
+                      10,
+                      9,
+                      13,
+                    },
+                    "deps": Array [
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 2,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 3,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 4,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 5,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 8,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 7,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 11,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 6,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 10,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 9,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                      Dep {
+                        "_sortedId": 0,
+                        "id": 13,
+                        "subs": Array [
+                          [Circular],
+                        ],
+                      },
+                    ],
+                    "dirty": false,
+                    "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                    "getter": [Function],
+                    "id": 1,
+                    "lazy": false,
+                    "newDepIds": Set {},
+                    "newDeps": Array [],
+                    "sync": true,
+                    "user": false,
+                    "value": undefined,
+                    "vm": [Circular],
+                  },
+                ],
+                "onChange": [Function],
+                "onClick": [Function],
+                "open": false,
+              },
+              "_self": [Circular],
+              "_staticTrees": null,
+              "_uid": 0,
+              "_vnode": [Circular],
+              "_watcher": Watcher {
+                "active": true,
+                "cb": [Function],
+                "deep": false,
+                "depIds": Set {
+                  2,
+                  3,
+                  4,
+                  5,
+                  8,
+                  7,
+                  11,
+                  6,
+                  10,
+                  9,
+                  13,
+                },
+                "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 3,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 4,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 8,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 7,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 11,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 6,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 10,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 9,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 13,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                ],
+                "dirty": false,
+                "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                "getter": [Function],
+                "id": 1,
+                "lazy": false,
+                "newDepIds": Set {},
+                "newDeps": Array [],
+                "sync": true,
+                "user": false,
+                "value": undefined,
+                "vm": [Circular],
+              },
+              "_watchers": Array [
+                Watcher {
+                  "active": true,
+                  "cb": [Function],
+                  "deep": false,
+                  "depIds": Set {
+                    2,
+                    3,
+                    4,
+                    5,
+                    8,
+                    7,
+                    11,
+                    6,
+                    10,
+                    9,
+                    13,
+                  },
+                  "deps": Array [
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 2,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 3,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 4,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 5,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 8,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 7,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 11,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 6,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 10,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 9,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                    Dep {
+                      "_sortedId": 0,
+                      "id": 13,
+                      "subs": Array [
+                        [Circular],
+                      ],
+                    },
+                  ],
+                  "dirty": false,
+                  "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                  "getter": [Function],
+                  "id": 1,
+                  "lazy": false,
+                  "newDepIds": Set {},
+                  "newDeps": Array [],
+                  "sync": true,
+                  "user": false,
+                  "value": undefined,
+                  "vm": [Circular],
+                },
+              ],
+              "onChange": [Function],
+              "onClick": [Function],
+              "open": false,
+            },
+            "data": undefined,
+            "elm": <select>
+              <option
+                hidden="hidden"
+                value="owner"
+              >
+                Owner
+              </option>
+              <option
+                hidden="hidden"
+                value="admin"
+              >
+                Admin
+              </option>
+            </select>,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": "select",
+            "text": undefined,
+          },
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": undefined,
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": undefined,
+            "data": undefined,
+            "elm":  ,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": undefined,
+            "text": " ",
+          },
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": undefined,
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": undefined,
+            "data": undefined,
+            "elm": <!---->,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": true,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": undefined,
+            "text": "",
+          },
+        ],
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": VueComponent {
+          "$attrs": Object {},
+          "$children": Array [],
+          "$createElement": [Function],
+          "$el": <div
+            class="select-flex"
+          >
+            <label
+              htmlfor="Role"
+            >
+              Role
+            </label>
+             
+            <div
+              class="select"
+            >
+              <select>
+                <option
+                  hidden="hidden"
+                  value="owner"
+                >
+                  Owner
+                </option>
+                <option
+                  hidden="hidden"
+                  value="admin"
+                >
+                  Admin
+                </option>
+              </select>
+               
+              <!---->
+            </div>
+          </div>,
+          "$emit": [Function],
+          "$listeners": Object {},
+          "$options": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "_base": [Function],
+            "_parentElm": null,
+            "_propKeys": Array [
+              "textLabel",
+              "options",
+              "value",
+            ],
+            "_refElm": null,
+            "beforeCreate": Array [
+              [Function],
+            ],
+            "components": Object {
+              "transition": Object {
+                "_Ctor": Object {
+                  "1": [Function],
+                },
+                "name": "transition",
+                "render": [Function],
+              },
+              "transition-group": Object {
+                "_Ctor": Object {
+                  "1": [Function],
+                },
+                "name": "transition-group",
+                "render": [Function],
+              },
+            },
+            "data": [Function],
+            "directives": Object {},
+            "filters": Object {},
+            "logModifiedComponents": true,
+            "methods": Object {
+              "onChange": [Function],
+              "onClick": [Function],
+            },
+            "name": "TipeSelect",
+            "props": Object {
+              "options": Object {
+                "default": [Function],
+                "required": true,
+                "type": [Function],
+              },
+              "textLabel": Object {
+                "default": "",
+                "required": true,
+                "type": [Function],
+              },
+              "value": Object {
+                "default": "",
+                "required": true,
+                "type": [Function],
+              },
+            },
+            "propsData": Object {
+              "options": Array [
+                Object {
+                  "label": "Owner",
+                  "value": "owner",
+                },
+                Object {
+                  "label": "Admin",
+                  "value": "admin",
+                },
+              ],
+              "textLabel": "Role",
+              "value": "member",
+            },
+            "provide": [Function],
+            "render": [Function],
+            "staticRenderFns": Array [],
+          },
+          "$parent": undefined,
+          "$refs": Object {},
+          "$root": [Circular],
+          "$scopedSlots": Object {},
+          "$slots": Object {},
+          "$vnode": undefined,
+          "__emitted": Object {},
+          "__emittedByOrder": Array [],
+          "_c": [Function],
+          "_data": Object {
+            "open": false,
+          },
+          "_directInactive": false,
+          "_events": Object {},
+          "_hasHookEvent": false,
+          "_inactive": null,
+          "_isBeingDestroyed": false,
+          "_isDestroyed": false,
+          "_isMounted": true,
+          "_isVue": true,
+          "_props": Object {
+            "options": Array [
+              Object {
+                "label": "Owner",
+                "value": "owner",
+              },
+              Object {
+                "label": "Admin",
+                "value": "admin",
+              },
+            ],
+            "textLabel": "Role",
+            "value": "member",
+          },
+          "_provided": undefined,
+          "_renderProxy": VueComponent {
+            "$attrs": Object {},
+            "$children": Array [],
+            "$createElement": [Function],
+            "$el": <div
+              class="select-flex"
+            >
+              <label
+                htmlfor="Role"
+              >
+                Role
+              </label>
+               
+              <div
+                class="select"
+              >
+                <select>
+                  <option
+                    hidden="hidden"
+                    value="owner"
+                  >
+                    Owner
+                  </option>
+                  <option
+                    hidden="hidden"
+                    value="admin"
+                  >
+                    Admin
+                  </option>
+                </select>
+                 
+                <!---->
+              </div>
+            </div>,
+            "$emit": [Function],
+            "$listeners": Object {},
+            "$options": Object {
+              "_Ctor": Object {
+                "1": [Function],
+              },
+              "_base": [Function],
+              "_parentElm": null,
+              "_propKeys": Array [
+                "textLabel",
+                "options",
+                "value",
+              ],
+              "_refElm": null,
+              "beforeCreate": Array [
+                [Function],
+              ],
+              "components": Object {
+                "transition": Object {
+                  "_Ctor": Object {
+                    "1": [Function],
+                  },
+                  "name": "transition",
+                  "render": [Function],
+                },
+                "transition-group": Object {
+                  "_Ctor": Object {
+                    "1": [Function],
+                  },
+                  "name": "transition-group",
+                  "render": [Function],
+                },
+              },
+              "data": [Function],
+              "directives": Object {},
+              "filters": Object {},
+              "logModifiedComponents": true,
+              "methods": Object {
+                "onChange": [Function],
+                "onClick": [Function],
+              },
+              "name": "TipeSelect",
+              "props": Object {
+                "options": Object {
+                  "default": [Function],
+                  "required": true,
+                  "type": [Function],
+                },
+                "textLabel": Object {
+                  "default": "",
+                  "required": true,
+                  "type": [Function],
+                },
+                "value": Object {
+                  "default": "",
+                  "required": true,
+                  "type": [Function],
+                },
+              },
+              "propsData": Object {
+                "options": Array [
+                  Object {
+                    "label": "Owner",
+                    "value": "owner",
+                  },
+                  Object {
+                    "label": "Admin",
+                    "value": "admin",
+                  },
+                ],
+                "textLabel": "Role",
+                "value": "member",
+              },
+              "provide": [Function],
+              "render": [Function],
+              "staticRenderFns": Array [],
+            },
+            "$parent": undefined,
+            "$refs": Object {},
+            "$root": [Circular],
+            "$scopedSlots": Object {},
+            "$slots": Object {},
+            "$vnode": undefined,
+            "__emitted": Object {},
+            "__emittedByOrder": Array [],
+            "_c": [Function],
+            "_data": Object {
+              "open": false,
+            },
+            "_directInactive": false,
+            "_events": Object {},
+            "_hasHookEvent": false,
+            "_inactive": null,
+            "_isBeingDestroyed": false,
+            "_isDestroyed": false,
+            "_isMounted": true,
+            "_isVue": true,
+            "_props": Object {
+              "options": Array [
+                Object {
+                  "label": "Owner",
+                  "value": "owner",
+                },
+                Object {
+                  "label": "Admin",
+                  "value": "admin",
+                },
+              ],
+              "textLabel": "Role",
+              "value": "member",
+            },
+            "_provided": undefined,
+            "_renderProxy": [Circular],
+            "_self": [Circular],
+            "_staticTrees": null,
+            "_uid": 0,
+            "_vnode": [Circular],
+            "_watcher": Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {
+                2,
+                3,
+                4,
+                5,
+                8,
+                7,
+                11,
+                6,
+                10,
+                9,
+                13,
+              },
+              "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 3,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 4,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 8,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 7,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 11,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 6,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 10,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 9,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 13,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+              ],
+              "dirty": false,
+              "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+              "getter": [Function],
+              "id": 1,
+              "lazy": false,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": undefined,
+              "vm": [Circular],
+            },
+            "_watchers": Array [
+              Watcher {
+                "active": true,
+                "cb": [Function],
+                "deep": false,
+                "depIds": Set {
+                  2,
+                  3,
+                  4,
+                  5,
+                  8,
+                  7,
+                  11,
+                  6,
+                  10,
+                  9,
+                  13,
+                },
+                "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 3,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 4,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 8,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 7,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 11,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 6,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 10,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 9,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 13,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                ],
+                "dirty": false,
+                "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                "getter": [Function],
+                "id": 1,
+                "lazy": false,
+                "newDepIds": Set {},
+                "newDeps": Array [],
+                "sync": true,
+                "user": false,
+                "value": undefined,
+                "vm": [Circular],
+              },
+            ],
+            "onChange": [Function],
+            "onClick": [Function],
+            "open": false,
+          },
+          "_self": [Circular],
+          "_staticTrees": null,
+          "_uid": 0,
+          "_vnode": [Circular],
+          "_watcher": Watcher {
+            "active": true,
+            "cb": [Function],
+            "deep": false,
+            "depIds": Set {
+              2,
+              3,
+              4,
+              5,
+              8,
+              7,
+              11,
+              6,
+              10,
+              9,
+              13,
+            },
+            "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 2,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 3,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 4,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 8,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 7,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 11,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 6,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 10,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 9,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 13,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+            ],
+            "dirty": false,
+            "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+            "getter": [Function],
+            "id": 1,
+            "lazy": false,
+            "newDepIds": Set {},
+            "newDeps": Array [],
+            "sync": true,
+            "user": false,
+            "value": undefined,
+            "vm": [Circular],
+          },
+          "_watchers": Array [
+            Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {
+                2,
+                3,
+                4,
+                5,
+                8,
+                7,
+                11,
+                6,
+                10,
+                9,
+                13,
+              },
+              "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 3,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 4,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 8,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 7,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 11,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 6,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 10,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 9,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 13,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+              ],
+              "dirty": false,
+              "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+              "getter": [Function],
+              "id": 1,
+              "lazy": false,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": undefined,
+              "vm": [Circular],
+            },
+          ],
+          "onChange": [Function],
+          "onClick": [Function],
+          "open": false,
+        },
+        "data": Object {
+          "staticClass": "select",
+        },
+        "elm": <div
+          class="select"
+        >
+          <select>
+            <option
+              hidden="hidden"
+              value="owner"
+            >
+              Owner
+            </option>
+            <option
+              hidden="hidden"
+              value="admin"
+            >
+              Admin
+            </option>
+          </select>
+           
+          <!---->
+        </div>,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": false,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": "div",
+        "text": undefined,
+      },
+    ],
+    "componentInstance": undefined,
+    "componentOptions": undefined,
+    "context": VueComponent {
+      "$attrs": Object {},
+      "$children": Array [],
+      "$createElement": [Function],
+      "$el": <div
+        class="select-flex"
+      >
+        <label
+          htmlfor="Role"
+        >
+          Role
+        </label>
+         
+        <div
+          class="select"
+        >
+          <select>
+            <option
+              hidden="hidden"
+              value="owner"
+            >
+              Owner
+            </option>
+            <option
+              hidden="hidden"
+              value="admin"
+            >
+              Admin
+            </option>
+          </select>
+           
+          <!---->
+        </div>
+      </div>,
+      "$emit": [Function],
+      "$listeners": Object {},
+      "$options": Object {
+        "_Ctor": Object {
+          "1": [Function],
+        },
+        "_base": [Function],
+        "_parentElm": null,
+        "_propKeys": Array [
+          "textLabel",
+          "options",
+          "value",
+        ],
+        "_refElm": null,
+        "beforeCreate": Array [
+          [Function],
+        ],
+        "components": Object {
+          "transition": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "name": "transition",
+            "render": [Function],
+          },
+          "transition-group": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "name": "transition-group",
+            "render": [Function],
+          },
+        },
+        "data": [Function],
+        "directives": Object {},
+        "filters": Object {},
+        "logModifiedComponents": true,
+        "methods": Object {
+          "onChange": [Function],
+          "onClick": [Function],
+        },
+        "name": "TipeSelect",
+        "props": Object {
+          "options": Object {
+            "default": [Function],
+            "required": true,
+            "type": [Function],
+          },
+          "textLabel": Object {
+            "default": "",
+            "required": true,
+            "type": [Function],
+          },
+          "value": Object {
+            "default": "",
+            "required": true,
+            "type": [Function],
+          },
+        },
+        "propsData": Object {
+          "options": Array [
+            Object {
+              "label": "Owner",
+              "value": "owner",
+            },
+            Object {
+              "label": "Admin",
+              "value": "admin",
+            },
+          ],
+          "textLabel": "Role",
+          "value": "member",
+        },
+        "provide": [Function],
+        "render": [Function],
+        "staticRenderFns": Array [],
+      },
+      "$parent": undefined,
+      "$refs": Object {},
+      "$root": [Circular],
+      "$scopedSlots": Object {},
+      "$slots": Object {},
+      "$vnode": undefined,
+      "__emitted": Object {},
+      "__emittedByOrder": Array [],
+      "_c": [Function],
+      "_data": Object {
+        "open": false,
+      },
+      "_directInactive": false,
+      "_events": Object {},
+      "_hasHookEvent": false,
+      "_inactive": null,
+      "_isBeingDestroyed": false,
+      "_isDestroyed": false,
+      "_isMounted": true,
+      "_isVue": true,
+      "_props": Object {
+        "options": Array [
+          Object {
+            "label": "Owner",
+            "value": "owner",
+          },
+          Object {
+            "label": "Admin",
+            "value": "admin",
+          },
+        ],
+        "textLabel": "Role",
+        "value": "member",
+      },
+      "_provided": undefined,
+      "_renderProxy": VueComponent {
+        "$attrs": Object {},
+        "$children": Array [],
+        "$createElement": [Function],
+        "$el": <div
+          class="select-flex"
+        >
+          <label
+            htmlfor="Role"
+          >
+            Role
+          </label>
+           
+          <div
+            class="select"
+          >
+            <select>
+              <option
+                hidden="hidden"
+                value="owner"
+              >
+                Owner
+              </option>
+              <option
+                hidden="hidden"
+                value="admin"
+              >
+                Admin
+              </option>
+            </select>
+             
+            <!---->
+          </div>
+        </div>,
+        "$emit": [Function],
+        "$listeners": Object {},
+        "$options": Object {
+          "_Ctor": Object {
+            "1": [Function],
+          },
+          "_base": [Function],
+          "_parentElm": null,
+          "_propKeys": Array [
+            "textLabel",
+            "options",
+            "value",
+          ],
+          "_refElm": null,
+          "beforeCreate": Array [
+            [Function],
+          ],
+          "components": Object {
+            "transition": Object {
+              "_Ctor": Object {
+                "1": [Function],
+              },
+              "name": "transition",
+              "render": [Function],
+            },
+            "transition-group": Object {
+              "_Ctor": Object {
+                "1": [Function],
+              },
+              "name": "transition-group",
+              "render": [Function],
+            },
+          },
+          "data": [Function],
+          "directives": Object {},
+          "filters": Object {},
+          "logModifiedComponents": true,
+          "methods": Object {
+            "onChange": [Function],
+            "onClick": [Function],
+          },
+          "name": "TipeSelect",
+          "props": Object {
+            "options": Object {
+              "default": [Function],
+              "required": true,
+              "type": [Function],
+            },
+            "textLabel": Object {
+              "default": "",
+              "required": true,
+              "type": [Function],
+            },
+            "value": Object {
+              "default": "",
+              "required": true,
+              "type": [Function],
+            },
+          },
+          "propsData": Object {
+            "options": Array [
+              Object {
+                "label": "Owner",
+                "value": "owner",
+              },
+              Object {
+                "label": "Admin",
+                "value": "admin",
+              },
+            ],
+            "textLabel": "Role",
+            "value": "member",
+          },
+          "provide": [Function],
+          "render": [Function],
+          "staticRenderFns": Array [],
+        },
+        "$parent": undefined,
+        "$refs": Object {},
+        "$root": [Circular],
+        "$scopedSlots": Object {},
+        "$slots": Object {},
+        "$vnode": undefined,
+        "__emitted": Object {},
+        "__emittedByOrder": Array [],
+        "_c": [Function],
+        "_data": Object {
+          "open": false,
+        },
+        "_directInactive": false,
+        "_events": Object {},
+        "_hasHookEvent": false,
+        "_inactive": null,
+        "_isBeingDestroyed": false,
+        "_isDestroyed": false,
+        "_isMounted": true,
+        "_isVue": true,
+        "_props": Object {
+          "options": Array [
+            Object {
+              "label": "Owner",
+              "value": "owner",
+            },
+            Object {
+              "label": "Admin",
+              "value": "admin",
+            },
+          ],
+          "textLabel": "Role",
+          "value": "member",
+        },
+        "_provided": undefined,
+        "_renderProxy": [Circular],
+        "_self": [Circular],
+        "_staticTrees": null,
+        "_uid": 0,
+        "_vnode": [Circular],
+        "_watcher": Watcher {
+          "active": true,
+          "cb": [Function],
+          "deep": false,
+          "depIds": Set {
+            2,
+            3,
+            4,
+            5,
+            8,
+            7,
+            11,
+            6,
+            10,
+            9,
+            13,
+          },
+          "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 2,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 3,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 4,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 8,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 7,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 11,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 6,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 10,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 9,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 13,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+          ],
+          "dirty": false,
+          "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+          "getter": [Function],
+          "id": 1,
+          "lazy": false,
+          "newDepIds": Set {},
+          "newDeps": Array [],
+          "sync": true,
+          "user": false,
+          "value": undefined,
+          "vm": [Circular],
+        },
+        "_watchers": Array [
+          Watcher {
+            "active": true,
+            "cb": [Function],
+            "deep": false,
+            "depIds": Set {
+              2,
+              3,
+              4,
+              5,
+              8,
+              7,
+              11,
+              6,
+              10,
+              9,
+              13,
+            },
+            "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 2,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 3,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 4,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 8,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 7,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 11,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 6,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 10,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 9,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 13,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+            ],
+            "dirty": false,
+            "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+            "getter": [Function],
+            "id": 1,
+            "lazy": false,
+            "newDepIds": Set {},
+            "newDeps": Array [],
+            "sync": true,
+            "user": false,
+            "value": undefined,
+            "vm": [Circular],
+          },
+        ],
+        "onChange": [Function],
+        "onClick": [Function],
+        "open": false,
+      },
+      "_self": [Circular],
+      "_staticTrees": null,
+      "_uid": 0,
+      "_vnode": [Circular],
+      "_watcher": Watcher {
+        "active": true,
+        "cb": [Function],
+        "deep": false,
+        "depIds": Set {
+          2,
+          3,
+          4,
+          5,
+          8,
+          7,
+          11,
+          6,
+          10,
+          9,
+          13,
+        },
+        "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 2,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 3,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 4,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 8,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 7,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 11,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 6,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 10,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 9,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 13,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+        ],
+        "dirty": false,
+        "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+        "getter": [Function],
+        "id": 1,
+        "lazy": false,
+        "newDepIds": Set {},
+        "newDeps": Array [],
+        "sync": true,
+        "user": false,
+        "value": undefined,
+        "vm": [Circular],
+      },
+      "_watchers": Array [
+        Watcher {
+          "active": true,
+          "cb": [Function],
+          "deep": false,
+          "depIds": Set {
+            2,
+            3,
+            4,
+            5,
+            8,
+            7,
+            11,
+            6,
+            10,
+            9,
+            13,
+          },
+          "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 2,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 3,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 4,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 8,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 7,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 11,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 6,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 10,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 9,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 13,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+          ],
+          "dirty": false,
+          "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+          "getter": [Function],
+          "id": 1,
+          "lazy": false,
+          "newDepIds": Set {},
+          "newDeps": Array [],
+          "sync": true,
+          "user": false,
+          "value": undefined,
+          "vm": [Circular],
+        },
+      ],
+      "onChange": [Function],
+      "onClick": [Function],
+      "open": false,
+    },
+    "data": Object {
+      "on": Object {
+        "click": [Function],
+      },
+      "staticClass": "select-flex",
+    },
+    "elm": <div
+      class="select-flex"
+    >
+      <label
+        htmlfor="Role"
+      >
+        Role
+      </label>
+       
+      <div
+        class="select"
+      >
+        <select>
+          <option
+            hidden="hidden"
+            value="owner"
+          >
+            Owner
+          </option>
+          <option
+            hidden="hidden"
+            value="admin"
+          >
+            Admin
+          </option>
+        </select>
+         
+        <!---->
+      </div>
+    </div>,
+    "fnContext": undefined,
+    "fnOptions": undefined,
+    "fnScopeId": undefined,
+    "isAsyncPlaceholder": false,
+    "isCloned": false,
+    "isComment": false,
+    "isOnce": false,
+    "isRootInsert": true,
+    "isStatic": false,
+    "key": undefined,
+    "ns": undefined,
+    "parent": undefined,
+    "raw": false,
+    "tag": "div",
+    "text": undefined,
+  },
+}
+`;
