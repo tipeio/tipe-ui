@@ -22,6 +22,7 @@
 import vueTypes from 'vue-types'
 import FileShape from '@/types/File'
 import TipeIcon from '@/components/Icon'
+import { getFileIcon } from './utils'
 
 export default {
   name: 'TipeFileIconRectangle',
@@ -33,10 +34,7 @@ export default {
   },
   computed: {
     icon() {
-      return {
-        document: 'file',
-        folder: 'folder'
-      }[this.file.type]
+      return getFileIcon(this.file)
     }
   }
 }
