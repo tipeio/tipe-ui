@@ -1,6 +1,6 @@
 <template>
   <div class="grid">
-    <div class="close"><icon icon="close"/></div>
+    <div @click="close" class="close"><icon icon="close"/></div>
     <div class="content">
       <p class="title">Add Member</p>
       <avatar-upload />
@@ -31,10 +31,10 @@
 
         <div class="add-button">
           <tipe-button 
-            type="submit"
-            value="Submit"
-            color="purple" 
             :disabled="!canSubmit"
+            type="submit"
+            value="Submit" 
+            color="purple"
             size="full">ADD MEMBER</tipe-button>
         </div>
       </form>
@@ -134,6 +134,9 @@ export default {
       }
       this.roleValue = 'member'
       this.nameValue = { value: '', changed: false }
+    },
+    close() {
+      this.$emit('close')
     }
   }
 }
@@ -153,6 +156,7 @@ export default {
     '. . close'
     'content content content';
   box-shadow: 5px 20px 40px 0 rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
 .close {
@@ -162,6 +166,7 @@ export default {
   align-items: center;
   justify-content: center;
   border-radius: 0 0.5rem 0 0;
+  cursor: pointer;
 }
 
 .add-button {

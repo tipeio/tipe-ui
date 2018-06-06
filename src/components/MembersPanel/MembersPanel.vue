@@ -8,22 +8,23 @@
         </div>
         <tipe-button
           icon-before="plus"
-          @click="modal">Add Member</tipe-button>
+          @click="modalToggle">Add Member</tipe-button>
       </div>
       <tipe-table :members="members" />
     </div>
+    <add-member @close="modalToggle" v-if="modalOpen" />
   </layout-card>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
-import { TipeTable } from '.'
+import { TipeTable, AddMember } from '.'
 import LayoutCard from '../LayoutCard'
 import TipeButton from '../Button'
 
 export default {
   name: 'MembersPanel',
-  components: { LayoutCard, TipeTable, TipeButton },
+  components: { LayoutCard, TipeTable, TipeButton, AddMember },
   props: {
     members: vueTypes.array.isRequired
   },
@@ -33,7 +34,7 @@ export default {
     }
   },
   methods: {
-    modal() {
+    modalToggle() {
       this.modalOpen = !this.modalOpen
     }
   }
