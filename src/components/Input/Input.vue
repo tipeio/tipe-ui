@@ -1,16 +1,17 @@
 <template>
   <div 
-    :class="{success: validity.status === 'success', error: validity.status === 'error', warning: validity.status === 'warning'}" 
+    :class="{success: validity.status === 'success', error: validity.status === 'error' && value.changed, warning: validity.status === 'warning'}" 
     class="input-flex">
     <label :htmlFor="textLabel">{{ textLabel }}</label>
     <input 
       :type="inputType" 
       :id="textLabel" 
       :placeholder="textPlaceholder" 
-      :value="value"
-      @change="onChange" >
+      :value="value.value"
+      @change="onChange"
+      @blur="onChange" >
     <p 
-      v-if="validity.message" 
+      v-if="value.changed && validity.message" 
       class="message">{{ validity.message }}</p>
   </div>
 </template>
@@ -24,7 +25,7 @@ export default {
     textPlaceholder: vueTypes.string.isRequired,
     textLabel: vueTypes.string.isRequired,
     inputType: vueTypes.string.def('text'),
-    value: vueTypes.string,
+    value: vueTypes.object,
     validity: vueTypes.object
   },
   methods: {

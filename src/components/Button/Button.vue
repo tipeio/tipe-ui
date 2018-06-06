@@ -76,6 +76,10 @@ button {
   padding: 0;
   border: none;
   color: #fff;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
 
 .layout {
@@ -178,6 +182,10 @@ Colors
 /* fill */
 button.purple {
   background-color: var(--purple);
+
+  &:disabled {
+    background-color: rgba(104, 73, 252, 0.7);
+  }
 }
 
 button.purple-dark {

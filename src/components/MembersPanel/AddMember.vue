@@ -6,19 +6,19 @@
       <avatar-upload />
       <form @submit="onSubmit">
         <tipe-input 
-          text-label="Name" 
-          input-type="text" 
+          :value="nameValue" 
+          :validity="nameValidity" 
+          text-label="Name"
+          input-type="text"
           class="name"
-          :value="nameValue"
-          :validity="nameValidity"
           text-placeholder="Type your name here"
           @change="onChangeName"/>
         <tipe-input 
-          text-label="Email" 
-          class="email"
-          :value="emailValue"
-          input-type="email" 
+          :value="emailValue" 
           :validity="emailValidity"
+          text-label="Email"
+          class="email" 
+          input-type="email"
           text-placeholder="Type your email here"
           @change="onChangeEmail"/>
         <tipe-select 
@@ -30,7 +30,12 @@
         <div class="seperator"><seperator /></div>
 
         <div class="add-button">
-          <tipe-button color="purple" size="full">ADD MEMBER</tipe-button>
+          <tipe-button 
+            type="submit"
+            value="Submit"
+            color="purple" 
+            :disabled="!canSubmit"
+            size="full">ADD MEMBER</tipe-button>
         </div>
       </form>
     </div>
@@ -64,27 +69,18 @@ export default {
         { label: 'Member', value: 'member' },
         { label: 'Manager', value: 'manager' }
       ],
-      emailValue: '',
+      emailValue: {
+        value: '',
+        changed: false
+      },
       roleValue: 'member',
-      nameValue: ''
+      nameValue: { value: '', changed: false }
     }
-  },
-  methods: {
-    onChangeEmail(val) {
-      this.emailValue = val
-    },
-    onChangeRole(val) {
-      this.roleValue = val
-    },
-    onChangeName(val) {
-      this.nameValue = val
-    },
-    onSubmit() {}
   },
   computed: {
     emailValidity() {
-      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-      let valid = re.test(this.emailValue)
+      let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      let valid = re.test(this.emailValue.value)
       let status = valid === true ? 'success' : 'error'
       let message =
         status === 'error' ? 'Please enter a valid email address' : ''
@@ -95,7 +91,7 @@ export default {
       }
     },
     nameValidity() {
-      let valid = this.nameValue.trim() !== ''
+      let valid = this.nameValue.value.trim() !== ''
       let status = valid === true ? 'success' : 'error'
       let message = status === 'error' ? 'Please enter a valid name' : ''
       return {
@@ -105,7 +101,39 @@ export default {
       }
     },
     canSubmit() {
-      return this.emailValidity.valid && this.nameValidity.valid
+      return (
+        this.emailValidity.valid && this.nameValidity.valid && this.roleValue
+      )
+    }
+  },
+  methods: {
+    onChangeEmail(val) {
+      this.emailValue.value = val
+      this.emailValue.changed = true
+    },
+    onChangeRole(val) {
+      this.roleValue = val
+    },
+    onChangeName(val) {
+      this.nameValue.value = val
+      this.nameValue.changed = true
+    },
+    onSubmit(e) {
+      e.preventDefault()
+      console.log(
+        `Name: ${this.nameValue.value}, Email: ${
+          this.emailValue.value
+        }, Role: ${this.roleValue}`
+      )
+      this.resetForm()
+    },
+    resetForm() {
+      this.emailValue = {
+        value: '',
+        changed: false
+      }
+      this.roleValue = 'member'
+      this.nameValue = { value: '', changed: false }
     }
   }
 }
@@ -116,14 +144,15 @@ export default {
 .grid {
   display: grid;
   background-color: #fff;
-  border-radius: 1rem;
-  width: 550px;
+  border-radius: 0.5rem;
+  width: 600px;
   max-height: 100%;
   grid-template-columns: 3rem auto 3rem;
   grid-template-rows: 3rem auto;
   grid-template-areas:
     '. . close'
     'content content content';
+  box-shadow: 5px 20px 40px 0 rgba(0, 0, 0, 0.1);
 }
 
 .close {
@@ -132,7 +161,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0 1rem 0 0;
+  border-radius: 0 0.5rem 0 0;
 }
 
 .add-button {
@@ -177,12 +206,13 @@ export default {
   & form {
     display: grid;
     grid-row-gap: 1.25rem;
-    grid-template-rows: 1fr 1fr 1fr 0 6rem;
+    grid-template-rows: 1fr 1fr 1fr 0 0 6rem;
     grid-template-columns: 3rem auto 3rem;
     grid-template-areas:
       '. nameInput .'
       '. emailInput .'
       ' . roleInput .'
+      ' . . .'
       'seperator seperator seperator'
       '. button .';
   }
