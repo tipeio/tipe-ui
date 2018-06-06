@@ -1,0 +1,3306 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TipeSelect.vue renders 1`] = `
+VueWrapper {
+  "_emitted": Object {},
+  "_emittedByOrder": Array [],
+  "element": <div
+    class="input-flex"
+  >
+    <label
+      htmlfor="Name"
+    >
+      Name
+    </label>
+     
+    <input
+      id="Name"
+      placeholder="Type your name here"
+      type="text"
+    />
+     
+    <!---->
+  </div>,
+  "isFunctionalComponent": undefined,
+  "isVueComponent": true,
+  "options": Object {
+    "attachedToDocument": false,
+    "sync": true,
+  },
+  "version": 2.5,
+  "vm": VueComponent {
+    "$attrs": Object {},
+    "$children": Array [],
+    "$createElement": [Function],
+    "$el": <div
+      class="input-flex"
+    >
+      <label
+        htmlfor="Name"
+      >
+        Name
+      </label>
+       
+      <input
+        id="Name"
+        placeholder="Type your name here"
+        type="text"
+      />
+       
+      <!---->
+    </div>,
+    "$emit": [Function],
+    "$listeners": Object {},
+    "$options": Object {
+      "_Ctor": Object {
+        "1": [Function],
+      },
+      "_base": [Function],
+      "_parentElm": null,
+      "_propKeys": Array [
+        "textPlaceholder",
+        "textLabel",
+        "inputType",
+        "value",
+        "validity",
+      ],
+      "_refElm": null,
+      "beforeCreate": Array [
+        [Function],
+      ],
+      "components": Object {
+        "transition": Object {
+          "_Ctor": Object {
+            "1": [Function],
+          },
+          "name": "transition",
+          "render": [Function],
+        },
+        "transition-group": Object {
+          "_Ctor": Object {
+            "1": [Function],
+          },
+          "name": "transition-group",
+          "render": [Function],
+        },
+      },
+      "directives": Object {},
+      "filters": Object {},
+      "logModifiedComponents": true,
+      "methods": Object {
+        "onChange": [Function],
+      },
+      "name": "TipeInput",
+      "props": Object {
+        "inputType": Object {
+          "default": "text",
+          "type": [Function],
+        },
+        "textLabel": Object {
+          "default": "",
+          "required": true,
+          "type": [Function],
+        },
+        "textPlaceholder": Object {
+          "default": "",
+          "required": true,
+          "type": [Function],
+        },
+        "validity": Object {
+          "default": [Function],
+          "type": [Function],
+        },
+        "value": Object {
+          "default": [Function],
+          "required": true,
+          "type": [Function],
+        },
+      },
+      "propsData": Object {
+        "textLabel": "Name",
+        "textPlaceholder": "Type your name here",
+        "value": Object {
+          "changed": false,
+          "value": "",
+        },
+      },
+      "provide": [Function],
+      "render": [Function],
+      "staticRenderFns": Array [],
+    },
+    "$parent": undefined,
+    "$refs": Object {},
+    "$root": [Circular],
+    "$scopedSlots": Object {},
+    "$slots": Object {},
+    "$vnode": undefined,
+    "__emitted": Object {},
+    "__emittedByOrder": Array [],
+    "_c": [Function],
+    "_data": Object {},
+    "_directInactive": false,
+    "_events": Object {},
+    "_hasHookEvent": false,
+    "_inactive": null,
+    "_isBeingDestroyed": false,
+    "_isDestroyed": false,
+    "_isMounted": true,
+    "_isVue": true,
+    "_props": Object {
+      "inputType": "text",
+      "textLabel": "Name",
+      "textPlaceholder": "Type your name here",
+      "validity": Object {},
+      "value": Object {
+        "changed": false,
+        "value": "",
+      },
+    },
+    "_provided": undefined,
+    "_renderProxy": VueComponent {
+      "$attrs": Object {},
+      "$children": Array [],
+      "$createElement": [Function],
+      "$el": <div
+        class="input-flex"
+      >
+        <label
+          htmlfor="Name"
+        >
+          Name
+        </label>
+         
+        <input
+          id="Name"
+          placeholder="Type your name here"
+          type="text"
+        />
+         
+        <!---->
+      </div>,
+      "$emit": [Function],
+      "$listeners": Object {},
+      "$options": Object {
+        "_Ctor": Object {
+          "1": [Function],
+        },
+        "_base": [Function],
+        "_parentElm": null,
+        "_propKeys": Array [
+          "textPlaceholder",
+          "textLabel",
+          "inputType",
+          "value",
+          "validity",
+        ],
+        "_refElm": null,
+        "beforeCreate": Array [
+          [Function],
+        ],
+        "components": Object {
+          "transition": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "name": "transition",
+            "render": [Function],
+          },
+          "transition-group": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "name": "transition-group",
+            "render": [Function],
+          },
+        },
+        "directives": Object {},
+        "filters": Object {},
+        "logModifiedComponents": true,
+        "methods": Object {
+          "onChange": [Function],
+        },
+        "name": "TipeInput",
+        "props": Object {
+          "inputType": Object {
+            "default": "text",
+            "type": [Function],
+          },
+          "textLabel": Object {
+            "default": "",
+            "required": true,
+            "type": [Function],
+          },
+          "textPlaceholder": Object {
+            "default": "",
+            "required": true,
+            "type": [Function],
+          },
+          "validity": Object {
+            "default": [Function],
+            "type": [Function],
+          },
+          "value": Object {
+            "default": [Function],
+            "required": true,
+            "type": [Function],
+          },
+        },
+        "propsData": Object {
+          "textLabel": "Name",
+          "textPlaceholder": "Type your name here",
+          "value": Object {
+            "changed": false,
+            "value": "",
+          },
+        },
+        "provide": [Function],
+        "render": [Function],
+        "staticRenderFns": Array [],
+      },
+      "$parent": undefined,
+      "$refs": Object {},
+      "$root": [Circular],
+      "$scopedSlots": Object {},
+      "$slots": Object {},
+      "$vnode": undefined,
+      "__emitted": Object {},
+      "__emittedByOrder": Array [],
+      "_c": [Function],
+      "_data": Object {},
+      "_directInactive": false,
+      "_events": Object {},
+      "_hasHookEvent": false,
+      "_inactive": null,
+      "_isBeingDestroyed": false,
+      "_isDestroyed": false,
+      "_isMounted": true,
+      "_isVue": true,
+      "_props": Object {
+        "inputType": "text",
+        "textLabel": "Name",
+        "textPlaceholder": "Type your name here",
+        "validity": Object {},
+        "value": Object {
+          "changed": false,
+          "value": "",
+        },
+      },
+      "_provided": undefined,
+      "_renderProxy": [Circular],
+      "_self": [Circular],
+      "_staticTrees": null,
+      "_uid": 0,
+      "_vnode": VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": Array [
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": Array [
+              VNode {
+                "asyncFactory": undefined,
+                "asyncMeta": undefined,
+                "children": undefined,
+                "componentInstance": undefined,
+                "componentOptions": undefined,
+                "context": undefined,
+                "data": undefined,
+                "elm": Name,
+                "fnContext": undefined,
+                "fnOptions": undefined,
+                "fnScopeId": undefined,
+                "isAsyncPlaceholder": false,
+                "isCloned": false,
+                "isComment": false,
+                "isOnce": false,
+                "isRootInsert": false,
+                "isStatic": false,
+                "key": undefined,
+                "ns": undefined,
+                "parent": undefined,
+                "raw": false,
+                "tag": undefined,
+                "text": "Name",
+              },
+            ],
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": [Circular],
+            "data": Object {
+              "attrs": Object {
+                "htmlFor": "Name",
+              },
+            },
+            "elm": <label
+              htmlfor="Name"
+            >
+              Name
+            </label>,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": "label",
+            "text": undefined,
+          },
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": undefined,
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": undefined,
+            "data": undefined,
+            "elm":  ,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": undefined,
+            "text": " ",
+          },
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": undefined,
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": [Circular],
+            "data": Object {
+              "attrs": Object {
+                "id": "Name",
+                "placeholder": "Type your name here",
+                "type": "text",
+              },
+              "domProps": Object {
+                "value": "",
+              },
+              "on": Object {
+                "blur": [Function],
+                "change": [Function],
+              },
+            },
+            "elm": <input
+              id="Name"
+              placeholder="Type your name here"
+              type="text"
+            />,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": "input",
+            "text": undefined,
+          },
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": undefined,
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": undefined,
+            "data": undefined,
+            "elm":  ,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": undefined,
+            "text": " ",
+          },
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": undefined,
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": undefined,
+            "data": undefined,
+            "elm": <!---->,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": true,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": undefined,
+            "text": "",
+          },
+        ],
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": [Circular],
+        "data": Object {
+          "class": Object {
+            "error": false,
+            "success": false,
+            "warning": false,
+          },
+          "staticClass": "input-flex",
+        },
+        "elm": <div
+          class="input-flex"
+        >
+          <label
+            htmlfor="Name"
+          >
+            Name
+          </label>
+           
+          <input
+            id="Name"
+            placeholder="Type your name here"
+            type="text"
+          />
+           
+          <!---->
+        </div>,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": true,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": "div",
+        "text": undefined,
+      },
+      "_watcher": Watcher {
+        "active": true,
+        "cb": [Function],
+        "deep": false,
+        "depIds": Set {
+          10,
+          9,
+          3,
+          4,
+          2,
+          5,
+          6,
+          7,
+          8,
+        },
+        "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 10,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 9,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 3,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 4,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 2,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 6,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 7,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 8,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+        ],
+        "dirty": false,
+        "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+        "getter": [Function],
+        "id": 1,
+        "lazy": false,
+        "newDepIds": Set {},
+        "newDeps": Array [],
+        "sync": true,
+        "user": false,
+        "value": undefined,
+        "vm": [Circular],
+      },
+      "_watchers": Array [
+        Watcher {
+          "active": true,
+          "cb": [Function],
+          "deep": false,
+          "depIds": Set {
+            10,
+            9,
+            3,
+            4,
+            2,
+            5,
+            6,
+            7,
+            8,
+          },
+          "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 10,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 9,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 3,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 4,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 2,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 6,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 7,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 8,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+          ],
+          "dirty": false,
+          "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+          "getter": [Function],
+          "id": 1,
+          "lazy": false,
+          "newDepIds": Set {},
+          "newDeps": Array [],
+          "sync": true,
+          "user": false,
+          "value": undefined,
+          "vm": [Circular],
+        },
+      ],
+      "onChange": [Function],
+    },
+    "_self": [Circular],
+    "_staticTrees": null,
+    "_uid": 0,
+    "_vnode": VNode {
+      "asyncFactory": undefined,
+      "asyncMeta": undefined,
+      "children": Array [
+        VNode {
+          "asyncFactory": undefined,
+          "asyncMeta": undefined,
+          "children": Array [
+            VNode {
+              "asyncFactory": undefined,
+              "asyncMeta": undefined,
+              "children": undefined,
+              "componentInstance": undefined,
+              "componentOptions": undefined,
+              "context": undefined,
+              "data": undefined,
+              "elm": Name,
+              "fnContext": undefined,
+              "fnOptions": undefined,
+              "fnScopeId": undefined,
+              "isAsyncPlaceholder": false,
+              "isCloned": false,
+              "isComment": false,
+              "isOnce": false,
+              "isRootInsert": false,
+              "isStatic": false,
+              "key": undefined,
+              "ns": undefined,
+              "parent": undefined,
+              "raw": false,
+              "tag": undefined,
+              "text": "Name",
+            },
+          ],
+          "componentInstance": undefined,
+          "componentOptions": undefined,
+          "context": [Circular],
+          "data": Object {
+            "attrs": Object {
+              "htmlFor": "Name",
+            },
+          },
+          "elm": <label
+            htmlfor="Name"
+          >
+            Name
+          </label>,
+          "fnContext": undefined,
+          "fnOptions": undefined,
+          "fnScopeId": undefined,
+          "isAsyncPlaceholder": false,
+          "isCloned": false,
+          "isComment": false,
+          "isOnce": false,
+          "isRootInsert": false,
+          "isStatic": false,
+          "key": undefined,
+          "ns": undefined,
+          "parent": undefined,
+          "raw": false,
+          "tag": "label",
+          "text": undefined,
+        },
+        VNode {
+          "asyncFactory": undefined,
+          "asyncMeta": undefined,
+          "children": undefined,
+          "componentInstance": undefined,
+          "componentOptions": undefined,
+          "context": undefined,
+          "data": undefined,
+          "elm":  ,
+          "fnContext": undefined,
+          "fnOptions": undefined,
+          "fnScopeId": undefined,
+          "isAsyncPlaceholder": false,
+          "isCloned": false,
+          "isComment": false,
+          "isOnce": false,
+          "isRootInsert": false,
+          "isStatic": false,
+          "key": undefined,
+          "ns": undefined,
+          "parent": undefined,
+          "raw": false,
+          "tag": undefined,
+          "text": " ",
+        },
+        VNode {
+          "asyncFactory": undefined,
+          "asyncMeta": undefined,
+          "children": undefined,
+          "componentInstance": undefined,
+          "componentOptions": undefined,
+          "context": [Circular],
+          "data": Object {
+            "attrs": Object {
+              "id": "Name",
+              "placeholder": "Type your name here",
+              "type": "text",
+            },
+            "domProps": Object {
+              "value": "",
+            },
+            "on": Object {
+              "blur": [Function],
+              "change": [Function],
+            },
+          },
+          "elm": <input
+            id="Name"
+            placeholder="Type your name here"
+            type="text"
+          />,
+          "fnContext": undefined,
+          "fnOptions": undefined,
+          "fnScopeId": undefined,
+          "isAsyncPlaceholder": false,
+          "isCloned": false,
+          "isComment": false,
+          "isOnce": false,
+          "isRootInsert": false,
+          "isStatic": false,
+          "key": undefined,
+          "ns": undefined,
+          "parent": undefined,
+          "raw": false,
+          "tag": "input",
+          "text": undefined,
+        },
+        VNode {
+          "asyncFactory": undefined,
+          "asyncMeta": undefined,
+          "children": undefined,
+          "componentInstance": undefined,
+          "componentOptions": undefined,
+          "context": undefined,
+          "data": undefined,
+          "elm":  ,
+          "fnContext": undefined,
+          "fnOptions": undefined,
+          "fnScopeId": undefined,
+          "isAsyncPlaceholder": false,
+          "isCloned": false,
+          "isComment": false,
+          "isOnce": false,
+          "isRootInsert": false,
+          "isStatic": false,
+          "key": undefined,
+          "ns": undefined,
+          "parent": undefined,
+          "raw": false,
+          "tag": undefined,
+          "text": " ",
+        },
+        VNode {
+          "asyncFactory": undefined,
+          "asyncMeta": undefined,
+          "children": undefined,
+          "componentInstance": undefined,
+          "componentOptions": undefined,
+          "context": undefined,
+          "data": undefined,
+          "elm": <!---->,
+          "fnContext": undefined,
+          "fnOptions": undefined,
+          "fnScopeId": undefined,
+          "isAsyncPlaceholder": false,
+          "isCloned": false,
+          "isComment": true,
+          "isOnce": false,
+          "isRootInsert": false,
+          "isStatic": false,
+          "key": undefined,
+          "ns": undefined,
+          "parent": undefined,
+          "raw": false,
+          "tag": undefined,
+          "text": "",
+        },
+      ],
+      "componentInstance": undefined,
+      "componentOptions": undefined,
+      "context": [Circular],
+      "data": Object {
+        "class": Object {
+          "error": false,
+          "success": false,
+          "warning": false,
+        },
+        "staticClass": "input-flex",
+      },
+      "elm": <div
+        class="input-flex"
+      >
+        <label
+          htmlfor="Name"
+        >
+          Name
+        </label>
+         
+        <input
+          id="Name"
+          placeholder="Type your name here"
+          type="text"
+        />
+         
+        <!---->
+      </div>,
+      "fnContext": undefined,
+      "fnOptions": undefined,
+      "fnScopeId": undefined,
+      "isAsyncPlaceholder": false,
+      "isCloned": false,
+      "isComment": false,
+      "isOnce": false,
+      "isRootInsert": true,
+      "isStatic": false,
+      "key": undefined,
+      "ns": undefined,
+      "parent": undefined,
+      "raw": false,
+      "tag": "div",
+      "text": undefined,
+    },
+    "_watcher": Watcher {
+      "active": true,
+      "cb": [Function],
+      "deep": false,
+      "depIds": Set {
+        10,
+        9,
+        3,
+        4,
+        2,
+        5,
+        6,
+        7,
+        8,
+      },
+      "deps": Array [
+        Dep {
+          "_sortedId": 0,
+          "id": 10,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 9,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 3,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 4,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 2,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 5,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 6,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 7,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+        Dep {
+          "_sortedId": 0,
+          "id": 8,
+          "subs": Array [
+            [Circular],
+          ],
+        },
+      ],
+      "dirty": false,
+      "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+      "getter": [Function],
+      "id": 1,
+      "lazy": false,
+      "newDepIds": Set {},
+      "newDeps": Array [],
+      "sync": true,
+      "user": false,
+      "value": undefined,
+      "vm": [Circular],
+    },
+    "_watchers": Array [
+      Watcher {
+        "active": true,
+        "cb": [Function],
+        "deep": false,
+        "depIds": Set {
+          10,
+          9,
+          3,
+          4,
+          2,
+          5,
+          6,
+          7,
+          8,
+        },
+        "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 10,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 9,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 3,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 4,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 2,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 6,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 7,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 8,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+        ],
+        "dirty": false,
+        "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+        "getter": [Function],
+        "id": 1,
+        "lazy": false,
+        "newDepIds": Set {},
+        "newDeps": Array [],
+        "sync": true,
+        "user": false,
+        "value": undefined,
+        "vm": [Circular],
+      },
+    ],
+    "onChange": [Function],
+  },
+  "vnode": VNode {
+    "asyncFactory": undefined,
+    "asyncMeta": undefined,
+    "children": Array [
+      VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": Array [
+          VNode {
+            "asyncFactory": undefined,
+            "asyncMeta": undefined,
+            "children": undefined,
+            "componentInstance": undefined,
+            "componentOptions": undefined,
+            "context": undefined,
+            "data": undefined,
+            "elm": Name,
+            "fnContext": undefined,
+            "fnOptions": undefined,
+            "fnScopeId": undefined,
+            "isAsyncPlaceholder": false,
+            "isCloned": false,
+            "isComment": false,
+            "isOnce": false,
+            "isRootInsert": false,
+            "isStatic": false,
+            "key": undefined,
+            "ns": undefined,
+            "parent": undefined,
+            "raw": false,
+            "tag": undefined,
+            "text": "Name",
+          },
+        ],
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": VueComponent {
+          "$attrs": Object {},
+          "$children": Array [],
+          "$createElement": [Function],
+          "$el": <div
+            class="input-flex"
+          >
+            <label
+              htmlfor="Name"
+            >
+              Name
+            </label>
+             
+            <input
+              id="Name"
+              placeholder="Type your name here"
+              type="text"
+            />
+             
+            <!---->
+          </div>,
+          "$emit": [Function],
+          "$listeners": Object {},
+          "$options": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "_base": [Function],
+            "_parentElm": null,
+            "_propKeys": Array [
+              "textPlaceholder",
+              "textLabel",
+              "inputType",
+              "value",
+              "validity",
+            ],
+            "_refElm": null,
+            "beforeCreate": Array [
+              [Function],
+            ],
+            "components": Object {
+              "transition": Object {
+                "_Ctor": Object {
+                  "1": [Function],
+                },
+                "name": "transition",
+                "render": [Function],
+              },
+              "transition-group": Object {
+                "_Ctor": Object {
+                  "1": [Function],
+                },
+                "name": "transition-group",
+                "render": [Function],
+              },
+            },
+            "directives": Object {},
+            "filters": Object {},
+            "logModifiedComponents": true,
+            "methods": Object {
+              "onChange": [Function],
+            },
+            "name": "TipeInput",
+            "props": Object {
+              "inputType": Object {
+                "default": "text",
+                "type": [Function],
+              },
+              "textLabel": Object {
+                "default": "",
+                "required": true,
+                "type": [Function],
+              },
+              "textPlaceholder": Object {
+                "default": "",
+                "required": true,
+                "type": [Function],
+              },
+              "validity": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "value": Object {
+                "default": [Function],
+                "required": true,
+                "type": [Function],
+              },
+            },
+            "propsData": Object {
+              "textLabel": "Name",
+              "textPlaceholder": "Type your name here",
+              "value": Object {
+                "changed": false,
+                "value": "",
+              },
+            },
+            "provide": [Function],
+            "render": [Function],
+            "staticRenderFns": Array [],
+          },
+          "$parent": undefined,
+          "$refs": Object {},
+          "$root": [Circular],
+          "$scopedSlots": Object {},
+          "$slots": Object {},
+          "$vnode": undefined,
+          "__emitted": Object {},
+          "__emittedByOrder": Array [],
+          "_c": [Function],
+          "_data": Object {},
+          "_directInactive": false,
+          "_events": Object {},
+          "_hasHookEvent": false,
+          "_inactive": null,
+          "_isBeingDestroyed": false,
+          "_isDestroyed": false,
+          "_isMounted": true,
+          "_isVue": true,
+          "_props": Object {
+            "inputType": "text",
+            "textLabel": "Name",
+            "textPlaceholder": "Type your name here",
+            "validity": Object {},
+            "value": Object {
+              "changed": false,
+              "value": "",
+            },
+          },
+          "_provided": undefined,
+          "_renderProxy": VueComponent {
+            "$attrs": Object {},
+            "$children": Array [],
+            "$createElement": [Function],
+            "$el": <div
+              class="input-flex"
+            >
+              <label
+                htmlfor="Name"
+              >
+                Name
+              </label>
+               
+              <input
+                id="Name"
+                placeholder="Type your name here"
+                type="text"
+              />
+               
+              <!---->
+            </div>,
+            "$emit": [Function],
+            "$listeners": Object {},
+            "$options": Object {
+              "_Ctor": Object {
+                "1": [Function],
+              },
+              "_base": [Function],
+              "_parentElm": null,
+              "_propKeys": Array [
+                "textPlaceholder",
+                "textLabel",
+                "inputType",
+                "value",
+                "validity",
+              ],
+              "_refElm": null,
+              "beforeCreate": Array [
+                [Function],
+              ],
+              "components": Object {
+                "transition": Object {
+                  "_Ctor": Object {
+                    "1": [Function],
+                  },
+                  "name": "transition",
+                  "render": [Function],
+                },
+                "transition-group": Object {
+                  "_Ctor": Object {
+                    "1": [Function],
+                  },
+                  "name": "transition-group",
+                  "render": [Function],
+                },
+              },
+              "directives": Object {},
+              "filters": Object {},
+              "logModifiedComponents": true,
+              "methods": Object {
+                "onChange": [Function],
+              },
+              "name": "TipeInput",
+              "props": Object {
+                "inputType": Object {
+                  "default": "text",
+                  "type": [Function],
+                },
+                "textLabel": Object {
+                  "default": "",
+                  "required": true,
+                  "type": [Function],
+                },
+                "textPlaceholder": Object {
+                  "default": "",
+                  "required": true,
+                  "type": [Function],
+                },
+                "validity": Object {
+                  "default": [Function],
+                  "type": [Function],
+                },
+                "value": Object {
+                  "default": [Function],
+                  "required": true,
+                  "type": [Function],
+                },
+              },
+              "propsData": Object {
+                "textLabel": "Name",
+                "textPlaceholder": "Type your name here",
+                "value": Object {
+                  "changed": false,
+                  "value": "",
+                },
+              },
+              "provide": [Function],
+              "render": [Function],
+              "staticRenderFns": Array [],
+            },
+            "$parent": undefined,
+            "$refs": Object {},
+            "$root": [Circular],
+            "$scopedSlots": Object {},
+            "$slots": Object {},
+            "$vnode": undefined,
+            "__emitted": Object {},
+            "__emittedByOrder": Array [],
+            "_c": [Function],
+            "_data": Object {},
+            "_directInactive": false,
+            "_events": Object {},
+            "_hasHookEvent": false,
+            "_inactive": null,
+            "_isBeingDestroyed": false,
+            "_isDestroyed": false,
+            "_isMounted": true,
+            "_isVue": true,
+            "_props": Object {
+              "inputType": "text",
+              "textLabel": "Name",
+              "textPlaceholder": "Type your name here",
+              "validity": Object {},
+              "value": Object {
+                "changed": false,
+                "value": "",
+              },
+            },
+            "_provided": undefined,
+            "_renderProxy": [Circular],
+            "_self": [Circular],
+            "_staticTrees": null,
+            "_uid": 0,
+            "_vnode": [Circular],
+            "_watcher": Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {
+                10,
+                9,
+                3,
+                4,
+                2,
+                5,
+                6,
+                7,
+                8,
+              },
+              "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 10,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 9,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 3,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 4,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 6,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 7,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 8,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+              ],
+              "dirty": false,
+              "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+              "getter": [Function],
+              "id": 1,
+              "lazy": false,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": undefined,
+              "vm": [Circular],
+            },
+            "_watchers": Array [
+              Watcher {
+                "active": true,
+                "cb": [Function],
+                "deep": false,
+                "depIds": Set {
+                  10,
+                  9,
+                  3,
+                  4,
+                  2,
+                  5,
+                  6,
+                  7,
+                  8,
+                },
+                "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 10,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 9,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 3,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 4,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 6,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 7,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 8,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                ],
+                "dirty": false,
+                "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                "getter": [Function],
+                "id": 1,
+                "lazy": false,
+                "newDepIds": Set {},
+                "newDeps": Array [],
+                "sync": true,
+                "user": false,
+                "value": undefined,
+                "vm": [Circular],
+              },
+            ],
+            "onChange": [Function],
+          },
+          "_self": [Circular],
+          "_staticTrees": null,
+          "_uid": 0,
+          "_vnode": [Circular],
+          "_watcher": Watcher {
+            "active": true,
+            "cb": [Function],
+            "deep": false,
+            "depIds": Set {
+              10,
+              9,
+              3,
+              4,
+              2,
+              5,
+              6,
+              7,
+              8,
+            },
+            "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 10,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 9,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 3,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 4,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 2,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 6,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 7,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 8,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+            ],
+            "dirty": false,
+            "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+            "getter": [Function],
+            "id": 1,
+            "lazy": false,
+            "newDepIds": Set {},
+            "newDeps": Array [],
+            "sync": true,
+            "user": false,
+            "value": undefined,
+            "vm": [Circular],
+          },
+          "_watchers": Array [
+            Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {
+                10,
+                9,
+                3,
+                4,
+                2,
+                5,
+                6,
+                7,
+                8,
+              },
+              "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 10,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 9,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 3,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 4,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 6,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 7,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 8,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+              ],
+              "dirty": false,
+              "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+              "getter": [Function],
+              "id": 1,
+              "lazy": false,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": undefined,
+              "vm": [Circular],
+            },
+          ],
+          "onChange": [Function],
+        },
+        "data": Object {
+          "attrs": Object {
+            "htmlFor": "Name",
+          },
+        },
+        "elm": <label
+          htmlfor="Name"
+        >
+          Name
+        </label>,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": false,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": "label",
+        "text": undefined,
+      },
+      VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": undefined,
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": undefined,
+        "data": undefined,
+        "elm":  ,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": false,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": undefined,
+        "text": " ",
+      },
+      VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": undefined,
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": VueComponent {
+          "$attrs": Object {},
+          "$children": Array [],
+          "$createElement": [Function],
+          "$el": <div
+            class="input-flex"
+          >
+            <label
+              htmlfor="Name"
+            >
+              Name
+            </label>
+             
+            <input
+              id="Name"
+              placeholder="Type your name here"
+              type="text"
+            />
+             
+            <!---->
+          </div>,
+          "$emit": [Function],
+          "$listeners": Object {},
+          "$options": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "_base": [Function],
+            "_parentElm": null,
+            "_propKeys": Array [
+              "textPlaceholder",
+              "textLabel",
+              "inputType",
+              "value",
+              "validity",
+            ],
+            "_refElm": null,
+            "beforeCreate": Array [
+              [Function],
+            ],
+            "components": Object {
+              "transition": Object {
+                "_Ctor": Object {
+                  "1": [Function],
+                },
+                "name": "transition",
+                "render": [Function],
+              },
+              "transition-group": Object {
+                "_Ctor": Object {
+                  "1": [Function],
+                },
+                "name": "transition-group",
+                "render": [Function],
+              },
+            },
+            "directives": Object {},
+            "filters": Object {},
+            "logModifiedComponents": true,
+            "methods": Object {
+              "onChange": [Function],
+            },
+            "name": "TipeInput",
+            "props": Object {
+              "inputType": Object {
+                "default": "text",
+                "type": [Function],
+              },
+              "textLabel": Object {
+                "default": "",
+                "required": true,
+                "type": [Function],
+              },
+              "textPlaceholder": Object {
+                "default": "",
+                "required": true,
+                "type": [Function],
+              },
+              "validity": Object {
+                "default": [Function],
+                "type": [Function],
+              },
+              "value": Object {
+                "default": [Function],
+                "required": true,
+                "type": [Function],
+              },
+            },
+            "propsData": Object {
+              "textLabel": "Name",
+              "textPlaceholder": "Type your name here",
+              "value": Object {
+                "changed": false,
+                "value": "",
+              },
+            },
+            "provide": [Function],
+            "render": [Function],
+            "staticRenderFns": Array [],
+          },
+          "$parent": undefined,
+          "$refs": Object {},
+          "$root": [Circular],
+          "$scopedSlots": Object {},
+          "$slots": Object {},
+          "$vnode": undefined,
+          "__emitted": Object {},
+          "__emittedByOrder": Array [],
+          "_c": [Function],
+          "_data": Object {},
+          "_directInactive": false,
+          "_events": Object {},
+          "_hasHookEvent": false,
+          "_inactive": null,
+          "_isBeingDestroyed": false,
+          "_isDestroyed": false,
+          "_isMounted": true,
+          "_isVue": true,
+          "_props": Object {
+            "inputType": "text",
+            "textLabel": "Name",
+            "textPlaceholder": "Type your name here",
+            "validity": Object {},
+            "value": Object {
+              "changed": false,
+              "value": "",
+            },
+          },
+          "_provided": undefined,
+          "_renderProxy": VueComponent {
+            "$attrs": Object {},
+            "$children": Array [],
+            "$createElement": [Function],
+            "$el": <div
+              class="input-flex"
+            >
+              <label
+                htmlfor="Name"
+              >
+                Name
+              </label>
+               
+              <input
+                id="Name"
+                placeholder="Type your name here"
+                type="text"
+              />
+               
+              <!---->
+            </div>,
+            "$emit": [Function],
+            "$listeners": Object {},
+            "$options": Object {
+              "_Ctor": Object {
+                "1": [Function],
+              },
+              "_base": [Function],
+              "_parentElm": null,
+              "_propKeys": Array [
+                "textPlaceholder",
+                "textLabel",
+                "inputType",
+                "value",
+                "validity",
+              ],
+              "_refElm": null,
+              "beforeCreate": Array [
+                [Function],
+              ],
+              "components": Object {
+                "transition": Object {
+                  "_Ctor": Object {
+                    "1": [Function],
+                  },
+                  "name": "transition",
+                  "render": [Function],
+                },
+                "transition-group": Object {
+                  "_Ctor": Object {
+                    "1": [Function],
+                  },
+                  "name": "transition-group",
+                  "render": [Function],
+                },
+              },
+              "directives": Object {},
+              "filters": Object {},
+              "logModifiedComponents": true,
+              "methods": Object {
+                "onChange": [Function],
+              },
+              "name": "TipeInput",
+              "props": Object {
+                "inputType": Object {
+                  "default": "text",
+                  "type": [Function],
+                },
+                "textLabel": Object {
+                  "default": "",
+                  "required": true,
+                  "type": [Function],
+                },
+                "textPlaceholder": Object {
+                  "default": "",
+                  "required": true,
+                  "type": [Function],
+                },
+                "validity": Object {
+                  "default": [Function],
+                  "type": [Function],
+                },
+                "value": Object {
+                  "default": [Function],
+                  "required": true,
+                  "type": [Function],
+                },
+              },
+              "propsData": Object {
+                "textLabel": "Name",
+                "textPlaceholder": "Type your name here",
+                "value": Object {
+                  "changed": false,
+                  "value": "",
+                },
+              },
+              "provide": [Function],
+              "render": [Function],
+              "staticRenderFns": Array [],
+            },
+            "$parent": undefined,
+            "$refs": Object {},
+            "$root": [Circular],
+            "$scopedSlots": Object {},
+            "$slots": Object {},
+            "$vnode": undefined,
+            "__emitted": Object {},
+            "__emittedByOrder": Array [],
+            "_c": [Function],
+            "_data": Object {},
+            "_directInactive": false,
+            "_events": Object {},
+            "_hasHookEvent": false,
+            "_inactive": null,
+            "_isBeingDestroyed": false,
+            "_isDestroyed": false,
+            "_isMounted": true,
+            "_isVue": true,
+            "_props": Object {
+              "inputType": "text",
+              "textLabel": "Name",
+              "textPlaceholder": "Type your name here",
+              "validity": Object {},
+              "value": Object {
+                "changed": false,
+                "value": "",
+              },
+            },
+            "_provided": undefined,
+            "_renderProxy": [Circular],
+            "_self": [Circular],
+            "_staticTrees": null,
+            "_uid": 0,
+            "_vnode": [Circular],
+            "_watcher": Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {
+                10,
+                9,
+                3,
+                4,
+                2,
+                5,
+                6,
+                7,
+                8,
+              },
+              "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 10,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 9,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 3,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 4,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 6,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 7,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 8,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+              ],
+              "dirty": false,
+              "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+              "getter": [Function],
+              "id": 1,
+              "lazy": false,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": undefined,
+              "vm": [Circular],
+            },
+            "_watchers": Array [
+              Watcher {
+                "active": true,
+                "cb": [Function],
+                "deep": false,
+                "depIds": Set {
+                  10,
+                  9,
+                  3,
+                  4,
+                  2,
+                  5,
+                  6,
+                  7,
+                  8,
+                },
+                "deps": Array [
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 10,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 9,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 3,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 4,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 2,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 5,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 6,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 7,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                  Dep {
+                    "_sortedId": 0,
+                    "id": 8,
+                    "subs": Array [
+                      [Circular],
+                    ],
+                  },
+                ],
+                "dirty": false,
+                "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+                "getter": [Function],
+                "id": 1,
+                "lazy": false,
+                "newDepIds": Set {},
+                "newDeps": Array [],
+                "sync": true,
+                "user": false,
+                "value": undefined,
+                "vm": [Circular],
+              },
+            ],
+            "onChange": [Function],
+          },
+          "_self": [Circular],
+          "_staticTrees": null,
+          "_uid": 0,
+          "_vnode": [Circular],
+          "_watcher": Watcher {
+            "active": true,
+            "cb": [Function],
+            "deep": false,
+            "depIds": Set {
+              10,
+              9,
+              3,
+              4,
+              2,
+              5,
+              6,
+              7,
+              8,
+            },
+            "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 10,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 9,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 3,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 4,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 2,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 6,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 7,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 8,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+            ],
+            "dirty": false,
+            "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+            "getter": [Function],
+            "id": 1,
+            "lazy": false,
+            "newDepIds": Set {},
+            "newDeps": Array [],
+            "sync": true,
+            "user": false,
+            "value": undefined,
+            "vm": [Circular],
+          },
+          "_watchers": Array [
+            Watcher {
+              "active": true,
+              "cb": [Function],
+              "deep": false,
+              "depIds": Set {
+                10,
+                9,
+                3,
+                4,
+                2,
+                5,
+                6,
+                7,
+                8,
+              },
+              "deps": Array [
+                Dep {
+                  "_sortedId": 0,
+                  "id": 10,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 9,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 3,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 4,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 2,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 5,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 6,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 7,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+                Dep {
+                  "_sortedId": 0,
+                  "id": 8,
+                  "subs": Array [
+                    [Circular],
+                  ],
+                },
+              ],
+              "dirty": false,
+              "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+              "getter": [Function],
+              "id": 1,
+              "lazy": false,
+              "newDepIds": Set {},
+              "newDeps": Array [],
+              "sync": true,
+              "user": false,
+              "value": undefined,
+              "vm": [Circular],
+            },
+          ],
+          "onChange": [Function],
+        },
+        "data": Object {
+          "attrs": Object {
+            "id": "Name",
+            "placeholder": "Type your name here",
+            "type": "text",
+          },
+          "domProps": Object {
+            "value": "",
+          },
+          "on": Object {
+            "blur": [Function],
+            "change": [Function],
+          },
+        },
+        "elm": <input
+          id="Name"
+          placeholder="Type your name here"
+          type="text"
+        />,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": false,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": "input",
+        "text": undefined,
+      },
+      VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": undefined,
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": undefined,
+        "data": undefined,
+        "elm":  ,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": false,
+        "isOnce": false,
+        "isRootInsert": false,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": undefined,
+        "text": " ",
+      },
+      VNode {
+        "asyncFactory": undefined,
+        "asyncMeta": undefined,
+        "children": undefined,
+        "componentInstance": undefined,
+        "componentOptions": undefined,
+        "context": undefined,
+        "data": undefined,
+        "elm": <!---->,
+        "fnContext": undefined,
+        "fnOptions": undefined,
+        "fnScopeId": undefined,
+        "isAsyncPlaceholder": false,
+        "isCloned": false,
+        "isComment": true,
+        "isOnce": false,
+        "isRootInsert": false,
+        "isStatic": false,
+        "key": undefined,
+        "ns": undefined,
+        "parent": undefined,
+        "raw": false,
+        "tag": undefined,
+        "text": "",
+      },
+    ],
+    "componentInstance": undefined,
+    "componentOptions": undefined,
+    "context": VueComponent {
+      "$attrs": Object {},
+      "$children": Array [],
+      "$createElement": [Function],
+      "$el": <div
+        class="input-flex"
+      >
+        <label
+          htmlfor="Name"
+        >
+          Name
+        </label>
+         
+        <input
+          id="Name"
+          placeholder="Type your name here"
+          type="text"
+        />
+         
+        <!---->
+      </div>,
+      "$emit": [Function],
+      "$listeners": Object {},
+      "$options": Object {
+        "_Ctor": Object {
+          "1": [Function],
+        },
+        "_base": [Function],
+        "_parentElm": null,
+        "_propKeys": Array [
+          "textPlaceholder",
+          "textLabel",
+          "inputType",
+          "value",
+          "validity",
+        ],
+        "_refElm": null,
+        "beforeCreate": Array [
+          [Function],
+        ],
+        "components": Object {
+          "transition": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "name": "transition",
+            "render": [Function],
+          },
+          "transition-group": Object {
+            "_Ctor": Object {
+              "1": [Function],
+            },
+            "name": "transition-group",
+            "render": [Function],
+          },
+        },
+        "directives": Object {},
+        "filters": Object {},
+        "logModifiedComponents": true,
+        "methods": Object {
+          "onChange": [Function],
+        },
+        "name": "TipeInput",
+        "props": Object {
+          "inputType": Object {
+            "default": "text",
+            "type": [Function],
+          },
+          "textLabel": Object {
+            "default": "",
+            "required": true,
+            "type": [Function],
+          },
+          "textPlaceholder": Object {
+            "default": "",
+            "required": true,
+            "type": [Function],
+          },
+          "validity": Object {
+            "default": [Function],
+            "type": [Function],
+          },
+          "value": Object {
+            "default": [Function],
+            "required": true,
+            "type": [Function],
+          },
+        },
+        "propsData": Object {
+          "textLabel": "Name",
+          "textPlaceholder": "Type your name here",
+          "value": Object {
+            "changed": false,
+            "value": "",
+          },
+        },
+        "provide": [Function],
+        "render": [Function],
+        "staticRenderFns": Array [],
+      },
+      "$parent": undefined,
+      "$refs": Object {},
+      "$root": [Circular],
+      "$scopedSlots": Object {},
+      "$slots": Object {},
+      "$vnode": undefined,
+      "__emitted": Object {},
+      "__emittedByOrder": Array [],
+      "_c": [Function],
+      "_data": Object {},
+      "_directInactive": false,
+      "_events": Object {},
+      "_hasHookEvent": false,
+      "_inactive": null,
+      "_isBeingDestroyed": false,
+      "_isDestroyed": false,
+      "_isMounted": true,
+      "_isVue": true,
+      "_props": Object {
+        "inputType": "text",
+        "textLabel": "Name",
+        "textPlaceholder": "Type your name here",
+        "validity": Object {},
+        "value": Object {
+          "changed": false,
+          "value": "",
+        },
+      },
+      "_provided": undefined,
+      "_renderProxy": VueComponent {
+        "$attrs": Object {},
+        "$children": Array [],
+        "$createElement": [Function],
+        "$el": <div
+          class="input-flex"
+        >
+          <label
+            htmlfor="Name"
+          >
+            Name
+          </label>
+           
+          <input
+            id="Name"
+            placeholder="Type your name here"
+            type="text"
+          />
+           
+          <!---->
+        </div>,
+        "$emit": [Function],
+        "$listeners": Object {},
+        "$options": Object {
+          "_Ctor": Object {
+            "1": [Function],
+          },
+          "_base": [Function],
+          "_parentElm": null,
+          "_propKeys": Array [
+            "textPlaceholder",
+            "textLabel",
+            "inputType",
+            "value",
+            "validity",
+          ],
+          "_refElm": null,
+          "beforeCreate": Array [
+            [Function],
+          ],
+          "components": Object {
+            "transition": Object {
+              "_Ctor": Object {
+                "1": [Function],
+              },
+              "name": "transition",
+              "render": [Function],
+            },
+            "transition-group": Object {
+              "_Ctor": Object {
+                "1": [Function],
+              },
+              "name": "transition-group",
+              "render": [Function],
+            },
+          },
+          "directives": Object {},
+          "filters": Object {},
+          "logModifiedComponents": true,
+          "methods": Object {
+            "onChange": [Function],
+          },
+          "name": "TipeInput",
+          "props": Object {
+            "inputType": Object {
+              "default": "text",
+              "type": [Function],
+            },
+            "textLabel": Object {
+              "default": "",
+              "required": true,
+              "type": [Function],
+            },
+            "textPlaceholder": Object {
+              "default": "",
+              "required": true,
+              "type": [Function],
+            },
+            "validity": Object {
+              "default": [Function],
+              "type": [Function],
+            },
+            "value": Object {
+              "default": [Function],
+              "required": true,
+              "type": [Function],
+            },
+          },
+          "propsData": Object {
+            "textLabel": "Name",
+            "textPlaceholder": "Type your name here",
+            "value": Object {
+              "changed": false,
+              "value": "",
+            },
+          },
+          "provide": [Function],
+          "render": [Function],
+          "staticRenderFns": Array [],
+        },
+        "$parent": undefined,
+        "$refs": Object {},
+        "$root": [Circular],
+        "$scopedSlots": Object {},
+        "$slots": Object {},
+        "$vnode": undefined,
+        "__emitted": Object {},
+        "__emittedByOrder": Array [],
+        "_c": [Function],
+        "_data": Object {},
+        "_directInactive": false,
+        "_events": Object {},
+        "_hasHookEvent": false,
+        "_inactive": null,
+        "_isBeingDestroyed": false,
+        "_isDestroyed": false,
+        "_isMounted": true,
+        "_isVue": true,
+        "_props": Object {
+          "inputType": "text",
+          "textLabel": "Name",
+          "textPlaceholder": "Type your name here",
+          "validity": Object {},
+          "value": Object {
+            "changed": false,
+            "value": "",
+          },
+        },
+        "_provided": undefined,
+        "_renderProxy": [Circular],
+        "_self": [Circular],
+        "_staticTrees": null,
+        "_uid": 0,
+        "_vnode": [Circular],
+        "_watcher": Watcher {
+          "active": true,
+          "cb": [Function],
+          "deep": false,
+          "depIds": Set {
+            10,
+            9,
+            3,
+            4,
+            2,
+            5,
+            6,
+            7,
+            8,
+          },
+          "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 10,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 9,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 3,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 4,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 2,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 6,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 7,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 8,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+          ],
+          "dirty": false,
+          "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+          "getter": [Function],
+          "id": 1,
+          "lazy": false,
+          "newDepIds": Set {},
+          "newDeps": Array [],
+          "sync": true,
+          "user": false,
+          "value": undefined,
+          "vm": [Circular],
+        },
+        "_watchers": Array [
+          Watcher {
+            "active": true,
+            "cb": [Function],
+            "deep": false,
+            "depIds": Set {
+              10,
+              9,
+              3,
+              4,
+              2,
+              5,
+              6,
+              7,
+              8,
+            },
+            "deps": Array [
+              Dep {
+                "_sortedId": 0,
+                "id": 10,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 9,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 3,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 4,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 2,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 5,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 6,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 7,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+              Dep {
+                "_sortedId": 0,
+                "id": 8,
+                "subs": Array [
+                  [Circular],
+                ],
+              },
+            ],
+            "dirty": false,
+            "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+            "getter": [Function],
+            "id": 1,
+            "lazy": false,
+            "newDepIds": Set {},
+            "newDeps": Array [],
+            "sync": true,
+            "user": false,
+            "value": undefined,
+            "vm": [Circular],
+          },
+        ],
+        "onChange": [Function],
+      },
+      "_self": [Circular],
+      "_staticTrees": null,
+      "_uid": 0,
+      "_vnode": [Circular],
+      "_watcher": Watcher {
+        "active": true,
+        "cb": [Function],
+        "deep": false,
+        "depIds": Set {
+          10,
+          9,
+          3,
+          4,
+          2,
+          5,
+          6,
+          7,
+          8,
+        },
+        "deps": Array [
+          Dep {
+            "_sortedId": 0,
+            "id": 10,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 9,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 3,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 4,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 2,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 5,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 6,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 7,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+          Dep {
+            "_sortedId": 0,
+            "id": 8,
+            "subs": Array [
+              [Circular],
+            ],
+          },
+        ],
+        "dirty": false,
+        "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+        "getter": [Function],
+        "id": 1,
+        "lazy": false,
+        "newDepIds": Set {},
+        "newDeps": Array [],
+        "sync": true,
+        "user": false,
+        "value": undefined,
+        "vm": [Circular],
+      },
+      "_watchers": Array [
+        Watcher {
+          "active": true,
+          "cb": [Function],
+          "deep": false,
+          "depIds": Set {
+            10,
+            9,
+            3,
+            4,
+            2,
+            5,
+            6,
+            7,
+            8,
+          },
+          "deps": Array [
+            Dep {
+              "_sortedId": 0,
+              "id": 10,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 9,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 3,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 4,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 2,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 5,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 6,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 7,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+            Dep {
+              "_sortedId": 0,
+              "id": 8,
+              "subs": Array [
+                [Circular],
+              ],
+            },
+          ],
+          "dirty": false,
+          "expression": "function () {
+      vm._update(vm._render(), hydrating);
+    }",
+          "getter": [Function],
+          "id": 1,
+          "lazy": false,
+          "newDepIds": Set {},
+          "newDeps": Array [],
+          "sync": true,
+          "user": false,
+          "value": undefined,
+          "vm": [Circular],
+        },
+      ],
+      "onChange": [Function],
+    },
+    "data": Object {
+      "class": Object {
+        "error": false,
+        "success": false,
+        "warning": false,
+      },
+      "staticClass": "input-flex",
+    },
+    "elm": <div
+      class="input-flex"
+    >
+      <label
+        htmlfor="Name"
+      >
+        Name
+      </label>
+       
+      <input
+        id="Name"
+        placeholder="Type your name here"
+        type="text"
+      />
+       
+      <!---->
+    </div>,
+    "fnContext": undefined,
+    "fnOptions": undefined,
+    "fnScopeId": undefined,
+    "isAsyncPlaceholder": false,
+    "isCloned": false,
+    "isComment": false,
+    "isOnce": false,
+    "isRootInsert": true,
+    "isStatic": false,
+    "key": undefined,
+    "ns": undefined,
+    "parent": undefined,
+    "raw": false,
+    "tag": "div",
+    "text": undefined,
+  },
+}
+`;
