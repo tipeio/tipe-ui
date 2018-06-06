@@ -12,7 +12,6 @@
       </div>
       <tipe-table :members="members" />
     </div>
-    <add-member @close="modalToggle" v-if="modalOpen" />
   </layout-card>
 </template>
 
@@ -28,14 +27,9 @@ export default {
   props: {
     members: vueTypes.array.isRequired
   },
-  data() {
-    return {
-      modalOpen: false
-    }
-  },
   methods: {
     modalToggle() {
-      this.modalOpen = !this.modalOpen
+      this.$emit('toggle')
     }
   }
 }

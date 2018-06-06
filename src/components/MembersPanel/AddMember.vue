@@ -1,6 +1,8 @@
 <template>
   <div class="grid">
-    <div @click="close" class="close"><icon icon="close"/></div>
+    <div 
+      class="close" 
+      @click="close"><icon icon="close"/></div>
     <div class="content">
       <p class="title">Add Member</p>
       <avatar-upload />
