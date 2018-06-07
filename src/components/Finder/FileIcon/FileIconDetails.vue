@@ -88,11 +88,19 @@ export default {
   grid-template-rows: 4.8125rem;
   align-items: center;
   justify-content: flex-start;
-  border-top: 1px solid var(--gray-darker);
+  border-top: 1px solid var(--gray-light);
 }
 
 [data-tipe-ui='TipeFileIconDetails']:last-child {
   border-bottom: 1px solid var(--gray-darker);
+}
+
+[data-tipe-ui='TipeFileIconDetails']:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+[data-tipe-ui='TipeFileIconDetails']:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .details-layout {
