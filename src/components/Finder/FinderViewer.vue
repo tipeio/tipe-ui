@@ -1,9 +1,6 @@
 <template>
-  <div
-    :data-tipe-ui="$options.name"
-    class="viewer"
-  >
-    <div class="scrollable">
+  <div :data-tipe-ui="$options.name">
+    <tipe-scrollable>
       <div :class="layoutClass">
         <type-file-icon
           v-for="(file, i) in files"
@@ -13,20 +10,22 @@
           class="item"
         />
       </div>
-    </div>
+    </tipe-scrollable>
   </div>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
 import FileShape from '@/types/File'
+import TipeScrollable from '@/components/Scrollable'
 
 import TypeFileIcon from './FileIcon'
 
 export default {
   name: 'TipeFinder',
   components: {
-    TypeFileIcon
+    TypeFileIcon,
+    TipeScrollable
   },
   props: {
     files: vueTypes.arrayOf(vueTypes.shape(FileShape)).def([]),
@@ -45,8 +44,9 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.viewer {
-  overflow: hidden;
+[data-tipe-ui='TipeFinder'] {
+  height: 100%;
+  width: 100%;
 }
 
 /* hide scrollbar */
