@@ -2,7 +2,11 @@
 
 exports[`TemplateBrowserToolbar <TemplateBrowserToolbar> matches previous snapshot 1`] = `
 <div data-tipe-ui="TipeTemplateBrowserToolbar">
-  <!---->
-  <!---->
+  <div class="filter-control-container">
+    <!---->
+  </div>
+  <div class="new-template-button-container">
+    <!---->
+  </div>
 </div>
 `;

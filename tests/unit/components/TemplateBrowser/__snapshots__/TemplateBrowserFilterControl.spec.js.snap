@@ -11,5 +11,8 @@ exports[`TemplateBrowserFilterControl <TemplateBrowserFilterControl> matches pre
   <button>
     Created by me
   </button>
+  <button>
+    Shared with me
+  </button>
 </div>
 `;
