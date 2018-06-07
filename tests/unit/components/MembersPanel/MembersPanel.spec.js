@@ -20,23 +20,6 @@ describe('MembersPanel.vue', () => {
     })
     expect(wrapper.contains(LayoutCard)).toBe(true)
   })
-  it('should emit the modal method', () => {
-    const wrapper = shallowMount(MembersPanel, {
-      propsData: {
-        members
-      }
-    })
-    wrapper.vm.$emit('modal')
-    expect(wrapper.emitted().modal).toBeTruthy()
-  })
-  it('should have modalOpen set to false', () => {
-    const wrapper = shallowMount(MembersPanel, {
-      propsData: {
-        members
-      }
-    })
-    expect(wrapper.vm.modalOpen).toBe(false)
-  })
 })
 
 const members = [
