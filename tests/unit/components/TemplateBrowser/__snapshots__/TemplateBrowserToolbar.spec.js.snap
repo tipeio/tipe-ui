@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TemplateBrowserToolbar <TemplateBrowserToolbar> matches previous snapshot 1`] = `
+<div data-tipe-ui="TipeTemplateBrowserToolbar">
+  <!---->
+  <!---->
+</div>
+`;
