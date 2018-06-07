@@ -12,6 +12,16 @@ const style = () => ({
 storiesOf('Select', module).add('tipe select box', () => ({
   components: { TipeSelect },
   computed: { options, style },
+  data() {
+    return {
+      roleValue: 'member'
+    }
+  },
+  methods: {
+    onChangeRole(val) {
+      this.roleValue = val
+    }
+  },
   template:
-    '<div :style="style"><tipe-select textLabel="Role" :options="options"/></div>'
+    '<div :style="style"><tipe-select textLabel="Role" :options="options" :value="roleValue" @change="onChangeRole"/></div>'
 }))
