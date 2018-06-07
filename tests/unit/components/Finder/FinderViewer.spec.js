@@ -1,13 +1,9 @@
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount, mount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import FinderViewer from '@/components/Finder/FinderViewer'
 import FinderIcon from '@/components/Finder/FileIcon'
-import faker from 'faker'
-
-const createFile = () => ({
-  label: faker.lorem.word(),
-  type: ['document', 'folder'][faker.random.number(1)]
-})
+import Scrollable from '@/components/Scrollable'
+import fileMock from '@/mocks/File'
 
 describe('FinderViewer', () => {
   describe('<template>', () => {
@@ -30,19 +26,35 @@ describe('FinderViewer', () => {
 
   describe(':props', () => {
     it(':files - should pass file to FinderIcon component', () => {
-      const propsData = { files: [createFile()] }
-      const wrapper = shallowMount(FinderViewer, { propsData })
+      const stubs = {
+        TipeScrollable: Scrollable,
+        TipeFileIcon: '<!---->'
+      }
+      const propsData = { files: [fileMock()] }
+      const wrapper = mount(FinderViewer, { propsData, stubs })
 
-      expect(wrapper.find(FinderIcon).props().file).toMatchObject(
-        propsData.files[0]
-      )
+      expect(
+        wrapper
+          .find(Scrollable)
+          .find(FinderIcon)
+          .props().file
+      ).toMatchObject(propsData.files[0])
     })
 
     it(':layout(grid) - should pass layout prop to layout class', () => {
+      const stubs = {
+        TipeScrollable: Scrollable,
+        TipeFileIcon: '<!---->'
+      }
       const propsData = { layout: 'grid' }
-      const wrapper = shallowMount(FinderViewer, { propsData })
+      const wrapper = mount(FinderViewer, { propsData, stubs })
 
-      expect(wrapper.find('.layout').classes()).toContain('grid-rectangle')
+      expect(
+        wrapper
+          .find(Scrollable)
+          .find('.layout')
+          .classes()
+      ).toContain('grid-rectangle')
     })
   })
 })
