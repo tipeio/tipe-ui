@@ -13,9 +13,8 @@
         />
       </header>
       <section :class="$style.stage">
-        <header :class="$style.stage_header">Content</header>
         <section :class="$style.stage_section">
-          <tipe-folder-card :files="folders" />
+          <settings-menu />
         </section>
         <section :class="$style.stage_section">
           <tipe-members-panel 
@@ -38,10 +37,9 @@
 import vueTypes from 'vue-types'
 import NavLinkShape from '@/types/NavLink'
 import FileShape from '@/types/File'
-import UserShape from '@/types/User'
 import TipeSidebar from '@/components/Sidebar'
 import TipeTopbar from '@/components/Topbar'
-import TipeFolderCard from '@/components/FolderCard'
+import SettingsMenu from '@/components/SettingsMenu'
 import TipeMembersPanel, { AddMember } from '@/components/MembersPanel'
 
 export default {
@@ -50,8 +48,8 @@ export default {
     TipeSidebar,
     TipeTopbar,
     TipeMembersPanel,
-    TipeFolderCard,
-    AddMember
+    AddMember,
+    SettingsMenu
   },
   props: {
     navLinks: vueTypes.arrayOf(vueTypes.shape(NavLinkShape)),
@@ -126,22 +124,13 @@ export default {
 .stage {
   grid-area: section;
   display: grid;
-  grid-template-areas:
-    'header header'
-    'finder finder';
-  grid-template-rows: 4.875rem 1fr;
-  grid-auto-columns: 18.75rem minmax(18rem, 1fr);
+  grid-template-areas: 'finder finder';
+  grid-template-rows: 1fr;
+  grid-auto-columns: 12.75rem minmax(18rem, 1fr);
   grid-column-gap: 1.25rem;
   background-color: var(--gray-lightest);
-  padding: 5rem 5.625rem 5rem 5.625rem;
+  padding: 5rem 5.625rem 5rem 0;
   box-sizing: border-box;
-}
-
-.stage_header {
-  grid-area: header;
-  font-size: 2.375rem;
-  font-weight: 400;
-  letter-spacing: -1.1px;
 }
 
 .stage_finder {
