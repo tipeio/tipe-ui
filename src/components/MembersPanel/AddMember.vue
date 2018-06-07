@@ -1,5 +1,7 @@
 <template>
-  <div class="grid">
+  <div 
+    class="grid" 
+    data-tipe-ui="$options.name">
     <div 
       class="close" 
       @click="close"><icon icon="close"/></div>
