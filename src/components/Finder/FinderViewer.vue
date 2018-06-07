@@ -2,7 +2,7 @@
   <div :data-tipe-ui="$options.name">
     <tipe-scrollable>
       <div :class="layoutClass">
-        <type-file-icon
+        <tipe-file-icon
           v-for="(file, i) in files"
           :key="i"
           :file="file"
@@ -19,12 +19,12 @@ import vueTypes from 'vue-types'
 import FileShape from '@/types/File'
 import TipeScrollable from '@/components/Scrollable'
 
-import TypeFileIcon from './FileIcon'
+import TipeFileIcon from './FileIcon'
 
 export default {
   name: 'TipeFinder',
   components: {
-    TypeFileIcon,
+    TipeFileIcon,
     TipeScrollable
   },
   props: {
