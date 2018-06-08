@@ -111,3 +111,48 @@ Example
   ]"
 />
 ```
+
+### TipeSelect
+
+The TipeSelect component supports `label`, `placeholder`, `options`, `value`, and `disabled`
+
+`label` is required
+`disabled` defaults to false
+`options` is required and must be an array of the `SelectOptionShape`
+`placeholder` is optional, but `value` must be initialized to an empty string for the `placeholder` to appear
+`value` is required
+
+Example
+
+In the parent component: Form
+
+```
+<template>
+<tipe-select
+  :options="options"
+  :value="roleValue"
+  class="role"
+  label="Role"
+  @change="onChangeRole" />
+</template>
+
+<script>
+...
+export default {
+  name: 'TipeForm',
+  components: {
+    TipeSelect
+  },
+  data() {
+    return {
+      roleValue: 'member', // member will be selected as a default
+    }
+  },
+  methods: {
+    onChangeRole(val) {
+      this.roleValue = val
+    },
+  }
+}
+</script>
+```
