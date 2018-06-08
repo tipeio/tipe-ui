@@ -26,17 +26,17 @@ yarn storybook
 
 The Button component currently supports `size`, `outline`, and `color` props.
 
-* Size
-  * Type: String
-  * Valid Props: `small`, `medium`, `large`
-  * Default Value: `medium`
-* Color
-  * Type: String
-  * Valid Props: `purple`, `dark-purple`, `danger`, `gray`
-  * Default: `purple`
-* Outline
-  * Type: Boolean
-  * Default: false
+- Size
+  - Type: String
+  - Valid Props: `small`, `medium`, `large`
+  - Default Value: `medium`
+- Color
+  - Type: String
+  - Valid Props: `purple`, `dark-purple`, `danger`, `gray`
+  - Default: `purple`
+- Outline
+  - Type: Boolean
+  - Default: false
 
 **Click Event**
 
@@ -52,12 +52,12 @@ Example
 
 The TipeImage component currently supports `url` and `alt`.
 
-* url
-  * Type: String
-  * Default Value: `''`
-* alt
-  * Type: String
-  * Default: `''`
+- url
+  - Type: String
+  - Default Value: `''`
+- alt
+  - Type: String
+  - Default: `''`
 
 Example
 
@@ -69,9 +69,9 @@ Example
 
 The TipeImage component currently supports `icon`. See inside `src/icons` for supported icons.
 
-* icon
-  * Type: String
-  * Default Value: `''`
+- icon
+  - Type: String
+  - Default Value: `''`
 
 Example
 
@@ -127,31 +127,62 @@ Example
 In the parent component: Form
 
 ```
-<template>
-<tipe-select
-  :options="options"
-  :value="roleValue"
-  class="role"
-  label="Role"
-  @change="onChangeRole" />
-</template>
+  <template>
+  <tipe-select
+    :options="options"
+    :value="roleValue"
+    class="role"
+    label="Role"
+    @change="onChangeRole" />
+  </template>
+  <script>
+  ...
+  export default {
+    name: 'TipeForm',
+    components: {
+      TipeSelect
+    },
+    data() {
+      return {
+        roleValue: 'member', // member will be selected as a default
+      }
+    },
+    methods: {
+      onChangeRole(val) {
+        this.roleValue = val
+      },
+```
 
+### TipeSwitch
+
+The TipeSwitch currently supports `label`, `value`, `name`, and `disabled`.
+
+`value` and `disabled` default to `false`
+`label` and `name` are required
+
+Example
+
+In the parent component `Settings`:
+
+```
+<template>
+<tipe-switch
+  :value="backup"
+  name="backup"
+  label="Backup"
+  @change="onChangeBackup" />
+</template>
 <script>
 ...
 export default {
-  name: 'TipeForm',
-  components: {
-    TipeSelect
-  },
+  ...
   data() {
-    return {
-      roleValue: 'member', // member will be selected as a default
-    }
+    return { sharing: false, backup: true }
   },
   methods: {
-    onChangeRole(val) {
-      this.roleValue = val
-    },
+    onChangeBackup(val) {
+      this.backup = val
+    }
   }
 }
 </script>

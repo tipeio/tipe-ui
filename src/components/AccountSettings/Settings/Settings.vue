@@ -4,7 +4,6 @@
       :value="sharing"
       label="File Sharing"
       name="sharing"
-      sublabel="Turn on to share your file changes and updates"
       @change="onChangeSharing" />
     <tipe-switch
       :value="backup"
