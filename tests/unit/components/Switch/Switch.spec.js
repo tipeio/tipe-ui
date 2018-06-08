@@ -57,4 +57,14 @@ describe('Progress.vue', () => {
     expect(wrapper.props().name).toBe('location')
     expect(wrapper.props().disabled).toBe(true)
   })
+  it('should emit the onChange method', () => {
+    const wrapper = shallowMount(TipeSwitch, {
+      propsData: {
+        ...props,
+        value: true
+      }
+    })
+    wrapper.vm.$emit('onChange', { target: { value: true } })
+    expect(wrapper.emitted().onChange).toBeTruthy()
+  })
 })

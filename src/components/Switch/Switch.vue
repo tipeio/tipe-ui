@@ -52,7 +52,7 @@ export default {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
   }
 }
 
@@ -67,7 +67,7 @@ export default {
   display: inline-block;
   width: 26px;
   height: 14px;
-  margin: 0 5px;
+  margin: 0 15px 0 5px;
   /* Hide default HTML checkbox */
   input {
     display: none;

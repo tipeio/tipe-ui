@@ -2,14 +2,14 @@
   <accordian text="Settings">
     <tipe-switch 
       :value="sharing"
-      text="File Sharing"
+      label="File Sharing"
       name="sharing"
       sublabel="Turn on to share your file changes and updates"
       @change="onChangeSharing" />
     <tipe-switch
       :value="backup"
       name="backup"
-      text="Backup" 
+      label="Backup" 
       @change="onChangeBackup" />
   </accordian>
 </template>
