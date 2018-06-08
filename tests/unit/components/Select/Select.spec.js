@@ -10,7 +10,7 @@ const options = [
 const props = {
   label: 'Role',
   options,
-  value: 'member'
+  value: { label: 'Admin', value: 'admin' }
 }
 describe('TipeSelect.vue', () => {
   it('renders', () => {
@@ -51,7 +51,7 @@ describe('TipeSelect.vue', () => {
     })
     expect(wrapper.props().label).toBe('Role')
     expect(wrapper.props().options).toBe(options)
-    expect(wrapper.props().value).toBe('member')
+    expect(wrapper.props().value).toEqual({ label: 'Admin', value: 'admin' })
     expect(wrapper.props().disabled).toBe(true)
     expect(wrapper.props().placeholder).toBe('Select a role')
   })
@@ -78,7 +78,7 @@ describe('TipeSelect.vue', () => {
       propsData: {
         ...props,
         placeholder: 'select a role',
-        value: ''
+        value: { label: '', value: '' }
       }
     })
     const optionArr = wrapper.findAll('option')

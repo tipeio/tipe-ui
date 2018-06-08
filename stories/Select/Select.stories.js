@@ -16,7 +16,7 @@ storiesOf('Select', module)
     computed: { options, style },
     data() {
       return {
-        roleValue: 'member'
+        roleValue: { label: 'Member', value: 'member' }
       }
     },
     methods: {
@@ -32,7 +32,7 @@ storiesOf('Select', module)
     computed: { options, style },
     data() {
       return {
-        roleValue: ''
+        roleValue: { label: '', value: '' }
       }
     },
     methods: {
@@ -48,7 +48,7 @@ storiesOf('Select', module)
     computed: { options, style },
     data() {
       return {
-        roleValue: 'member'
+        roleValue: { label: 'Member', value: 'member' }
       }
     },
     methods: {

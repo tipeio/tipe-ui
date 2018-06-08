@@ -6,9 +6,10 @@ exports[`TipeSelect.vue renders 1`] = `
   <div class="select">
     <select>
       <!---->
-      <option hidden="hidden" value="owner">Owner</option>
-      <option hidden="hidden" value="admin">Admin</option>
+      <option value="owner">Owner</option>
+      <option value="admin" selected="selected">Admin</option>
     </select>
+    <div class="fake-select">Admin</div>
     <!---->
   </div>
 </div>

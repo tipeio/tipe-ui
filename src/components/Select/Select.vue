@@ -7,20 +7,22 @@
 
     <div 
       class="select" 
-      @click="onClick">
+      v-on="disabled ? {} : { click: onClick }">
       <select :disabled="disabled">
         <option 
           v-if="placeholder"
           :selected="true"
-          hidden 
           disabled>{{ placeholder }}</option>
         <option 
           v-for="option in options"
           :value="option.value" 
-          :selected="value === option.value"
+          :selected="value.value === option.value"
           :key="option.value"
-          hidden>{{ option.label }}</option>
+        >{{ option.label }}</option>
       </select>
+      <div 
+        :class="{disabled}" 
+        class="fake-select">{{ value.label || placeholder }}</div>
       <div 
         v-if="open" 
         class="dropdown">
@@ -28,7 +30,7 @@
           v-for="option in options"
           :key="option.value" 
           class="dropdown-item"
-          @click="onChange(option.value)"><p>{{ option.label }}</p></div>
+          @click="onChange(option)"><p>{{ option.label }}</p></div>
       </div>
     </div>
   </div>
@@ -44,7 +46,7 @@ export default {
     label: vueTypes.string.isRequired,
     placeholder: vueTypes.string,
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
-    value: vueTypes.string.isRequired,
+    value: vueTypes.shape(SelectOptionShape),
     disabled: vueTypes.bool.def(false)
   },
   data() {
@@ -82,6 +84,9 @@ export default {
   vertical-align: top;
 
   & select {
+    display: none;
+  }
+  & .fake-select {
     -webkit-appearance: none;
     align-items: center;
     border: 1px solid transparent;
@@ -102,13 +107,17 @@ export default {
     border-bottom: 1px solid #dbdbdb;
     color: #1f346c;
     cursor: pointer;
-    display: block;
     font-size: 0.875rem;
     width: 100%;
     outline: 0;
-    padding-right: 3.5em;
+    padding-right: 0.5em;
     -moz-appearance: none;
     appearance: none;
+    display: flex;
+  }
+
+  & .disabled {
+    cursor: not-allowed;
   }
 }
 

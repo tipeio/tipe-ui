@@ -77,7 +77,7 @@ export default {
         value: '',
         changed: false
       },
-      roleValue: 'member',
+      roleValue: { label: 'Member', value: 'member' },
       nameValue: { value: '', changed: false }
     }
   },
