@@ -28,7 +28,7 @@ export default {
   name: 'TipeSwitch',
   props: {
     label: vueTypes.string.isRequired,
-    value: vueTypes.bool,
+    value: vueTypes.bool.def(false),
     name: vueTypes.string.isRequired,
     disabled: vueTypes.bool.def(false)
   },
