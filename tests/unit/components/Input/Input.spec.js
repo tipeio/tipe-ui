@@ -1,4 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
+import { createRenderer } from 'vue-server-renderer'
 import TipeInput from '@/components/Input'
 
 const textPlaceholder = 'Type your name here'
@@ -11,13 +12,17 @@ const props = {
 
 describe('TipeSelect.vue', () => {
   it('renders', () => {
+    const renderer = createRenderer()
     const wrapper = shallowMount(TipeInput, {
       propsData: {
         ...props,
         value: { value: '', changed: false }
       }
     })
-    expect(wrapper).toMatchSnapshot()
+    renderer.renderToString(wrapper.vm, (err, str) => {
+      if (err) throw new Error(err)
+      expect(str).toMatchSnapshot()
+    })
   })
   it('should render with the input-flex class', () => {
     const wrapper = shallowMount(TipeInput, {

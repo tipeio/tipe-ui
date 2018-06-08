@@ -4,7 +4,7 @@
     data-tipe-ui="$options.name">
     <div 
       class="close" 
-      @click="close"><icon icon="close"/></div>
+      @click="close"><tipe-icon icon="close"/></div>
     <div class="content">
       <p class="title">Add Member</p>
       <avatar-upload />
@@ -31,7 +31,7 @@
           class="role"
           text-label="Role"
           @change="onChangeRole" />
-        <div class="seperator"><seperator /></div>
+        <div class="seperator"><tipe-seperator /></div>
 
         <div class="add-button">
           <tipe-button 
@@ -48,9 +48,9 @@
 
 <script>
 import { createManyMocks, user } from '../../mocks'
-import Icon from '../Icon'
+import TipeIcon from '../Icon'
 import TipeButton from '../Button'
-import Seperator from '../Seperator'
+import TipeSeperator from '../Seperator'
 import AvatarUpload from '../AvatarUpload'
 import TipeInput from '../Input'
 import TipeSelect from '../Select'
@@ -58,9 +58,9 @@ import TipeSelect from '../Select'
 export default {
   name: 'AddMember',
   components: {
-    Icon,
+    TipeIcon,
     TipeButton,
-    Seperator,
+    TipeSeperator,
     AvatarUpload,
     TipeInput,
     TipeSelect

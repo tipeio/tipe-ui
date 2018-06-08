@@ -1,4 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
+import { createRenderer } from 'vue-server-renderer'
 import TipeSelect from '@/components/Select'
 
 const options = [
@@ -8,6 +9,7 @@ const options = [
 
 describe('TipeSelect.vue', () => {
   it('renders', () => {
+    const renderer = createRenderer()
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
         textLabel: 'Role',
@@ -15,7 +17,10 @@ describe('TipeSelect.vue', () => {
         value: 'member'
       }
     })
-    expect(wrapper).toMatchSnapshot()
+    renderer.renderToString(wrapper.vm, (err, str) => {
+      if (err) throw new Error(err)
+      expect(str).toMatchSnapshot()
+    })
   })
   it('should render with the select-flex class', () => {
     const wrapper = shallowMount(TipeSelect, {
