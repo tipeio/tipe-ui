@@ -46,8 +46,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "sublabel": "Turn on to share your file changes and updates",
-                      "text": "File Sharing",
+                      "label": "File Sharing",
+                      "name": "sharing",
                       "value": false,
                     },
                     "tag": "tipe-switch",
@@ -117,7 +117,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "text": "Backup",
+                      "label": "Backup",
+                      "name": "backup",
                       "value": true,
                     },
                     "tag": "tipe-switch",
@@ -203,8 +204,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "sublabel": "Turn on to share your file changes and updates",
-                  "text": "File Sharing",
+                  "label": "File Sharing",
+                  "name": "sharing",
                   "value": false,
                 },
                 "tag": "tipe-switch",
@@ -274,7 +275,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "text": "Backup",
+                  "label": "Backup",
+                  "name": "backup",
                   "value": true,
                 },
                 "tag": "tipe-switch",
@@ -331,8 +333,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "sublabel": "Turn on to share your file changes and updates",
-                  "text": "File Sharing",
+                  "label": "File Sharing",
+                  "name": "sharing",
                   "value": false,
                 },
                 "tag": "tipe-switch",
@@ -402,7 +404,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "text": "Backup",
+                  "label": "Backup",
+                  "name": "backup",
                   "value": true,
                 },
                 "tag": "tipe-switch",
@@ -457,8 +460,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "sublabel": "Turn on to share your file changes and updates",
-                    "text": "File Sharing",
+                    "label": "File Sharing",
+                    "name": "sharing",
                     "value": false,
                   },
                   "tag": "tipe-switch",
@@ -528,7 +531,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "text": "Backup",
+                    "label": "Backup",
+                    "name": "backup",
                     "value": true,
                   },
                   "tag": "tipe-switch",
@@ -643,8 +647,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "sublabel": "Turn on to share your file changes and updates",
-                        "text": "File Sharing",
+                        "label": "File Sharing",
+                        "name": "sharing",
                         "value": false,
                       },
                       "tag": "tipe-switch",
@@ -714,7 +718,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "text": "Backup",
+                        "label": "Backup",
+                        "name": "backup",
                         "value": true,
                       },
                       "tag": "tipe-switch",
@@ -800,8 +805,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "sublabel": "Turn on to share your file changes and updates",
-                    "text": "File Sharing",
+                    "label": "File Sharing",
+                    "name": "sharing",
                     "value": false,
                   },
                   "tag": "tipe-switch",
@@ -871,7 +876,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "text": "Backup",
+                    "label": "Backup",
+                    "name": "backup",
                     "value": true,
                   },
                   "tag": "tipe-switch",
@@ -928,8 +934,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "sublabel": "Turn on to share your file changes and updates",
-                    "text": "File Sharing",
+                    "label": "File Sharing",
+                    "name": "sharing",
                     "value": false,
                   },
                   "tag": "tipe-switch",
@@ -999,7 +1005,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "text": "Backup",
+                    "label": "Backup",
+                    "name": "backup",
                     "value": true,
                   },
                   "tag": "tipe-switch",
@@ -1054,8 +1061,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "sublabel": "Turn on to share your file changes and updates",
-                      "text": "File Sharing",
+                      "label": "File Sharing",
+                      "name": "sharing",
                       "value": false,
                     },
                     "tag": "tipe-switch",
@@ -1125,7 +1132,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "text": "Backup",
+                      "label": "Backup",
+                      "name": "backup",
                       "value": true,
                     },
                     "tag": "tipe-switch",
@@ -1253,8 +1261,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "sublabel": "Turn on to share your file changes and updates",
-                        "text": "File Sharing",
+                        "label": "File Sharing",
+                        "name": "sharing",
                         "value": false,
                       },
                       "tag": "tipe-switch",
@@ -1324,7 +1332,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "text": "Backup",
+                        "label": "Backup",
+                        "name": "backup",
                         "value": true,
                       },
                       "tag": "tipe-switch",
@@ -1483,8 +1492,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "sublabel": "Turn on to share your file changes and updates",
-                      "text": "File Sharing",
+                      "label": "File Sharing",
+                      "name": "sharing",
                       "value": false,
                     },
                     "tag": "tipe-switch",
@@ -1554,7 +1563,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "text": "Backup",
+                      "label": "Backup",
+                      "name": "backup",
                       "value": true,
                     },
                     "tag": "tipe-switch",
@@ -1726,17 +1736,23 @@ VueWrapper {
           "normalizedStyle": undefined,
           "on": undefined,
           "props": Object {
-            "sublabel": Object {
-              "default": "",
+            "disabled": Object {
+              "default": false,
               "type": [Function],
             },
-            "text": Object {
+            "label": Object {
+              "default": "",
+              "required": true,
+              "type": [Function],
+            },
+            "name": Object {
               "default": "",
               "required": true,
               "type": [Function],
             },
             "value": Object {
-              "type": undefined,
+              "default": false,
+              "type": [Function],
             },
           },
           "ref": undefined,
@@ -1829,8 +1845,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "sublabel": "Turn on to share your file changes and updates",
-                        "text": "File Sharing",
+                        "label": "File Sharing",
+                        "name": "sharing",
                         "value": false,
                       },
                       "tag": "tipe-switch",
@@ -1900,7 +1916,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "text": "Backup",
+                        "label": "Backup",
+                        "name": "backup",
                         "value": true,
                       },
                       "tag": "tipe-switch",
@@ -1986,8 +2003,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "sublabel": "Turn on to share your file changes and updates",
-                    "text": "File Sharing",
+                    "label": "File Sharing",
+                    "name": "sharing",
                     "value": false,
                   },
                   "tag": "tipe-switch",
@@ -2057,7 +2074,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "text": "Backup",
+                    "label": "Backup",
+                    "name": "backup",
                     "value": true,
                   },
                   "tag": "tipe-switch",
@@ -2114,8 +2132,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "sublabel": "Turn on to share your file changes and updates",
-                    "text": "File Sharing",
+                    "label": "File Sharing",
+                    "name": "sharing",
                     "value": false,
                   },
                   "tag": "tipe-switch",
@@ -2185,7 +2203,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "text": "Backup",
+                    "label": "Backup",
+                    "name": "backup",
                     "value": true,
                   },
                   "tag": "tipe-switch",
@@ -2240,8 +2259,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "sublabel": "Turn on to share your file changes and updates",
-                      "text": "File Sharing",
+                      "label": "File Sharing",
+                      "name": "sharing",
                       "value": false,
                     },
                     "tag": "tipe-switch",
@@ -2311,7 +2330,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "text": "Backup",
+                      "label": "Backup",
+                      "name": "backup",
                       "value": true,
                     },
                     "tag": "tipe-switch",
@@ -2426,8 +2446,8 @@ VueWrapper {
                           "change": [Function],
                         },
                         "propsData": Object {
-                          "sublabel": "Turn on to share your file changes and updates",
-                          "text": "File Sharing",
+                          "label": "File Sharing",
+                          "name": "sharing",
                           "value": false,
                         },
                         "tag": "tipe-switch",
@@ -2497,7 +2517,8 @@ VueWrapper {
                           "change": [Function],
                         },
                         "propsData": Object {
-                          "text": "Backup",
+                          "label": "Backup",
+                          "name": "backup",
                           "value": true,
                         },
                         "tag": "tipe-switch",
@@ -2583,8 +2604,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "sublabel": "Turn on to share your file changes and updates",
-                      "text": "File Sharing",
+                      "label": "File Sharing",
+                      "name": "sharing",
                       "value": false,
                     },
                     "tag": "tipe-switch",
@@ -2654,7 +2675,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "text": "Backup",
+                      "label": "Backup",
+                      "name": "backup",
                       "value": true,
                     },
                     "tag": "tipe-switch",
@@ -2711,8 +2733,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "sublabel": "Turn on to share your file changes and updates",
-                      "text": "File Sharing",
+                      "label": "File Sharing",
+                      "name": "sharing",
                       "value": false,
                     },
                     "tag": "tipe-switch",
@@ -2782,7 +2804,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "text": "Backup",
+                      "label": "Backup",
+                      "name": "backup",
                       "value": true,
                     },
                     "tag": "tipe-switch",
@@ -2837,8 +2860,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "sublabel": "Turn on to share your file changes and updates",
-                        "text": "File Sharing",
+                        "label": "File Sharing",
+                        "name": "sharing",
                         "value": false,
                       },
                       "tag": "tipe-switch",
@@ -2908,7 +2931,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "text": "Backup",
+                        "label": "Backup",
+                        "name": "backup",
                         "value": true,
                       },
                       "tag": "tipe-switch",
@@ -3036,8 +3060,8 @@ VueWrapper {
                           "change": [Function],
                         },
                         "propsData": Object {
-                          "sublabel": "Turn on to share your file changes and updates",
-                          "text": "File Sharing",
+                          "label": "File Sharing",
+                          "name": "sharing",
                           "value": false,
                         },
                         "tag": "tipe-switch",
@@ -3107,7 +3131,8 @@ VueWrapper {
                           "change": [Function],
                         },
                         "propsData": Object {
-                          "text": "Backup",
+                          "label": "Backup",
+                          "name": "backup",
                           "value": true,
                         },
                         "tag": "tipe-switch",
@@ -3266,8 +3291,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "sublabel": "Turn on to share your file changes and updates",
-                        "text": "File Sharing",
+                        "label": "File Sharing",
+                        "name": "sharing",
                         "value": false,
                       },
                       "tag": "tipe-switch",
@@ -3337,7 +3362,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "text": "Backup",
+                        "label": "Backup",
+                        "name": "backup",
                         "value": true,
                       },
                       "tag": "tipe-switch",
@@ -3509,17 +3535,23 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
-              "sublabel": Object {
-                "default": "",
+              "disabled": Object {
+                "default": false,
                 "type": [Function],
               },
-              "text": Object {
+              "label": Object {
+                "default": "",
+                "required": true,
+                "type": [Function],
+              },
+              "name": Object {
                 "default": "",
                 "required": true,
                 "type": [Function],
               },
               "value": Object {
-                "type": undefined,
+                "default": false,
+                "type": [Function],
               },
             },
             "ref": undefined,
@@ -3615,8 +3647,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "sublabel": "Turn on to share your file changes and updates",
-                    "text": "File Sharing",
+                    "label": "File Sharing",
+                    "name": "sharing",
                     "value": false,
                   },
                   "tag": "tipe-switch",
@@ -3686,7 +3718,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "text": "Backup",
+                    "label": "Backup",
+                    "name": "backup",
                     "value": true,
                   },
                   "tag": "tipe-switch",
@@ -3743,8 +3776,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "sublabel": "Turn on to share your file changes and updates",
-                    "text": "File Sharing",
+                    "label": "File Sharing",
+                    "name": "sharing",
                     "value": false,
                   },
                   "tag": "tipe-switch",
@@ -3814,7 +3847,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "text": "Backup",
+                    "label": "Backup",
+                    "name": "backup",
                     "value": true,
                   },
                   "tag": "tipe-switch",
@@ -3894,8 +3928,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "sublabel": "Turn on to share your file changes and updates",
-                      "text": "File Sharing",
+                      "label": "File Sharing",
+                      "name": "sharing",
                       "value": false,
                     },
                     "tag": "tipe-switch",
@@ -3965,7 +3999,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "text": "Backup",
+                      "label": "Backup",
+                      "name": "backup",
                       "value": true,
                     },
                     "tag": "tipe-switch",
@@ -4022,8 +4057,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "sublabel": "Turn on to share your file changes and updates",
-                      "text": "File Sharing",
+                      "label": "File Sharing",
+                      "name": "sharing",
                       "value": false,
                     },
                     "tag": "tipe-switch",
@@ -4093,7 +4128,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "text": "Backup",
+                      "label": "Backup",
+                      "name": "backup",
                       "value": true,
                     },
                     "tag": "tipe-switch",
@@ -4302,8 +4338,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "sublabel": "Turn on to share your file changes and updates",
-                  "text": "File Sharing",
+                  "label": "File Sharing",
+                  "name": "sharing",
                   "value": false,
                 },
                 "tag": "tipe-switch",
@@ -4373,7 +4409,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "text": "Backup",
+                  "label": "Backup",
+                  "name": "backup",
                   "value": true,
                 },
                 "tag": "tipe-switch",
@@ -4561,8 +4598,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "sublabel": "Turn on to share your file changes and updates",
-                  "text": "File Sharing",
+                  "label": "File Sharing",
+                  "name": "sharing",
                   "value": false,
                 },
                 "tag": "tipe-switch",
@@ -4632,7 +4669,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "text": "Backup",
+                  "label": "Backup",
+                  "name": "backup",
                   "value": true,
                 },
                 "tag": "tipe-switch",
@@ -4689,8 +4727,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "sublabel": "Turn on to share your file changes and updates",
-                  "text": "File Sharing",
+                  "label": "File Sharing",
+                  "name": "sharing",
                   "value": false,
                 },
                 "tag": "tipe-switch",
@@ -4760,7 +4798,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "text": "Backup",
+                  "label": "Backup",
+                  "name": "backup",
                   "value": true,
                 },
                 "tag": "tipe-switch",
@@ -4840,8 +4879,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "sublabel": "Turn on to share your file changes and updates",
-                    "text": "File Sharing",
+                    "label": "File Sharing",
+                    "name": "sharing",
                     "value": false,
                   },
                   "tag": "tipe-switch",
@@ -4911,7 +4950,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "text": "Backup",
+                    "label": "Backup",
+                    "name": "backup",
                     "value": true,
                   },
                   "tag": "tipe-switch",
@@ -4968,8 +5008,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "sublabel": "Turn on to share your file changes and updates",
-                    "text": "File Sharing",
+                    "label": "File Sharing",
+                    "name": "sharing",
                     "value": false,
                   },
                   "tag": "tipe-switch",
@@ -5039,7 +5079,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "text": "Backup",
+                    "label": "Backup",
+                    "name": "backup",
                     "value": true,
                   },
                   "tag": "tipe-switch",
@@ -5248,8 +5289,8 @@ VueWrapper {
                 "change": [Function],
               },
               "propsData": Object {
-                "sublabel": "Turn on to share your file changes and updates",
-                "text": "File Sharing",
+                "label": "File Sharing",
+                "name": "sharing",
                 "value": false,
               },
               "tag": "tipe-switch",
@@ -5319,7 +5360,8 @@ VueWrapper {
                 "change": [Function],
               },
               "propsData": Object {
-                "text": "Backup",
+                "label": "Backup",
+                "name": "backup",
                 "value": true,
               },
               "tag": "tipe-switch",
@@ -5504,8 +5546,8 @@ VueWrapper {
                 "change": [Function],
               },
               "propsData": Object {
-                "sublabel": "Turn on to share your file changes and updates",
-                "text": "File Sharing",
+                "label": "File Sharing",
+                "name": "sharing",
                 "value": false,
               },
               "tag": "tipe-switch",
@@ -5570,17 +5612,23 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "sublabel": Object {
-                        "default": "",
+                      "disabled": Object {
+                        "default": false,
                         "type": [Function],
                       },
-                      "text": Object {
+                      "label": Object {
+                        "default": "",
+                        "required": true,
+                        "type": [Function],
+                      },
+                      "name": Object {
                         "default": "",
                         "required": true,
                         "type": [Function],
                       },
                       "value": Object {
-                        "type": undefined,
+                        "default": false,
+                        "type": [Function],
                       },
                     },
                     "ref": undefined,
@@ -5699,17 +5747,23 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "sublabel": Object {
-                          "default": "",
+                        "disabled": Object {
+                          "default": false,
                           "type": [Function],
                         },
-                        "text": Object {
+                        "label": Object {
+                          "default": "",
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "name": Object {
                           "default": "",
                           "required": true,
                           "type": [Function],
                         },
                         "value": Object {
-                          "type": undefined,
+                          "default": false,
+                          "type": [Function],
                         },
                       },
                       "ref": undefined,
@@ -6007,7 +6061,8 @@ VueWrapper {
                 "change": [Function],
               },
               "propsData": Object {
-                "text": "Backup",
+                "label": "Backup",
+                "name": "backup",
                 "value": true,
               },
               "tag": "tipe-switch",
@@ -6072,17 +6127,23 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "sublabel": Object {
-                        "default": "",
+                      "disabled": Object {
+                        "default": false,
                         "type": [Function],
                       },
-                      "text": Object {
+                      "label": Object {
+                        "default": "",
+                        "required": true,
+                        "type": [Function],
+                      },
+                      "name": Object {
                         "default": "",
                         "required": true,
                         "type": [Function],
                       },
                       "value": Object {
-                        "type": undefined,
+                        "default": false,
+                        "type": [Function],
                       },
                     },
                     "ref": undefined,
@@ -6201,17 +6262,23 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "sublabel": Object {
-                          "default": "",
+                        "disabled": Object {
+                          "default": false,
                           "type": [Function],
                         },
-                        "text": Object {
+                        "label": Object {
+                          "default": "",
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "name": Object {
                           "default": "",
                           "required": true,
                           "type": [Function],
                         },
                         "value": Object {
-                          "type": undefined,
+                          "default": false,
+                          "type": [Function],
                         },
                       },
                       "ref": undefined,
@@ -6533,17 +6600,23 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
-                  "sublabel": Object {
-                    "default": "",
+                  "disabled": Object {
+                    "default": false,
                     "type": [Function],
                   },
-                  "text": Object {
+                  "label": Object {
+                    "default": "",
+                    "required": true,
+                    "type": [Function],
+                  },
+                  "name": Object {
                     "default": "",
                     "required": true,
                     "type": [Function],
                   },
                   "value": Object {
-                    "type": undefined,
+                    "default": false,
+                    "type": [Function],
                   },
                 },
                 "ref": undefined,
@@ -6662,17 +6735,23 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
-                    "sublabel": Object {
-                      "default": "",
+                    "disabled": Object {
+                      "default": false,
                       "type": [Function],
                     },
-                    "text": Object {
+                    "label": Object {
+                      "default": "",
+                      "required": true,
+                      "type": [Function],
+                    },
+                    "name": Object {
                       "default": "",
                       "required": true,
                       "type": [Function],
                     },
                     "value": Object {
-                      "type": undefined,
+                      "default": false,
+                      "type": [Function],
                     },
                   },
                   "ref": undefined,
@@ -6970,17 +7049,23 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
-                "sublabel": Object {
-                  "default": "",
+                "disabled": Object {
+                  "default": false,
                   "type": [Function],
                 },
-                "text": Object {
+                "label": Object {
+                  "default": "",
+                  "required": true,
+                  "type": [Function],
+                },
+                "name": Object {
                   "default": "",
                   "required": true,
                   "type": [Function],
                 },
                 "value": Object {
-                  "type": undefined,
+                  "default": false,
+                  "type": [Function],
                 },
               },
               "ref": undefined,
@@ -7099,17 +7184,23 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
-                  "sublabel": Object {
-                    "default": "",
+                  "disabled": Object {
+                    "default": false,
                     "type": [Function],
                   },
-                  "text": Object {
+                  "label": Object {
+                    "default": "",
+                    "required": true,
+                    "type": [Function],
+                  },
+                  "name": Object {
                     "default": "",
                     "required": true,
                     "type": [Function],
                   },
                   "value": Object {
-                    "type": undefined,
+                    "default": false,
+                    "type": [Function],
                   },
                 },
                 "ref": undefined,
@@ -7404,17 +7495,23 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
-                "sublabel": Object {
-                  "default": "",
+                "disabled": Object {
+                  "default": false,
                   "type": [Function],
                 },
-                "text": Object {
+                "label": Object {
+                  "default": "",
+                  "required": true,
+                  "type": [Function],
+                },
+                "name": Object {
                   "default": "",
                   "required": true,
                   "type": [Function],
                 },
                 "value": Object {
-                  "type": undefined,
+                  "default": false,
+                  "type": [Function],
                 },
               },
               "ref": undefined,
@@ -7533,17 +7630,23 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
-                  "sublabel": Object {
-                    "default": "",
+                  "disabled": Object {
+                    "default": false,
                     "type": [Function],
                   },
-                  "text": Object {
+                  "label": Object {
+                    "default": "",
+                    "required": true,
+                    "type": [Function],
+                  },
+                  "name": Object {
                     "default": "",
                     "required": true,
                     "type": [Function],
                   },
                   "value": Object {
-                    "type": undefined,
+                    "default": false,
+                    "type": [Function],
                   },
                 },
                 "ref": undefined,
@@ -7792,8 +7895,8 @@ VueWrapper {
                 "change": [Function],
               },
               "propsData": Object {
-                "sublabel": "Turn on to share your file changes and updates",
-                "text": "File Sharing",
+                "label": "File Sharing",
+                "name": "sharing",
                 "value": false,
               },
               "tag": "tipe-switch",
@@ -7858,17 +7961,23 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "sublabel": Object {
-                        "default": "",
+                      "disabled": Object {
+                        "default": false,
                         "type": [Function],
                       },
-                      "text": Object {
+                      "label": Object {
+                        "default": "",
+                        "required": true,
+                        "type": [Function],
+                      },
+                      "name": Object {
                         "default": "",
                         "required": true,
                         "type": [Function],
                       },
                       "value": Object {
-                        "type": undefined,
+                        "default": false,
+                        "type": [Function],
                       },
                     },
                     "ref": undefined,
@@ -7987,17 +8096,23 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "sublabel": Object {
-                          "default": "",
+                        "disabled": Object {
+                          "default": false,
                           "type": [Function],
                         },
-                        "text": Object {
+                        "label": Object {
+                          "default": "",
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "name": Object {
                           "default": "",
                           "required": true,
                           "type": [Function],
                         },
                         "value": Object {
-                          "type": undefined,
+                          "default": false,
+                          "type": [Function],
                         },
                       },
                       "ref": undefined,
@@ -8295,7 +8410,8 @@ VueWrapper {
                 "change": [Function],
               },
               "propsData": Object {
-                "text": "Backup",
+                "label": "Backup",
+                "name": "backup",
                 "value": true,
               },
               "tag": "tipe-switch",
@@ -8360,17 +8476,23 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "sublabel": Object {
-                        "default": "",
+                      "disabled": Object {
+                        "default": false,
                         "type": [Function],
                       },
-                      "text": Object {
+                      "label": Object {
+                        "default": "",
+                        "required": true,
+                        "type": [Function],
+                      },
+                      "name": Object {
                         "default": "",
                         "required": true,
                         "type": [Function],
                       },
                       "value": Object {
-                        "type": undefined,
+                        "default": false,
+                        "type": [Function],
                       },
                     },
                     "ref": undefined,
@@ -8489,17 +8611,23 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "sublabel": Object {
-                          "default": "",
+                        "disabled": Object {
+                          "default": false,
                           "type": [Function],
                         },
-                        "text": Object {
+                        "label": Object {
+                          "default": "",
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "name": Object {
                           "default": "",
                           "required": true,
                           "type": [Function],
                         },
                         "value": Object {
-                          "type": undefined,
+                          "default": false,
+                          "type": [Function],
                         },
                       },
                       "ref": undefined,
@@ -8807,8 +8935,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "sublabel": "Turn on to share your file changes and updates",
-                  "text": "File Sharing",
+                  "label": "File Sharing",
+                  "name": "sharing",
                   "value": false,
                 },
                 "tag": "tipe-switch",
@@ -8873,17 +9001,23 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "sublabel": Object {
-                          "default": "",
+                        "disabled": Object {
+                          "default": false,
                           "type": [Function],
                         },
-                        "text": Object {
+                        "label": Object {
+                          "default": "",
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "name": Object {
                           "default": "",
                           "required": true,
                           "type": [Function],
                         },
                         "value": Object {
-                          "type": undefined,
+                          "default": false,
+                          "type": [Function],
                         },
                       },
                       "ref": undefined,
@@ -9002,17 +9136,23 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
-                          "sublabel": Object {
-                            "default": "",
+                          "disabled": Object {
+                            "default": false,
                             "type": [Function],
                           },
-                          "text": Object {
+                          "label": Object {
+                            "default": "",
+                            "required": true,
+                            "type": [Function],
+                          },
+                          "name": Object {
                             "default": "",
                             "required": true,
                             "type": [Function],
                           },
                           "value": Object {
-                            "type": undefined,
+                            "default": false,
+                            "type": [Function],
                           },
                         },
                         "ref": undefined,
@@ -9310,7 +9450,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "text": "Backup",
+                  "label": "Backup",
+                  "name": "backup",
                   "value": true,
                 },
                 "tag": "tipe-switch",
@@ -9375,17 +9516,23 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "sublabel": Object {
-                          "default": "",
+                        "disabled": Object {
+                          "default": false,
                           "type": [Function],
                         },
-                        "text": Object {
+                        "label": Object {
+                          "default": "",
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "name": Object {
                           "default": "",
                           "required": true,
                           "type": [Function],
                         },
                         "value": Object {
-                          "type": undefined,
+                          "default": false,
+                          "type": [Function],
                         },
                       },
                       "ref": undefined,
@@ -9504,17 +9651,23 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
-                          "sublabel": Object {
-                            "default": "",
+                          "disabled": Object {
+                            "default": false,
                             "type": [Function],
                           },
-                          "text": Object {
+                          "label": Object {
+                            "default": "",
+                            "required": true,
+                            "type": [Function],
+                          },
+                          "name": Object {
                             "default": "",
                             "required": true,
                             "type": [Function],
                           },
                           "value": Object {
-                            "type": undefined,
+                            "default": false,
+                            "type": [Function],
                           },
                         },
                         "ref": undefined,
@@ -9836,17 +9989,23 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
-                    "sublabel": Object {
-                      "default": "",
+                    "disabled": Object {
+                      "default": false,
                       "type": [Function],
                     },
-                    "text": Object {
+                    "label": Object {
+                      "default": "",
+                      "required": true,
+                      "type": [Function],
+                    },
+                    "name": Object {
                       "default": "",
                       "required": true,
                       "type": [Function],
                     },
                     "value": Object {
-                      "type": undefined,
+                      "default": false,
+                      "type": [Function],
                     },
                   },
                   "ref": undefined,
@@ -9965,17 +10124,23 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "sublabel": Object {
-                        "default": "",
+                      "disabled": Object {
+                        "default": false,
                         "type": [Function],
                       },
-                      "text": Object {
+                      "label": Object {
+                        "default": "",
+                        "required": true,
+                        "type": [Function],
+                      },
+                      "name": Object {
                         "default": "",
                         "required": true,
                         "type": [Function],
                       },
                       "value": Object {
-                        "type": undefined,
+                        "default": false,
+                        "type": [Function],
                       },
                     },
                     "ref": undefined,
@@ -10273,17 +10438,23 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
-                  "sublabel": Object {
-                    "default": "",
+                  "disabled": Object {
+                    "default": false,
                     "type": [Function],
                   },
-                  "text": Object {
+                  "label": Object {
+                    "default": "",
+                    "required": true,
+                    "type": [Function],
+                  },
+                  "name": Object {
                     "default": "",
                     "required": true,
                     "type": [Function],
                   },
                   "value": Object {
-                    "type": undefined,
+                    "default": false,
+                    "type": [Function],
                   },
                 },
                 "ref": undefined,
@@ -10402,17 +10573,23 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
-                    "sublabel": Object {
-                      "default": "",
+                    "disabled": Object {
+                      "default": false,
                       "type": [Function],
                     },
-                    "text": Object {
+                    "label": Object {
+                      "default": "",
+                      "required": true,
+                      "type": [Function],
+                    },
+                    "name": Object {
                       "default": "",
                       "required": true,
                       "type": [Function],
                     },
                     "value": Object {
-                      "type": undefined,
+                      "default": false,
+                      "type": [Function],
                     },
                   },
                   "ref": undefined,
@@ -10707,17 +10884,23 @@ VueWrapper {
                 "normalizedStyle": undefined,
                 "on": undefined,
                 "props": Object {
-                  "sublabel": Object {
-                    "default": "",
+                  "disabled": Object {
+                    "default": false,
                     "type": [Function],
                   },
-                  "text": Object {
+                  "label": Object {
+                    "default": "",
+                    "required": true,
+                    "type": [Function],
+                  },
+                  "name": Object {
                     "default": "",
                     "required": true,
                     "type": [Function],
                   },
                   "value": Object {
-                    "type": undefined,
+                    "default": false,
+                    "type": [Function],
                   },
                 },
                 "ref": undefined,
@@ -10836,17 +11019,23 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
-                    "sublabel": Object {
-                      "default": "",
+                    "disabled": Object {
+                      "default": false,
                       "type": [Function],
                     },
-                    "text": Object {
+                    "label": Object {
+                      "default": "",
+                      "required": true,
+                      "type": [Function],
+                    },
+                    "name": Object {
                       "default": "",
                       "required": true,
                       "type": [Function],
                     },
                     "value": Object {
-                      "type": undefined,
+                      "default": false,
+                      "type": [Function],
                     },
                   },
                   "ref": undefined,
@@ -11095,8 +11284,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "sublabel": "Turn on to share your file changes and updates",
-                  "text": "File Sharing",
+                  "label": "File Sharing",
+                  "name": "sharing",
                   "value": false,
                 },
                 "tag": "tipe-switch",
@@ -11161,17 +11350,23 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "sublabel": Object {
-                          "default": "",
+                        "disabled": Object {
+                          "default": false,
                           "type": [Function],
                         },
-                        "text": Object {
+                        "label": Object {
+                          "default": "",
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "name": Object {
                           "default": "",
                           "required": true,
                           "type": [Function],
                         },
                         "value": Object {
-                          "type": undefined,
+                          "default": false,
+                          "type": [Function],
                         },
                       },
                       "ref": undefined,
@@ -11290,17 +11485,23 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
-                          "sublabel": Object {
-                            "default": "",
+                          "disabled": Object {
+                            "default": false,
                             "type": [Function],
                           },
-                          "text": Object {
+                          "label": Object {
+                            "default": "",
+                            "required": true,
+                            "type": [Function],
+                          },
+                          "name": Object {
                             "default": "",
                             "required": true,
                             "type": [Function],
                           },
                           "value": Object {
-                            "type": undefined,
+                            "default": false,
+                            "type": [Function],
                           },
                         },
                         "ref": undefined,
@@ -11598,7 +11799,8 @@ VueWrapper {
                   "change": [Function],
                 },
                 "propsData": Object {
-                  "text": "Backup",
+                  "label": "Backup",
+                  "name": "backup",
                   "value": true,
                 },
                 "tag": "tipe-switch",
@@ -11663,17 +11865,23 @@ VueWrapper {
                       "normalizedStyle": undefined,
                       "on": undefined,
                       "props": Object {
-                        "sublabel": Object {
-                          "default": "",
+                        "disabled": Object {
+                          "default": false,
                           "type": [Function],
                         },
-                        "text": Object {
+                        "label": Object {
+                          "default": "",
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "name": Object {
                           "default": "",
                           "required": true,
                           "type": [Function],
                         },
                         "value": Object {
-                          "type": undefined,
+                          "default": false,
+                          "type": [Function],
                         },
                       },
                       "ref": undefined,
@@ -11792,17 +12000,23 @@ VueWrapper {
                         "normalizedStyle": undefined,
                         "on": undefined,
                         "props": Object {
-                          "sublabel": Object {
-                            "default": "",
+                          "disabled": Object {
+                            "default": false,
                             "type": [Function],
                           },
-                          "text": Object {
+                          "label": Object {
+                            "default": "",
+                            "required": true,
+                            "type": [Function],
+                          },
+                          "name": Object {
                             "default": "",
                             "required": true,
                             "type": [Function],
                           },
                           "value": Object {
-                            "type": undefined,
+                            "default": false,
+                            "type": [Function],
                           },
                         },
                         "ref": undefined,
@@ -12239,8 +12453,8 @@ VueWrapper {
               "change": [Function],
             },
             "propsData": Object {
-              "sublabel": "Turn on to share your file changes and updates",
-              "text": "File Sharing",
+              "label": "File Sharing",
+              "name": "sharing",
               "value": false,
             },
             "tag": "tipe-switch",
@@ -12314,7 +12528,8 @@ VueWrapper {
                           "change": [Function],
                         },
                         "propsData": Object {
-                          "text": "Backup",
+                          "label": "Backup",
+                          "name": "backup",
                           "value": true,
                         },
                         "tag": "tipe-switch",
@@ -12431,7 +12646,8 @@ VueWrapper {
                             "change": [Function],
                           },
                           "propsData": Object {
-                            "text": "Backup",
+                            "label": "Backup",
+                            "name": "backup",
                             "value": true,
                           },
                           "tag": "tipe-switch",
@@ -12681,17 +12897,23 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
-                    "sublabel": Object {
-                      "default": "",
+                    "disabled": Object {
+                      "default": false,
                       "type": [Function],
                     },
-                    "text": Object {
+                    "label": Object {
+                      "default": "",
+                      "required": true,
+                      "type": [Function],
+                    },
+                    "name": Object {
                       "default": "",
                       "required": true,
                       "type": [Function],
                     },
                     "value": Object {
-                      "type": undefined,
+                      "default": false,
+                      "type": [Function],
                     },
                   },
                   "ref": undefined,
@@ -12819,7 +13041,8 @@ VueWrapper {
                             "change": [Function],
                           },
                           "propsData": Object {
-                            "text": "Backup",
+                            "label": "Backup",
+                            "name": "backup",
                             "value": true,
                           },
                           "tag": "tipe-switch",
@@ -12936,7 +13159,8 @@ VueWrapper {
                               "change": [Function],
                             },
                             "propsData": Object {
-                              "text": "Backup",
+                              "label": "Backup",
+                              "name": "backup",
                               "value": true,
                             },
                             "tag": "tipe-switch",
@@ -13186,17 +13410,23 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "sublabel": Object {
-                        "default": "",
+                      "disabled": Object {
+                        "default": false,
                         "type": [Function],
                       },
-                      "text": Object {
+                      "label": Object {
+                        "default": "",
+                        "required": true,
+                        "type": [Function],
+                      },
+                      "name": Object {
                         "default": "",
                         "required": true,
                         "type": [Function],
                       },
                       "value": Object {
-                        "type": undefined,
+                        "default": false,
+                        "type": [Function],
                       },
                     },
                     "ref": undefined,
@@ -13494,7 +13724,8 @@ VueWrapper {
               "change": [Function],
             },
             "propsData": Object {
-              "text": "Backup",
+              "label": "Backup",
+              "name": "backup",
               "value": true,
             },
             "tag": "tipe-switch",
@@ -13542,8 +13773,8 @@ VueWrapper {
                           "change": [Function],
                         },
                         "propsData": Object {
-                          "sublabel": "Turn on to share your file changes and updates",
-                          "text": "File Sharing",
+                          "label": "File Sharing",
+                          "name": "sharing",
                           "value": false,
                         },
                         "tag": "tipe-switch",
@@ -13660,8 +13891,8 @@ VueWrapper {
                             "change": [Function],
                           },
                           "propsData": Object {
-                            "sublabel": "Turn on to share your file changes and updates",
-                            "text": "File Sharing",
+                            "label": "File Sharing",
+                            "name": "sharing",
                             "value": false,
                           },
                           "tag": "tipe-switch",
@@ -13937,17 +14168,23 @@ VueWrapper {
                   "normalizedStyle": undefined,
                   "on": undefined,
                   "props": Object {
-                    "sublabel": Object {
-                      "default": "",
+                    "disabled": Object {
+                      "default": false,
                       "type": [Function],
                     },
-                    "text": Object {
+                    "label": Object {
+                      "default": "",
+                      "required": true,
+                      "type": [Function],
+                    },
+                    "name": Object {
                       "default": "",
                       "required": true,
                       "type": [Function],
                     },
                     "value": Object {
-                      "type": undefined,
+                      "default": false,
+                      "type": [Function],
                     },
                   },
                   "ref": undefined,
@@ -14049,8 +14286,8 @@ VueWrapper {
                             "change": [Function],
                           },
                           "propsData": Object {
-                            "sublabel": "Turn on to share your file changes and updates",
-                            "text": "File Sharing",
+                            "label": "File Sharing",
+                            "name": "sharing",
                             "value": false,
                           },
                           "tag": "tipe-switch",
@@ -14167,8 +14404,8 @@ VueWrapper {
                               "change": [Function],
                             },
                             "propsData": Object {
-                              "sublabel": "Turn on to share your file changes and updates",
-                              "text": "File Sharing",
+                              "label": "File Sharing",
+                              "name": "sharing",
                               "value": false,
                             },
                             "tag": "tipe-switch",
@@ -14444,17 +14681,23 @@ VueWrapper {
                     "normalizedStyle": undefined,
                     "on": undefined,
                     "props": Object {
-                      "sublabel": Object {
-                        "default": "",
+                      "disabled": Object {
+                        "default": false,
                         "type": [Function],
                       },
-                      "text": Object {
+                      "label": Object {
+                        "default": "",
+                        "required": true,
+                        "type": [Function],
+                      },
+                      "name": Object {
                         "default": "",
                         "required": true,
                         "type": [Function],
                       },
                       "value": Object {
-                        "type": undefined,
+                        "default": false,
+                        "type": [Function],
                       },
                     },
                     "ref": undefined,
@@ -14754,8 +14997,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "sublabel": "Turn on to share your file changes and updates",
-                    "text": "File Sharing",
+                    "label": "File Sharing",
+                    "name": "sharing",
                     "value": false,
                   },
                   "tag": "tipe-switch",
@@ -14825,7 +15068,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "text": "Backup",
+                    "label": "Backup",
+                    "name": "backup",
                     "value": true,
                   },
                   "tag": "tipe-switch",
@@ -14882,8 +15126,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "sublabel": "Turn on to share your file changes and updates",
-                    "text": "File Sharing",
+                    "label": "File Sharing",
+                    "name": "sharing",
                     "value": false,
                   },
                   "tag": "tipe-switch",
@@ -14953,7 +15197,8 @@ VueWrapper {
                     "change": [Function],
                   },
                   "propsData": Object {
-                    "text": "Backup",
+                    "label": "Backup",
+                    "name": "backup",
                     "value": true,
                   },
                   "tag": "tipe-switch",
@@ -15033,8 +15278,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "sublabel": "Turn on to share your file changes and updates",
-                      "text": "File Sharing",
+                      "label": "File Sharing",
+                      "name": "sharing",
                       "value": false,
                     },
                     "tag": "tipe-switch",
@@ -15104,7 +15349,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "text": "Backup",
+                      "label": "Backup",
+                      "name": "backup",
                       "value": true,
                     },
                     "tag": "tipe-switch",
@@ -15161,8 +15407,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "sublabel": "Turn on to share your file changes and updates",
-                      "text": "File Sharing",
+                      "label": "File Sharing",
+                      "name": "sharing",
                       "value": false,
                     },
                     "tag": "tipe-switch",
@@ -15232,7 +15478,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "text": "Backup",
+                      "label": "Backup",
+                      "name": "backup",
                       "value": true,
                     },
                     "tag": "tipe-switch",
@@ -15482,17 +15729,23 @@ VueWrapper {
             "normalizedStyle": undefined,
             "on": undefined,
             "props": Object {
-              "sublabel": Object {
-                "default": "",
+              "disabled": Object {
+                "default": false,
                 "type": [Function],
               },
-              "text": Object {
+              "label": Object {
+                "default": "",
+                "required": true,
+                "type": [Function],
+              },
+              "name": Object {
                 "default": "",
                 "required": true,
                 "type": [Function],
               },
               "value": Object {
-                "type": undefined,
+                "default": false,
+                "type": [Function],
               },
             },
             "ref": undefined,
@@ -15583,8 +15836,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "sublabel": "Turn on to share your file changes and updates",
-                      "text": "File Sharing",
+                      "label": "File Sharing",
+                      "name": "sharing",
                       "value": false,
                     },
                     "tag": "tipe-switch",
@@ -15654,7 +15907,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "text": "Backup",
+                      "label": "Backup",
+                      "name": "backup",
                       "value": true,
                     },
                     "tag": "tipe-switch",
@@ -15711,8 +15965,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "sublabel": "Turn on to share your file changes and updates",
-                      "text": "File Sharing",
+                      "label": "File Sharing",
+                      "name": "sharing",
                       "value": false,
                     },
                     "tag": "tipe-switch",
@@ -15782,7 +16036,8 @@ VueWrapper {
                       "change": [Function],
                     },
                     "propsData": Object {
-                      "text": "Backup",
+                      "label": "Backup",
+                      "name": "backup",
                       "value": true,
                     },
                     "tag": "tipe-switch",
@@ -15862,8 +16117,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "sublabel": "Turn on to share your file changes and updates",
-                        "text": "File Sharing",
+                        "label": "File Sharing",
+                        "name": "sharing",
                         "value": false,
                       },
                       "tag": "tipe-switch",
@@ -15933,7 +16188,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "text": "Backup",
+                        "label": "Backup",
+                        "name": "backup",
                         "value": true,
                       },
                       "tag": "tipe-switch",
@@ -15990,8 +16246,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "sublabel": "Turn on to share your file changes and updates",
-                        "text": "File Sharing",
+                        "label": "File Sharing",
+                        "name": "sharing",
                         "value": false,
                       },
                       "tag": "tipe-switch",
@@ -16061,7 +16317,8 @@ VueWrapper {
                         "change": [Function],
                       },
                       "propsData": Object {
-                        "text": "Backup",
+                        "label": "Backup",
+                        "name": "backup",
                         "value": true,
                       },
                       "tag": "tipe-switch",
@@ -16311,17 +16568,23 @@ VueWrapper {
               "normalizedStyle": undefined,
               "on": undefined,
               "props": Object {
-                "sublabel": Object {
-                  "default": "",
+                "disabled": Object {
+                  "default": false,
                   "type": [Function],
                 },
-                "text": Object {
+                "label": Object {
+                  "default": "",
+                  "required": true,
+                  "type": [Function],
+                },
+                "name": Object {
                   "default": "",
                   "required": true,
                   "type": [Function],
                 },
                 "value": Object {
-                  "type": undefined,
+                  "default": false,
+                  "type": [Function],
                 },
               },
               "ref": undefined,
