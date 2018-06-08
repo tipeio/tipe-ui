@@ -1,5 +1,7 @@
 <template>
-  <div class="wrapper" >
+  <div 
+    :data-tipe-ui="$options.name" 
+    class="wrapper">
     <div class="row">
       <label 
         :for="text + '-switch'" 
@@ -8,6 +10,8 @@
         <input 
           :id="text +'-switch'" 
           :checked="value"
+          :name="name"
+          :disabled="disabled"
           type="checkbox"
           @change="onChange"
         >
@@ -28,7 +32,9 @@ export default {
   props: {
     text: vueTypes.string.isRequired,
     sublabel: vueTypes.string,
-    value: vueTypes.boolean
+    value: vueTypes.bool,
+    name: vueTypes.string.isRequired,
+    disabled: vueTypes.bool.def(false)
   },
   methods: {
     onChange(event) {

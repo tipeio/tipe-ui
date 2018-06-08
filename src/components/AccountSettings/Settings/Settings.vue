@@ -3,10 +3,12 @@
     <tipe-switch 
       :value="sharing"
       text="File Sharing"
+      name="sharing"
       sublabel="Turn on to share your file changes and updates"
       @change="onChangeSharing" />
     <tipe-switch
       :value="backup"
+      name="backup"
       text="Backup" 
       @change="onChangeBackup" />
   </accordian>
