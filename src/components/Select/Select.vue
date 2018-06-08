@@ -107,6 +107,8 @@ export default {
     width: 100%;
     outline: 0;
     padding-right: 3.5em;
+    -moz-appearance: none;
+    appearance: none;
   }
 }
 
