@@ -3,12 +3,9 @@
     :data-tipe-ui="$options.name" 
     class="wrapper">
     <div class="row">
-      <label 
-        :for="text + '-switch'" 
-        class="label">{{ text }}</label>
       <label class="switch">
         <input 
-          :id="text +'-switch'" 
+          :id="label +'-switch'" 
           :checked="value"
           :name="name"
           :disabled="disabled"
@@ -17,10 +14,10 @@
         >
         <span class="slider round"/>
       </label>
+      <label 
+        :for="label + '-switch'" 
+        class="label">{{ label }}</label>
     </div>
-    <p 
-      v-if="sublabel" 
-      class="sublabel">{{ sublabel }}</p>
   </div>
 </template>
 
@@ -30,8 +27,7 @@ import vueTypes from 'vue-types'
 export default {
   name: 'TipeSwitch',
   props: {
-    text: vueTypes.string.isRequired,
-    sublabel: vueTypes.string,
+    label: vueTypes.string.isRequired,
     value: vueTypes.bool,
     name: vueTypes.string.isRequired,
     disabled: vueTypes.bool.def(false)
@@ -56,7 +52,7 @@ export default {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 }
 
@@ -64,15 +60,6 @@ export default {
   color: var(--text-gray);
   font-size: 0.8125rem;
   margin: 0.625rem 0;
-}
-
-.sublabel {
-  color: var(--text-gray-light);
-  font-size: 0.615rem;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  width: 90%;
 }
 
 .switch {

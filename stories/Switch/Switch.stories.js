@@ -9,5 +9,5 @@ storiesOf('Switch', module).add('default', () => ({
   components: { TipeSwitch },
   computed: { style },
   template:
-    '<div :style="style"><tipe-switch text="File Sharing" name="sharing"/></div>'
+    '<div :style="style"><tipe-switch label="File Sharing" name="sharing"/></div>'
 }))
