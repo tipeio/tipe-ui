@@ -2,11 +2,18 @@
   <div 
     :data-tipe-ui="$options.name" 
     class="select-flex" 
-    @click="onClick">
-    <label :htmlFor="textLabel">{{ textLabel }}</label>
+  >
+    <label :htmlFor="label">{{ label }}</label>
 
-    <div class="select">
-      <select>
+    <div 
+      class="select" 
+      @click="onClick">
+      <select :disabled="disabled">
+        <option 
+          v-if="placeholder"
+          :selected="true"
+          hidden 
+          disabled>{{ placeholder }}</option>
         <option 
           v-for="option in options"
           :value="option.value" 
@@ -29,13 +36,16 @@
 
 <script>
 import vueTypes from 'vue-types'
+import SelectOptionShape from '@/types/SelectOptionShape'
 
 export default {
   name: 'TipeSelect',
   props: {
-    textLabel: vueTypes.string.isRequired,
-    options: vueTypes.array.isRequired,
-    value: vueTypes.string.isRequired
+    label: vueTypes.string.isRequired,
+    placeholder: vueTypes.string,
+    options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
+    value: vueTypes.string.isRequired,
+    disabled: vueTypes.bool.def(false)
   },
   data() {
     return {

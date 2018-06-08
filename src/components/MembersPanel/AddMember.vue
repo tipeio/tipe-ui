@@ -29,7 +29,7 @@
           :options="options" 
           :value="roleValue" 
           class="role"
-          text-label="Role"
+          label="Role"
           @change="onChangeRole" />
         <div class="seperator"><tipe-seperator /></div>
 

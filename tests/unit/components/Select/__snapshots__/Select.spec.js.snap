@@ -5,6 +5,7 @@ exports[`TipeSelect.vue renders 1`] = `
   <label htmlFor="Role">Role</label>
   <div class="select">
     <select>
+      <!---->
       <option hidden="hidden" value="owner">Owner</option>
       <option hidden="hidden" value="admin">Admin</option>
     </select>

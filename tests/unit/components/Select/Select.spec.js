@@ -7,14 +7,17 @@ const options = [
   { label: 'Admin', value: 'admin' }
 ]
 
+const props = {
+  label: 'Role',
+  options,
+  value: 'member'
+}
 describe('TipeSelect.vue', () => {
   it('renders', () => {
     const renderer = createRenderer()
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
-        textLabel: 'Role',
-        options,
-        value: 'member'
+        ...props
       }
     })
     renderer.renderToString(wrapper.vm, (err, str) => {
@@ -25,9 +28,7 @@ describe('TipeSelect.vue', () => {
   it('has correct data-tipe-ui attibute', () => {
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
-        textLabel: 'Role',
-        options,
-        value: 'member'
+        ...props
       }
     })
     expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeSelect')
@@ -35,9 +36,7 @@ describe('TipeSelect.vue', () => {
   it('should render with the select-flex class', () => {
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
-        textLabel: 'Role',
-        options,
-        value: 'member'
+        ...props
       }
     })
     expect(wrapper.classes()).toContain('select-flex')
@@ -45,21 +44,21 @@ describe('TipeSelect.vue', () => {
   it('should have the correct props', () => {
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
-        textLabel: 'Role',
-        options,
-        value: 'member'
+        ...props,
+        disabled: true,
+        placeholder: 'Select a role'
       }
     })
-    expect(wrapper.props().textLabel).toBe('Role')
+    expect(wrapper.props().label).toBe('Role')
     expect(wrapper.props().options).toBe(options)
     expect(wrapper.props().value).toBe('member')
+    expect(wrapper.props().disabled).toBe(true)
+    expect(wrapper.props().placeholder).toBe('Select a role')
   })
   it('should have the correct label', () => {
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
-        textLabel: 'Role',
-        options,
-        value: 'member'
+        ...props
       }
     })
     const label = wrapper.find('label')
@@ -68,20 +67,27 @@ describe('TipeSelect.vue', () => {
   it('should have the correct number of option tags', () => {
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
-        textLabel: 'Role',
-        options,
-        value: 'member'
+        ...props
       }
     })
     const optionArr = wrapper.findAll('option')
     expect(optionArr).toHaveLength(2)
   })
+  it('should have the placeholder', () => {
+    const wrapper = shallowMount(TipeSelect, {
+      propsData: {
+        ...props,
+        placeholder: 'select a role',
+        value: ''
+      }
+    })
+    const optionArr = wrapper.findAll('option')
+    expect(optionArr).toHaveLength(3)
+  })
   it('should not render toggle dropdown', () => {
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
-        textLabel: 'Role',
-        options,
-        value: 'member'
+        ...props
       }
     })
     expect(wrapper.find('.dropdown').exists()).toBe(false)
@@ -89,33 +95,29 @@ describe('TipeSelect.vue', () => {
   it('should render the dropdown', () => {
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
-        textLabel: 'Role',
-        options,
-        value: 'member'
+        ...props
       }
     })
-    wrapper.trigger('click')
+    const Select = wrapper.find('select')
+    Select.trigger('click')
     expect(wrapper.find('.dropdown').exists()).toBe(true)
   })
   it('should toggle the dropdown', () => {
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
-        textLabel: 'Role',
-        options,
-        value: 'member'
+        ...props
       }
     })
-    wrapper.trigger('click')
+    const Select = wrapper.find('select')
+    Select.trigger('click')
     expect(wrapper.find('.dropdown').exists()).toBe(true)
-    wrapper.trigger('click')
+    Select.trigger('click')
     expect(wrapper.find('.dropdown').exists()).toBe(false)
   })
   it('should emit onChange method', () => {
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
-        textLabel: 'Role',
-        options,
-        value: 'member'
+        ...props
       }
     })
     wrapper.vm.$emit('onChange')
@@ -124,9 +126,7 @@ describe('TipeSelect.vue', () => {
   it('should emit onClick method', () => {
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
-        textLabel: 'Role',
-        options,
-        value: 'member'
+        ...props
       }
     })
     wrapper.vm.$emit('onClick')
