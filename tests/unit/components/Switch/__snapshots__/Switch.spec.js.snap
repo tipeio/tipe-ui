@@ -3,10 +3,9 @@
 exports[`Progress.vue renders 1`] = `
 <div data-tipe-ui="TipeSwitch" class="wrapper">
   <div class="row">
-    <label for="Share Location-switch" class="label">Share Location</label>
     <label class="switch">
-      <input id="Share Location-switch" type="checkbox" name="location" checked="checked"> <span class="slider round"></span></label>
+      <input id="Share Location-switch" name="location" type="checkbox" checked="checked"> <span class="slider round"></span></label>
+    <label for="Share Location-switch" class="label">Share Location</label>
   </div>
-  <!---->
 </div>
 `;
