@@ -1,8 +1,8 @@
 <template>
   <div 
     :class="{success: validity.status === 'success' && value.changed , error: validity.status === 'error' && value.changed, warning: validity.status === 'warning' && value.changed}" 
-    class="input-flex" 
-    data-tipe-ui="$options.name">
+    :data-tipe-ui="$options.name" 
+    class="input-flex">
     <label :htmlFor="textLabel">{{ textLabel }}</label>
     <input 
       :type="inputType" 

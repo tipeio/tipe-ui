@@ -18,6 +18,10 @@ describe('AddMember.vue', () => {
       expect(str).toMatchSnapshot()
     })
   })
+  it('has correct data-tipe-ui attibute', () => {
+    const wrapper = shallowMount(AddMember)
+    expect(wrapper.attributes()['data-tipe-ui']).toBe('AddMember')
+  })
   it('should render the Icon component', () => {
     const wrapper = shallowMount(AddMember)
     expect(wrapper.contains(Icon)).toBe(true)

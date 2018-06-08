@@ -1,7 +1,7 @@
 <template>
   <div 
+    :data-tipe-ui="$options.name" 
     class="select-flex" 
-    data-tipe-ui="$options.name" 
     @click="onClick">
     <label :htmlFor="textLabel">{{ textLabel }}</label>
 

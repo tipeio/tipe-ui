@@ -24,6 +24,15 @@ describe('TipeSelect.vue', () => {
       expect(str).toMatchSnapshot()
     })
   })
+  it('has correct data-tipe-ui attibute', () => {
+    const wrapper = shallowMount(TipeInput, {
+      propsData: {
+        ...props,
+        value: { value: '', changed: false }
+      }
+    })
+    expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeInput')
+  })
   it('should render with the input-flex class', () => {
     const wrapper = shallowMount(TipeInput, {
       propsData: {

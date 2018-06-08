@@ -1,6 +1,6 @@
 <template>
   <div 
-    data-tipe-ui="$options.name"
+    :data-tipe-ui="$options.name"
     class="add-avatar" 
     @click="$emit('click')">
     

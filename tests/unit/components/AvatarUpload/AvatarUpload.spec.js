@@ -11,6 +11,10 @@ describe('AvatarUpload.vue', () => {
       expect(str).toMatchSnapshot()
     })
   })
+  it('has correct data-tipe-ui attibute', () => {
+    const wrapper = shallowMount(AvatarUpload)
+    expect(wrapper.attributes()['data-tipe-ui']).toBe('AvatarUpload')
+  })
   it('should render with the add-avatar class', () => {
     const wrapper = shallowMount(AvatarUpload)
     expect(wrapper.classes()).toContain('add-avatar')
