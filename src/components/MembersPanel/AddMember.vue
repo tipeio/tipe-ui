@@ -11,19 +11,21 @@
       <form @submit="onSubmit">
         <tipe-input 
           :value="nameValue" 
-          :validity="nameValidity" 
-          text-label="Name"
-          input-type="text"
+          :status="nameStatus"
+          :message="nameMessage"
+          label="Name"
+          type="text"
           class="name"
-          text-placeholder="Type your name here"
+          placeholder="Type your name here"
           @change="onChangeName"/>
         <tipe-input 
           :value="emailValue" 
-          :validity="emailValidity"
-          text-label="Email"
-          class="email" 
-          input-type="email"
-          text-placeholder="Type your email here"
+          :status="emailStatus"
+          :message="emailMessage" 
+          label="Email"
+          class="email"
+          type="email"
+          placeholder="Type your email here"
           @change="onChangeEmail"/>
         <tipe-select 
           :options="options" 
@@ -73,61 +75,57 @@ export default {
         { label: 'Member', value: 'member' },
         { label: 'Manager', value: 'manager' }
       ],
-      emailValue: {
-        value: '',
-        changed: false
-      },
-      roleValue: { label: 'Member', value: 'member' },
-      nameValue: { value: '', changed: false }
+      emailValue: '',
+      emailMessage: '',
+      emailStatus: '',
+      roleValue: 'member',
+      nameValue: '',
+      nameStatus: '',
+      nameMessage: ''
     }
   },
   computed: {
-    emailValidity() {
-      let re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-      let valid = re.test(this.emailValue.value)
-      let status = valid === true ? 'success' : 'error'
-      let message =
-        status === 'error' ? 'Please enter a valid email address' : ''
-      return {
-        valid,
-        status,
-        message
-      }
-    },
-    nameValidity() {
-      let valid = this.nameValue.value.trim() !== ''
-      let status = valid === true ? 'success' : 'error'
-      let message = status === 'error' ? 'Please enter a valid name' : ''
-      return {
-        valid,
-        status,
-        message
-      }
-    },
     canSubmit() {
       return (
-        this.emailValidity.valid && this.nameValidity.valid && !!this.roleValue
+        this.emailStatus === 'success' &&
+        this.nameStatus === 'success' &&
+        !!this.roleValue
       )
     }
   },
   methods: {
     onChangeEmail(val) {
-      this.emailValue.value = val
-      this.emailValue.changed = true
+      this.emailValue = val
+      this.emailValidate()
+    },
+    emailValidate() {
+      let re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      let valid = re.test(this.emailValue)
+      this.emailStatus = valid === true ? 'success' : 'error'
+      if (this.emailStatus === 'error') {
+        this.emailMessage = 'Please enter a valid email'
+      }
     },
     onChangeRole(val) {
       this.roleValue = val
     },
     onChangeName(val) {
-      this.nameValue.value = val
-      this.nameValue.changed = true
+      this.nameValue = val
+      this.nameValidate()
+    },
+    nameValidate() {
+      let valid = this.nameValue.trim() !== ''
+      this.nameStatus = valid === true ? 'success' : 'error'
+      if (this.nameStatus === 'error') {
+        this.nameMessage = 'Please enter a valid name'
+      }
     },
     onSubmit(e) {
       e.preventDefault()
       console.log(
-        `Name: ${this.nameValue.value}, Email: ${
-          this.emailValue.value
-        }, Role: ${this.roleValue}`
+        `Name: ${this.nameValue}, Email: ${this.emailValue}, Role: ${
+          this.roleValue
+        }`
       )
       this.resetForm()
     },
