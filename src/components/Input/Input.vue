@@ -1,13 +1,14 @@
 <template>
   <div 
-    :class="{success: validity.status === 'success' && value.changed , error: validity.status === 'error' && value.changed, warning: validity.status === 'warning' && value.changed}" 
+    :class="classObject"
     :data-tipe-ui="$options.name" 
     class="input-flex">
-    <label :htmlFor="textLabel">{{ textLabel }}</label>
+    <label :htmlFor="label">{{ label }}</label>
     <input 
-      :type="inputType" 
-      :id="textLabel" 
-      :placeholder="textPlaceholder" 
+      :disabled="disabled"
+      :type="type" 
+      :id="label" 
+      :placeholder="placeholder" 
       :value="value.value"
       @change="onChange"
       @blur="onChange" >
@@ -23,11 +24,24 @@ import vueTypes from 'vue-types'
 export default {
   name: 'TipeInput',
   props: {
-    textPlaceholder: vueTypes.string.isRequired,
-    textLabel: vueTypes.string.isRequired,
-    inputType: vueTypes.string.def('text'),
+    placeholder: vueTypes.string.isRequired,
+    label: vueTypes.string.isRequired,
+    disabled: vueTypes.bool.def(false),
+    type: vueTypes.oneOf(['text', 'email', 'password']).def('text'),
     value: vueTypes.object.isRequired,
-    validity: vueTypes.object
+    validity: vueTypes.object,
+    size: vueTypes.oneOf(['small', 'normal', 'large']).def('normal')
+  },
+  computed: {
+    classObject: function() {
+      const { size } = this
+      return {
+        [size]: true,
+        success: this.validity.status === 'success' && this.value.changed,
+        error: this.validity.status === 'error' && this.value.changed,
+        warning: this.validity.status === 'warning' && this.value.changed
+      }
+    }
   },
   methods: {
     onChange(event) {
@@ -45,25 +59,15 @@ export default {
 
   & label {
     color: #627098;
+    font-weight: 500;
     font-size: 0.8125rem;
   }
 
   & input {
     border: none;
     border-bottom: #b5baca solid 1px;
-    height: 2.5rem;
     color: #1f346c;
     font-size: 0.875rem;
-
-    & ::placeholder {
-      color: #b5baca;
-      font-size: 0.875rem;
-    }
-
-    &:focus {
-      height: calc(2.5rem - 1px);
-      border-bottom: #b5baca solid 2px;
-    }
   }
 
   & .message {
@@ -72,50 +76,184 @@ export default {
     margin-top: 6.5px;
   }
 
-  &.success {
+  &.small {
+    & ::placeholder {
+      color: #b5baca;
+      font-size: 0.75rem;
+    }
+
     & input {
-      border-bottom: #16e4a4 solid 1px;
+      height: 2.5rem;
       &:focus {
         height: calc(2.5rem - 1px);
-        border-bottom: #16e4a4 solid 2px;
+        border-bottom: #b5baca solid 2px;
+      }
+      &.success {
+        & input {
+          border-bottom: #16e4a4 solid 1px;
+          &:focus {
+            height: calc(2.5rem - 1px);
+            border-bottom: #16e4a4 solid 2px;
+          }
+        }
+      }
+
+      &.error {
+        & input {
+          border-bottom: #e44646 solid 1px;
+          box-shadow: none;
+          &:focus {
+            height: calc(2.5rem - 1px);
+            border-bottom: #e44646 solid 2px;
+          }
+        }
+
+        & label {
+          color: #e44646;
+        }
+
+        & .message {
+          color: #e44646;
+        }
+      }
+
+      &.warning {
+        & input {
+          border-bottom: #f38438 solid 1px;
+          &:focus {
+            height: calc(2.5rem - 1px);
+            border-bottom: #f38438 solid 2px;
+          }
+        }
+
+        & label {
+          color: #f38438;
+        }
+
+        & .message {
+          color: #f38438;
+        }
       }
     }
   }
 
-  &.error {
+  &.normal {
+    & ::placeholder {
+      color: #b5baca;
+      font-size: 0.875rem;
+    }
     & input {
-      border-bottom: #e44646 solid 1px;
-      box-shadow: none;
+      height: 2.6875rem;
       &:focus {
-        height: calc(2.5rem - 1px);
-        border-bottom: #e44646 solid 2px;
+        height: calc(2.6875rem - 1px);
+        border-bottom: #b5baca solid 2px;
+      }
+    }
+    &.success {
+      & input {
+        border-bottom: #16e4a4 solid 1px;
+        &:focus {
+          height: calc(2.6875rem - 1px);
+          border-bottom: #16e4a4 solid 2px;
+        }
       }
     }
 
-    & label {
-      color: #e44646;
+    &.error {
+      & input {
+        border-bottom: #e44646 solid 1px;
+        box-shadow: none;
+        &:focus {
+          height: calc(2.6875rem - 1px);
+          border-bottom: #e44646 solid 2px;
+        }
+      }
+
+      & label {
+        color: #e44646;
+      }
+
+      & .message {
+        color: #e44646;
+      }
     }
 
-    & .message {
-      color: #e44646;
+    &.warning {
+      & input {
+        border-bottom: #f38438 solid 1px;
+        &:focus {
+          height: calc(2.6875rem - 1px);
+          border-bottom: #f38438 solid 2px;
+        }
+      }
+
+      & label {
+        color: #f38438;
+      }
+
+      & .message {
+        color: #f38438;
+      }
     }
   }
 
-  &.warning {
+  &.large {
+    & ::placeholder {
+      color: #b5baca;
+      font-size: 1.125rem;
+    }
     & input {
-      border-bottom: #f38438 solid 1px;
+      height: 3.375rem;
       &:focus {
-        height: calc(2.5rem - 1px);
-        border-bottom: #f38438 solid 2px;
+        height: calc(3.375rem - 1px);
+        border-bottom: #b5baca solid 2px;
+      }
+    }
+    &.success {
+      & input {
+        border-bottom: #16e4a4 solid 1px;
+        &:focus {
+          height: calc(3.375rem - 1px);
+          border-bottom: #16e4a4 solid 2px;
+        }
       }
     }
 
-    & label {
-      color: #f38438;
+    &.error {
+      & input {
+        border-bottom: #e44646 solid 1px;
+        box-shadow: none;
+        &:focus {
+          height: calc(3.375rem- 1px);
+          border-bottom: #e44646 solid 2px;
+        }
+      }
+
+      & label {
+        color: #e44646;
+      }
+
+      & .message {
+        color: #e44646;
+      }
     }
 
-    & .message {
-      color: #f38438;
+    &.warning {
+      & input {
+        border-bottom: #f38438 solid 1px;
+        &:focus {
+          height: calc(3.375rem - 1px);
+          border-bottom: #f38438 solid 2px;
+        }
+      }
+
+      & label {
+        color: #f38438;
+      }
+
+      & .message {
+        color: #f38438;
+      }
     }
   }
 }
