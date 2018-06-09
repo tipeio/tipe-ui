@@ -85,6 +85,7 @@ export default {
   &.error {
     & input {
       border-bottom: #e44646 solid 1px;
+      box-shadow: none;
       &:focus {
         height: calc(2.5rem - 1px);
         border-bottom: #e44646 solid 2px;

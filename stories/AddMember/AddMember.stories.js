@@ -11,7 +11,7 @@ const style = () => ({
   'justify-content': 'center'
 })
 
-storiesOf('Add Member', module).add('account settings panel', () => ({
+storiesOf('Add Member', module).add('add member form', () => ({
   components: { AddMember },
   computed: { style },
   template: '<div :style="style"><add-member/></div>'
