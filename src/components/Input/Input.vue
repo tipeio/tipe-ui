@@ -9,12 +9,12 @@
       :type="type" 
       :id="label" 
       :placeholder="placeholder" 
-      :value="value.value"
+      :value="value"
       @change="onChange"
       @blur="onChange" >
     <p 
-      v-if="value.changed && validity.message" 
-      class="message">{{ validity.message }}</p>
+      v-if="message" 
+      class="message">{{ message }}</p>
   </div>
 </template>
 
@@ -28,18 +28,19 @@ export default {
     label: vueTypes.string.isRequired,
     disabled: vueTypes.bool.def(false),
     type: vueTypes.oneOf(['text', 'email', 'password']).def('text'),
-    value: vueTypes.object.isRequired,
-    validity: vueTypes.object,
-    size: vueTypes.oneOf(['small', 'normal', 'large']).def('normal')
+    value: vueTypes.string.def(''),
+    size: vueTypes.oneOf(['small', 'normal', 'large']).def('normal'),
+    status: vueTypes.oneOf(['error', 'success', 'warning', '']).def(''),
+    message: vueTypes.string.def('')
   },
   computed: {
     classObject: function() {
-      const { size } = this
+      const { size, status } = this
       return {
         [size]: true,
-        success: this.validity.status === 'success' && this.value.changed,
-        error: this.validity.status === 'error' && this.value.changed,
-        warning: this.validity.status === 'warning' && this.value.changed
+        success: status === 'success',
+        error: status === 'error',
+        warning: status === 'warning'
       }
     }
   },
@@ -68,6 +69,13 @@ export default {
     border-bottom: #b5baca solid 1px;
     color: #1f346c;
     font-size: 0.875rem;
+
+    &:disabled {
+      color: #d4d7d9;
+      &::placeholder {
+        color: #d4d7d9;
+      }
+    }
   }
 
   & .message {

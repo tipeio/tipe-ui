@@ -28,60 +28,30 @@ storiesOf('Input', module)
   .add('success input', () => ({
     components: { TipeInput },
     computed: { style },
-    data() {
-      return {
-        value: { value: 'olivia.oddo@gmail.com', changed: true },
-        validity: { status: 'success', message: '', valid: true }
-      }
-    },
     template:
-      '<div :style="style"><tipe-input label="Email" placeholder="Type your email here" type="email" :value="value" :validity="validity"/></div>'
+      '<div :style="style"><tipe-input label="Email" placeholder="Type your email here" type="email" value="olivia.oddo@gmail.com" status="success"/></div>'
   }))
   .add('error input', () => ({
     components: { TipeInput },
     computed: { style },
-    data() {
-      return {
-        value: { value: 'olivia.odd', changed: true },
-        validity: {
-          status: 'error',
-          message: 'Please enter a valid email',
-          valid: false
-        }
-      }
-    },
     template:
-      '<div :style="style"><tipe-input label="Email" placeholder="Type your email here" type="email" :value="value" :validity="validity" /></div>'
+      '<div :style="style"><tipe-input label="Email" placeholder="Type your email here" type="email" value="olivia.odd" status="error" message="Please enter a valid email"/></div>'
   }))
   .add('error input large', () => ({
     components: { TipeInput },
     computed: { style },
-    data() {
-      return {
-        value: { value: 'olivia.odd', changed: true },
-        validity: {
-          status: 'error',
-          message: 'Please enter a valid email',
-          valid: false
-        }
-      }
-    },
     template:
-      '<div :style="style"><tipe-input size="large" label="Email" placeholder="Type your email here" type="email" :value="value" :validity="validity" /></div>'
+      '<div :style="style"><tipe-input size="large" label="Email" placeholder="Type your email here" type="email" value="olivia.odd" message="Please enter a valid email" status="error"/></div>'
   }))
   .add('warning input', () => ({
     components: { TipeInput },
     computed: { style },
-    data() {
-      return {
-        value: { value: 'oliv', changed: true },
-        validity: {
-          status: 'warning',
-          message: 'Usernames are normally full names',
-          valid: true
-        }
-      }
-    },
     template:
-      '<div :style="style"><tipe-input label="Username" placeholder="Type your username here" type="text" :value="value" :validity="validity" /></div>'
+      '<div :style="style"><tipe-input status="warning" message="Usernames are normally full names" label="Username" placeholder="Type your username here" type="text" value="oliv" /></div>'
+  }))
+  .add('disabled input', () => ({
+    components: { TipeInput },
+    computed: { style },
+    template:
+      '<div :style="style"><tipe-input :disabled="true"  label="Username" placeholder="Type your username here" type="text" /></div>'
   }))
