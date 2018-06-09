@@ -10,8 +10,8 @@
       :id="label" 
       :placeholder="placeholder" 
       :value="value"
-      @change="onChange"
-      @blur="onChange" >
+      @focus="onFocus"
+      @change="onChange">
     <p 
       v-if="message" 
       class="message">{{ message }}</p>
@@ -47,6 +47,9 @@ export default {
   methods: {
     onChange(event) {
       this.$emit('change', event.target.value)
+    },
+    onFocus(event) {
+      console.log(event.target, 'input has been focused')
     }
   }
 }
