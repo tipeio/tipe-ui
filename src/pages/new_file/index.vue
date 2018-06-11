@@ -4,7 +4,7 @@
     :user="user"
   >
     <section class="stage">
-      <header class="stage__header">
+      <header class="stage-header">
         <tipe-breadcrumbs :links="breadcrumbLinks"/>
         <tipe-button size="small">Cancel</tipe-button>
       </header>
@@ -55,7 +55,7 @@ export default {
   width: 100%;
 }
 
-.stage__header {
+.stage-header {
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: center;
