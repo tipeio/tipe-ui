@@ -2,12 +2,11 @@ import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import TipeInput from '@/components/Input'
 
-const textPlaceholder = 'Type your name here'
-const textLabel = 'Name'
-
 const props = {
-  textPlaceholder,
-  textLabel
+  placeholder: 'Type your name here',
+  label: 'Name',
+  type: 'text',
+  value: ''
 }
 
 describe('TipeSelect.vue', () => {
@@ -15,8 +14,7 @@ describe('TipeSelect.vue', () => {
     const renderer = createRenderer()
     const wrapper = shallowMount(TipeInput, {
       propsData: {
-        ...props,
-        value: { value: '', changed: false }
+        ...props
       }
     })
     renderer.renderToString(wrapper.vm, (err, str) => {
@@ -27,8 +25,7 @@ describe('TipeSelect.vue', () => {
   it('has correct data-tipe-ui attibute', () => {
     const wrapper = shallowMount(TipeInput, {
       propsData: {
-        ...props,
-        value: { value: '', changed: false }
+        ...props
       }
     })
     expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeInput')
@@ -36,8 +33,7 @@ describe('TipeSelect.vue', () => {
   it('should render with the input-flex class', () => {
     const wrapper = shallowMount(TipeInput, {
       propsData: {
-        ...props,
-        value: { value: '', changed: false }
+        ...props
       }
     })
     expect(wrapper.classes()).toContain('input-flex')
@@ -45,22 +41,33 @@ describe('TipeSelect.vue', () => {
   it('should not have any input state classes eg. success', () => {
     const wrapper = shallowMount(TipeInput, {
       propsData: {
-        ...props,
-        value: { value: '', changed: false }
+        ...props
       }
     })
-    expect(wrapper.classes()).toHaveLength(1)
+    expect(wrapper.classes()).toEqual(['input-flex', 'normal'])
+  })
+  it('should have the normal class by default', () => {
+    const wrapper = shallowMount(TipeInput, {
+      propsData: {
+        ...props
+      }
+    })
+    expect(wrapper.classes()).toContain('normal')
+  })
+  it('should have the large class', () => {
+    const wrapper = shallowMount(TipeInput, {
+      propsData: {
+        ...props,
+        size: 'large'
+      }
+    })
+    expect(wrapper.classes()).toContain('large')
   })
   it('should have success class', () => {
     const wrapper = shallowMount(TipeInput, {
       propsData: {
         ...props,
-        value: { value: 'olivia', changed: true },
-        validity: {
-          valid: true,
-          status: 'success',
-          message: ''
-        }
+        status: 'success'
       }
     })
     expect(wrapper.classes()).toContain('success')
@@ -68,13 +75,7 @@ describe('TipeSelect.vue', () => {
   it('should not have success class for unchanged input', () => {
     const wrapper = shallowMount(TipeInput, {
       propsData: {
-        ...props,
-        value: { value: '', changed: false },
-        validity: {
-          valid: true,
-          status: 'success',
-          message: ''
-        }
+        ...props
       }
     })
     expect(wrapper.classes()).not.toContain('success')
@@ -83,12 +84,7 @@ describe('TipeSelect.vue', () => {
     const wrapper = shallowMount(TipeInput, {
       propsData: {
         ...props,
-        value: { value: '', changed: true },
-        validity: {
-          valid: false,
-          status: 'error',
-          message: ''
-        }
+        status: 'error'
       }
     })
     expect(wrapper.classes()).toContain('error')
@@ -96,13 +92,7 @@ describe('TipeSelect.vue', () => {
   it('should not have error class for unchanged input', () => {
     const wrapper = shallowMount(TipeInput, {
       propsData: {
-        ...props,
-        value: { value: '', changed: false },
-        validity: {
-          valid: false,
-          status: 'error',
-          message: ''
-        }
+        ...props
       }
     })
     expect(wrapper.classes()).not.toContain('error')
@@ -110,8 +100,7 @@ describe('TipeSelect.vue', () => {
   it('should not render a message', () => {
     const wrapper = shallowMount(TipeInput, {
       propsData: {
-        ...props,
-        value: { value: '', changed: false }
+        ...props
       }
     })
     expect(wrapper.find('.message').exists()).toBe(false)
@@ -120,12 +109,7 @@ describe('TipeSelect.vue', () => {
     const wrapper = shallowMount(TipeInput, {
       propsData: {
         ...props,
-        value: { value: '', changed: true },
-        validity: {
-          valid: true,
-          status: 'success',
-          message: ''
-        }
+        message: ''
       }
     })
     expect(wrapper.find('.message').exists()).toBe(false)
@@ -134,43 +118,47 @@ describe('TipeSelect.vue', () => {
     const wrapper = shallowMount(TipeInput, {
       propsData: {
         ...props,
-        value: { value: '', changed: true },
-        validity: {
-          valid: false,
-          status: 'error',
-          message: 'can you even fill out a form bro?'
-        }
+        message: 'can you even fill out a form bro?'
       }
     })
     expect(wrapper.find('.message').exists()).toBe(true)
   })
   it('should have the correct props', () => {
-    const value = { value: '', changed: true }
-    const validity = {
-      valid: false,
-      status: 'error',
-      message: 'can you even fill out a form bro?'
-    }
     const wrapper = shallowMount(TipeInput, {
       propsData: {
         ...props,
-        value,
-        validity
+        status: 'warning',
+        disabled: true,
+        size: 'large',
+        message: 'can you even fill out a form bro?',
+        value: 'olivia@tipe.io'
       }
     })
-    expect(wrapper.props().textPlaceholder).toBe(textPlaceholder)
-    expect(wrapper.props().textLabel).toBe(textLabel)
-    expect(wrapper.props().value).toBe(value)
-    expect(wrapper.props().validity).toBe(validity)
+    expect(wrapper.props().placeholder).toBe(props.placeholder)
+    expect(wrapper.props().label).toBe(props.label)
+    expect(wrapper.props().value).toBe('olivia@tipe.io')
+    expect(wrapper.props().disabled).toBe(true)
+    expect(wrapper.props().size).toBe('large')
+    expect(wrapper.props().type).toBe('text')
+    expect(wrapper.props().message).toBe('can you even fill out a form bro?')
+    expect(wrapper.props().status).toBe('warning')
   })
   it('should emit onChange method', () => {
     const wrapper = shallowMount(TipeInput, {
       propsData: {
-        ...props,
-        value: { value: '', changed: false }
+        ...props
       }
     })
     wrapper.vm.$emit('onChange')
     expect(wrapper.emitted().onChange).toBeTruthy()
+  })
+  it('should emit onFocus method', () => {
+    const wrapper = shallowMount(TipeInput, {
+      propsData: {
+        ...props
+      }
+    })
+    wrapper.vm.$emit('onFocus')
+    expect(wrapper.emitted().onFocus).toBeTruthy()
   })
 })
