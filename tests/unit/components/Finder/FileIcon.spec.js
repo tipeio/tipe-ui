@@ -5,7 +5,7 @@ import FileIconRectangle from '@/components/Finder/FileIcon/FileIconRectangle'
 import FileIconSquare from '@/components/Finder/FileIcon/FileIconSquare'
 import fileMock from '@/mocks/File'
 
-describe('FileIconRectangle', () => {
+describe('FileIcon', () => {
   describe('<template>', () => {
     it('matches previous snapshot', () => {
       const renderer = createRenderer()
