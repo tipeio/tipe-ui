@@ -1,5 +1,8 @@
 <template>
-  <div :class="$style.window">
+  <div
+    :class="$style.window"
+    data-tipe-ui="TipeScrollable"
+  >
     <div :class="$style.scrollable">
       <slot/>
     </div>
