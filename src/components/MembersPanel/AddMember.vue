@@ -78,7 +78,7 @@ export default {
       emailValue: '',
       emailMessage: '',
       emailStatus: '',
-      roleValue: 'member',
+      roleValue: { label: 'Owner', value: 'owner' },
       nameValue: '',
       nameStatus: '',
       nameMessage: ''
@@ -89,7 +89,7 @@ export default {
       return (
         this.emailStatus === 'success' &&
         this.nameStatus === 'success' &&
-        !!this.roleValue
+        !!this.roleValue.value
       )
     }
   },
@@ -124,18 +124,15 @@ export default {
       e.preventDefault()
       console.log(
         `Name: ${this.nameValue}, Email: ${this.emailValue}, Role: ${
-          this.roleValue
+          this.roleValue.value
         }`
       )
       this.resetForm()
     },
     resetForm() {
-      this.emailValue = {
-        value: '',
-        changed: false
-      }
-      this.roleValue = 'member'
-      this.nameValue = { value: '', changed: false }
+      this.emailValue = ''
+      this.roleValue = { label: 'Owner', value: 'owner' }
+      this.nameValue = ''
     },
     close() {
       this.$emit('close')

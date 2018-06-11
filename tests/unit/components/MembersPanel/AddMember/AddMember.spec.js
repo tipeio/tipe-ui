@@ -52,122 +52,89 @@ describe('AddMember.vue', () => {
   })
   it('should invalidate the email input', () => {
     const wrapper = shallowMount(AddMember)
-    wrapper.setData({ emailValue: { value: '454', changed: true } })
-    expect(wrapper.vm.emailValidity).toEqual({
-      valid: false,
-      status: 'error',
-      message: 'Please enter a valid email address'
-    })
+    wrapper.setData({ emailValue: '454' })
+    wrapper.vm.emailValidate()
+    expect(wrapper.vm.emailStatus).toBe('error')
   })
   it('should validate the email input', () => {
     const wrapper = shallowMount(AddMember)
-    wrapper.setData({ emailValue: { value: 'olivia@tipe.io', changed: true } })
-    expect(wrapper.vm.emailValidity).toEqual({
-      valid: true,
-      status: 'success',
-      message: ''
-    })
+    wrapper.setData({ emailValue: 'olivia@tipe.io' })
+    wrapper.vm.emailValidate()
+    expect(wrapper.vm.emailStatus).toBe('success')
   })
   it('should invalidate the name input', () => {
     const wrapper = shallowMount(AddMember)
-    wrapper.setData({ nameValue: { value: '', changed: true } })
-    expect(wrapper.vm.nameValidity).toEqual({
-      valid: false,
-      status: 'error',
-      message: 'Please enter a valid name'
-    })
+    wrapper.setData({ nameValue: '' })
+    wrapper.vm.nameValidate()
+    expect(wrapper.vm.nameStatus).toBe('error')
   })
   it('should validate the name input', () => {
     const wrapper = shallowMount(AddMember)
-    wrapper.setData({ nameValue: { value: 'Olivia Oddo', changed: true } })
-    expect(wrapper.vm.nameValidity).toEqual({
-      valid: true,
-      status: 'success',
-      message: ''
-    })
+    wrapper.setData({ nameValue: 'Olivia Oddo' })
+    wrapper.vm.nameValidate()
+    expect(wrapper.vm.nameStatus).toBe('success')
   })
   it('should not be able to submit the form', () => {
     const wrapper = shallowMount(AddMember)
     wrapper.setData({
-      emailValue: {
-        value: '',
-        changed: true
-      },
-      roleValue: 'member',
-      nameValue: { value: '', changed: true }
+      emailStatus: '',
+      roleValue: { label: 'Member', value: 'member' },
+      nameStatus: ''
     })
     expect(wrapper.vm.canSubmit).toBe(false)
   })
   it('should not be able to submit the form with invalid email', () => {
     const wrapper = shallowMount(AddMember)
     wrapper.setData({
-      emailValue: {
-        value: 'dsfdsfs',
-        changed: true
-      },
-      roleValue: 'member',
-      nameValue: { value: 'Olivia', changed: true }
+      emailStatus: 'error',
+      roleValue: { label: 'Member', value: 'member' },
+      nameStatus: 'success'
     })
     expect(wrapper.vm.canSubmit).toBe(false)
   })
   it('should not be able to submit the form with invalid name', () => {
     const wrapper = shallowMount(AddMember)
     wrapper.setData({
-      emailValue: {
-        value: 'olivia.oddo@gmail.com',
-        changed: true
-      },
-      roleValue: 'member',
-      nameValue: { value: '', changed: true }
+      emailStatus: 'success',
+      roleValue: { label: 'Member', value: 'member' },
+      nameStatus: 'error'
     })
     expect(wrapper.vm.canSubmit).toBe(false)
   })
   it('should be able to submit the form', () => {
     const wrapper = shallowMount(AddMember)
     wrapper.setData({
-      emailValue: {
-        value: 'olivia.oddo@gmail.com',
-        changed: true
-      },
-      roleValue: 'member',
-      nameValue: { value: 'Olivia', changed: true }
+      emailStatus: 'success',
+      roleValue: { label: 'Member', value: 'member' },
+      nameStatus: 'success'
     })
     expect(wrapper.vm.canSubmit).toBe(true)
   })
   it('should reset the form', () => {
     const wrapper = shallowMount(AddMember)
     wrapper.setData({
-      emailValue: {
-        value: 'olivia.oddo@gmail.com',
-        changed: true
-      },
-      roleValue: 'member',
-      nameValue: { value: 'Olivia', changed: true }
+      emailValue: 'olivia.oddo@gmail.com',
+      roleValue: { label: 'Member', value: 'member' },
+      nameValue: 'Olivia'
     })
     wrapper.vm.resetForm()
-    expect(wrapper.vm.roleValue).toBe('member')
-    expect(wrapper.vm.nameValue).toEqual({ value: '', changed: false })
-    expect(wrapper.vm.emailValue).toEqual({
-      value: '',
-      changed: false
-    })
+    expect(wrapper.vm.roleValue).toEqual({ label: 'Owner', value: 'owner' })
+    expect(wrapper.vm.nameValue).toBe('')
+    expect(wrapper.vm.emailValue).toBe('')
   })
   it('should update the name value', () => {
     const wrapper = shallowMount(AddMember)
     wrapper.vm.onChangeName('Olivia')
-    expect(wrapper.vm.nameValue).toEqual({ value: 'Olivia', changed: true })
+    expect(wrapper.vm.nameValue).toEqual('Olivia')
   })
   it('should update the email value', () => {
     const wrapper = shallowMount(AddMember)
     wrapper.vm.onChangeEmail('olivia.oddo@gmail.com')
-    expect(wrapper.vm.emailValue).toEqual({
-      value: 'olivia.oddo@gmail.com',
-      changed: true
-    })
+    expect(wrapper.vm.emailValue).toEqual('olivia.oddo@gmail.com')
   })
   it('should update the role value', () => {
     const wrapper = shallowMount(AddMember)
-    wrapper.vm.onChangeRole('owner')
-    expect(wrapper.vm.roleValue).toEqual('owner')
+    wrapper.vm.onChangeRole({ label: 'Owner', value: 'owner' })
+    expect(wrapper.vm.roleValue).toEqual({ label: 'Owner', value: 'owner' })
   })
 })
