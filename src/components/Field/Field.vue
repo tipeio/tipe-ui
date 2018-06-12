@@ -13,6 +13,24 @@ export default {
     warningMessage: vueTypes.string
   },
   render: function(createElement) {
+    const computedMessage = () => {
+      var message = ''
+      switch (this.status) {
+        case 'error':
+          message = this.errorMessage
+          break
+        case 'warning':
+          message = this.warningMessage
+          break
+        case 'success':
+          message = this.successMessage
+          break
+        default:
+          message = ''
+      }
+      return message
+    }
+
     const divOptions = {
       class: {
         success: this.status === 'success',
@@ -34,27 +52,22 @@ export default {
         }
       }
     }
-    const computedMessage = () => {
-      var message = ''
-      switch (this.status) {
-        case 'error':
-          message = this.errorMessage
-          break
-        case 'warning':
-          message = this.warningMessage
-          break
-        case 'success':
-          message = this.successMessage
-          break
-        default:
-          message = ''
+    const spanOptions = {
+      domProps: {
+        innerHTML: computedMessage()
+      },
+      class: {
+        message: true
       }
-      return message
     }
 
     const fieldSlots = slots =>
       slots.map(slot => {
-        slot.componentOptions.propsData = { name: this.name, ...this.field }
+        slot.componentOptions.propsData = {
+          name: this.name,
+          ...this.field,
+          status: this.status
+        }
         return slot
       })
 
@@ -78,11 +91,7 @@ export default {
       // no label
       return createElement('div', divOptions, [
         fieldSlots(this.$slots.default),
-        createElement('span', {
-          domProps: {
-            innerHTML: computedMessage()
-          }
-        })
+        createElement('span', spanOptions)
       ])
     } else {
       // both
@@ -96,13 +105,49 @@ export default {
           }
         }),
         fieldSlots(this.$slots.default),
-        createElement('span', {
-          domProps: {
-            innerHTML: computedMessage()
-          }
-        })
+        createElement('span', spanOptions)
       ])
     }
   }
 }
 </script>
+<style lang="postcss">
+label {
+  color: #627098;
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+
+.message {
+  font-size: 0.6875rem;
+  margin: 0;
+  margin-top: 6.5px;
+}
+.warning {
+  & label {
+    color: #f38438;
+  }
+
+  & .message {
+    color: #f38438;
+  }
+}
+.success {
+  & label {
+    color: #16e4a4;
+  }
+
+  & .message {
+    color: #16e4a4;
+  }
+}
+.error {
+  & label {
+    color: #e44646;
+  }
+
+  & .message {
+    color: #e44646;
+  }
+}
+</style>
