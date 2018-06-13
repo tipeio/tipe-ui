@@ -13,17 +13,17 @@ export default {
     warningMessage: vueTypes.string
   },
   methods: {
-    click() {
-      this.$emit('click')
+    click(event) {
+      this.$emit('click', event)
     },
-    focus() {
-      this.$emit('focus')
+    focus(event) {
+      this.$emit('focus', event)
     },
-    blur() {
-      this.$emit('blur')
+    blur(event) {
+      this.$emit('blur', event)
     },
-    change() {
-      this.$emit('change')
+    change(event) {
+      this.$emit('change', event)
     }
   },
   render: function(createElement) {
