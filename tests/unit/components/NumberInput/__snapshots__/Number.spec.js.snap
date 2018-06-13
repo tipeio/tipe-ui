@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumberInput <template> matches previous snapshot 1`] = `
+<div data-tipe-ui="TipeNumberInput" class="medium">
+  <input tabindex="-1" max="Infinity" min="-Infinity" step="1" type="number">
+  <button>
+    <!---->
+  </button>
+  <button>
+    <!---->
+  </button>
+</div>
+`;
