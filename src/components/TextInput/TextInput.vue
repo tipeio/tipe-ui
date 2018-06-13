@@ -2,10 +2,11 @@
   <input 
     :class="classObject"
     :data-tipe-ui="$options.name" 
-    :disabled="disabled"
+    :disabled="isDisabled"
     :id="label"
     :placeholder="placeholder" 
     :value="value" 
+    :tabindex="tabindex"
     type="text"
     @click="inputEmit('click')"
     @blur="inputEmit('blur')"
@@ -21,21 +22,27 @@ export default {
   props: {
     label: vueTypes.string,
     value: vueTypes.string,
-    placeholder: vueTypes.string.isRequired,
+    placeholder: vueTypes.string,
     status: vueTypes.oneOf(['error', 'success', 'warning', '']).def(''),
-    waiting: vueTypes.bool,
     disabled: vueTypes.bool.def(false),
-    size: vueTypes.oneOf(['small', 'medium', 'large']).def('medium')
+    waiting: vueTypes.bool.def(false),
+    size: vueTypes.oneOf(['small', 'medium', 'large']).def('medium'),
+    tabindex: vueTypes.number
   },
   computed: {
-    classObject: function() {
-      const { size, status } = this
+    classObject() {
+      const { size, status, waiting } = this
       return {
         [size]: true,
         success: status === 'success',
         error: status === 'error',
-        warning: status === 'warning'
+        warning: status === 'warning',
+        waiting
       }
+    },
+    isDisabled() {
+      if (this.waiting || this.disabled) return true
+      return false
     }
   },
   methods: {
@@ -62,6 +69,11 @@ input {
       color: #d4d7d9;
     }
   }
+
+  &.waiting {
+    cursor: wait;
+  }
+
   &.small {
     & ::placeholder {
       color: #b5baca;
