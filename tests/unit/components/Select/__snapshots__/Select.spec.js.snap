@@ -3,7 +3,7 @@
 exports[`TipeSelect.vue renders 1`] = `
 <div data-tipe-ui="TipeSelect" class="select-flex">
   <label htmlFor="Role">Role</label>
-  <div class="select">
+  <div tabindex="0" class="select">
     <select>
       <!---->
       <option value="owner">Owner</option>

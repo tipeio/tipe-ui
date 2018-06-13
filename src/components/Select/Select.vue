@@ -7,6 +7,9 @@
 
     <div 
       class="select" 
+      tabindex="0"
+      @focus="onFocus"
+      @blur="onBlur"
       v-on="disabled ? {} : { click: onClick }">
       <select :disabled="disabled">
         <option 
@@ -28,7 +31,8 @@
         class="dropdown">
         <div 
           v-for="option in options"
-          :key="option.value" 
+          :key="option.value"
+          tabindex="-1" 
           class="dropdown-item"
           @click="onChange(option)"><p>{{ option.label }}</p></div>
       </div>
@@ -61,6 +65,12 @@ export default {
     onChange(val) {
       this.value = val
       this.$emit('change', val)
+    },
+    onFocus() {
+      this.open = true
+    },
+    onBlur() {
+      this.open = false
     }
   }
 }
@@ -84,19 +94,28 @@ export default {
   position: relative;
   vertical-align: top;
 
+  &:focus {
+    & .fake-select {
+      border-bottom: 2px solid #b5baca;
+    }
+  }
+
   & select {
-    display: none;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
   }
   & .fake-select {
     -webkit-appearance: none;
-    align-items: center;
     border: 1px solid transparent;
     border-radius: 0px;
     box-shadow: none;
     display: inline-flex;
     font-size: 1rem;
     height: 3em;
-    justify-content: flex-start;
     line-height: 1.5;
     padding-bottom: calc(0.375em - 1px);
     padding-left: 0.25em;
@@ -105,7 +124,7 @@ export default {
     vertical-align: top;
     background-color: #fff;
     border: none;
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid #b5baca;
     color: #1f346c;
     cursor: pointer;
     font-size: 0.875rem;
