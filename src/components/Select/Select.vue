@@ -4,12 +4,11 @@
     class="select-flex" 
     @keyup.up="keyup"
     @keyup.down="keydown"
-    @keyup.enter="enter"
-  >
-    <label :htmlFor="label">{{ label }}</label>
-
+    @keyup.enter="enter">
+    <label :for="label">{{ label }}</label>
     <div 
-      class="select" 
+      :id="label" 
+      class="select"
       tabindex="0"
       v-on="disabled ? {} : { click: onClick }">
       <select :disabled="disabled">
@@ -62,7 +61,7 @@ export default {
     }
   },
   methods: {
-    onClick() {
+    onClick(event) {
       this.open = !this.open
     },
     onChange(val) {
