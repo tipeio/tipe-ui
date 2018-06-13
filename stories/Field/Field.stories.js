@@ -8,7 +8,7 @@ const style = () => ({
 })
 
 storiesOf('Field', module)
-  .add('default input', () => ({
+  .add('default field with input', () => ({
     components: { TipeField, TipeTextInput },
     computed: { style },
     data() {
@@ -96,4 +96,64 @@ storiesOf('Field', module)
     },
     template:
       '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field" ><tipe-text-input /></tipe-field></div>'
+  }))
+  .add('multiple slots', () => ({
+    components: { TipeField, TipeTextInput },
+    computed: { style },
+    data() {
+      return {
+        field: {
+          label: 'First Name',
+          placeholder: 'What is your first name?',
+          value: ''
+        }
+      }
+    },
+    template:
+      '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field"><tipe-text-input /><tipe-text-input /></tipe-field></div>'
+  }))
+  .add('no slots with label', () => ({
+    components: { TipeField, TipeTextInput },
+    computed: { style },
+    data() {
+      return {
+        field: {
+          label: 'First Name',
+          placeholder: 'What is your first name?',
+          value: ''
+        }
+      }
+    },
+    template:
+      '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field" /></div>'
+  }))
+  .add('no slots with message', () => ({
+    components: { TipeField, TipeTextInput },
+    computed: { style },
+    data() {
+      return {
+        field: {
+          label: 'First Name',
+          placeholder: 'What is your first name?',
+          value: ''
+        }
+      }
+    },
+    template:
+      '<div :style="style"><tipe-field status="error" errorMessage="blah blah" name="firstName" :field="field" /></div>'
+  }))
+  .add('no slots with message and label', () => ({
+    components: { TipeField, TipeTextInput },
+    computed: { style },
+    data() {
+      return {
+        field: {
+          label: 'First Name',
+          placeholder: 'What is your first name?',
+          value: ''
+        }
+      }
+    },
+    template:
+      '<div :style="style"><tipe-field status="error" errorMessage="blah blah" :label="field.label" name="firstName" :field="field" /></div>'
   }))

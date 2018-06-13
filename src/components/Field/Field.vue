@@ -79,8 +79,9 @@ export default {
       }
     }
 
-    const fieldSlots = slots =>
-      slots.map(slot => {
+    const fieldSlots = slots => {
+      if (!slots) return []
+      return slots.map(slot => {
         slot.componentOptions.propsData = {
           name: this.name,
           ...this.field,
@@ -88,6 +89,7 @@ export default {
         }
         return slot
       })
+    }
 
     // no label and no message
     if (!computedMessage() && !this.label) {
@@ -116,6 +118,10 @@ export default {
 }
 </script>
 <style lang="postcss">
+div {
+  display: flex;
+  flex-direction: column;
+}
 label {
   color: #627098;
   font-weight: 500;

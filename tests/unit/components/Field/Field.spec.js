@@ -196,25 +196,29 @@ describe('TipeField.vue', () => {
     wrapper.vm.$emit('focus')
     expect(wrapper.emitted().focus).toBeTruthy()
   })
-  it.skip('should not break with no slots', () => {
+  it('should not break with no slots', () => {
+    const renderer = createRenderer()
     const wrapper = shallowMount(TipeField, {
       propsData: {
         ...props
       }
     })
-    wrapper.vm.$emit('focus')
-    expect(wrapper.emitted().focus).toBeTruthy()
+    renderer.renderToString(wrapper.vm, (err, str) => {
+      if (err) throw new Error(err)
+      expect(str).toMatchSnapshot()
+    })
   })
-  it.skip('should work with multiple slots', () => {
+  it('should render with multiple slots', () => {
+    const renderer = createRenderer()
     const wrapper = shallowMount(TipeField, {
       propsData: {
         ...props
       },
-      slots: {
-        default: [TipeTextInput, TipeTextInput]
-      }
+      slots: [TipeTextInput, TipeTextInput]
     })
-    wrapper.vm.$emit('focus')
-    expect(wrapper.emitted().focus).toBeTruthy()
+    renderer.renderToString(wrapper.vm, (err, str) => {
+      if (err) throw new Error(err)
+      expect(str).toMatchSnapshot()
+    })
   })
 })
