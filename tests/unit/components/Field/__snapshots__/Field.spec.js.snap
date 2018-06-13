@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TipeField.vue renders 1`] = `
+<div data-tipe-ui="TipeField">
+  <label for="Name">Name</label>
+  <input name="name" data-tipe-ui="TipeTextInput" id="first name" placeholder="what is your first name?" tabindex="0" type="text" value="" class="small">
+</div>
+`;
