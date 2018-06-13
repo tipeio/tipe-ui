@@ -9,8 +9,7 @@ const options = [
 
 const props = {
   label: 'Role',
-  options,
-  value: { label: 'Admin', value: 'admin' }
+  options
 }
 describe('TipeSelect.vue', () => {
   it('renders', () => {
@@ -51,7 +50,6 @@ describe('TipeSelect.vue', () => {
     })
     expect(wrapper.props().label).toBe('Role')
     expect(wrapper.props().options).toBe(options)
-    expect(wrapper.props().value).toEqual({ label: 'Admin', value: 'admin' })
     expect(wrapper.props().disabled).toBe(true)
     expect(wrapper.props().placeholder).toBe('Select a role')
   })
@@ -77,8 +75,7 @@ describe('TipeSelect.vue', () => {
     const wrapper = shallowMount(TipeSelect, {
       propsData: {
         ...props,
-        placeholder: 'select a role',
-        value: { label: '', value: '' }
+        placeholder: 'select a role'
       }
     })
     const optionArr = wrapper.findAll('option')
@@ -131,5 +128,76 @@ describe('TipeSelect.vue', () => {
     })
     wrapper.vm.$emit('onClick')
     expect(wrapper.emitted().onClick).toBeTruthy()
+  })
+  it('should emit keyup', () => {
+    const wrapper = shallowMount(TipeSelect, {
+      propsData: {
+        ...props
+      }
+    })
+    wrapper.vm.$emit('keyup')
+    expect(wrapper.emitted().keyup).toBeTruthy()
+  })
+  it('should change active index on key down', () => {
+    const wrapper = shallowMount(TipeSelect, {
+      propsData: {
+        ...props
+      }
+    })
+    wrapper.setData({ open: true, activeIndex: -1 })
+    wrapper.vm.keydown()
+    expect(wrapper.vm.activeIndex).toBe(0)
+  })
+  it('should loop back to the top on keydown of last option', () => {
+    const wrapper = shallowMount(TipeSelect, {
+      propsData: {
+        ...props
+      }
+    })
+    wrapper.setData({ open: true, activeIndex: 1 })
+    wrapper.vm.keydown()
+    expect(wrapper.vm.activeIndex).toBe(0)
+  })
+  it('should change active index on key up', () => {
+    const wrapper = shallowMount(TipeSelect, {
+      propsData: {
+        ...props
+      }
+    })
+    wrapper.setData({ open: true, activeIndex: 1 })
+    wrapper.vm.keyup()
+    expect(wrapper.vm.activeIndex).toBe(0)
+  })
+  it('should loop to the bottom on keyup of first option', () => {
+    const wrapper = shallowMount(TipeSelect, {
+      propsData: {
+        ...props
+      }
+    })
+    wrapper.setData({ open: true, activeIndex: 0 })
+    wrapper.vm.keydown()
+    expect(wrapper.vm.activeIndex).toBe(1)
+  })
+  it('should open the dropdown on enter', () => {
+    const wrapper = shallowMount(TipeSelect, {
+      propsData: {
+        ...props
+      }
+    })
+    wrapper.setData({ open: false, activeIndex: -1 })
+    wrapper.vm.enter()
+    expect(wrapper.vm.open).toBe(true)
+  })
+  it('should select option on enter', () => {
+    const wrapper = shallowMount(TipeSelect, {
+      propsData: {
+        ...props
+      }
+    })
+    wrapper.setData({ open: true, activeIndex: 0 })
+    wrapper.vm.enter()
+    expect(wrapper.vm.open).toBe(false)
+    expect(wrapper.vm.value).toEqual({ label: 'Owner', value: 'owner' })
+    expect(wrapper.vm.activeIndex).toBe(-1)
   })
 })
