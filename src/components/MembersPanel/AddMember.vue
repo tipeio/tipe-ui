@@ -27,7 +27,6 @@
         </tipe-field>
         <tipe-select 
           :options="options" 
-          :value="roleValue" 
           class="role"
           label="Role"
           @change="onChangeRole" />
@@ -77,7 +76,7 @@ export default {
       emailValue: '',
       emailMessage: '',
       emailStatus: '',
-      roleValue: { label: 'Owner', value: 'owner' },
+      roleValue: {},
       nameValue: '',
       nameStatus: '',
       nameMessage: '',
