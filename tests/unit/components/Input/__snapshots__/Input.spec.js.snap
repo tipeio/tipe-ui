@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`TipeSelect.vue renders 1`] = `
-<div data-tipe-ui="TipeInput" class="input-flex normal">
-  <label htmlFor="Name">Name</label>
-  <input type="text" id="Name" placeholder="Type your name here" value="">
-  <!---->
-</div>
-`;
