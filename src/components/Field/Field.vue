@@ -12,6 +12,20 @@ export default {
     successMessage: vueTypes.string,
     warningMessage: vueTypes.string
   },
+  methods: {
+    click() {
+      this.$emit('click')
+    },
+    focus() {
+      this.$emit('focus')
+    },
+    blur() {
+      this.$emit('blur')
+    },
+    change() {
+      this.$emit('change')
+    }
+  },
   render: function(createElement) {
     const computedMessage = () => {
       var message = ''
@@ -38,18 +52,10 @@ export default {
         warning: this.status === 'warning'
       },
       on: {
-        click: function(val) {
-          this.$emit('click', val)
-        },
-        focus: function(val) {
-          this.$emit('focus', val)
-        },
-        change: function(val) {
-          this.$emit('change', val)
-        },
-        blur: function(val) {
-          this.$emit('blur', val)
-        }
+        click: this.click,
+        focus: this.focus,
+        change: this.change,
+        blur: this.blur
       }
     }
     const labelOptions = {
