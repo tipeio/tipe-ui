@@ -115,6 +115,9 @@ export default {
     -moz-appearance: none;
     appearance: none;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
 
   & .disabled {
@@ -154,7 +157,8 @@ export default {
   & .dropdown-item {
     height: 2.1875rem;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     & p {
       color: #627098;
