@@ -52,6 +52,15 @@ export default {
         }
       }
     }
+    const labelOptions = {
+      attrs: {
+        for: this.label
+      },
+      domProps: {
+        innerHTML: this.label
+      }
+    }
+
     const spanOptions = {
       domProps: {
         innerHTML: computedMessage()
@@ -77,14 +86,7 @@ export default {
     } else if (!computedMessage()) {
       // no message
       return createElement('div', divOptions, [
-        createElement('label', {
-          attrs: {
-            htmlFor: this.name
-          },
-          domProps: {
-            innerHTML: this.label
-          }
-        }),
+        createElement('label', labelOptions),
         fieldSlots(this.$slots.default)
       ])
     } else if (!this.label) {
@@ -96,14 +98,7 @@ export default {
     } else {
       // both
       return createElement('div', divOptions, [
-        createElement('label', {
-          attrs: {
-            htmlFor: this.name
-          },
-          domProps: {
-            innerHTML: this.label
-          }
-        }),
+        createElement('label', labelOptions),
         fieldSlots(this.$slots.default),
         createElement('span', spanOptions)
       ])
