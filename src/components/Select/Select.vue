@@ -2,14 +2,15 @@
   <div 
     :data-tipe-ui="$options.name" 
     class="select-flex" 
+    @keyup.up="keyup"
+    @keyup.down="keydown"
+    @keyup.enter="enter"
   >
     <label :htmlFor="label">{{ label }}</label>
 
     <div 
       class="select" 
       tabindex="0"
-      @focus="onFocus"
-      @blur="onBlur"
       v-on="disabled ? {} : { click: onClick }">
       <select :disabled="disabled">
         <option 
@@ -30,9 +31,10 @@
         v-if="open" 
         class="dropdown">
         <div 
-          v-for="option in options"
+          v-for="(option, index) in options"
           :key="option.value"
-          tabindex="-1" 
+          :class="{active: index === activeIndex}" 
+          tabindex="-1"
           class="dropdown-item"
           @click="onChange(option)"><p>{{ option.label }}</p></div>
       </div>
@@ -55,7 +57,8 @@ export default {
   data() {
     return {
       open: false,
-      value: {}
+      value: {},
+      activeIndex: -1
     }
   },
   methods: {
@@ -66,11 +69,26 @@ export default {
       this.value = val
       this.$emit('change', val)
     },
-    onFocus() {
-      this.open = true
+    keyup() {
+      if (!this.open) {
+      } else if (this.activeIndex === 0)
+        this.activeIndex = this.options.length - 1
+      else this.activeIndex -= 1
     },
-    onBlur() {
+    keydown() {
+      if (!this.open) {
+      } else if (this.activeIndex === this.options.length - 1)
+        this.activeIndex = 0
+      else this.activeIndex += 1
+    },
+    enter() {
+      if (!this.open) {
+        this.open = true
+        return
+      }
+      this.onChange(this.options[this.activeIndex])
       this.open = false
+      this.activeIndex = -1
     }
   }
 }
@@ -186,7 +204,8 @@ export default {
       padding-left: 1.0625rem;
     }
 
-    &:hover {
+    &:hover,
+    &.active {
       background-color: #f7f8fb;
       border-left: 3px #1cc5bc solid;
 
