@@ -6,7 +6,7 @@ import Icon from '@/components/Icon'
 import TipeButton from '@/components/Button'
 import Seperator from '@/components/Seperator'
 import AvatarUpload from '@/components/AvatarUpload'
-import TipeInput from '@/components/Input'
+import TipeField from '@/components/Field'
 import TipeSelect from '@/components/Select'
 
 describe('AddMember.vue', () => {
@@ -38,9 +38,9 @@ describe('AddMember.vue', () => {
     const wrapper = shallowMount(AddMember)
     expect(wrapper.contains(AvatarUpload)).toBe(true)
   })
-  it('should render the TipeInput component', () => {
+  it('should render the TipeField component', () => {
     const wrapper = shallowMount(AddMember)
-    expect(wrapper.contains(TipeInput)).toBe(true)
+    expect(wrapper.contains(TipeField)).toBe(true)
   })
   it('should render the TipeSelect component', () => {
     const wrapper = shallowMount(AddMember)
