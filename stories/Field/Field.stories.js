@@ -68,3 +68,32 @@ storiesOf('Field', module)
     template:
       '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field" status="warning" warningMessage="Warning message watch out"><tipe-text-input /></tipe-field></div>'
   }))
+  .add('no label', () => ({
+    components: { TipeField, TipeTextInput },
+    computed: { style },
+    data() {
+      return {
+        field: {
+          placeholder: 'What is your first name?',
+          value: 'o'
+        }
+      }
+    },
+    template:
+      '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field" status="warning" warningMessage="Warning message watch out"><tipe-text-input /></tipe-field></div>'
+  }))
+  .add('no message', () => ({
+    components: { TipeField, TipeTextInput },
+    computed: { style },
+    data() {
+      return {
+        field: {
+          label: 'First Name',
+          placeholder: 'What is your first name?',
+          value: ''
+        }
+      }
+    },
+    template:
+      '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field" ><tipe-text-input /></tipe-field></div>'
+  }))

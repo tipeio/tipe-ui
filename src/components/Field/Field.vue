@@ -56,6 +56,9 @@ export default {
         focus: this.focus,
         change: this.change,
         blur: this.blur
+      },
+      attrs: {
+        'data-tipe-ui': this.$options.name
       }
     }
     const labelOptions = {

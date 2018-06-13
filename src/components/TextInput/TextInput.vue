@@ -1,6 +1,7 @@
 <template>
   <input 
     :class="classObject"
+    :name="name"
     :data-tipe-ui="$options.name" 
     :disabled="isDisabled"
     :id="label"
@@ -20,6 +21,7 @@ import vueTypes from 'vue-types'
 export default {
   name: 'TipeTextInput',
   props: {
+    name: vueTypes.string,
     label: vueTypes.string,
     value: vueTypes.string,
     placeholder: vueTypes.string,
@@ -65,6 +67,7 @@ input {
   &:disabled {
     color: #d4d7d9;
     cursor: not-allowed;
+    background-color: #fff; // for firefox
     &::placeholder {
       color: #d4d7d9;
     }
