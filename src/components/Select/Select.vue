@@ -22,7 +22,7 @@
       </select>
       <div 
         :class="{disabled}" 
-        class="fake-select">{{ value.label || placeholder }}</div>
+        class="fake-select">{{ value.label || (placeholder || options[0].label) }}</div>
       <div 
         v-if="open" 
         class="dropdown">
@@ -46,12 +46,12 @@ export default {
     label: vueTypes.string.isRequired,
     placeholder: vueTypes.string,
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
-    value: vueTypes.shape(SelectOptionShape),
     disabled: vueTypes.bool.def(false)
   },
   data() {
     return {
-      open: false
+      open: false,
+      value: {}
     }
   },
   methods: {
@@ -59,6 +59,7 @@ export default {
       this.open = !this.open
     },
     onChange(val) {
+      this.value = val
       this.$emit('change', val)
     }
   }
