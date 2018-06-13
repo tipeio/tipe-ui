@@ -9,7 +9,7 @@ const props = {
   name: 'name'
 }
 
-describe('TipeSelect.vue', () => {
+describe('TipeTextInput.vue', () => {
   it('renders', () => {
     const renderer = createRenderer()
     const wrapper = shallowMount(TipeTextInput, {
@@ -82,7 +82,7 @@ describe('TipeSelect.vue', () => {
     expect(wrapper.props().disabled).toBe(true)
     expect(wrapper.props().waiting).toBe(false)
     expect(wrapper.props().size).toBe('small')
-    expect(wrapper.props().name).toBe('name')
+    expect(wrapper.props().name).toBe(props.name)
     expect(wrapper.props().status).toBe('warning')
     expect(wrapper.props().tabindex).toBe(0)
   })
