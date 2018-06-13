@@ -9,24 +9,22 @@
       <p class="title">Add Member</p>
       <avatar-upload />
       <form @submit="onSubmit">
-        <tipe-input 
-          :value="nameValue" 
-          :status="nameStatus"
-          :message="nameMessage"
-          label="Name"
-          type="text"
-          class="name"
-          placeholder="Type your name here"
-          @change="onChangeName"/>
-        <tipe-input 
-          :value="emailValue" 
-          :status="emailStatus"
-          :message="emailMessage" 
-          label="Email"
-          class="email"
-          type="email"
-          placeholder="Type your email here"
-          @change="onChangeEmail"/>
+        <tipe-field 
+          :label="fields.name.label" 
+          :field="fields.name" 
+          name="name" 
+          class="name" 
+          @change="onChangeName">
+          <tipe-text-input />
+        </tipe-field>
+        <tipe-field 
+          :label="fields.email.label" 
+          :field="fields.email" 
+          name="email" 
+          class="email" 
+          @change="onChangeEmail">
+          <tipe-text-input />
+        </tipe-field>
         <tipe-select 
           :options="options" 
           :value="roleValue" 
@@ -34,7 +32,6 @@
           label="Role"
           @change="onChangeRole" />
         <div class="seperator"><tipe-seperator /></div>
-
         <div class="add-button">
           <tipe-button 
             :disabled="!canSubmit"
@@ -54,7 +51,8 @@ import TipeIcon from '../Icon'
 import TipeButton from '../Button'
 import TipeSeperator from '../Seperator'
 import AvatarUpload from '../AvatarUpload'
-import TipeInput from '../Input'
+import TipeTextInput from '../TextInput'
+import TipeField from '../Field'
 import TipeSelect from '../Select'
 
 export default {
@@ -64,8 +62,9 @@ export default {
     TipeButton,
     TipeSeperator,
     AvatarUpload,
-    TipeInput,
-    TipeSelect
+    TipeTextInput,
+    TipeSelect,
+    TipeField
   },
   data() {
     return {
@@ -81,7 +80,19 @@ export default {
       roleValue: { label: 'Owner', value: 'owner' },
       nameValue: '',
       nameStatus: '',
-      nameMessage: ''
+      nameMessage: '',
+      fields: {
+        name: {
+          label: 'Name',
+          placeholder: 'What is your name?',
+          value: ''
+        },
+        email: {
+          label: 'Email',
+          placeholder: 'What is your first email?',
+          value: ''
+        }
+      }
     }
   },
   computed: {
