@@ -7,10 +7,10 @@
     :placeholder="placeholder" 
     :value="value" 
     type="text"
-    @click="emitMethod($event, 'click')"
-    @blur="emitMethod($event,'blur')"
-    @focus="emitMethod($event,'focus')"
-    @change="emitMethod($event,'change')">
+    @click="inputEmit('click')"
+    @blur="inputEmit('blur')"
+    @focus="inputEmit('focus')"
+    @change="inputEmit('change')">
 </template>
 
 <script>
@@ -39,13 +39,8 @@ export default {
     }
   },
   methods: {
-    emitMethod(
-      {
-        target: { value }
-      },
-      type
-    ) {
-      this.$emit(type, value)
+    inputEmit(type) {
+      this.$emit(type)
     }
   }
 }
