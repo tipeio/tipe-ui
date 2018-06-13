@@ -25,7 +25,7 @@ export default {
     status: vueTypes.oneOf(['error', 'success', 'warning', '']).def(''),
     waiting: vueTypes.bool,
     disabled: vueTypes.bool.def(false),
-    size: vueTypes.oneOf(['small', 'normal', 'large']).def('normal')
+    size: vueTypes.oneOf(['small', 'medium', 'large']).def('medium')
   },
   computed: {
     classObject: function() {
@@ -117,7 +117,7 @@ input {
     }
   }
 
-  &.normal {
+  &.medium {
     & ::placeholder {
       color: #b5baca;
       font-size: 0.875rem;
