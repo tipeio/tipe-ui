@@ -14,48 +14,18 @@ storiesOf('Select', module)
   .add('default', () => ({
     components: { TipeSelect },
     computed: { options, style },
-    data() {
-      return {
-        roleValue: { label: 'Member', value: 'member' }
-      }
-    },
-    methods: {
-      onChangeRole(val) {
-        this.roleValue = val
-      }
-    },
     template:
-      '<div :style="style"><tipe-select label="Role" :options="options" :value="roleValue" @change="onChangeRole"/></div>'
+      '<div :style="style"><tipe-select label="Role" :options="options" /></div>'
   }))
   .add('with a placeholder', () => ({
     components: { TipeSelect },
     computed: { options, style },
-    data() {
-      return {
-        roleValue: { label: '', value: '' }
-      }
-    },
-    methods: {
-      onChangeRole(val) {
-        this.roleValue = val
-      }
-    },
     template:
-      '<div :style="style"><tipe-select label="Role" :options="options" @change="onChangeRole" placeholder="Select a role..." :value="roleValue"/></div>'
+      '<div :style="style"><tipe-select label="Role" :options="options" placeholder="Select a role..." /></div>'
   }))
   .add('disabled', () => ({
     components: { TipeSelect },
     computed: { options, style },
-    data() {
-      return {
-        roleValue: { label: 'Member', value: 'member' }
-      }
-    },
-    methods: {
-      onChangeRole(val) {
-        this.roleValue = val
-      }
-    },
     template:
-      '<div :style="style"><tipe-select label="Role" :options="options" :value="roleValue" :disabled="true" @change="onChangeRole"/></div>'
+      '<div :style="style"><tipe-select label="Role" :options="options" :disabled="true" /></div>'
   }))
