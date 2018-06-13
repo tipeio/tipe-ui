@@ -68,3 +68,8 @@ storiesOf('Text Input', module)
     template:
       '<div :style="style"><tipe-text-input :waiting="true"  label="Username" placeholder="Type your username here"  /></div>'
   }))
+  .add('no placeholder', () => ({
+    components: { TipeTextInput },
+    computed: { style },
+    template: '<div :style="style"><tipe-text-input  label="Username" /></div>'
+  }))
