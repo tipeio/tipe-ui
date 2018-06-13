@@ -12,7 +12,7 @@ const props = () => ({
   value: 'Olivia',
   status: 'success'
 })
-storiesOf('TextInput', module)
+storiesOf('Text Input', module)
   .add('default input', () => ({
     components: { TipeTextInput },
     computed: { style, props },
@@ -61,4 +61,10 @@ storiesOf('TextInput', module)
     computed: { style },
     template:
       '<div :style="style"><tipe-text-input :disabled="true"  label="Username" placeholder="Type your username here"  /></div>'
+  }))
+  .add('waiting input', () => ({
+    components: { TipeTextInput },
+    computed: { style },
+    template:
+      '<div :style="style"><tipe-text-input :waiting="true"  label="Username" placeholder="Type your username here"  /></div>'
   }))
