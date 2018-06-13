@@ -14,6 +14,7 @@
           :field="fields.name" 
           name="name" 
           class="name" 
+          @click="onClick"
           @change="onChangeName">
           <tipe-text-input />
         </tipe-field>
@@ -109,6 +110,9 @@ export default {
       this.emailValue = val
       this.emailValidate()
     },
+    onClick(event) {
+      console.log('DUHH hello??', event)
+    },
     emailValidate() {
       let re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       let valid = re.test(this.emailValue)
@@ -121,6 +125,7 @@ export default {
       this.roleValue = val
     },
     onChangeName(val) {
+      console.log(val, 'dis do anything?')
       this.nameValue = val
       this.nameValidate()
     },
