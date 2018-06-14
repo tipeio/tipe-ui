@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DocumentBlock <template> matches previous snapshot 1`] = `
+<div data-tipe-ui="TipeDocumentBlock">
+  <div class="grab-handle">
+    <TipeIcon-stub></TipeIcon-stub>
+  </div>
+  <div class="name-container">
+    <input name="name" type="text" value="test-name" class="name">
+  </div>
+  <div class="input-container"></div>
+  <div class="message"></div>
+</div>
+`;
