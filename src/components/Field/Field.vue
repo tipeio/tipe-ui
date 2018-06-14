@@ -1,17 +1,9 @@
 <script>
-import vueTypes from 'vue-types'
+import fieldShape from '@/types/Field'
 
 export default {
   name: 'TipeField',
-  props: {
-    name: vueTypes.string,
-    field: vueTypes.object,
-    label: vueTypes.string.isRequired,
-    status: vueTypes.oneOf(['error', 'success', 'warning', '']).def(''),
-    errorMessage: vueTypes.string,
-    successMessage: vueTypes.string,
-    warningMessage: vueTypes.string
-  },
+  props: fieldShape,
   methods: {
     click(event) {
       this.$emit('click', event)
