@@ -3,13 +3,13 @@
 exports[`FileIconRectangle <template> matches previous snapshot 1`] = `
 <div data-tipe-ui="TipeFileIconRectangle">
   <button class="file-icon">
-    <!---->
+    <TipeIcon-stub></TipeIcon-stub>
   </button>
   <button class="label">
     test-label
   </button>
   <button class="options-icon">
-    <!---->
+    <TipeIcon-stub></TipeIcon-stub>
   </button>
 </div>
 `;

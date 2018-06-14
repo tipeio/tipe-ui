@@ -3,14 +3,14 @@
 exports[`Table.vue renders 1`] = `
 <table class="table">
   <tr class="table-heading">
-    <th class="start">NAME<span><!----></span></th>
-    <th>ROLE<span><!----></span></th>
-    <th>DATE JOINED<span><!----></span></th>
-    <th>STATUS<span><!----></span></th>
+    <th class="start">NAME<span><TipeIcon-stub></TipeIcon-stub></span></th>
+    <th>ROLE<span><TipeIcon-stub></TipeIcon-stub></span></th>
+    <th>DATE JOINED<span><TipeIcon-stub></TipeIcon-stub></span></th>
+    <th>STATUS<span><TipeIcon-stub></TipeIcon-stub></span></th>
     <th>ACTION</th>
   </tr>
   <div class="table-body">
-    <!---->
+    <TipeScrollable-stub></TipeScrollable-stub>
   </div>
 </table>
 `;

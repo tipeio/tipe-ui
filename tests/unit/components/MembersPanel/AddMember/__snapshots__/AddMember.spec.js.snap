@@ -3,20 +3,20 @@
 exports[`AddMember.vue renders 1`] = `
 <div data-tipe-ui="AddMember" class="grid">
   <div class="close">
-    <!---->
+    <TipeIcon-stub></TipeIcon-stub>
   </div>
   <div class="content">
     <p class="title">Add Member</p>
-    <!---->
+    <AvatarUpload-stub></AvatarUpload-stub>
     <form>
-      <!---->
-      <!---->
-      <!---->
+      <TipeInput-stub class="name"></TipeInput-stub>
+      <TipeInput-stub class="email"></TipeInput-stub>
+      <TipeSelect-stub class="role"></TipeSelect-stub>
       <div class="seperator">
-        <!---->
+        <TipeSeperator-stub></TipeSeperator-stub>
       </div>
       <div class="add-button">
-        <!---->
+        <TipeButton-stub disabled="disabled" type="submit" value="Submit"></TipeButton-stub>
       </div>
     </form>
   </div>
