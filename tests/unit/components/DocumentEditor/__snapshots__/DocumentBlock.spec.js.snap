@@ -3,13 +3,13 @@
 exports[`DocumentBlock <template> matches previous snapshot 1`] = `
 <div data-tipe-ui="TipeDocumentBlock">
   <div class="grab-handle">
-    <!---->
+    <TipeIcon-stub></TipeIcon-stub>
   </div>
   <div class="name-container">
-    <!---->
+    <TipeDocumentBlockNameInput-stub></TipeDocumentBlockNameInput-stub>
   </div>
   <div class="input-container">
-    <!---->
+    <TipeDocumentBlock-stub></TipeDocumentBlock-stub>
   </div>
   <div class="message"></div>
 </div>
