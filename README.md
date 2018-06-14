@@ -192,21 +192,33 @@ Example
 
 ### TipeField
 
-The TipeSelect component supports `label`, `placeholder`, `options`, `value`, and `disabled`
+    name: vueTypes.string,
+    field: vueTypes.object,
+    label: vueTypes.string.isRequired,
+    status: vueTypes.oneOf(['error', 'success', 'warning', '']).def(''),
+    errorMessage: vueTypes.string,
+    successMessage: vueTypes.string,
+    warningMessage: vueTypes.string
 
-`label` is required
-`disabled` defaults to false
-`options` is required and must be an array of the `SelectOptionShape`
-`placeholder` is optional, if no placeholder is provided, the first select option will be selected
+The TipeField component supports `name`, `field`, `label`, `status`, `errorMessage`, `successMessage`, and `warningMessage`.
 
-Emits an onchange event to the parent with the selected option such as `{value: 'member', label: 'Member'}`
+`label` and `name` type string
+`field` type object such as `{ label: 'First Name', placeholder: 'What is your first name?', value: '', size: 'large' }`
+`status` is one of `'error', 'success', 'warning', ''` and defaults to `''`
+`errorMessage`, `successMessage`, and `warningMessage` type string, renders based on corresponding status
+
+Emits change, focus, blur, and click events to the parent with the `event`.
+
+In order for the message to render, `status` must correspond with the type of message. For example, if you want the `errorMessage` to render set the `status` prop to `'error'`.
+
+The label and message will be styled depending on the status type.
+
+`<slot>`: the `field`, `name`, and `status` props will be passed down to the component in the `slot` (in the example below `tipe-text-input` will receive these props)
+
+TipeField can take multiple `slots` or no `slots`
 
 Example
 
 ```
-  <tipe-select
-    :options="options"
-    class="role"
-    label="Role"
-    @change="onChange" />
+<tipe-field :label="field.label" name="firstName" :field="field"><tipe-text-input /></tipe-field>
 ```
