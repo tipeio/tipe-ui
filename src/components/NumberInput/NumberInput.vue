@@ -48,12 +48,7 @@
 import vueTypes from 'vue-types'
 import inputPropsShape from '@/types/InputProps'
 import TipeIcon from '@/components/Icon'
-
-const getPrecision = number => {
-  const n = number.toString().split('.')
-
-  return n[1] ? n[1].length : 0
-}
+import { getPrecision } from '@/libs/float'
 
 export default {
   name: 'TipeNumberInput',
@@ -236,7 +231,7 @@ input {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   box-sizing: border-box;
-  padding: 0.8125rem;
+  padding: 0.1875rem 0.8125rem;
   text-align: center;
 }
 
