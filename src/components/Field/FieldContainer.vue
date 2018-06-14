@@ -23,7 +23,7 @@
 
 <script>
 import TipeFieldInput from './FieldInput'
-import fieldShape from '@/types/Field'
+import fieldShape from '@/types/FieldContainer'
 
 export default {
   name: 'TipeFieldContainer',
