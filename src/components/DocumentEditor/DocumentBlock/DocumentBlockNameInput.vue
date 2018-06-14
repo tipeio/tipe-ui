@@ -43,6 +43,9 @@ export default {
   display: flex;
   align-content: center;
   justify-content: flex-start;
+  color: var(--purple-dark);
+  font-size: 1rem;
+  letter-spacing: 0.009375rem;
 }
 
 [data-tipe-ui='TipeDocumentBlockNameInput']:disabled {
