@@ -39,7 +39,7 @@ describe('TipeField.vue', () => {
         default: [TipeTextInput]
       }
     })
-    expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeField')
+    expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeFieldContainer')
   })
   it('should render with no classes by default ie. no status classes', () => {
     const wrapper = shallowMount(TipeField, {

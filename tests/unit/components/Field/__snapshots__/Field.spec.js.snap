@@ -1,20 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TipeField.vue renders 1`] = `
-<div data-tipe-ui="TipeField">
+<div data-tipe-ui="TipeFieldContainer">
   <label for="Name">Name</label>
-  <input name="name" data-tipe-ui="TipeTextInput" id="first name" placeholder="what is your first name?" tabindex="0" type="text" value="" class="small">
+  <!---->
+  <!---->
 </div>
 `;
 
 exports[`TipeField.vue should not break with no slots 1`] = `
-<div data-tipe-ui="TipeField">
+<div data-tipe-ui="TipeFieldContainer">
   <label for="Name">Name</label>
+  <!---->
+  <!---->
 </div>
 `;
 
 exports[`TipeField.vue should render with multiple slots 1`] = `
-<div data-tipe-ui="TipeField">
+<div data-tipe-ui="TipeFieldContainer">
   <label for="Name">Name</label>
+  <!---->
+  <!---->
 </div>
 `;
