@@ -29,7 +29,7 @@
     "@vue/cli-plugin-unit-jest": "^3.0.0-beta.10",
     "@vue/cli-service": "^3.0.0-beta.10",
     "@vue/eslint-config-prettier": "^3.0.0-beta.10",
-    "@vue/test-utils": "^1.0.0-beta.10",
+    "@vue/test-utils": "^1.0.0-beta.18",
     "autoprefixer": "^8.5.1",
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^8.2.3",
