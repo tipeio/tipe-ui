@@ -9,8 +9,8 @@ exports[`AddMember.vue renders 1`] = `
     <p class="title">Add Member</p>
     <AvatarUpload-stub></AvatarUpload-stub>
     <form>
-      <TipeInput-stub class="name"></TipeInput-stub>
-      <TipeInput-stub class="email"></TipeInput-stub>
+      <TipeFieldContainer-stub class="name"></TipeFieldContainer-stub>
+      <TipeFieldContainer-stub class="email"></TipeFieldContainer-stub>
       <TipeSelect-stub class="role"></TipeSelect-stub>
       <div class="seperator">
         <TipeSeperator-stub></TipeSeperator-stub>
