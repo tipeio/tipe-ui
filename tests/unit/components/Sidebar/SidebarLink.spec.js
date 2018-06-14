@@ -1,4 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
+import { createRenderer } from 'vue-server-renderer'
 import SidebarLink from '@/components/Sidebar/SidebarLink.vue'
 import Icon from '@/components/Icon'
 import faker from 'faker'
@@ -6,9 +7,13 @@ import faker from 'faker'
 describe('Sidebar', () => {
   describe('<template>', () => {
     it('matches previous snapshot', () => {
+      const renderer = createRenderer()
       const wrapper = shallowMount(SidebarLink)
 
-      expect(wrapper).toMatchSnapshot()
+      renderer.renderToString(wrapper.vm, (err, str) => {
+        if (err) throw new Error(err)
+        expect(str).toMatchSnapshot()
+      })
     })
 
     it('<root> - has correct data-tipe-iu attibute', () => {

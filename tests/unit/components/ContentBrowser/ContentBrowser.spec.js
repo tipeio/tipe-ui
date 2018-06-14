@@ -1,4 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
+import { createRenderer } from 'vue-server-renderer'
 import ContentBrowser from '@/components/ContentBrowser'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Finder from '@/components/Finder'
@@ -8,9 +9,13 @@ import fileMock from '@/mocks/File'
 describe('ContentBrowser', () => {
   describe('<ContentBrowser>', () => {
     it('matches previous snapshot', () => {
+      const renderer = createRenderer()
       const wrapper = shallowMount(ContentBrowser)
 
-      expect(wrapper).toMatchSnapshot()
+      renderer.renderToString(wrapper.vm, (err, str) => {
+        if (err) throw new Error(err)
+        expect(str).toMatchSnapshot()
+      })
     })
 
     it('has correct data-tipe-iu attibute', () => {

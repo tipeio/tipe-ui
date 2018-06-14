@@ -5,7 +5,7 @@ exports[`FileIconDetails <template> matches previous snapshot 1`] = `
   <button class="details-button">
     <div class="details-layout">
       <div class="icon-container">
-        <!---->
+        <TipeIcon-stub></TipeIcon-stub>
       </div>
       <div class="label">
         hello world
@@ -14,7 +14,7 @@ exports[`FileIconDetails <template> matches previous snapshot 1`] = `
         Created by test test
       </div>
       <div class="dot">
-        <!---->
+        <TipeIcon-stub></TipeIcon-stub>
       </div>
       <div class="updated-at">
         Edited a few seconds ago

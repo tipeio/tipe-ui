@@ -1,4 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
+import { createRenderer } from 'vue-server-renderer'
 import AccountSettings from '@/components/AccountSettings'
 import RecentActivity from '@/components/AccountSettings/RecentActivity'
 import Settings from '@/components/AccountSettings/Settings'
@@ -7,8 +8,13 @@ import Progress from '@/components/Progress'
 
 describe('Settings.vue', () => {
   it('renders', () => {
+    const renderer = createRenderer()
+
     const wrapper = shallowMount(AccountSettings)
-    expect(wrapper).toMatchSnapshot()
+    renderer.renderToString(wrapper.vm, (err, str) => {
+      if (err) throw new Error(err)
+      expect(str).toMatchSnapshot()
+    })
   })
   it('should have the pannel content class', () => {
     const wrapper = shallowMount(AccountSettings)

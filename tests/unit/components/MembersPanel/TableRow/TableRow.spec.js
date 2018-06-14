@@ -1,4 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
+import { createRenderer } from 'vue-server-renderer'
 import { TableRow } from '@/components/MembersPanel'
 
 import TipeProfileImage from '@/components/ProfileImage'
@@ -7,12 +8,16 @@ import Seperator from '@/components/Seperator'
 
 describe('TableRow.vue', () => {
   it('renders', () => {
+    const renderer = createRenderer()
     const wrapper = shallowMount(TableRow, {
       propsData: {
         member
       }
     })
-    expect(wrapper).toMatchSnapshot()
+    renderer.renderToString(wrapper.vm, (err, str) => {
+      if (err) throw new Error(err)
+      expect(str).toMatchSnapshot()
+    })
   })
   it('should pass the correct member prop', () => {
     const wrapper = shallowMount(TableRow, {
