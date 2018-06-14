@@ -28,21 +28,16 @@ export default {
   },
   render: function(createElement) {
     const computedMessage = () => {
-      var message = ''
       switch (this.status) {
         case 'error':
-          message = this.errorMessage
-          break
+          return this.errorMessage
         case 'warning':
-          message = this.warningMessage
-          break
+          return this.warningMessage
         case 'success':
-          message = this.successMessage
-          break
+          return this.successMessage
         default:
-          message = ''
+          return ''
       }
-      return message
     }
 
     const divOptions = {
