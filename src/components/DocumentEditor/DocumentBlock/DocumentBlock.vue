@@ -75,7 +75,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-[data-tipe-ui='TipeDocumentBlockContainer'] {
+[data-tipe-ui='TipeDocumentBlock'] {
   display: grid;
   grid-template-areas:
     'grab-handle name'
@@ -114,35 +114,35 @@ export default {
   font-size: 0.8125rem;
 }
 
-[data-tipe-ui='TipeDocumentBlockContainer'].status-success {
+[data-tipe-ui='TipeDocumentBlock'].status-success {
   border: 1px solid var(--success);
 }
 
-[data-tipe-ui='TipeDocumentBlockContainer'].status-warning {
+[data-tipe-ui='TipeDocumentBlock'].status-warning {
   border: 1px solid var(--warning);
 }
 
-[data-tipe-ui='TipeDocumentBlockContainer'].status-error {
+[data-tipe-ui='TipeDocumentBlock'].status-error {
   border: 1px solid var(--danger);
 }
 
-[data-tipe-ui='TipeDocumentBlockContainer'].status-success .message {
+[data-tipe-ui='TipeDocumentBlock'].status-success .message {
   color: var(--success);
 }
 
-[data-tipe-ui='TipeDocumentBlockContainer'].status-warning .message {
+[data-tipe-ui='TipeDocumentBlock'].status-warning .message {
   color: var(--warning);
 }
 
-[data-tipe-ui='TipeDocumentBlockContainer'].status-error .message {
+[data-tipe-ui='TipeDocumentBlock'].status-error .message {
   color: var(--danger);
 }
 
-[data-tipe-ui='TipeDocumentBlockContainer'].waiting {
+[data-tipe-ui='TipeDocumentBlock'].waiting {
   cursor: wait;
 }
 
-[data-tipe-ui='TipeDocumentBlockContainer'].disabled {
+[data-tipe-ui='TipeDocumentBlock'].disabled {
   cursor: not-allowed;
 }
 </style>
