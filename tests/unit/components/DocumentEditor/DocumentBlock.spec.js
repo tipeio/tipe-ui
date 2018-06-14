@@ -1,6 +1,8 @@
 import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
-import DocumentBlock from '@/components/DocumentEditor/DocumentBlock/DocumentBlock'
+import DocumentBlock from '@/components/DocumentEditor/DocumentBlock'
+import DocumentBlockNameInput from '@/components/DocumentEditor/DocumentBlock/DocumentBlockNameInput'
+import DocumentBlockValueInputStub from '../../stubs/DocumentBlockValueInputStub'
 import documentBlockFixture from '@/fixtures/DocumentBlock'
 import documentBlockMock from '@/mocks/DocumentBlock'
 import faker from 'faker'
@@ -24,14 +26,21 @@ describe('DocumentBlock', () => {
 
       expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeDocumentBlock')
     })
+
+    it('contains a DocumentBlockNameInput component', () => {
+      const propsData = documentBlockMock()
+      const wrapper = shallowMount(DocumentBlock, { propsData })
+
+      expect(wrapper.contains(DocumentBlockNameInput)).toEqual(true)
+    })
   })
 
   describe(':props', () => {
-    it(':name - should pass name to name input element value prop', () => {
+    it(':name - should pass name to DocumentBlockNameInput component value prop', () => {
       const propsData = documentBlockMock()
 
       const wrapper = shallowMount(DocumentBlock, { propsData })
-      expect(wrapper.find('input[name="name"]').element.value).toEqual(
+      expect(wrapper.find(DocumentBlockNameInput).props().value).toEqual(
         propsData.name
       )
     })
@@ -65,6 +74,13 @@ describe('DocumentBlock', () => {
       expect(wrapper.classes()).toContain('status-error')
     })
 
+    it(':waiting - should pass waiting to DocumentBlockNameInput component', () => {
+      const propsData = documentBlockMock({ waiting: true })
+      const wrapper = shallowMount(DocumentBlock, { propsData })
+
+      expect(wrapper.find(DocumentBlockNameInput).props().waiting).toEqual(true)
+    })
+
     it(':waiting(false) - no waiting class', () => {
       const propsData = documentBlockMock({ waiting: false })
       const wrapper = shallowMount(DocumentBlock, { propsData })
@@ -79,40 +95,46 @@ describe('DocumentBlock', () => {
       expect(wrapper.classes()).toContain('waiting')
     })
 
-    it(':waiting(true) - name input has disabled attribute', () => {
-      const propsData = documentBlockMock({ waiting: true })
-      const wrapper = shallowMount(DocumentBlock, { propsData })
-
-      expect(wrapper.find('input').attributes().disabled).toBeTruthy()
-    })
-
-    it(':disabled(false) - no disabled attribute', () => {
-      const propsData = documentBlockMock({ disabled: false, waiting: false })
-      const wrapper = shallowMount(DocumentBlock, { propsData })
-
-      expect(wrapper.find('input').attributes().disabled).toBeFalsy()
-    })
-
-    it(':disabled(true) - has disabled attribute', () => {
+    it(':disabled - should pass disabled to DocumentBlockNameInput component', () => {
       const propsData = documentBlockMock({ disabled: true })
       const wrapper = shallowMount(DocumentBlock, { propsData })
 
-      expect(wrapper.find('input').attributes().disabled).toBeTruthy()
+      expect(wrapper.find(DocumentBlockNameInput).props().disabled).toEqual(
+        true
+      )
     })
   })
 
   describe('@events', () => {
-    it('<input name="name" @change> - should emit change', () => {
+    it('@change - should emit change when name changed', () => {
       const propsData = documentBlockMock({ disabled: false, waiting: false })
-      const wrapper = shallowMount(DocumentBlock, { propsData })
-      const input = wrapper.find('input[name="name"]')
-      const newName = faker.lorem.word()
+      const stubs = { TipeDocumentBlockNameInput: DocumentBlockNameInput }
+      const wrapper = shallowMount(DocumentBlock, { propsData, stubs })
 
-      input.setValue(newName)
-      input.trigger('change')
+      wrapper.find(DocumentBlockNameInput).trigger('change')
 
       expect(wrapper.emitted().change).toBeTruthy()
-      expect(wrapper.emitted().change[0][0]).toMatchObject({ name: newName })
+      expect(wrapper.emitted().change[0][0]).toMatchObject({
+        name: propsData.name
+      })
+    })
+
+    it('@change - should emit change when value changed', () => {
+      const propsData = documentBlockMock({
+        disabled: false,
+        waiting: false,
+        value: faker.lorem.word()
+      })
+      const stubs = {
+        'tipe-document-block-value-input': DocumentBlockValueInputStub
+      }
+      const wrapper = shallowMount(DocumentBlock, { propsData, stubs })
+
+      wrapper.find(DocumentBlockValueInputStub).trigger('change')
+      expect(wrapper.emitted().change).toBeTruthy()
+      expect(wrapper.emitted().change[0][0]).toMatchObject({
+        value: propsData.value
+      })
     })
   })
 })

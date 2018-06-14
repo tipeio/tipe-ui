@@ -7,7 +7,12 @@ storiesOf('DocumentEditor', module)
     components: { TipeDocumentBlock },
     data() {
       return {
-        block: documentBlockMock({ value: true, status: '' })
+        block: documentBlockMock({
+          value: true,
+          status: '',
+          waiting: false,
+          disabled: false
+        })
       }
     },
     template: '<tipe-document-block v-bind="block" />'
@@ -16,7 +21,12 @@ storiesOf('DocumentEditor', module)
     components: { TipeDocumentBlock },
     data() {
       return {
-        block: documentBlockMock({ value: true, status: 'success' })
+        block: documentBlockMock({
+          value: true,
+          status: 'success',
+          waiting: false,
+          disabled: false
+        })
       }
     },
     template: '<tipe-document-block v-bind="block" />'
@@ -25,7 +35,12 @@ storiesOf('DocumentEditor', module)
     components: { TipeDocumentBlock },
     data() {
       return {
-        block: documentBlockMock({ value: true, status: 'warning' })
+        block: documentBlockMock({
+          value: true,
+          status: 'warning',
+          waiting: false,
+          disabled: false
+        })
       }
     },
     template: '<tipe-document-block v-bind="block" />'
@@ -34,7 +49,41 @@ storiesOf('DocumentEditor', module)
     components: { TipeDocumentBlock },
     data() {
       return {
-        block: documentBlockMock({ value: true, status: 'error' })
+        block: documentBlockMock({
+          value: true,
+          status: 'error',
+          waiting: false,
+          disabled: false
+        })
+      }
+    },
+    template: '<tipe-document-block v-bind="block" />'
+  }))
+  .add('waiting', () => ({
+    components: { TipeDocumentBlock },
+    data() {
+      return {
+        block: documentBlockMock({
+          value: true,
+          status: '',
+          waiting: true,
+          disabled: false
+        })
+      }
+    },
+    template: '<tipe-document-block v-bind="block" />'
+  }))
+  .add('disabled', () => ({
+    components: { TipeDocumentBlock },
+    data() {
+      return {
+        block: documentBlockMock({
+          value: true,
+          status: '',
+          waiting: false,
+          disabled: true,
+          name: ''
+        })
       }
     },
     template: '<tipe-document-block v-bind="block" />'

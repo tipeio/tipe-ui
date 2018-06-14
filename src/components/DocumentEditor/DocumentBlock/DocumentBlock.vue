@@ -7,17 +7,22 @@
       <tipe-icon icon="options"/>
     </div>
     <div class="name-container">
-      <input
+      <tipe-document-block-name-input
         :value="name"
-        :disabled="disabled || waiting"
-        name="name"
-        class="name"
-        type="text"
+        :waiting="waiting"
+        :disabled="disabled"
         @change="onChangeName"
-      >
+      />
     </div>
     <div class="input-container">
-      <slot/>
+      <tipe-document-block-value-input
+        :status="status"
+        :value="value"
+        :waiting="waiting"
+        :disabled="disabled"
+        :type="type"
+        @change="onChangeValue"
+      />
     </div>
     <div class="message">{{ message }}</div>
   </div>
@@ -26,18 +31,23 @@
 <script>
 import documentBlockShape from '@/types/DocumentBlock'
 import TipeIcon from '@/components/Icon'
+import TipeDocumentBlockValueInput from './DocumentBlockValueInput'
+import TipeDocumentBlockNameInput from './DocumentBlockNameInput'
 
 export default {
   name: 'TipeDocumentBlock',
   components: {
-    TipeIcon
+    TipeIcon,
+    TipeDocumentBlockValueInput,
+    TipeDocumentBlockNameInput
   },
   props: documentBlockShape,
   computed: {
     rootStyleObject() {
       return {
         [`status-${this.status}`]: this.status,
-        waiting: this.waiting
+        waiting: this.waiting,
+        disabled: this.disabled
       }
     },
     message() {
@@ -56,13 +66,16 @@ export default {
   methods: {
     onChangeName(event) {
       this.$emit('change', { name: event.target.value })
+    },
+    onChangeValue(event) {
+      this.$emit('change', { value: event.target.value })
     }
   }
 }
 </script>
 
 <style lang="postcss" scoped>
-[data-tipe-ui='TipeDocumentBlock'] {
+[data-tipe-ui='TipeDocumentBlockContainer'] {
   display: grid;
   grid-template-areas:
     'grab-handle name'
@@ -92,19 +105,6 @@ export default {
   font-size: 1rem;
 }
 
-.name {
-  border: none;
-  outline: none;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-content: center;
-  justify-content: flex-start;
-}
-
 .input-container {
   grid-area: input;
 }
@@ -114,27 +114,35 @@ export default {
   font-size: 0.8125rem;
 }
 
-[data-tipe-ui='TipeDocumentBlock'].status-success {
+[data-tipe-ui='TipeDocumentBlockContainer'].status-success {
   border: 1px solid var(--success);
 }
 
-[data-tipe-ui='TipeDocumentBlock'].status-warning {
+[data-tipe-ui='TipeDocumentBlockContainer'].status-warning {
   border: 1px solid var(--warning);
 }
 
-[data-tipe-ui='TipeDocumentBlock'].status-error {
+[data-tipe-ui='TipeDocumentBlockContainer'].status-error {
   border: 1px solid var(--danger);
 }
 
-[data-tipe-ui='TipeDocumentBlock'].status-success .message {
+[data-tipe-ui='TipeDocumentBlockContainer'].status-success .message {
   color: var(--success);
 }
 
-[data-tipe-ui='TipeDocumentBlock'].status-warning .message {
+[data-tipe-ui='TipeDocumentBlockContainer'].status-warning .message {
   color: var(--warning);
 }
 
-[data-tipe-ui='TipeDocumentBlock'].status-error .message {
+[data-tipe-ui='TipeDocumentBlockContainer'].status-error .message {
   color: var(--danger);
+}
+
+[data-tipe-ui='TipeDocumentBlockContainer'].waiting {
+  cursor: wait;
+}
+
+[data-tipe-ui='TipeDocumentBlockContainer'].disabled {
+  cursor: not-allowed;
 }
 </style>

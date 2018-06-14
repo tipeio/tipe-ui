@@ -1,11 +1,11 @@
 <template>
-  <div 
-    :data-tipe-ui="$options.name" 
+  <div
+    :data-tipe-ui="$options.name"
     class="wrapper">
     <div class="row">
       <label class="switch">
-        <input 
-          :id="label +'-switch'" 
+        <input
+          :id="label +'-switch'"
           :checked="value"
           :name="name"
           :disabled="disabled"
@@ -14,8 +14,8 @@
         >
         <span class="slider round"/>
       </label>
-      <label 
-        :for="label + '-switch'" 
+      <label
+        :for="label + '-switch'"
         class="label">{{ label }}</label>
     </div>
   </div>

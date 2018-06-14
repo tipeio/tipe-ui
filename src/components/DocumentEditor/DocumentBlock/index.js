@@ -1,1 +1,1 @@
-export { default } from './DocumentBlockContainer'
+export { default } from './DocumentBlock'
