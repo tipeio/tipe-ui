@@ -112,7 +112,7 @@ export default {
   }
 }
 </script>
-<style lang="postcss">
+<style lang="postcss" scoped>
 div {
   display: flex;
   flex-direction: column;
