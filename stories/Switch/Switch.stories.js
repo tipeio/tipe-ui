@@ -49,10 +49,21 @@ storiesOf('Switch', module)
     template:
       '<div :style="style"><tipe-switch label="File Sharing" name="sharing" :value="true" status="warning"/></div>'
   }))
-
   .add('success', () => ({
     components: { TipeSwitch },
     computed: { style },
     template:
       '<div :style="style"><tipe-switch label="File Sharing" name="sharing" :value="true" status="success"/></div>'
+  }))
+  .add('small', () => ({
+    components: { TipeSwitch },
+    computed: { style },
+    template:
+      '<div :style="style"><tipe-switch label="File Sharing" name="sharing" :value="true" size="small" /></div>'
+  }))
+  .add('large', () => ({
+    components: { TipeSwitch },
+    computed: { style },
+    template:
+      '<div :style="style"><tipe-switch label="File Sharing" name="sharing" :value="true" size="large"/></div>'
   }))

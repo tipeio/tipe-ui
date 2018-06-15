@@ -3,7 +3,9 @@
     :data-tipe-ui="$options.name"
     class="wrapper">
     <div class="row">
-      <label class="switch">
+      <label 
+        :class="sizeClass" 
+        class="switch">
         <input
           ref="switch"
           :id="label +'-switch'"
@@ -16,7 +18,9 @@
           @change="onChange"
           @keyup.enter="$refs.switch.click()"
         >
-        <span class="slider round" />
+        <span 
+          :class="sizeClass" 
+          class="slider round"/>
       </label>
       <label
         :for="label + '-switch'"
@@ -40,6 +44,11 @@ export default {
     isDisabled() {
       if (this.waiting || this.disabled) return true
       return false
+    },
+    sizeClass() {
+      return {
+        [this.size]: true
+      }
     }
   },
   methods: {
@@ -92,6 +101,13 @@ export default {
   input {
     display: none;
   }
+
+  &.large {
+    width: 46px;
+    height: 24px;
+  }
+  &.small {
+  }
 }
 
 /* The slider */
@@ -123,6 +139,13 @@ export default {
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
+
+  &.large:before {
+    height: 20px;
+    width: 20px;
+  }
+  &.small:before {
+  }
 }
 
 input:checked {
@@ -131,6 +154,14 @@ input:checked {
     -webkit-transform: translateX(13px);
     -ms-transform: translateX(13px);
     transform: translateX(13px);
+  }
+  & + .slider.large:before {
+    -webkit-transform: translateX(23px);
+    -ms-transform: translateX(23px);
+    transform: translateX(23px);
+  }
+
+  & + .slider.small:before {
   }
 
   & + .slider {
@@ -142,6 +173,11 @@ input:checked {
     top: 0;
     right: 0;
     bottom: 0;
+  }
+  & + .slider.large {
+    width: 46px !important;
+  }
+  & + .slider.small {
   }
 }
 
