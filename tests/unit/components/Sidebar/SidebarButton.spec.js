@@ -1,14 +1,16 @@
 import { shallowMount } from '@vue/test-utils'
+import { createRenderer } from 'vue-server-renderer'
 import SidebarButton from '@/components/Sidebar/SidebarButton.vue'
 import Icon from '@/components/Icon'
 import faker from 'faker'
 
 describe('Sidebar', () => {
   describe('<template>', () => {
-    it('matches previous snapshot', () => {
+    it('matches previous snapshot', async () => {
       const wrapper = shallowMount(SidebarButton)
-
-      expect(wrapper).toMatchSnapshot()
+      await expect(
+        createRenderer().renderToString(wrapper.vm)
+      ).toMatchSnapshot()
     })
 
     it('<root> - has correct data-tipe-iu attibute', () => {
