@@ -14,3 +14,16 @@ exports[`TipeSelect.vue renders 1`] = `
   </div>
 </div>
 `;
+
+exports[`TipeSelect.vue renders without options 1`] = `
+<div data-tipe-ui="TipeSelect" class="select-flex">
+  <label for="Role">Role</label>
+  <div id="Role" tabindex="0" class="select medium">
+    <select>
+      <!---->
+    </select>
+    <div class="fake-select error medium">Please provide select options</div>
+    <!---->
+  </div>
+</div>
+`;
