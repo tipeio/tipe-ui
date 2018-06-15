@@ -30,11 +30,11 @@ storiesOf('Switch', module)
     template:
       '<div :style="style"><tipe-switch label="File Sharing" name="sharing" :value="true"/></div>'
   }))
-  .add('tabable', () => ({
+  .add('not tabable', () => ({
     components: { TipeSwitch },
     computed: { style },
     template:
-      '<div :style="style"><tipe-switch label="File Sharing" name="sharing" :value="true" :tabindex="0"/></div>'
+      '<div :style="style"><tipe-switch label="File Sharing" name="sharing" :value="true" :tabindex="-1"/></div>'
   }))
   .add('error', () => ({
     components: { TipeSwitch },

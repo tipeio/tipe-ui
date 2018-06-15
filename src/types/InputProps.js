@@ -7,5 +7,5 @@ export default {
   waiting: vueTypes.bool.def(false),
   disabled: vueTypes.bool.def(false),
   size: vueTypes.oneOf(['small', 'medium', 'large']).def('medium'),
-  tabindex: vueTypes.number.def(-1)
+  tabindex: vueTypes.number.def(0)
 }

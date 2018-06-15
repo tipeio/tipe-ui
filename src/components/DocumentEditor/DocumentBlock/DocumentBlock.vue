@@ -123,7 +123,7 @@ export default {
 }
 
 [data-tipe-ui='TipeDocumentBlock'].status-error {
-  border: 1px solid var(--danger);
+  border: 1px solid var(--error);
 }
 
 [data-tipe-ui='TipeDocumentBlock'].status-success .message {
@@ -135,7 +135,7 @@ export default {
 }
 
 [data-tipe-ui='TipeDocumentBlock'].status-error .message {
-  color: var(--danger);
+  color: var(--error);
 }
 
 [data-tipe-ui='TipeDocumentBlock'].waiting {
