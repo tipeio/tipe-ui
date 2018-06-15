@@ -3,13 +3,13 @@
 exports[`TipeSelect.vue renders 1`] = `
 <div data-tipe-ui="TipeSelect" class="select-flex">
   <label for="Role">Role</label>
-  <div id="Role" tabindex="0" class="select">
+  <div id="Role" tabindex="0" class="select medium">
     <select>
       <!---->
       <option value="owner">Owner</option>
       <option value="admin">Admin</option>
     </select>
-    <div class="fake-select">Owner</div>
+    <div class="fake-select medium">Owner</div>
     <!---->
   </div>
 </div>
