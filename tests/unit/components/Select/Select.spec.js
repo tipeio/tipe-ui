@@ -197,7 +197,7 @@ describe('TipeSelect.vue', () => {
     wrapper.setData({ open: true, activeIndex: 0 })
     wrapper.vm.enter()
     expect(wrapper.vm.open).toBe(false)
-    expect(wrapper.vm.value).toEqual({ label: 'Owner', value: 'owner' })
+    expect(wrapper.vm.selectedValue).toEqual({ label: 'Owner', value: 'owner' })
     expect(wrapper.vm.activeIndex).toBe(-1)
   })
 })
