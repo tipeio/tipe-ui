@@ -7,6 +7,7 @@
     "test": "vue-cli-service test:unit",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages",
     "precommit": "lint-staged && lint && test"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
     "@storybook/addon-links": "^3.4.4",
     "@storybook/addon-notes": "^3.4.4",
     "@storybook/addons": "^3.4.4",
+    "@storybook/storybook-deployer": "^2.3.0",
     "@storybook/vue": "^3.4.4",
     "@vue/cli-plugin-babel": "^3.0.0-beta.10",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.10",
