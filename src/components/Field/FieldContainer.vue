@@ -77,6 +77,8 @@ label {
   color: #627098;
   font-weight: 500;
   font-size: 0.8125rem;
+  font-weight: bold;
+  letter-spacing: 0.3px;
 }
 
 .message {
