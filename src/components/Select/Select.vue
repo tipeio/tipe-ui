@@ -68,10 +68,10 @@ export default {
       return false
     },
     selectStyle() {
-      const { isDisabled, waiting, size } = this
+      const { isDisabled, waiting, size, status } = this
       return {
         disabled: isDisabled,
-        [status]: true,
+        ...(status && { [status]: true }),
         waiting,
         [size]: true
       }
