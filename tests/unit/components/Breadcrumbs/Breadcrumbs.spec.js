@@ -1,14 +1,16 @@
 import { shallowMount } from '@vue/test-utils'
+import { createRenderer } from 'vue-server-renderer'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BreadcrumbLink from '@/components/Breadcrumbs/BreadcrumbLink.vue'
 import linkMock from '@/mocks/Link'
 
 describe('Breadcrumbs', () => {
   describe('<template>', () => {
-    it('matches previous snapshot', () => {
+    it('matches previous snapshot', async () => {
       const wrapper = shallowMount(Breadcrumbs)
-
-      expect(wrapper).toMatchSnapshot()
+      await expect(
+        createRenderer().renderToString(wrapper.vm)
+      ).toMatchSnapshot()
     })
 
     it('has correct data-tipe-iu attibute', () => {

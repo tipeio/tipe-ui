@@ -1,13 +1,15 @@
+import { createRenderer } from 'vue-server-renderer'
 import { shallowMount } from '@vue/test-utils'
 import Tabs from '@/components/Tabs'
 import TabsMenu from '@/components/Tabs/TabsMenu.vue'
 
 describe('Tabs', () => {
   describe('<template>', () => {
-    it('matches previous snapshot', () => {
+    it('matches previous snapshot', async () => {
       const wrapper = shallowMount(Tabs)
-
-      expect(wrapper).toMatchSnapshot()
+      await expect(
+        createRenderer().renderToString(wrapper.vm)
+      ).toMatchSnapshot()
     })
 
     it('<root> - has correct data-tipe-iu attibute', () => {

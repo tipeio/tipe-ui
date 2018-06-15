@@ -1,15 +1,16 @@
 import { shallowMount } from '@vue/test-utils'
+import { createRenderer } from 'vue-server-renderer'
 import Accordian from '@/components/Accordian'
 import Icon from '@/components/Icon'
 
 describe('Accordian.vue', () => {
-  it('renders', () => {
+  it('matches previous snapshot', async () => {
     const wrapper = shallowMount(Accordian, {
       propsData: {
         text: 'My Stuff'
       }
     })
-    expect(wrapper).toMatchSnapshot()
+    await expect(createRenderer().renderToString(wrapper.vm)).toMatchSnapshot()
   })
   it('should have the content classs', () => {
     const wrapper = shallowMount(Accordian, {

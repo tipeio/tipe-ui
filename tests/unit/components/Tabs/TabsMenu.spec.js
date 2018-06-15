@@ -1,4 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
+import { createRenderer } from 'vue-server-renderer'
 import TabsMenu from '@/components/Tabs/TabsMenu.vue'
 import TabsMenuButton from '@/components/Tabs/TabsMenuButton.vue'
 import tabsMenuButtonMock from '@/mocks/TabsMenuButton'
@@ -6,10 +7,11 @@ import createManyMocks from '@/mocks/createManyMocks'
 
 describe('TabsMenu', () => {
   describe('<template>', () => {
-    it('matches previous snapshot', () => {
+    it('matches previous snapshot', async () => {
       const wrapper = shallowMount(TabsMenu)
-
-      expect(wrapper).toMatchSnapshot()
+      await expect(
+        createRenderer().renderToString(wrapper.vm)
+      ).toMatchSnapshot()
     })
 
     it('<root> - has correct data-tipe-iu attibute', () => {
