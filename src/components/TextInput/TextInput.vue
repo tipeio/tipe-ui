@@ -16,11 +16,16 @@
 </template>
 
 <script>
-import textInputShape from '@/types/TextInput'
+import vueTypes from 'vue-types'
+import inputProps from '@/types/InputProps'
 
 export default {
   name: 'TipeTextInput',
-  props: textInputShape,
+  props: {
+    label: vueTypes.string,
+    placeholder: vueTypes.string,
+    ...inputProps
+  },
   computed: {
     classObject() {
       const { size, status, waiting } = this

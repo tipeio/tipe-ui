@@ -11,7 +11,7 @@ export default {
         slot.componentOptions.propsData = {
           name: this.name,
           ...this.field,
-          status: this.status
+          ...(this.status && { status: this.status })
         }
         return slot
       })
