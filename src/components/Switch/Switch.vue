@@ -5,17 +5,22 @@
     <div class="row">
       <label class="switch">
         <input
+          ref="switch"
           :id="label +'-switch'"
           :checked="value"
           :name="name"
-          :disabled="disabled"
+          :disabled="isDisabled"
+          :tabindex="tabindex"
+          :class="{waiting}"
           type="checkbox"
           @change="onChange"
+          @keyup.enter="$refs.switch.click()"
         >
-        <span class="slider round"/>
+        <span class="slider round" />
       </label>
       <label
         :for="label + '-switch'"
+        :class="status" 
         class="label">{{ label }}</label>
     </div>
   </div>
@@ -23,14 +28,19 @@
 
 <script>
 import vueTypes from 'vue-types'
+import inputProps from '@/types/InputProps'
 
 export default {
   name: 'TipeSwitch',
   props: {
     label: vueTypes.string.isRequired,
-    value: vueTypes.bool.def(false),
-    name: vueTypes.string.isRequired,
-    disabled: vueTypes.bool.def(false)
+    ...inputProps
+  },
+  computed: {
+    isDisabled() {
+      if (this.waiting || this.disabled) return true
+      return false
+    }
   },
   methods: {
     onChange(event) {
@@ -60,6 +70,16 @@ export default {
   color: var(--text-gray);
   font-size: 0.8125rem;
   margin: 0.625rem 0;
+
+  &.error {
+    color: var(--error);
+  }
+  &.success {
+    color: var(--success);
+  }
+  &.warning {
+    color: var(--warning);
+  }
 }
 
 .switch {
@@ -122,6 +142,23 @@ input:checked {
     top: 0;
     right: 0;
     bottom: 0;
+  }
+}
+
+input:disabled {
+  & + .slider {
+    cursor: not-allowed;
+  }
+}
+input.waiting {
+  & + .slider {
+    cursor: wait;
+  }
+}
+
+input:focus {
+  & + .slider {
+    box-shadow: 0 0.25rem 0.875rem 0 rgba(0, 0, 0, 0.1);
   }
 }
 </style>
