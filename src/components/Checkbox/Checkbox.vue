@@ -6,6 +6,7 @@
       class="check-icon" 
       icon="check" />
     <input 
+      ref="checkbox"
       :class="classObject"
       :name="name"
       :data-tipe-ui="$options.name" 
@@ -15,6 +16,7 @@
       :tabindex="tabindex"
       :checked="checked"
       type="checkbox"
+      @keyup.enter="$refs.checkbox.click()"
       @click="inputEmit('click')"
       @blur="inputEmit('blur')"
       @focus="inputEmit('focus')"
@@ -91,7 +93,7 @@ export default {
 .checkbox {
   display: grid;
   grid-template-rows: 1fr;
-  grid-auto-columns: 1fr 1fr;
+  grid-auto-columns: 1fr 2fr;
   grid-auto-flow: column;
   align-items: center;
   z-index: 3;
@@ -106,6 +108,10 @@ export default {
 
 input:disabled {
   cursor: not-allowed;
+}
+
+input:focus {
+  border: solid 1px #6849fc;
 }
 
 input {
