@@ -65,3 +65,9 @@ storiesOf('Select', module)
     template:
       '<div :style="style"><tipe-select label="Role" :options="options" size="large"/></div>'
   }))
+  .add('no options', () => ({
+    components: { TipeSelect },
+    computed: { style },
+    template:
+      '<div :style="style"><tipe-select label="Role" size="large"/></div>'
+  }))

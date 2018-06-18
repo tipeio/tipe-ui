@@ -26,7 +26,7 @@
       </select>
       <div 
         :class="selectStyle"
-        class="fake-select">{{ selectedValue.label || (placeholder || options[0].label) }}</div>
+        class="fake-select">{{ selectedValue.label || (placeholder || options ? options[0].label : 'Please provide select options') }}</div>
       <div 
         v-if="open" 
         class="dropdown">
@@ -68,10 +68,11 @@ export default {
       return false
     },
     selectStyle() {
-      const { isDisabled, waiting, size, status } = this
+      const { isDisabled, waiting, size, status, options } = this
       return {
         disabled: isDisabled,
         ...(status && { [status]: true }),
+        ...(!options && { error: true }),
         waiting,
         [size]: true
       }
@@ -98,13 +99,14 @@ export default {
       else this.activeIndex += 1
     },
     enter() {
-      if (!this.open) {
+      if (!this.options) {
+      } else if (!this.open) {
         this.open = true
-        return
+      } else {
+        this.onChange(this.options[this.activeIndex])
+        this.open = false
+        this.activeIndex = -1
       }
-      this.onChange(this.options[this.activeIndex])
-      this.open = false
-      this.activeIndex = -1
     }
   }
 }
