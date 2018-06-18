@@ -1,8 +1,8 @@
 <template>
   <div class="checkbox">
     <tipe-icon 
-      width="10px" 
-      height="8px" 
+      :width="checkSize.width" 
+      :height="checkSize.height" 
       class="check-icon" 
       icon="check" />
     <input 
@@ -53,6 +53,30 @@ export default {
     isDisabled() {
       if (this.waiting || this.disabled) return true
       return false
+    },
+    checkSize() {
+      switch (this.size) {
+        case 'small':
+          return {
+            height: '6px',
+            width: '8px'
+          }
+        case 'medium':
+          return {
+            height: '8px',
+            width: '10px'
+          }
+        case 'large':
+          return {
+            height: '10px',
+            width: '12px'
+          }
+        default:
+          return {
+            height: '8px',
+            width: '10px'
+          }
+      }
     }
   },
   methods: {
@@ -88,6 +112,17 @@ input {
   border: solid 1px #b5baca;
   grid-row: 1/1;
   grid-column: 1/1;
+
+  &.small {
+    border-radius: 2px;
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+
+  &.large {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
 }
 
 input:checked {

@@ -11,8 +11,19 @@ const props = () => ({
   value: 'Olivia',
   status: 'success'
 })
-storiesOf('Checkbox', module).add('default checkbox', () => ({
-  components: { TipeCheckbox },
-  computed: { style, props },
-  template: '<tipe-checkbox label="Name" />'
-}))
+storiesOf('Checkbox', module)
+  .add('default checkbox', () => ({
+    components: { TipeCheckbox },
+    computed: { style, props },
+    template: '<tipe-checkbox label="Name" />'
+  }))
+  .add('small checkbox', () => ({
+    components: { TipeCheckbox },
+    computed: { style, props },
+    template: '<tipe-checkbox label="Name" size="small" />'
+  }))
+  .add('large checkbox', () => ({
+    components: { TipeCheckbox },
+    computed: { style, props },
+    template: '<tipe-checkbox label="Name" size="large"/>'
+  }))
