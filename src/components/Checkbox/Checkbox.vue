@@ -1,29 +1,42 @@
 <template>
-  <input 
-    :class="classObject"
-    :name="name"
-    :data-tipe-ui="$options.name" 
-    :disabled="isDisabled"
-    :id="label"
-    :placeholder="placeholder" 
-    :value="value" 
-    :tabindex="tabindex"
-    type="checkbox"
-    @click="inputEmit('click')"
-    @blur="inputEmit('blur')"
-    @focus="inputEmit('focus')"
-    @change="inputEmit('change')">
+  <div class="checkbox">
+    <tipe-icon 
+      width="10px" 
+      height="8px" 
+      class="check-icon" 
+      icon="check" />
+    <input 
+      :class="classObject"
+      :name="name"
+      :data-tipe-ui="$options.name" 
+      :disabled="isDisabled"
+      :id="label"
+      :value="value" 
+      :tabindex="tabindex"
+      :checked="checked"
+      type="checkbox"
+      @click="inputEmit('click')"
+      @blur="inputEmit('blur')"
+      @focus="inputEmit('focus')"
+      @change="inputEmit('change')">
+    <label 
+      :for="label" 
+      class="label">{{ label }}</label>
+
+  </div>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
 import inputProps from '@/types/InputProps'
+import TipeIcon from '../Icon'
 
 export default {
   name: 'TipeCheckbox',
+  components: { TipeIcon },
   props: {
     label: vueTypes.string,
-    placeholder: vueTypes.string,
+    checked: vueTypes.bool.def(false),
     ...inputProps
   },
   computed: {
@@ -51,149 +64,39 @@ export default {
 </script>
 
 <style scoped lang="postcss">
+.checkbox {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr 1fr;
+  grid-auto-flow: column;
+  align-items: center;
+  z-index: 3;
+  justify-items: center;
+}
+
+.check-icon {
+  grid-row: 1/1;
+  grid-column: 1/1;
+  z-index: 2;
+}
+
 input {
+  margin: 0;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 4px;
+  border: solid 1px #b5baca;
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+
+input:checked {
+  background-color: #6849fc;
   border: none;
-  border-bottom: #b5baca solid 1px;
+}
+
+.label {
+  letter-spacing: 0.3px;
   color: #1f346c;
-  font-size: 0.875rem;
-  display: flex;
-  width: 100%;
-
-  &:disabled {
-    color: #d4d7d9;
-    cursor: not-allowed;
-    background-color: #fff; // for firefox
-    &::placeholder {
-      color: #d4d7d9;
-    }
-  }
-
-  &.waiting {
-    cursor: wait;
-  }
-
-  &.small {
-    & ::placeholder {
-      color: #b5baca;
-      font-size: 0.75rem;
-    }
-    height: 2.5rem;
-    &:focus {
-      height: calc(2.5rem - 1px);
-      border-bottom: #b5baca solid 2px;
-    }
-    &.success {
-      & input {
-        border-bottom: var(--success) solid 1px;
-        &:focus {
-          height: calc(2.5rem - 1px);
-          border-bottom: var(--success) solid 2px;
-        }
-      }
-    }
-
-    &.error {
-      & input {
-        border-bottom: var(--error) solid 1px;
-        box-shadow: none;
-        &:focus {
-          height: calc(2.5rem - 1px);
-          border-bottom: var(--error) solid 2px;
-        }
-      }
-
-      & label {
-        color: var(--error);
-      }
-
-      & .message {
-        color: var(--error);
-      }
-    }
-
-    &.warning {
-      & input {
-        border-bottom: var(--warning) solid 1px;
-        &:focus {
-          height: calc(2.5rem - 1px);
-          border-bottom: var(--warning) solid 2px;
-        }
-      }
-    }
-  }
-
-  &.medium {
-    & ::placeholder {
-      color: #b5baca;
-      font-size: 0.875rem;
-    }
-    height: 2.6875rem;
-    &:focus {
-      height: calc(2.6875rem - 1px);
-      border-bottom: #b5baca solid 2px;
-    }
-    &.success {
-      border-bottom: var(--success) solid 1px;
-      &:focus {
-        height: calc(2.6875rem - 1px);
-        border-bottom: var(--success) solid 2px;
-      }
-    }
-
-    &.error {
-      border-bottom: var(--error) solid 1px;
-      box-shadow: none;
-      &:focus {
-        height: calc(2.6875rem - 1px);
-        border-bottom: var(--error) solid 2px;
-      }
-    }
-
-    &.warning {
-      border-bottom: var(--warning) solid 1px;
-      &:focus {
-        height: calc(2.6875rem - 1px);
-        border-bottom: var(--warning) solid 2px;
-      }
-    }
-  }
-
-  &.large {
-    & ::placeholder {
-      color: #b5baca;
-      font-size: 1.125rem;
-    }
-
-    height: 3.375rem;
-    &:focus {
-      height: calc(3.375rem - 1px);
-      border-bottom: #b5baca solid 2px;
-    }
-
-    &.success {
-      border-bottom: var(--success) solid 1px;
-      &:focus {
-        height: calc(3.375rem - 1px);
-        border-bottom: var(--success) solid 2px;
-      }
-    }
-
-    &.error {
-      border-bottom: var(--error) solid 1px;
-      box-shadow: none;
-      &:focus {
-        height: calc(3.375rem- 1px);
-        border-bottom: var(--error) solid 2px;
-      }
-    }
-
-    &.warning {
-      border-bottom: var(--warning) solid 1px;
-      &:focus {
-        height: calc(3.375rem - 1px);
-        border-bottom: var(--warning) solid 2px;
-      }
-    }
-  }
 }
 </style>
