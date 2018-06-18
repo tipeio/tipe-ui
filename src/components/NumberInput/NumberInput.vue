@@ -220,7 +220,7 @@ input {
   grid-area: input;
   -moz-appearance: textfield;
   outline: none;
-  background-color: transparent;
+  background-color: #fff;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -233,6 +233,13 @@ input {
   box-sizing: border-box;
   padding: 0.1875rem 0.8125rem;
   text-align: center;
+  color: var(--dark-purple);
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 button {
@@ -244,7 +251,7 @@ button {
   margin: 0;
   padding: 0;
   outline: none;
-  background-color: transparent;
+  background-color: #f7f8fb;
   box-sizing: border-box;
   border: none;
   border-left: 1px solid var(--gray-light);
@@ -259,11 +266,5 @@ button:first-of-type {
 button:last-of-type {
   grid-area: down;
   border-bottom-right-radius: 0.25rem;
-}
-
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 </style>
