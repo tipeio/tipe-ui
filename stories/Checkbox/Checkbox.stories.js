@@ -27,3 +27,18 @@ storiesOf('Checkbox', module)
     computed: { style, props },
     template: '<tipe-checkbox label="Name" size="large"/>'
   }))
+  .add('success checkbox', () => ({
+    components: { TipeCheckbox },
+    computed: { style, props },
+    template: '<tipe-checkbox label="Name" status="success"/>'
+  }))
+  .add('warning checkbox', () => ({
+    components: { TipeCheckbox },
+    computed: { style, props },
+    template: '<tipe-checkbox label="Name" status="warning"/>'
+  }))
+  .add('error checkbox', () => ({
+    components: { TipeCheckbox },
+    computed: { style, props },
+    template: '<tipe-checkbox label="Name" status="error"/>'
+  }))

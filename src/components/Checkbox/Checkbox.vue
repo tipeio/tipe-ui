@@ -21,7 +21,7 @@
       @change="inputEmit('change')">
     <label 
       :for="label" 
-      class="label">{{ label }}</label>
+      class="label" >{{ label }}</label>
 
   </div>
 </template>
@@ -41,7 +41,7 @@ export default {
   },
   computed: {
     classObject() {
-      const { size, status, waiting } = this
+      const { size, waiting, status } = this
       return {
         [size]: true,
         success: status === 'success',
@@ -123,11 +123,33 @@ input {
     width: 1.125rem;
     height: 1.125rem;
   }
+  &.success {
+    border: solid 1px var(--success);
+  }
+
+  &.warning {
+    border: solid 1px var(--warning);
+  }
+
+  &.error {
+    border: solid 1px var(--error);
+  }
 }
 
 input:checked {
   background-color: #6849fc;
   border: none;
+  &.success {
+    border: solid 1px var(--success);
+  }
+
+  &.warning {
+    border: solid 1px var(--warning);
+  }
+
+  &.error {
+    border: solid 1px var(--error);
+  }
 }
 
 .label {
