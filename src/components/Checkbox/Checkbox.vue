@@ -104,6 +104,10 @@ export default {
   z-index: 2;
 }
 
+input:disabled {
+  cursor: not-allowed;
+}
+
 input {
   margin: 0;
   width: 0.9375rem;
@@ -133,6 +137,10 @@ input {
 
   &.error {
     border: solid 1px var(--error);
+  }
+
+  &.waiting {
+    cursor: wait;
   }
 }
 
