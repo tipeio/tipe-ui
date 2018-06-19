@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox <template> matches previous snapshot 1`] = `
+<div data-tipe-ui="TipeCheckbox" class="checkbox medium">
+  <TipeIcon-stub class="check-icon"></TipeIcon-stub>
+  <input name="" id="Javascript" tabindex="0" type="checkbox">
+  <label for="Javascript" class="label">Javascript</label>
+</div>
+`;

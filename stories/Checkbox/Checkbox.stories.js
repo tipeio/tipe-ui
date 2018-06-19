@@ -47,3 +47,8 @@ storiesOf('Checkbox', module)
     computed: { style },
     template: '<tipe-checkbox label="JavaScript" :disabled="true"/>'
   }))
+  .add('checked checkbox', () => ({
+    components: { TipeCheckbox },
+    computed: { style },
+    template: '<tipe-checkbox label="JavaScript" :checked="true"/>'
+  }))

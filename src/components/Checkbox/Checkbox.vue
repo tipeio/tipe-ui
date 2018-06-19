@@ -1,5 +1,8 @@
 <template>
-  <div class="checkbox">
+  <div 
+    :class="classObject" 
+    :data-tipe-ui="$options.name" 
+    class="checkbox">
     <tipe-icon 
       :width="checkSize.width" 
       :height="checkSize.height" 
@@ -7,9 +10,7 @@
       icon="check" />
     <input 
       ref="checkbox"
-      :class="classObject"
       :name="name"
-      :data-tipe-ui="$options.name" 
       :disabled="isDisabled"
       :id="label"
       :value="value" 
@@ -45,9 +46,9 @@ export default {
       const { size, waiting, status } = this
       return {
         [size]: true,
-        success: status === 'success',
-        error: status === 'error',
-        warning: status === 'warning',
+        'status-success': status === 'success',
+        'status-error': status === 'error',
+        'status-warning': status === 'warning',
         waiting
       }
     },
@@ -121,30 +122,43 @@ input {
   border: solid 1px #b5baca;
   grid-row: 1/1;
   grid-column: 1/1;
+}
 
-  &.small {
+.small {
+  & input {
     border-radius: 2px;
     width: 0.625rem;
     height: 0.625rem;
   }
+}
 
-  &.large {
+.large {
+  & input {
     width: 1.125rem;
     height: 1.125rem;
   }
-  &.success {
+}
+.success {
+  & input {
     border: solid 1px var(--success);
   }
+}
 
-  &.warning {
+.warning {
+  & input {
     border: solid 1px var(--warning);
   }
+}
 
-  &.error {
+.error {
+  & input {
     border: solid 1px var(--error);
   }
+}
 
-  &.waiting {
+.waiting {
+  cursor: wait;
+  & input {
     cursor: wait;
   }
 }
