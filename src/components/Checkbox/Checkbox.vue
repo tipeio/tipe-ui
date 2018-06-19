@@ -24,7 +24,6 @@
     <label 
       :for="label" 
       class="label" >{{ label }}</label>
-
   </div>
 </template>
 
@@ -96,7 +95,6 @@ export default {
   grid-auto-columns: 1fr 2fr;
   grid-auto-flow: column;
   align-items: center;
-  z-index: 3;
   justify-items: center;
 }
 
@@ -104,6 +102,7 @@ export default {
   grid-row: 1/1;
   grid-column: 1/1;
   z-index: 2;
+  pointer-events: none;
 }
 
 input:disabled {
