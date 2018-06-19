@@ -12,6 +12,7 @@
     <div
       v-if="open"
       class="panel-container"
+      @click="toggle"
     >
       <slot
         v-bind="$props"
