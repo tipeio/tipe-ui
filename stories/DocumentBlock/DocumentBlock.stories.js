@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/vue'
 import TipeDocumentBlock from '@/components/DocumentEditor/DocumentBlock'
 import documentBlockMock from '@/mocks/DocumentBlock'
 
-storiesOf('DocumentEditor', module)
+storiesOf('DocumentBlock', module)
   .add('status(undefined)', () => ({
     components: { TipeDocumentBlock },
     data() {
