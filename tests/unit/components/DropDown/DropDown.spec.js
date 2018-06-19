@@ -19,5 +19,47 @@ describe('DropDown', () => {
 
       expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeDropDown')
     })
+
+    it('<slot="control"> - renders control slot', () => {
+      const slots = { control: '<div class="control"/>' }
+      const wrapper = shallowMount(DropDown, { slots })
+
+      expect(wrapper.contains('.control')).toEqual(true)
+    })
+
+    it('<slot="panel"> - panel slot not rendered', () => {
+      const slots = { panel: '<div class="panel"/>' }
+      const wrapper = shallowMount(DropDown, { slots })
+
+      expect(wrapper.contains('.panel')).toEqual(false)
+    })
+  })
+
+  describe('@event', () => {
+    it('<slot="control" @click> - should toggle panel', () => {
+      const slots = {
+        control: '<div class="control"/>',
+        panel: '<div class="panel"/>'
+      }
+      const wrapper = shallowMount(DropDown, { slots })
+
+      wrapper.find('.control').trigger('click')
+      expect(wrapper.contains('.panel')).toEqual(true)
+      wrapper.find('.control').trigger('click')
+      expect(wrapper.contains('.panel')).toEqual(false)
+    })
+
+    it('<slot="panel" @click> - should hide panel', () => {
+      const slots = {
+        control: '<div class="control"/>',
+        panel: '<div class="panel"/>'
+      }
+      const wrapper = shallowMount(DropDown, { slots })
+
+      wrapper.find('.control').trigger('click')
+      expect(wrapper.contains('.panel')).toEqual(true)
+      wrapper.find('.panel').trigger('click')
+      expect(wrapper.contains('.panel')).toEqual(false)
+    })
   })
 })

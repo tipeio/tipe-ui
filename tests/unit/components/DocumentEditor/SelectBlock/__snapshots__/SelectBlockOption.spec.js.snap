@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectBlockOption <template> matches previous snapshot 1`] = `
+<button data-tipe-ui="TipeSelectBlockOption">
+  <div class="layout">
+    <div class="icon-container">
+      <div class="icon-box">
+        <TipeIcon-stub></TipeIcon-stub>
+      </div>
+    </div>
+    <div class="label"></div>
+    <div class="description"></div>
+  </div>
+</button>
+`;
