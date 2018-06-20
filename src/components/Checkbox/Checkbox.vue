@@ -3,25 +3,29 @@
     :class="classObject" 
     :data-tipe-ui="$options.name" 
     class="checkbox">
-    <tipe-icon 
-      :width="checkSize.width" 
-      :height="checkSize.height" 
-      class="check-icon" 
-      icon="check" />
-    <input 
-      ref="checkbox"
-      :name="name"
-      :disabled="isDisabled"
-      :id="label"
-      :value="value" 
-      :tabindex="tabindex"
-      :checked="checked"
-      type="checkbox"
-      @keyup.enter="$refs.checkbox.click()"
-      @click="inputEmit('click')"
-      @blur="inputEmit('blur')"
-      @focus="inputEmit('focus')"
-      @change="inputEmit('change')">
+    <div class="check-flex">
+      <div class="check-grid">
+        <tipe-icon 
+          :width="checkSize.width" 
+          :height="checkSize.height" 
+          class="check-icon" 
+          icon="check" />
+        <input 
+          ref="checkbox"
+          :name="name"
+          :disabled="isDisabled"
+          :id="label"
+          :value="value" 
+          :tabindex="tabindex"
+          :checked="checked"
+          type="checkbox"
+          @keyup.enter="$refs.checkbox.click()"
+          @click="inputEmit('click')"
+          @blur="inputEmit('blur')"
+          @focus="inputEmit('focus')"
+          @change="inputEmit('change')">
+      </div>
+    </div>
     <label 
       :for="label" 
       class="label" >{{ label }}</label>
@@ -91,6 +95,16 @@ export default {
 
 <style scoped lang="postcss">
 .checkbox {
+  display: flex;
+  width: 100%;
+}
+
+.check-flex {
+  display: flex;
+  flex: 0 0 2rem;
+}
+
+.check-grid {
   display: grid;
   grid-template-rows: 1fr;
   grid-auto-columns: 1fr 2fr;
@@ -130,12 +144,20 @@ input {
     width: 0.625rem;
     height: 0.625rem;
   }
+  & .check-flex {
+    display: flex;
+    flex: 0 0 calc(2rem - 0.625rem);
+  }
 }
 
 .large {
   & input {
     width: 1.125rem;
     height: 1.125rem;
+  }
+  & .check-flex {
+    display: flex;
+    flex: 0 0 calc(2rem + 0.1875rem);
   }
 }
 .success {
@@ -182,5 +204,7 @@ input:checked {
 .label {
   letter-spacing: 0.3px;
   color: #1f346c;
+  display: flex;
+  flex: 1 1 auto;
 }
 </style>
