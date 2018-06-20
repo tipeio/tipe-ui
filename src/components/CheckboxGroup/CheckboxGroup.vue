@@ -48,6 +48,8 @@ export default {
 <style scoped lang="postcss">
 .checkbox-group {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 2.9375rem;
 }
 </style>
