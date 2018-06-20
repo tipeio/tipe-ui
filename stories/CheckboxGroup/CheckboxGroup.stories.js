@@ -15,17 +15,25 @@ storiesOf('Checkbox Group', module).add('default checkbox group', () => ({
       options: [
         { label: 'Javascript', value: 'javascript', checked: true },
         { label: 'Python', value: 'python', checked: false }
-      ]
+      ],
+      name: 'languages'
     }
   },
   template: `
       <div :style="style"><tipe-checkbox-group
-      name="Languages"
+      :name="name"
       :options="options"
     >
-      <tipe-checkbox slot-scope="check">
-        {{check.label}}
-      </tipe-checkbox >
+		<template slot-scope="{option}">
+			<tipe-checkbox
+        v-for="option in options"
+        :key="option.value"
+				:name="name"
+				:label="option.label"
+				:value="option.value"
+				:checked="option.checked"
+			/>
+		</template>
     </tipe-checkbox-group></div>
       `
 }))

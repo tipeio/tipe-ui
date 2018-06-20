@@ -1,29 +1,22 @@
 <template>
   <div 
     :data-tipe-ui="$options.name"
+    :name="name"
     class="checkbox-group"
     @click="click" 
     @focus="focus" 
     @change="change" 
     @blur="blur"
   >
-    <tipe-checkbox-container 
-      v-for="option in options" 
-      :option="option" 
-      :key="option.label"
-      :name="name">
-      <slot />
-    </tipe-checkbox-container>
+    <slot />
   </div>
 </template>
 
 <script>
-import TipeCheckboxContainer from './CheckboxContainer'
 import optionShape from '@/types/CheckboxGroup'
 
 export default {
   name: 'TipeCheckboxGroup',
-  components: { TipeCheckboxContainer },
   props: optionShape,
   computed: {
     classObject: function() {

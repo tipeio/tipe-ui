@@ -3,6 +3,5 @@ import checkboxOptions from './CheckboxOptions'
 
 export default {
   name: vueTypes.string.def(''),
-  options: vueTypes.arrayOf(checkboxOptions),
-  value: vueTypes.string.def('')
+  options: vueTypes.arrayOf(checkboxOptions)
 }
