@@ -90,7 +90,7 @@ export default {
 .apiId {
   grid-area: api-id;
   font-size: 0.8125rem;
-  color: var(--mid-purple);
+  color: var(--midPurple);
 }
 
 .apiId-label {

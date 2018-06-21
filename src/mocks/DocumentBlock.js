@@ -14,8 +14,8 @@ export default documentBlock => {
     name: faker.lorem.word(),
     apiId: faker.random.word(),
     description: faker.lorem.sentence(),
-    status: ['success', 'warning', 'error', ''][
-      faker.random.number({ min: 0, max: 2 })
+    status: ['success', 'warning', 'error', undefined][
+      faker.random.number({ min: 0, max: 3 })
     ],
     successMessage: faker.lorem.sentence(),
     errorMessage: faker.lorem.sentence(),

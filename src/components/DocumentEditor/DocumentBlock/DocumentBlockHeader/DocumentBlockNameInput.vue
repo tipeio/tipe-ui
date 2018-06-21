@@ -43,7 +43,7 @@ export default {
   display: flex;
   align-content: center;
   justify-content: flex-start;
-  color: var(--dark-purple);
+  color: var(--darkPurple);
   font-size: 1rem;
   letter-spacing: 0.009375rem;
 }
