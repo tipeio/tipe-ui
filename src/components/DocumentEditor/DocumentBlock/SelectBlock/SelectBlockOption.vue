@@ -51,7 +51,8 @@ export default {
     'icon label'
     'icon description';
   grid-template-row: 1fr 1fr;
-  grid-auto-columns: 3.375rem 1fr;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 0.875rem;
   height: 3.375rem;
 }
 
