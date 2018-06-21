@@ -1,6 +1,8 @@
 <template>
   <tipe-button
-    :size="size"
+    :waiting="waiting"
+    :disabled="disabled"
+    size="small"
     icon-before="plus"
     color="none"
     @click="$emit('click', $event)"

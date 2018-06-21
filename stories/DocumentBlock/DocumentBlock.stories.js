@@ -1,12 +1,15 @@
 import { storiesOf } from '@storybook/vue'
 import TipeDocumentBlock from '@/components/DocumentEditor/DocumentBlock'
+import blockOption from '@/mocks/BlockOption'
 import documentBlockMock from '@/mocks/DocumentBlock'
+import createManyMocks from '@/mocks/createManyMocks'
 
 storiesOf('DocumentBlock', module)
   .add('status(undefined)', () => ({
     components: { TipeDocumentBlock },
     data() {
       return {
+        options: createManyMocks(blockOption, 3),
         block: documentBlockMock({
           value: true,
           status: '',
@@ -15,12 +18,13 @@ storiesOf('DocumentBlock', module)
         })
       }
     },
-    template: '<tipe-document-block v-bind="block" />'
+    template: '<tipe-document-block :block="block" :options="options" />'
   }))
   .add('status(success)', () => ({
     components: { TipeDocumentBlock },
     data() {
       return {
+        options: createManyMocks(blockOption, 3),
         block: documentBlockMock({
           value: true,
           status: 'success',
@@ -29,12 +33,13 @@ storiesOf('DocumentBlock', module)
         })
       }
     },
-    template: '<tipe-document-block v-bind="block" />'
+    template: '<tipe-document-block :block="block" :options="options" />'
   }))
   .add('status(warning)', () => ({
     components: { TipeDocumentBlock },
     data() {
       return {
+        options: createManyMocks(blockOption, 3),
         block: documentBlockMock({
           value: true,
           status: 'warning',
@@ -43,12 +48,13 @@ storiesOf('DocumentBlock', module)
         })
       }
     },
-    template: '<tipe-document-block v-bind="block" />'
+    template: '<tipe-document-block :block="block" :options="options" />'
   }))
   .add('status(error)', () => ({
     components: { TipeDocumentBlock },
     data() {
       return {
+        options: createManyMocks(blockOption, 3),
         block: documentBlockMock({
           value: true,
           status: 'error',
@@ -57,12 +63,13 @@ storiesOf('DocumentBlock', module)
         })
       }
     },
-    template: '<tipe-document-block v-bind="block" />'
+    template: '<tipe-document-block :block="block" :options="options" />'
   }))
   .add('waiting', () => ({
     components: { TipeDocumentBlock },
     data() {
       return {
+        options: createManyMocks(blockOption, 3),
         block: documentBlockMock({
           value: true,
           status: '',
@@ -71,12 +78,13 @@ storiesOf('DocumentBlock', module)
         })
       }
     },
-    template: '<tipe-document-block v-bind="block" />'
+    template: '<tipe-document-block :block="block" :options="options" />'
   }))
   .add('disabled', () => ({
     components: { TipeDocumentBlock },
     data() {
       return {
+        options: createManyMocks(blockOption, 3),
         block: documentBlockMock({
           value: true,
           status: '',
@@ -86,5 +94,5 @@ storiesOf('DocumentBlock', module)
         })
       }
     },
-    template: '<tipe-document-block v-bind="block" />'
+    template: '<tipe-document-block :block="block" :options="options" />'
   }))

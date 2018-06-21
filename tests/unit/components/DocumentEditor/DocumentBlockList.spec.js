@@ -40,7 +40,9 @@ describe('DocumentBlockList', () => {
       const propsData = { blocks: createManyMocks(documentBlockMock, 1) }
       const wrapper = shallowMount(DocumentBlockList, { propsData })
 
-      expect(wrapper.find(DocumentBlock).props()).toEqual(propsData.blocks[0])
+      expect(wrapper.find(DocumentBlock).props().block).toEqual(
+        propsData.blocks[0]
+      )
     })
   })
 })

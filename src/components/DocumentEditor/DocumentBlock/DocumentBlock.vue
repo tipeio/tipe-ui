@@ -2,73 +2,78 @@
   <div
     :data-tipe-ui="$options.name"
     :class="rootStyleObject"
+    @mouseover="hover = true"
+    @mouseout="hover = false"
   >
-    <div class="grab-handle">
-      <tipe-icon icon="options"/>
-    </div>
-    <div class="name-container">
-      <tipe-document-block-name-input
-        :value="name"
-        :waiting="waiting"
-        :disabled="disabled"
-        @change="onChangeName"
+    <div class="margin">
+      <tipe-document-block-margin
+        v-if="hover"
+        :options="options"
+        :waiting="block.waiting"
+        :disabled="block.disabled"
       />
     </div>
-    <div class="input-container">
+    <div class="header">
+      <tipe-document-block-header
+        v-bind="block"
+        @change="value => $emit('change', value)"
+      />
+    </div>
+    <div class="body">
       <tipe-document-block-value-input
-        :status="status"
-        :value="value"
-        :waiting="waiting"
-        :disabled="disabled"
-        :type="type"
-        @change="onChangeValue"
+        :status="block.status"
+        :value="block.value"
+        :waiting="block.waiting"
+        :disabled="block.disabled"
+        :type="block.type"
+        @change="value => $emit('change', value)"
       />
     </div>
-    <div class="message">{{ message }}</div>
+    <div class="footer">
+      <tipe-document-block-message
+        v-if="block.status != ''"
+        :success-message="block.errorMessage"
+        :warning-message="block.errorMessage"
+        :error-message="block.errorMessage"
+        :status="block.status"
+      />
+    </div>
   </div>
 </template>
 
 <script>
+import vueTypes from 'vue-types'
 import documentBlockShape from '@/types/DocumentBlock'
-import TipeIcon from '@/components/Icon'
+import blockOptionShape from '@/types/BlockOption'
 import TipeDocumentBlockValueInput from './DocumentBlockValueInput'
-import TipeDocumentBlockNameInput from './DocumentBlockNameInput'
+import TipeDocumentBlockHeader from './DocumentBlockHeader'
+import TipeDocumentBlockMargin from './DocumentBlockMargin'
+import TipeDocumentBlockMessage from './DocumentBlockMessage'
 
 export default {
   name: 'TipeDocumentBlock',
   components: {
-    TipeIcon,
     TipeDocumentBlockValueInput,
-    TipeDocumentBlockNameInput
+    TipeDocumentBlockHeader,
+    TipeDocumentBlockMargin,
+    TipeDocumentBlockMessage
   },
-  props: documentBlockShape,
+  props: {
+    options: vueTypes.arrayOf(vueTypes.shape(blockOptionShape)),
+    block: vueTypes.shape(documentBlockShape)
+  },
+  data() {
+    return {
+      hover: false
+    }
+  },
   computed: {
     rootStyleObject() {
       return {
-        [`status-${this.status}`]: this.status,
-        waiting: this.waiting,
-        disabled: this.disabled
+        [`status-${this.block.status}`]: this.block.status,
+        waiting: this.block.waiting,
+        disabled: this.block.disabled
       }
-    },
-    message() {
-      switch (this.status) {
-        case 'success':
-          return this.successMessage
-        case 'warning':
-          return this.warningMessage
-        case 'error':
-          return this.errorMessage
-        default:
-          return ''
-      }
-    }
-  },
-  methods: {
-    onChangeName(event) {
-      this.$emit('change', { name: event.target.value })
-    },
-    onChangeValue(event) {
-      this.$emit('change', { value: event.target.value })
     }
   }
 }
@@ -78,64 +83,31 @@ export default {
 [data-tipe-ui='TipeDocumentBlock'] {
   display: grid;
   grid-template-areas:
-    'grab-handle name'
-    'grab-handle input'
-    'grab-handle message';
-  grid-template-columns: 4rem 1fr;
-  grid-template-rows: 1.625rem auto 1rem;
-  grid-row-gap: 0.5625rem;
+    'margin header'
+    'margin body'
+    'margin footer';
+  grid-template-columns: 4.25rem 1fr;
+  grid-template-rows: auto auto auto;
   border-radius: 0.1875rem;
   box-sizing: border-box;
-  padding: 1.3125rem;
-  padding-left: 0;
   width: 100%;
-  min-width: 12rem;
+  min-width: 20rem;
 }
 
-.grab-handle {
-  grid-area: grab-handle;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  cursor: grab;
+.margin {
+  grid-area: margin;
 }
 
-.name-container {
-  grid-area: name;
-  font-size: 1rem;
+.header {
+  grid-area: header;
 }
 
-.input-container {
-  grid-area: input;
+.body {
+  grid-area: body;
 }
 
-.message {
-  grid-area: message;
-  font-size: 0.8125rem;
-}
-
-[data-tipe-ui='TipeDocumentBlock'].status-success {
-  border: 1px solid var(--success);
-}
-
-[data-tipe-ui='TipeDocumentBlock'].status-warning {
-  border: 1px solid var(--warning);
-}
-
-[data-tipe-ui='TipeDocumentBlock'].status-error {
-  border: 1px solid var(--error);
-}
-
-[data-tipe-ui='TipeDocumentBlock'].status-success .message {
-  color: var(--success);
-}
-
-[data-tipe-ui='TipeDocumentBlock'].status-warning .message {
-  color: var(--warning);
-}
-
-[data-tipe-ui='TipeDocumentBlock'].status-error .message {
-  color: var(--error);
+.footer {
+  grid-area: footer;
 }
 
 [data-tipe-ui='TipeDocumentBlock'].waiting {

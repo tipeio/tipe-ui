@@ -1,9 +1,12 @@
 import documentBlockValidation from '@/fixtures/DocumentBlockValidation'
 
 export default documentBlock => ({
-  type: 'simple-text',
+  type: 'SIMPLE_TEXT',
+  label: 'Simple Text',
   value: 'test-value',
   name: 'test-name',
+  apiId: 'test-apiId',
+  description: 'test-description',
   status: '',
   successMessage: '',
   errorMessage: '',

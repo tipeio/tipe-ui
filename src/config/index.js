@@ -13,7 +13,7 @@ export default {
       icon: 'image'
     },
     [BlockTypes.BOOLEAN]: {
-      label: 'switch',
+      label: 'yes/no',
       description: 'block description here',
       icon: 'image'
     },

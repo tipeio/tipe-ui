@@ -4,8 +4,11 @@ import { getBlockTypes } from '@/libs/blocks'
 
 export default {
   type: vueTypes.oneOf(getBlockTypes()).isRequired,
-  name: vueTypes.string,
+  label: vueTypes.string.def(''),
+  name: vueTypes.string.def(''),
+  apiId: vueTypes.string.def(''),
   value: vueTypes.any,
+  description: vueTypes.string.def(''),
   status: vueTypes.oneOf(['success', 'error', 'warning', '']),
   successMessage: vueTypes.string.def(''),
   errorMessage: vueTypes.string.def(''),

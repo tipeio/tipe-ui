@@ -3,7 +3,11 @@
     :disabled="disabled"
     :waiting="waiting"
   >
-    <tipe-select-block-control slot="control" />
+    <tipe-select-block-control
+      slot="control"
+      :waiting="waiting"
+      :disabled="disabled"
+    />
     <tipe-select-block-panel
       slot="panel"
       :options="options"

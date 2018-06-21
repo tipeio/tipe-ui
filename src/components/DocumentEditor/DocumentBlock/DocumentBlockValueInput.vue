@@ -1,13 +1,15 @@
 <template>
-  <component
-    :status="status"
-    :value="value"
-    :waiting="waiting"
-    :disabled="disabled"
-    :is="is"
-    size="large"
-    @change="$emit('change', $event)"
-  />
+  <div :data-tipe-ui="$options.name">
+    <component
+      :status="status"
+      :value="value"
+      :waiting="waiting"
+      :disabled="disabled"
+      :is="is"
+      size="medium"
+      @change="onChange"
+    />
+  </div>
 </template>
 
 <script>
@@ -24,6 +26,17 @@ export default {
     is() {
       return 'tipe-switch'
     }
+  },
+  methods: {
+    onChange(event) {
+      this.$emit('change', { value: event.target.value })
+    }
   }
 }
 </script>
+
+<style lang="postcss" scoped>
+[data-tipe-ui='TipeDocumentBlock'] {
+  padding: 1.5rem 0 1rem 0;
+}
+</style>
