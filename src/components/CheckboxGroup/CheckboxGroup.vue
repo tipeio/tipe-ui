@@ -2,6 +2,9 @@
   <div 
     :data-tipe-ui="$options.name"
     :name="name"
+    :class="classObject"
+    :tabindex="tabindex"
+    :status="status"
     class="checkbox-group"
     @click="click" 
     @focus="focus" 
@@ -13,18 +16,20 @@
 </template>
 
 <script>
-import optionShape from '@/types/CheckboxGroup'
+import checkboxGroupShape from '@/types/CheckboxGroup'
 
 export default {
   name: 'TipeCheckboxGroup',
-  props: optionShape,
+  props: checkboxGroupShape,
   computed: {
     classObject: function() {
-      const { status } = this
+      const { status, waiting, disabled } = this
       return {
-        success: status === 'success',
-        error: status === 'error',
-        warning: status === 'warning'
+        'status-success': status === 'success',
+        'status-error': status === 'error',
+        'status-warning': status === 'warning',
+        waiting,
+        disabled
       }
     }
   },
@@ -51,5 +56,25 @@ export default {
   justify-content: space-between;
   align-items: flex-end;
   height: 2.9375rem;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.waiting {
+  cursor: wait;
+}
+
+.status-success {
+  border: 1px solid var(--success);
+}
+
+.status-error {
+  border: 1px solid var(--error);
+}
+
+.status-warning {
+  border: 1px solid var(--warning);
 }
 </style>

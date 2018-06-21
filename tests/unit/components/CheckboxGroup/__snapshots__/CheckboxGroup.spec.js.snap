@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxGroup.vue renders 1`] = `<div data-tipe-ui="TipeCheckboxGroup" name="languages" class="checkbox-group"></div>`;
