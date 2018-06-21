@@ -242,3 +242,66 @@ Example
 #### tipeTestUtils.tests.inputs.disabled(Input, Query)
 
 #### tipeTestUtils.tests.inputs.events(Input, Query)
+
+### TipeCheckbox
+
+The TipeCheckbox component supports `label`, `checked`, `name`, `value`, `status`, `disabled`, `waiting`, `size`, and `tabindex`.
+
+`label` is used as the `id` on the `<input>` and the `<label>` has a `for` attribute set to the `label` value
+`disabled` defaults to false, if true, the cursor will be set to `not-allowed` and the input won't be interactive
+`checked` defaults to false
+`waiting` defaults to false, if true, the cursor will be set to `wait` and the input won't be interactive
+`value`, and `name` are type string
+`status` is one of `'error', 'success', 'warning', ''`
+`size` is one of `'small', 'medium', 'large'` anf defaults to `medium`
+`tabindex` type number
+
+Emits change, focus, blur, and click events to the parent.
+
+`status` and `size` will add different stylings to the `<input>`
+
+Example
+
+```
+<tipe-checkbox label="Languages" size="large" name="languages" :checked="true" />
+```
+
+### TipeCheckboxGroup
+
+The TipeCheckboxGroup component supports `name`, `tabindex`, `status`, `waiting`, `disabled`, and `options`.
+
+`name` type string
+`disabled` defaults to false, if true, the cursor will be set to `not-allowed` and the input won't be interactive
+`waiting` defaults to false, if true, the cursor will be set to `wait` and the input won't be interactive
+`status` is one of `'error', 'success', 'warning'`
+`tabindex` type number
+`options` and array of objects of the shape:
+
+```
+  {
+    label: vueTypes.string.def(''),
+    checked: vueTypes.bool.def(false),
+    ...inputProps
+  }
+```
+
+Emits change, focus, blur, and click events to the parent.
+
+`status` will add different stylings group
+
+Example
+
+```
+  <tipe-checkbox-group :name="name" :options="options">
+		<template slot-scope="{option}">
+      <tipe-checkbox
+        v-for="option in options"
+        :key="option.value"
+				:name="name"
+				:label="option.label"
+				:value="option.value"
+				:checked="option.checked"
+			/>
+		</template>
+  </tipe-checkbox-group>
+```
