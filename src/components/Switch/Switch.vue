@@ -4,7 +4,7 @@
     class="wrapper">
     <div class="row">
       <label 
-        :class="{[size]: true}" 
+        :class="sizeClass" 
         class="switch">
         <input
           ref="switch"
@@ -44,6 +44,9 @@ export default {
     isDisabled() {
       if (this.waiting || this.disabled) return true
       return false
+    },
+    sizeClass() {
+      return { [this.size]: true }
     }
   },
   methods: {
