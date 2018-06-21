@@ -16,11 +16,16 @@
 </template>
 
 <script>
-import textInputShape from '@/types/TextInput'
+import vueTypes from 'vue-types'
+import inputProps from '@/types/InputProps'
 
 export default {
   name: 'TipeTextInput',
-  props: textInputShape,
+  props: {
+    label: vueTypes.string,
+    placeholder: vueTypes.string,
+    ...inputProps
+  },
   computed: {
     classObject() {
       const { size, status, waiting } = this
@@ -79,39 +84,39 @@ input {
     }
     &.success {
       & input {
-        border-bottom: #16e4a4 solid 1px;
+        border-bottom: var(--success) solid 1px;
         &:focus {
           height: calc(2.5rem - 1px);
-          border-bottom: #16e4a4 solid 2px;
+          border-bottom: var(--success) solid 2px;
         }
       }
     }
 
     &.error {
       & input {
-        border-bottom: #e44646 solid 1px;
+        border-bottom: var(--error) solid 1px;
         box-shadow: none;
         &:focus {
           height: calc(2.5rem - 1px);
-          border-bottom: #e44646 solid 2px;
+          border-bottom: var(--error) solid 2px;
         }
       }
 
       & label {
-        color: #e44646;
+        color: var(--error);
       }
 
       & .message {
-        color: #e44646;
+        color: var(--error);
       }
     }
 
     &.warning {
       & input {
-        border-bottom: #f38438 solid 1px;
+        border-bottom: var(--warning) solid 1px;
         &:focus {
           height: calc(2.5rem - 1px);
-          border-bottom: #f38438 solid 2px;
+          border-bottom: var(--warning) solid 2px;
         }
       }
     }
@@ -128,27 +133,27 @@ input {
       border-bottom: #b5baca solid 2px;
     }
     &.success {
-      border-bottom: #16e4a4 solid 1px;
+      border-bottom: var(--success) solid 1px;
       &:focus {
         height: calc(2.6875rem - 1px);
-        border-bottom: #16e4a4 solid 2px;
+        border-bottom: var(--success) solid 2px;
       }
     }
 
     &.error {
-      border-bottom: #e44646 solid 1px;
+      border-bottom: var(--error) solid 1px;
       box-shadow: none;
       &:focus {
         height: calc(2.6875rem - 1px);
-        border-bottom: #e44646 solid 2px;
+        border-bottom: var(--error) solid 2px;
       }
     }
 
     &.warning {
-      border-bottom: #f38438 solid 1px;
+      border-bottom: var(--warning) solid 1px;
       &:focus {
         height: calc(2.6875rem - 1px);
-        border-bottom: #f38438 solid 2px;
+        border-bottom: var(--warning) solid 2px;
       }
     }
   }
@@ -166,27 +171,27 @@ input {
     }
 
     &.success {
-      border-bottom: #16e4a4 solid 1px;
+      border-bottom: var(--success) solid 1px;
       &:focus {
         height: calc(3.375rem - 1px);
-        border-bottom: #16e4a4 solid 2px;
+        border-bottom: var(--success) solid 2px;
       }
     }
 
     &.error {
-      border-bottom: #e44646 solid 1px;
+      border-bottom: var(--error) solid 1px;
       box-shadow: none;
       &:focus {
         height: calc(3.375rem- 1px);
-        border-bottom: #e44646 solid 2px;
+        border-bottom: var(--error) solid 2px;
       }
     }
 
     &.warning {
-      border-bottom: #f38438 solid 1px;
+      border-bottom: var(--warning) solid 1px;
       &:focus {
         height: calc(3.375rem - 1px);
-        border-bottom: #f38438 solid 2px;
+        border-bottom: var(--warning) solid 2px;
       }
     }
   }

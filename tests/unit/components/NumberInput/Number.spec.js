@@ -1,6 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import NumberInput from '@/components/NumberInput'
+import tipeTestUtils from '~/tests/TipeTestUtils'
 import faker from 'faker'
 
 describe('NumberInput', () => {
@@ -39,115 +40,34 @@ describe('NumberInput', () => {
       expect(wrapper.findAll('button')).toHaveLength(2)
     })
   })
-
   describe(':props', () => {
     it(':value - should pass value input element', () => {
       const propsData = { value: faker.random.number() }
       const wrapper = shallowMount(NumberInput, { propsData })
-
       expect(wrapper.find('input').element.value).toEqual(`${propsData.value}`)
     })
+
+    tipeTestUtils.test.input.size(NumberInput)
+
+    tipeTestUtils.test.input.status(NumberInput)
+
+    tipeTestUtils.test.input.disabled(NumberInput, wrapper =>
+      wrapper.find('input')
+    )
 
     it(':placeholder - should pass placeholder to input', () => {
       const propsData = { placeholder: 'number here' }
       const wrapper = shallowMount(NumberInput, { propsData })
-
       expect(wrapper.find('input').attributes().placeholder).toEqual(
         `${propsData.placeholder}`
       )
     })
 
-    it(':status(undefined) - no status class ', () => {
-      const wrapper = shallowMount(NumberInput)
-      expect(wrapper.classes()).not.toEqual(
-        expect.arrayContaining([expect.stringMatching(/status-/)])
-      )
-    })
-
-    it(':size(undefined) - has medium class ', () => {
-      const wrapper = shallowMount(NumberInput)
-      expect(wrapper.classes()).toContain('medium')
-    })
-
-    it(':size(small) - has small class ', () => {
-      const propsData = { size: 'small' }
-
-      const wrapper = shallowMount(NumberInput, { propsData })
-      expect(wrapper.classes()).toContain('small')
-    })
-
-    it(':size(medium) - has medium class ', () => {
-      const propsData = { size: 'medium' }
-
-      const wrapper = shallowMount(NumberInput, { propsData })
-      expect(wrapper.classes()).toContain('medium')
-    })
-
-    it(':size(large) - has large class ', () => {
-      const propsData = { size: 'large' }
-
-      const wrapper = shallowMount(NumberInput, { propsData })
-      expect(wrapper.classes()).toContain('large')
-    })
-
-    it(':status(success) - has status-success class', () => {
-      const propsData = { status: 'success' }
-      const wrapper = shallowMount(NumberInput, { propsData })
-
-      expect(wrapper.classes()).toContain('status-success')
-    })
-
-    it(':status(error) - has status-error class', () => {
-      const propsData = { status: 'error' }
-      const wrapper = shallowMount(NumberInput, { propsData })
-
-      expect(wrapper.classes()).toContain('status-error')
-    })
-
-    it(':status(warning) - has status-warning class', () => {
-      const propsData = { status: 'error' }
-      const wrapper = shallowMount(NumberInput, { propsData })
-
-      expect(wrapper.classes()).toContain('status-error')
-    })
-
-    it(':waiting(undefined) - no waiting class', () => {
-      const wrapper = shallowMount(NumberInput)
-
-      expect(wrapper.classes()).not.toEqual(expect.arrayContaining(['waiting']))
-    })
-
-    it(':waiting(true) - has waiting class', () => {
-      const propsData = { waiting: true }
-      const wrapper = shallowMount(NumberInput, { propsData })
-
-      expect(wrapper.classes()).toContain('waiting')
-    })
+    tipeTestUtils.test.input.waiting(NumberInput)
 
     it(':waiting(true) - has disabled attribute', () => {
       const propsData = { disabled: true }
       const wrapper = shallowMount(NumberInput, { propsData })
-
-      expect(wrapper.find('input').attributes().disabled).toBeTruthy()
-      expect(wrapper.find('button').attributes().disabled).toBeTruthy()
-      expect(
-        wrapper
-          .findAll('button')
-          .at(1)
-          .attributes().disabled
-      ).toBeTruthy()
-    })
-
-    it(':disabled(undefined) - no disabled attribute', () => {
-      const wrapper = shallowMount(NumberInput)
-
-      expect(wrapper.attributes().disabled).toBeFalsy()
-    })
-
-    it(':disabled(true) - has disabled attribute', () => {
-      const propsData = { disabled: true }
-      const wrapper = shallowMount(NumberInput, { propsData })
-
       expect(wrapper.find('input').attributes().disabled).toBeTruthy()
       expect(wrapper.find('button').attributes().disabled).toBeTruthy()
       expect(
@@ -161,7 +81,6 @@ describe('NumberInput', () => {
     it(':step - passed to input step attribue', () => {
       const propsData = { step: faker.random.number() }
       const wrapper = shallowMount(NumberInput, { propsData })
-
       expect(wrapper.find('input').attributes().step).toEqual(
         `${propsData.step}`
       )
@@ -170,14 +89,12 @@ describe('NumberInput', () => {
     it(':max - passed to input max attribue', () => {
       const propsData = { max: faker.random.number() }
       const wrapper = shallowMount(NumberInput, { propsData })
-
       expect(wrapper.find('input').attributes().max).toEqual(`${propsData.max}`)
     })
 
     it(':min - passed to input max attribue', () => {
       const propsData = { min: faker.random.number() }
       const wrapper = shallowMount(NumberInput, { propsData })
-
       expect(wrapper.find('input').attributes().min).toEqual(`${propsData.min}`)
     })
   })

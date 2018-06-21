@@ -3,19 +3,28 @@
     :data-tipe-ui="$options.name"
     class="wrapper">
     <div class="row">
-      <label class="switch">
+      <label 
+        :class="{[size]: true}" 
+        class="switch">
         <input
+          ref="switch"
           :id="label +'-switch'"
           :checked="value"
           :name="name"
-          :disabled="disabled"
+          :disabled="isDisabled"
+          :tabindex="tabindex"
+          :class="{waiting}"
           type="checkbox"
           @change="onChange"
+          @keyup.enter="$refs.switch.click()"
         >
-        <span class="slider round"/>
+        <span 
+          :class="sizeClass" 
+          class="slider round"/>
       </label>
       <label
         :for="label + '-switch'"
+        :class="status" 
         class="label">{{ label }}</label>
     </div>
   </div>
@@ -23,14 +32,19 @@
 
 <script>
 import vueTypes from 'vue-types'
+import inputProps from '@/types/InputProps'
 
 export default {
   name: 'TipeSwitch',
   props: {
     label: vueTypes.string.isRequired,
-    value: vueTypes.bool.def(false),
-    name: vueTypes.string.isRequired,
-    disabled: vueTypes.bool.def(false)
+    ...inputProps
+  },
+  computed: {
+    isDisabled() {
+      if (this.waiting || this.disabled) return true
+      return false
+    }
   },
   methods: {
     onChange(event) {
@@ -60,6 +74,16 @@ export default {
   color: var(--text-gray);
   font-size: 0.8125rem;
   margin: 0.625rem 0;
+
+  &.error {
+    color: var(--error);
+  }
+  &.success {
+    color: var(--success);
+  }
+  &.warning {
+    color: var(--warning);
+  }
 }
 
 .switch {
@@ -71,6 +95,13 @@ export default {
   /* Hide default HTML checkbox */
   input {
     display: none;
+  }
+
+  &.large {
+    width: 46px;
+    height: 24px;
+  }
+  &.small {
   }
 }
 
@@ -103,6 +134,13 @@ export default {
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
+
+  &.large:before {
+    height: 20px;
+    width: 20px;
+  }
+  &.small:before {
+  }
 }
 
 input:checked {
@@ -111,6 +149,14 @@ input:checked {
     -webkit-transform: translateX(13px);
     -ms-transform: translateX(13px);
     transform: translateX(13px);
+  }
+  & + .slider.large:before {
+    -webkit-transform: translateX(23px);
+    -ms-transform: translateX(23px);
+    transform: translateX(23px);
+  }
+
+  & + .slider.small:before {
   }
 
   & + .slider {
@@ -122,6 +168,28 @@ input:checked {
     top: 0;
     right: 0;
     bottom: 0;
+  }
+  & + .slider.large {
+    width: 46px !important;
+  }
+  & + .slider.small {
+  }
+}
+
+input:disabled {
+  & + .slider {
+    cursor: not-allowed;
+  }
+}
+input.waiting {
+  & + .slider {
+    cursor: wait;
+  }
+}
+
+input:focus {
+  & + .slider {
+    box-shadow: 0 0.25rem 0.875rem 0 rgba(0, 0, 0, 0.1);
   }
 }
 </style>

@@ -86,29 +86,29 @@ label {
 }
 .warning {
   & label {
-    color: #f38438;
+    color: var(--warning);
   }
 
   & .message {
-    color: #f38438;
+    color: var(--warning);
   }
 }
 .success {
   & label {
-    color: #16e4a4;
+    color: var(--success);
   }
 
   & .message {
-    color: #16e4a4;
+    color: var(--success);
   }
 }
 .error {
   & label {
-    color: #e44646;
+    color: var(--error);
   }
 
   & .message {
-    color: #e44646;
+    color: var(--error);
   }
 }
 </style>

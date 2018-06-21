@@ -8,10 +8,11 @@
     <label :for="label">{{ label }}</label>
     <div 
       :id="label" 
+      :class="{[size]: true}"
+      :tabindex="tabindex"
       class="select"
-      tabindex="0"
       v-on="disabled ? {} : { click: onClick }">
-      <select :disabled="disabled">
+      <select :disabled="isDisabled">
         <option 
           v-if="placeholder"
           :selected="true"
@@ -19,13 +20,13 @@
         <option 
           v-for="option in options"
           :value="option.value" 
-          :selected="value.value === option.value"
+          :selected="selectedValue.value === option.value"
           :key="option.value"
         >{{ option.label }}</option>
       </select>
       <div 
-        :class="{disabled}" 
-        class="fake-select">{{ value.label || (placeholder || options[0].label) }}</div>
+        :class="selectStyle"
+        class="fake-select">{{ selectedValue.label || (placeholder || options ? options[0].label : 'Please provide select options') }}</div>
       <div 
         v-if="open" 
         class="dropdown">
@@ -43,6 +44,7 @@
 
 <script>
 import vueTypes from 'vue-types'
+import inputProps from '@/types/InputProps'
 import SelectOptionShape from '@/types/SelectOptionShape'
 
 export default {
@@ -51,13 +53,29 @@ export default {
     label: vueTypes.string.isRequired,
     placeholder: vueTypes.string,
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
-    disabled: vueTypes.bool.def(false)
+    ...inputProps
   },
   data() {
     return {
       open: false,
-      value: {},
+      selectedValue: {},
       activeIndex: -1
+    }
+  },
+  computed: {
+    isDisabled() {
+      if (this.waiting || this.disabled) return true
+      return false
+    },
+    selectStyle() {
+      const { isDisabled, waiting, size, status, options } = this
+      return {
+        disabled: isDisabled,
+        ...(status && { [status]: true }),
+        ...(!options && { error: true }),
+        waiting,
+        [size]: true
+      }
     }
   },
   methods: {
@@ -65,7 +83,7 @@ export default {
       this.open = !this.open
     },
     onChange(val) {
-      this.value = val
+      this.selectedValue = val
       this.$emit('change', val)
     },
     keyup() {
@@ -81,13 +99,14 @@ export default {
       else this.activeIndex += 1
     },
     enter() {
-      if (!this.open) {
+      if (!this.options) {
+      } else if (!this.open) {
         this.open = true
-        return
+      } else {
+        this.onChange(this.options[this.activeIndex])
+        this.open = false
+        this.activeIndex = -1
       }
-      this.onChange(this.options[this.activeIndex])
-      this.open = false
-      this.activeIndex = -1
     }
   }
 }
@@ -110,6 +129,14 @@ export default {
   max-width: 100%;
   position: relative;
   vertical-align: top;
+
+  &.small {
+    height: 2.5rem;
+  }
+
+  &.large {
+    height: 4.5rem;
+  }
 
   &:focus {
     & .fake-select {
@@ -154,10 +181,32 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+
+    &.success {
+      border-bottom: 1px solid var(--success);
+    }
+    &.error {
+      border-bottom: 1px solid var(--error);
+    }
+    &.warning {
+      border-bottom: 1px solid var(--warning);
+    }
+
+    &.small {
+      height: 2rem;
+    }
+
+    &.large {
+      height: 4em;
+    }
   }
 
   & .disabled {
     cursor: not-allowed;
+  }
+
+  & .waiting {
+    cursor: wait;
   }
 }
 

@@ -183,7 +183,7 @@ export default {
 }
 
 [data-tipe-ui='TipeNumberInput'].status-error {
-  border: 1px solid var(--danger);
+  border: 1px solid var(--error);
 }
 
 [data-tipe-ui='TipeNumberInput'].status-warning {

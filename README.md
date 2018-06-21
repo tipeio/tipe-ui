@@ -222,3 +222,23 @@ Example
 ```
 <tipe-field :label="field.label" name="firstName" :field="field"><tipe-text-input /></tipe-field>
 ```
+
+## TipeTestUtils
+
+### Parameters
+
+#### Input: VueComponent
+
+#### Query: (wrapper) => wrapper
+
+### Methods
+
+#### tipeTestUtils.tests.inputs.size(Input)
+
+#### tipeTestUtils.tests.inputs.status(Input)
+
+#### tipeTestUtils.tests.inputs.waiting(Input)
+
+#### tipeTestUtils.tests.inputs.disabled(Input, Query)
+
+#### tipeTestUtils.tests.inputs.events(Input, Query)

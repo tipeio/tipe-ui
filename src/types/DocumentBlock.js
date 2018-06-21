@@ -1,9 +1,9 @@
 import vueTypes from 'vue-types'
 import DocumentBlockValidation from '@/types/DocumentBlockValidation'
-import blockTypes from '@/types/BlockTypes'
+import { getBlockTypes } from '@/libs/blocks'
 
 export default {
-  type: vueTypes.oneOf(blockTypes).isRequired,
+  type: vueTypes.oneOf(getBlockTypes()).isRequired,
   name: vueTypes.string,
   value: vueTypes.any,
   status: vueTypes.oneOf(['success', 'error', 'warning', '']),

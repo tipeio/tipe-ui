@@ -197,7 +197,19 @@ describe('TipeSelect.vue', () => {
     wrapper.setData({ open: true, activeIndex: 0 })
     wrapper.vm.enter()
     expect(wrapper.vm.open).toBe(false)
-    expect(wrapper.vm.value).toEqual({ label: 'Owner', value: 'owner' })
+    expect(wrapper.vm.selectedValue).toEqual({ label: 'Owner', value: 'owner' })
     expect(wrapper.vm.activeIndex).toBe(-1)
+  })
+  it('renders without options', () => {
+    const renderer = createRenderer()
+    const wrapper = shallowMount(TipeSelect, {
+      propsData: {
+        label: 'Role'
+      }
+    })
+    renderer.renderToString(wrapper.vm, (err, str) => {
+      if (err) throw new Error(err)
+      expect(str).toMatchSnapshot()
+    })
   })
 })

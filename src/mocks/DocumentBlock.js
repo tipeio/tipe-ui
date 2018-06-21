@@ -1,9 +1,11 @@
 import faker from 'faker'
-import blockTypes from '@/types/BlockTypes'
+import { getBlockTypes } from '@/libs/blocks'
 import documentBlockValidationMock from '@/mocks/DocumentBlockValidation'
 
 export default documentBlock => ({
-  type: blockTypes[faker.random.number({ min: 0, max: blockTypes.length - 1 })],
+  type: getBlockTypes()[
+    faker.random.number({ min: 0, max: getBlockTypes().length - 1 })
+  ],
   value: '',
   name: faker.lorem.word(),
   status: ['success', 'warning', 'error', ''][

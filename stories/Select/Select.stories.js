@@ -29,3 +29,45 @@ storiesOf('Select', module)
     template:
       '<div :style="style"><tipe-select label="Role" :options="options" :disabled="true" /></div>'
   }))
+  .add('success', () => ({
+    components: { TipeSelect },
+    computed: { options, style },
+    template:
+      '<div :style="style"><tipe-select label="Role" :options="options" status="success"/></div>'
+  }))
+  .add('error', () => ({
+    components: { TipeSelect },
+    computed: { options, style },
+    template:
+      '<div :style="style"><tipe-select label="Role" :options="options" status="error" /></div>'
+  }))
+  .add('warning', () => ({
+    components: { TipeSelect },
+    computed: { options, style },
+    template:
+      '<div :style="style"><tipe-select label="Role" :options="options" status="warning"/></div>'
+  }))
+  .add('waiting', () => ({
+    components: { TipeSelect },
+    computed: { options, style },
+    template:
+      '<div :style="style"><tipe-select label="Role" :options="options" :waiting="true"/></div>'
+  }))
+  .add('small', () => ({
+    components: { TipeSelect },
+    computed: { options, style },
+    template:
+      '<div :style="style"><tipe-select label="Role" :options="options" size="small"/></div>'
+  }))
+  .add('large', () => ({
+    components: { TipeSelect },
+    computed: { options, style },
+    template:
+      '<div :style="style"><tipe-select label="Role" :options="options" size="large"/></div>'
+  }))
+  .add('no options', () => ({
+    components: { TipeSelect },
+    computed: { style },
+    template:
+      '<div :style="style"><tipe-select label="Role" size="large"/></div>'
+  }))
