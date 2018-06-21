@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DropDown <template> matches previous snapshot 1`] = `
-<div data-tipe-ui="TipeDropDown" tabindex="0">
-  <div></div>
+<div data-tipe-ui="TipeDropDown">
+  <div class="control-container"></div>
+  <!---->
   <!---->
 </div>
 `;
