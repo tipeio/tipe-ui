@@ -25,9 +25,7 @@ export default {
     classObject: function() {
       const { status, waiting, disabled } = this
       return {
-        'status-success': status === 'success',
-        'status-error': status === 'error',
-        'status-warning': status === 'warning',
+        [`status-${status}`]: status,
         waiting,
         disabled
       }
