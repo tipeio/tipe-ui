@@ -43,6 +43,4 @@ describe('DocumentBlockList', () => {
       expect(wrapper.find(DocumentBlock).props()).toEqual(propsData.blocks[0])
     })
   })
-
-  describe('@events', () => {})
 })
