@@ -59,6 +59,4 @@ describe('SelectBlockPanel', () => {
       )
     })
   })
-
-  describe('@events', () => {})
 })

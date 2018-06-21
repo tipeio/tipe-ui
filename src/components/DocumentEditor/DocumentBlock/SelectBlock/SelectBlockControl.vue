@@ -9,7 +9,6 @@
 
 <script>
 import vueTypes from 'vue-types'
-import inputProps from '@/types/InputProps'
 import TipeButton from '@/components/Button'
 
 export default {
@@ -18,8 +17,7 @@ export default {
     TipeButton
   },
   props: {
-    icon: vueTypes.string.def(''),
-    ...inputProps
+    icon: vueTypes.string.def('')
   }
 }
 </script>

@@ -20,6 +20,5 @@ storiesOf('SelectBlock', module)
         options: createManyMocks(blockOptionMock, 6)
       }
     },
-    template:
-      '<tipe-select-block :options="options" @change="onChange" disabled />'
+    template: '<tipe-select-block :options="options" disabled />'
   }))

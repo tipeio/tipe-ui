@@ -78,7 +78,7 @@ export default {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  color: var(--dark-purple);
+  color: var(--purple-dark);
   font-size: 0.875rem;
   white-space: nowrap;
   overflow: hidden;

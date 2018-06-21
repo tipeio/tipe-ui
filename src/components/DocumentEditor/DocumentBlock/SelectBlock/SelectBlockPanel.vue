@@ -11,22 +11,16 @@
 
 <script>
 import vueTypes from 'vue-types'
-import inputProps from '@/types/InputProps'
 import blockOptionShape from '@/types/BlockOption'
-import TipeDropDown from '@/components/DropDown'
 import TipeSelectBlockOption from './SelectBlockOption'
-import TipeIcon from '@/components/Icon'
 
 export default {
   name: 'TipeSelectBlockPanel',
   components: {
-    TipeDropDown,
-    TipeIcon,
     TipeSelectBlockOption
   },
   props: {
-    options: vueTypes.arrayOf(vueTypes.shape(blockOptionShape)),
-    ...inputProps
+    options: vueTypes.arrayOf(vueTypes.shape(blockOptionShape))
   }
 }
 </script>
