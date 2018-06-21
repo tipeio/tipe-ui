@@ -8,6 +8,8 @@ exports[`Checkbox <template> matches previous snapshot 1`] = `
       <input name="" id="Javascript" tabindex="0" type="checkbox">
     </div>
   </div>
-  <label for="Javascript" class="label">Javascript</label>
+  <label for="Javascript" class="label">
+    Javascript
+  </label>
 </div>
 `;

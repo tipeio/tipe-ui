@@ -1,21 +1,21 @@
 <template>
-  <div 
-    :class="classObject" 
-    :data-tipe-ui="$options.name" 
+  <div
+    :class="classObject"
+    :data-tipe-ui="$options.name"
     class="checkbox">
     <div class="check-flex">
       <div class="check-grid">
-        <tipe-icon 
-          :width="checkSize.width" 
-          :height="checkSize.height" 
-          class="check-icon" 
+        <tipe-icon
+          :width="checkSize.width"
+          :height="checkSize.height"
+          class="check-icon"
           icon="check" />
-        <input 
+        <input
           ref="checkbox"
           :name="name"
           :disabled="isDisabled"
           :id="label"
-          :value="value" 
+          :value="value"
           :tabindex="tabindex"
           :checked="checked"
           type="checkbox"
@@ -26,9 +26,12 @@
           @change="inputEmit('change')">
       </div>
     </div>
-    <label 
-      :for="label" 
-      class="label" >{{ label }}</label>
+    <label
+      :for="label"
+      class="label"
+    >
+      {{ label }}
+    </label>
   </div>
 </template>
 

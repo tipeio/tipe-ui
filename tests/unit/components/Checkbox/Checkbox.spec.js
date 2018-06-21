@@ -60,12 +60,10 @@ describe('Checkbox', () => {
       wrapper.find('input')
     )
 
-    it.skip(':checked - should pass checked to input', () => {
+    it(':checked - should pass checked to input', () => {
       const propsData = { checked: true }
       const wrapper = shallowMount(Checkbox, { propsData })
-      expect(wrapper.find('input').attributes().checked).toEqual(
-        `${propsData.checked}`
-      )
+      expect(wrapper.find('input').element.checked).toEqual(propsData.checked)
     })
 
     tipeTestUtils.test.input.waiting(Checkbox)
