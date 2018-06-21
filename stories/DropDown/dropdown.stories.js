@@ -1,6 +1,7 @@
 import { storiesOf } from '@storybook/vue'
 
 import TipeDropDown from '../../src/components/DropDown'
+import TipeButton from '@/components/Button'
 
 const style = () => ({
   width: '200px'
@@ -8,20 +9,32 @@ const style = () => ({
 
 storiesOf('DropDown', module)
   .add('default', () => ({
-    components: { TipeDropDown },
+    components: { TipeDropDown, TipeButton },
     computed: { style },
     template: `
-        <tipe-drop-down name="firstName">
-          <div slot="control">hello world</div>
-          <div slot="panel">goodbye world</div>
-        </tipe-drop-down>`
+      <tipe-drop-down name="firstName">
+        <div slot="control"><tipe-button size="small">Click Me!</tipe-button></div>
+        <div slot="panel">
+          <ul>
+            <li>option</li>
+            <li>option</li>
+            <li>option</li>
+          </ul>
+        </div>
+      </tipe-drop-down>`
   }))
   .add('disabled', () => ({
-    components: { TipeDropDown },
+    components: { TipeDropDown, TipeButton },
     computed: { style },
     template: `
-        <tipe-drop-down name="firstName" :disabled="false">
-          <div slot="control" slot-scope="props">{{props.disabled}}</div>
-          <div slot="panel">goodbye world</div>
-        </tipe-drop-down>`
+      <tipe-drop-down name="firstName" disabled="true">
+        <div slot="control"><tipe-button size="small" disabled>Click Me!</tipe-button></div>
+        <div slot="panel">
+          <ul>
+            <li>option</li>
+            <li>option</li>
+            <li>option</li>
+          </ul>
+        </div>
+      </tipe-drop-down>`
   }))
