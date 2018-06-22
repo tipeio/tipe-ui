@@ -21,21 +21,23 @@ storiesOf('Checkbox Group', module)
       }
     },
     template: `
-      <div :style="style"><tipe-checkbox-group
-      :name="name"
-      :options="options"
-    >
-		<template slot-scope="{option}">
-      <tipe-checkbox
-        v-for="option in options"
-        :key="option.value"
-				:name="name"
-				:label="option.label"
-				:value="option.value"
-				:checked="option.checked"
-			/>
-		</template>
-    </tipe-checkbox-group></div>
+      <div :style="style">
+        <tipe-checkbox-group
+          :name="name"
+          :options="options"
+        >
+          <template slot-scope="{options, name}">
+            <tipe-checkbox
+              v-for="option in options"
+              :key="option.value"
+              :name="name"
+              :label="option.label"
+              :value="option.value"
+              :checked="option.checked"
+            />
+          </template>
+        </tipe-checkbox-group>
+      </div>
       `
   }))
   .add('large checkbox group', () => ({

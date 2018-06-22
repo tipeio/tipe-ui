@@ -1,17 +1,17 @@
 <template>
-  <div 
+  <div
     :data-tipe-ui="$options.name"
     :name="name"
     :class="classObject"
     :tabindex="tabindex"
     :status="status"
     class="checkbox-group"
-    @click="click" 
-    @focus="focus" 
-    @change="change" 
+    @click="click"
+    @focus="focus"
+    @change="change"
     @blur="blur"
   >
-    <slot />
+    <slot v-bind="$props"/>
   </div>
 </template>
 
