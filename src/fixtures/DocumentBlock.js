@@ -7,7 +7,7 @@ export default documentBlock => ({
   name: 'test-name',
   apiId: 'test-apiId',
   description: 'test-description',
-  status: '',
+  status: 'success',
   successMessage: '',
   errorMessage: '',
   warningMessage: '',

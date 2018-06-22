@@ -27,7 +27,8 @@ describe('DocumentBlock', () => {
 
   describe(':props', () => {
     it(':status(undefined) - no status class ', () => {
-      const propsData = { block: documentBlockMock({ status: '' }) }
+      const propsData = { block: documentBlockMock() }
+      delete propsData.block.status
       const wrapper = shallowMount(DocumentBlock, { propsData })
       expect(wrapper.classes()).not.toEqual(
         expect.arrayContaining([expect.stringMatching(/status-/)])
