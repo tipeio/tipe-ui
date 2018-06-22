@@ -16,7 +16,7 @@ exports[`AddMember.vue renders 1`] = `
         <TipeSeperator-stub></TipeSeperator-stub>
       </div>
       <div class="add-button">
-        <TipeButton-stub disabled="disabled" type="submit" value="Submit"></TipeButton-stub>
+        <TipeButton-stub type="submit"></TipeButton-stub>
       </div>
     </form>
   </div>

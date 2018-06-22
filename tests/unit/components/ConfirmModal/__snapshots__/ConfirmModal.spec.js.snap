@@ -12,7 +12,7 @@ exports[`AddMember.vue renders 1`] = `
       <TipeSeperator-stub></TipeSeperator-stub>
     </div>
     <TipeButton-stub class="cancelBtn"></TipeButton-stub>
-    <TipeButton-stub status="error" class="rightBtn"></TipeButton-stub>
+    <TipeButton-stub class="rightBtn"></TipeButton-stub>
   </div>
 </div>
 `;

@@ -2,7 +2,8 @@
   <button
     :data-tipe-ui="$options.name"
     :class="classObject"
-    @click="onClick"
+    :disabled="disabled"
+    @click="$emit('click', $event)"
   >
     <div
       :class="{dropdown}"
@@ -44,6 +45,7 @@
 </template>
 
 <script>
+import inputProps from '@/types/InputProps'
 import vueTypes from 'vue-types'
 import TipeIcon from '../Icon'
 export default {
@@ -67,26 +69,20 @@ export default {
       .def('default'),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def(''),
-    waiting: vueTypes.bool.def(false),
-    dropdown: vueTypes.bool.def(false)
+    ...inputProps
   },
   computed: {
     classObject: function() {
-      const { color, size, outline, waiting, dropdown } = this
+      const { color, size, outline, status, waiting } = this
       return {
         [size]: true,
         [color]: true,
+        waiting: waiting,
+        [`status-${status}`]: status,
         has_icon_before: !!this.iconBefore,
         has_icon_after: !!this.iconAfter,
-        outline,
-        waiting,
-        dropdown
+        outline
       }
-    }
-  },
-  methods: {
-    onClick() {
-      this.$emit('click')
     }
   }
 }

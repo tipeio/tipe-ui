@@ -1,6 +1,8 @@
 import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
+import tipeTestUtils from '~/tests/TipeTestUtils'
 import Button from '@/components/Button'
+import Icon from '@/components/Icon'
 
 describe('Button.vue', () => {
   it('matches previous snapshot', async () => {
@@ -12,66 +14,76 @@ describe('Button.vue', () => {
     expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeButton')
   })
 
-  it('renders a defaut button', () => {
+  tipeTestUtils.test.input.size(Button)
+  tipeTestUtils.test.input.status(Button)
+  tipeTestUtils.test.input.waiting(Button)
+  tipeTestUtils.test.input.disabled(Button)
+
+  it(':color(purple) - has purple class', () => {
+    const wrapper = shallowMount(Button, {
+      propsData: { color: 'purple' }
+    })
+
+    expect(wrapper.classes()).toContain('purple')
+  })
+
+  it(':color(purple-dark) - has purple-dark class', () => {
+    const wrapper = shallowMount(Button, {
+      propsData: { color: 'purple-dark' }
+    })
+
+    expect(wrapper.classes()).toContain('purple-dark')
+  })
+
+  it(':color(gray) - has gray class', () => {
+    const wrapper = shallowMount(Button, {
+      propsData: { color: 'gray' }
+    })
+
+    expect(wrapper.classes()).toContain('gray')
+  })
+
+  it(':color(none) - has none class', () => {
+    const wrapper = shallowMount(Button, {
+      propsData: { color: 'none' }
+    })
+
+    expect(wrapper.classes()).toContain('none')
+  })
+
+  it(':outline - has outline class', () => {
+    const wrapper = shallowMount(Button, {
+      propsData: { outline: true }
+    })
+
+    expect(wrapper.classes()).toContain('outline')
+  })
+
+  it(':iconBefore - renders icon before', () => {
+    const propsData = { iconBefore: 'plus' }
+    const wrapper = shallowMount(Button, { propsData })
+
+    expect(wrapper.contains('.icon-container')).toEqual(true)
+    expect(wrapper.classes()).toContain('has_icon_before')
+    expect(wrapper.contains(Icon)).toEqual(true)
+    expect(wrapper.find(Icon).props().icon).toEqual(propsData.iconBefore)
+  })
+
+  it(':iconAfter - renders icon after', () => {
+    const propsData = { iconAfter: 'plus' }
+    const wrapper = shallowMount(Button, { propsData })
+
+    expect(wrapper.contains('.icon-container')).toEqual(true)
+    expect(wrapper.classes()).toContain('has_icon_after')
+    expect(wrapper.contains(Icon)).toEqual(true)
+    expect(wrapper.find(Icon).props().icon).toEqual(propsData.iconAfter)
+  })
+
+  it('@click - should emit', () => {
     const wrapper = shallowMount(Button)
-    expect(wrapper.classes()).toContain('default')
-    expect(wrapper.classes()).toContain('medium')
-    expect(wrapper.classes()).not.toContain('outline')
-  })
-  it('should render a default outline button', () => {
-    const wrapper = shallowMount(Button, { propsData: { outline: true } })
-    expect(wrapper.classes()).toContain('outline')
-    expect(wrapper.classes()).toContain('default')
-    expect(wrapper.classes()).toContain('medium')
-  })
-  it('should render a small button', () => {
-    const wrapper = shallowMount(Button, {
-      propsData: { size: 'small' }
-    })
-    expect(wrapper.classes()).toContain('default')
-    expect(wrapper.classes()).toContain('small')
-    expect(wrapper.classes()).not.toContain('outline')
-  })
-  it('should render a medium button', () => {
-    const wrapper = shallowMount(Button, {
-      propsData: { size: 'medium' }
-    })
-    expect(wrapper.classes()).toContain('default')
-    expect(wrapper.classes()).toContain('medium')
-    expect(wrapper.classes()).not.toContain('outline')
-  })
-  it('should render a large button', () => {
-    const wrapper = shallowMount(Button, {
-      propsData: { size: 'large' }
-    })
-    expect(wrapper.classes()).toContain('default')
-    expect(wrapper.classes()).toContain('large')
-    expect(wrapper.classes()).not.toContain('outline')
-  })
-  it('should render a primary button', () => {
-    const wrapper = shallowMount(Button, {
-      propsData: { color: 'primary' }
-    })
-    expect(wrapper.classes()).toContain('primary')
-    expect(wrapper.classes()).toContain('medium')
-    expect(wrapper.classes()).not.toContain('outline')
-  })
-  it('should render a small primary outline button', () => {
-    const wrapper = shallowMount(Button, {
-      propsData: { color: 'primary', outline: true, size: 'small' }
-    })
-    expect(wrapper.classes()).toContain('primary')
-    expect(wrapper.classes()).toContain('small')
-    expect(wrapper.classes()).toContain('outline')
-  })
-  it('should emit an onclick event', () => {
-    const action = jest.fn()
-    const wrapper = shallowMount(Button, {
-      propsData: { '@click': action }
-    })
-    wrapper.setMethods({ action: action('clicked') })
-    wrapper.trigger('click')
-    expect(action.mock.calls).toHaveLength(1)
+
+    wrapper.find('button').trigger('click')
+    expect(wrapper.emitted().click).toBeTruthy()
   })
   it('should have the correct props', () => {
     const wrapper = shallowMount(Button, {
