@@ -187,21 +187,21 @@ input {
     flex: 0 0 calc(2rem + 0.1875rem);
   }
 }
-.success {
-  & input {
-    border: solid 1px var(--success);
+.status-success {
+  & input:checked {
+    background-color: var(--success);
   }
 }
 
-.warning {
-  & input {
-    border: solid 1px var(--warning);
+.status-warning {
+  & input:checked {
+    background-color: var(--warning);
   }
 }
 
-.error {
-  & input {
-    border: solid 1px var(--error);
+.status-error {
+  & input:checked {
+    background-color: var(--error);
   }
 }
 
