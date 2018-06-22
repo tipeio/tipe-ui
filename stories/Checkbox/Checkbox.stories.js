@@ -52,3 +52,30 @@ storiesOf('Checkbox', module)
     computed: { style },
     template: '<tipe-checkbox label="JavaScript" :checked="true"/>'
   }))
+  .add('name and value match', () => ({
+    components: { TipeCheckbox },
+    computed: { style },
+    template:
+      '<tipe-checkbox label="JavaScript" name="JavaScript" value="JavaScript"/>'
+  }))
+  .add('name in value array', () => ({
+    components: { TipeCheckbox },
+    computed: { style },
+    data() {
+      return {
+        value: ['JavaScript', 'Python']
+      }
+    },
+    methods: {
+      onChange(value) {
+        this.value = value
+        console.log(value)
+      }
+    },
+    template: `
+      <div>
+        <tipe-checkbox label="JavaScript" name="JavaScript" :value="value" @change="onChange"/>
+        <tipe-checkbox label="Python" name="Python" :value="value" @change="onChange"/>
+      </div>
+      `
+  }))

@@ -17,13 +17,13 @@
           :id="label"
           :value="value"
           :tabindex="tabindex"
-          :checked="checked"
+          :checked="isChecked"
           type="checkbox"
           @keyup.enter="$refs.checkbox.click()"
-          @click="inputEmit('click')"
-          @blur="inputEmit('blur')"
-          @focus="inputEmit('focus')"
-          @change="inputEmit('change')">
+          @click="$emit('click', $event)"
+          @blur="$emit('blur', $event)"
+          @focus="$emit('focus', $event)"
+          @change="onChange">
       </div>
     </div>
     <label
@@ -46,6 +46,9 @@ export default {
   props: {
     label: vueTypes.string,
     checked: vueTypes.bool.def(false),
+    value: vueTypes
+      .oneOfType([vueTypes.string, vueTypes.arrayOf(vueTypes.string)])
+      .def(''),
     ...inputProps
   },
   computed: {
@@ -60,6 +63,15 @@ export default {
     isDisabled() {
       if (this.waiting || this.disabled) return true
       return false
+    },
+    isChecked() {
+      if (this.checked) {
+        return this.checked
+      } else if (Array.isArray(this.value)) {
+        return this.value.includes(this.name)
+      } else {
+        return this.value === this.name
+      }
     },
     checkSize() {
       switch (this.size) {
@@ -87,8 +99,22 @@ export default {
     }
   },
   methods: {
-    inputEmit(type) {
-      this.$emit(type)
+    onChange(event) {
+      if (Array.isArray(this.value)) {
+        if (event.target.checked) {
+          const newValue = this.value.slice()
+          newValue.push(this.name)
+          this.$emit('change', newValue)
+        } else {
+          this.$emit('change', this.value.filter(value => value !== this.name))
+        }
+      } else {
+        if (event.target.checked) {
+          this.$emit('change', this.name)
+        } else {
+          this.$emit('change')
+        }
+      }
     }
   }
 }
