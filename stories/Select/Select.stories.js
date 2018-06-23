@@ -1,12 +1,14 @@
 import { storiesOf } from '@storybook/vue'
 
 import TipeSelect from '../../src/components/Select'
+import TipeField from '../../src/components/Field'
 
 const options = () => [
   { label: 'Owner', value: 'owner' },
   { label: 'Admin', value: 'admin' },
   { label: 'Member', value: 'member' }
 ]
+
 const style = () => ({
   width: '300px'
 })
@@ -16,6 +18,19 @@ storiesOf('Select', module)
     computed: { options, style },
     template:
       '<div :style="style"><tipe-select label="Role" :options="options" /></div>'
+  }))
+  .add('select in a field', () => ({
+    components: { TipeSelect, TipeField },
+    computed: { options, style },
+    data() {
+      return {
+        field: {
+          options: options()
+        }
+      }
+    },
+    template:
+      '<div :style="style"><tipe-field :field="field" label="Role"><tipe-select /></tipe-field></div>'
   }))
   .add('with a placeholder', () => ({
     components: { TipeSelect },

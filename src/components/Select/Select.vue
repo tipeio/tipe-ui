@@ -5,9 +5,7 @@
     @keyup.up="keyup"
     @keyup.down="keydown"
     @keyup.enter="enter">
-    <label :for="label">{{ label }}</label>
     <div 
-      :id="label" 
       :class="{[size]: true}"
       :tabindex="tabindex"
       class="select"
@@ -49,7 +47,6 @@ export default {
   name: 'TipeSelect',
   components: { TipeSelectDropdown, TipeNativeSelect },
   props: {
-    label: vueTypes.string.isRequired,
     placeholder: vueTypes.string,
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
     ...inputProps
@@ -105,12 +102,6 @@ export default {
 .select-flex {
   display: flex;
   flex-direction: column;
-
-  & label {
-    color: #627098;
-    font-size: 0.8125rem;
-    padding-left: 0.25em;
-  }
 }
 .select {
   height: 3.5rem;
