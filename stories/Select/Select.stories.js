@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/vue'
 
-import TipeSelect, { TipeSelectButton } from '../../src/components/Select'
+import TipeSelect from '../../src/components/Select'
 
 const options = () => [
   { label: 'Owner', value: 'owner' },
@@ -16,18 +16,6 @@ storiesOf('Select', module)
     computed: { options, style },
     template:
       '<div :style="style"><tipe-select label="Role" :options="options" /></div>'
-  }))
-  .add('default select button', () => ({
-    components: { TipeSelectButton },
-    computed: { options, style },
-    template:
-      '<div :style="style"><tipe-select-button :options="options" size="small"/></div>'
-  }))
-  .add('select button with placeholder', () => ({
-    components: { TipeSelectButton },
-    computed: { options, style },
-    template:
-      '<div :style="style"><tipe-select-button :options="options" size="large" placeholder="Select a role..." /></div>'
   }))
   .add('with a placeholder', () => ({
     components: { TipeSelect },

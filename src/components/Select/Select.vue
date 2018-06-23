@@ -12,18 +12,11 @@
       :tabindex="tabindex"
       class="select"
       v-on="isDisabled ? {} : { click: onClick }">
-      <select :disabled="isDisabled">
-        <option 
-          v-if="placeholder"
-          :selected="true"
-          disabled>{{ placeholder }}</option>
-        <option 
-          v-for="option in options"
-          :value="option.value" 
-          :selected="selectedValue.value === option.value"
-          :key="option.value"
-        >{{ option.label }}</option>
-      </select>
+      <tipe-native-select 
+        :options="options" 
+        :disabled="isDisabled" 
+        :placeholder="placeholder" 
+        :selected-value="selectedValue"/>
       <div 
         :class="selectStyle"
         class="fake-select">{{ selected }}</div>
@@ -41,6 +34,7 @@ import vueTypes from 'vue-types'
 import inputProps from '@/types/InputProps'
 import SelectOptionShape from '@/types/SelectOptionShape'
 import TipeSelectDropdown from './SelectDropdown'
+import TipeNativeSelect from './NativeSelect'
 import {
   selectKeyup,
   selectKeydown,
@@ -53,7 +47,7 @@ import {
 
 export default {
   name: 'TipeSelect',
-  components: { TipeSelectDropdown },
+  components: { TipeSelectDropdown, TipeNativeSelect },
   props: {
     label: vueTypes.string.isRequired,
     placeholder: vueTypes.string,
@@ -225,37 +219,5 @@ export default {
   border-color: #627098;
   right: 0.5em;
   z-index: 4;
-}
-
-.dropdown {
-  background-color: #fff;
-  border-radius: 0 0 5px 5px;
-  z-index: 2;
-  box-shadow: 5px 20px 40px 0 rgba(0, 0, 0, 0.1);
-  padding: 0.6875rem 0;
-
-  & .dropdown-item {
-    height: 2.1875rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    & p {
-      color: #627098;
-      font-size: 0.8125rem;
-      margin: 0;
-      padding-left: 1.0625rem;
-    }
-
-    &:hover,
-    &.active {
-      background-color: #f7f8fb;
-      border-left: 3px #1cc5bc solid;
-
-      & p {
-        padding-left: calc(1.0625rem - 3px);
-      }
-    }
-  }
 }
 </style>

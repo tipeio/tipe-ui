@@ -1,28 +1,22 @@
 <template>
   <div 
     :data-tipe-ui="$options.name" 
-    :options="options" 
     class="select-flex"
     @keyup.up="keyup"
     @keyup.down="keydown"
     @keyup.enter="enter"
     v-on="isDisabled ? {} : { click: onClick }"
   >
-    <select :disabled="isDisabled">
-      <option 
-        v-if="placeholder"
-        :selected="true"
-        disabled>{{ placeholder }}</option>
-      <option 
-        v-for="option in options"
-        :value="option.value" 
-        :selected="selectedValue.value === option.value"
-        :key="option.value"
-      >{{ option.label }}</option>
-    </select>
+    <tipe-native-select 
+      :options="options" 
+      :disabled="isDisabled" 
+      :placeholder="placeholder" 
+      :selected-value="selectedValue"/>
     <tipe-button 
+      :waiting="waiting"
       :status="status" 
       :size="size" 
+      :disabled="isDisabled"
       icon-after="arrow-down">{{ selected }}</tipe-button>
     <tipe-select-dropdown 
       v-if="open" 
@@ -38,6 +32,7 @@ import inputProps from '@/types/InputProps'
 import SelectOptionShape from '@/types/SelectOptionShape'
 import TipeButton from '../Button'
 import TipeSelectDropdown from './SelectDropdown'
+import TipeNativeSelect from './NativeSelect'
 import {
   selectKeyup,
   selectKeydown,
@@ -50,7 +45,7 @@ import {
 
 export default {
   name: 'TipeSelectButton',
-  components: { TipeButton, TipeSelectDropdown },
+  components: { TipeButton, TipeSelectDropdown, TipeNativeSelect },
   props: {
     placeholder: vueTypes.string,
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
@@ -66,16 +61,6 @@ export default {
   computed: {
     isDisabled() {
       return selectDisabled(this)
-    },
-    selectStyle() {
-      const { isDisabled, waiting, size, status, options } = this
-      return {
-        disabled: isDisabled,
-        ...(status && { [status]: true }),
-        ...(!options && { error: true }),
-        waiting,
-        [size]: true
-      }
     },
     selected() {
       return findSelected(this)
@@ -107,14 +92,5 @@ export default {
 .select-flex {
   display: flex;
   flex-direction: column;
-}
-
-select {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
 }
 </style>
