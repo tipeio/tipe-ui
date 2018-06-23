@@ -11,7 +11,7 @@
       :class="{[size]: true}"
       :tabindex="tabindex"
       class="select"
-      v-on="disabled ? {} : { click: onClick }">
+      v-on="isDisabled ? {} : { click: onClick }">
       <select :disabled="isDisabled">
         <option 
           v-if="placeholder"
@@ -26,18 +26,12 @@
       </select>
       <div 
         :class="selectStyle"
-        class="fake-select">{{ selectedValue.label || (placeholder || options ? options[0].label : 'Please provide select options') }}</div>
-      <div 
+        class="fake-select">{{ selected }}</div>
+      <tipe-select-dropdown 
         v-if="open" 
-        class="dropdown">
-        <div 
-          v-for="(option, index) in options"
-          :key="option.value"
-          :class="{active: index === activeIndex}" 
-          tabindex="-1"
-          class="dropdown-item"
-          @click="onChange(option)"><p>{{ option.label }}</p></div>
-      </div>
+        :options="options" 
+        :active-index="activeIndex" 
+        @change="onChange"/>
     </div>
   </div>
 </template>
@@ -46,9 +40,20 @@
 import vueTypes from 'vue-types'
 import inputProps from '@/types/InputProps'
 import SelectOptionShape from '@/types/SelectOptionShape'
+import TipeSelectDropdown from './SelectDropdown'
+import {
+  selectKeyup,
+  selectKeydown,
+  selectEnter,
+  selectClick,
+  selectChange,
+  findSelected,
+  selectDisabled
+} from './select-utils'
 
 export default {
   name: 'TipeSelect',
+  components: { TipeSelectDropdown },
   props: {
     label: vueTypes.string.isRequired,
     placeholder: vueTypes.string,
@@ -64,8 +69,7 @@ export default {
   },
   computed: {
     isDisabled() {
-      if (this.waiting || this.disabled) return true
-      return false
+      return selectDisabled(this)
     },
     selectStyle() {
       const { isDisabled, waiting, size, status, options } = this
@@ -76,37 +80,28 @@ export default {
         waiting,
         [size]: true
       }
+    },
+    selected() {
+      return findSelected(this)
     }
   },
   methods: {
-    onClick(event) {
-      this.open = !this.open
+    onClick() {
+      this.open = selectClick(this)
     },
     onChange(val) {
-      this.selectedValue = val
-      this.$emit('change', val)
+      this.selectedValue = selectChange(this, val)
     },
     keyup() {
-      if (!this.open) {
-      } else if (this.activeIndex === 0)
-        this.activeIndex = this.options.length - 1
-      else this.activeIndex -= 1
+      this.activeIndex = selectKeyup(this)
     },
     keydown() {
-      if (!this.open) {
-      } else if (this.activeIndex === this.options.length - 1)
-        this.activeIndex = 0
-      else this.activeIndex += 1
+      this.activeIndex = selectKeydown(this)
     },
     enter() {
-      if (!this.options) {
-      } else if (!this.open) {
-        this.open = true
-      } else {
-        this.onChange(this.options[this.activeIndex])
-        this.open = false
-        this.activeIndex = -1
-      }
+      let { open, activeIndex = this.activeIndex } = selectEnter(this)
+      this.open = open
+      this.activeIndex = activeIndex
     }
   }
 }
