@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/vue'
 
-import { TipeSelectButton } from '../../src/components/Select'
+import TipeSelect from '../../src/components/Select'
 
 const options = () => [
   { label: 'Owner', value: 'owner' },
@@ -12,61 +12,62 @@ const style = () => ({
 })
 storiesOf('Select Button', module)
   .add('default', () => ({
-    components: { TipeSelectButton },
+    components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select-button :options="options"/></div>'
+      '<div :style="style"><tipe-select :options="options" type="button"/></div>'
   }))
   .add('with placeholder', () => ({
-    components: { TipeSelectButton },
+    components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select-button :options="options" placeholder="Select a role..." /></div>'
+      '<div :style="style"><tipe-select :options="options" type="button" placeholder="Select a role..." /></div>'
   }))
   .add('disabled', () => ({
-    components: { TipeSelectButton },
+    components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select-button :options="options" :disabled="true" /></div>'
+      '<div :style="style"><tipe-select :options="options" :disabled="true" /></div>'
   }))
   .add('success', () => ({
-    components: { TipeSelectButton },
+    components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select-button :options="options" status="success"/></div>'
+      '<div :style="style"><tipe-select :options="options" type="button" status="success"/></div>'
   }))
   .add('error', () => ({
-    components: { TipeSelectButton },
+    components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select-button  :options="options" status="error" /></div>'
+      '<div :style="style"><tipe-select  :options="options" type="button"  status="error" /></div>'
   }))
   .add('warning', () => ({
-    components: { TipeSelectButton },
+    components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select-button :options="options" status="warning"/></div>'
+      '<div :style="style"><tipe-select :options="options" type="button"  status="warning"/></div>'
   }))
   .add('waiting', () => ({
-    components: { TipeSelectButton },
+    components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select-button :options="options" :waiting="true"/></div>'
+      '<div :style="style"><tipe-select :options="options" type="button" :waiting="true"/></div>'
   }))
   .add('small', () => ({
-    components: { TipeSelectButton },
+    components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select-button :options="options" size="small"/></div>'
+      '<div :style="style"><tipe-select :options="options" type="button" size="small"/></div>'
   }))
   .add('large', () => ({
-    components: { TipeSelectButton },
+    components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select-button :options="options" size="large"/></div>'
+      '<div :style="style"><tipe-select :options="options" type="button" size="large"/></div>'
   }))
   .add('no options', () => ({
-    components: { TipeSelectButton },
+    components: { TipeSelect },
     computed: { style },
-    template: '<div :style="style"><tipe-select-button  size="large"/></div>'
+    template:
+      '<div :style="style"><tipe-select  type="button" size="large"/></div>'
   }))
