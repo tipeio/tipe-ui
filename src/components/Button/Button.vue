@@ -4,7 +4,7 @@
     :class="classObject"
     @click="onClick"
   >
-    <div class="layout">
+    <div class="layout" :class="{dropdown}">
       <div
         v-if="iconBefore"
         class="icon-container"
@@ -24,8 +24,17 @@
         class="icon-container"
       >
         <tipe-icon
+          v-if="dropdown"
           :icon="iconAfter"
           class="icon"
+          height="6px"
+          width="10px"
+        />
+                <tipe-icon
+                v-else
+          :icon="iconAfter"
+          class="icon"
+
         />
       </div>
     </div>
@@ -50,7 +59,8 @@ export default {
     status: vueTypes.oneOf(['success', 'error', 'warning']),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def(''),
-    waiting: vueTypes.bool.def(false)
+    waiting: vueTypes.bool.def(false),
+    dropdown: vueTypes.bool.def(false)
   },
   computed: {
     classObject: function() {
@@ -97,6 +107,14 @@ button {
   grid-template-columns: auto auto auto;
   height: 100%;
   color: inherit;
+
+  &.dropdown {
+    width: 100%;
+
+    & .icon-container {
+      justify-content: flex-end;
+    }
+  }
 }
 
 .icon-container {
