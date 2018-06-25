@@ -19,6 +19,7 @@
         :waiting="waiting"
         :color="color" 
         :status="status"
+        :outline="outline"
         :size="size" 
         :disabled="isDisabled"
         :dropdown="true"
@@ -56,6 +57,7 @@ export default {
   props: {
     placeholder: vueTypes.string,
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
+    outline: vueTypes.bool.def(false),
     color: vueTypes
       .oneOf(['default', 'primary', 'info', 'none'])
       .def('default'),
@@ -70,6 +72,7 @@ export default {
   },
   computed: {
     isDisabled() {
+      console.log(this.outline)
       return selectDisabled(this)
     },
     selected() {

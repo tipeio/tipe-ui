@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
-import TipeSelect from '@/components/Select'
+import TipeSelect from '@/components/Select/SelectUnderline'
 
 const options = [
   { label: 'Owner', value: 'owner' },
@@ -8,7 +8,6 @@ const options = [
 ]
 
 const props = {
-  label: 'Role',
   options
 }
 describe('TipeSelect.vue', () => {
@@ -30,7 +29,7 @@ describe('TipeSelect.vue', () => {
         ...props
       }
     })
-    expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeSelect')
+    expect(wrapper.attributes()['data-tipe-ui']).toBe('SelectUnderline')
   })
   it('should render with the select-flex class', () => {
     const wrapper = shallowMount(TipeSelect, {
@@ -48,19 +47,9 @@ describe('TipeSelect.vue', () => {
         placeholder: 'Select a role'
       }
     })
-    expect(wrapper.props().label).toBe('Role')
     expect(wrapper.props().options).toBe(options)
     expect(wrapper.props().disabled).toBe(true)
     expect(wrapper.props().placeholder).toBe('Select a role')
-  })
-  it('should have the correct label', () => {
-    const wrapper = shallowMount(TipeSelect, {
-      propsData: {
-        ...props
-      }
-    })
-    const label = wrapper.find('label')
-    expect(label.text()).toBe('Role')
   })
   it('should have the correct number of option tags', () => {
     const wrapper = shallowMount(TipeSelect, {
@@ -202,11 +191,7 @@ describe('TipeSelect.vue', () => {
   })
   it('renders without options', () => {
     const renderer = createRenderer()
-    const wrapper = shallowMount(TipeSelect, {
-      propsData: {
-        label: 'Role'
-      }
-    })
+    const wrapper = shallowMount(TipeSelect)
     renderer.renderToString(wrapper.vm, (err, str) => {
       if (err) throw new Error(err)
       expect(str).toMatchSnapshot()

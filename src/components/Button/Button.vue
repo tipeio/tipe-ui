@@ -4,7 +4,9 @@
     :class="classObject"
     @click="onClick"
   >
-    <div class="layout" :class="{dropdown}">
+    <div 
+      :class="{dropdown}" 
+      class="layout">
       <div
         v-if="iconBefore"
         class="icon-container"
@@ -30,8 +32,8 @@
           height="6px"
           width="10px"
         />
-                <tipe-icon
-                v-else
+        <tipe-icon
+          v-else
           :icon="iconAfter"
           class="icon"
 
@@ -309,30 +311,26 @@ button {
       background-color: var(--danger);
     }
   }
+  &.outline {
+    background-color: transparent;
+    color: var(--default-text);
+    border: 1px solid var(--default-text);
+
+    &:hover {
+      background-color: var(--default);
+      color: var(--default-text);
+    }
+    &:focus {
+      background-color: var(--default);
+      color: var(--default-text);
+    }
+    &:disabled {
+      opacity: 0.4;
+    }
+  }
 }
 
 button.none {
   background-color: transparent;
-}
-/* outline */
-button.outline {
-  background: transparent;
-  border-style: solid;
-  border-width: 1px;
-}
-
-button.outline.purple {
-  border-color: var(--purple);
-  color: var(--purple);
-}
-
-button.outline.purple-dark {
-  border-color: var(--purple-dark);
-  color: var(--purple-dark);
-}
-
-button.outline.gray {
-  border-color: var(--gray-blue-light);
-  color: var(--text-gray-dark);
 }
 </style>
