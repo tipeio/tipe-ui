@@ -40,11 +40,13 @@ export default {
   name: 'TipeButton',
   components: { TipeIcon },
   props: {
-    size: vueTypes.oneOf(['small', 'medium', 'large', 'full']).def('medium'),
+    size: vueTypes
+      .oneOf(['mini', 'small', 'medium', 'large', 'full'])
+      .def('medium'),
     outline: vueTypes.bool.def(false),
     color: vueTypes
-      .oneOf(['purple', 'purple-dark', 'gray', 'none'])
-      .def('purple'),
+      .oneOf(['default', 'primary', 'success', 'info', 'warning', 'danger'])
+      .def('default'),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def('')
   },
@@ -180,20 +182,92 @@ Colors
 */
 
 /* fill */
-button.purple {
-  background-color: var(--purple);
-
-  &:disabled {
-    background-color: rgba(104, 73, 252, 0.7);
+button {
+  &.default {
+    background-color: var(--default);
+    color: var(--default-text);
+    &:hover {
+      box-shadow: var(--box-shawdow);
+    }
+    &:focus {
+      background-color: var(--default-focus);
+      color: var(--default-focus-text);
+      box-shadow: none;
+    }
+    &:disabled {
+      opacity: 0.4;
+      box-shadow: none;
+    }
   }
-}
-
-button.purple-dark {
-  background-color: var(--purple-dark);
-}
-
-button.gray {
-  background-color: var(--gray-blue-light);
+  &.primary {
+    background-image: var(--primary);
+    &:hover {
+      background-image: var(--primary-hover);
+    }
+    &:focus {
+      background-image: var(--primary-focus);
+    }
+    &:disabled {
+      opacity: 0.4;
+      background-image: var(--primary);
+    }
+  }
+  &.success {
+    background-color: var(--success);
+    &:hover {
+      background-color: var(--success-hover);
+      box-shadow: var(--box-shawdow);
+    }
+    &:focus {
+      background-color: var(--success-focus);
+      box-shadow: none;
+    }
+    &:disabled {
+      opacity: 0.4;
+      box-shadow: none;
+      background-color: var(--success);
+    }
+  }
+  &.info {
+    background-color: var(--info);
+    color: var(--info-text);
+    &:hover {
+      box-shadow: var(--box-shawdow);
+    }
+    &:focus {
+      background-color: var(--info);
+    }
+    &:disabled {
+      opacity: 0.4;
+      box-shadow: none;
+    }
+  }
+  &.warning {
+    background-color: var(--warning);
+    &:hover {
+      background-color: var(--warning-hover);
+    }
+    &:focus {
+      background-color: var(--warning-focus);
+    }
+    &:disabled {
+      opacity: 0.4;
+      background-color: var(--warning);
+    }
+  }
+  &.danger {
+    background-color: var(--danger);
+    &:hover {
+      background-color: var(--danger-hover);
+    }
+    &:focus {
+      background-color: var(--danger-focus);
+    }
+    &:disabled {
+      opacity: 0.4;
+      background-color: var(--danger);
+    }
+  }
 }
 
 button.none {

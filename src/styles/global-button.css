@@ -1,0 +1,32 @@
+button {
+  /* Button Fills */
+
+  --default: #eeecf1;
+  --default-focus: #6849fc;
+
+  --primary: radial-gradient(circle at 21% 21%, #714bfe, #6047fa 51%, #5727e1);
+  --primary-hover: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    radial-gradient(circle at 21% 21%, #714bfe, #6047fa 51%, #5727e1);
+  --primary-focus: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    radial-gradient(circle at 21% 21%, #714bfe, #6047fa 51%, #5727e1);
+
+  --success: #1cc5bc;
+  --success-hover: #19b1a9;
+  --success-focus: #0d938c;
+  --info: #b5baca;
+
+  --warning: #f38438;
+  --warning-hover: #d96f28;
+  --warning-focus: #ce6925;
+
+  --danger: #e44646;
+  --danger-hover: #d54242;
+  --danger-focus: #a53434;
+
+  /*ButtonText*/
+  --default-text: #627098;
+  --default-focus-text: #f7f8fb;
+  --info-text: #f7f8fb;
+
+  --box-shawdow: 3px 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
