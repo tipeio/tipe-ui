@@ -2,38 +2,38 @@ import { shallowMount } from '@vue/test-utils'
 
 const defaultQuery = wrapper => wrapper
 
-export const size = Input => {
+export const size = (Input, query = defaultQuery) => {
   it(':size(undefined) - has medium class ', () => {
     const wrapper = shallowMount(Input)
-    expect(wrapper.classes()).toContain('medium')
+    expect(query(wrapper).classes()).toContain('medium')
   })
 
   it(':size(small) - has small class ', () => {
     const propsData = { size: 'small' }
 
     const wrapper = shallowMount(Input, { propsData })
-    expect(wrapper.classes()).toContain('small')
+    expect(query(wrapper).classes()).toContain('small')
   })
 
   it(':size(medium) - has medium class ', () => {
     const propsData = { size: 'medium' }
 
     const wrapper = shallowMount(Input, { propsData })
-    expect(wrapper.classes()).toContain('medium')
+    expect(query(wrapper).classes()).toContain('medium')
   })
 
   it(':size(large) - has large class ', () => {
     const propsData = { size: 'large' }
 
     const wrapper = shallowMount(Input, { propsData })
-    expect(wrapper.classes()).toContain('large')
+    expect(query(wrapper).classes()).toContain('large')
   })
 }
 
-export const status = Input => {
+export const status = (Input, query = defaultQuery) => {
   it(':status(undefined) - no status class ', () => {
     const wrapper = shallowMount(Input)
-    expect(wrapper.classes()).not.toEqual(
+    expect(query(wrapper).classes()).not.toEqual(
       expect.arrayContaining([expect.stringMatching(/status-/)])
     )
   })
@@ -42,21 +42,21 @@ export const status = Input => {
     const propsData = { status: 'success' }
     const wrapper = shallowMount(Input, { propsData })
 
-    expect(wrapper.classes()).toContain('status-success')
+    expect(query(wrapper).classes()).toContain('status-success')
   })
 
   it(':status(error) - has status-error class', () => {
     const propsData = { status: 'error' }
     const wrapper = shallowMount(Input, { propsData })
 
-    expect(wrapper.classes()).toContain('status-error')
+    expect(query(wrapper).classes()).toContain('status-error')
   })
 
   it(':status(warning) - has status-warning class', () => {
     const propsData = { status: 'error' }
     const wrapper = shallowMount(Input, { propsData })
 
-    expect(wrapper.classes()).toContain('status-error')
+    expect(query(wrapper).classes()).toContain('status-error')
   })
 }
 
@@ -64,21 +64,25 @@ export const waiting = (Input, query = defaultQuery) => {
   it(':waiting(undefined) - no waiting class', () => {
     const wrapper = shallowMount(Input)
 
-    expect(wrapper.classes()).not.toEqual(expect.arrayContaining(['waiting']))
+    expect(query(wrapper).classes()).not.toEqual(
+      expect.arrayContaining(['waiting'])
+    )
   })
 
   it(':waiting(false) - no waiting class', () => {
     const propsData = { waiting: false }
     const wrapper = shallowMount(Input, { propsData })
 
-    expect(wrapper.classes()).not.toEqual(expect.arrayContaining(['waiting']))
+    expect(query(wrapper).classes()).not.toEqual(
+      expect.arrayContaining(['waiting'])
+    )
   })
 
   it(':waiting(true) - has waiting class', () => {
     const propsData = { waiting: true }
     const wrapper = shallowMount(Input, { propsData })
 
-    expect(wrapper.classes()).toContain('waiting')
+    expect(query(wrapper).classes()).toContain('waiting')
   })
 }
 
