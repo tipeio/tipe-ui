@@ -23,6 +23,12 @@ storiesOf('Select Button', module)
     template:
       '<div :style="style"><tipe-select :options="options" type="button" placeholder="Select a role..." /></div>'
   }))
+  .add('default selected value', () => ({
+    components: { TipeSelect },
+    computed: { options, style },
+    template:
+      '<div :style="style"><tipe-select :options="options" :defaultSelected="options[1]" type="button"" /></div>'
+  }))
   .add('disabled', () => ({
     components: { TipeSelect },
     computed: { options, style },

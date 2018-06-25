@@ -49,12 +49,13 @@ export default {
   props: {
     placeholder: vueTypes.string,
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
+    defaultSelected: vueTypes.shape(SelectOptionShape),
     ...inputProps
   },
   data() {
     return {
       open: false,
-      selectedValue: {},
+      selectedValue: this.defaultSelected || {},
       activeIndex: -1
     }
   },

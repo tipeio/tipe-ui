@@ -23,6 +23,7 @@ export default {
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
     placeholder: vueTypes.string,
     outline: vueTypes.bool.def(false),
+    defaultSelected: vueTypes.shape(SelectOptionShape),
     ...inputProps
   },
   computed: {
