@@ -14,7 +14,7 @@
       :selected-value="selectedValue"/>
     <tipe-button 
       :waiting="waiting"
-      :status="status" 
+      :color="status" 
       :size="size" 
       :disabled="isDisabled"
       icon-after="arrow-down">{{ selected }}</tipe-button>

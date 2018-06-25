@@ -27,7 +27,7 @@ storiesOf('Select Button', module)
     components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select :options="options" :disabled="true" /></div>'
+      '<div :style="style"><tipe-select :options="options" type="button" :disabled="true" /></div>'
   }))
   .add('success', () => ({
     components: { TipeSelect },
@@ -35,11 +35,11 @@ storiesOf('Select Button', module)
     template:
       '<div :style="style"><tipe-select :options="options" type="button" status="success"/></div>'
   }))
-  .add('error', () => ({
+  .add('danger', () => ({
     components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select  :options="options" type="button"  status="error" /></div>'
+      '<div :style="style"><tipe-select  :options="options" type="button"  status="danger" /></div>'
   }))
   .add('warning', () => ({
     components: { TipeSelect },
