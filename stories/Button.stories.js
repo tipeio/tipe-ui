@@ -77,6 +77,24 @@ storiesOf('Button', module)
       '<tipe-button @click="action" :disabled="true" color="danger">Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
+  .add('mini button', () => ({
+    components: { TipeButton },
+    template:
+      '<tipe-button size="mini" @click="action">Mini Button</tipe-button>',
+    methods: { action: action('clicked') }
+  }))
+  .add('small button', () => ({
+    components: { TipeButton },
+    template:
+      '<tipe-button size="small" @click="action">Small Button</tipe-button>',
+    methods: { action: action('clicked') }
+  }))
+  .add('medium button', () => ({
+    components: { TipeButton },
+    template:
+      '<tipe-button size="medium" @click="action">Medium Button</tipe-button>',
+    methods: { action: action('clicked') }
+  }))
   .add('large button', () => ({
     components: { TipeButton },
     template:

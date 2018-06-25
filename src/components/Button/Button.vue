@@ -150,16 +150,24 @@ button.has_icon_after .label {
 Sizes
 */
 
+button.mini {
+  width: 6.5625rem;
+  height: 1.625rem;
+}
+
 button.small {
-  height: 1.75rem;
+  width: 6.5625rem;
+  height: 1.875rem;
 }
 
 button.medium {
+  width: 10rem;
   height: 2.5rem;
 }
 
 button.large {
-  height: 3.25rem;
+  width: 10.5625rem;
+  height: 3.125rem;
 }
 
 button.full {
@@ -167,14 +175,18 @@ button.full {
   height: 3.25rem;
 }
 
-button.small .label,
+button.mini .label,
+button.small .label {
+  font-size: 0.625rem;
+}
+
 button.medium .label {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
 }
 
 button.large .label,
 button.full .label {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
 }
 
 /*
