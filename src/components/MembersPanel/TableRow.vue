@@ -12,6 +12,15 @@
       </td>
       <td class="row">
         <p class="small-text">{{ member.role.name }}</p>
+        <tipe-select 
+          :outline="true" 
+          :options="[
+            { label: 'Owner', value: 'owner' },
+            { label: 'Member', value: 'member' },
+            { label: 'Manager', value: 'manager' }
+          ]" 
+          type="button" 
+          size="small"/>
       </td>
       <td class="row">
         <p class="small-text">{{ member.createdAt }}</p>
@@ -41,10 +50,11 @@ import vueTypes from 'vue-types'
 import TipeProfileImage from '../ProfileImage'
 import TipeButton from '../Button'
 import Seperator from '../Seperator'
+import TipeSelect from '../Select'
 
 export default {
   name: 'TableRow',
-  components: { TipeProfileImage, TipeButton, Seperator },
+  components: { TipeProfileImage, TipeButton, Seperator, TipeSelect },
   props: {
     member: vueTypes.object.isRequired,
     gray: vueTypes.bool.def(false)
