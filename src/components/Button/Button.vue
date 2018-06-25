@@ -45,7 +45,15 @@ export default {
       .def('medium'),
     outline: vueTypes.bool.def(false),
     color: vueTypes
-      .oneOf(['default', 'primary', 'success', 'info', 'warning', 'danger'])
+      .oneOf([
+        'default',
+        'primary',
+        'success',
+        'info',
+        'warning',
+        'danger',
+        'none'
+      ])
       .def('default'),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def('')

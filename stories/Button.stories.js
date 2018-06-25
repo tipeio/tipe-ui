@@ -107,45 +107,33 @@ storiesOf('Button', module)
       '<tipe-button outline @click="action">Outline Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
-  .add('large outline button', () => ({
-    components: { TipeButton },
-    template:
-      '<tipe-button outline  size="large" @click="action">Outline Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('gray outline button', () => ({
-    components: { TipeButton },
-    template:
-      '<tipe-button outline color="gray" @click="action">Fill Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
   .add('icon before label', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button color="purple" size="medium" iconBefore="plus" @click="action">Icon Button</tipe-button>',
+      '<tipe-button iconBefore="plus" @click="action">Icon Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon after label', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button color="purple" size="medium" iconAfter="plus" @click="action">Icon Button</tipe-button>',
+      '<tipe-button iconAfter="plus" @click="action">Icon Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon before and after label', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button color="purple" size="medium" iconBefore="plus" iconAfter="plus" @click="action">Icon Button</tipe-button>',
+      '<tipe-button  iconBefore="plus" iconAfter="plus" @click="action">Icon Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon only', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button color="purple" size="medium" iconBefore="plus" @click="action"></tipe-button>',
+      '<tipe-button color="primary" iconBefore="plus" @click="action"></tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon only no backgound', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button color="none" size="medium" iconBefore="plus" @click="action"></tipe-button>',
+      '<tipe-button color="none" iconBefore="plus" @click="action"></tipe-button>',
     methods: { action: action('clicked') }
   }))
