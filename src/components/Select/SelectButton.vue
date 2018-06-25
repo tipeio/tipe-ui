@@ -7,24 +7,28 @@
     @keyup.enter="enter"
     v-on="isDisabled ? {} : { click: onClick }"
   >
-    <tipe-native-select 
-      :options="options" 
-      :disabled="isDisabled" 
-      :placeholder="placeholder" 
-      :selected-value="selectedValue"/>
-    <tipe-button 
-      :waiting="waiting"
-      :color="color" 
-      :status="status"
-      :size="size" 
-      :disabled="isDisabled"
-      icon-after="arrow-down">{{ selected }}</tipe-button>
-    <tipe-select-dropdown 
-      v-if="open" 
-      :options="options" 
-      :size="size"
-      :active-index="activeIndex" 
-      @change="onChange"/>
+    <div 
+      :class="{[size]: true}" 
+      class="select-button">
+      <tipe-native-select 
+        :options="options" 
+        :disabled="isDisabled" 
+        :placeholder="placeholder" 
+        :selected-value="selectedValue"/>
+      <tipe-button 
+        :waiting="waiting"
+        :color="color" 
+        :status="status"
+        :size="size" 
+        :disabled="isDisabled"
+        icon-after="arrow-down">{{ selected }}</tipe-button>
+      <tipe-select-dropdown 
+        v-if="open" 
+        :options="options" 
+        :size="size"
+        :active-index="activeIndex" 
+        @change="onChange"/>
+    </div>
   </div>
 </template>
 
@@ -97,5 +101,31 @@ export default {
 .select-flex {
   display: flex;
   flex-direction: column;
+}
+
+.select-button {
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+  vertical-align: top;
+
+  &.mini {
+    height: 1.625rem;
+  }
+  &.small {
+    height: 1.875rem;
+  }
+
+  &.medium {
+    height: 2.5rem;
+  }
+
+  &.large {
+    height: 3.125rem;
+  }
+
+  &.full {
+    height: 3.25rem;
+  }
 }
 </style>

@@ -1,6 +1,7 @@
 <template>     
   <div 
-    class="dropdown" :class="{[size]: true}">
+    :class="{[size]: true}" 
+    class="dropdown">
     <div 
       v-for="(option, index) in options"
       :key="option.value"
