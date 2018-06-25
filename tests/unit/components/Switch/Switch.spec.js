@@ -1,70 +1,64 @@
 import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
+import tipeTestUtils from '~/tests/TipeTestUtils'
 import TipeSwitch from '@/components/Switch'
 
-const props = {
+const propsData = {
   label: 'Share Location',
   name: 'location'
 }
-describe('Progress.vue', () => {
-  it('renders', () => {
-    const renderer = createRenderer()
-    const wrapper = shallowMount(TipeSwitch, {
-      propsData: {
-        ...props
-      }
+
+describe('Switch', () => {
+  describe('<template>', () => {
+    it('renders', () => {
+      const renderer = createRenderer()
+      const wrapper = shallowMount(TipeSwitch, { propsData })
+      renderer.renderToString(wrapper.vm, (err, str) => {
+        if (err) throw new Error(err)
+        expect(str).toMatchSnapshot()
+      })
     })
-    renderer.renderToString(wrapper.vm, (err, str) => {
-      if (err) throw new Error(err)
-      expect(str).toMatchSnapshot()
+
+    it('has correct data-tipe-ui attibute', () => {
+      const wrapper = shallowMount(TipeSwitch, { propsData })
+      expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeSwitch')
     })
   })
-  it('has correct data-tipe-ui attibute', () => {
-    const wrapper = shallowMount(TipeSwitch, {
-      propsData: {
-        ...props
-      }
+
+  describe(':props', () => {
+    it(':label - should render', () => {
+      const wrapper = shallowMount(TipeSwitch, { propsData })
+      expect(wrapper.find('.label').text()).toBe(propsData.label)
     })
-    expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeSwitch')
+
+    it(':value - should pass to checked attribute', () => {
+      const wrapper = shallowMount(TipeSwitch, {
+        propsData: { ...propsData, value: true }
+      })
+
+      expect(wrapper.find('input[type="checkbox"]').element.checked).toBe(true)
+    })
+
+    tipeTestUtils.test.input.size(TipeSwitch, wrapper =>
+      wrapper.find('.switch')
+    )
+
+    tipeTestUtils.test.input.status(TipeSwitch, wrapper =>
+      wrapper.find('.wrapper')
+    )
+
+    tipeTestUtils.test.input.waiting(TipeSwitch, wrapper =>
+      wrapper.find('input[type="checkbox"]')
+    )
+
+    tipeTestUtils.test.input.disabled(TipeSwitch, wrapper =>
+      wrapper.find('input[type="checkbox"]')
+    )
   })
-  it('should have the correct label', () => {
-    const wrapper = shallowMount(TipeSwitch, {
-      propsData: {
-        ...props
-      }
-    })
-    expect(wrapper.find('.label').text()).toBe('Share Location')
-  })
-  it('should have the correct value prop', () => {
-    const wrapper = shallowMount(TipeSwitch, {
-      propsData: {
-        ...props,
-        value: true
-      }
-    })
-    expect(wrapper.props().value).toBe(true)
-  })
-  it('should have the correct props', () => {
-    const wrapper = shallowMount(TipeSwitch, {
-      propsData: {
-        ...props,
-        value: false,
-        disabled: true
-      }
-    })
-    expect(wrapper.props().label).toBe('Share Location')
-    expect(wrapper.props().value).toBe(false)
-    expect(wrapper.props().name).toBe('location')
-    expect(wrapper.props().disabled).toBe(true)
-  })
-  it('should emit the onChange method', () => {
-    const wrapper = shallowMount(TipeSwitch, {
-      propsData: {
-        ...props,
-        value: true
-      }
-    })
-    wrapper.vm.$emit('onChange', { target: { value: true } })
-    expect(wrapper.emitted().onChange).toBeTruthy()
+
+  describe('@events', () => {
+    tipeTestUtils.test.input.events(TipeSwitch, wrapper =>
+      wrapper.find('input[type="checkbox"]')
+    )
   })
 })

@@ -12,6 +12,11 @@ storiesOf('Switch', module)
     template:
       '<div :style="style"><tipe-switch label="File Sharing" name="sharing"/></div>'
   }))
+  .add('without label', () => ({
+    components: { TipeSwitch },
+    computed: { style },
+    template: '<div :style="style"><tipe-switch name="sharing"/></div>'
+  }))
   .add('disabled', () => ({
     components: { TipeSwitch },
     computed: { style },

@@ -1,11 +1,13 @@
 <template>
   <div
     :data-tipe-ui="$options.name"
-    class="wrapper">
+    :class="rootClassObject"
+  >
     <div class="row">
-      <label 
-        :class="sizeClass" 
-        class="switch">
+      <label
+        :class="sizeClass"
+        class="switch"
+      >
         <input
           ref="switch"
           :id="label +'-switch'"
@@ -15,17 +17,24 @@
           :tabindex="tabindex"
           :class="{waiting}"
           type="checkbox"
-          @change="onChange"
+          @focus="$emit('focus', $event)"
+          @blur="$emit('blur', $event)"
+          @click="$emit('click', $event)"
+          @change="$emit('change', $event)"
           @keyup.enter="$refs.switch.click()"
         >
-        <span 
-          :class="sizeClass" 
-          class="slider round"/>
+        <span
+          :class="sizeClass"
+          class="slider round"
+        />
       </label>
       <label
+        v-if="label"
         :for="label + '-switch'"
-        :class="status" 
-        class="label">{{ label }}</label>
+        class="label"
+      >
+        {{ label }}
+      </label>
     </div>
   </div>
 </template>
@@ -37,21 +46,22 @@ import inputProps from '@/types/InputProps'
 export default {
   name: 'TipeSwitch',
   props: {
-    label: vueTypes.string.isRequired,
+    label: vueTypes.string.def(''),
     ...inputProps
   },
   computed: {
+    rootClassObject() {
+      return {
+        wrapper: true,
+        [`status-${this.status}`]: this.status
+      }
+    },
     isDisabled() {
       if (this.waiting || this.disabled) return true
       return false
     },
     sizeClass() {
       return { [this.size]: true }
-    }
-  },
-  methods: {
-    onChange(event) {
-      this.$emit('change', event.target.checked)
     }
   }
 }
@@ -71,22 +81,22 @@ export default {
     align-items: center;
     justify-content: flex-start;
   }
+
+  &.status-error .label {
+    color: var(--error);
+  }
+  &.status-success .label {
+    color: var(--success);
+  }
+  &.status-warning .label {
+    color: var(--warning);
+  }
 }
 
 .label {
   color: var(--text-gray);
   font-size: 0.8125rem;
   margin: 0.625rem 0;
-
-  &.error {
-    color: var(--error);
-  }
-  &.success {
-    color: var(--success);
-  }
-  &.warning {
-    color: var(--warning);
-  }
 }
 
 .switch {
