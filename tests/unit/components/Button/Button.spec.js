@@ -10,21 +10,21 @@ describe('Button.vue', () => {
 
   it('renders a defaut button', () => {
     const wrapper = shallowMount(Button)
-    expect(wrapper.classes()).toContain('purple')
+    expect(wrapper.classes()).toContain('default')
     expect(wrapper.classes()).toContain('medium')
     expect(wrapper.classes()).not.toContain('outline')
   })
   it('should render a default outline button', () => {
     const wrapper = shallowMount(Button, { propsData: { outline: true } })
     expect(wrapper.classes()).toContain('outline')
-    expect(wrapper.classes()).toContain('purple')
+    expect(wrapper.classes()).toContain('default')
     expect(wrapper.classes()).toContain('medium')
   })
   it('should render a small button', () => {
     const wrapper = shallowMount(Button, {
       propsData: { size: 'small' }
     })
-    expect(wrapper.classes()).toContain('purple')
+    expect(wrapper.classes()).toContain('default')
     expect(wrapper.classes()).toContain('small')
     expect(wrapper.classes()).not.toContain('outline')
   })
@@ -32,7 +32,7 @@ describe('Button.vue', () => {
     const wrapper = shallowMount(Button, {
       propsData: { size: 'medium' }
     })
-    expect(wrapper.classes()).toContain('purple')
+    expect(wrapper.classes()).toContain('default')
     expect(wrapper.classes()).toContain('medium')
     expect(wrapper.classes()).not.toContain('outline')
   })
@@ -40,23 +40,23 @@ describe('Button.vue', () => {
     const wrapper = shallowMount(Button, {
       propsData: { size: 'large' }
     })
-    expect(wrapper.classes()).toContain('purple')
+    expect(wrapper.classes()).toContain('default')
     expect(wrapper.classes()).toContain('large')
     expect(wrapper.classes()).not.toContain('outline')
   })
   it('should render a purple button', () => {
     const wrapper = shallowMount(Button, {
-      propsData: { color: 'purple' }
+      propsData: { color: 'primary' }
     })
-    expect(wrapper.classes()).toContain('purple')
+    expect(wrapper.classes()).toContain('primary')
     expect(wrapper.classes()).toContain('medium')
     expect(wrapper.classes()).not.toContain('outline')
   })
   it('should render a small purple outline button', () => {
     const wrapper = shallowMount(Button, {
-      propsData: { color: 'purple', outline: true, size: 'small' }
+      propsData: { color: 'primary', outline: true, size: 'small' }
     })
-    expect(wrapper.classes()).toContain('purple')
+    expect(wrapper.classes()).toContain('primary')
     expect(wrapper.classes()).toContain('small')
     expect(wrapper.classes()).toContain('outline')
   })
