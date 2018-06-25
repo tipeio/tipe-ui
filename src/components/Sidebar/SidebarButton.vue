@@ -1,7 +1,7 @@
 <template>
   <button
     :data-tipe-ui="$options.name"
-    @click="$emit('click')"
+    @click="$emit('click', $event)"
   >
     <div class="icon-container">
       <tipe-icon

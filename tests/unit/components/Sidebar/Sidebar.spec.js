@@ -6,7 +6,6 @@ import faker from 'faker'
 
 const createLink = () => ({
   icon: faker.lorem.word(),
-  label: faker.lorem.word(),
   url: faker.internet.url(),
   active: faker.random.boolean()
 })

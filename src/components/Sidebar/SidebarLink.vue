@@ -13,10 +13,6 @@
       />
     </div>
     <div
-      v-if="!compressed"
-      class="label">{{ label }}
-    </div>
-    <div
       :class="indicatorClass"
     />
   </a>
@@ -32,10 +28,8 @@ export default {
     TipeIcon
   },
   props: {
-    label: vueTypes.string,
     url: vueTypes.string.def('#'),
     icon: vueTypes.string,
-    compressed: vueTypes.bool.def(false),
     active: vueTypes.bool.def(false)
   },
   data() {
@@ -49,7 +43,6 @@ export default {
     },
     rootClass() {
       return {
-        compressed: this.compressed,
         active: this.isActive
       }
     },
@@ -90,14 +83,6 @@ export default {
 .icon {
   height: 1.5rem;
   width: 1.5rem;
-}
-
-.label {
-  flex: 1 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: #fff;
 }
 
 .indicator {

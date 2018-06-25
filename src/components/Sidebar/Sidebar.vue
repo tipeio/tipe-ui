@@ -1,13 +1,7 @@
 <template>
-  <div
-    :class="rootClass"
-    :data-tipe-ui="$options.name"
-  >
+  <div :data-tipe-ui="$options.name">
     <div class="header">
-      <tipe-sidebar-button
-        icon="options"
-        @click="toggleCompressed"
-      />
+      <tipe-sidebar-button icon="options"/>
     </div>
     <div
       class="body"
@@ -18,7 +12,6 @@
         <tipe-sidebar-link
           v-for="(link, i) in links"
           :key="i"
-          :compressed="compressed"
           :active="isButtonActive(link)"
           :icon="link.icon"
           :label="link.label"
@@ -49,23 +42,12 @@ export default {
   },
   data() {
     return {
-      bodyHovered: false,
-      compressed: true
+      bodyHovered: false
     }
   },
   computed: {
-    rootClass() {
-      return {
-        compressed: this.compressed
-      }
-    },
     isButtonActive() {
       return link => link.active && !this.bodyHovered
-    }
-  },
-  methods: {
-    toggleCompressed() {
-      this.compressed = !this.compressed
     }
   }
 }
@@ -75,16 +57,12 @@ export default {
 [data-tipe-ui='TipeSidebar'] {
   display: grid;
   height: 100%;
-  width: 15rem;
+  width: 5rem;
   padding: 0;
   margin: 0;
   background-color: var(--purple);
   grid-template-rows: auto 1fr auto;
   transition: width 0.3s ease-out;
-}
-
-[data-tipe-ui='TipeSidebar'].compressed {
-  width: 5rem;
 }
 
 .header,

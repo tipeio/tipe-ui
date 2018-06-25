@@ -36,13 +36,6 @@ describe('Sidebar', () => {
   })
 
   describe(':props', () => {
-    it(':label - should match text', () => {
-      const propsData = { label: faker.lorem.words(1) }
-      const wrapper = shallowMount(SidebarLink, { propsData })
-
-      expect(wrapper.text()).toBe(propsData.label)
-    })
-
     it(':url - should default to #', () => {
       const wrapper = shallowMount(SidebarLink)
 
@@ -61,19 +54,6 @@ describe('Sidebar', () => {
       const wrapper = shallowMount(SidebarLink, { propsData })
 
       expect(wrapper.find(Icon).props().icon).toBe(propsData.icon)
-    })
-
-    it(':compressed(false) - should not add compressed class', () => {
-      const wrapper = shallowMount(SidebarLink)
-
-      expect(wrapper.classes()).not.toContain('compressed')
-    })
-
-    it(':compressed(true) - should add compressed class', () => {
-      const propsData = { compressed: true }
-      const wrapper = shallowMount(SidebarLink, { propsData })
-
-      expect(wrapper.classes()).toContain('compressed')
     })
   })
 })

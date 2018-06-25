@@ -5,8 +5,6 @@ exports[`Sidebar <template> matches previous snapshot 1`] = `
   <div class="icon-container">
     <TipeIcon-stub class="icon"></TipeIcon-stub>
   </div>
-  <div class="label">
-  </div>
   <div class="indicator"></div>
 </a>
 `;
