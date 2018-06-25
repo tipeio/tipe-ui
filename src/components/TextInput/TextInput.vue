@@ -1,12 +1,12 @@
 <template>
-  <input 
+  <input
     :class="classObject"
     :name="name"
-    :data-tipe-ui="$options.name" 
+    :data-tipe-ui="$options.name"
     :disabled="isDisabled"
     :id="label"
-    :placeholder="placeholder" 
-    :value="value" 
+    :placeholder="placeholder"
+    :value="value"
     :tabindex="tabindex"
     type="text"
     @click="inputEmit('click')"
@@ -31,9 +31,7 @@ export default {
       const { size, status, waiting } = this
       return {
         [size]: true,
-        success: status === 'success',
-        error: status === 'error',
-        warning: status === 'warning',
+        [`status-${status}`]: status,
         waiting
       }
     },
