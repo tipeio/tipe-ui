@@ -22,7 +22,7 @@ export default {
     type: vueTypes.string,
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
     placeholder: vueTypes.string,
-    outline: vueTypes.bool,
+    outline: vueTypes.bool.def(false),
     ...inputProps
   },
   computed: {

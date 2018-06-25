@@ -72,7 +72,6 @@ export default {
   },
   computed: {
     isDisabled() {
-      console.log(this.outline)
       return selectDisabled(this)
     },
     selected() {
