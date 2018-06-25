@@ -45,16 +45,9 @@ export default {
       .def('medium'),
     outline: vueTypes.bool.def(false),
     color: vueTypes
-      .oneOf([
-        'default',
-        'primary',
-        'success',
-        'info',
-        'warning',
-        'danger',
-        'none'
-      ])
+      .oneOf(['default', 'primary', 'info', 'none'])
       .def('default'),
+    status: vueTypes.oneOf(['success', 'error', 'warning']),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def('')
   },
@@ -64,6 +57,7 @@ export default {
       return {
         [size]: true,
         [color]: true,
+        ...(this.status && { [this.status]: true }),
         has_icon_before: !!this.iconBefore,
         has_icon_after: !!this.iconAfter,
         outline
@@ -234,6 +228,7 @@ button {
   }
   &.success {
     background-color: var(--success);
+    color: #fff;
     &:hover {
       background-color: var(--success-hover);
       box-shadow: var(--box-shawdow);
@@ -264,6 +259,7 @@ button {
   }
   &.warning {
     background-color: var(--warning);
+    color: #fff;
     &:hover {
       background-color: var(--warning-hover);
     }
@@ -275,8 +271,9 @@ button {
       background-color: var(--warning);
     }
   }
-  &.danger {
+  &.error {
     background-color: var(--danger);
+    color: #fff;
     &:hover {
       background-color: var(--danger-hover);
     }
