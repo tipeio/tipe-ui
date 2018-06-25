@@ -1,3 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+<<<<<<< HEAD
 exports[`Select.vue matches previous snapshot 1`] = `Promise {}`;
+=======
+exports[`Select :props options(empty) - renders without options 1`] = `
+<div data-tipe-ui="TipeSelect" class="select-flex">
+  <div id="" tabindex="0" class="select medium">
+    <TipeRealSelect-stub label="" placeholder="" name="" size="medium" tabindex="0"></TipeRealSelect-stub>
+    <div class="fake-select error medium"></div>
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Select <template> renders 1`] = `
+<div data-tipe-ui="TipeSelect" class="select-flex">
+  <div id="" tabindex="0" class="select medium">
+    <TipeRealSelect-stub label="" placeholder="" options="[object Object],[object Object]" name="" size="medium" tabindex="0"></TipeRealSelect-stub>
+    <div class="fake-select medium">Owner</div>
+    <!---->
+  </div>
+</div>
+`;
+>>>>>>> Select: refactored tests to use TipeTestUtils

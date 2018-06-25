@@ -1,7 +1,7 @@
 <template>
-  <component 
-    :data-tipe-ui="$options.name"  
-    v-bind="$props" 
+  <component
+    :data-tipe-ui="$options.name"
+    v-bind="$props"
     :is="is"/>
 </template>
 
