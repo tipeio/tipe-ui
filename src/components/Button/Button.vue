@@ -49,18 +49,20 @@ export default {
       .def('default'),
     status: vueTypes.oneOf(['success', 'error', 'warning']),
     iconBefore: vueTypes.string.def(''),
-    iconAfter: vueTypes.string.def('')
+    iconAfter: vueTypes.string.def(''),
+    waiting: vueTypes.bool.def(false)
   },
   computed: {
     classObject: function() {
-      const { color, size, outline } = this
+      const { color, size, outline, waiting } = this
       return {
         [size]: true,
         [color]: true,
         ...(this.status && { [this.status]: true }),
         has_icon_before: !!this.iconBefore,
         has_icon_after: !!this.iconAfter,
-        outline
+        outline,
+        waiting
       }
     }
   },
@@ -83,6 +85,10 @@ button {
 
   &:disabled {
     cursor: not-allowed;
+  }
+
+  &.waiting {
+    cursor: wait;
   }
 }
 

@@ -1,6 +1,6 @@
 <template>     
   <div 
-    class="dropdown">
+    class="dropdown" :class="{[size]: true}">
     <div 
       v-for="(option, index) in options"
       :key="option.value"
@@ -19,6 +19,9 @@ export default {
   name: 'TipeSelectDropdown',
   props: {
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
+    size: vueTypes
+      .oneOf(['mini', 'small', 'medium', 'large', 'full'])
+      .def('full'),
     activeIndex: vueTypes.number
   }
 }
@@ -31,6 +34,23 @@ export default {
   z-index: 2;
   box-shadow: 5px 20px 40px 0 rgba(0, 0, 0, 0.1);
   padding: 0.6875rem 0;
+
+  &.mini,
+  &.small {
+    width: 6.5625rem;
+  }
+
+  &.medium {
+    width: 10rem;
+  }
+
+  &.large {
+    width: 10.5625rem;
+  }
+
+  &.full {
+    width: 100%;
+  }
 
   & .dropdown-item {
     height: 2.1875rem;

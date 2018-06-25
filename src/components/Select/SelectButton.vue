@@ -14,13 +14,15 @@
       :selected-value="selectedValue"/>
     <tipe-button 
       :waiting="waiting"
-      :color="status" 
+      :color="color" 
+      :status="status"
       :size="size" 
       :disabled="isDisabled"
       icon-after="arrow-down">{{ selected }}</tipe-button>
     <tipe-select-dropdown 
       v-if="open" 
       :options="options" 
+      :size="size"
       :active-index="activeIndex" 
       @change="onChange"/>
   </div>
@@ -49,6 +51,9 @@ export default {
   props: {
     placeholder: vueTypes.string,
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
+    color: vueTypes
+      .oneOf(['default', 'primary', 'info', 'none'])
+      .def('default'),
     ...inputProps
   },
   data() {

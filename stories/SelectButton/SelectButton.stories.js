@@ -39,7 +39,7 @@ storiesOf('Select Button', module)
     components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select  :options="options" type="button"  status="danger" /></div>'
+      '<div :style="style"><tipe-select  :options="options" type="button"  status="error" /></div>'
   }))
   .add('warning', () => ({
     components: { TipeSelect },
@@ -52,6 +52,12 @@ storiesOf('Select Button', module)
     computed: { options, style },
     template:
       '<div :style="style"><tipe-select :options="options" type="button" :waiting="true"/></div>'
+  }))
+  .add('mini', () => ({
+    components: { TipeSelect },
+    computed: { options, style },
+    template:
+      '<div :style="style"><tipe-select :options="options" type="button" size="mini"/></div>'
   }))
   .add('small', () => ({
     components: { TipeSelect },
