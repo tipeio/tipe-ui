@@ -19,7 +19,9 @@ export default {
     TipeButton
   },
   props: {
-    icon: vueTypes.string.def('')
+    icon: vueTypes.string.def(''),
+    waiting: vueTypes.bool.def(false),
+    disabled: vueTypes.bool.def(false)
   }
 }
 </script>
