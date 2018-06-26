@@ -190,6 +190,28 @@ Example
 <tipe-text-input label="Name" placeholder="Type your name here" size="large"/>
 ```
 
+### TipeTextarea
+
+The TipeTextarea component supports `name`, `value`, `placeholder`, `status`, `disabled`, `waiting`, `size`, and `tabindex`.
+
+`label` is used as the `id` on the `<input>` and the `<label>` in TipeField will have a `for` attribute set to this `label` value
+`disabled` defaults to false, if true, the cursor will be set to `not-allowed` and the input won't be interactive
+`waiting` defaults to false, if true, the cursor will be set to `wait` and the input won't be interactive
+`value`, `placeholder`, and `name` are type string
+`status` is one of `'error', 'success', 'warning', ''` and defaults to `''`
+`size` is one of `'small', 'medium', 'large'` anf defaults to `medium`
+`tabindex` type number
+
+Emits change, focus, blur, and click events to the parent.
+
+`status` and `size` will add different stylings to the `<input>`
+
+Example
+
+```
+<tipe-textarea placeholder="Type something here" size="large"/>
+```
+
 ### TipeField
 
     name: vueTypes.string,

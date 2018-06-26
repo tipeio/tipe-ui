@@ -113,19 +113,19 @@ export const events = (Input, query = defaultQuery) => {
 
   it('@blur - should emit', () => {
     const wrapper = shallowMount(Input)
-    query(wrapper).trigger('focus')
+    query(wrapper).trigger('blur')
     expect(wrapper.emitted().blur).toBeTruthy()
   })
 
   it('@click - should emit', () => {
     const wrapper = shallowMount(Input)
-    query(wrapper).trigger('focus')
+    query(wrapper).trigger('click')
     expect(wrapper.emitted().click).toBeTruthy()
   })
 
   it('@change - should emit', () => {
     const wrapper = shallowMount(Input)
-    query(wrapper).trigger('focus')
+    query(wrapper).trigger('change')
     expect(wrapper.emitted().change).toBeTruthy()
   })
 }
