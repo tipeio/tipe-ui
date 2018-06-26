@@ -47,6 +47,7 @@ export default {
     },
     cancel() {
       console.log('cancel')
+      this.close()
     }
   }
 }
@@ -110,7 +111,7 @@ export default {
   }
 
   & .subtitle {
-    color: var(--gray);
+    color: #627098;
     grid-area: subtitle;
     font-size: 1.2rem;
     margin: 0;
