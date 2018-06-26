@@ -14,17 +14,22 @@
 
 <script>
 import documentBlockShape from '@/types/DocumentBlock'
+import { getBlockValueComponent } from '@/libs/blocks'
 import TipeSwitch from '@/components/Switch'
+import TipeNumberInput from '@/components/NumberInput'
+import TipeTextInput from '@/components/TextInput'
 
 export default {
   name: 'TipeDocumentBlock',
   components: {
-    TipeSwitch
+    TipeSwitch: TipeSwitch,
+    TipeNumberInput: TipeNumberInput,
+    TipeTextInput: TipeTextInput
   },
   props: documentBlockShape,
   computed: {
     is() {
-      return 'tipe-switch'
+      return getBlockValueComponent(this.type)
     }
   },
   methods: {
