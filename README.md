@@ -24,19 +24,24 @@ yarn storybook
 
 ### Button
 
-The Button component currently supports `size`, `outline`, and `color` props.
+The Button component currently supports `size`, `outline`, `color`, `iconBefore`, and `iconAfter` props.
 
 * Size
   * Type: String
-  * Valid Props: `small`, `medium`, `large`
+  * Valid Props: `mini`, `small`, `medium`, `large`
   * Default Value: `medium`
 * Color
   * Type: String
-  * Valid Props: `purple`, `dark-purple`, `danger`, `gray`
-  * Default: `purple`
+  * Valid Props: `primary`, `default`, `info`, `success`, `warning`, and `danger`
+  * Default: `default` (light gray with dark gray text)
 * Outline
   * Type: Boolean
   * Default: false
+* Icon
+  * provide and icon name to `iconBefore` and or `iconAfter` that is supported by `TipeIcon`
+  * `iconBefore` will add an icon to the button before the text
+  * `iconAfter` will add an icon to the button after the text
+  * you can use both of these at the same time
 
 **Click Event**
 
