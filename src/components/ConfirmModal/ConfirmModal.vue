@@ -9,10 +9,13 @@
       <p class="title">{{ title }}</p>
       <p class="subtitle">{{ subtitle }}</p>
       <div class="seperator"><tipe-seperator /></div>
-      <tipe-button class="cancelBtn">Cancel</tipe-button>
+      <tipe-button 
+        class="cancelBtn" 
+        @click="cancel">Cancel</tipe-button>
       <tipe-button 
         class="rightBtn" 
-        status="error">{{ buttonText }}</tipe-button>
+        status="error"
+        @click="action">{{ buttonText }}</tipe-button>
     </div>
   </div>
 </template>
@@ -38,6 +41,12 @@ export default {
   methods: {
     close() {
       this.$emit('close')
+    },
+    action() {
+      console.log('action')
+    },
+    cancel() {
+      console.log('cancel')
     }
   }
 }
