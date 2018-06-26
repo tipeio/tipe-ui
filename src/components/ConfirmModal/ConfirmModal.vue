@@ -43,10 +43,10 @@ export default {
       this.$emit('close')
     },
     action() {
-      console.log('action')
+      this.$emit('action')
     },
     cancel() {
-      console.log('cancel')
+      this.$emit('cancel')
       this.close()
     }
   }

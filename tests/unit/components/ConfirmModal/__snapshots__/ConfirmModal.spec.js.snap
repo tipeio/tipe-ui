@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddMember.vue renders 1`] = `
+<div data-tipe-ui="TipeConfirmModal" class="grid">
+  <div class="close">
+    <TipeIcon-stub></TipeIcon-stub>
+  </div>
+  <div class="content">
+    <p class="title">I am the title</p>
+    <p class="subtitle">I am the subtitle</p>
+    <div class="seperator">
+      <TipeSeperator-stub></TipeSeperator-stub>
+    </div>
+    <TipeButton-stub class="cancelBtn"></TipeButton-stub>
+    <TipeButton-stub class="rightBtn"></TipeButton-stub>
+  </div>
+</div>
+`;
