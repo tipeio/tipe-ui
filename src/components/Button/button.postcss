@@ -123,19 +123,25 @@ Colors
 /* fill */
 button {
   &.default {
-    background-color: var(--default);
-    color: var(--default-text);
+    background-color: #fff;
+    border: 1px solid var(--default);
+    color: var(--default);
     &:hover {
+      background-color: var(--default);
       box-shadow: var(--box-shawdow);
+      color: #fff;
     }
     &:focus {
-      background-color: var(--default-focus);
-      color: var(--default-focus-text);
+      background-color: var(--default);
+      color: #fff;
       box-shadow: none;
     }
     &:disabled {
+      background-color: #fff;
+      border: solid 1px var(--info);
       opacity: 0.4;
       box-shadow: none;
+      color: var(--default-disabled-text);
     }
   }
   &.primary {
@@ -148,7 +154,8 @@ button {
     }
     &:disabled {
       opacity: 0.4;
-      background-image: var(--primary);
+      background-color: var(--disabled);
+      background-image: none;
     }
   }
   &.success {
@@ -165,7 +172,7 @@ button {
     &:disabled {
       opacity: 0.4;
       box-shadow: none;
-      background-color: var(--success);
+      background-color: var(--disabled);
     }
   }
   &.info {
@@ -180,6 +187,7 @@ button {
     &:disabled {
       opacity: 0.4;
       box-shadow: none;
+      background-color: var(--disabled);
     }
   }
   &.warning {
@@ -193,7 +201,7 @@ button {
     }
     &:disabled {
       opacity: 0.4;
-      background-color: var(--warning);
+      background-color: var(--disabled);
     }
   }
   &.danger {
@@ -207,7 +215,7 @@ button {
     }
     &:disabled {
       opacity: 0.4;
-      background-color: var(--danger);
+      background-color: var(--disabled);
     }
   }
 }

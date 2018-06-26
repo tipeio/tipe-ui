@@ -2,8 +2,8 @@ button {
   /* Button Fills */
 
   /* Default */
-  --default: #eeecf1;
-  --default-focus: #6849fc;
+  --default: #6849fc;
+  --default-disabled-text: #627098;
 
   /* Primary */
   --primary: radial-gradient(circle at 21% 21%, #714bfe, #6047fa 51%, #5727e1);
@@ -13,17 +13,17 @@ button {
     radial-gradient(circle at 21% 21%, #714bfe, #6047fa 51%, #5727e1);
 
   /* Success */
-  --success: #1cc5bc;
-  --success-hover: #19b1a9;
-  --success-focus: #0d938c;
+  --success: #12d79a;
+  --success-hover: #10c28b;
+  --success-focus: #0eac7b;
 
   /* Info */
   --info: #b5baca;
 
   /* Warning */
-  --warning: #f38438;
-  --warning-hover: #d96f28;
-  --warning-focus: #ce6925;
+  --warning: #fad172;
+  --warning-hover: #f3c250;
+  --warning-focus: #e6b84b;
 
   /* Danger */
   --danger: #e44646;
@@ -36,4 +36,5 @@ button {
   --info-text: #f7f8fb;
 
   --box-shawdow: 3px 10px 20px 0 rgba(0, 0, 0, 0.1);
+  --disabled: #b5baca;
 }
