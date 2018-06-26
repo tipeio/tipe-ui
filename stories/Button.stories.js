@@ -32,13 +32,13 @@ storiesOf('Button', module)
   .add('success button', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button @click="action" status="success">Fill Button</tipe-button>',
+      '<tipe-button @click="action" color="success">Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('success disabled button', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button @click="action" status="success" :disabled="true" >Fill Button</tipe-button>',
+      '<tipe-button @click="action" color="success" :disabled="true" >Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('info button', () => ({
@@ -56,25 +56,25 @@ storiesOf('Button', module)
   .add('warning button', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button @click="action" status="warning">Fill Button</tipe-button>',
+      '<tipe-button @click="action" color="warning">Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('warning disabled button', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button @click="action" :disabled="true" status="warning">Fill Button</tipe-button>',
+      '<tipe-button @click="action" :disabled="true" color="warning">Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('danger button', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button @click="action" status="error">Fill Button</tipe-button>',
+      '<tipe-button @click="action" color="danger">Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('danger disabled button', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button @click="action" :disabled="true" status="error">Fill Button</tipe-button>',
+      '<tipe-button @click="action" :disabled="true" color="danger">Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('mini button', () => ({
