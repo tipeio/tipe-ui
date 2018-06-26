@@ -32,6 +32,7 @@ export default {
 .dropdown {
   background-color: #fff;
   border-radius: 0 0 5px 5px;
+  position: absolute;
   z-index: 2;
   box-shadow: 5px 20px 40px 0 rgba(0, 0, 0, 0.1);
   padding: 0.6875rem 0;
