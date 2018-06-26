@@ -37,7 +37,7 @@ import vueTypes from 'vue-types'
 export default {
   name: 'TipeDropDown',
   props: {
-    tabIndex: vueTypes.number.def(0),
+    tabindex: vueTypes.number.def(0),
     disabled: vueTypes.bool.def(false),
     waiting: vueTypes.bool.def(false)
   },
