@@ -2,7 +2,7 @@
 
 exports[`SettingsMenu.vue renders 1`] = `
 <ul>
-  <li>
+  <li class="first">
     <div class="icon">
       <TipeIcon-stub></TipeIcon-stub>
     </div>
@@ -26,7 +26,7 @@ exports[`SettingsMenu.vue renders 1`] = `
     </div>
     <p class="label">Webhooks</p>
   </li>
-  <li>
+  <li class="last">
     <div class="icon">
       <TipeIcon-stub></TipeIcon-stub>
     </div>
