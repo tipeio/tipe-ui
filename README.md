@@ -305,3 +305,21 @@ Example
 		</template>
   </tipe-checkbox-group>
 ```
+
+### Confirm Modal
+
+The TipeConfirmModal component supports `title`, `subtitle`, and `buttonText`.
+
+`title` is type string and is the title of the modal
+`subtitle` is type string and is the subtitle of the modal
+`buttonText` is type string and is the button text for the button on the right side of the button
+
+The button on the left hand side is the cancel button.
+
+Emits close, action, and cancel events to the parent.
+
+Example
+
+```
+<confirm-modal title="Delete Member?" subtitle="Are you sure you want to delete this member from the member list?" buttonText="DELETE"/>
+```
