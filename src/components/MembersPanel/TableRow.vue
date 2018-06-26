@@ -11,9 +11,9 @@
         </div>
       </td>
       <td class="row">
-        <p class="small-text">{{ member.role.name }}</p>
         <tipe-select 
           :outline="true" 
+          :default-selected="member.role"
           :options="[
             { label: 'Owner', value: 'owner' },
             { label: 'Member', value: 'member' },

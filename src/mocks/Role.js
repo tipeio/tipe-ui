@@ -1,6 +1,11 @@
 import faker from 'faker'
 
-export default role => ({
-  name: ['Owner', 'Member'][faker.random.number(1)],
-  ...role
-})
+export default role => {
+  const label = ['Owner', 'Member'][faker.random.number(1)]
+
+  return {
+    label,
+    value: label.toLowerCase(),
+    ...role
+  }
+}
