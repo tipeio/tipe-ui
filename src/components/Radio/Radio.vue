@@ -56,23 +56,23 @@ export default {
       switch (this.size) {
         case 'small':
           return {
-            height: '6px',
-            width: '8px'
+            height: '0.375rem',
+            width: '0.5rem'
           }
         case 'medium':
           return {
-            height: '8px',
-            width: '10px'
+            height: '0.5rem',
+            width: '0.625rem'
           }
         case 'large':
           return {
-            height: '10px',
-            width: '12px'
+            height: '0.625rem',
+            width: '0.75rem'
           }
         default:
           return {
-            height: '8px',
-            width: '10px'
+            height: '0.5rem',
+            width: '0.625rem'
           }
       }
     }
