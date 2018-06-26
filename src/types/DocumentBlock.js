@@ -9,7 +9,7 @@ export default {
   apiId: vueTypes.string.def(''),
   value: vueTypes.any,
   description: vueTypes.string.def(''),
-  status: vueTypes.oneOf(['success', 'error', 'warning']),
+  status: vueTypes.oneOf(['success', 'error', 'warning', '']),
   successMessage: vueTypes.string.def(''),
   errorMessage: vueTypes.string.def(''),
   warningMessage: vueTypes.string.def(''),
