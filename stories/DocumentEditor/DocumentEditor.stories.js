@@ -6,18 +6,21 @@ import createManyMocks from '@/mocks/createManyMocks'
 
 const blocks = [
   documentBlockMock({
+    type: 'BOOLEAN',
     value: true,
     status: '',
     waiting: false,
     disabled: false
   }),
   documentBlockMock({
+    type: 'NUMBER',
     value: true,
     status: 'success',
     waiting: false,
     disabled: false
   }),
   documentBlockMock({
+    type: 'SIMPLE_TEXT',
     value: true,
     status: 'warning',
     waiting: false,
