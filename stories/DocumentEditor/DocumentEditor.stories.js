@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/vue'
-import TipeDocumentBlockList from '@/components/DocumentEditor/DocumentBlockList'
+import TipeDocumentEditor from '@/components/DocumentEditor'
 import documentBlockMock from '@/mocks/DocumentBlock'
 import blockOption from '@/mocks/BlockOption'
 import createManyMocks from '@/mocks/createManyMocks'
@@ -43,20 +43,43 @@ const blocks = [
   })
 ]
 
-storiesOf('DocumentEditor', module).add('status(undefined)', () => ({
-  components: { TipeDocumentBlockList },
-  data() {
-    return {
-      styleObj: {
-        padding: '5rem 0',
-        width: '35rem'
-      },
-      options: createManyMocks(blockOption, 3),
-      blocks
-    }
-  },
-  template: `
-    <div :style="styleObj">
-      <tipe-document-block-list :blocks="blocks" :options="options" />
-    </div>`
-}))
+storiesOf('DocumentEditor', module)
+  .add('empty', () => ({
+    components: { TipeDocumentEditor },
+    data() {
+      return {
+        styleObj: {
+          height: '35rem',
+          width: '35rem'
+        },
+        options: createManyMocks(blockOption, 3),
+        blocks
+      }
+    },
+    template: `
+      <div :style="styleObj">
+        <tipe-document-editor
+          :options="options"
+        />
+      </div>`
+  }))
+  .add('with blocks', () => ({
+    components: { TipeDocumentEditor },
+    data() {
+      return {
+        styleObj: {
+          height: '35rem',
+          width: '35rem'
+        },
+        options: createManyMocks(blockOption, 3),
+        blocks
+      }
+    },
+    template: `
+      <div :style="styleObj">
+        <tipe-document-editor
+          :blocks="blocks"
+          :options="options"
+        />
+      </div>`
+  }))
