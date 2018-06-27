@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TipeSelectButton.vue renders 1`] = `
+<div data-tipe-ui="TipeSelectButton" class="select-flex">
+  <div class="select-button medium">
+    <TipeNativeSelect-stub></TipeNativeSelect-stub>
+    <TipeButton-stub></TipeButton-stub>
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`TipeSelectButton.vue renders without options 1`] = `
+<div data-tipe-ui="TipeSelectButton" class="select-flex">
+  <div class="select-button medium">
+    <TipeNativeSelect-stub></TipeNativeSelect-stub>
+    <TipeButton-stub></TipeButton-stub>
+    <!---->
+  </div>
+</div>
+`;
