@@ -2,6 +2,7 @@
 
 exports[`DocumentBlock <template> matches previous snapshot 1`] = `
 <div data-tipe-ui="TipeDocumentEditor">
-  <TipeDocumentBlockList-stub></TipeDocumentBlockList-stub>
+  <TipeDocumentNameInput-stub></TipeDocumentNameInput-stub>
+  <TipeTabs-stub></TipeTabs-stub>
 </div>
 `;

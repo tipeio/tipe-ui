@@ -1,14 +1,14 @@
 import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import DocumentEditor from '@/components/DocumentEditor'
-import documentBlockFixture from '@/fixtures/DocumentBlock'
-import documentBlockMock from '@/mocks/DocumentBlock'
+import documentFixture from '@/fixtures/Document'
+import documentMock from '@/mocks/Document'
 
 describe('DocumentBlock', () => {
   describe('<template>', () => {
     it('matches previous snapshot', () => {
       const renderer = createRenderer()
-      const propsData = { block: documentBlockFixture() }
+      const propsData = { document: documentFixture() }
       const wrapper = shallowMount(DocumentEditor, { propsData })
 
       renderer.renderToString(wrapper.vm, (err, str) => {
@@ -18,7 +18,7 @@ describe('DocumentBlock', () => {
     })
 
     it('has correct data-tipe-iu attibute', () => {
-      const propsData = { block: documentBlockMock() }
+      const propsData = { document: documentMock() }
       const wrapper = shallowMount(DocumentEditor, { propsData })
 
       expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeDocumentEditor')
