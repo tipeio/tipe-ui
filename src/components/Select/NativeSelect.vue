@@ -1,5 +1,7 @@
 <template>
-  <select :disabled="disabled">
+  <select 
+    :disabled="disabled" 
+    :data-tipe-ui="$options.name" >
     <option 
       v-if="placeholder"
       :selected="true"

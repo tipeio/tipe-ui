@@ -1,5 +1,6 @@
 <template>     
   <div 
+    :data-tipe-ui="$options.name" 
     :class="{[size]: true}" 
     class="dropdown">
     <div 
