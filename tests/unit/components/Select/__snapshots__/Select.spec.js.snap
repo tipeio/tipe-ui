@@ -1,21 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TipeSelect.vue renders 1`] = `
-<div data-tipe-ui="TipeSelectUnderline" class="select-flex">
-  <div tabindex="0" class="select medium">
-    <TipeNativeSelect-stub></TipeNativeSelect-stub>
-    <div class="fake-select medium">Owner</div>
-    <!---->
-  </div>
-</div>
-`;
-
-exports[`TipeSelect.vue renders without options 1`] = `
-<div data-tipe-ui="TipeSelectUnderline" class="select-flex">
-  <div tabindex="0" class="select medium">
-    <TipeNativeSelect-stub></TipeNativeSelect-stub>
-    <div class="fake-select error medium">Please provide select options</div>
-    <!---->
-  </div>
-</div>
-`;
+exports[`Select.vue matches previous snapshot 1`] = `Promise {}`;
