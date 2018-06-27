@@ -16,6 +16,13 @@ button {
   grid-template-columns: auto auto auto;
   height: 100%;
   color: inherit;
+
+  &.dropdown {
+    width: 100%;
+    & .icon-container {
+      justify-content: flex-end;
+    }
+  }
 }
 
 .icon-container {
@@ -141,7 +148,13 @@ button {
       border: solid 1px var(--info);
       opacity: 0.4;
       box-shadow: none;
-      color: var(--default-disabled-text);
+      color: var(--default-text);
+    }
+
+    &.dropdown {
+      border: 1px solid var(--info);
+      background-color: #fff;
+      color: var(--default-text);
     }
   }
   &.primary {

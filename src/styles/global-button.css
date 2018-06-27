@@ -3,7 +3,6 @@ button {
 
   /* Default */
   --default: #6849fc;
-  --default-disabled-text: #627098;
 
   /* Primary */
   --primary: radial-gradient(circle at 21% 21%, #714bfe, #6047fa 51%, #5727e1);
