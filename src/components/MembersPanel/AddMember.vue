@@ -36,7 +36,7 @@
             :disabled="!canSubmit"
             type="submit"
             value="Submit" 
-            color="purple"
+            color="primary"
             size="full">ADD MEMBER</tipe-button>
         </div>
       </form>
