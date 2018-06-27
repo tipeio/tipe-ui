@@ -73,14 +73,15 @@ export default {
   },
   computed: {
     classObject: function() {
-      const { color, size, outline, waiting } = this
+      const { color, size, outline, waiting, dropdown } = this
       return {
         [size]: true,
         [color]: true,
         has_icon_before: !!this.iconBefore,
         has_icon_after: !!this.iconAfter,
         outline,
-        waiting
+        waiting,
+        dropdown
       }
     }
   },
