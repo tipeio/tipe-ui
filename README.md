@@ -119,12 +119,13 @@ Example
 
 ### TipeSelect
 
-The TipeSelect component supports `label`, `placeholder`, `options`, `value`, and `disabled`
+The TipeSelect component supports `type`, `placeholder`, `options`, `defaultSelected`, `color`, and `inputProps`
 
-`label` is required
-`disabled` defaults to false
-`options` is required and must be an array of the `SelectOptionShape`
+`type` is a string and the supported types are `button` and `underline`
+`options` is an array of the `SelectOptionShape`, a message will render in the select if no options are provided
 `placeholder` is optional, if no placeholder is provided, the first select option will be selected
+`color` works for selects that are of type `button`. Supported colors are `default`, `primary`, `danger`, `success`, and `warning`.
+`defaultSelected` is the `SelectOptionShape`. if you want the select to have a default value use this prop.
 
 Emits an onchange event to the parent with the selected option such as `{value: 'member', label: 'Member'}`
 
@@ -134,7 +135,7 @@ Example
   <tipe-select
     :options="options"
     class="role"
-    label="Role"
+    type="button"
     @change="onChange" />
 ```
 
