@@ -46,7 +46,6 @@
 <script>
 import vueTypes from 'vue-types'
 import TipeIcon from '../Icon'
-
 export default {
   name: 'TipeButton',
   components: { TipeIcon },
