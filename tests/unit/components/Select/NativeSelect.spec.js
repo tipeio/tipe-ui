@@ -8,7 +8,7 @@ const props = {
     { label: 'Admin', value: 'admin' }
   ]
 }
-describe('Button.vue', () => {
+describe('NativeSelect.vue', () => {
   it('matches previous snapshot', async () => {
     const wrapper = shallowMount(NativeSelect)
     await expect(createRenderer().renderToString(wrapper.vm)).toMatchSnapshot()
