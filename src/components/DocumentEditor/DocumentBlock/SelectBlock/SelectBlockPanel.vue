@@ -31,7 +31,7 @@ export default {
   flex-direction: column;
   width: 17.5rem;
   background-color: #fff;
-  box-shadow: 0 0.125rem 3.375rem 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.125rem 1.8rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 0.9375rem 0.8125rem;
   margin-top: 0.5rem;
