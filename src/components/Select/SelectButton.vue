@@ -9,7 +9,7 @@
   >
     <div 
       :class="{[size]: true}" 
-      class="select-button">
+      class="select">
       <tipe-native-select 
         :options="options" 
         :disabled="isDisabled" 
@@ -98,9 +98,14 @@ export default {
       this.activeIndex = selectKeydown(this)
     },
     enter() {
-      let { open, activeIndex = this.activeIndex } = selectEnter(this)
+      let {
+        open,
+        activeIndex = this.activeIndex,
+        selectedValue = {}
+      } = selectEnter(this)
       this.open = open
       this.activeIndex = activeIndex
+      this.onChange(selectedValue)
     }
   }
 }
@@ -112,7 +117,7 @@ export default {
   flex-direction: column;
 }
 
-.select-button {
+.select {
   display: inline-block;
   max-width: 100%;
   position: relative;

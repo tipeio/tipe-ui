@@ -2,7 +2,7 @@
 
 exports[`TipeSelectButton.vue renders 1`] = `
 <div data-tipe-ui="TipeSelectButton" class="select-flex">
-  <div class="select-button medium">
+  <div class="select medium">
     <TipeNativeSelect-stub></TipeNativeSelect-stub>
     <TipeButton-stub></TipeButton-stub>
     <!---->
@@ -12,7 +12,7 @@ exports[`TipeSelectButton.vue renders 1`] = `
 
 exports[`TipeSelectButton.vue renders without options 1`] = `
 <div data-tipe-ui="TipeSelectButton" class="select-flex">
-  <div class="select-button medium">
+  <div class="select medium">
     <TipeNativeSelect-stub></TipeNativeSelect-stub>
     <TipeButton-stub></TipeButton-stub>
     <!---->

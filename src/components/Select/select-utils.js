@@ -26,9 +26,9 @@ export function selectEnter(select) {
     selectOptions.open = true
     return selectOptions
   } else {
-    selectChange(select, select.options[select.activeIndex])
     selectOptions.open = false
     selectOptions.activeIndex = -1
+    selectOptions.selectedValue = select.options[select.activeIndex]
     return selectOptions
   }
 }

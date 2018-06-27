@@ -91,9 +91,14 @@ export default {
       this.activeIndex = selectKeydown(this)
     },
     enter() {
-      let { open, activeIndex = this.activeIndex } = selectEnter(this)
+      let {
+        open,
+        activeIndex = this.activeIndex,
+        selectedValue = {}
+      } = selectEnter(this)
       this.open = open
       this.activeIndex = activeIndex
+      this.onChange(selectedValue)
     }
   }
 }
