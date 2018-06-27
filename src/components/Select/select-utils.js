@@ -34,7 +34,6 @@ export function selectEnter(select) {
 }
 
 export function findSelected(selected) {
-  console.log(selected.defaultSelected)
   if (selected.selectedValue.label) return selected.selectedValue.label
   if (selected.placeholder) return selected.placeholder
   if (selected.options) return selected.options[0].label

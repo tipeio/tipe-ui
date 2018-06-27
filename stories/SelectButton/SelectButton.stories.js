@@ -39,25 +39,19 @@ storiesOf('Select Button', module)
     components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select :options="options" type="button" status="success"/></div>'
+      '<div :style="style"><tipe-select :options="options" type="button" color="success"/></div>'
   }))
   .add('danger', () => ({
     components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select  :options="options" type="button"  status="error" /></div>'
+      '<div :style="style"><tipe-select  :options="options" type="button" color="danger" /></div>'
   }))
   .add('warning', () => ({
     components: { TipeSelect },
     computed: { options, style },
     template:
-      '<div :style="style"><tipe-select :options="options" type="button"  status="warning"/></div>'
-  }))
-  .add('outline', () => ({
-    components: { TipeSelect },
-    computed: { options, style },
-    template:
-      '<div :style="style"><tipe-select :options="options" type="button" :outline="true" /></div>'
+      '<div :style="style"><tipe-select :options="options" type="button" color="warning"/></div>'
   }))
   .add('waiting', () => ({
     components: { TipeSelect },

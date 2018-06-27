@@ -22,8 +22,16 @@ export default {
     type: vueTypes.string,
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
     placeholder: vueTypes.string,
-    outline: vueTypes.bool.def(false),
     defaultSelected: vueTypes.shape(SelectOptionShape),
+    color: vueTypes.oneOf([
+      'default',
+      'primary',
+      'info',
+      'none',
+      'success',
+      'danger',
+      'warning'
+    ]),
     ...inputProps
   },
   computed: {

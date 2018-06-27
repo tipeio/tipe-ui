@@ -18,8 +18,6 @@
       <tipe-button 
         :waiting="waiting"
         :color="color" 
-        :status="status"
-        :outline="outline"
         :size="size" 
         :disabled="isDisabled"
         :dropdown="true"
@@ -58,9 +56,16 @@ export default {
     placeholder: vueTypes.string,
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
     defaultSelected: vueTypes.shape(SelectOptionShape),
-    outline: vueTypes.bool.def(false),
     color: vueTypes
-      .oneOf(['default', 'primary', 'info', 'none'])
+      .oneOf([
+        'default',
+        'primary',
+        'info',
+        'none',
+        'success',
+        'danger',
+        'warning'
+      ])
       .def('default'),
     ...inputProps
   },
