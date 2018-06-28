@@ -39,11 +39,11 @@ export default {
     is() {
       if (this.type === 'button') return 'tipe-select-button'
       return 'tipe-select-underline'
-    },
-    methods: {
-      onChange(val) {
-        this.$emit('change', val)
-      }
+    }
+  },
+  methods: {
+    onChange(val) {
+      this.$emit('change', val)
     }
   }
 }
