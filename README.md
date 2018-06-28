@@ -26,22 +26,22 @@ yarn storybook
 
 The Button component currently supports `size`, `outline`, `color`, `iconBefore`, and `iconAfter` props.
 
-* Size
-  * Type: String
-  * Valid Props: `mini`, `small`, `medium`, `large`
-  * Default Value: `medium`
-* Color
-  * Type: String
-  * Valid Props: `primary`, `default`, `info`, `success`, `warning`, and `danger`
-  * Default: `default` (light gray with dark gray text)
-* Outline
-  * Type: Boolean
-  * Default: false
-* Icon
-  * provide and icon name to `iconBefore` and or `iconAfter` that is supported by `TipeIcon`
-  * `iconBefore` will add an icon to the button before the text
-  * `iconAfter` will add an icon to the button after the text
-  * you can use both of these at the same time
+- Size
+  - Type: String
+  - Valid Props: `mini`, `small`, `medium`, `large`
+  - Default Value: `medium`
+- Color
+  - Type: String
+  - Valid Props: `primary`, `default`, `info`, `success`, `warning`, and `danger`
+  - Default: `default` (light gray with dark gray text)
+- Outline
+  - Type: Boolean
+  - Default: false
+- Icon
+  - provide and icon name to `iconBefore` and or `iconAfter` that is supported by `TipeIcon`
+  - `iconBefore` will add an icon to the button before the text
+  - `iconAfter` will add an icon to the button after the text
+  - you can use both of these at the same time
 
 **Click Event**
 
@@ -57,12 +57,12 @@ Example
 
 The TipeImage component currently supports `url` and `alt`.
 
-* url
-  * Type: String
-  * Default Value: `''`
-* alt
-  * Type: String
-  * Default: `''`
+- url
+  - Type: String
+  - Default Value: `''`
+- alt
+  - Type: String
+  - Default: `''`
 
 Example
 
@@ -74,9 +74,9 @@ Example
 
 The TipeImage component currently supports `icon`. See inside `src/icons` for supported icons.
 
-* icon
-  * Type: String
-  * Default Value: `''`
+- icon
+  - Type: String
+  - Default Value: `''`
 
 Example
 
@@ -350,4 +350,21 @@ Example
 
 ```
 <confirm-modal title="Delete Member?" subtitle="Are you sure you want to delete this member from the member list?" buttonText="DELETE"/>
+```
+
+### TipeRadio
+
+The TipeRadio component supports `label`, `checked`, and `inputProps`
+
+`label` is type string, and the `<label>` will have a `for` attribute with the value of the label, the radio `<input>` will have an `id` of the `label` value.
+`checked` is type boolean and defaults to false
+
+Emits change, focus, blur, and click events to the parent.
+
+`status` and `size` will add different stylings to the `<input>`
+
+Example
+
+```
+'<tipe-radio label="JavaScript" size="small" />'
 ```
