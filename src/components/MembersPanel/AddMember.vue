@@ -119,7 +119,6 @@ export default {
     },
     onChangeRole(val) {
       this.roleValue = val
-      console.log('hello')
     },
     onChangeName(val) {
       this.nameValue = val

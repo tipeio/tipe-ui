@@ -7,7 +7,6 @@ import TipeButton from '@/components/Button'
 import Seperator from '@/components/Seperator'
 import AvatarUpload from '@/components/AvatarUpload'
 import TipeField from '@/components/Field'
-import TipeSelect from '@/components/Select'
 
 describe('AddMember.vue', () => {
   it('renders', () => {
@@ -41,10 +40,6 @@ describe('AddMember.vue', () => {
   it('should render the TipeField component', () => {
     const wrapper = shallowMount(AddMember)
     expect(wrapper.contains(TipeField)).toBe(true)
-  })
-  it('should render the TipeSelect component', () => {
-    const wrapper = shallowMount(AddMember)
-    expect(wrapper.contains(TipeSelect)).toBe(true)
   })
   it('should have the grid class', () => {
     const wrapper = shallowMount(AddMember)

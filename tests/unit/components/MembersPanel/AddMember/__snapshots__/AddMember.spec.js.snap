@@ -11,7 +11,7 @@ exports[`AddMember.vue renders 1`] = `
     <form>
       <TipeFieldContainer-stub class="name"></TipeFieldContainer-stub>
       <TipeFieldContainer-stub class="email"></TipeFieldContainer-stub>
-      <TipeSelect-stub label="Role" class="role"></TipeSelect-stub>
+      <TipeFieldContainer-stub class="role"></TipeFieldContainer-stub>
       <div class="seperator">
         <TipeSeperator-stub></TipeSeperator-stub>
       </div>

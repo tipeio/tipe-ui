@@ -1,5 +1,6 @@
 import vueTypes from 'vue-types'
 
 export default {
-  name: vueTypes.string
+  label: vueTypes.string,
+  value: vueTypes.string
 }

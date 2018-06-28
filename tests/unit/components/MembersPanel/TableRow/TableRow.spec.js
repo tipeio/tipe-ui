@@ -96,7 +96,7 @@ const member = {
   firstName: 'Garnett',
   lastName: 'Koch',
   email: 'Hank_Zemlak@hotmail.com',
-  role: { name: 'Owner' },
+  role: { label: 'Owner', value: 'owner' },
   status: 'Offline',
   updatedAt: 'Thu May 31 2018 22:44:03 GMT-0700 (Pacific Daylight Time)'
 }

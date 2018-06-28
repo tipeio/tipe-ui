@@ -12,7 +12,6 @@
       </td>
       <td class="row">
         <tipe-select 
-          :outline="true" 
           :default-selected="member.role"
           :options="[
             { label: 'Owner', value: 'owner' },
