@@ -13,7 +13,7 @@ exports[`TableRow.vue renders 1`] = `
       </div>
     </td>
     <td class="row">
-      <p class="small-text">Owner</p>
+      <TipeSelect-stub outline="true"></TipeSelect-stub>
     </td>
     <td class="row">
       <p class="small-text"></p>

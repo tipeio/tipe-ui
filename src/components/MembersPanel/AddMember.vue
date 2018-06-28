@@ -25,11 +25,12 @@
           @change="onChangeEmail">
           <tipe-text-input />
         </tipe-field>
-        <tipe-select 
-          :options="options" 
-          class="role"
-          label="Role"
-          @change="onChangeRole" />
+        <tipe-field 
+          :field="{placeholder: 'Select a role', options}" 
+          class="role" 
+          label="Role" >
+          <tipe-select @change="onChangeRole"/>
+        </tipe-field>
         <div class="seperator"><tipe-seperator /></div>
         <div class="add-button">
           <tipe-button 
@@ -118,6 +119,7 @@ export default {
     },
     onChangeRole(val) {
       this.roleValue = val
+      console.log('hello')
     },
     onChangeName(val) {
       this.nameValue = val
