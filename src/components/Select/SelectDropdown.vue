@@ -60,6 +60,7 @@ export default {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    cursor: pointer;
 
     & p {
       color: #627098;
