@@ -4,7 +4,7 @@
     <tipe-button
       outline
       size="small"
-      color="purple-dark"
+      color="info"
     >
       Documentation
     </tipe-button>
