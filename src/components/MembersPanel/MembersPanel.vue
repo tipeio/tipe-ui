@@ -8,6 +8,8 @@
         </div>
         <tipe-button
           icon-before="plus"
+          size="small"
+          color="primary"
           @click="modalToggle">Add Member</tipe-button>
       </div>
       <tipe-table :members="members" />
