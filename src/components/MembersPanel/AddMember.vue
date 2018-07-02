@@ -38,7 +38,7 @@
             type="submit"
             value="Submit" 
             color="primary"
-            size="full">ADD MEMBER</tipe-button>
+            size="large">ADD MEMBER</tipe-button>
         </div>
       </form>
     </div>
@@ -221,7 +221,7 @@ export default {
   & form {
     display: grid;
     grid-row-gap: 1.25rem;
-    grid-template-rows: 1fr 1fr 1fr 0 0 6rem;
+    grid-template-rows: 1fr 1fr 1fr 0 0 4.5rem;
     grid-template-columns: 3rem auto 3rem;
     grid-template-areas:
       '. nameInput .'
