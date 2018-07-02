@@ -55,7 +55,6 @@ export default {
     size: vueTypes
       .oneOf(['mini', 'small', 'medium', 'large', 'full'])
       .def('medium'),
-    outline: vueTypes.bool.def(false),
     color: vueTypes
       .oneOf([
         'default',
@@ -73,15 +72,14 @@ export default {
   },
   computed: {
     classObject: function() {
-      const { color, size, outline, status, waiting } = this
+      const { color, size, status, waiting } = this
       return {
         [size]: true,
         [color]: true,
         waiting: waiting,
         [`status-${status}`]: status,
         has_icon_before: !!this.iconBefore,
-        has_icon_after: !!this.iconAfter,
-        outline
+        has_icon_after: !!this.iconAfter
       }
     }
   }

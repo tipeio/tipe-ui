@@ -101,12 +101,6 @@ storiesOf('Button', module)
       '<tipe-button size="large" @click="action">Large Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
-  .add('outline button', () => ({
-    components: { TipeButton },
-    template:
-      '<tipe-button outline @click="action">Outline Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
   .add('icon before label', () => ({
     components: { TipeButton },
     template:
