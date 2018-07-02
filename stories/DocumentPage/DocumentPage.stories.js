@@ -37,6 +37,13 @@ const blocks = [
     status: 'warning',
     waiting: false,
     disabled: false
+  }),
+  documentBlockMock({
+    type: 'NUMBER',
+    value: true,
+    status: 'error',
+    waiting: false,
+    disabled: false
   })
 ]
 
@@ -52,7 +59,7 @@ storiesOf('DocumentPage', module).add('default', () => ({
         height: '100%',
         width: '100%'
       },
-      blockOptions: createManyMocks(blockOption, 3),
+      blockOptions: createManyMocks(blockOption, 10),
       document,
       user,
       navLinks,

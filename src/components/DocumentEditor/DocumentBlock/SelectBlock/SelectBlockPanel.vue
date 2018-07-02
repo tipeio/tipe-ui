@@ -27,9 +27,9 @@ export default {
 
 <style lang="postcss" scoped>
 [data-tipe-ui='TipeSelectBlockPanel'] {
-  display: flex;
-  flex-direction: column;
   width: 17.5rem;
+  max-height: 16rem;
+  overflow-y: scroll;
   background-color: #fff;
   box-shadow: 0 0.125rem 1.8rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
