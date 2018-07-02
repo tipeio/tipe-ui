@@ -111,6 +111,10 @@ input {
   width: 1.125rem;
   height: 1.125rem;
   border: solid 1px #b5baca;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .small {
