@@ -7,7 +7,6 @@
     :tabindex="tabindex"
     :value="value"
     :placeholder="placeholder"
-    type="text"
     @focus="$emit('focus', $event)"
     @blur="$emit('blur', $event)"
     @click="$emit('click', $event)"
@@ -101,14 +100,14 @@ export default {
   border: 1px solid var(--danger-active);
 }
 
-[data-tipe-ui='TipeTextarea'].waiting {
-  cursor: wait;
+[data-tipe-ui='TipeTextarea']:disabled {
+  cursor: not-allowed;
   color: var(--gray-light);
   border: 1px solid var(--gray-light);
 }
 
-[data-tipe-ui='TipeTextarea']:disabled {
-  cursor: not-allowed;
+[data-tipe-ui='TipeTextarea'].waiting {
+  cursor: wait;
   color: var(--gray-light);
   border: 1px solid var(--gray-light);
 }

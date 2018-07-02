@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Textarea <template> matches previous snapshot 1`] = `<textarea data-tipe-ui="TipeTextarea" name="name" tabindex="0" placeholder="Type your name here" type="text" class="medium"></textarea>`;
+exports[`Textarea <template> matches previous snapshot 1`] = `<textarea data-tipe-ui="TipeTextarea" name="name" tabindex="0" placeholder="Type your name here" class="medium"></textarea>`;
