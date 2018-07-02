@@ -66,20 +66,22 @@ export default {
         'none'
       ])
       .def('default'),
+    dropdown: vueTypes.bool.def(false),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def(''),
     ...inputProps
   },
   computed: {
     classObject: function() {
-      const { color, size, status, waiting } = this
+      const { color, size, status, waiting, dropdown } = this
       return {
         [size]: true,
         [color]: true,
         waiting: waiting,
         [`status-${status}`]: status,
         has_icon_before: !!this.iconBefore,
-        has_icon_after: !!this.iconAfter
+        has_icon_after: !!this.iconAfter,
+        dropdown
       }
     }
   }
