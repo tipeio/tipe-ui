@@ -18,7 +18,8 @@
             { label: 'Member', value: 'member' },
             { label: 'Manager', value: 'manager' }
           ]" 
-          type="button" 
+          :dropdown="true" 
+          type="button"
           size="small"/>
       </td>
       <td class="row">

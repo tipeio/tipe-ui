@@ -67,6 +67,7 @@ export default {
       ])
       .def('default'),
     dropdown: vueTypes.bool.def(false),
+    waiting: vueTypes.bool.def(false),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def(''),
     ...inputProps
@@ -77,11 +78,11 @@ export default {
       return {
         [size]: true,
         [color]: true,
-        waiting: waiting,
         [`status-${status}`]: status,
         has_icon_before: !!this.iconBefore,
         has_icon_after: !!this.iconAfter,
-        dropdown
+        dropdown,
+        waiting
       }
     }
   }
