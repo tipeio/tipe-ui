@@ -14,7 +14,7 @@
         @click="cancel">Cancel</tipe-button>
       <tipe-button 
         class="rightBtn" 
-        status="error"
+        color="danger"
         @click="action">{{ buttonText }}</tipe-button>
     </div>
   </div>
