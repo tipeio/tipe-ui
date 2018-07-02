@@ -9,9 +9,7 @@ describe('FileIconRectangle', () => {
   describe('<template>', () => {
     it('matches previous snapshot', () => {
       const renderer = createRenderer()
-      const propsData = {
-        file: fileFixture()
-      }
+      const propsData = { file: fileFixture() }
       const wrapper = shallowMount(FileIconRectangle, { propsData })
 
       renderer.renderToString(wrapper.vm, (err, str) => {

@@ -1,4 +1,5 @@
 export default role => ({
-  name: 'Admin',
+  label: 'Admin',
+  value: 'Admin',
   ...role
 })
