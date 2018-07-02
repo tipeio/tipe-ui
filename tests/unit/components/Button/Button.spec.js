@@ -19,30 +19,13 @@ describe('Button.vue', () => {
   tipeTestUtils.test.input.waiting(Button)
   tipeTestUtils.test.input.disabled(Button)
 
-  it(':color(purple) - has purple class', () => {
+  it(':color(primary) - has primary class', () => {
     const wrapper = shallowMount(Button, {
-      propsData: { color: 'purple' }
+      propsData: { color: 'primary' }
     })
 
-    expect(wrapper.classes()).toContain('purple')
+    expect(wrapper.classes()).toContain('primary')
   })
-
-  it(':color(purple-dark) - has purple-dark class', () => {
-    const wrapper = shallowMount(Button, {
-      propsData: { color: 'purple-dark' }
-    })
-
-    expect(wrapper.classes()).toContain('purple-dark')
-  })
-
-  it(':color(gray) - has gray class', () => {
-    const wrapper = shallowMount(Button, {
-      propsData: { color: 'gray' }
-    })
-
-    expect(wrapper.classes()).toContain('gray')
-  })
-
   it(':color(none) - has none class', () => {
     const wrapper = shallowMount(Button, {
       propsData: { color: 'none' }
