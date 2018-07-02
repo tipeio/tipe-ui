@@ -43,6 +43,7 @@ li {
 
   &:hover {
     background-color: var(--purple);
+    cursor: pointer;
 
     & .label {
       color: #fff;
