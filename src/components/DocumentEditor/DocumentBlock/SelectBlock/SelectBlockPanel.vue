@@ -27,6 +27,8 @@ export default {
 
 <style lang="postcss" scoped>
 [data-tipe-ui='TipeSelectBlockPanel'] {
+  position: relative;
+  left: 0.3rem;
   width: 17.5rem;
   max-height: 16rem;
   overflow-y: scroll;
