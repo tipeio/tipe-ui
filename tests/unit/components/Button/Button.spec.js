@@ -50,15 +50,6 @@ describe('Button.vue', () => {
 
     expect(wrapper.classes()).toContain('none')
   })
-
-  it(':outline - has outline class', () => {
-    const wrapper = shallowMount(Button, {
-      propsData: { outline: true }
-    })
-
-    expect(wrapper.classes()).toContain('outline')
-  })
-
   it(':iconBefore - renders icon before', () => {
     const propsData = { iconBefore: 'plus' }
     const wrapper = shallowMount(Button, { propsData })
