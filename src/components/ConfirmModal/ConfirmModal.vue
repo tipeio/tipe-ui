@@ -11,6 +11,7 @@
       <div class="seperator"><tipe-seperator /></div>
       <tipe-button 
         class="cancelBtn" 
+        color="info"
         @click="cancel">Cancel</tipe-button>
       <tipe-button 
         class="rightBtn" 
