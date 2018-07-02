@@ -1,22 +1,25 @@
 <template>
-  <tipe-button
-    :waiting="waiting"
-    :disabled="disabled"
-    size="small"
-    icon-before="plus"
-    color="none"
+  <button
+    :data-tipe-ui="$options.name"
     @click="$emit('click', $event)"
-  />
+  >
+    <tipe-icon
+      :waiting="waiting"
+      :disabled="disabled"
+      height="0.625rem"
+      width="0.625rem"
+    />
+  </button>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
-import TipeButton from '@/components/Button'
+import TipeIcon from '@/components/Icon'
 
 export default {
-  name: 'TipeSelectBlock',
+  name: 'TipeSelectBlockControl',
   components: {
-    TipeButton
+    TipeIcon
   },
   props: {
     icon: vueTypes.string.def(''),
@@ -27,11 +30,16 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-button {
+[data-tipe-ui='TipeSelectBlockControl'] {
   margin: 0;
   padding: 0;
   border: none;
   outline: none;
   background-color: transparent;
+  height: 1.75rem;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
