@@ -129,7 +129,7 @@ export default {
   grid-auto-columns: 12.75rem minmax(18rem, 1fr);
   grid-column-gap: 1.25rem;
   background-color: var(--gray-lightest);
-  padding: 5rem 5.625rem 5rem 0;
+  padding: 3rem 5.625rem 5rem 0;
   box-sizing: border-box;
 }
 
