@@ -30,12 +30,12 @@
       </td>
       <td class="row">
         <tipe-button 
-          size="small" 
+          size="icon" 
           color="none" 
           icon-before="paper-airplane" 
           @click="send"/>
         <tipe-button 
-          size="small" 
+          size="icon" 
           color="none" 
           icon-before="trash" 
           @click="deleteMember"/>
