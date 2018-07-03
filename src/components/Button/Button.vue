@@ -52,9 +52,6 @@ export default {
   name: 'TipeButton',
   components: { TipeIcon },
   props: {
-    size: vueTypes
-      .oneOf(['icon', 'mini', 'small', 'medium', 'large', 'full'])
-      .def('medium'),
     color: vueTypes
       .oneOf([
         'default',
@@ -67,10 +64,12 @@ export default {
       ])
       .def('default'),
     dropdown: vueTypes.bool.def(false),
-    waiting: vueTypes.bool.def(false),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def(''),
-    ...inputProps
+    ...inputProps,
+    size: vueTypes
+      .oneOf(['icon', 'mini', 'small', 'medium', 'large', 'full'])
+      .def('medium')
   },
   computed: {
     classObject: function() {
