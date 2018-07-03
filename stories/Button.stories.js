@@ -131,3 +131,9 @@ storiesOf('Button', module)
       '<tipe-button color="none" iconBefore="plus" @click="action"></tipe-button>',
     methods: { action: action('clicked') }
   }))
+  .add('icon size', () => ({
+    components: { TipeButton },
+    template:
+      '<tipe-button color="primary" size="icon" iconBefore="plus" @click="action"></tipe-button>',
+    methods: { action: action('clicked') }
+  }))

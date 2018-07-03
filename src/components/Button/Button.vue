@@ -53,7 +53,7 @@ export default {
   components: { TipeIcon },
   props: {
     size: vueTypes
-      .oneOf(['mini', 'small', 'medium', 'large', 'full'])
+      .oneOf(['icon', 'mini', 'small', 'medium', 'large', 'full'])
       .def('medium'),
     color: vueTypes
       .oneOf([
