@@ -1,7 +1,8 @@
 <template>
   <div 
+    v-click-outside="clickOut" 
     :data-tipe-ui="$options.name" 
-    class="select-flex" 
+    class="select-flex"
     @keyup.up="keyup"
     @keyup.down="keydown"
     @keyup.enter="enter">
@@ -29,6 +30,7 @@
 
 <script>
 import vueTypes from 'vue-types'
+import ClickOutside from 'vue-click-outside'
 import inputProps from '@/types/InputProps'
 import SelectOptionShape from '@/types/SelectOptionShape'
 import TipeSelectDropdown from './SelectDropdown'
@@ -46,6 +48,9 @@ import {
 export default {
   name: 'TipeSelectUnderline',
   components: { TipeSelectDropdown, TipeNativeSelect },
+  directives: {
+    ClickOutside
+  },
   props: {
     placeholder: vueTypes.string,
     options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
@@ -80,6 +85,9 @@ export default {
   methods: {
     onClick() {
       this.open = selectClick(this)
+    },
+    clickOut() {
+      this.open = false
     },
     onChange(val) {
       this.selectedValue = selectChange(this, val)

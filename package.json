@@ -17,6 +17,7 @@
     "autosize": "^4.0.2",
     "moment": "^2.22.2",
     "vue": "^2.5.16",
+    "vue-click-outside": "^1.0.7",
     "vue-types": "^1.2.3",
     "webpack-cli": "^3.0.8",
     "xstate": "^3.2.1"
