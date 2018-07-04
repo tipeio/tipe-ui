@@ -2,7 +2,10 @@
   "name": "@tipe/tipe-ui",
   "version": "0.1.0",
   "private": true,
+  "main": "build/lib/index.js",
   "scripts": {
+    "build":
+      "node build/build.js && yarn webpack --config build/configs/webpack.config.js",
     "lint": "vue-cli-service lint",
     "test": "vue-cli-service test:unit",
     "storybook": "start-storybook -p 6006",
@@ -15,6 +18,7 @@
     "moment": "^2.22.2",
     "vue": "^2.5.16",
     "vue-types": "^1.2.3",
+    "webpack-cli": "^3.0.8",
     "xstate": "^3.2.1"
   },
   "devDependencies": {
@@ -64,6 +68,7 @@
     "postcss-loader": "^2.1.5",
     "postcss-mixins": "^6.2.0",
     "postcss-nesting": "^5.0.0",
+    "rimraf": "^2.6.2",
     "style-loader": "^0.21.0",
     "svg-sprite-loader": "^3.7.3",
     "svgo": "^1.0.5",
