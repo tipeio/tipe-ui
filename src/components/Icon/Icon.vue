@@ -3,6 +3,7 @@
     :data-tipe-ui="$options.name"
     :style="styleObject"
     :viewBox="src.viewBox"
+    :color="color"
   >
     <use :xlink:href="src.id" />
   </svg>
@@ -18,6 +19,7 @@ export default {
     icon: vueTypes.string.def('plus'),
     height: vueTypes.string.def('1rem'),
     width: vueTypes.string.def('1rem'),
+    color: vueTypes.string.def('#000'),
     __iconLoader__: vueTypes.func.def(iconLoader)
   },
   computed: {
