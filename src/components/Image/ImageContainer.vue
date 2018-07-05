@@ -47,6 +47,11 @@ export default {
       status: status.initial
     }
   },
+  watch: {
+    url(url) {
+      this.load()
+    }
+  },
   beforeMount() {
     this.load()
   },
