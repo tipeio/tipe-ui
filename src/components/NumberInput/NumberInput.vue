@@ -46,7 +46,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import inputPropsShape from '@/types/InputProps'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeIcon from '@/components/Icon'
 import { getPrecision } from '@/libs/float'
 
@@ -61,7 +61,7 @@ export default {
     min: vueTypes.number.def(-Infinity),
     step: vueTypes.number.def(1),
     placeholder: vueTypes.oneOfType([vueTypes.number, vueTypes.string]),
-    ...inputPropsShape
+    ...interfaces.input
   },
   data() {
     return {

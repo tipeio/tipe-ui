@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-link-square</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="New-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-665.000000, -943.000000)">
+            <g id="Link" transform="translate(665.000000, 943.000000)">
+                <g id="icon/content/link">
+                    <g>
+                        <rect id="Rectangle-5-Copy" fill="#1F346C" opacity="0.049999997" x="0" y="0" width="42" height="42" rx="4"></rect>
+                        <g id="link" transform="translate(12.000000, 12.000000)">
+                            <path d="M7.065,10.08 C5.99302474,8.65063647 6.12192655,6.65345401 7.36875,5.37375 L11.25,1.42125 C11.9029115,0.751182266 12.7988087,0.373265875 13.734375,0.373265875 C14.6699413,0.373265875 15.5658385,0.751182266 16.21875,1.42125 C17.5911289,2.82826741 17.5911289,5.07298259 16.21875,6.48 L13.62375,9.28875" id="Shape" stroke="#627098" stroke-width="1.5"></path>
+                            <path d="M7.47375,10.55 C7.32872475,10.4022596 7.19344046,10.245263 7.06875,10.08" id="Shape" stroke="#000000" stroke-width="2.02"></path>
+                            <path d="M9.75,7.70625 C11.1126532,9.11139238 11.1126532,11.3448576 9.75,12.75 L6,16.57875 C5.34708846,17.2488177 4.45119127,17.6267341 3.515625,17.6267341 C2.58005873,17.6267341 1.68416154,17.2488177 1.03125,16.57875 C-0.341128889,15.1717326 -0.341128889,12.9270174 1.03125,11.52 L3.52875,8.895" id="Shape" stroke="#627098" stroke-width="1.5"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

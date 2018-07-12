@@ -1,16 +1,14 @@
 import { storiesOf } from '@storybook/vue'
 import TipeDocumentBlock from '@/components/DocumentEditor/DocumentBlock'
-import blockOption from '@/mocks/BlockOption'
-import documentBlockMock from '@/mocks/DocumentBlock'
-import createManyMocks from '@/mocks/createManyMocks'
+import { mocks } from '@tipe/tipe-test-utils'
 
 storiesOf('DocumentBlock', module)
   .add('status(undefined)', () => ({
     components: { TipeDocumentBlock },
     data() {
       return {
-        options: createManyMocks(blockOption, 3),
-        block: documentBlockMock({
+        options: mocks.createManyMocks(mocks.blockOption, 3),
+        block: mocks.documentBlock({
           value: true,
           status: '',
           waiting: false,
@@ -24,8 +22,8 @@ storiesOf('DocumentBlock', module)
     components: { TipeDocumentBlock },
     data() {
       return {
-        options: createManyMocks(blockOption, 3),
-        block: documentBlockMock({
+        options: mocks.createManyMocks(mocks.blockOption, 3),
+        block: mocks.documentBlock({
           value: true,
           status: 'success',
           waiting: false,
@@ -39,8 +37,8 @@ storiesOf('DocumentBlock', module)
     components: { TipeDocumentBlock },
     data() {
       return {
-        options: createManyMocks(blockOption, 3),
-        block: documentBlockMock({
+        options: mocks.createManyMocks(mocks.blockOption, 3),
+        block: mocks.documentBlock({
           value: true,
           status: 'warning',
           waiting: false,
@@ -54,8 +52,8 @@ storiesOf('DocumentBlock', module)
     components: { TipeDocumentBlock },
     data() {
       return {
-        options: createManyMocks(blockOption, 3),
-        block: documentBlockMock({
+        options: mocks.createManyMocks(mocks.blockOption, 3),
+        block: mocks.documentBlock({
           value: true,
           status: 'error',
           waiting: false,
@@ -69,8 +67,8 @@ storiesOf('DocumentBlock', module)
     components: { TipeDocumentBlock },
     data() {
       return {
-        options: createManyMocks(blockOption, 3),
-        block: documentBlockMock({
+        options: mocks.createManyMocks(mocks.blockOption, 3),
+        block: mocks.documentBlock({
           value: true,
           status: '',
           waiting: true,
@@ -84,8 +82,8 @@ storiesOf('DocumentBlock', module)
     components: { TipeDocumentBlock },
     data() {
       return {
-        options: createManyMocks(blockOption, 3),
-        block: documentBlockMock({
+        options: mocks.createManyMocks(mocks.blockOption, 3),
+        block: mocks.documentBlock({
           value: true,
           status: '',
           waiting: false,

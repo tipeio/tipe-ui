@@ -28,8 +28,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import LinkShape from '@/types/Link'
-import FileShape from '@/types/File'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeFinder from '@/components/Finder'
 import TipeBreadcrumbs from '@/components/Breadcrumbs'
 
@@ -40,9 +39,9 @@ export default {
     TipeBreadcrumbs
   },
   props: {
-    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(LinkShape)),
-    folders: vueTypes.arrayOf(vueTypes.shape(FileShape)),
-    documents: vueTypes.arrayOf(vueTypes.shape(FileShape))
+    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.link)),
+    folders: vueTypes.arrayOf(vueTypes.shape(interfaces.file)),
+    documents: vueTypes.arrayOf(vueTypes.shape(interfaces.file))
   }
 }
 </script>

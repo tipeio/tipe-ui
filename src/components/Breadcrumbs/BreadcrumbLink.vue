@@ -4,14 +4,14 @@
     :href="url"
   >
     <div class="icon-container">
-      <tipe-icon icon="folder"/>
+      <tipe-icon icon="folder-filled"/>
     </div>
     {{ label }}
   </a>
 </template>
 
 <script>
-import LinkShape from '@/types/Link'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeIcon from '@/components/Icon'
 
 export default {
@@ -19,7 +19,7 @@ export default {
   components: {
     TipeIcon
   },
-  props: { ...LinkShape }
+  props: { ...interfaces.link }
 }
 </script>
 

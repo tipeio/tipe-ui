@@ -30,14 +30,14 @@
 
 <script>
 import vueTypes from 'vue-types'
-import inputProps from '@/types/InputProps'
+import interfaces from '@tipe/tipe-interfaces'
 
 export default {
   name: 'TipeRadio',
   props: {
     label: vueTypes.string,
     checked: vueTypes.bool.def(false),
-    ...inputProps
+    ...interfaces.input
   },
   computed: {
     classObject() {

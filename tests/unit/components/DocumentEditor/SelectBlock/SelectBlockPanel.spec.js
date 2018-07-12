@@ -2,8 +2,7 @@ import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import SelectBlockOption from '@/components/DocumentEditor/DocumentBlock/SelectBlock/SelectBlockOption'
 import SelectBlockPanel from '@/components/DocumentEditor/DocumentBlock/SelectBlock/SelectBlockPanel'
-import blockOptionMock from '@/mocks/BlockOption'
-import createManyMocks from '@/mocks/createManyMocks'
+import { mocks } from '@tipe/tipe-test-utils'
 
 describe('SelectBlockPanel', () => {
   describe('<template>', () => {
@@ -26,14 +25,14 @@ describe('SelectBlockPanel', () => {
 
   describe(':props', () => {
     it(':options - should render options', () => {
-      const propsData = { options: createManyMocks(blockOptionMock, 3) }
+      const propsData = { options: mocks.createManyMocks(mocks.blockOption, 3) }
       const wrapper = shallowMount(SelectBlockPanel, { propsData })
 
       expect(wrapper.findAll(SelectBlockOption)).toHaveLength(3)
     })
 
     it(':options.icon - should pass the SelectBlockOption component as icon prop', () => {
-      const propsData = { options: createManyMocks(blockOptionMock, 1) }
+      const propsData = { options: mocks.createManyMocks(mocks.blockOption, 1) }
       const wrapper = shallowMount(SelectBlockPanel, { propsData })
 
       expect(wrapper.find(SelectBlockOption).props().icon).toEqual(
@@ -42,7 +41,7 @@ describe('SelectBlockPanel', () => {
     })
 
     it(':options.label - should pass the SelectBlockOption component as label prop', () => {
-      const propsData = { options: createManyMocks(blockOptionMock, 1) }
+      const propsData = { options: mocks.createManyMocks(mocks.blockOption, 1) }
       const wrapper = shallowMount(SelectBlockPanel, { propsData })
 
       expect(wrapper.find(SelectBlockOption).props().label).toEqual(
@@ -51,7 +50,7 @@ describe('SelectBlockPanel', () => {
     })
 
     it(':options.description - should pass the SelectBlockOption component as description prop', () => {
-      const propsData = { options: createManyMocks(blockOptionMock, 1) }
+      const propsData = { options: mocks.createManyMocks(mocks.blockOption, 1) }
       const wrapper = shallowMount(SelectBlockPanel, { propsData })
 
       expect(wrapper.find(SelectBlockOption).props().description).toEqual(

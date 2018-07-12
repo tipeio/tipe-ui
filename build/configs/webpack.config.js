@@ -9,6 +9,13 @@ module.exports = {
     library: '',
     libraryTarget: 'commonjs'
   },
+  externals: [
+    '@tipe/tipe-config',
+    '@tipe/tipe-constants',
+    '@tipe/tipe-fetch',
+    'vue',
+    'vue-types'
+  ],
   module: {
     rules: [
       {

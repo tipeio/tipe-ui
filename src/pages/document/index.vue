@@ -15,11 +15,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import NavLinkShape from '@/types/NavLink'
-import blockOptionShape from '@/types/BlockOption'
-import documentShape from '@/types/Document'
-import UserShape from '@/types/User'
-import LinkShape from '@/types/Link'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeDashboardLayout from '@/layouts/Dashboard'
 import TipeContentLayout from '@/layouts/Content'
 import TipeDocumentEditor from '@/components/DocumentEditor/DocumentEditor'
@@ -32,11 +28,11 @@ export default {
     TipeDocumentEditor
   },
   props: {
-    navLinks: vueTypes.arrayOf(vueTypes.shape(NavLinkShape)),
-    user: vueTypes.shape(UserShape),
-    document: vueTypes.shape(documentShape),
-    blockOptions: vueTypes.arrayOf(vueTypes.shape(blockOptionShape)),
-    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(LinkShape))
+    navLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.navLink)),
+    user: vueTypes.shape(interfaces.user),
+    document: vueTypes.shape(interfaces.document),
+    blockOptions: vueTypes.arrayOf(vueTypes.shape(interfaces.blockOption)),
+    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.link))
   }
 }
 </script>

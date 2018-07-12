@@ -1,12 +1,12 @@
-import * as BlockTypes from '@/constants/block/types'
+import { BLOCK_TYPES } from '@tipe/tipe-constants'
 
 export default blockType => {
   switch (blockType) {
-    case BlockTypes.NUMBER:
+    case BLOCK_TYPES.NUMBER:
       return 'tipe-number-input'
-    case BlockTypes.BOOLEAN:
+    case BLOCK_TYPES.BOOLEAN:
       return 'tipe-switch'
-    case BlockTypes.SIMPLE_TEXT:
+    case BLOCK_TYPES.SIMPLE_TEXT:
       return 'tipe-text-input'
     default:
       return 'tipe-switch'

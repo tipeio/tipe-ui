@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/vue'
-import { createManyMocks, user } from '../../src/mocks'
+import { mocks } from '@tipe/tipe-test-utils'
 import MembersPanel from '../../src/components/MembersPanel'
 
 const style = () => ({
@@ -7,7 +7,7 @@ const style = () => ({
   height: '801px'
 })
 
-const members = () => createManyMocks(user, 12)
+const members = () => mocks.createManyMocks(mocks.user, 12)
 
 storiesOf('Members Panel', module).add('members panel', () => ({
   components: { MembersPanel },

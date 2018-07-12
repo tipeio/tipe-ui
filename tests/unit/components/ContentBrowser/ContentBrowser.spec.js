@@ -3,8 +3,7 @@ import { createRenderer } from 'vue-server-renderer'
 import ContentBrowser from '@/components/ContentBrowser'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Finder from '@/components/Finder'
-import linkMock from '@/mocks/Link'
-import fileMock from '@/mocks/File'
+import { mocks } from '@tipe/tipe-test-utils'
 
 describe('ContentBrowser', () => {
   describe('<ContentBrowser>', () => {
@@ -27,7 +26,7 @@ describe('ContentBrowser', () => {
 
   describe(':props', () => {
     it(':breadcrumbsLinks - should pass breadcrumbsLinks prop to the Breadcrumbs component', () => {
-      const propsData = { breadcrumbLinks: [linkMock()] }
+      const propsData = { breadcrumbLinks: [mocks.link()] }
       const wrapper = shallowMount(ContentBrowser, { propsData })
 
       expect(wrapper.find(Breadcrumbs).props().links).toEqual(
@@ -36,7 +35,7 @@ describe('ContentBrowser', () => {
     })
 
     it(':documents - should pass folders prop to the first Finder component', () => {
-      const propsData = { folders: [fileMock({ type: 'folder' })] }
+      const propsData = { folders: [mocks.file({ type: 'folder' })] }
       const wrapper = shallowMount(ContentBrowser, { propsData })
 
       expect(
@@ -48,7 +47,7 @@ describe('ContentBrowser', () => {
     })
 
     it(':documents - should pass documents prop to the second Finder component', () => {
-      const propsData = { documents: [fileMock({ type: 'document' })] }
+      const propsData = { documents: [mocks.file({ type: 'document' })] }
       const wrapper = shallowMount(ContentBrowser, { propsData })
 
       expect(

@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import BreadcrumbLink from '@/components/Breadcrumbs/BreadcrumbLink.vue'
-import linkMock from '@/mocks/Link'
+import { mocks } from '@tipe/tipe-test-utils'
 
 describe('BreadcrumbLink', () => {
   describe('<template>', () => {
@@ -27,14 +27,13 @@ describe('BreadcrumbLink', () => {
 
   describe(':props', () => {
     it(':link.label - should render label', () => {
-      const propsData = { ...linkMock() }
+      const propsData = { ...mocks.link() }
       const wrapper = shallowMount(BreadcrumbLink, { propsData })
-
       expect(wrapper.text()).toBe(propsData.label)
     })
 
     it(':link.url(empty) - should render # in href', () => {
-      const propsData = { ...linkMock() }
+      const propsData = { ...mocks.link() }
       delete propsData.url
       const wrapper = shallowMount(BreadcrumbLink, { propsData })
 
@@ -42,7 +41,7 @@ describe('BreadcrumbLink', () => {
     })
 
     it(':link.url - should render url in href', () => {
-      const propsData = { ...linkMock() }
+      const propsData = { ...mocks.link() }
       const wrapper = shallowMount(BreadcrumbLink, { propsData })
 
       expect(wrapper.attributes().href).toBe(propsData.url)

@@ -2,8 +2,6 @@ import { storiesOf } from '@storybook/vue'
 
 import TipeField from '../../src/components/Field'
 import TipeTextInput from '../../src/components/TextInput'
-import TipeCheckboxGroup from '../../src/components/CheckboxGroup'
-import TipeCheckbox from '../../src/components/Checkbox'
 
 const style = () => ({
   width: '200px'
@@ -158,44 +156,4 @@ storiesOf('Field', module)
     },
     template:
       '<div :style="style"><tipe-field status="error" errorMessage="blah blah" :label="field.label" name="firstName" :field="field" /></div>'
-  }))
-  .add('default field with checkbox group', () => ({
-    components: { TipeField, TipeCheckboxGroup, TipeCheckbox },
-    computed: {
-      width() {
-        return {
-          width: '400px'
-        }
-      }
-    },
-    data() {
-      return {
-        options: [
-          { label: 'Javascript', value: 'javascript', checked: true },
-          { label: 'Python', value: 'python', checked: false },
-          { label: 'Java', value: 'java', checked: false }
-        ],
-        name: 'languages'
-      }
-    },
-    template: `
-    <div :style="width">
-      <tipe-field label="Languages" :name="name">
-        <tipe-checkbox-group
-        :name="name"
-        :options="options"
-        >
-        <template slot-scope="{option}">
-          <tipe-checkbox
-            v-for="option in options"
-            :key="option.value"
-            :name="name"
-            :label="option.label"
-            :value="option.value"
-            :checked="option.checked"
-          />
-        </template>
-      </tipe-checkbox-group>
-    </tipe-field>
-    </div>`
   }))

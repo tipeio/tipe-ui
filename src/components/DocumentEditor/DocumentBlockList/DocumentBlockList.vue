@@ -23,8 +23,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import blockOptionShape from '@/types/BlockOption'
-import documentBlockShape from '@/types/DocumentBlock'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeDocumentBlock from '@/components/DocumentEditor/DocumentBlock'
 import TipeDocumentEmptyBlock from '@/components/DocumentEditor/DocumentBlock/DocumentEmptyBlock'
 
@@ -35,8 +34,8 @@ export default {
     TipeDocumentEmptyBlock
   },
   props: {
-    options: vueTypes.arrayOf(vueTypes.shape(blockOptionShape)),
-    blocks: vueTypes.arrayOf(vueTypes.shape(documentBlockShape)).def([])
+    options: vueTypes.arrayOf(vueTypes.shape(interfaces.blockOption)),
+    blocks: vueTypes.arrayOf(vueTypes.shape(interfaces.documentBlock)).def([])
   }
 }
 </script>

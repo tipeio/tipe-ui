@@ -15,12 +15,12 @@
 </template>
 
 <script>
-import tabsMenuButtonShape from '@/types/TabsMenuButton'
+import interfaces from '@tipe/tipe-interfaces'
 
 export default {
   name: 'TipeTabsPanel',
   props: {
-    ...tabsMenuButtonShape
+    ...interfaces.tabsMenuButton
   },
   computed: {
     isActive() {

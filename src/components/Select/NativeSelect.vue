@@ -1,14 +1,14 @@
 <template>
-  <select 
-    :disabled="disabled" 
+  <select
+    :disabled="disabled"
     :data-tipe-ui="$options.name" >
-    <option 
+    <option
       v-if="placeholder"
       :selected="true"
       disabled>{{ placeholder }}</option>
-    <option 
+    <option
       v-for="option in options"
-      :value="option.value" 
+      :value="option.value"
       :selected="selectedValue.value === option.value"
       :key="option.value"
     >{{ option.label }}</option>
@@ -18,13 +18,17 @@
 
 <script>
 import vueTypes from 'vue-types'
-import SelectOptionShape from '@/types/SelectOptionShape'
 
 export default {
   name: 'TipeNativeSelect',
   props: {
     disabled: vueTypes.bool,
-    options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
+    options: vueTypes.arrayOf(
+      vueTypes.shape({
+        label: vueTypes.string.def(''),
+        value: vueTypes.string.def(' ')
+      })
+    ),
     placeholder: vueTypes.string,
     selectedValue: vueTypes.object
   }

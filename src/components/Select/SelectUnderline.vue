@@ -1,28 +1,28 @@
 <template>
-  <div 
-    v-click-outside="clickOut" 
-    :data-tipe-ui="$options.name" 
+  <div
+    v-click-outside="clickOut"
+    :data-tipe-ui="$options.name"
     class="select-flex"
     @keyup.up="keyup"
     @keyup.down="keydown"
     @keyup.enter="enter">
-    <div 
+    <div
       :class="{[size]: true}"
       :tabindex="tabindex"
       class="select"
       v-on="isDisabled ? {} : { click: onClick }">
-      <tipe-native-select 
-        :options="options" 
-        :disabled="isDisabled" 
-        :placeholder="placeholder" 
+      <tipe-native-select
+        :options="options"
+        :disabled="isDisabled"
+        :placeholder="placeholder"
         :selected-value="selectedValue"/>
-      <div 
+      <div
         :class="selectStyle"
         class="fake-select">{{ selected }}</div>
-      <tipe-select-dropdown 
-        v-if="open" 
-        :options="options" 
-        :active-index="activeIndex" 
+      <tipe-select-dropdown
+        v-if="open"
+        :options="options"
+        :active-index="activeIndex"
         @change="onChange"/>
     </div>
   </div>
@@ -31,8 +31,7 @@
 <script>
 import vueTypes from 'vue-types'
 import ClickOutside from 'vue-click-outside'
-import inputProps from '@/types/InputProps'
-import SelectOptionShape from '@/types/SelectOptionShape'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeSelectDropdown from './SelectDropdown'
 import TipeNativeSelect from './NativeSelect'
 import {
@@ -53,9 +52,17 @@ export default {
   },
   props: {
     placeholder: vueTypes.string,
-    options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
-    defaultSelected: vueTypes.shape(SelectOptionShape),
-    ...inputProps
+    options: vueTypes.arrayOf(
+      vueTypes.shape({
+        label: vueTypes.string.def(''),
+        value: vueTypes.string.def('')
+      })
+    ),
+    defaultSelected: vueTypes.shape({
+      label: vueTypes.string.def(''),
+      value: vueTypes.string.def('')
+    }),
+    ...interfaces.input
   },
   data() {
     return {

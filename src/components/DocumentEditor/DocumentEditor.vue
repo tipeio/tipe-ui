@@ -21,8 +21,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import blockOptionShape from '@/types/BlockOption'
-import documentShape from '@/types/Document'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeDocumentBlockList from './DocumentBlockList'
 import TipeDocumentNameInput from './DocumentNameInput'
 import TipeTabs from '@/components/Tabs'
@@ -39,8 +38,8 @@ export default {
     TipeScrollable
   },
   props: {
-    options: vueTypes.arrayOf(vueTypes.shape(blockOptionShape)),
-    document: vueTypes.shape(documentShape)
+    options: vueTypes.arrayOf(vueTypes.shape(interfaces.blockOption)),
+    document: vueTypes.shape(interfaces.document)
   }
 }
 </script>

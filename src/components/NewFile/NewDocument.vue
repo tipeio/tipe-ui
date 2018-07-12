@@ -22,7 +22,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import FileShape from '@/types/File'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeFileNameInput from './FileNameInput.vue'
 import TipeFinder from '@/components/Finder'
 
@@ -33,7 +33,7 @@ export default {
     TipeFileNameInput
   },
   props: {
-    templates: vueTypes.arrayOf(vueTypes.shape(FileShape))
+    templates: vueTypes.arrayOf(vueTypes.shape(interfaces.file))
   }
 }
 </script>

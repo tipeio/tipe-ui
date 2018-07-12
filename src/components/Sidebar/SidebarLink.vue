@@ -9,7 +9,10 @@
     <div class="icon-container">
       <tipe-icon
         :icon="icon"
+        height="1.5rem"
+        width="1.5rem"
         class="icon"
+        color="#FFF"
       />
     </div>
     <div

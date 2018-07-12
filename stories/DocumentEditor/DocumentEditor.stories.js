@@ -1,50 +1,52 @@
 import { storiesOf } from '@storybook/vue'
 import TipeDocumentEditor from '@/components/DocumentEditor'
-import documentBlockMock from '@/mocks/DocumentBlock'
-import blockOption from '@/mocks/BlockOption'
-import createManyMocks from '@/mocks/createManyMocks'
+import { mocks } from '@tipe/tipe-test-utils'
 
 const blocks = [
-  documentBlockMock({
+  mocks.documentBlock({
     type: 'BOOLEAN',
     value: true,
     status: '',
     waiting: false,
     disabled: false
   }),
-  documentBlockMock({
+  mocks.documentBlock({
     type: 'NUMBER',
     value: true,
     status: 'success',
     waiting: false,
     disabled: false
   }),
-  documentBlockMock({
+  mocks.documentBlock({
     type: 'SIMPLE_TEXT',
     value: true,
     status: 'warning',
     waiting: false,
     disabled: false
   }),
-  documentBlockMock({
+  mocks.documentBlock({
     value: true,
     status: 'error',
     waiting: false,
     disabled: false
   }),
-  documentBlockMock({
+  mocks.documentBlock({
     value: true,
     status: '',
     waiting: true,
     disabled: false
   }),
-  documentBlockMock({
+  mocks.documentBlock({
     value: true,
     status: '',
     waiting: false,
     disabled: true
   })
 ]
+
+const document = mocks.document({
+  blocks
+})
 
 storiesOf('DocumentEditor', module)
   .add('empty', () => ({
@@ -55,13 +57,15 @@ storiesOf('DocumentEditor', module)
           height: '35rem',
           width: '35rem'
         },
-        options: createManyMocks(blockOption, 3),
-        blocks
+        options: mocks.createManyMocks(mocks.blockOption, 3),
+        blocks,
+        document
       }
     },
     template: `
       <div :style="styleObj">
         <tipe-document-editor
+          :document="document"
           :options="options"
         />
       </div>`
@@ -74,14 +78,15 @@ storiesOf('DocumentEditor', module)
           height: '35rem',
           width: '35rem'
         },
-        options: createManyMocks(blockOption, 3),
-        blocks
+        options: mocks.createManyMocks(mocks.blockOption, 3),
+        blocks,
+        document
       }
     },
     template: `
       <div :style="styleObj">
         <tipe-document-editor
-          :blocks="blocks"
+          :document="document"
           :options="options"
         />
       </div>`

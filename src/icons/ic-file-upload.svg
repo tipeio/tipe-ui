@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-file-upload</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="New-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-167.000000, -1101.000000)">
+            <g id="file-upload" transform="translate(167.000000, 1101.000000)">
+                <g id="icon/file-upload">
+                    <rect id="Rectangle-18" fill="#FFFFFF" opacity="0" x="0" y="0" width="36" height="36"></rect>
+                    <g id="Upload-Icon" stroke-width="1" transform="translate(2.000000, 4.000000)" stroke="#627098" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15.2637331,8.78542064 L15.2637331,16.9886462 L12.8399812,19.4782609 C10.7202877,19.4782609 8.02054089,19.4782609 4.74074074,19.4782609 C2.12250193,19.4782609 0,17.2980823 0,14.6086957 C0,11.919309 2.12250193,9.73913043 4.74074074,9.73913043 C4.74728851,9.53794215 4.74074074,9.3349739 4.74074074,9.13043478 C4.74074074,4.08783489 8.72043185,0 13.6296296,0 C17.0808169,0 20.072628,2.02026967 21.545321,4.9722698 C21.8594312,4.90495185 22.1849517,4.86956522 22.5185185,4.86956522 C25.1367573,4.86956522 27.2592593,7.04974383 27.2592593,9.73913043 C29.8774981,9.73913043 32,11.919309 32,14.6086957 C32,17.2980823 29.8774981,19.4782609 27.2592593,19.4782609 C23.1196899,19.4782609 20.0150129,19.4782609 17.9452282,19.4782609 L15.342618,22.1515942 L15.342618,27.7550023" id="Combined-Shape" stroke-width="1.5"></path>
+                        <polyline id="Rectangle-28" stroke-width="1.5" points="11.8518519 12.1306544 15.290845 8.59821037 18.7298381 12.1306544"></polyline>
+                    </g>
+                </g>
+                <rect id="Rectangle-4" fill="#D8D8D8" opacity="0" x="0" y="0" width="35" height="35"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

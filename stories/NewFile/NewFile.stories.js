@@ -1,15 +1,18 @@
 import { storiesOf } from '@storybook/vue'
 import TipeNewFile from '@/components/NewFile'
-import fileMock from '@/mocks/File'
+import { mocks } from '@tipe/tipe-test-utils'
 
 storiesOf('NewFile', module).add('default', () => ({
   components: { TipeNewFile },
   computed: {
     templates() {
-      return [fileMock({ type: 'document' }), fileMock({ type: 'document' })]
+      return [
+        mocks.file({ type: 'document' }),
+        mocks.file({ type: 'document' })
+      ]
     },
     folders() {
-      return [fileMock({ type: 'folder' }), fileMock({ type: 'folder' })]
+      return [mocks.file({ type: 'folder' }), mocks.file({ type: 'folder' })]
     },
     styleObj() {
       return {

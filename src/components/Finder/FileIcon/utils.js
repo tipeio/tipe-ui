@@ -1,6 +1,6 @@
 const FileTypeToIconMap = {
-  document: 'file',
-  folder: 'folder',
+  document: 'document-filled',
+  folder: 'folder-filled',
   template: 'template'
 }
 

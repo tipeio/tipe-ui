@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-calendar-square</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="New-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-521.000000, -943.000000)">
+            <g id="Calendar" transform="translate(521.000000, 943.000000)">
+                <g id="icon/content/date">
+                    <g>
+                        <rect id="Rectangle-5-Copy" fill="#1F346C" opacity="0.049999997" x="0" y="0" width="42" height="42" rx="4"></rect>
+                        <g id="Group-2" transform="translate(12.000000, 12.000000)">
+                            <rect id="Rectangle-7-Copy-6" stroke="#627098" stroke-width="1.5" x="0" y="0.75" width="18" height="18"></rect>
+                            <rect id="Rectangle-2" fill="#627098" x="11.25" y="6" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-15" fill="#627098" x="11.25" y="0" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-16" fill="#627098" x="4.5" y="0" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy" fill="#627098" x="14.25" y="6" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-3" fill="#627098" x="11.25" y="9" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-2" fill="#627098" x="14.25" y="9" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-5" fill="#627098" x="5.25" y="9" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-6" fill="#627098" x="2.25" y="9" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-4" fill="#627098" x="8.25" y="9" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-11" fill="#627098" x="11.25" y="12" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-10" fill="#627098" x="14.25" y="12" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-9" fill="#627098" x="5.25" y="12" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-8" fill="#627098" x="2.25" y="12" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-7" fill="#627098" x="8.25" y="12" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-14" fill="#627098" x="5.25" y="15" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-13" fill="#627098" x="2.25" y="15" width="1.5" height="1.5"></rect>
+                            <rect id="Rectangle-2-Copy-12" fill="#627098" x="8.25" y="15" width="1.5" height="1.5"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

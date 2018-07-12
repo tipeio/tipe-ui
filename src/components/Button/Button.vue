@@ -45,9 +45,10 @@
 </template>
 
 <script>
-import inputProps from '@/types/InputProps'
+import interfaces from '@tipe/tipe-interfaces'
 import vueTypes from 'vue-types'
 import TipeIcon from '../Icon'
+
 export default {
   name: 'TipeButton',
   components: { TipeIcon },
@@ -66,7 +67,7 @@ export default {
     dropdown: vueTypes.bool.def(false),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def(''),
-    ...inputProps,
+    ...interfaces.input,
     size: vueTypes
       .oneOf(['icon', 'mini', 'small', 'medium', 'large', 'full'])
       .def('medium')

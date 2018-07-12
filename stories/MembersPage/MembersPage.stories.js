@@ -1,18 +1,15 @@
 import { storiesOf } from '@storybook/vue'
 import TipeMembersPage from '@/pages/members'
-import userMock from '@/mocks/User'
-import fileMock from '@/mocks/File'
-import navLinkMock from '@/mocks/NavLink'
-import { createManyMocks } from '@/mocks'
+import { mocks } from '@tipe/tipe-test-utils'
 
-const user = userMock()
-const folders = createManyMocks(() => fileMock({ type: 'folder' }), 20)
-const members = createManyMocks(userMock, 12)
+const user = mocks.user()
+const folders = mocks.createManyMocks(() => mocks.file({ type: 'folder' }), 20)
+const members = mocks.createManyMocks(mocks.user, 12)
 const navLinks = [
-  navLinkMock({ icon: 'file', active: true }),
-  navLinkMock({ icon: 'image' }),
-  navLinkMock({ icon: 'layout' }),
-  navLinkMock({ icon: 'settings' })
+  mocks.navLink({ icon: 'file', active: true }),
+  mocks.navLink({ icon: 'image' }),
+  mocks.navLink({ icon: 'layout' }),
+  mocks.navLink({ icon: 'settings' })
 ]
 
 storiesOf('Members Page', module).add('default', () => ({

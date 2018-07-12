@@ -25,8 +25,18 @@ const status = Machine({
         error: 'error'
       }
     },
-    ok: {},
-    error: {}
+    ok: {
+      on: {
+        load: 'waiting',
+        error: 'error'
+      }
+    },
+    error: {
+      on: {
+        load: 'waiting',
+        done: 'ok'
+      }
+    }
   }
 })
 
@@ -66,6 +76,7 @@ export default {
       this.status = status.transition(this.status, 'error').value
     },
     load() {
+      this.status = status.transition(this.status, 'load').value
       this.__imageLoader__(this.url)
         .then(this.ok)
         .catch(this.error)

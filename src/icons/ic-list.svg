@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-list</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="New-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-940.000000, -533.000000)">
+            <g id="list" transform="translate(940.000000, 533.000000)">
+                <g id="icon/list/inactive">
+                    <rect id="Rectangle-18" fill="#FFFFFF" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                    <g stroke-width="1" transform="translate(0.000000, 3.000000)" id="Shape" stroke="#627098">
+                        <path d="M0,0 L23.5862069,0" stroke-width="1.5"></path>
+                        <path d="M0,8.68965517 L17.3793103,8.68965517" stroke-width="1.5"></path>
+                        <path d="M0,17.3793103 L23.5862069,17.3793103" stroke-width="1.5"></path>
+                    </g>
+                </g>
+                <rect id="Rectangle-9-Copy-10" fill="#D8D8D8" opacity="0" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

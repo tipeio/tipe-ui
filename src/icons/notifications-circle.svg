@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/notifications-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="New-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-377.000000, -758.000000)">
+            <g id="circle-notifications" transform="translate(377.000000, 758.000000)">
+                <g id="icon/notifications-circle">
+                    <g id="Group-2">
+                        <circle id="Oval-2-Copy" fill="#6047FA" cx="21" cy="21" r="21"></circle>
+                        <g id="bell" transform="translate(14.000000, 13.125000)" stroke="#FFFFFF" stroke-width="1.5">
+                            <path d="M14.3804348,11.6755435 L14.3804348,13.0108696 L0,13.0108696 L0,11.6755435 C0,10.751087 0.376630435,9.8951087 0.992934783,9.24456522 L2.39673913,7.84076087 C3.04728261,7.19021739 3.38967391,6.33423913 3.38967391,5.40978261 L3.38967391,3.76630435 C3.38967391,1.67771739 5.0673913,0 7.15597826,0 C9.24456522,0 10.9222826,1.67771739 10.9222826,3.76630435 L10.9222826,5.44402174 C10.9222826,6.36847826 11.298913,7.22445652 11.9152174,7.875 L13.3190217,9.27880435 C14.0038043,9.8951087 14.3804348,10.7853261 14.3804348,11.6755435 Z" id="Shape"></path>
+                            <path d="M5.13586957,13.0108696 L5.13586957,13.6956522 C5.13586957,14.8255435 6.06032609,15.75 7.19021739,15.75 C8.3201087,15.75 9.24456522,14.8255435 9.24456522,13.6956522 L9.24456522,13.0108696" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

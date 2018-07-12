@@ -1,22 +1,20 @@
 <template>
   <div :data-tipe-ui="$options.name">
-    <tipe-scrollable>
-      <div :class="layoutClass">
-        <tipe-file-icon
-          v-for="(file, i) in files"
-          :key="i"
-          :file="file"
-          :type="icon"
-          class="item"
-        />
-      </div>
-    </tipe-scrollable>
+    <div :class="layoutClass">
+      <tipe-file-icon
+        v-for="(file, i) in files"
+        :key="i"
+        :file="file"
+        :type="icon"
+        class="item"
+      />
+    </div>
   </div>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
-import FileShape from '@/types/File'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeScrollable from '@/components/Scrollable'
 
 import TipeFileIcon from './FileIcon'
@@ -28,7 +26,7 @@ export default {
     TipeScrollable
   },
   props: {
-    files: vueTypes.arrayOf(vueTypes.shape(FileShape)).def([]),
+    files: vueTypes.arrayOf(vueTypes.shape(interfaces.file)).def([]),
     layout: vueTypes.oneOf(['list', 'grid']).def('list'),
     icon: vueTypes.oneOf(['rectangle', 'square', 'details']).def('rectangle')
   },

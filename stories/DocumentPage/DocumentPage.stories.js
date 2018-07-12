@@ -1,44 +1,38 @@
 import { storiesOf } from '@storybook/vue'
 import TipeDocumentPage from '@/pages/document'
-import documentMock from '@/mocks/Document'
-import documentBlockMock from '@/mocks/DocumentBlock'
-import blockOption from '@/mocks/BlockOption'
-import userMock from '@/mocks/User'
-import linkMock from '@/mocks/Link'
-import navLinkMock from '@/mocks/NavLink'
-import createManyMocks from '@/mocks/createManyMocks'
+import { mocks } from '@tipe/tipe-test-utils'
 
-const user = userMock()
+const user = mocks.user()
 const navLinks = [
-  navLinkMock({ icon: 'file', active: true }),
-  navLinkMock({ icon: 'image' }),
-  navLinkMock({ icon: 'layout' }),
-  navLinkMock({ icon: 'settings' })
+  mocks.navLink({ icon: 'file', active: true }),
+  mocks.navLink({ icon: 'image' }),
+  mocks.navLink({ icon: 'layout' }),
+  mocks.navLink({ icon: 'settings' })
 ]
 
 const blocks = [
-  documentBlockMock({
+  mocks.documentBlock({
     type: 'NUMBER',
     value: true,
     status: '',
     waiting: false,
     disabled: false
   }),
-  documentBlockMock({
+  mocks.documentBlock({
     type: 'NUMBER',
     value: true,
     status: 'success',
     waiting: false,
     disabled: false
   }),
-  documentBlockMock({
+  mocks.documentBlock({
     type: 'NUMBER',
     value: true,
     status: 'warning',
     waiting: false,
     disabled: false
   }),
-  documentBlockMock({
+  mocks.documentBlock({
     type: 'NUMBER',
     value: true,
     status: 'error',
@@ -47,9 +41,9 @@ const blocks = [
   })
 ]
 
-const breadcrumbLinks = createManyMocks(() => linkMock(), 3)
+const breadcrumbLinks = mocks.createManyMocks(() => mocks.link(), 3)
 
-const document = documentMock({ blocks })
+const document = mocks.document({ blocks })
 
 storiesOf('DocumentPage', module).add('default', () => ({
   components: { TipeDocumentPage },
@@ -59,7 +53,7 @@ storiesOf('DocumentPage', module).add('default', () => ({
         height: '100%',
         width: '100%'
       },
-      blockOptions: createManyMocks(blockOption, 10),
+      blockOptions: mocks.createManyMocks(mocks.blockOption, 10),
       document,
       user,
       navLinks,

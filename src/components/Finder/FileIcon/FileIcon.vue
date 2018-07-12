@@ -16,7 +16,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import FileShape from '@/types/File'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeFileIconRectangle from './FileIconRectangle'
 import TipeFileIconSquare from './FileIconSquare'
 import TipeFileIconDetails from './FileIconDetails'
@@ -30,7 +30,7 @@ export default {
   },
   props: {
     type: vueTypes.oneOf(['rectangle', 'square', 'details']).def('rectangle'),
-    file: vueTypes.shape(FileShape)
+    file: vueTypes.shape(interfaces.file)
   }
 }
 </script>

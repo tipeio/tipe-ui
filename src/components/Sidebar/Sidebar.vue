@@ -27,7 +27,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import NavLink from '@/types/NavLink'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeSidebarLink from './SidebarLink.vue'
 import TipeSidebarButton from './SidebarButton.vue'
 
@@ -38,7 +38,7 @@ export default {
     TipeSidebarButton
   },
   props: {
-    links: vueTypes.arrayOf(NavLink)
+    links: vueTypes.arrayOf(interfaces.navLink)
   },
   data() {
     return {

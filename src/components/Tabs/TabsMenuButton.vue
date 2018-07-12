@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import TabsMenuButtonShape from '@/types/TabsMenuButton'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeIcon from '@/components/Icon'
 
 export default {
@@ -27,7 +27,7 @@ export default {
   components: {
     TipeIcon
   },
-  props: TabsMenuButtonShape,
+  props: interfaces.tabsMenuButton,
   computed: {
     rootClassObject() {
       return {

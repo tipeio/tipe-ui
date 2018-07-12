@@ -1,6 +1,6 @@
 <template>
-  <div 
-    v-click-outside="clickOut" 
+  <div
+    v-click-outside="clickOut"
     :data-tipe-ui="$options.name"
     class="select-flex"
     @keyup.up="keyup"
@@ -8,26 +8,26 @@
     @keyup.enter="enter"
     v-on="isDisabled ? {} : { click: onClick }"
   >
-    <div 
-      :class="{[size]: true}" 
+    <div
+      :class="{[size]: true}"
       class="select">
-      <tipe-native-select 
-        :options="options" 
-        :disabled="isDisabled" 
-        :placeholder="placeholder" 
+      <tipe-native-select
+        :options="options"
+        :disabled="isDisabled"
+        :placeholder="placeholder"
         :selected-value="selectedValue"/>
-      <tipe-button 
+      <tipe-button
         :waiting="waiting"
-        :color="color" 
-        :size="size" 
+        :color="color"
+        :size="size"
         :disabled="isDisabled"
         :dropdown="true"
         icon-after="dropdown">{{ selected }}</tipe-button>
-      <tipe-select-dropdown 
-        v-if="open" 
-        :options="options" 
+      <tipe-select-dropdown
+        v-if="open"
+        :options="options"
         :size="size"
-        :active-index="activeIndex" 
+        :active-index="activeIndex"
         @change="onChange"/>
     </div>
   </div>
@@ -36,8 +36,7 @@
 <script>
 import vueTypes from 'vue-types'
 import ClickOutside from 'vue-click-outside'
-import inputProps from '@/types/InputProps'
-import SelectOptionShape from '@/types/SelectOptionShape'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeButton from '../Button'
 import TipeSelectDropdown from './SelectDropdown'
 import TipeNativeSelect from './NativeSelect'
@@ -59,8 +58,16 @@ export default {
   },
   props: {
     placeholder: vueTypes.string,
-    options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
-    defaultSelected: vueTypes.shape(SelectOptionShape),
+    options: vueTypes.arrayOf(
+      vueTypes.shape({
+        label: vueTypes.string.def(''),
+        value: vueTypes.string.def('')
+      })
+    ),
+    defaultSelected: vueTypes.shape({
+      label: vueTypes.string.def(''),
+      value: vueTypes.string.def('')
+    }),
     color: vueTypes
       .oneOf([
         'default',
@@ -72,7 +79,7 @@ export default {
         'warning'
       ])
       .def('default'),
-    ...inputProps
+    ...interfaces.input
   },
   data() {
     return {

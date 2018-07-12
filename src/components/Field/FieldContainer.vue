@@ -1,34 +1,42 @@
 <template>
-  <div 
-    :data-tipe-ui="$options.name" 
-    :class="classObject" 
-    @click="click" 
-    @focus="focus" 
-    @change="change" 
+  <div
+    :data-tipe-ui="$options.name"
+    :class="classObject"
+    @click="click"
+    @focus="focus"
+    @change="change"
     @blur="blur">
-    <label 
-      v-if="label" 
+    <label
+      v-if="label"
       :for="label">{{ label }}</label>
-    <tipe-field-input 
-      :field="field" 
-      :name="name" 
+    <tipe-field-input
+      :field="field"
+      :name="name"
       :status="status">
       <slot />
     </tipe-field-input>
-    <span 
-      v-if="message" 
+    <span
+      v-if="message"
       class="message">{{ message }}</span>
   </div>
 </template>
 
 <script>
+import vueTypes from 'vue-types'
 import TipeFieldInput from './FieldInput'
-import fieldShape from '@/types/FieldContainer'
 
 export default {
   name: 'TipeFieldContainer',
   components: { TipeFieldInput },
-  props: fieldShape,
+  props: {
+    name: vueTypes.string.def(''),
+    field: vueTypes.object.def({}),
+    label: vueTypes.string,
+    status: vueTypes.oneOf(['error', 'success', 'warning', '']).def(''),
+    errorMessage: vueTypes.string,
+    successMessage: vueTypes.string,
+    warningMessage: vueTypes.string
+  },
   computed: {
     classObject: function() {
       const { status } = this

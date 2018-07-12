@@ -22,8 +22,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import NavLinkShape from '@/types/NavLink'
-import UserShape from '@/types/User'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeSidebar from '@/components/Sidebar'
 import TipeTopbar from '@/components/Topbar'
 
@@ -34,8 +33,8 @@ export default {
     TipeTopbar
   },
   props: {
-    navLinks: vueTypes.arrayOf(vueTypes.shape(NavLinkShape)),
-    user: vueTypes.shape(UserShape)
+    navLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.navLink)),
+    user: vueTypes.shape(interfaces.user)
   }
 }
 </script>

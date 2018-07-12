@@ -1,42 +1,42 @@
 <template>
-  <div 
-    :data-tipe-ui="$options.name" 
+  <div
+    :data-tipe-ui="$options.name"
     class="grid">
-    <div 
-      class="close" 
+    <div
+      class="close"
       @click="close"><tipe-icon icon="close"/></div>
     <div class="content">
       <p class="title">Add Member</p>
       <avatar-upload />
       <form @submit="onSubmit">
-        <tipe-field 
-          :label="fields.name.label" 
-          :field="fields.name" 
-          name="name" 
-          class="name" 
+        <tipe-field
+          :label="fields.name.label"
+          :field="fields.name"
+          name="name"
+          class="name"
           @change="onChangeName">
           <tipe-text-input />
         </tipe-field>
-        <tipe-field 
-          :label="fields.email.label" 
-          :field="fields.email" 
-          name="email" 
-          class="email" 
+        <tipe-field
+          :label="fields.email.label"
+          :field="fields.email"
+          name="email"
+          class="email"
           @change="onChangeEmail">
           <tipe-text-input />
         </tipe-field>
-        <tipe-field 
-          :field="{placeholder: 'Select a role', options}" 
-          class="role" 
+        <tipe-field
+          :field="{placeholder: 'Select a role', options}"
+          class="role"
           label="Role" >
           <tipe-select @change="onChangeRole"/>
         </tipe-field>
         <div class="seperator"><tipe-seperator /></div>
         <div class="add-button">
-          <tipe-button 
+          <tipe-button
             :disabled="!canSubmit"
             type="submit"
-            value="Submit" 
+            value="Submit"
             color="primary"
             size="large">ADD MEMBER</tipe-button>
         </div>
@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import { createManyMocks, user } from '../../mocks'
+import { mocks } from '@tipe/tipe-test-utils'
 import TipeIcon from '../Icon'
 import TipeButton from '../Button'
 import TipeSeperator from '../Seperator'
@@ -68,7 +68,7 @@ export default {
   },
   data() {
     return {
-      members: createManyMocks(user, 12),
+      members: mocks.createManyMocks(mocks.user, 12),
       options: [
         { label: 'Owner', value: 'owner' },
         { label: 'Member', value: 'member' },

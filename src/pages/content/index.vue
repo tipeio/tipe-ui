@@ -27,9 +27,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import NavLinkShape from '@/types/NavLink'
-import FileShape from '@/types/File'
-import UserShape from '@/types/User'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeSidebar from '@/components/Sidebar'
 import TipeTopbar from '@/components/Topbar'
 import TipeDocumentCard from '@/components/DocumentCard'
@@ -44,10 +42,10 @@ export default {
     TipeFolderCard
   },
   props: {
-    navLinks: vueTypes.arrayOf(vueTypes.shape(NavLinkShape)),
-    documents: vueTypes.arrayOf(vueTypes.shape(FileShape)),
-    folders: vueTypes.arrayOf(vueTypes.shape(FileShape)),
-    user: vueTypes.shape(UserShape)
+    navLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.navLink)),
+    documents: vueTypes.arrayOf(vueTypes.shape(interfaces.file)),
+    folders: vueTypes.arrayOf(vueTypes.shape(interfaces.file)),
+    user: vueTypes.shape(interfaces.user)
   }
 }
 </script>

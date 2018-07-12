@@ -41,13 +41,13 @@
 
 <script>
 import vueTypes from 'vue-types'
-import inputProps from '@/types/InputProps'
+import interfaces from '@tipe/tipe-interfaces'
 
 export default {
   name: 'TipeSwitch',
   props: {
     label: vueTypes.string.def(''),
-    ...inputProps
+    ...interfaces.input
   },
   computed: {
     rootClassObject() {

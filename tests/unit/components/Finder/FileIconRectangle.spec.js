@@ -2,14 +2,13 @@ import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import FileIconRectangle from '@/components/Finder/FileIcon/FileIconRectangle'
 import Icon from '@/components/Icon'
-import fileMock from '@/mocks/File'
-import fileFixture from '@/fixtures/File'
+import { mocks, fixtures } from '@tipe/tipe-test-utils'
 
 describe('FileIconRectangle', () => {
   describe('<template>', () => {
     it('matches previous snapshot', () => {
       const renderer = createRenderer()
-      const propsData = { file: fileFixture() }
+      const propsData = { file: fixtures.file() }
       const wrapper = shallowMount(FileIconRectangle, { propsData })
 
       renderer.renderToString(wrapper.vm, (err, str) => {
@@ -19,7 +18,7 @@ describe('FileIconRectangle', () => {
     })
 
     it('has correct data-tipe-iu attibute', () => {
-      const propsData = { file: fileMock() }
+      const propsData = { file: mocks.file() }
       const wrapper = shallowMount(FileIconRectangle, { propsData })
 
       expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeFileIconRectangle')
@@ -28,24 +27,24 @@ describe('FileIconRectangle', () => {
 
   describe(':props', () => {
     it(':file - should render label prop as label', () => {
-      const propsData = { file: fileMock() }
+      const propsData = { file: mocks.file() }
       const wrapper = shallowMount(FileIconRectangle, { propsData })
 
       expect(wrapper.find('.label').text()).toEqual(propsData.file.label)
     })
 
     it(':type(folder) - should pass "folder" to Icon component\'s :icon prop', () => {
-      const propsData = { file: fileMock({ type: 'folder' }) }
+      const propsData = { file: mocks.file({ type: 'folder' }) }
       const wrapper = shallowMount(FileIconRectangle, { propsData })
 
-      expect(wrapper.find(Icon).props().icon).toEqual('folder')
+      expect(wrapper.find(Icon).props().icon).toEqual('folder-filled')
     })
 
     it(':type(document) - should pass "file" to Icon component\'s :icon prop', () => {
-      const propsData = { file: fileMock({ type: 'document' }) }
+      const propsData = { file: mocks.file({ type: 'document' }) }
       const wrapper = shallowMount(FileIconRectangle, { propsData })
 
-      expect(wrapper.find(Icon).props().icon).toEqual('file')
+      expect(wrapper.find(Icon).props().icon).toEqual('document-filled')
     })
   })
 })

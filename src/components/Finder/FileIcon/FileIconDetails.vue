@@ -51,7 +51,7 @@
 import moment from 'moment'
 import TipeIcon from '@/components/Icon'
 import vueTypes from 'vue-types'
-import FileShape from '@/types/File'
+import interfaces from '@tipe/tipe-interfaces'
 import { getFileIcon } from './utils'
 
 export default {
@@ -60,7 +60,7 @@ export default {
     TipeIcon
   },
   props: {
-    file: vueTypes.shape(FileShape)
+    file: vueTypes.shape(interfaces.file)
   },
   data() {
     return {

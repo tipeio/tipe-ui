@@ -1,9 +1,13 @@
 <script>
-import fieldShape from '@/types/FieldInput'
+import vueTypes from 'vue-types'
 
 export default {
   name: 'TipeFieldInput',
-  props: fieldShape,
+  props: {
+    name: vueTypes.string.def(''),
+    field: vueTypes.object.def({}),
+    status: vueTypes.oneOf(['error', 'success', 'warning', '']).def('')
+  },
   render: function(createElement) {
     const fieldSlots = slots => {
       if (!slots) return []

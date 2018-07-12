@@ -1,6 +1,5 @@
 import { storiesOf } from '@storybook/vue'
-import fileMock from '@/mocks/File'
-import createManyMocks from '@/mocks/createManyMocks'
+import { mocks } from '@tipe/tipe-test-utils'
 
 import TipeFinder from '@/components/Finder'
 
@@ -9,7 +8,7 @@ const createStyle = () => ({
   width: '700px'
 })
 
-const files = createManyMocks(fileMock, 20)
+const files = mocks.createManyMocks(mocks.file, 20)
 
 storiesOf('Finder', module)
   .add('empty', () => ({

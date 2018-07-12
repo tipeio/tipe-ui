@@ -20,10 +20,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import UserShape from '@/types/User'
-import FileShape from '@/types/File'
-import NavLinkShape from '@/types/NavLink'
-import Link from '@/types/Link'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeDashboardLayout from '@/layouts/Dashboard'
 import TipeBreadcrumbs from '@/components/Breadcrumbs'
 import TipeNewFile from '@/components/NewFile'
@@ -38,11 +35,11 @@ export default {
     TipeButton
   },
   props: {
-    user: vueTypes.shape(UserShape),
-    navLinks: vueTypes.arrayOf(vueTypes.shape(NavLinkShape)),
-    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(Link)),
-    templates: vueTypes.arrayOf(vueTypes.shape(FileShape)),
-    folders: vueTypes.arrayOf(vueTypes.shape(FileShape))
+    user: vueTypes.shape(interfaces.user),
+    navLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.navLink)),
+    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.link)),
+    templates: vueTypes.arrayOf(vueTypes.shape(interfaces.file)),
+    folders: vueTypes.arrayOf(vueTypes.shape(interfaces.file))
   }
 }
 </script>

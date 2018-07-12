@@ -13,10 +13,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import UserShape from '@/types/User'
-import FileShape from '@/types/File'
-import LinkShape from '@/types/Link'
-import NavLinks from '@/types/NavLink'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeDashboardLayout from '@/layouts/Dashboard'
 import TipeContentBrowser from '@/components/ContentBrowser'
 
@@ -27,11 +24,11 @@ export default {
     TipeContentBrowser
   },
   props: {
-    user: vueTypes.shape(UserShape),
-    navLinks: vueTypes.arrayOf(vueTypes.shape(NavLinks)),
-    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(LinkShape)),
-    folders: vueTypes.arrayOf(vueTypes.shape(FileShape)),
-    documents: vueTypes.arrayOf(vueTypes.shape(FileShape))
+    user: vueTypes.shape(interfaces.user),
+    navLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.navLink)),
+    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.link)),
+    folders: vueTypes.arrayOf(vueTypes.shape(interfaces.file)),
+    documents: vueTypes.arrayOf(vueTypes.shape(interfaces.file))
   }
 }
 </script>

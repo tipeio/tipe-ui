@@ -1,6 +1,5 @@
 import { storiesOf } from '@storybook/vue'
-import blockOptionMock from '@/mocks/BlockOption'
-import createManyMocks from '@/mocks/createManyMocks'
+import { mocks } from '@tipe/tipe-test-utils'
 import TipeSelectBlock from '../../src/components/DocumentEditor/DocumentBlock/SelectBlock'
 
 storiesOf('SelectBlock', module)
@@ -8,7 +7,7 @@ storiesOf('SelectBlock', module)
     components: { TipeSelectBlock },
     data() {
       return {
-        options: createManyMocks(blockOptionMock, 6)
+        options: mocks.createManyMocks(mocks.blockOption, 6)
       }
     },
     template: '<tipe-select-block :options="options" />'
@@ -17,7 +16,7 @@ storiesOf('SelectBlock', module)
     components: { TipeSelectBlock },
     data() {
       return {
-        options: createManyMocks(blockOptionMock, 6)
+        options: mocks.createManyMocks(mocks.blockOption, 6)
       }
     },
     template: '<tipe-select-block :options="options" disabled />'

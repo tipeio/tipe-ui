@@ -17,17 +17,17 @@
           <settings-menu />
         </section>
         <section :class="$style.stage_section">
-          <tipe-members-panel 
-            :members="members" 
+          <tipe-members-panel
+            :members="members"
             @toggle="modalToggle" />
         </section>
       </section>
     </div>
-    <div 
-      v-if="modalOpen" 
+    <div
+      v-if="modalOpen"
       :class="$style.modal" >
-      <add-member 
-     
+      <add-member
+
         @close="modalToggle" />
     </div>
   </main>
@@ -35,8 +35,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import NavLinkShape from '@/types/NavLink'
-import FileShape from '@/types/File'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeSidebar from '@/components/Sidebar'
 import TipeTopbar from '@/components/Topbar'
 import SettingsMenu from '@/components/SettingsMenu'
@@ -52,8 +51,8 @@ export default {
     SettingsMenu
   },
   props: {
-    navLinks: vueTypes.arrayOf(vueTypes.shape(NavLinkShape)),
-    folders: vueTypes.arrayOf(vueTypes.shape(FileShape)),
+    navLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.navLink)),
+    folders: vueTypes.arrayOf(vueTypes.shape(interfaces.file)),
     user: vueTypes.object,
     members: vueTypes.array
   },

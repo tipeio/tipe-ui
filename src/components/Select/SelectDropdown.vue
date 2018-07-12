@@ -1,12 +1,12 @@
-<template>     
-  <div 
-    :data-tipe-ui="$options.name" 
-    :class="{[size]: true}" 
+<template>
+  <div
+    :data-tipe-ui="$options.name"
+    :class="{[size]: true}"
     class="dropdown">
-    <div 
+    <div
       v-for="(option, index) in options"
       :key="option.value"
-      :class="{active: index === activeIndex}" 
+      :class="{active: index === activeIndex}"
       tabindex="-1"
       class="dropdown-item"
       @click="$emit('change', option)"><p>{{ option.label }}</p></div>
@@ -15,12 +15,16 @@
 
 <script>
 import vueTypes from 'vue-types'
-import SelectOptionShape from '@/types/SelectOptionShape'
 
 export default {
   name: 'TipeSelectDropdown',
   props: {
-    options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
+    options: vueTypes.arrayOf(
+      vueTypes.shape({
+        label: vueTypes.string.def(''),
+        value: vueTypes.string.def('')
+      })
+    ),
     size: vueTypes
       .oneOf(['mini', 'small', 'medium', 'large', 'full'])
       .def('full'),

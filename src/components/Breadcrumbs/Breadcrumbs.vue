@@ -11,7 +11,7 @@
 <script>
 import vueTypes from 'vue-types'
 import TipeBreadcrumbLink from './BreadcrumbLink.vue'
-import LinkShape from '@/types/Link'
+import LinkShape from '@tipe/tipe-interfaces'
 
 export default {
   name: 'TipeBreadcrumbs',

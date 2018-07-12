@@ -11,7 +11,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import tabsMenuButtonShape from '@/types/TabsMenuButton'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeTabsMenuButton from './TabsMenuButton'
 
 export default {
@@ -20,7 +20,7 @@ export default {
     TipeTabsMenuButton
   },
   props: {
-    buttons: vueTypes.arrayOf(vueTypes.shape(tabsMenuButtonShape))
+    buttons: vueTypes.arrayOf(vueTypes.shape(interfaces.tabsMenuButton))
   }
 }
 </script>

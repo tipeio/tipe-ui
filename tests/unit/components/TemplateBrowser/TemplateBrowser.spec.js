@@ -2,7 +2,7 @@ import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import TemplateBrowser from '@/components/TemplateBrowser'
 import Finder from '@/components/Finder'
-import fileMock from '@/mocks/File'
+import { mocks } from '@tipe/tipe-test-utils'
 
 describe('TemplateBrowser', () => {
   describe('<TemplateBrowser>', () => {
@@ -25,7 +25,7 @@ describe('TemplateBrowser', () => {
 
   describe(':props', () => {
     it(':templates - should pass templates to Finder files props', () => {
-      const propsData = { templates: [fileMock()] }
+      const propsData = { templates: [mocks.file()] }
       const wrapper = shallowMount(TemplateBrowser, { propsData })
 
       expect(wrapper.find(Finder).props().files).toEqual(propsData.templates)

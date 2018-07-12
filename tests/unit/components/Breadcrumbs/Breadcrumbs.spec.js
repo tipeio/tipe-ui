@@ -2,7 +2,7 @@ import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BreadcrumbLink from '@/components/Breadcrumbs/BreadcrumbLink.vue'
-import linkMock from '@/mocks/Link'
+import { mocks } from '@tipe/tipe-test-utils'
 
 describe('Breadcrumbs', () => {
   describe('<template>', () => {
@@ -28,7 +28,7 @@ describe('Breadcrumbs', () => {
 
   describe(':props', () => {
     it(':links - should render links', () => {
-      const propsData = { links: [linkMock(), linkMock()] }
+      const propsData = { links: [mocks.link(), mocks.link()] }
       const wrapper = shallowMount(Breadcrumbs, { propsData })
       const links = wrapper.findAll(BreadcrumbLink)
 

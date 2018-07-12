@@ -1,18 +1,17 @@
 import { storiesOf } from '@storybook/vue'
 import TipeSidebar from '../../src/components/Sidebar'
-import faker from 'faker'
-
-const createLink = () => ({
-  icon: 'image',
-  label: faker.lorem.word(),
-  url: faker.internet.url()
-})
+import { mocks } from '@tipe/tipe-test-utils'
 
 storiesOf('Sidebar', module).add('default', () => ({
   components: { TipeSidebar },
   data() {
     return {
-      links: [createLink(), createLink(), createLink()]
+      links: [
+        mocks.navLink({ icon: 'ic-document-square' }),
+        mocks.navLink({ icon: 'ic-document-square' }),
+        mocks.navLink({ icon: 'tipe-setting' }),
+        mocks.navLink({ icon: 'ic-settings' })
+      ]
     }
   },
   computed: {

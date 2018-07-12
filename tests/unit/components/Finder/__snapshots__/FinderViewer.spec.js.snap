@@ -2,6 +2,6 @@
 
 exports[`FinderViewer <template> matches previous snapshot 1`] = `
 <div data-tipe-ui="TipeFinder">
-  <TipeScrollable-stub></TipeScrollable-stub>
+  <div class="layout list-rectangle"></div>
 </div>
 `;

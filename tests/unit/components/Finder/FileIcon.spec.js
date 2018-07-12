@@ -3,7 +3,7 @@ import { createRenderer } from 'vue-server-renderer'
 import FileIcon from '@/components/Finder/FileIcon'
 import FileIconRectangle from '@/components/Finder/FileIcon/FileIconRectangle'
 import FileIconSquare from '@/components/Finder/FileIcon/FileIconSquare'
-import fileMock from '@/mocks/File'
+import { mocks } from '@tipe/tipe-test-utils'
 
 describe('FileIcon', () => {
   describe('<template>', () => {
@@ -20,21 +20,21 @@ describe('FileIcon', () => {
 
   describe(':props', () => {
     it(':type(default) - should render FileIconRectangle component', () => {
-      const propsData = { file: fileMock() }
+      const propsData = { file: mocks.file() }
       const wrapper = shallowMount(FileIcon, { propsData })
 
       expect(wrapper.contains(FileIconRectangle)).toEqual(true)
     })
 
     it(':type(square) - should render FileIconSquare component', () => {
-      const propsData = { file: fileMock(), type: 'square' }
+      const propsData = { file: mocks.file(), type: 'square' }
       const wrapper = shallowMount(FileIcon, { propsData })
 
       expect(wrapper.contains(FileIconSquare)).toEqual(true)
     })
 
     it(':type(default), :file - should pass file to FileIconRectangle component', () => {
-      const propsData = { file: fileMock() }
+      const propsData = { file: mocks.file() }
       const wrapper = shallowMount(FileIcon, { propsData })
 
       expect(wrapper.find(FileIconRectangle).props().file).toEqual(
@@ -43,7 +43,7 @@ describe('FileIcon', () => {
     })
 
     it(':type(square), :file - should pass file to FileIconSquare component', () => {
-      const propsData = { file: fileMock(), type: 'square' }
+      const propsData = { file: mocks.file(), type: 'square' }
       const wrapper = shallowMount(FileIcon, { propsData })
 
       expect(wrapper.find(FileIconSquare).props().file).toEqual(propsData.file)

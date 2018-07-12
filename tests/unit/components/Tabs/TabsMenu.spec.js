@@ -2,8 +2,7 @@ import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import TabsMenu from '@/components/Tabs/TabsMenu.vue'
 import TabsMenuButton from '@/components/Tabs/TabsMenuButton.vue'
-import tabsMenuButtonMock from '@/mocks/TabsMenuButton'
-import createManyMocks from '@/mocks/createManyMocks'
+import { mocks } from '@tipe/tipe-test-utils'
 
 describe('TabsMenu', () => {
   describe('<template>', () => {
@@ -23,14 +22,16 @@ describe('TabsMenu', () => {
 
   describe(':props', () => {
     it(':buttons - renders a TabsMenuButton component for each button', () => {
-      const propsData = { buttons: createManyMocks(tabsMenuButtonMock, 3) }
+      const propsData = {
+        buttons: mocks.createManyMocks(mocks.tabsMenuButton, 3)
+      }
       const wrapper = shallowMount(TabsMenu, { propsData })
 
       expect(wrapper.findAll(TabsMenuButton)).toHaveLength(3)
     })
 
     it(':buttons.label - should pass label prop to TabsMenuButton component', () => {
-      const propsData = { buttons: [tabsMenuButtonMock()] }
+      const propsData = { buttons: [mocks.tabsMenuButton()] }
       const wrapper = shallowMount(TabsMenu, { propsData })
 
       expect(wrapper.find(TabsMenuButton).props().label).toEqual(
@@ -39,7 +40,7 @@ describe('TabsMenu', () => {
     })
 
     it(':buttons.icon - should pass icon prop to TabsMenuButton component', () => {
-      const propsData = { buttons: [tabsMenuButtonMock()] }
+      const propsData = { buttons: [mocks.tabsMenuButton()] }
       const wrapper = shallowMount(TabsMenu, { propsData })
 
       expect(wrapper.find(TabsMenuButton).props().icon).toEqual(
@@ -48,7 +49,7 @@ describe('TabsMenu', () => {
     })
 
     it(':buttons.active - should pass active prop to TabsMenuButton component', () => {
-      const propsData = { buttons: [tabsMenuButtonMock()] }
+      const propsData = { buttons: [mocks.tabsMenuButton()] }
       const wrapper = shallowMount(TabsMenu, { propsData })
 
       expect(wrapper.find(TabsMenuButton).props().active).toEqual(

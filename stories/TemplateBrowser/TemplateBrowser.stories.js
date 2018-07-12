@@ -1,9 +1,11 @@
 import { storiesOf } from '@storybook/vue'
 import TipeTemplateBrowser from '@/components/TemplateBrowser'
-import fileMock from '@/mocks/File'
-import createManyMocks from '@/mocks/createManyMocks'
+import { mocks } from '@tipe/tipe-test-utils'
 
-const templates = createManyMocks(() => fileMock({ type: 'template' }), 30)
+const templates = mocks.createManyMocks(
+  () => mocks.file({ type: 'template' }),
+  30
+)
 
 storiesOf('TemplateBrowser', module).add('default', () => ({
   components: { TipeTemplateBrowser },

@@ -1,6 +1,5 @@
 import { storiesOf } from '@storybook/vue'
-import linkMock from '@/mocks/Link'
-import fileMock from '@/mocks/File'
+import { mocks } from '@tipe/tipe-test-utils'
 import TipeContentBrowser from '@/components/ContentBrowser'
 
 storiesOf('ContentBrowser', module).add('default', () => ({
@@ -10,24 +9,24 @@ storiesOf('ContentBrowser', module).add('default', () => ({
       height: '500px',
       width: '500px'
     }),
-    breadcrumbLinks: () => [linkMock(), linkMock(), linkMock()],
+    breadcrumbLinks: () => [mocks.link(), mocks.link(), mocks.link()],
     documents: () => [
-      fileMock({ type: 'document' }),
-      fileMock({ type: 'document' }),
-      fileMock({ type: 'document' }),
-      fileMock({ type: 'document' }),
-      fileMock({ type: 'document' }),
-      fileMock({ type: 'document' })
+      mocks.file({ type: 'document' }),
+      mocks.file({ type: 'document' }),
+      mocks.file({ type: 'document' }),
+      mocks.file({ type: 'document' }),
+      mocks.file({ type: 'document' }),
+      mocks.file({ type: 'document' })
     ],
     folders: () => [
-      fileMock({ type: 'folder' }),
-      fileMock({ type: 'folder' }),
-      fileMock({ type: 'folder' }),
-      fileMock({ type: 'folder' }),
-      fileMock({ type: 'folder' }),
-      fileMock({ type: 'folder' }),
-      fileMock({ type: 'folder' }),
-      fileMock({ type: 'folder' })
+      mocks.file({ type: 'folder' }),
+      mocks.file({ type: 'folder' }),
+      mocks.file({ type: 'folder' }),
+      mocks.file({ type: 'folder' }),
+      mocks.file({ type: 'folder' }),
+      mocks.file({ type: 'folder' }),
+      mocks.file({ type: 'folder' }),
+      mocks.file({ type: 'folder' })
     ]
   },
   template: `

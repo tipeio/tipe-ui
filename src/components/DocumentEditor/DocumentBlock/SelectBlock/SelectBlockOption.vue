@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import blockOptionShape from '@/types/BlockOption'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeIcon from '@/components/Icon'
 
 export default {
@@ -28,7 +28,7 @@ export default {
   components: {
     TipeIcon
   },
-  props: blockOptionShape
+  props: interfaces.blockOption
 }
 </script>
 

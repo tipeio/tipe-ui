@@ -43,8 +43,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import documentBlockShape from '@/types/DocumentBlock'
-import blockOptionShape from '@/types/BlockOption'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeDocumentBlockValueInput from './DocumentBlockValueInput'
 import TipeDocumentBlockHeader from './DocumentBlockHeader'
 import TipeDocumentBlockMargin from './DocumentBlockMargin'
@@ -59,8 +58,8 @@ export default {
     TipeDocumentBlockMessage
   },
   props: {
-    options: vueTypes.arrayOf(vueTypes.shape(blockOptionShape)),
-    block: vueTypes.shape(documentBlockShape)
+    options: vueTypes.arrayOf(vueTypes.shape(interfaces.blockOption)),
+    block: vueTypes.shape(interfaces.documentBlock)
   },
   data() {
     return {

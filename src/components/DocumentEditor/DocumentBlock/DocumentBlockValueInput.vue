@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import documentBlockShape from '@/types/DocumentBlock'
+import interfaces from '@tipe/tipe-interfaces'
 import { getBlockValueComponent } from '@/libs/blocks'
 import TipeSwitch from '@/components/Switch'
 import TipeNumberInput from '@/components/NumberInput'
@@ -26,7 +26,7 @@ export default {
     TipeNumberInput: TipeNumberInput,
     TipeTextInput: TipeTextInput
   },
-  props: documentBlockShape,
+  props: interfaces.documentBlock,
   computed: {
     is() {
       return getBlockValueComponent(this.type)

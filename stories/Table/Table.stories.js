@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/vue'
-import { createManyMocks, user } from '../../src/mocks'
+import { mocks } from '@tipe/tipe-test-utils'
 
 import { TipeTable } from '../../src/components/MembersPanel'
 
@@ -14,4 +14,4 @@ storiesOf('Tipe Table', module).add('member table row', () => ({
   template: '<div :style="style"><tipe-table :members="members"/></div>'
 }))
 
-const members = () => createManyMocks(user, 7)
+const members = () => mocks.createManyMocks(mocks.user, 7)

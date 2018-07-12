@@ -5,8 +5,8 @@ VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
   "element": <svg
-    color="#000"
     data-tipe-ui="TipeIcon"
+    fill="#000"
     viewBox="0 0 20 20"
   >
     <use
@@ -26,8 +26,8 @@ VueWrapper {
     "$children": Array [],
     "$createElement": [Function],
     "$el": <svg
-      color="#000"
       data-tipe-ui="TipeIcon"
+      fill="#000"
       viewBox="0 0 20 20"
     >
       <use
@@ -61,8 +61,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -115,8 +115,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -273,8 +273,8 @@ VueWrapper {
           "ref": "vm",
         },
         "elm": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -313,8 +313,8 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -367,8 +367,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -449,8 +449,8 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -550,8 +550,8 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -628,8 +628,8 @@ VueWrapper {
       ],
       "$createElement": [Function],
       "$el": <svg
-        color="#000"
         data-tipe-ui="TipeIcon"
+        fill="#000"
         viewBox="0 0 20 20"
       >
         <use
@@ -682,8 +682,8 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -764,8 +764,8 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -865,8 +865,8 @@ VueWrapper {
           "ref": "vm",
         },
         "elm": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -940,8 +940,8 @@ VueWrapper {
       ],
       "$createElement": [Function],
       "$el": <svg
-        color="#000"
         data-tipe-ui="TipeIcon"
+        fill="#000"
         viewBox="0 0 20 20"
       >
         <use
@@ -994,8 +994,8 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -1076,8 +1076,8 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -1177,8 +1177,8 @@ VueWrapper {
           "ref": "vm",
         },
         "elm": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -1267,8 +1267,8 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -1321,8 +1321,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -1479,8 +1479,8 @@ VueWrapper {
         "ref": "vm",
       },
       "elm": <svg
-        color="#000"
         data-tipe-ui="TipeIcon"
+        fill="#000"
         viewBox="0 0 20 20"
       >
         <use
@@ -2178,8 +2178,8 @@ VueWrapper {
       "$children": Array [],
       "$createElement": [Function],
       "$el": <svg
-        color="#000"
         data-tipe-ui="TipeIcon"
+        fill="#000"
         viewBox="0 0 20 20"
       >
         <use
@@ -2213,8 +2213,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -2267,8 +2267,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -2425,8 +2425,8 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -2465,8 +2465,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -2519,8 +2519,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -2601,8 +2601,8 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -2702,8 +2702,8 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -2780,8 +2780,8 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -2834,8 +2834,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -2916,8 +2916,8 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -3017,8 +3017,8 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -3092,8 +3092,8 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -3146,8 +3146,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -3228,8 +3228,8 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -3329,8 +3329,8 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -3419,8 +3419,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -3473,8 +3473,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -3631,8 +3631,8 @@ VueWrapper {
           "ref": "vm",
         },
         "elm": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -4370,8 +4370,8 @@ VueWrapper {
         "context": [Circular],
         "data": Object {
           "attrs": Object {
-            "color": "#000",
             "data-tipe-ui": "TipeIcon",
+            "fill": "#000",
             "viewBox": "0 0 20 20",
           },
           "normalizedStyle": Object {
@@ -4384,8 +4384,8 @@ VueWrapper {
           },
         },
         "elm": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -4424,8 +4424,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -4478,8 +4478,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -4636,8 +4636,8 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -5812,8 +5812,8 @@ VueWrapper {
       "context": [Circular],
       "data": Object {
         "attrs": Object {
-          "color": "#000",
           "data-tipe-ui": "TipeIcon",
+          "fill": "#000",
           "viewBox": "0 0 20 20",
         },
         "normalizedStyle": Object {
@@ -5826,8 +5826,8 @@ VueWrapper {
         },
       },
       "elm": <svg
-        color="#000"
         data-tipe-ui="TipeIcon"
+        fill="#000"
         viewBox="0 0 20 20"
       >
         <use
@@ -5866,8 +5866,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -5920,8 +5920,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -6078,8 +6078,8 @@ VueWrapper {
           "ref": "vm",
         },
         "elm": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -7225,8 +7225,8 @@ VueWrapper {
           "$children": Array [],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -7260,8 +7260,8 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -7314,8 +7314,8 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <svg
-                    color="#000"
                     data-tipe-ui="TipeIcon"
+                    fill="#000"
                     viewBox="0 0 20 20"
                   >
                     <use
@@ -7472,8 +7472,8 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -7512,8 +7512,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -7566,8 +7566,8 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -7648,8 +7648,8 @@ VueWrapper {
                     "ref": "vm",
                   },
                   "elm": <svg
-                    color="#000"
                     data-tipe-ui="TipeIcon"
+                    fill="#000"
                     viewBox="0 0 20 20"
                   >
                     <use
@@ -7749,8 +7749,8 @@ VueWrapper {
                   "ref": "vm",
                 },
                 "elm": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -7827,8 +7827,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -7881,8 +7881,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -7963,8 +7963,8 @@ VueWrapper {
                   "ref": "vm",
                 },
                 "elm": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -8064,8 +8064,8 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -8139,8 +8139,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -8193,8 +8193,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -8275,8 +8275,8 @@ VueWrapper {
                   "ref": "vm",
                 },
                 "elm": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -8376,8 +8376,8 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -8466,8 +8466,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -8520,8 +8520,8 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -8678,8 +8678,8 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -9377,8 +9377,8 @@ VueWrapper {
             "$children": Array [],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -9412,8 +9412,8 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <svg
-                    color="#000"
                     data-tipe-ui="TipeIcon"
+                    fill="#000"
                     viewBox="0 0 20 20"
                   >
                     <use
@@ -9466,8 +9466,8 @@ VueWrapper {
                     ],
                     "$createElement": [Function],
                     "$el": <svg
-                      color="#000"
                       data-tipe-ui="TipeIcon"
+                      fill="#000"
                       viewBox="0 0 20 20"
                     >
                       <use
@@ -9624,8 +9624,8 @@ VueWrapper {
                   "ref": "vm",
                 },
                 "elm": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -9664,8 +9664,8 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -9718,8 +9718,8 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <svg
-                    color="#000"
                     data-tipe-ui="TipeIcon"
+                    fill="#000"
                     viewBox="0 0 20 20"
                   >
                     <use
@@ -9800,8 +9800,8 @@ VueWrapper {
                       "ref": "vm",
                     },
                     "elm": <svg
-                      color="#000"
                       data-tipe-ui="TipeIcon"
+                      fill="#000"
                       viewBox="0 0 20 20"
                     >
                       <use
@@ -9901,8 +9901,8 @@ VueWrapper {
                     "ref": "vm",
                   },
                   "elm": <svg
-                    color="#000"
                     data-tipe-ui="TipeIcon"
+                    fill="#000"
                     viewBox="0 0 20 20"
                   >
                     <use
@@ -9979,8 +9979,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -10033,8 +10033,8 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -10115,8 +10115,8 @@ VueWrapper {
                     "ref": "vm",
                   },
                   "elm": <svg
-                    color="#000"
                     data-tipe-ui="TipeIcon"
+                    fill="#000"
                     viewBox="0 0 20 20"
                   >
                     <use
@@ -10216,8 +10216,8 @@ VueWrapper {
                   "ref": "vm",
                 },
                 "elm": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -10291,8 +10291,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -10345,8 +10345,8 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -10427,8 +10427,8 @@ VueWrapper {
                     "ref": "vm",
                   },
                   "elm": <svg
-                    color="#000"
                     data-tipe-ui="TipeIcon"
+                    fill="#000"
                     viewBox="0 0 20 20"
                   >
                     <use
@@ -10528,8 +10528,8 @@ VueWrapper {
                   "ref": "vm",
                 },
                 "elm": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -10618,8 +10618,8 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -10672,8 +10672,8 @@ VueWrapper {
                   ],
                   "$createElement": [Function],
                   "$el": <svg
-                    color="#000"
                     data-tipe-ui="TipeIcon"
+                    fill="#000"
                     viewBox="0 0 20 20"
                   >
                     <use
@@ -10830,8 +10830,8 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -13773,8 +13773,8 @@ VueWrapper {
       "$children": Array [],
       "$createElement": [Function],
       "$el": <svg
-        color="#000"
         data-tipe-ui="TipeIcon"
+        fill="#000"
         viewBox="0 0 20 20"
       >
         <use
@@ -13808,8 +13808,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -13862,8 +13862,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -14020,8 +14020,8 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -14060,8 +14060,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -14114,8 +14114,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -14196,8 +14196,8 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -14297,8 +14297,8 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -14375,8 +14375,8 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -14429,8 +14429,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -14511,8 +14511,8 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -14612,8 +14612,8 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -14687,8 +14687,8 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -14741,8 +14741,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -14823,8 +14823,8 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -14924,8 +14924,8 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -15014,8 +15014,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -15068,8 +15068,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -15226,8 +15226,8 @@ VueWrapper {
           "ref": "vm",
         },
         "elm": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -15925,8 +15925,8 @@ VueWrapper {
         "$children": Array [],
         "$createElement": [Function],
         "$el": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -15960,8 +15960,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -16014,8 +16014,8 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -16172,8 +16172,8 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -16212,8 +16212,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -16266,8 +16266,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -16348,8 +16348,8 @@ VueWrapper {
                   "ref": "vm",
                 },
                 "elm": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -16449,8 +16449,8 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -16527,8 +16527,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -16581,8 +16581,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -16663,8 +16663,8 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -16764,8 +16764,8 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -16839,8 +16839,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -16893,8 +16893,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -16975,8 +16975,8 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -17076,8 +17076,8 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -17166,8 +17166,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -17220,8 +17220,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -17378,8 +17378,8 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -20290,8 +20290,8 @@ VueWrapper {
     },
     "data": Object {
       "attrs": Object {
-        "color": "#000",
         "data-tipe-ui": "TipeIcon",
+        "fill": "#000",
         "viewBox": "0 0 20 20",
       },
       "normalizedStyle": Object {
@@ -20304,8 +20304,8 @@ VueWrapper {
       },
     },
     "elm": <svg
-      color="#000"
       data-tipe-ui="TipeIcon"
+      fill="#000"
       viewBox="0 0 20 20"
     >
       <use
@@ -20333,8 +20333,8 @@ VueWrapper {
         "$children": Array [],
         "$createElement": [Function],
         "$el": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -20364,8 +20364,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -20418,8 +20418,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -20571,8 +20571,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -20625,8 +20625,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -20775,8 +20775,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -20829,8 +20829,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -21649,8 +21649,8 @@ VueWrapper {
           "$children": Array [],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -21680,8 +21680,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -21734,8 +21734,8 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -21887,8 +21887,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -21941,8 +21941,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -22091,8 +22091,8 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -22145,8 +22145,8 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -25194,8 +25194,8 @@ VueWrapper {
             "$children": Array [],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -25904,8 +25904,8 @@ VueWrapper {
               "$children": Array [],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -28828,8 +28828,8 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <svg
-          color="#000"
           data-tipe-ui="TipeIcon"
+          fill="#000"
           viewBox="0 0 20 20"
         >
           <use
@@ -28862,8 +28862,8 @@ VueWrapper {
             "$children": Array [],
             "$createElement": [Function],
             "$el": <svg
-              color="#000"
               data-tipe-ui="TipeIcon"
+              fill="#000"
               viewBox="0 0 20 20"
             >
               <use
@@ -29572,8 +29572,8 @@ VueWrapper {
               "$children": Array [],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -32520,8 +32520,8 @@ VueWrapper {
               "$children": Array [],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -33230,8 +33230,8 @@ VueWrapper {
                 "$children": Array [],
                 "$createElement": [Function],
                 "$el": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -36154,8 +36154,8 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <svg
-            color="#000"
             data-tipe-ui="TipeIcon"
+            fill="#000"
             viewBox="0 0 20 20"
           >
             <use
@@ -36188,8 +36188,8 @@ VueWrapper {
               "$children": Array [],
               "$createElement": [Function],
               "$el": <svg
-                color="#000"
                 data-tipe-ui="TipeIcon"
+                fill="#000"
                 viewBox="0 0 20 20"
               >
                 <use
@@ -36898,8 +36898,8 @@ VueWrapper {
                 "$children": Array [],
                 "$createElement": [Function],
                 "$el": <svg
-                  color="#000"
                   data-tipe-ui="TipeIcon"
+                  fill="#000"
                   viewBox="0 0 20 20"
                 >
                   <use
@@ -39948,8 +39948,8 @@ VueWrapper {
         "ref": "vm",
       },
       "elm": <svg
-        color="#000"
         data-tipe-ui="TipeIcon"
+        fill="#000"
         viewBox="0 0 20 20"
       >
         <use

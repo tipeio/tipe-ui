@@ -37,7 +37,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import inputProps from '@/types/InputProps'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeIcon from '../Icon'
 
 export default {
@@ -49,7 +49,7 @@ export default {
     value: vueTypes
       .oneOfType([vueTypes.string, vueTypes.arrayOf(vueTypes.string)])
       .def(''),
-    ...inputProps
+    ...interfaces.input
   },
   computed: {
     classObject() {

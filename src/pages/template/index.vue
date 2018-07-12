@@ -14,10 +14,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import UserShape from '@/types/User'
-import FileShape from '@/types/File'
-import LinkShape from '@/types/Link'
-import NavLinks from '@/types/NavLink'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeDashboardLayout from '@/layouts/Dashboard'
 import TipeTemplateBrowser from '@/components/TemplateBrowser'
 
@@ -28,10 +25,10 @@ export default {
     TipeTemplateBrowser
   },
   props: {
-    user: vueTypes.shape(UserShape),
-    navLinks: vueTypes.arrayOf(vueTypes.shape(NavLinks)),
-    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(LinkShape)),
-    templates: vueTypes.arrayOf(vueTypes.shape(FileShape))
+    user: vueTypes.shape(interfaces.user),
+    navLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.navLink)),
+    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.link)),
+    templates: vueTypes.arrayOf(vueTypes.shape(interfaces.file))
   }
 }
 </script>

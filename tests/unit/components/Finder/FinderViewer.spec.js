@@ -3,7 +3,7 @@ import { createRenderer } from 'vue-server-renderer'
 import FinderViewer from '@/components/Finder/FinderViewer'
 import FinderIcon from '@/components/Finder/FileIcon'
 import Scrollable from '@/components/Scrollable'
-import fileMock from '@/mocks/File'
+import { mocks } from '@tipe/tipe-test-utils'
 
 describe('FinderViewer', () => {
   describe('<template>', () => {
@@ -30,15 +30,12 @@ describe('FinderViewer', () => {
         TipeScrollable: Scrollable,
         TipeFileIcon: '<!---->'
       }
-      const propsData = { files: [fileMock()] }
+      const propsData = { files: [mocks.file()] }
       const wrapper = mount(FinderViewer, { propsData, stubs })
 
-      expect(
-        wrapper
-          .find(Scrollable)
-          .find(FinderIcon)
-          .props().file
-      ).toMatchObject(propsData.files[0])
+      expect(wrapper.find(FinderIcon).props().file).toMatchObject(
+        propsData.files[0]
+      )
     })
 
     it(':layout(grid) - should pass layout prop to layout class', () => {
@@ -49,12 +46,7 @@ describe('FinderViewer', () => {
       const propsData = { layout: 'grid' }
       const wrapper = mount(FinderViewer, { propsData, stubs })
 
-      expect(
-        wrapper
-          .find(Scrollable)
-          .find('.layout')
-          .classes()
-      ).toContain('grid-rectangle')
+      expect(wrapper.find('.layout').classes()).toContain('grid-rectangle')
     })
   })
 })

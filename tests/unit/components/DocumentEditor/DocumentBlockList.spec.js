@@ -2,15 +2,13 @@ import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import DocumentBlock from '@/components/DocumentEditor/DocumentBlock'
 import DocumentBlockList from '@/components/DocumentEditor/DocumentBlockList'
-import documentBlockFixture from '@/fixtures/DocumentBlock'
-import documentBlockMock from '@/mocks/DocumentBlock'
-import createManyMocks from '@/mocks/createManyMocks'
+import { mocks, fixtures } from '@tipe/tipe-test-utils'
 
 describe('DocumentBlockList', () => {
   describe('<template>', () => {
     it('matches previous snapshot', () => {
       const renderer = createRenderer()
-      const propsData = documentBlockFixture()
+      const propsData = fixtures.documentBlock()
       const wrapper = shallowMount(DocumentBlockList, { propsData })
 
       renderer.renderToString(wrapper.vm, (err, str) => {
@@ -28,7 +26,9 @@ describe('DocumentBlockList', () => {
 
   describe(':props', () => {
     it(':blocks - should render a DocumentBlock components for each block', () => {
-      const propsData = { blocks: createManyMocks(documentBlockMock, 3) }
+      const propsData = {
+        blocks: mocks.createManyMocks(mocks.documentBlock, 3)
+      }
       const wrapper = shallowMount(DocumentBlockList, { propsData })
 
       expect(wrapper.findAll(DocumentBlock)).toHaveLength(
@@ -37,7 +37,9 @@ describe('DocumentBlockList', () => {
     })
 
     it(':blocks - should pass block to DocumentBlock component props', () => {
-      const propsData = { blocks: createManyMocks(documentBlockMock, 1) }
+      const propsData = {
+        blocks: mocks.createManyMocks(mocks.documentBlock, 1)
+      }
       const wrapper = shallowMount(DocumentBlockList, { propsData })
 
       expect(wrapper.find(DocumentBlock).props().block).toEqual(

@@ -19,10 +19,10 @@
     "vue": "^2.5.16",
     "vue-click-outside": "^1.0.7",
     "vue-types": "^1.2.3",
-    "webpack-cli": "^3.0.8",
     "xstate": "^3.2.1"
   },
   "devDependencies": {
+    "webpack-cli": "^3.0.8",
     "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.47",
     "@storybook/addon-actions": "^3.4.4",
     "@storybook/addon-centered": "^3.4.5",

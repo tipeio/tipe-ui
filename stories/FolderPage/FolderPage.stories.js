@@ -1,16 +1,15 @@
 import { storiesOf } from '@storybook/vue'
 import TipeFolderPage from '@/pages/folder'
-import userMock from '@/mocks/User'
-import fileMock from '@/mocks/File'
-import linkMock from '@/mocks/Link'
-import navLinkMock from '@/mocks/NavLink'
-import createManyMocks from '@/mocks/createManyMocks'
+import { mocks } from '@tipe/tipe-test-utils'
 
-const user = userMock()
-const navLinks = createManyMocks(() => navLinkMock(), 3)
-const documents = createManyMocks(() => fileMock({ type: 'document' }), 20)
-const folders = createManyMocks(() => fileMock({ type: 'folder' }), 20)
-const breadcrumbLinks = createManyMocks(() => linkMock(), 3)
+const user = mocks.user()
+const navLinks = mocks.createManyMocks(() => mocks.navLink(), 3)
+const documents = mocks.createManyMocks(
+  () => mocks.file({ type: 'document' }),
+  20
+)
+const folders = mocks.createManyMocks(() => mocks.file({ type: 'folder' }), 20)
+const breadcrumbLinks = mocks.createManyMocks(() => mocks.link(), 3)
 
 storiesOf('Folder Page', module).add('default', () => ({
   components: { TipeFolderPage },

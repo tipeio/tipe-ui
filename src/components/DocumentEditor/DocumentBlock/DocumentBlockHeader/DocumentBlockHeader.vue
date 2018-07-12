@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import documentBlockShape from '@/types/DocumentBlock'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeDocumentBlockNameInput from './DocumentBlockNameInput'
 import TipeDocumentBlockDescriptionInput from './DocumentBlockDescriptionInput'
 
@@ -40,7 +40,7 @@ export default {
     TipeDocumentBlockNameInput,
     TipeDocumentBlockDescriptionInput
   },
-  props: documentBlockShape,
+  props: interfaces.documentBlock,
   methods: {
     onChangeName(event) {
       this.$emit('change', { name: event.target.value })

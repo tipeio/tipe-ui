@@ -15,7 +15,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import blockOptionShape from '@/types/BlockOption'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeDocumentBlockMargin from './DocumentBlockMargin'
 
 export default {
@@ -24,7 +24,7 @@ export default {
     TipeDocumentBlockMargin
   },
   props: {
-    options: vueTypes.arrayOf(vueTypes.shape(blockOptionShape))
+    options: vueTypes.arrayOf(vueTypes.shape(interfaces.blockOption))
   }
 }
 </script>

@@ -13,7 +13,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import FileShape from '@/types/File'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeFinder from '@/components/Finder'
 import TipeTemplateBrowserToolbar from './TemplateBrowserToolbar.vue'
 
@@ -24,7 +24,7 @@ export default {
     TipeTemplateBrowserToolbar
   },
   props: {
-    templates: vueTypes.arrayOf(vueTypes.shape(FileShape))
+    templates: vueTypes.arrayOf(vueTypes.shape(interfaces.file))
   }
 }
 </script>

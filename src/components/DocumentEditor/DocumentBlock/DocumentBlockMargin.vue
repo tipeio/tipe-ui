@@ -17,7 +17,7 @@
 <script>
 import vueTypes from 'vue-types'
 import TipeIcon from '@/components/Icon'
-import blockOptionShape from '@/types/BlockOption'
+import interfaces from '@tipe/tipe-interfaces'
 import TipeSelectBlock from './SelectBlock'
 
 export default {
@@ -27,7 +27,7 @@ export default {
     TipeSelectBlock
   },
   props: {
-    options: vueTypes.arrayOf(vueTypes.shape(blockOptionShape)),
+    options: vueTypes.arrayOf(vueTypes.shape(interfaces.blockOption)),
     waiting: vueTypes.bool.def(false),
     disabled: vueTypes.bool.def(false)
   },

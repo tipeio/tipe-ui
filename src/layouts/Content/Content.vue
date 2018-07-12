@@ -12,7 +12,7 @@
 <script>
 import vueTypes from 'vue-types'
 import TipeBreadcrumbs from '@/components/Breadcrumbs'
-import LinkShape from '@/types/Link'
+import interfaces from '@tipe/tipe-interfaces'
 
 export default {
   name: 'TipeContentLayout',
@@ -20,7 +20,7 @@ export default {
     TipeBreadcrumbs
   },
   props: {
-    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(LinkShape))
+    breadcrumbLinks: vueTypes.arrayOf(vueTypes.shape(interfaces.link))
   }
 }
 </script>

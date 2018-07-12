@@ -7,8 +7,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import SelectOptionShape from '@/types/SelectOptionShape'
-import inputProps from '@/types/InputProps'
+import interfaces from '@tipe/tipe-interfaces'
 
 import TipeSelectUnderline from './SelectUnderline'
 import TipeSelectButton from './SelectButton'
@@ -21,9 +20,17 @@ export default {
   },
   props: {
     type: vueTypes.string,
-    options: vueTypes.arrayOf(vueTypes.shape(SelectOptionShape)),
+    options: vueTypes.arrayOf(
+      vueTypes.shape({
+        label: vueTypes.string.def(''),
+        value: vueTypes.string.def(' ')
+      })
+    ),
     placeholder: vueTypes.string,
-    defaultSelected: vueTypes.shape(SelectOptionShape),
+    defaultSelected: vueTypes.shape({
+      label: vueTypes.string.def(''),
+      value: vueTypes.string.def(' ')
+    }),
     color: vueTypes.oneOf([
       'default',
       'primary',
@@ -33,7 +40,7 @@ export default {
       'danger',
       'warning'
     ]),
-    ...inputProps
+    ...interfaces.input
   },
   computed: {
     is() {

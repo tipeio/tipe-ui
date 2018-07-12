@@ -17,7 +17,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import inputProps from '@/types/InputProps'
+import interfaces from '@tipe/tipe-interfaces'
 import autosize from 'autosize'
 
 export default {
@@ -25,7 +25,7 @@ export default {
   props: {
     value: vueTypes.string.def(''),
     placeholder: vueTypes.string.def(''),
-    ...inputProps
+    ...interfaces.input
   },
   computed: {
     rootClassObject() {
