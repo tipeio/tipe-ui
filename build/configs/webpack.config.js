@@ -12,7 +12,7 @@ module.exports = {
   externals: [
     '@tipe/tipe-config',
     '@tipe/tipe-constants',
-    '@tipe/tipe-fetch',
+    '@tipe/tipe-interfaces',
     'vue',
     'vue-types'
   ],
