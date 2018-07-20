@@ -10,6 +10,7 @@ env:
   global:
     - CC_TEST_REPORTER_ID=$CC_TEST_REPORTER_ID
 before_install:
+  - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.6.0
 install:
   - yarn
