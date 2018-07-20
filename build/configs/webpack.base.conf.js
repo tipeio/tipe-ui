@@ -2,12 +2,12 @@ const path = require('path')
 const ROOT_DIR = path.resolve(__dirname, '../../')
 
 module.exports = {
-  entry: path.resolve(ROOT_DIR, 'build/tmp/main.js'),
+  entry: path.resolve(ROOT_DIR, 'build/tmp/index.js'),
   output: {
     path: path.resolve(ROOT_DIR, 'build/lib'),
     filename: 'index.js',
     library: '',
-    libraryTarget: 'commonjs'
+    libraryTarget: 'umd'
   },
   externals: [
     '@tipe/tipe-config',
@@ -43,7 +43,6 @@ module.exports = {
   },
   resolve: {
     alias: {
-      vue$: 'vue/dist/vue.esm.js',
       '@': path.resolve(ROOT_DIR, './src')
     },
     extensions: ['.js', '.json', '.vue', '.css']

@@ -25,7 +25,7 @@ output += componentFileNames.reduce((string, filename) => {
   return string + printLine(filename)
 }, '')
 
-fs.writeFile(path.resolve(TMP_DIR, 'main.js'), output, function(err) {
+fs.writeFile(path.resolve(TMP_DIR, 'index.js'), output, function(err) {
   if (err) {
     return console.log(err)
   }
