@@ -7,49 +7,50 @@ const style = () => ({
   width: '1rem'
 })
 
-storiesOf('Icon', module)
-  .add('file', () => ({
-    components: { TipeIcon },
-    computed: { style },
-    template: '<tipe-icon :style="style" icon="file" />'
-  }))
-  .add('files', () => ({
-    components: { TipeIcon },
-    computed: { style },
-    template: '<tipe-icon :style="style" icon="files" />'
-  }))
-  .add('folder', () => ({
-    components: { TipeIcon },
-    computed: { style },
-    template: '<tipe-icon :style="style" icon="folder" />'
-  }))
-  .add('image', () => ({
-    components: { TipeIcon },
-    computed: { style },
-    template: '<tipe-icon :style="style" icon="image" />'
-  }))
-  .add('layout', () => ({
-    components: { TipeIcon },
-    computed: { style },
-    template: '<tipe-icon :style="style" icon="layout" />'
-  }))
-  .add('plus', () => ({
-    components: { TipeIcon },
-    computed: { style },
-    template: '<tipe-icon :style="style" icon="plus" />'
-  }))
-  .add('settings', () => ({
-    components: { TipeIcon },
-    computed: { style },
-    template: '<tipe-icon :style="style" icon="settings" />'
-  }))
-  .add('options', () => ({
-    components: { TipeIcon },
-    computed: { style },
-    template: '<tipe-icon :style="style" icon="options" />'
-  }))
-  .add('dot', () => ({
-    components: { TipeIcon },
-    computed: { style },
-    template: '<tipe-icon :style="style" icon="dot" />'
-  }))
+const icons = [
+  'check',
+  'document',
+  'folder',
+  'key',
+  'number',
+  'share',
+  'switch',
+  'user',
+  'color',
+  'edit',
+  'gear',
+  'link',
+  'pin',
+  'sign-out',
+  'text',
+  'view',
+  'copy',
+  'flow',
+  'grid',
+  'list',
+  'search',
+  'star-active',
+  'trash',
+  'wrench',
+  'credit-card',
+  'folder-open',
+  'group',
+  'markdown',
+  'send',
+  'star',
+  'user-circle'
+]
+
+storiesOf('Icon', module).add('icons', () => ({
+  components: { TipeIcon },
+  computed: { style },
+  template:
+    '<div>' +
+    icons.reduce((template, icon) => {
+      return (
+        template +
+        `<tipe-icon :style="style" icon="${icon}" color="rgb(255,0,0)" />`
+      )
+    }, '') +
+    '</div>'
+}))
