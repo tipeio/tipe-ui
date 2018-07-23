@@ -68,7 +68,8 @@ storiesOf('Button', module)
   }))
   .add('icon after label', () => ({
     components: { TipeButton },
-    template: '<tipe-button iconAfter="plus">Icon Button</tipe-button>',
+    template:
+      '<tipe-button size="mini" iconAfter="plus">Icon Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon before and after label', () => ({
