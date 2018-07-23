@@ -6,134 +6,84 @@ import TipeButton from '@/components/Button'
 import '@/styles/globals.css'
 
 storiesOf('Button', module)
-  .add('default button', () => ({
+  .add('color: primary', () => ({
     components: { TipeButton },
-    template: '<tipe-button @click="action">Fill Button</tipe-button>',
+    template: '<tipe-button color="primary">Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
-  .add('default disabled button', () => ({
+  .add('color: info', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button :disabled="true" @click="action">Fill Button</tipe-button>',
+    template: '<tipe-button color="info">Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
-  .add('primary button', () => ({
+  .add('color: success', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button @click="action" color="primary">Fill Button</tipe-button>',
+    template: '<tipe-button color="success">Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
-  .add('primary disabled button', () => ({
+  .add('color: warning', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button @click="action" :disabled="true" color="primary">Fill Button</tipe-button>',
+    template: '<tipe-button color="warning">Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
-  .add('success button', () => ({
+  .add('color: danger', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button @click="action" color="success">Fill Button</tipe-button>',
+    template: '<tipe-button color="danger">Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
-  .add('success disabled button', () => ({
+  .add('outline', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button @click="action" color="success" :disabled="true" >Fill Button</tipe-button>',
+    template: '<tipe-button outline>Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
-  .add('info button', () => ({
+  .add('disabled', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button @click="action" color="info">Fill Button</tipe-button>',
+    template: '<tipe-button :disabled="true">Fill Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
-  .add('info disabled button', () => ({
+  .add('size: mini', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button @click="action" :disabled="true" color="info">Fill Button</tipe-button>',
+    template: '<tipe-button size="mini">Mini Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
-  .add('warning button', () => ({
+  .add('size: small', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button @click="action" color="warning">Fill Button</tipe-button>',
+    template: '<tipe-button size="small">Small Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
-  .add('warning disabled button', () => ({
+  .add('size: medium', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button @click="action" :disabled="true" color="warning">Fill Button</tipe-button>',
+    template: '<tipe-button size="medium">Medium Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
-  .add('danger button', () => ({
+  .add('size: large', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button @click="action" color="danger">Fill Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('danger disabled button', () => ({
-    components: { TipeButton },
-    template:
-      '<tipe-button @click="action" :disabled="true" color="danger">Fill Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('mini button', () => ({
-    components: { TipeButton },
-    template:
-      '<tipe-button size="mini" @click="action">Mini Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('small button', () => ({
-    components: { TipeButton },
-    template:
-      '<tipe-button size="small" @click="action">Small Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('medium button', () => ({
-    components: { TipeButton },
-    template:
-      '<tipe-button size="medium" @click="action">Medium Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('large button', () => ({
-    components: { TipeButton },
-    template:
-      '<tipe-button size="large" @click="action">Large Button</tipe-button>',
+    template: '<tipe-button size="large">Large Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon before label', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button iconBefore="plus" @click="action">Icon Button</tipe-button>',
+    template: '<tipe-button iconBefore="plus">Icon Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon after label', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button iconAfter="plus" @click="action">Icon Button</tipe-button>',
+    template: '<tipe-button iconAfter="plus">Icon Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon before and after label', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button  iconBefore="plus" iconAfter="plus" @click="action">Icon Button</tipe-button>',
+      '<tipe-button  iconBefore="plus" iconAfter="plus">Icon Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon only', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button color="primary" iconBefore="plus" @click="action"></tipe-button>',
+    template: '<tipe-button color="primary" iconBefore="plus"></tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon only no backgound', () => ({
     components: { TipeButton },
-    template:
-      '<tipe-button color="none" iconBefore="plus" @click="action"></tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('icon size', () => ({
-    components: { TipeButton },
-    template:
-      '<tipe-button color="primary" size="icon" iconBefore="plus" @click="action"></tipe-button>',
+    template: '<tipe-button color="none" iconBefore="plus"></tipe-button>',
     methods: { action: action('clicked') }
   }))
