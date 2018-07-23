@@ -69,16 +69,8 @@ export default {
       value: vueTypes.string.def('')
     }),
     color: vueTypes
-      .oneOf([
-        'default',
-        'primary',
-        'info',
-        'none',
-        'success',
-        'danger',
-        'warning'
-      ])
-      .def('default'),
+      .oneOf(['primary', 'info', 'none', 'success', 'danger', 'warning'])
+      .def('primary'),
     ...interfaces.input
   },
   data() {
