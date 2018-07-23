@@ -27,14 +27,6 @@
         class="icon-container"
       >
         <tipe-icon
-          v-if="dropdown"
-          :icon="iconAfter"
-          class="icon"
-          height="6px"
-          width="10px"
-        />
-        <tipe-icon
-          v-else
           :icon="iconAfter"
           class="icon"
 
@@ -57,7 +49,6 @@ export default {
       .oneOf(['primary', 'success', 'info', 'warning', 'danger', 'none'])
       .def('primary'),
     outline: vueTypes.bool.def(false),
-    dropdown: vueTypes.bool.def(false),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def(''),
     ...interfaces.input,

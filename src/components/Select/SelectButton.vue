@@ -8,9 +8,7 @@
     @keyup.enter="enter"
     v-on="isDisabled ? {} : { click: onClick }"
   >
-    <div
-      :class="{[size]: true}"
-      class="select">
+    <div class="select">
       <tipe-native-select
         :options="options"
         :disabled="isDisabled"
@@ -21,7 +19,6 @@
         :color="color"
         :size="size"
         :disabled="isDisabled"
-        :dropdown="true"
         icon-after="arrow-down">{{ selected }}</tipe-button>
       <tipe-select-dropdown
         v-if="open"
@@ -40,6 +37,7 @@ import interfaces from '@tipe/tipe-interfaces'
 import TipeButton from '../Button'
 import TipeSelectDropdown from './SelectDropdown'
 import TipeNativeSelect from './NativeSelect'
+
 import {
   selectKeyup,
   selectKeydown,
@@ -125,28 +123,7 @@ export default {
 }
 
 .select {
-  display: inline-block;
-  max-width: 100%;
   position: relative;
   vertical-align: top;
-
-  &.mini {
-    height: 1.625rem;
-  }
-  &.small {
-    height: 1.875rem;
-  }
-
-  &.medium {
-    height: 2.5rem;
-  }
-
-  &.large {
-    height: 3.125rem;
-  }
-
-  &.full {
-    height: 3.25rem;
-  }
 }
 </style>

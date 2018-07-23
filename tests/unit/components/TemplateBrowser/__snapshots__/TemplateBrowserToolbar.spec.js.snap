@@ -6,7 +6,7 @@ exports[`TemplateBrowserToolbar <TemplateBrowserToolbar> matches previous snapsh
     <TipeTemplateBrowserFilterControl-stub></TipeTemplateBrowserFilterControl-stub>
   </div>
   <div class="new-template-button-container">
-    <TipeButton-stub color="default" iconBefore="plus" iconAfter="" name="" size="medium" tabindex="0">
+    <TipeButton-stub color="primary" iconBefore="plus" iconAfter="" name="" size="medium" tabindex="0">
       New Template
     </TipeButton-stub>
   </div>
