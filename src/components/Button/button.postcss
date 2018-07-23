@@ -29,6 +29,7 @@ button {
 }
 
 .icon-container {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,13 +37,15 @@ button {
 
 button.medium .icon-container,
 button.large .icon-container {
-  height: 100%;
   flex: 1 0 3rem;
 }
 
+button.mini .icon-container {
+  flex: 1 0 0.8rem;
+}
+
 button.small .icon-container {
-  height: 100%;
-  flex: 1 0 2rem;
+  flex: 1 0 1.5rem;
 }
 
 button.medium .icon,
