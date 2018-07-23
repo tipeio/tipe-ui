@@ -2,9 +2,13 @@
 
 exports[`TipeSelectButton.vue renders 1`] = `
 <div data-tipe-ui="TipeSelectButton" class="select-flex">
-  <div class="select medium">
+  <div class="select">
     <TipeNativeSelect-stub options="[object Object],[object Object]" placeholder="" selectedValue="[object Object]"></TipeNativeSelect-stub>
+<<<<<<< HEAD
     <TipeButton-stub color="default" dropdown="true" iconBefore="" iconAfter="dropdown" name="" size="medium" tabindex="0">Owner</TipeButton-stub>
+=======
+    <TipeButton-stub color="primary" iconBefore="" iconAfter="arrow-down" name="" size="medium" tabindex="0">Owner</TipeButton-stub>
+>>>>>>> Button: removed special case for dropdown
     <!---->
   </div>
 </div>
@@ -12,9 +16,13 @@ exports[`TipeSelectButton.vue renders 1`] = `
 
 exports[`TipeSelectButton.vue renders without options 1`] = `
 <div data-tipe-ui="TipeSelectButton" class="select-flex">
-  <div class="select medium">
+  <div class="select">
     <TipeNativeSelect-stub placeholder="" selectedValue="[object Object]"></TipeNativeSelect-stub>
+<<<<<<< HEAD
     <TipeButton-stub color="default" dropdown="true" iconBefore="" iconAfter="dropdown" name="" size="medium" tabindex="0">Please provide select options</TipeButton-stub>
+=======
+    <TipeButton-stub color="primary" iconBefore="" iconAfter="arrow-down" name="" size="medium" tabindex="0">Please provide select options</TipeButton-stub>
+>>>>>>> Button: removed special case for dropdown
     <!---->
   </div>
 </div>
