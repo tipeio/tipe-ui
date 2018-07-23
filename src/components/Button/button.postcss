@@ -12,10 +12,13 @@ button {
 }
 
 .layout {
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  flex-direction: columns;
   height: 100%;
+  width: 100%;
   color: inherit;
+  justify-content: space-between;
+  align-items: center;
 
   &.dropdown {
     width: 100%;
@@ -33,11 +36,13 @@ button {
 
 button.medium .icon-container,
 button.large .icon-container {
-  width: 3.125rem;
+  height: 100%;
+  flex: 1 0 3rem;
 }
 
 button.small .icon-container {
-  width: 1.8125rem;
+  height: 100%;
+  flex: 1 0 2rem;
 }
 
 button.medium .icon,
@@ -52,6 +57,7 @@ button.small .icon {
 }
 
 .label {
+  flex: 1 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
