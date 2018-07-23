@@ -3,6 +3,7 @@
     <type-icon
       class="search-icon"
       icon="search"
+      color="#b5baca"
     />
     <input
       type="search"

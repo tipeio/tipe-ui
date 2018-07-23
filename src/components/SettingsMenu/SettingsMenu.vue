@@ -1,9 +1,9 @@
 <template>
   <ul>
     <li class="first"><div class="icon"><icon icon="wrench"/></div><p class="label">General</p></li>
-    <li><div class="icon"><icon icon="users"/></div><p class="label">Members</p></li>
+    <li><div class="icon"><icon icon="user"/></div><p class="label">Members</p></li>
     <li><div class="icon"><icon icon="key"/></div><p class="label">API Key</p></li>
-    <li><div class="icon"><icon icon="branch"/></div><p class="label">Webhooks</p></li>
+    <li><div class="icon"><icon icon="flow"/></div><p class="label">Webhooks</p></li>
     <li class="last"><div class="icon"><icon icon="credit-card"/></div><p class="label">Billing</p></li>
   </ul>
 </template>

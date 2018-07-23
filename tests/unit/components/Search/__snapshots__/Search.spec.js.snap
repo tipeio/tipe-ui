@@ -51,6 +51,7 @@ VueWrapper {
               "children": undefined,
               "listeners": undefined,
               "propsData": Object {
+                "color": "#b5baca",
                 "icon": "search",
               },
               "tag": "type-icon",
@@ -98,6 +99,7 @@ VueWrapper {
           "_renderChildren": undefined,
           "parent": [Circular],
           "propsData": Object {
+            "color": "#b5baca",
             "icon": "search",
           },
         },
@@ -430,6 +432,7 @@ VueWrapper {
             "children": undefined,
             "listeners": undefined,
             "propsData": Object {
+              "color": "#b5baca",
               "icon": "search",
             },
             "tag": "type-icon",
@@ -480,7 +483,7 @@ VueWrapper {
         "_isVue": true,
         "_props": Object {
           "__iconLoader__": [Function],
-          "color": "#000",
+          "color": "#b5baca",
           "height": "1rem",
           "icon": "search",
           "width": "1rem",
@@ -509,6 +512,7 @@ VueWrapper {
                 "children": undefined,
                 "listeners": undefined,
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
                 "tag": "type-icon",
@@ -556,6 +560,7 @@ VueWrapper {
             "_renderChildren": undefined,
             "parent": [Circular],
             "propsData": Object {
+              "color": "#b5baca",
               "icon": "search",
             },
           },
@@ -888,6 +893,7 @@ VueWrapper {
               "children": undefined,
               "listeners": undefined,
               "propsData": Object {
+                "color": "#b5baca",
                 "icon": "search",
               },
               "tag": "type-icon",
@@ -938,7 +944,7 @@ VueWrapper {
           "_isVue": true,
           "_props": Object {
             "__iconLoader__": [Function],
-            "color": "#000",
+            "color": "#b5baca",
             "height": "1rem",
             "icon": "search",
             "width": "1rem",
@@ -980,6 +986,7 @@ VueWrapper {
                 "children": undefined,
                 "listeners": undefined,
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
                 "tag": "type-icon",
@@ -1099,6 +1106,7 @@ VueWrapper {
               "children": undefined,
               "listeners": undefined,
               "propsData": Object {
+                "color": "#b5baca",
                 "icon": "search",
               },
               "tag": "type-icon",
@@ -2718,6 +2726,7 @@ VueWrapper {
                 "children": undefined,
                 "listeners": undefined,
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
                 "tag": "type-icon",
@@ -2765,6 +2774,7 @@ VueWrapper {
             "_renderChildren": undefined,
             "parent": [Circular],
             "propsData": Object {
+              "color": "#b5baca",
               "icon": "search",
             },
           },
@@ -3097,6 +3107,7 @@ VueWrapper {
               "children": undefined,
               "listeners": undefined,
               "propsData": Object {
+                "color": "#b5baca",
                 "icon": "search",
               },
               "tag": "type-icon",
@@ -3147,7 +3158,7 @@ VueWrapper {
           "_isVue": true,
           "_props": Object {
             "__iconLoader__": [Function],
-            "color": "#000",
+            "color": "#b5baca",
             "height": "1rem",
             "icon": "search",
             "width": "1rem",
@@ -3176,6 +3187,7 @@ VueWrapper {
                   "children": undefined,
                   "listeners": undefined,
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                   "tag": "type-icon",
@@ -3223,6 +3235,7 @@ VueWrapper {
               "_renderChildren": undefined,
               "parent": [Circular],
               "propsData": Object {
+                "color": "#b5baca",
                 "icon": "search",
               },
             },
@@ -3555,6 +3568,7 @@ VueWrapper {
                 "children": undefined,
                 "listeners": undefined,
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
                 "tag": "type-icon",
@@ -3605,7 +3619,7 @@ VueWrapper {
             "_isVue": true,
             "_props": Object {
               "__iconLoader__": [Function],
-              "color": "#000",
+              "color": "#b5baca",
               "height": "1rem",
               "icon": "search",
               "width": "1rem",
@@ -3647,6 +3661,7 @@ VueWrapper {
                   "children": undefined,
                   "listeners": undefined,
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                   "tag": "type-icon",
@@ -3766,6 +3781,7 @@ VueWrapper {
                 "children": undefined,
                 "listeners": undefined,
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
                 "tag": "type-icon",
@@ -5396,6 +5412,7 @@ VueWrapper {
                 "_renderChildren": undefined,
                 "parent": [Circular],
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
               },
@@ -5733,7 +5750,7 @@ VueWrapper {
               "_isVue": true,
               "_props": Object {
                 "__iconLoader__": [Function],
-                "color": "#000",
+                "color": "#b5baca",
                 "height": "1rem",
                 "icon": "search",
                 "width": "1rem",
@@ -5764,6 +5781,7 @@ VueWrapper {
                   "_renderChildren": undefined,
                   "parent": [Circular],
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                 },
@@ -6101,7 +6119,7 @@ VueWrapper {
                 "_isVue": true,
                 "_props": Object {
                   "__iconLoader__": [Function],
-                  "color": "#000",
+                  "color": "#b5baca",
                   "height": "1rem",
                   "icon": "search",
                   "width": "1rem",
@@ -6260,6 +6278,7 @@ VueWrapper {
               "children": undefined,
               "listeners": undefined,
               "propsData": Object {
+                "color": "#b5baca",
                 "icon": "search",
               },
               "tag": "type-icon",
@@ -6734,6 +6753,7 @@ VueWrapper {
               "_renderChildren": undefined,
               "parent": [Circular],
               "propsData": Object {
+                "color": "#b5baca",
                 "icon": "search",
               },
             },
@@ -7071,7 +7091,7 @@ VueWrapper {
             "_isVue": true,
             "_props": Object {
               "__iconLoader__": [Function],
-              "color": "#000",
+              "color": "#b5baca",
               "height": "1rem",
               "icon": "search",
               "width": "1rem",
@@ -7102,6 +7122,7 @@ VueWrapper {
                 "_renderChildren": undefined,
                 "parent": [Circular],
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
               },
@@ -7439,7 +7460,7 @@ VueWrapper {
               "_isVue": true,
               "_props": Object {
                 "__iconLoader__": [Function],
-                "color": "#000",
+                "color": "#b5baca",
                 "height": "1rem",
                 "icon": "search",
                 "width": "1rem",
@@ -7598,6 +7619,7 @@ VueWrapper {
             "children": undefined,
             "listeners": undefined,
             "propsData": Object {
+              "color": "#b5baca",
               "icon": "search",
             },
             "tag": "type-icon",
@@ -11192,6 +11214,7 @@ VueWrapper {
               "onClick": [Function],
             },
             "propsData": Object {
+              "color": "#b5baca",
               "icon": "search",
             },
           },
@@ -16677,7 +16700,7 @@ VueWrapper {
           "_isVue": true,
           "_props": Object {
             "__iconLoader__": [Function],
-            "color": "#000",
+            "color": "#b5baca",
             "height": "1rem",
             "icon": "search",
             "width": "1rem",
@@ -19832,6 +19855,7 @@ VueWrapper {
                 "onClick": [Function],
               },
               "propsData": Object {
+                "color": "#b5baca",
                 "icon": "search",
               },
             },
@@ -25317,7 +25341,7 @@ VueWrapper {
             "_isVue": true,
             "_props": Object {
               "__iconLoader__": [Function],
-              "color": "#000",
+              "color": "#b5baca",
               "height": "1rem",
               "icon": "search",
               "width": "1rem",
@@ -25476,6 +25500,7 @@ VueWrapper {
           "children": undefined,
           "listeners": undefined,
           "propsData": Object {
+            "color": "#b5baca",
             "icon": "search",
           },
           "tag": "type-icon",
@@ -25510,6 +25535,7 @@ VueWrapper {
                 "_renderChildren": undefined,
                 "parent": [Circular],
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
               },
@@ -25847,7 +25873,7 @@ VueWrapper {
               "_isVue": true,
               "_props": Object {
                 "__iconLoader__": [Function],
-                "color": "#000",
+                "color": "#b5baca",
                 "height": "1rem",
                 "icon": "search",
                 "width": "1rem",
@@ -25878,6 +25904,7 @@ VueWrapper {
                   "_renderChildren": undefined,
                   "parent": [Circular],
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                 },
@@ -26215,7 +26242,7 @@ VueWrapper {
                 "_isVue": true,
                 "_props": Object {
                   "__iconLoader__": [Function],
-                  "color": "#000",
+                  "color": "#b5baca",
                   "height": "1rem",
                   "icon": "search",
                   "width": "1rem",
@@ -27907,6 +27934,7 @@ VueWrapper {
                   "_renderChildren": undefined,
                   "parent": [Circular],
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                 },
@@ -28244,7 +28272,7 @@ VueWrapper {
                 "_isVue": true,
                 "_props": Object {
                   "__iconLoader__": [Function],
-                  "color": "#000",
+                  "color": "#b5baca",
                   "height": "1rem",
                   "icon": "search",
                   "width": "1rem",
@@ -28275,6 +28303,7 @@ VueWrapper {
                     "_renderChildren": undefined,
                     "parent": [Circular],
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                   },
@@ -28612,7 +28641,7 @@ VueWrapper {
                   "_isVue": true,
                   "_props": Object {
                     "__iconLoader__": [Function],
-                    "color": "#000",
+                    "color": "#b5baca",
                     "height": "1rem",
                     "icon": "search",
                     "width": "1rem",
@@ -30463,6 +30492,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -30510,6 +30540,7 @@ VueWrapper {
                 "_renderChildren": undefined,
                 "parent": [Circular],
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
               },
@@ -30842,6 +30873,7 @@ VueWrapper {
                   "children": undefined,
                   "listeners": undefined,
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                   "tag": "type-icon",
@@ -30892,7 +30924,7 @@ VueWrapper {
               "_isVue": true,
               "_props": Object {
                 "__iconLoader__": [Function],
-                "color": "#000",
+                "color": "#b5baca",
                 "height": "1rem",
                 "icon": "search",
                 "width": "1rem",
@@ -30921,6 +30953,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -30968,6 +31001,7 @@ VueWrapper {
                   "_renderChildren": undefined,
                   "parent": [Circular],
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                 },
@@ -31300,6 +31334,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -31350,7 +31385,7 @@ VueWrapper {
                 "_isVue": true,
                 "_props": Object {
                   "__iconLoader__": [Function],
-                  "color": "#000",
+                  "color": "#b5baca",
                   "height": "1rem",
                   "icon": "search",
                   "width": "1rem",
@@ -31392,6 +31427,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -31511,6 +31547,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -33130,6 +33167,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -33177,6 +33215,7 @@ VueWrapper {
                   "_renderChildren": undefined,
                   "parent": [Circular],
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                 },
@@ -33509,6 +33548,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -33559,7 +33599,7 @@ VueWrapper {
                 "_isVue": true,
                 "_props": Object {
                   "__iconLoader__": [Function],
-                  "color": "#000",
+                  "color": "#b5baca",
                   "height": "1rem",
                   "icon": "search",
                   "width": "1rem",
@@ -33588,6 +33628,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -33635,6 +33676,7 @@ VueWrapper {
                     "_renderChildren": undefined,
                     "parent": [Circular],
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                   },
@@ -33967,6 +34009,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -34017,7 +34060,7 @@ VueWrapper {
                   "_isVue": true,
                   "_props": Object {
                     "__iconLoader__": [Function],
-                    "color": "#000",
+                    "color": "#b5baca",
                     "height": "1rem",
                     "icon": "search",
                     "width": "1rem",
@@ -34059,6 +34102,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -34178,6 +34222,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -35925,6 +35970,7 @@ VueWrapper {
                 "children": undefined,
                 "listeners": undefined,
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
                 "tag": "type-icon",
@@ -35972,6 +36018,7 @@ VueWrapper {
             "_renderChildren": undefined,
             "parent": [Circular],
             "propsData": Object {
+              "color": "#b5baca",
               "icon": "search",
             },
           },
@@ -36304,6 +36351,7 @@ VueWrapper {
               "children": undefined,
               "listeners": undefined,
               "propsData": Object {
+                "color": "#b5baca",
                 "icon": "search",
               },
               "tag": "type-icon",
@@ -36354,7 +36402,7 @@ VueWrapper {
           "_isVue": true,
           "_props": Object {
             "__iconLoader__": [Function],
-            "color": "#000",
+            "color": "#b5baca",
             "height": "1rem",
             "icon": "search",
             "width": "1rem",
@@ -36383,6 +36431,7 @@ VueWrapper {
                   "children": undefined,
                   "listeners": undefined,
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                   "tag": "type-icon",
@@ -36430,6 +36479,7 @@ VueWrapper {
               "_renderChildren": undefined,
               "parent": [Circular],
               "propsData": Object {
+                "color": "#b5baca",
                 "icon": "search",
               },
             },
@@ -36762,6 +36812,7 @@ VueWrapper {
                 "children": undefined,
                 "listeners": undefined,
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
                 "tag": "type-icon",
@@ -36812,7 +36863,7 @@ VueWrapper {
             "_isVue": true,
             "_props": Object {
               "__iconLoader__": [Function],
-              "color": "#000",
+              "color": "#b5baca",
               "height": "1rem",
               "icon": "search",
               "width": "1rem",
@@ -36854,6 +36905,7 @@ VueWrapper {
                   "children": undefined,
                   "listeners": undefined,
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                   "tag": "type-icon",
@@ -36973,6 +37025,7 @@ VueWrapper {
                 "children": undefined,
                 "listeners": undefined,
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
                 "tag": "type-icon",
@@ -38592,6 +38645,7 @@ VueWrapper {
                   "children": undefined,
                   "listeners": undefined,
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                   "tag": "type-icon",
@@ -38639,6 +38693,7 @@ VueWrapper {
               "_renderChildren": undefined,
               "parent": [Circular],
               "propsData": Object {
+                "color": "#b5baca",
                 "icon": "search",
               },
             },
@@ -38971,6 +39026,7 @@ VueWrapper {
                 "children": undefined,
                 "listeners": undefined,
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
                 "tag": "type-icon",
@@ -39021,7 +39077,7 @@ VueWrapper {
             "_isVue": true,
             "_props": Object {
               "__iconLoader__": [Function],
-              "color": "#000",
+              "color": "#b5baca",
               "height": "1rem",
               "icon": "search",
               "width": "1rem",
@@ -39050,6 +39106,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -39097,6 +39154,7 @@ VueWrapper {
                 "_renderChildren": undefined,
                 "parent": [Circular],
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
               },
@@ -39429,6 +39487,7 @@ VueWrapper {
                   "children": undefined,
                   "listeners": undefined,
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                   "tag": "type-icon",
@@ -39479,7 +39538,7 @@ VueWrapper {
               "_isVue": true,
               "_props": Object {
                 "__iconLoader__": [Function],
-                "color": "#000",
+                "color": "#b5baca",
                 "height": "1rem",
                 "icon": "search",
                 "width": "1rem",
@@ -39521,6 +39580,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -39640,6 +39700,7 @@ VueWrapper {
                   "children": undefined,
                   "listeners": undefined,
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                   "tag": "type-icon",
@@ -41390,6 +41451,7 @@ VueWrapper {
                   "children": undefined,
                   "listeners": undefined,
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                   "tag": "type-icon",
@@ -41437,6 +41499,7 @@ VueWrapper {
               "_renderChildren": undefined,
               "parent": [Circular],
               "propsData": Object {
+                "color": "#b5baca",
                 "icon": "search",
               },
             },
@@ -41663,6 +41726,7 @@ VueWrapper {
                 "children": undefined,
                 "listeners": undefined,
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
                 "tag": "type-icon",
@@ -41713,7 +41777,7 @@ VueWrapper {
             "_isVue": true,
             "_props": Object {
               "__iconLoader__": [Function],
-              "color": "#000",
+              "color": "#b5baca",
               "height": "1rem",
               "icon": "search",
               "width": "1rem",
@@ -41742,6 +41806,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -41789,6 +41854,7 @@ VueWrapper {
                 "_renderChildren": undefined,
                 "parent": [Circular],
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
               },
@@ -42015,6 +42081,7 @@ VueWrapper {
                   "children": undefined,
                   "listeners": undefined,
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                   "tag": "type-icon",
@@ -42065,7 +42132,7 @@ VueWrapper {
               "_isVue": true,
               "_props": Object {
                 "__iconLoader__": [Function],
-                "color": "#000",
+                "color": "#b5baca",
                 "height": "1rem",
                 "icon": "search",
                 "width": "1rem",
@@ -42107,6 +42174,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -42226,6 +42294,7 @@ VueWrapper {
                   "children": undefined,
                   "listeners": undefined,
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                   "tag": "type-icon",
@@ -43005,6 +43074,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -43052,6 +43122,7 @@ VueWrapper {
                 "_renderChildren": undefined,
                 "parent": [Circular],
                 "propsData": Object {
+                  "color": "#b5baca",
                   "icon": "search",
                 },
               },
@@ -43278,6 +43349,7 @@ VueWrapper {
                   "children": undefined,
                   "listeners": undefined,
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                   "tag": "type-icon",
@@ -43328,7 +43400,7 @@ VueWrapper {
               "_isVue": true,
               "_props": Object {
                 "__iconLoader__": [Function],
-                "color": "#000",
+                "color": "#b5baca",
                 "height": "1rem",
                 "icon": "search",
                 "width": "1rem",
@@ -43357,6 +43429,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -43404,6 +43477,7 @@ VueWrapper {
                   "_renderChildren": undefined,
                   "parent": [Circular],
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                 },
@@ -43630,6 +43704,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -43680,7 +43755,7 @@ VueWrapper {
                 "_isVue": true,
                 "_props": Object {
                   "__iconLoader__": [Function],
-                  "color": "#000",
+                  "color": "#b5baca",
                   "height": "1rem",
                   "icon": "search",
                   "width": "1rem",
@@ -43722,6 +43797,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -43841,6 +43917,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -44729,6 +44806,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -44776,6 +44854,7 @@ VueWrapper {
                   "_renderChildren": undefined,
                   "parent": [Circular],
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                 },
@@ -44794,6 +44873,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -44844,7 +44924,7 @@ VueWrapper {
                 "_isVue": true,
                 "_props": Object {
                   "__iconLoader__": [Function],
-                  "color": "#000",
+                  "color": "#b5baca",
                   "height": "1rem",
                   "icon": "search",
                   "width": "1rem",
@@ -44873,6 +44953,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -44920,6 +45001,7 @@ VueWrapper {
                     "_renderChildren": undefined,
                     "parent": [Circular],
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                   },
@@ -44938,6 +45020,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -44988,7 +45071,7 @@ VueWrapper {
                   "_isVue": true,
                   "_props": Object {
                     "__iconLoader__": [Function],
-                    "color": "#000",
+                    "color": "#b5baca",
                     "height": "1rem",
                     "icon": "search",
                     "width": "1rem",
@@ -45030,6 +45113,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -45149,6 +45233,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -45304,6 +45389,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -45351,6 +45437,7 @@ VueWrapper {
                     "_renderChildren": undefined,
                     "parent": [Circular],
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                   },
@@ -45369,6 +45456,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -45419,7 +45507,7 @@ VueWrapper {
                   "_isVue": true,
                   "_props": Object {
                     "__iconLoader__": [Function],
-                    "color": "#000",
+                    "color": "#b5baca",
                     "height": "1rem",
                     "icon": "search",
                     "width": "1rem",
@@ -45448,6 +45536,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -45495,6 +45584,7 @@ VueWrapper {
                       "_renderChildren": undefined,
                       "parent": [Circular],
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                     },
@@ -45513,6 +45603,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -45563,7 +45654,7 @@ VueWrapper {
                     "_isVue": true,
                     "_props": Object {
                       "__iconLoader__": [Function],
-                      "color": "#000",
+                      "color": "#b5baca",
                       "height": "1rem",
                       "icon": "search",
                       "width": "1rem",
@@ -45605,6 +45696,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -45724,6 +45816,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -46012,6 +46105,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -46059,6 +46153,7 @@ VueWrapper {
                   "_renderChildren": undefined,
                   "parent": [Circular],
                   "propsData": Object {
+                    "color": "#b5baca",
                     "icon": "search",
                   },
                 },
@@ -46077,6 +46172,7 @@ VueWrapper {
                     "children": undefined,
                     "listeners": undefined,
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                     "tag": "type-icon",
@@ -46127,7 +46223,7 @@ VueWrapper {
                 "_isVue": true,
                 "_props": Object {
                   "__iconLoader__": [Function],
-                  "color": "#000",
+                  "color": "#b5baca",
                   "height": "1rem",
                   "icon": "search",
                   "width": "1rem",
@@ -46156,6 +46252,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -46203,6 +46300,7 @@ VueWrapper {
                     "_renderChildren": undefined,
                     "parent": [Circular],
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                   },
@@ -46221,6 +46319,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -46271,7 +46370,7 @@ VueWrapper {
                   "_isVue": true,
                   "_props": Object {
                     "__iconLoader__": [Function],
-                    "color": "#000",
+                    "color": "#b5baca",
                     "height": "1rem",
                     "icon": "search",
                     "width": "1rem",
@@ -46313,6 +46412,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -46432,6 +46532,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -46587,6 +46688,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -46634,6 +46736,7 @@ VueWrapper {
                     "_renderChildren": undefined,
                     "parent": [Circular],
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                   },
@@ -46652,6 +46755,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -46702,7 +46806,7 @@ VueWrapper {
                   "_isVue": true,
                   "_props": Object {
                     "__iconLoader__": [Function],
-                    "color": "#000",
+                    "color": "#b5baca",
                     "height": "1rem",
                     "icon": "search",
                     "width": "1rem",
@@ -46731,6 +46835,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -46778,6 +46883,7 @@ VueWrapper {
                       "_renderChildren": undefined,
                       "parent": [Circular],
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                     },
@@ -46796,6 +46902,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -46846,7 +46953,7 @@ VueWrapper {
                     "_isVue": true,
                     "_props": Object {
                       "__iconLoader__": [Function],
-                      "color": "#000",
+                      "color": "#b5baca",
                       "height": "1rem",
                       "icon": "search",
                       "width": "1rem",
@@ -46888,6 +46995,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -47007,6 +47115,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -47282,6 +47391,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -47329,6 +47439,7 @@ VueWrapper {
                     "_renderChildren": undefined,
                     "parent": [Circular],
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                   },
@@ -47347,6 +47458,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -47397,7 +47509,7 @@ VueWrapper {
                   "_isVue": true,
                   "_props": Object {
                     "__iconLoader__": [Function],
-                    "color": "#000",
+                    "color": "#b5baca",
                     "height": "1rem",
                     "icon": "search",
                     "width": "1rem",
@@ -47426,6 +47538,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -47473,6 +47586,7 @@ VueWrapper {
                       "_renderChildren": undefined,
                       "parent": [Circular],
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                     },
@@ -47491,6 +47605,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -47541,7 +47656,7 @@ VueWrapper {
                     "_isVue": true,
                     "_props": Object {
                       "__iconLoader__": [Function],
-                      "color": "#000",
+                      "color": "#b5baca",
                       "height": "1rem",
                       "icon": "search",
                       "width": "1rem",
@@ -47583,6 +47698,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -47702,6 +47818,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -47857,6 +47974,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -47904,6 +48022,7 @@ VueWrapper {
                       "_renderChildren": undefined,
                       "parent": [Circular],
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                     },
@@ -47922,6 +48041,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -47972,7 +48092,7 @@ VueWrapper {
                     "_isVue": true,
                     "_props": Object {
                       "__iconLoader__": [Function],
-                      "color": "#000",
+                      "color": "#b5baca",
                       "height": "1rem",
                       "icon": "search",
                       "width": "1rem",
@@ -48001,6 +48121,7 @@ VueWrapper {
                             "children": undefined,
                             "listeners": undefined,
                             "propsData": Object {
+                              "color": "#b5baca",
                               "icon": "search",
                             },
                             "tag": "type-icon",
@@ -48048,6 +48169,7 @@ VueWrapper {
                         "_renderChildren": undefined,
                         "parent": [Circular],
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                       },
@@ -48066,6 +48188,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -48116,7 +48239,7 @@ VueWrapper {
                       "_isVue": true,
                       "_props": Object {
                         "__iconLoader__": [Function],
-                        "color": "#000",
+                        "color": "#b5baca",
                         "height": "1rem",
                         "icon": "search",
                         "width": "1rem",
@@ -48158,6 +48281,7 @@ VueWrapper {
                             "children": undefined,
                             "listeners": undefined,
                             "propsData": Object {
+                              "color": "#b5baca",
                               "icon": "search",
                             },
                             "tag": "type-icon",
@@ -48277,6 +48401,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -48565,6 +48690,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -48612,6 +48738,7 @@ VueWrapper {
                     "_renderChildren": undefined,
                     "parent": [Circular],
                     "propsData": Object {
+                      "color": "#b5baca",
                       "icon": "search",
                     },
                   },
@@ -48630,6 +48757,7 @@ VueWrapper {
                       "children": undefined,
                       "listeners": undefined,
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                       "tag": "type-icon",
@@ -48680,7 +48808,7 @@ VueWrapper {
                   "_isVue": true,
                   "_props": Object {
                     "__iconLoader__": [Function],
-                    "color": "#000",
+                    "color": "#b5baca",
                     "height": "1rem",
                     "icon": "search",
                     "width": "1rem",
@@ -48709,6 +48837,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -48756,6 +48885,7 @@ VueWrapper {
                       "_renderChildren": undefined,
                       "parent": [Circular],
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                     },
@@ -48774,6 +48904,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -48824,7 +48955,7 @@ VueWrapper {
                     "_isVue": true,
                     "_props": Object {
                       "__iconLoader__": [Function],
-                      "color": "#000",
+                      "color": "#b5baca",
                       "height": "1rem",
                       "icon": "search",
                       "width": "1rem",
@@ -48866,6 +48997,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -48985,6 +49117,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -49140,6 +49273,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -49187,6 +49321,7 @@ VueWrapper {
                       "_renderChildren": undefined,
                       "parent": [Circular],
                       "propsData": Object {
+                        "color": "#b5baca",
                         "icon": "search",
                       },
                     },
@@ -49205,6 +49340,7 @@ VueWrapper {
                         "children": undefined,
                         "listeners": undefined,
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                         "tag": "type-icon",
@@ -49255,7 +49391,7 @@ VueWrapper {
                     "_isVue": true,
                     "_props": Object {
                       "__iconLoader__": [Function],
-                      "color": "#000",
+                      "color": "#b5baca",
                       "height": "1rem",
                       "icon": "search",
                       "width": "1rem",
@@ -49284,6 +49420,7 @@ VueWrapper {
                             "children": undefined,
                             "listeners": undefined,
                             "propsData": Object {
+                              "color": "#b5baca",
                               "icon": "search",
                             },
                             "tag": "type-icon",
@@ -49331,6 +49468,7 @@ VueWrapper {
                         "_renderChildren": undefined,
                         "parent": [Circular],
                         "propsData": Object {
+                          "color": "#b5baca",
                           "icon": "search",
                         },
                       },
@@ -49349,6 +49487,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
@@ -49399,7 +49538,7 @@ VueWrapper {
                       "_isVue": true,
                       "_props": Object {
                         "__iconLoader__": [Function],
-                        "color": "#000",
+                        "color": "#b5baca",
                         "height": "1rem",
                         "icon": "search",
                         "width": "1rem",
@@ -49441,6 +49580,7 @@ VueWrapper {
                             "children": undefined,
                             "listeners": undefined,
                             "propsData": Object {
+                              "color": "#b5baca",
                               "icon": "search",
                             },
                             "tag": "type-icon",
@@ -49560,6 +49700,7 @@ VueWrapper {
                           "children": undefined,
                           "listeners": undefined,
                           "propsData": Object {
+                            "color": "#b5baca",
                             "icon": "search",
                           },
                           "tag": "type-icon",
