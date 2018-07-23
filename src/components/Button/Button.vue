@@ -54,16 +54,9 @@ export default {
   components: { TipeIcon },
   props: {
     color: vueTypes
-      .oneOf([
-        'default',
-        'primary',
-        'success',
-        'info',
-        'warning',
-        'danger',
-        'none'
-      ])
-      .def('default'),
+      .oneOf(['primary', 'success', 'info', 'warning', 'danger', 'none'])
+      .def('primary'),
+    outline: vueTypes.bool.def(false),
     dropdown: vueTypes.bool.def(false),
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def(''),
@@ -78,6 +71,7 @@ export default {
       return {
         [size]: true,
         [color]: true,
+        outline: this.outline,
         [`status-${status}`]: status,
         has_icon_before: !!this.iconBefore,
         has_icon_after: !!this.iconAfter,
