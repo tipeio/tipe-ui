@@ -4,7 +4,11 @@
     class="grid">
     <div 
       class="close" 
-      @click="close"><tipe-icon icon="close"/></div>
+      @click="close">
+      <tipe-icon
+        icon="close"
+        color="#fff"/>
+    </div>
     <div class="content">
       <p class="title">{{ title }}</p>
       <p class="subtitle">{{ subtitle }}</p>

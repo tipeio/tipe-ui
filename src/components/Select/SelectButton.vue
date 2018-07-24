@@ -22,7 +22,7 @@
         :size="size"
         :disabled="isDisabled"
         :dropdown="true"
-        icon-after="dropdown">{{ selected }}</tipe-button>
+        icon-after="arrow-down">{{ selected }}</tipe-button>
       <tipe-select-dropdown
         v-if="open"
         :options="options"

@@ -8,6 +8,7 @@
         <tipe-icon
           :width="checkSize.width"
           :height="checkSize.height"
+          color="#fff"
           class="check-icon"
           icon="check" />
         <input
@@ -77,23 +78,23 @@ export default {
       switch (this.size) {
         case 'small':
           return {
-            height: '6px',
-            width: '8px'
+            height: '10px',
+            width: '10px'
           }
         case 'medium':
           return {
-            height: '8px',
-            width: '10px'
+            height: '14px',
+            width: '14px'
           }
         case 'large':
           return {
-            height: '10px',
-            width: '12px'
+            height: '14px',
+            width: '14px'
           }
         default:
           return {
-            height: '8px',
-            width: '10px'
+            height: '14px',
+            width: '14px'
           }
       }
     }

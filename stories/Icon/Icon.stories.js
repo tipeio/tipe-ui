@@ -38,7 +38,8 @@ const icons = [
   'markdown',
   'send',
   'star',
-  'user-circle'
+  'user-circle',
+  'template'
 ]
 
 storiesOf('Icon', module).add('icons', () => ({

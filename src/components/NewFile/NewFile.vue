@@ -2,13 +2,13 @@
   <tipe-tabs :data-tipe-ui="$options.name">
     <tipe-tabs-panel
       label="Documents"
-      icon="files"
+      icon="document-filled"
     >
       <tipe-new-document :templates="templates"/>
     </tipe-tabs-panel>
     <tipe-tabs-panel
       label="Folders"
-      icon="folder"
+      icon="folder-filled"
     >
       <tipe-new-folder :folders="folders"/>
     </tipe-tabs-panel>
