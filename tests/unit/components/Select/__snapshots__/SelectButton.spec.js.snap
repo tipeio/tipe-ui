@@ -3,8 +3,8 @@
 exports[`TipeSelectButton.vue renders 1`] = `
 <div data-tipe-ui="TipeSelectButton" class="select-flex">
   <div class="select medium">
-    <TipeNativeSelect-stub></TipeNativeSelect-stub>
-    <TipeButton-stub></TipeButton-stub>
+    <TipeNativeSelect-stub options="[object Object],[object Object]" placeholder="" selectedValue="[object Object]"></TipeNativeSelect-stub>
+    <TipeButton-stub color="default" dropdown="true" iconBefore="" iconAfter="dropdown" name="" size="medium" tabindex="0">Owner</TipeButton-stub>
     <!---->
   </div>
 </div>
@@ -13,8 +13,8 @@ exports[`TipeSelectButton.vue renders 1`] = `
 exports[`TipeSelectButton.vue renders without options 1`] = `
 <div data-tipe-ui="TipeSelectButton" class="select-flex">
   <div class="select medium">
-    <TipeNativeSelect-stub></TipeNativeSelect-stub>
-    <TipeButton-stub></TipeButton-stub>
+    <TipeNativeSelect-stub placeholder="" selectedValue="[object Object]"></TipeNativeSelect-stub>
+    <TipeButton-stub color="default" dropdown="true" iconBefore="" iconAfter="dropdown" name="" size="medium" tabindex="0">Please provide select options</TipeButton-stub>
     <!---->
   </div>
 </div>

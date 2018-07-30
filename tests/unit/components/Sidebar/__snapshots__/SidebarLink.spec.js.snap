@@ -3,7 +3,9 @@
 exports[`Sidebar <template> matches previous snapshot 1`] = `
 <a data-tipe-ui="TipeSidebarLink" href="#">
   <div class="icon-container">
-    <TipeIcon-stub class="icon"></TipeIcon-stub>
+    <TipeIcon-stub icon="" height="1.5rem" width="1.5rem" color="#FFF" __iconLoader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}" class="icon"></TipeIcon-stub>
   </div>
   <div class="indicator"></div>
 </a>

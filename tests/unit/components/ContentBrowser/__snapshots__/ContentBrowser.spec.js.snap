@@ -10,11 +10,11 @@ exports[`ContentBrowser <ContentBrowser> matches previous snapshot 1`] = `
       <div class="browser">
         <section class="finder-container">
           <header class="finder-header">Folders</header>
-          <TipeFinderContainer-stub></TipeFinderContainer-stub>
+          <TipeFinder-stub files="" layout="grid" icon="rectangle"></TipeFinder-stub>
         </section>
         <section class="finder-container">
           <header class="finder-header">Documents</header>
-          <TipeFinderContainer-stub></TipeFinderContainer-stub>
+          <TipeFinder-stub files="" layout="grid" icon="rectangle"></TipeFinder-stub>
         </section>
       </div>
     </div>

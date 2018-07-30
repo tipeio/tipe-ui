@@ -4,31 +4,41 @@ exports[`SettingsMenu.vue renders 1`] = `
 <ul>
   <li class="first">
     <div class="icon">
-      <TipeIcon-stub></TipeIcon-stub>
+      <Icon-stub icon="wrench" height="1rem" width="1rem" color="#000" __iconLoader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}"></Icon-stub>
     </div>
     <p class="label">General</p>
   </li>
   <li>
     <div class="icon">
-      <TipeIcon-stub></TipeIcon-stub>
+      <Icon-stub icon="users" height="1rem" width="1rem" color="#000" __iconLoader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}"></Icon-stub>
     </div>
     <p class="label">Members</p>
   </li>
   <li>
     <div class="icon">
-      <TipeIcon-stub></TipeIcon-stub>
+      <Icon-stub icon="key" height="1rem" width="1rem" color="#000" __iconLoader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}"></Icon-stub>
     </div>
     <p class="label">API Key</p>
   </li>
   <li>
     <div class="icon">
-      <TipeIcon-stub></TipeIcon-stub>
+      <Icon-stub icon="branch" height="1rem" width="1rem" color="#000" __iconLoader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}"></Icon-stub>
     </div>
     <p class="label">Webhooks</p>
   </li>
   <li class="last">
     <div class="icon">
-      <TipeIcon-stub></TipeIcon-stub>
+      <Icon-stub icon="credit-card" height="1rem" width="1rem" color="#000" __iconLoader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}"></Icon-stub>
     </div>
     <p class="label">Billing</p>
   </li>

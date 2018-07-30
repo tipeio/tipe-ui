@@ -5,7 +5,9 @@ exports[`SelectBlockOption <template> matches previous snapshot 1`] = `
   <div class="layout">
     <div class="icon-container">
       <div class="icon-box">
-        <TipeIcon-stub></TipeIcon-stub>
+        <TipeIcon-stub icon="" height="1.5rem" width="1.5rem" color="#000" __iconLoader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}"></TipeIcon-stub>
       </div>
     </div>
     <div class="label"></div>

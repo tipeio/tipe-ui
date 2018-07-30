@@ -3,7 +3,7 @@
 exports[`TipeSelectUnderline.vue renders 1`] = `
 <div data-tipe-ui="TipeSelectUnderline" class="select-flex">
   <div tabindex="0" class="select medium">
-    <TipeNativeSelect-stub></TipeNativeSelect-stub>
+    <TipeNativeSelect-stub options="[object Object],[object Object]" placeholder="" selectedValue="[object Object]"></TipeNativeSelect-stub>
     <div class="fake-select medium">Owner</div>
     <!---->
   </div>
@@ -13,7 +13,7 @@ exports[`TipeSelectUnderline.vue renders 1`] = `
 exports[`TipeSelectUnderline.vue renders without options 1`] = `
 <div data-tipe-ui="TipeSelectUnderline" class="select-flex">
   <div tabindex="0" class="select medium">
-    <TipeNativeSelect-stub></TipeNativeSelect-stub>
+    <TipeNativeSelect-stub placeholder="" selectedValue="[object Object]"></TipeNativeSelect-stub>
     <div class="fake-select error medium">Please provide select options</div>
     <!---->
   </div>

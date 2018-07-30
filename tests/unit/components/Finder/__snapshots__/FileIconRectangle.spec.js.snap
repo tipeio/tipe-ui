@@ -3,13 +3,17 @@
 exports[`FileIconRectangle <template> matches previous snapshot 1`] = `
 <div data-tipe-ui="TipeFileIconRectangle">
   <button class="file-icon">
-    <TipeIcon-stub></TipeIcon-stub>
+    <TipeIcon-stub icon="document-filled" height="1rem" width="1rem" color="#000" __iconLoader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}"></TipeIcon-stub>
   </button>
   <button class="label">
     test-label
   </button>
   <button class="options-icon">
-    <TipeIcon-stub></TipeIcon-stub>
+    <TipeIcon-stub icon="options" height="1rem" width="1rem" color="#000" __iconLoader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}"></TipeIcon-stub>
   </button>
 </div>
 `;
