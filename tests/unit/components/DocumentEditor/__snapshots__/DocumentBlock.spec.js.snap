@@ -6,13 +6,13 @@ exports[`DocumentBlock <template> matches previous snapshot 1`] = `
     <!---->
   </div>
   <div class="header">
-    <TipeDocumentBlockHeader-stub></TipeDocumentBlockHeader-stub>
+    <TipeDocumentBlockHeader-stub type="SIMPLE_TEXT" label="Simple Text" name="test-name" apiId="test-apiId" value="test-value" description="test-description" status="success" successMessage="" errorMessage="" warningMessage="" validation="[object Object]"></TipeDocumentBlockHeader-stub>
   </div>
   <div class="body">
-    <TipeDocumentBlock-stub></TipeDocumentBlock-stub>
+    <TipeDocumentBlockValueInput-stub type="SIMPLE_TEXT" label="" name="" apiId="" value="test-value" description="" status="success" successMessage="" errorMessage="" warningMessage=""></TipeDocumentBlockValueInput-stub>
   </div>
   <div class="footer">
-    <TipeDocumentBlockMessage-stub></TipeDocumentBlockMessage-stub>
+    <TipeDocumentBlockMessage-stub status="success" successMessage="" warningMessage="" errorMessage=""></TipeDocumentBlockMessage-stub>
   </div>
 </div>
 `;

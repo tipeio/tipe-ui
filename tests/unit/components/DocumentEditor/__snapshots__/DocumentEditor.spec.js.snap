@@ -2,7 +2,18 @@
 
 exports[`DocumentBlock <template> matches previous snapshot 1`] = `
 <div data-tipe-ui="TipeDocumentEditor">
-  <TipeDocumentNameInput-stub></TipeDocumentNameInput-stub>
-  <TipeTabs-stub></TipeTabs-stub>
+  <TipeDocumentNameInput-stub value="test-name"></TipeDocumentNameInput-stub>
+  <TipeTabs-stub>
+    <TipeTabsPanel-stub icon="" label="Page Content">
+      <TipeScrollable-stub>
+        <div class="block-list-container">
+          <TipeDocumentBlockList-stub blocks="[object Object],[object Object],[object Object]"></TipeDocumentBlockList-stub>
+        </div>
+      </TipeScrollable-stub>
+    </TipeTabsPanel-stub>
+    <TipeTabsPanel-stub icon="" label="API">
+      <div>API</div>
+    </TipeTabsPanel-stub>
+  </TipeTabs-stub>
 </div>
 `;

@@ -4,7 +4,9 @@ exports[`Checkbox <template> matches previous snapshot 1`] = `
 <div data-tipe-ui="TipeCheckbox" class="checkbox medium">
   <div class="check-flex">
     <div class="check-grid">
-      <TipeIcon-stub class="check-icon"></TipeIcon-stub>
+      <TipeIcon-stub icon="check" height="14px" width="14px" color="#fff" __iconLoader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}" class="check-icon"></TipeIcon-stub>
       <input name="" id="Javascript" tabindex="0" type="checkbox">
     </div>
   </div>

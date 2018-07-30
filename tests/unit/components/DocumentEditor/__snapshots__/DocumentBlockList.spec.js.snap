@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DocumentBlockList <template> matches previous snapshot 1`] = `
-<div data-tipe-ui="TipeDocumentBlockList">
+<div data-tipe-ui="TipeDocumentBlockList" type="SIMPLE_TEXT" label="Simple Text" value="test-value" name="test-name" apiId="test-apiId" description="test-description" status="success" successMessage="" errorMessage="" warningMessage="" validation="[object Object]">
   <TipeDocumentEmptyBlock-stub></TipeDocumentEmptyBlock-stub>
 </div>
 `;
