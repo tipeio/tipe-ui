@@ -9,13 +9,7 @@ module.exports = {
     library: '',
     libraryTarget: 'umd'
   },
-  externals: [
-    '@tipe/tipe-config',
-    '@tipe/tipe-constants',
-    '@tipe/tipe-interfaces',
-    'vue',
-    'vue-types'
-  ],
+  externals: ['vue', 'vue-types'],
   module: {
     rules: [
       {
