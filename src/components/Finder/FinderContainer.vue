@@ -5,6 +5,7 @@
     :files="files"
     :layout="layout"
     :icon="icon"
+    @select="file => $emit('select', file)"
   />
 </template>
 

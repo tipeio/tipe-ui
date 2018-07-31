@@ -1,5 +1,8 @@
 <template>
-  <button :data-tipe-ui="$options.name">
+  <button
+    :data-tipe-ui="$options.name"
+    @click="$emit('click', $event)"
+  >
     <div class="layout">
       <div class="file">
         <div class="file-content">

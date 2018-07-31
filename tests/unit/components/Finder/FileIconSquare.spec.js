@@ -29,4 +29,14 @@ describe('FileIconSquare', () => {
       expect(wrapper.find('.label').text()).toEqual(propsData.file.label)
     })
   })
+
+  describe('@events', () => {
+    it('@click - emits', () => {
+      const propsData = { file: mocks.file() }
+      const wrapper = shallowMount(FileIconSquare, { propsData })
+
+      wrapper.trigger('click')
+      expect(wrapper.emitted().click).toBeTruthy()
+    })
+  })
 })

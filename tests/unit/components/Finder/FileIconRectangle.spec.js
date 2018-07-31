@@ -47,4 +47,17 @@ describe('FileIconRectangle', () => {
       expect(wrapper.find(Icon).props().icon).toEqual('document-filled')
     })
   })
+
+  describe('@events', () => {
+    it('@click - emits', () => {
+      const propsData = { file: mocks.file() }
+      const wrapper = shallowMount(FileIconRectangle, { propsData })
+
+      wrapper.find('.file-icon').trigger('click')
+      expect(wrapper.emitted().click).toBeTruthy()
+
+      wrapper.find('.label').trigger('click')
+      expect(wrapper.emitted().click).toBeTruthy()
+    })
+  })
 })
