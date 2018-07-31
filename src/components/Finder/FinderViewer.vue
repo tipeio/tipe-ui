@@ -7,6 +7,7 @@
         :file="file"
         :type="icon"
         class="item"
+        @click="$emit('select', file)"
       />
     </div>
   </div>

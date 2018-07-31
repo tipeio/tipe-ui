@@ -2,14 +2,17 @@
   <tipe-file-icon-rectangle
     v-if="type == 'rectangle'"
     :file="file"
+    @click="$emit('click', $event)"
   />
   <tipe-file-icon-square
     v-else-if="type == 'square'"
     :file="file"
+    @click="$emit('click', $event)"
   />
   <tipe-file-icon-details
     v-else-if="type == 'details'"
     :file="file"
+    @click="$emit('click', $event)"
   />
 </template>
 

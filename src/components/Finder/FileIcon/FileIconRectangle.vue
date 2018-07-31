@@ -2,11 +2,13 @@
   <div :data-tipe-ui="$options.name">
     <button
       class="file-icon"
+      @click="$emit('click', $event)"
     >
       <tipe-icon :icon="icon" />
     </button>
     <button
       class="label"
+      @click="$emit('click', $event)"
     >
       {{ file.label }}
     </button>
