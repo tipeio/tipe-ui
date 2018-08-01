@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
-import tipeTestUtils from '~/tests/TipeTestUtils'
+import selectTests from './selectTests'
 
 import TipeSelectButton from '@/components/Select/SelectButton'
 
@@ -33,5 +33,5 @@ describe('TipeSelectButton.vue', () => {
     })
     expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeSelectButton')
   })
-  tipeTestUtils.test.select.selectTests(TipeSelectButton)
+  selectTests(TipeSelectButton)
 })

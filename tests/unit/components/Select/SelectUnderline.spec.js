@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
-import tipeTestUtils from '~/tests/TipeTestUtils'
+import selectTests from './selectTests'
 
 import TipeSelectUnderline from '@/components/Select/SelectUnderline'
 
@@ -33,5 +33,5 @@ describe('TipeSelectUnderline.vue', () => {
     })
     expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeSelectUnderline')
   })
-  tipeTestUtils.test.select.selectTests(TipeSelectUnderline)
+  selectTests(TipeSelectUnderline)
 })
