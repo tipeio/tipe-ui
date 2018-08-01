@@ -11,7 +11,7 @@ const props = {
   options
 }
 
-export const selectTests = Select => {
+export default Select => {
   it('should render with the select-flex class', () => {
     const wrapper = shallowMount(Select, {
       propsData: {
