@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dialog <template> matches previous snapshot 1`] = `
+<TipeModal-stub data-tipe-ui="TipeDialog">
+  <div class="body">
+    <h1></h1>
+    <p></p>
+    <div class="footer">
+      <TipeButton-stub color="info" iconBefore="" iconAfter="" name="" size="medium" tabindex="0">
+        Cancel
+      </TipeButton-stub>
+      <TipeButton-stub color="danger" iconBefore="" iconAfter="" name="" size="medium" tabindex="0">
+        CONTINUE
+      </TipeButton-stub>
+    </div>
+  </div>
+</TipeModal-stub>
+`;
