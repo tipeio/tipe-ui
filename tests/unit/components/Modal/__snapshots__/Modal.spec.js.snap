@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal <template> matches previous snapshot 1`] = `
+<div data-tipe-ui="TipeModal" class="background">
+  <div class="container">
+    <div class="header">
+      <button>
+        <TipeIcon-stub icon="close" height="0.625rem" width="0.625rem" color="#000" __iconLoader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}" class="close-icon"></TipeIcon-stub>
+      </button>
+    </div>
+    <div class="body"></div>
+  </div>
+</div>
+`;
