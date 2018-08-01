@@ -1,5 +1,5 @@
 <template>
-  <layout-card>
+  <tipe-card>
     <div class="grid">
       <div class="flex-row">
         <div class="flex-column">
@@ -14,18 +14,18 @@
       </div>
       <tipe-table :members="members" />
     </div>
-  </layout-card>
+  </tipe-card>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
 import { TipeTable, AddMember } from '.'
-import LayoutCard from '../LayoutCard'
+import TipeCard from '@/components/Card'
 import TipeButton from '../Button'
 
 export default {
   name: 'MembersPanel',
-  components: { LayoutCard, TipeTable, TipeButton, AddMember },
+  components: { TipeCard, TipeTable, TipeButton, AddMember },
   props: {
     members: vueTypes.array.isRequired
   },

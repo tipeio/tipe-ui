@@ -23,7 +23,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import TipeCard from '@/components/LayoutCard'
+import TipeCard from '@/components/Card'
 import TipeButton from '@/components/Button'
 import TipeFinder from '@/components/Finder'
 
