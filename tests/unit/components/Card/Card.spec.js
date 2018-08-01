@@ -1,13 +1,13 @@
 import { shallowMount } from '@vue/test-utils'
-import LayoutCard from '@/components/LayoutCard'
+import TipeCard from '@/components/Card'
 
-describe('LayoutCard.vue', () => {
+describe('Card.vue', () => {
   it('renders', () => {
-    const wrapper = shallowMount(LayoutCard)
+    const wrapper = shallowMount(TipeCard)
     expect(wrapper).toMatchSnapshot()
   })
   it('renders with the correct class', () => {
-    const wrapper = shallowMount(LayoutCard)
+    const wrapper = shallowMount(TipeCard)
     expect(wrapper).toMatchSnapshot()
     expect(wrapper.classes()).toContain('card')
   })

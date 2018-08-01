@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
 import MembersPanel from '@/components/MembersPanel'
 
-import LayoutCard from '@/components/LayoutCard'
+import TipeCard from '@/components/Card'
 
 describe('MembersPanel.vue', () => {
   it('renders', () => {
@@ -12,13 +12,13 @@ describe('MembersPanel.vue', () => {
     })
     expect(wrapper).toMatchSnapshot()
   })
-  it('should render the LayoutCard component', () => {
+  it('should render the TipeCard component', () => {
     const wrapper = shallowMount(MembersPanel, {
       propsData: {
         members
       }
     })
-    expect(wrapper.contains(LayoutCard)).toBe(true)
+    expect(wrapper.contains(TipeCard)).toBe(true)
   })
 })
 

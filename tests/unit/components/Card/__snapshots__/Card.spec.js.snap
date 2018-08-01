@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LayoutCard.vue renders 1`] = `
+exports[`Card.vue renders 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
@@ -9,7 +9,7 @@ VueWrapper {
 }
 `;
 
-exports[`LayoutCard.vue renders with the correct class 1`] = `
+exports[`Card.vue renders with the correct class 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
