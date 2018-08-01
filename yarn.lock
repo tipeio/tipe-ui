@@ -1015,17 +1015,17 @@
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@tipe/tipe-constants/-/tipe-constants-0.1.0.tgz#aa96aa125f15ae72b6af47d856af50e2ec9c156e"
 
-"@tipe/tipe-interfaces@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@tipe/tipe-interfaces/-/tipe-interfaces-0.1.0.tgz#27811d620727ba937f89a6ee70bf65993ae180b5"
+"@tipe/tipe-interfaces@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@tipe/tipe-interfaces/-/tipe-interfaces-0.2.0.tgz#3212f39f64aefccdbf2beae1328b36ff704a8bd0"
   dependencies:
     "@tipe/tipe-constants" "^0.1.0"
     vue "^2.5.16"
     vue-types "^1.3.2"
 
-"@tipe/tipe-test-utils@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@tipe/tipe-test-utils/-/tipe-test-utils-0.1.0.tgz#3b08c078d3dea1e8602421e49ff1d51cff25f1d4"
+"@tipe/tipe-test-utils@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@tipe/tipe-test-utils/-/tipe-test-utils-0.2.0.tgz#f7f12a7ad9abb68646e0b7582b99eb7b1c880d58"
   dependencies:
     "@tipe/tipe-config" "^0.2.0"
     "@tipe/tipe-constants" "^0.1.0"
