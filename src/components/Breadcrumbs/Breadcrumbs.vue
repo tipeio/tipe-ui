@@ -4,14 +4,14 @@
       v-for="(link, i) in links"
       :key="i"
       v-bind="link"
+      @click="$emit('click', link.name)"
     />
   </nav>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
-import TipeBreadcrumbLink from './BreadcrumbLink.vue'
-import LinkShape from '@tipe/tipe-interfaces'
+import TipeBreadcrumbLink from './BreadcrumbLink'
 
 export default {
   name: 'TipeBreadcrumbs',
@@ -19,7 +19,13 @@ export default {
     TipeBreadcrumbLink
   },
   props: {
-    links: vueTypes.arrayOf(LinkShape)
+    links: vueTypes.arrayOf(
+      vueTypes.shape({
+        icon: vueTypes.string.def(''),
+        label: vueTypes.string.def(''),
+        name: vueTypes.string.def('')
+      })
+    )
   }
 }
 </script>
@@ -32,13 +38,13 @@ nav {
   flex-direction: row;
 }
 
-a:not(:first-child) {
+button:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left: none;
 }
 
-a:not(:last-child) {
+button:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }

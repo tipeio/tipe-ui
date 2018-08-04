@@ -17,12 +17,6 @@ describe('BreadcrumbLink', () => {
 
       expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeBreadcrumbLink')
     })
-
-    it('<a> - should be an anchor tag', () => {
-      const wrapper = shallowMount(BreadcrumbLink)
-
-      expect(wrapper.is('a')).toBe(true)
-    })
   })
 
   describe(':props', () => {
@@ -30,21 +24,6 @@ describe('BreadcrumbLink', () => {
       const propsData = { ...mocks.link() }
       const wrapper = shallowMount(BreadcrumbLink, { propsData })
       expect(wrapper.text()).toBe(propsData.label)
-    })
-
-    it(':link.url(empty) - should render # in href', () => {
-      const propsData = { ...mocks.link() }
-      delete propsData.url
-      const wrapper = shallowMount(BreadcrumbLink, { propsData })
-
-      expect(wrapper.attributes().href).toBe('#')
-    })
-
-    it(':link.url - should render url in href', () => {
-      const propsData = { ...mocks.link() }
-      const wrapper = shallowMount(BreadcrumbLink, { propsData })
-
-      expect(wrapper.attributes().href).toBe(propsData.url)
     })
   })
 })
