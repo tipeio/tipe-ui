@@ -17,7 +17,7 @@ storiesOf('Tabs', module).add('default', () => ({
         <tipe-tabs>
           <tipe-tabs-panel
             :active="false"
-            icon="files"
+            icon="document"
             label="Documents"
           >
           </tipe-tabs-panel>
@@ -29,7 +29,7 @@ storiesOf('Tabs', module).add('default', () => ({
           </tipe-tabs-panel>
           <tipe-tabs-panel
             :active="false"
-            icon="image"
+            icon="media"
             label="Media"
           >
           </tipe-tabs-panel>
