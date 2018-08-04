@@ -4,5 +4,5 @@ import IconBadge from '../../src/components/IconBadge'
 
 storiesOf('Icon Badge', module).add('icon badge', () => ({
   components: { IconBadge },
-  template: '<icon-badge  icon="file" />'
+  template: '<icon-badge  icon="document" />'
 }))
