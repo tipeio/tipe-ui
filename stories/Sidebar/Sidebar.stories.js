@@ -7,10 +7,10 @@ storiesOf('Sidebar', module).add('default', () => ({
   data() {
     return {
       links: [
-        mocks.navLink({ icon: 'ic-document-square' }),
-        mocks.navLink({ icon: 'ic-document-square' }),
-        mocks.navLink({ icon: 'tipe-setting' }),
-        mocks.navLink({ icon: 'ic-settings' })
+        mocks.navLink({ icon: 'document' }),
+        mocks.navLink({ icon: 'folder' }),
+        mocks.navLink({ icon: 'media' }),
+        mocks.navLink({ icon: 'gear' })
       ]
     }
   },
