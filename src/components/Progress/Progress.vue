@@ -1,14 +1,7 @@
 <template>
-  <div class="column">
-    <p class="title">{{ title }}</p>
-    <div class="progress">
-      <div class="outter-bar"/>
-      <div 
-        :class="percent" 
-        class="inner-bar"/>
-    </div>
-    <p class="subtitle">{{ used }}{{ unit }} / {{ total }}{{ unit }}</p>
-  </div>
+  <progress 
+    :value="value" 
+    :max="max" />
 </template>
 
 <script>
@@ -17,69 +10,33 @@ import vueTypes from 'vue-types'
 export default {
   name: 'TipeProgress',
   props: {
-    total: vueTypes.number.isRequired,
-    used: vueTypes.number.isRequired,
-    unit: vueTypes.string.def(''),
-    title: vueTypes.string.isRequired
-  },
-  computed: {
-    percent: function() {
-      const { used, total } = this
-      return {
-        ['column-end-' + Math.trunc(used / total * 100)]: true
-      }
-    }
+    value: vueTypes.number.def(0),
+    max: vueTypes.number.def(100)
   }
 }
 </script>
 
 <style scoped lang="postcss">
-.column {
-  display: flex;
-  flex-direction: column;
+progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border: none;
+
+  width: 15rem;
+  height: 0.25rem;
+
+  color: var(--purple);
 }
 
-.title {
-  font-size: 1.1875rem;
-  font-weight: bold;
-  color: var(--text-gray);
-  margin: 0.5rem 0;
+progress[value]::-webkit-progress-bar {
+  background-color: var(--gray-blue-light);
+  border-radius: 0.125rem;
 }
 
-.subtitle {
-  font-size: 0.625rem;
-  color: var(--text-gray-light);
-  font-weight: bold;
-  margin: 0.5rem 0;
-}
-
-.progress {
-  display: grid;
-  grid-template-columns: repeat(100, 1.1px);
-}
-
-.outter-bar {
-  width: 110px;
-  height: 3px;
-  border-radius: 6px;
-  background-color: var(--purple-transparent-light);
-  z-index: -1;
-  grid-row-start: 1;
-  grid-column-start: 1;
-}
-
-.inner-bar {
-  height: 3px;
-  border-radius: 6px;
+progress[value]::-webkit-progress-value {
   background-color: var(--purple);
-  z-index: 1;
-  grid-row-start: 1;
-  grid-column-start: 1;
-}
-
-@for $i from 0 to 100 {
-  .column-end-$i {
-    grid-column-end: $i;
-  }
+  border-radius: 0.125rem;
 }
 </style>
