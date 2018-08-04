@@ -39,7 +39,14 @@ const icons = [
   'media',
   'send',
   'star',
-  'user-circle'
+  'user-circle',
+  'options',
+  'plus',
+  'cross',
+  'arrow-down',
+  'arrow-up',
+  'arrow-right',
+  'arrow-left'
 ]
 
 storiesOf('Icon', module).add('icons', () => ({
