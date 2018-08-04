@@ -1,15 +1,13 @@
 <template>
-  <div 
-    :data-tipe-ui="$options.name" 
+  <div
+    :data-tipe-ui="$options.name"
     class="background">
     <div class="container">
       <div class="header">
         <button @click="$emit('close')">
           <tipe-icon
             class="close-icon"
-            icon="close"
-            height="0.625rem"
-            width="0.625rem"
+            icon="cross"
           />
         </button>
       </div>
