@@ -36,6 +36,7 @@ const icons = [
   'folder-open',
   'group',
   'markdown',
+  'media',
   'send',
   'star',
   'user-circle'
