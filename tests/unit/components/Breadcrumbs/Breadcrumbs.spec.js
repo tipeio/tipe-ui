@@ -1,8 +1,14 @@
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount, mount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BreadcrumbLink from '@/components/Breadcrumbs/BreadcrumbLink.vue'
-import { mocks } from '@tipe/tipe-test-utils'
+import faker from 'faker'
+
+const mockBreadcrumbLink = link => ({
+  name: faker.lorem.word(),
+  label: faker.lorem.word(),
+  icon: faker.lorem.word()
+})
 
 describe('Breadcrumbs', () => {
   describe('<template>', () => {
@@ -28,7 +34,7 @@ describe('Breadcrumbs', () => {
 
   describe(':props', () => {
     it(':links - should render links', () => {
-      const propsData = { links: [mocks.link(), mocks.link()] }
+      const propsData = { links: [mockBreadcrumbLink(), mockBreadcrumbLink()] }
       const wrapper = shallowMount(Breadcrumbs, { propsData })
       const links = wrapper.findAll(BreadcrumbLink)
 
@@ -39,6 +45,18 @@ describe('Breadcrumbs', () => {
       expect(links.at(1).props()).toEqual(
         expect.objectContaining(propsData.links[1])
       )
+    })
+  })
+
+  describe('@events', () => {
+    it('@click', () => {
+      const propsData = { links: [mockBreadcrumbLink(), mockBreadcrumbLink()] }
+      const stubs = ['tipe-icon']
+      const wrapper = mount(Breadcrumbs, { propsData, stubs })
+
+      const link = wrapper.find(BreadcrumbLink)
+      link.trigger('click')
+      expect(link.emitted().click).toBeTruthy()
     })
   })
 })
