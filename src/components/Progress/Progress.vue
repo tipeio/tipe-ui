@@ -1,6 +1,7 @@
 <template>
-  <progress 
-    :value="value" 
+  <progress
+    :data-tipe-ui="$options.name"
+    :value="value"
     :max="max" />
 </template>
 
