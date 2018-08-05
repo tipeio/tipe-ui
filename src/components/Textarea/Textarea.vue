@@ -71,9 +71,8 @@ export default {
   min-height: 16rem;
 }
 
-[data-tipe-ui='TipeTextarea']::-moz-placeholder,
-[data-tipe-ui='TipeTextarea']::-moz-placeholder {
-  color: var(--light-gray);
+[data-tipe-ui='TipeTextarea']::placeholder {
+  color: var(--text-gray-blue-light);
 }
 
 [data-tipe-ui='TipeTextarea'].status-success {
