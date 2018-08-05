@@ -1,10 +1,6 @@
 <template>
   <button :data-tipe-ui="$options.name">
-    <tipe-icon
-      icon="options-horizontal"
-      height="0.6875rem"
-      width="0.6875rem"
-    />
+    <tipe-icon icon="options"/>
   </button>
 </template>
 
