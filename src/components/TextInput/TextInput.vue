@@ -83,7 +83,7 @@ input {
       height: calc(2.5rem - 1px);
       border-bottom: #b5baca solid 2px;
     }
-    &.success {
+    &.status-success {
       & input {
         border-bottom: var(--success) solid 1px;
         &:focus {
@@ -93,7 +93,7 @@ input {
       }
     }
 
-    &.error {
+    &.status-error {
       & input {
         border-bottom: var(--error) solid 1px;
         box-shadow: none;
@@ -112,7 +112,7 @@ input {
       }
     }
 
-    &.warning {
+    &.status-warning {
       & input {
         border-bottom: var(--warning) solid 1px;
         &:focus {
@@ -132,7 +132,7 @@ input {
       height: calc(2.6875rem - 1px);
       border-bottom: #b5baca solid 2px;
     }
-    &.success {
+    &.status-success {
       border-bottom: var(--success) solid 1px;
       &:focus {
         height: calc(2.6875rem - 1px);
@@ -140,7 +140,7 @@ input {
       }
     }
 
-    &.error {
+    &.status-error {
       border-bottom: var(--error) solid 1px;
       box-shadow: none;
       &:focus {
@@ -149,7 +149,7 @@ input {
       }
     }
 
-    &.warning {
+    &.status-warning {
       border-bottom: var(--warning) solid 1px;
       &:focus {
         height: calc(2.6875rem - 1px);
@@ -169,7 +169,7 @@ input {
       border-bottom: #b5baca solid 2px;
     }
 
-    &.success {
+    &.status-success {
       border-bottom: var(--success) solid 1px;
       &:focus {
         height: calc(3.375rem - 1px);
@@ -177,7 +177,7 @@ input {
       }
     }
 
-    &.error {
+    &.status-error {
       border-bottom: var(--error) solid 1px;
       box-shadow: none;
       &:focus {
@@ -186,7 +186,7 @@ input {
       }
     }
 
-    &.warning {
+    &.status-warning {
       border-bottom: var(--warning) solid 1px;
       &:focus {
         height: calc(3.375rem - 1px);
