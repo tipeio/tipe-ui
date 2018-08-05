@@ -5,9 +5,7 @@
     :disabled="disabled"
     @click="$emit('click', $event)"
   >
-    <div
-      :class="{dropdown}"
-      class="layout">
+    <div class="layout">
       <div
         v-if="iconBefore"
         class="icon-container"
