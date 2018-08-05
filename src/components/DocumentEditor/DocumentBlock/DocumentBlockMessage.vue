@@ -51,20 +51,18 @@ export default {
   font-size: 0.8125rem;
   white-space: nowrap;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 [data-tipe-ui='TipeDocumentBlockMessage'].status-success {
   color: var(--success);
-  border-bottom: 1px solid var(--success);
 }
 
 [data-tipe-ui='TipeDocumentBlockMessage'].status-warning {
   color: var(--warning);
-  border-bottom: 1px solid var(--warning);
 }
 
 [data-tipe-ui='TipeDocumentBlockMessage'].status-error {
   color: var(--error);
-  border-bottom: 1px solid var(--error);
 }
 </style>
