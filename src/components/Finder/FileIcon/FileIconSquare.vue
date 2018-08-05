@@ -8,15 +8,11 @@
         <div class="file-content">
           <div class="header">
             <div class="label">
-              {{ file.label }}
+              {{ label }}
             </div>
           </div>
           <div class="icon-container">
-            <tipe-icon
-              icon="plus"
-              height="0.6875rem"
-              width="0.6875rem"
-            />
+            <tipe-icon :icon="icon"/>
           </div>
         </div>
         <div class="cue-container">
@@ -28,7 +24,6 @@
 </template>
 
 <script>
-import vueTypes from 'vue-types'
 import interfaces from '@tipe/tipe-interfaces'
 import TipeIcon from '@/components/Icon'
 import TipeCue from './CueIcon'
@@ -39,17 +34,7 @@ export default {
     TipeIcon,
     TipeCue
   },
-  props: {
-    file: vueTypes.shape(interfaces.file)
-  },
-  computed: {
-    icon() {
-      return {
-        document: 'file',
-        folder: 'folder'
-      }[this.file.type]
-    }
-  }
+  props: interfaces.file
 }
 </script>
 

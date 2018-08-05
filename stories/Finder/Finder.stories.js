@@ -8,7 +8,7 @@ const createStyle = () => ({
   width: '700px'
 })
 
-const files = mocks.createManyMocks(mocks.file, 20)
+const files = mocks.createManyMocks(() => mocks.file({ icon: 'document' }), 20)
 
 storiesOf('Finder', module)
   .add('empty', () => ({
