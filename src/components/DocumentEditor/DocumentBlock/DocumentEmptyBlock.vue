@@ -9,14 +9,8 @@
 </template>
 
 <script>
-import vueTypes from 'vue-types'
-import interfaces from '@tipe/tipe-interfaces'
-
 export default {
-  name: 'TipeDocumentEmptyBlock',
-  props: {
-    options: vueTypes.arrayOf(vueTypes.shape(interfaces.blockOption))
-  }
+  name: 'TipeDocumentEmptyBlock'
 }
 </script>
 

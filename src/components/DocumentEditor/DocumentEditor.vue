@@ -18,7 +18,6 @@ export default {
     TipeDocumentNameInput
   },
   props: {
-    options: vueTypes.arrayOf(vueTypes.shape(interfaces.blockOption)),
     document: vueTypes.shape(interfaces.document)
   }
 }
