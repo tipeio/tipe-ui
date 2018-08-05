@@ -82,14 +82,14 @@ export default {
     justify-content: flex-start;
   }
 
-  &.status-error .label {
-    color: var(--error);
+  &.status-error .slider {
+    background-color: var(--error);
   }
-  &.status-success .label {
-    color: var(--success);
+  &.status-success .slider {
+    background-color: var(--success);
   }
-  &.status-warning .label {
-    color: var(--warning);
+  &.status-warning .slider {
+    background-color: var(--warning);
   }
 }
 
@@ -120,6 +120,7 @@ export default {
 
 /* The slider */
 .slider {
+  background-color: var(--purple);
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -128,7 +129,6 @@ export default {
   bottom: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background-color: #b5baca;
   &.round {
     border-radius: 12px;
     &:before {
@@ -173,7 +173,6 @@ input:checked {
   }
 
   & + .slider {
-    background-image: var(--purple-gradient);
     left: 0;
     width: 26px !important;
     position: absolute;
@@ -191,11 +190,13 @@ input:checked {
 
 input:disabled {
   & + .slider {
+    background-color: #b5baca;
     cursor: not-allowed;
   }
 }
 input.waiting {
   & + .slider {
+    background-color: #b5baca;
     cursor: wait;
   }
 }
