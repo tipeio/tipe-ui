@@ -1,22 +1,8 @@
 <template>
-  <div :data-tipe-ui="$options.name">
-    <tipe-document-name-input :value="document.name"/>
-    <tipe-tabs>
-      <tipe-tabs-panel label="Page Content">
-        <tipe-scrollable>
-          <div class="block-list-container">
-            <tipe-document-block-list
-              :blocks="document.blocks"
-              :options="options"
-            />
-          </div>
-        </tipe-scrollable>
-      </tipe-tabs-panel>
-      <tipe-tabs-panel label="API">
-        <div>API</div>
-      </tipe-tabs-panel>
-    </tipe-tabs>
-  </div>
+  <tipe-document-block-list
+    :blocks="document.blocks"
+    :options="options"
+  />
 </template>
 
 <script>
@@ -24,18 +10,12 @@ import vueTypes from 'vue-types'
 import interfaces from '@tipe/tipe-interfaces'
 import TipeDocumentBlockList from './DocumentBlockList'
 import TipeDocumentNameInput from './DocumentNameInput'
-import TipeTabs from '@/components/Tabs'
-import TipeTabsPanel from '@/components/TabsPanel'
-import TipeScrollable from '@/components/Scrollable'
 
 export default {
   name: 'TipeDocumentEditor',
   components: {
     TipeDocumentBlockList,
-    TipeDocumentNameInput,
-    TipeTabs,
-    TipeTabsPanel,
-    TipeScrollable
+    TipeDocumentNameInput
   },
   props: {
     options: vueTypes.arrayOf(vueTypes.shape(interfaces.blockOption)),

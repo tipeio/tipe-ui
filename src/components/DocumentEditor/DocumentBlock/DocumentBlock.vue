@@ -5,14 +5,6 @@
     @mouseover="hover = true"
     @mouseout="hover = false"
   >
-    <div class="margin">
-      <tipe-document-block-margin
-        v-if="hover"
-        :options="options"
-        :waiting="block.waiting"
-        :disabled="block.disabled"
-      />
-    </div>
     <div class="header">
       <tipe-document-block-header
         v-bind="block"
@@ -46,7 +38,6 @@ import vueTypes from 'vue-types'
 import interfaces from '@tipe/tipe-interfaces'
 import TipeDocumentBlockValueInput from './DocumentBlockValueInput'
 import TipeDocumentBlockHeader from './DocumentBlockHeader'
-import TipeDocumentBlockMargin from './DocumentBlockMargin'
 import TipeDocumentBlockMessage from './DocumentBlockMessage'
 
 export default {
@@ -54,7 +45,6 @@ export default {
   components: {
     TipeDocumentBlockValueInput,
     TipeDocumentBlockHeader,
-    TipeDocumentBlockMargin,
     TipeDocumentBlockMessage
   },
   props: {
@@ -80,13 +70,8 @@ export default {
 
 <style lang="postcss" scoped>
 [data-tipe-ui='TipeDocumentBlock'] {
-  display: grid;
-  grid-template-areas:
-    'margin header'
-    'margin body'
-    'margin footer';
-  grid-template-columns: 4.25rem 1fr;
-  grid-template-rows: auto auto auto;
+  display: flex;
+  flex-direction: column;
   border-radius: 0.1875rem;
   box-sizing: border-box;
   width: 100%;
