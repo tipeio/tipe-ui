@@ -24,22 +24,14 @@
       @mousedown.stop.prevent
       @click="onIncrement"
     >
-      <tipe-icon
-        height="0.6rem"
-        width="0.6rem"
-        icon="arrow-up"
-      />
+      <tipe-icon icon="arrow-up" />
     </button>
     <button
       :disabled="disabled"
       @mousedown.stop.prevent
       @click="onDecrement"
     >
-      <tipe-icon
-        height="0.6rem"
-        width="0.6rem"
-        icon="arrow-down"
-      />
+      <tipe-icon icon="arrow-down"/>
     </button>
   </div>
 </template>
