@@ -48,7 +48,6 @@ export default {
     TipeDocumentBlockMessage
   },
   props: {
-    options: vueTypes.arrayOf(vueTypes.shape(interfaces.blockOption)),
     block: vueTypes.shape(interfaces.documentBlock)
   },
   data() {
