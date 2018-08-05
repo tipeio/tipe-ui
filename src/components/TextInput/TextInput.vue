@@ -70,9 +70,12 @@ input {
     cursor: wait;
   }
 
+  &::placeholder {
+    color: var(--text-gray-blue-light);
+  }
+
   &.small {
     & ::placeholder {
-      color: #b5baca;
       font-size: 0.75rem;
     }
     height: 2.5rem;
@@ -122,7 +125,6 @@ input {
 
   &.medium {
     & ::placeholder {
-      color: #b5baca;
       font-size: 0.875rem;
     }
     height: 2.6875rem;
@@ -158,7 +160,6 @@ input {
 
   &.large {
     & ::placeholder {
-      color: #b5baca;
       font-size: 1.125rem;
     }
 
