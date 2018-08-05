@@ -63,28 +63,29 @@ storiesOf('Button', module)
   }))
   .add('icon before label', () => ({
     components: { TipeButton },
-    template: '<tipe-button iconBefore="plus">Icon Button</tipe-button>',
+    template: '<tipe-button iconBefore="document">Icon Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon after label', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button size="mini" iconAfter="plus">Icon Button</tipe-button>',
+      '<tipe-button size="mini" iconAfter="document">Icon Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon before and after label', () => ({
     components: { TipeButton },
     template:
-      '<tipe-button iconBefore="plus" iconAfter="plus">Icon Button</tipe-button>',
+      '<tipe-button iconBefore="document" iconAfter="document">Icon Button</tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon only', () => ({
     components: { TipeButton },
-    template: '<tipe-button color="primary" iconBefore="plus"></tipe-button>',
+    template:
+      '<tipe-button color="primary" iconBefore="document"></tipe-button>',
     methods: { action: action('clicked') }
   }))
   .add('icon only no backgound', () => ({
     components: { TipeButton },
-    template: '<tipe-button color="none" iconBefore="plus"></tipe-button>',
+    template: '<tipe-button color="none" iconBefore="document"></tipe-button>',
     methods: { action: action('clicked') }
   }))
