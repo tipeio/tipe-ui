@@ -10,7 +10,7 @@
       class="label"
       @click="$emit('click', $event)"
     >
-      {{ file.label }}
+      {{ label }}
     </button>
     <button
       class="options-icon"
@@ -21,24 +21,15 @@
 </template>
 
 <script>
-import vueTypes from 'vue-types'
-import interfaces from '@tipe/tipe-interfaces'
 import TipeIcon from '@/components/Icon'
-import { getFileIcon } from './utils'
+import interfaces from '@tipe/tipe-interfaces'
 
 export default {
   name: 'TipeFileIconRectangle',
   components: {
     TipeIcon
   },
-  props: {
-    file: vueTypes.shape(interfaces.file)
-  },
-  computed: {
-    icon() {
-      return getFileIcon(this.file)
-    }
-  }
+  props: interfaces.file
 }
 </script>
 

@@ -4,7 +4,7 @@
       <tipe-file-icon
         v-for="(file, i) in files"
         :key="i"
-        :file="file"
+        v-bind="file"
         :type="icon"
         class="item"
         @click="$emit('select', file)"

@@ -13,20 +13,14 @@
           <tipe-icon :icon="icon"/>
         </div>
         <div class="label">
-          {{ file.label }}
+          {{ label }}
         </div>
         <div class="created-by">
-          Created by {{ createdBy }}
+          Created by {{ author }}
         </div>
-        <div class="dot">
-          <tipe-icon
-            icon="dot"
-            height="0.8rem"
-            width="0.8rem"
-          />
-        </div>
+        <div class="dot">&#8226;</div>
         <div class="updated-at">
-          Edited {{ updatedAt }}
+          Edited {{ lastUpdate }}
         </div>
       </div>
     </button>
@@ -42,7 +36,7 @@
       class="edit"
       @click="$emit('edit')"
     >
-      <tipe-icon icon="rocket"/>
+      <tipe-icon icon="edit"/>
     </button>
   </div>
 </template>
@@ -50,32 +44,25 @@
 <script>
 import moment from 'moment'
 import TipeIcon from '@/components/Icon'
-import vueTypes from 'vue-types'
 import interfaces from '@tipe/tipe-interfaces'
-import { getFileIcon } from './utils'
 
 export default {
   name: 'TipeFileIconDetails',
   components: {
     TipeIcon
   },
-  props: {
-    file: vueTypes.shape(interfaces.file)
-  },
+  props: interfaces.file,
   data() {
     return {
       hovered: false
     }
   },
   computed: {
-    icon() {
-      return getFileIcon(this.file)
+    lastUpdate() {
+      return moment(this.updatedAt).fromNow()
     },
-    updatedAt() {
-      return moment(this.file.updatedAt).fromNow()
-    },
-    createdBy() {
-      return `${this.file.createdBy.firstName} ${this.file.createdBy.lastName}`
+    author() {
+      return `${this.createdBy.firstName} ${this.createdBy.lastName}`
     }
   }
 }
@@ -161,11 +148,9 @@ export default {
 
 .dot {
   grid-area: dot;
-  grid-column: auto;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  fill: var(--text-gray);
+  color: var(--text-gray);
+  font-size: 0.8rem;
+  padding: 0 0.4rem;
 }
 
 button {
