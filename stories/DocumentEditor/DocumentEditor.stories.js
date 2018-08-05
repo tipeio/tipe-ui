@@ -49,7 +49,7 @@ const document = mocks.document({
 })
 
 storiesOf('DocumentEditor', module)
-  .add('empty', () => ({
+  .add('with blocks', () => ({
     components: { TipeDocumentEditor },
     data() {
       return {
@@ -66,11 +66,10 @@ storiesOf('DocumentEditor', module)
       <div :style="styleObj">
         <tipe-document-editor
           :document="document"
-          :options="options"
         />
       </div>`
   }))
-  .add('with blocks', () => ({
+  .add('empty', () => ({
     components: { TipeDocumentEditor },
     data() {
       return {
@@ -78,9 +77,8 @@ storiesOf('DocumentEditor', module)
           height: '35rem',
           width: '35rem'
         },
-        options: mocks.createManyMocks(mocks.blockOption, 3),
         blocks,
-        document
+        document: mocks.document({ blocks: [] })
       }
     },
     template: `
