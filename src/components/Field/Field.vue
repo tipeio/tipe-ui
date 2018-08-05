@@ -2,40 +2,35 @@
   <div
     :data-tipe-ui="$options.name"
     :class="classObject"
-    @click="click"
-    @focus="focus"
-    @change="change"
-    @blur="blur">
+    class="field"
+  >
     <label
       v-if="label"
-      :for="label">{{ label }}</label>
-    <tipe-field-input
-      :field="field"
-      :name="name"
-      :status="status">
-      <slot />
-    </tipe-field-input>
+      :for="label"
+    >
+      {{ label }}
+    </label>
+    <slot />
     <span
       v-if="message"
-      class="message">{{ message }}</span>
+      class="message"
+    >
+      {{ message }}
+    </span>
   </div>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
-import TipeFieldInput from './FieldInput'
 
 export default {
-  name: 'TipeFieldContainer',
-  components: { TipeFieldInput },
+  name: 'TipeField',
   props: {
-    name: vueTypes.string.def(''),
-    field: vueTypes.object.def({}),
-    label: vueTypes.string,
+    label: vueTypes.string.def(''),
     status: vueTypes.oneOf(['error', 'success', 'warning', '']).def(''),
-    errorMessage: vueTypes.string,
-    successMessage: vueTypes.string,
-    warningMessage: vueTypes.string
+    errorMessage: vueTypes.string.def(''),
+    successMessage: vueTypes.string.def(''),
+    warningMessage: vueTypes.string.def('')
   },
   computed: {
     classObject: function() {
@@ -77,10 +72,12 @@ export default {
 </script>
 
 <style scoped lang="postcss">
-div {
+.field {
   display: flex;
   flex-direction: column;
+  margin: 2.25rem 0;
 }
+
 label {
   color: #627098;
   font-weight: 500;
@@ -94,6 +91,7 @@ label {
   margin: 0;
   margin-top: 6.5px;
 }
+
 .warning {
   & label {
     color: var(--warning);
@@ -103,6 +101,7 @@ label {
     color: var(--warning);
   }
 }
+
 .success {
   & label {
     color: var(--success);
@@ -112,6 +111,7 @@ label {
     color: var(--success);
   }
 }
+
 .error {
   & label {
     color: var(--error);

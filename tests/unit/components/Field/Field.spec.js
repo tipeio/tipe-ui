@@ -1,7 +1,8 @@
 import { shallowMount } from '@vue/test-utils'
-import { createRenderer } from 'vue-server-renderer'
+import tipeTestUtils from '~/tests/TipeTestUtils'
 import TipeField from '@/components/Field'
 import TipeTextInput from '@/components/TextInput'
+import faker from 'faker'
 
 const props = {
   name: 'name',
@@ -14,211 +15,71 @@ const props = {
   }
 }
 
-describe('TipeField.vue', () => {
-  it('renders', () => {
-    const renderer = createRenderer()
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props
-      },
-      slots: {
-        default: [TipeTextInput]
-      }
-    })
-    renderer.renderToString(wrapper.vm, (err, str) => {
-      if (err) throw new Error(err)
-      expect(str).toMatchSnapshot()
+describe('TipeField', () => {
+  describe('<template>', () => {
+    tipeTestUtils.test.snapshot(TipeField)
+
+    it('has correct data-tipe-ui attibute', () => {
+      const wrapper = shallowMount(TipeField, {
+        propsData: {
+          ...props
+        },
+        slots: {
+          default: [TipeTextInput]
+        }
+      })
+      expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeField')
     })
   })
-  it('has correct data-tipe-ui attibute', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props
-      },
-      slots: {
-        default: [TipeTextInput]
-      }
+
+  describe(':props', () => {
+    it(':label(empty) - should not render', () => {
+      const wrapper = shallowMount(TipeField)
+
+      expect(wrapper.find('label').exists()).toEqual(false)
     })
-    expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeFieldContainer')
-  })
-  it('should render with no classes by default ie. no status classes', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props
-      },
-      slots: {
-        default: [TipeTextInput]
-      }
+
+    it(':label(not empty) - should render', () => {
+      const propsData = { label: faker.lorem.word() }
+      const wrapper = shallowMount(TipeField, { propsData })
+
+      expect(wrapper.find('label').exists()).toEqual(true)
     })
-    expect(wrapper.classes()).toEqual([])
-  })
-  it('should have success class', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props,
-        status: 'success'
-      },
-      slots: {
-        default: [TipeTextInput]
-      }
+
+    it(':status(non) - should not display message', () => {
+      const wrapper = shallowMount(TipeField)
+
+      expect(wrapper.find('.message').exists()).toEqual(false)
     })
-    expect(wrapper.classes()).toContain('success')
-  })
-  it('should have error class', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props,
-        status: 'error'
-      },
-      slots: {
-        default: [TipeTextInput]
+
+    it(':status(success) - should display success message', () => {
+      const propsData = {
+        status: 'success',
+        successMessage: faker.lorem.word()
       }
+      const wrapper = shallowMount(TipeField, { propsData })
+
+      expect(wrapper.find('.message').exists()).toEqual(true)
+      expect(wrapper.find('.message').text()).toEqual(propsData.successMessage)
     })
-    expect(wrapper.classes()).toContain('error')
-  })
-  it('should have warning class', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props,
-        status: 'warning'
-      },
-      slots: {
-        default: [TipeTextInput]
-      }
-    })
-    expect(wrapper.classes()).toContain('warning')
-  })
-  it('should not render a message', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props
-      },
-      slots: {
-        default: [TipeTextInput]
-      }
-    })
-    expect(wrapper.find('.message').exists()).toBe(false)
-  })
-  it('should not render a message with empty string message', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props,
-        successMessage: '',
-        status: 'success'
-      },
-      slots: {
-        default: [TipeTextInput]
-      }
-    })
-    expect(wrapper.find('.message').exists()).toBe(false)
-  })
-  it('should have a message', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props,
-        errorMessage: 'can you even fill out a form bro?',
-        status: 'error'
-      },
-      slots: {
-        default: [TipeTextInput]
-      }
-    })
-    expect(wrapper.find('.message').exists()).toBe(true)
-  })
-  it('should have the correct props', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props,
+
+    it(':status(warning) - should display warning message', () => {
+      const propsData = {
         status: 'warning',
-        errorMessage: 'can you even fill out a form bro?',
-        successMessage: 'woot woot!',
-        warningMessage: 'watch out'
-      },
-      slots: {
-        default: [TipeTextInput]
+        warningMessage: faker.lorem.word()
       }
+      const wrapper = shallowMount(TipeField, { propsData })
+
+      expect(wrapper.find('.message').exists()).toEqual(true)
+      expect(wrapper.find('.message').text()).toEqual(propsData.warningMessage)
     })
-    expect(wrapper.props().label).toBe(props.label)
-    expect(wrapper.props().name).toBe(props.name)
-    expect(wrapper.props().field).toBe(props.field)
-    expect(wrapper.props().status).toBe('warning')
-    expect(wrapper.props().errorMessage).toBe(
-      'can you even fill out a form bro?'
-    )
-    expect(wrapper.props().successMessage).toBe('woot woot!')
-    expect(wrapper.props().warningMessage).toBe('watch out')
-  })
-  it('should emit change', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props
-      },
-      slots: {
-        default: [TipeTextInput]
-      }
-    })
-    wrapper.vm.$emit('change')
-    expect(wrapper.emitted().change).toBeTruthy()
-  })
-  it('should emit blur', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props
-      },
-      slots: {
-        default: [TipeTextInput]
-      }
-    })
-    wrapper.vm.$emit('blur')
-    expect(wrapper.emitted().blur).toBeTruthy()
-  })
-  it('should emit click', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props
-      },
-      slots: {
-        default: [TipeTextInput]
-      }
-    })
-    wrapper.vm.$emit('click')
-    expect(wrapper.emitted().click).toBeTruthy()
-  })
-  it('should emit focus', () => {
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props
-      },
-      slots: {
-        default: [TipeTextInput]
-      }
-    })
-    wrapper.vm.$emit('focus')
-    expect(wrapper.emitted().focus).toBeTruthy()
-  })
-  it('should not break with no slots', () => {
-    const renderer = createRenderer()
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props
-      }
-    })
-    renderer.renderToString(wrapper.vm, (err, str) => {
-      if (err) throw new Error(err)
-      expect(str).toMatchSnapshot()
-    })
-  })
-  it('should render with multiple slots', () => {
-    const renderer = createRenderer()
-    const wrapper = shallowMount(TipeField, {
-      propsData: {
-        ...props
-      },
-      slots: [TipeTextInput, TipeTextInput]
-    })
-    renderer.renderToString(wrapper.vm, (err, str) => {
-      if (err) throw new Error(err)
-      expect(str).toMatchSnapshot()
+
+    it(':status(error) - should display error message', () => {
+      const propsData = { status: 'error', errorMessage: faker.lorem.word() }
+      const wrapper = shallowMount(TipeField, { propsData })
+
+      expect(wrapper.find('.message').exists()).toEqual(true)
+      expect(wrapper.find('.message').text()).toEqual(propsData.errorMessage)
     })
   })
 })

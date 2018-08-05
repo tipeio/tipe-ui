@@ -1,27 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TipeField.vue renders 1`] = `
-<div data-tipe-ui="TipeFieldContainer">
-  <label for="Name">Name</label>
-  <TipeFieldInput-stub name="name" field="[object Object]" status="">
-    <input name="" data-tipe-ui="TipeTextInput" id="" placeholder="" tabindex="0" type="text" class="medium">
-  </TipeFieldInput-stub>
+exports[`TipeField <template> matches previous snapshot 1`] = `
+<div data-tipe-ui="TipeField" class="field">
   <!---->
-</div>
-`;
-
-exports[`TipeField.vue should not break with no slots 1`] = `
-<div data-tipe-ui="TipeFieldContainer">
-  <label for="Name">Name</label>
-  <TipeFieldInput-stub name="name" field="[object Object]" status=""></TipeFieldInput-stub>
-  <!---->
-</div>
-`;
-
-exports[`TipeField.vue should render with multiple slots 1`] = `
-<div data-tipe-ui="TipeFieldContainer">
-  <label for="Name">Name</label>
-  <TipeFieldInput-stub name="name" field="[object Object]" status=""></TipeFieldInput-stub>
   <!---->
 </div>
 `;
