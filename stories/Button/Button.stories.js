@@ -1,91 +1,53 @@
 import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
+import { withKnobs, select, boolean, text } from '@storybook/addon-knobs/vue'
+import { withMarkdownNotes } from '@storybook/addon-notes'
 
 import TipeButton from '@/components/Button'
 
 import '@/styles/globals.css'
 
+const notes = `
+#### :props
+:color | string | primary, success, info, warning, danger, none
+:size: | string | mini, small, medium, large
+:outline | boolean |
+:iconBefore | string |
+:iconAfter | string |
+#### @events
+@click($event)
+`
+
 storiesOf('Button', module)
-  .add('color: primary', () => ({
-    components: { TipeButton },
-    template: '<tipe-button color="primary">Fill Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('color: info', () => ({
-    components: { TipeButton },
-    template: '<tipe-button color="info">Fill Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('color: success', () => ({
-    components: { TipeButton },
-    template: '<tipe-button color="success">Fill Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('color: warning', () => ({
-    components: { TipeButton },
-    template: '<tipe-button color="warning">Fill Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('color: danger', () => ({
-    components: { TipeButton },
-    template: '<tipe-button color="danger">Fill Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('outline', () => ({
-    components: { TipeButton },
-    template: '<tipe-button outline>Fill Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('disabled', () => ({
-    components: { TipeButton },
-    template: '<tipe-button :disabled="true">Fill Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('size: mini', () => ({
-    components: { TipeButton },
-    template: '<tipe-button size="mini">Mini Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('size: small', () => ({
-    components: { TipeButton },
-    template: '<tipe-button size="small">Small Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('size: medium', () => ({
-    components: { TipeButton },
-    template: '<tipe-button size="medium">Medium Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('size: large', () => ({
-    components: { TipeButton },
-    template: '<tipe-button size="large">Large Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('icon before label', () => ({
-    components: { TipeButton },
-    template: '<tipe-button iconBefore="document">Icon Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('icon after label', () => ({
-    components: { TipeButton },
-    template:
-      '<tipe-button size="mini" iconAfter="document">Icon Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('icon before and after label', () => ({
-    components: { TipeButton },
-    template:
-      '<tipe-button iconBefore="document" iconAfter="document">Icon Button</tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('icon only', () => ({
-    components: { TipeButton },
-    template:
-      '<tipe-button color="primary" iconBefore="document"></tipe-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('icon only no backgound', () => ({
-    components: { TipeButton },
-    template: '<tipe-button color="none" iconBefore="document"></tipe-button>',
-    methods: { action: action('clicked') }
-  }))
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    withMarkdownNotes(notes)(() => ({
+      components: { TipeButton },
+      methods: { click: action('click') },
+      data() {
+        return {
+          color: select(
+            'color',
+            ['primary', 'success', 'info', 'warning', 'danger', 'none'],
+            'primary'
+          ),
+          size: select('size', ['mini', 'small', 'medium', 'large'], 'medium'),
+          outline: boolean('outline'),
+          iconBefore: text('iconBefore', ''),
+          iconAfter: text('iconAfter', '')
+        }
+      },
+      template: `
+      <tipe-button
+        @click="click"
+        :color="color"
+        :size="size"
+        :outline="outline"
+        :iconBefore="iconBefore"
+        :iconAfter="iconAfter"
+      >
+        Fill Button
+      </tipe-button>`
+    }))
+  )
