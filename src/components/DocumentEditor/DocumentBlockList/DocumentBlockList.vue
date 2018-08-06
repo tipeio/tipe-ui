@@ -34,7 +34,6 @@ export default {
     TipeDocumentEmptyBlock
   },
   props: {
-    options: vueTypes.arrayOf(vueTypes.shape(interfaces.blockOption)),
     blocks: vueTypes.arrayOf(vueTypes.shape(interfaces.documentBlock)).def([])
   }
 }
