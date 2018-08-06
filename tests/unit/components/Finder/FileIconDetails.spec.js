@@ -1,35 +1,16 @@
 import { shallowMount } from '@vue/test-utils'
-import { createRenderer } from 'vue-server-renderer'
 import moment from 'moment'
 import FileIconDetails from '@/components/Finder/FileIcon/FileIconDetails'
 import Icon from '@/components/Icon'
-import { mocks } from '@tipe/tipe-test-utils'
+import { mocks, fixtures } from '@tipe/tipe-test-utils'
+import tipeTestUtils from '~/tests/TipeTestUtils'
 
 describe('FileIconDetails', () => {
   describe('<template>', () => {
-    it('matches previous snapshot', () => {
-      const renderer = createRenderer()
-      const propsData = {
-        file: {
-          label: 'hello world',
-          type: 'document',
-          updatedAt: Date.now(),
-          createdBy: {
-            firstName: 'test',
-            lastName: 'test'
-          }
-        }
-      }
-      const wrapper = shallowMount(FileIconDetails, { propsData })
-
-      renderer.renderToString(wrapper.vm, (err, str) => {
-        if (err) throw new Error(err)
-        expect(str).toMatchSnapshot()
-      })
-    })
+    tipeTestUtils.test.snapshot(FileIconDetails, { propsData: fixtures.file() })
 
     it('has correct data-tipe-iu attibute', () => {
-      const propsData = { file: mocks.file() }
+      const propsData = mocks.file()
       const wrapper = shallowMount(FileIconDetails, { propsData })
 
       expect(wrapper.attributes()['data-tipe-ui']).toBe('TipeFileIconDetails')
@@ -38,44 +19,35 @@ describe('FileIconDetails', () => {
 
   describe(':props', () => {
     it(':file - should render label prop as label', () => {
-      const propsData = { file: mocks.file() }
+      const propsData = mocks.file()
       const wrapper = shallowMount(FileIconDetails, { propsData })
 
-      expect(wrapper.find('.label').text()).toEqual(propsData.file.label)
+      expect(wrapper.find('.label').text()).toEqual(propsData.label)
     })
 
-    it(':file.type(folder) - should pass "folder" to Icon component\'s :icon prop', () => {
-      const propsData = { file: mocks.file({ type: 'folder' }) }
+    it(":file.icon - should pass icon to Icon component's :icon prop", () => {
+      const propsData = mocks.file()
       const wrapper = shallowMount(FileIconDetails, { propsData })
 
-      expect(wrapper.find(Icon).props().icon).toEqual('folder-filled')
-    })
-
-    it(':file.type(document) - should pass "file" to Icon component\'s :icon prop', () => {
-      const propsData = { file: mocks.file({ type: 'document' }) }
-      const wrapper = shallowMount(FileIconDetails, { propsData })
-
-      expect(wrapper.find(Icon).props().icon).toEqual('document-filled')
+      expect(wrapper.find(Icon).props().icon).toEqual(propsData.icon)
     })
 
     it(':file.updatedAt - should display last updated delta', () => {
-      const propsData = { file: mocks.file() }
+      const propsData = mocks.file()
       const wrapper = shallowMount(FileIconDetails, { propsData })
 
       expect(wrapper.find('.updated-at').text()).toMatch(
-        new RegExp(moment(propsData.file.updatedAt).fromNow())
+        new RegExp(moment(propsData.updatedAt).fromNow())
       )
     })
 
     it(":file.createdBy - should display author's name", () => {
-      const propsData = { file: mocks.file() }
+      const propsData = mocks.file()
       const wrapper = shallowMount(FileIconDetails, { propsData })
 
       expect(wrapper.find('.created-by').text()).toMatch(
         new RegExp(
-          `${propsData.file.createdBy.firstName} ${
-            propsData.file.createdBy.lastName
-          }`
+          `${propsData.createdBy.firstName} ${propsData.createdBy.lastName}`
         )
       )
     })
@@ -84,7 +56,7 @@ describe('FileIconDetails', () => {
 
 describe('@events', () => {
   it('@hovered - should show trash button', () => {
-    const propsData = { file: mocks.file() }
+    const propsData = mocks.file()
     const wrapper = shallowMount(FileIconDetails, { propsData })
 
     expect(wrapper.contains('.trash')).toEqual(false)
@@ -93,7 +65,7 @@ describe('@events', () => {
   })
 
   it('@hovered - should show edit button', () => {
-    const propsData = { file: mocks.file() }
+    const propsData = mocks.file()
     const wrapper = shallowMount(FileIconDetails, { propsData })
 
     expect(wrapper.contains('.edit')).toEqual(false)
@@ -102,7 +74,7 @@ describe('@events', () => {
   })
 
   it('@click - should emit click event', () => {
-    const propsData = { file: mocks.file() }
+    const propsData = mocks.file()
     const wrapper = shallowMount(FileIconDetails, { propsData })
 
     wrapper.find('.details-button').trigger('click')
@@ -110,7 +82,7 @@ describe('@events', () => {
   })
 
   it('@delete - should emit delete event', () => {
-    const propsData = { file: mocks.file() }
+    const propsData = mocks.file()
     const wrapper = shallowMount(FileIconDetails, { propsData })
 
     wrapper.trigger('mouseover')
@@ -119,7 +91,7 @@ describe('@events', () => {
   })
 
   it('@edit - should emit delete event', () => {
-    const propsData = { file: mocks.file() }
+    const propsData = mocks.file()
     const wrapper = shallowMount(FileIconDetails, { propsData })
 
     wrapper.trigger('mouseover')

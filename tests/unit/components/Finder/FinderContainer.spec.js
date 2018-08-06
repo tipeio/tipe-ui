@@ -2,12 +2,7 @@ import { shallowMount } from '@vue/test-utils'
 import FinderContainer from '@/components/Finder/FinderContainer'
 import FinderEmpty from '@/components/Finder/FinderEmpty.vue'
 import FinderViewer from '@/components/Finder/FinderViewer.vue'
-import faker from 'faker'
-
-const createFile = () => ({
-  label: faker.lorem.word(),
-  type: ['document', 'folder'][faker.random.number(1)]
-})
+import { mocks } from '@tipe/tipe-test-utils'
 
 describe('FinderContainer', () => {
   describe('<template>', () => {
@@ -25,21 +20,21 @@ describe('FinderContainer', () => {
     })
 
     it(':files(not empty) - should render FinderViewer component', () => {
-      const propsData = { files: [createFile()] }
+      const propsData = { files: [mocks.file()] }
       const wrapper = shallowMount(FinderContainer, { propsData })
 
       expect(wrapper.find(FinderViewer).exists()).toBe(true)
     })
 
     it(':layout(grid) - should pass layout prop to FinderViewer component', () => {
-      const propsData = { files: [createFile()], layout: 'grid' }
+      const propsData = { files: [mocks.file()], layout: 'grid' }
       const wrapper = shallowMount(FinderContainer, { propsData })
 
       expect(wrapper.find(FinderViewer).props().layout).toBe('grid')
     })
 
     it(':layout - should default to list', () => {
-      const propsData = { files: [createFile()] }
+      const propsData = { files: [mocks.file()] }
       const wrapper = shallowMount(FinderContainer, { propsData })
 
       expect(wrapper.find(FinderViewer).props().layout).toBe('list')

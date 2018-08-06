@@ -4,12 +4,12 @@ exports[`NumberInput <template> matches previous snapshot 1`] = `
 <div data-tipe-ui="TipeNumberInput" file="[object Object]" class="medium">
   <input tabindex="0" max="Infinity" min="-Infinity" step="1" type="number">
   <button>
-    <TipeIcon-stub icon="arrow-up" height="0.6rem" width="0.6rem" color="#000" __iconLoader__="function _default(icon) {
+    <TipeIcon-stub icon="arrow-up" height="1rem" width="1rem" color="#000" __iconLoader__="function _default(icon) {
   return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
 }"></TipeIcon-stub>
   </button>
   <button>
-    <TipeIcon-stub icon="arrow-down" height="0.6rem" width="0.6rem" color="#000" __iconLoader__="function _default(icon) {
+    <TipeIcon-stub icon="arrow-down" height="1rem" width="1rem" color="#000" __iconLoader__="function _default(icon) {
   return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
 }"></TipeIcon-stub>
   </button>

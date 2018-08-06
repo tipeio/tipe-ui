@@ -1,5 +1,6 @@
 <template>
   <tipe-document-block-list
+    :data-tipe-ui="$options.name"
     :blocks="document.blocks"
     :options="options"
   />
