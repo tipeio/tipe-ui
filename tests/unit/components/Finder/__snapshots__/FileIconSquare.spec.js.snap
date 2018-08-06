@@ -1,10 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FileIconSquare <template> matches previous snapshot 1`] = `
-VueWrapper {
-  "_emitted": Object {},
-  "_emittedByOrder": Array [],
-  "isFunctionalComponent": undefined,
-  "version": 2.5,
-}
+<button data-tipe-ui="TipeFileIconSquare">
+  <div class="layout">
+    <div class="file">
+      <div class="file-content">
+        <div class="header">
+          <div class="label">
+
+          </div>
+        </div>
+        <div class="icon-container">
+          <TipeIcon-stub icon="" height="1rem" width="1rem" color="#000" __iconLoader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}"></TipeIcon-stub>
+        </div>
+      </div>
+      <div class="cue-container">
+        <TipeCue-stub></TipeCue-stub>
+      </div>
+    </div>
+  </div>
+</button>
 `;

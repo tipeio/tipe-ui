@@ -2,9 +2,6 @@
 
 exports[`DocumentBlock <template> matches previous snapshot 1`] = `
 <div data-tipe-ui="TipeDocumentBlock" class="status-success">
-  <div class="margin">
-    <!---->
-  </div>
   <div class="header">
     <TipeDocumentBlockHeader-stub id="" type="SIMPLE_TEXT" label="Simple Text" name="test-name" apiId="test-apiId" value="test-value" description="test-description" status="success" successMessage="" errorMessage="" warningMessage="" validation="[object Object]"></TipeDocumentBlockHeader-stub>
   </div>

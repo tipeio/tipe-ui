@@ -1,17 +1,11 @@
 import { shallowMount } from '@vue/test-utils'
 import FileIconSquare from '@/components/Finder/FileIcon/FileIconSquare'
 import { mocks } from '@tipe/tipe-test-utils'
+import tipeTestUtils from '~/tests/TipeTestUtils'
 
 describe('FileIconSquare', () => {
   describe('<template>', () => {
-    it('matches previous snapshot', () => {
-      const propsData = {
-        file: { label: 'hello world', type: 'document' }
-      }
-      const wrapper = shallowMount(FileIconSquare, { propsData })
-
-      expect(wrapper).toMatchSnapshot()
-    })
+    tipeTestUtils.test.snapshot(FileIconSquare)
 
     it('has correct data-tipe-iu attibute', () => {
       const propsData = { file: mocks.file() }
@@ -23,17 +17,16 @@ describe('FileIconSquare', () => {
 
   describe(':props', () => {
     it(':file - should render label prop as label', () => {
-      const propsData = { file: mocks.file() }
+      const propsData = mocks.file()
       const wrapper = shallowMount(FileIconSquare, { propsData })
 
-      expect(wrapper.find('.label').text()).toEqual(propsData.file.label)
+      expect(wrapper.find('.label').text()).toEqual(propsData.label)
     })
   })
 
   describe('@events', () => {
     it('@click - emits', () => {
-      const propsData = { file: mocks.file() }
-      const wrapper = shallowMount(FileIconSquare, { propsData })
+      const wrapper = shallowMount(FileIconSquare)
 
       wrapper.trigger('click')
       expect(wrapper.emitted().click).toBeTruthy()
