@@ -1007,12 +1007,6 @@
     webpack "^3.11.0"
     webpack-hot-middleware "^2.22.1"
 
-"@tipe/tipe-config@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@tipe/tipe-config/-/tipe-config-1.0.0.tgz#2c812bb2743afcf74e7066fb775dcf08d08448df"
-  dependencies:
-    "@tipe/tipe-constants" "^0.1.0"
-
 "@tipe/tipe-config@^1.0.0":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@tipe/tipe-config/-/tipe-config-1.0.1.tgz#50286276206e174eb97d112cb2bbea2ad58a47e3"
@@ -1023,10 +1017,6 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@tipe/tipe-constants/-/tipe-constants-1.0.0.tgz#60e62ff777e4795bfe8070eb02849dbbb49b0f46"
 
-"@tipe/tipe-constants@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@tipe/tipe-constants/-/tipe-constants-0.1.0.tgz#aa96aa125f15ae72b6af47d856af50e2ec9c156e"
-
 "@tipe/tipe-interfaces@^1.0.0":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@tipe/tipe-interfaces/-/tipe-interfaces-1.0.1.tgz#424f821d8c51ac8a41ae540ab7c7dfbe3a3b519c"
@@ -1035,12 +1025,9 @@
     vue "^2.5.16"
     vue-types "^1.3.2"
 
-"@tipe/tipe-test-utils@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@tipe/tipe-test-utils/-/tipe-test-utils-1.0.1.tgz#292492cae94a961f134e27f97ad72f139182d758"
-  dependencies:
-    "@tipe/tipe-config" "1.0.0"
-    "@tipe/tipe-constants" "1.0.0"
+"@tipe/tipe-test-utils@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@tipe/tipe-test-utils/-/tipe-test-utils-1.0.2.tgz#90277c55fbc850a9dbad7dc80259d3cd0bbf8e51"
 
 "@types/strip-bom@^3.0.0":
   version "3.0.0"
