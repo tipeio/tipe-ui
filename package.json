@@ -36,7 +36,7 @@
     "@storybook/addons": "^3.4.4",
     "@storybook/storybook-deployer": "^2.3.0",
     "@storybook/vue": "^3.4.4",
-    "@tipe/tipe-test-utils": "^1.0.0",
+    "@tipe/tipe-test-utils": "^1.0.2",
     "@vue/cli-plugin-babel": "^3.0.0-beta.10",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.10",
     "@vue/cli-plugin-unit-jest": "^3.0.0-beta.10",
