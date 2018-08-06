@@ -1,20 +1,13 @@
 import { shallowMount } from '@vue/test-utils'
-import { createRenderer } from 'vue-server-renderer'
 import FileIconRectangle from '@/components/Finder/FileIcon/FileIconRectangle'
 import Icon from '@/components/Icon'
 import { mocks, fixtures } from '@tipe/tipe-test-utils'
+import tipeTestUtils from '~/tests/TipeTestUtils'
 
 describe('FileIconRectangle', () => {
   describe('<template>', () => {
-    it('matches previous snapshot', () => {
-      const renderer = createRenderer()
-      const propsData = { file: fixtures.file() }
-      const wrapper = shallowMount(FileIconRectangle, { propsData })
-
-      renderer.renderToString(wrapper.vm, (err, str) => {
-        if (err) throw new Error(err)
-        expect(str).toMatchSnapshot()
-      })
+    tipeTestUtils.test.snapshot(FileIconRectangle, {
+      propsData: { file: fixtures.file() }
     })
 
     it('has correct data-tipe-iu attibute', () => {
