@@ -21,6 +21,7 @@
     "@tipe/tipe-interfaces": "^1.0.0",
     "autosize": "^4.0.2",
     "moment": "^2.22.2",
+    "storybook": "^1.0.0",
     "vue": "^2.5.16",
     "vue-click-outside": "^1.0.7",
     "vue-types": "^1.2.3",
