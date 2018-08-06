@@ -50,9 +50,7 @@ export default {
     iconBefore: vueTypes.string.def(''),
     iconAfter: vueTypes.string.def(''),
     ...interfaces.input,
-    size: vueTypes
-      .oneOf(['icon', 'mini', 'small', 'medium', 'large', 'full'])
-      .def('medium')
+    size: vueTypes.oneOf(['mini', 'small', 'medium', 'large']).def('medium')
   },
   computed: {
     classObject: function() {
