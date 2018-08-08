@@ -1,4 +1,6 @@
 import { storiesOf } from '@storybook/vue'
+import { withKnobs, object } from '@storybook/addon-knobs/vue'
+import { withMarkdownNotes } from '@storybook/addon-notes'
 import TipeDocumentEditor from '@/components/DocumentEditor'
 import { mocks } from '@tipe/tipe-test-utils'
 
@@ -48,44 +50,33 @@ const document = mocks.document({
   blocks
 })
 
+const notes = `
+#### :props
+:document | interfaces.document |
+`
+
 storiesOf('DocumentEditor', module)
-  .add('with blocks', () => ({
-    components: { TipeDocumentEditor },
-    data() {
-      return {
-        styleObj: {
-          height: '35rem',
-          width: '35rem'
-        },
-        options: mocks.createManyMocks(mocks.blockOption, 3),
-        blocks,
-        document
-      }
-    },
-    template: `
+  .addDecorator(withKnobs)
+  .add(
+    'with blocks',
+    withMarkdownNotes(notes)(() => ({
+      components: { TipeDocumentEditor },
+      data() {
+        return {
+          styleObj: {
+            padding: '5rem',
+            height: '35rem',
+            width: '35rem'
+          },
+          options: mocks.createManyMocks(mocks.blockOption, 3),
+          document: object('document', document)
+        }
+      },
+      template: `
       <div :style="styleObj">
         <tipe-document-editor
           :document="document"
         />
       </div>`
-  }))
-  .add('empty', () => ({
-    components: { TipeDocumentEditor },
-    data() {
-      return {
-        styleObj: {
-          height: '35rem',
-          width: '35rem'
-        },
-        blocks,
-        document: mocks.document({ blocks: [] })
-      }
-    },
-    template: `
-      <div :style="styleObj">
-        <tipe-document-editor
-          :document="document"
-          :options="options"
-        />
-      </div>`
-  }))
+    }))
+  )
