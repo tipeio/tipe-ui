@@ -1,159 +1,67 @@
 import { storiesOf } from '@storybook/vue'
+import { withKnobs, select, text } from '@storybook/addon-knobs/vue'
+import { action } from '@storybook/addon-actions'
+import { withMarkdownNotes } from '@storybook/addon-notes'
 
 import TipeField from '../../src/components/Field'
 import TipeTextInput from '../../src/components/TextInput'
 
-const style = () => ({
-  width: '200px'
-})
+const notes = `
+#### :props
+:name | string |
+:label | string |
+:status | string | '', success, warning, error,
+:successMessage | string |
+:warningMessage | string |
+:errorMessage | string |
+#### @events
+@click($event)
+@focus($event)
+@blur($event)
+@change($event)
+`
 
 storiesOf('Field', module)
-  .add('default field with input', () => ({
-    components: { TipeField, TipeTextInput },
-    computed: { style },
-    data() {
-      return {
-        field: {
-          label: 'First Name',
-          placeholder: 'What is your first name?',
-          value: ''
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    withMarkdownNotes(notes)(() => ({
+      components: { TipeField, TipeTextInput },
+      data() {
+        return {
+          style: { width: '200px' },
+          name: text('name', 'FirstName'),
+          label: text('label', 'First Name'),
+          status: select('status', ['', 'success', 'warning', 'error'], ''),
+          successMessage: text('successMessage', 'good to go'),
+          warningMessage: text('warningMessage', 'double check that'),
+          errorMessage: text('errorMessage', 'something went wrong')
         }
-      }
-    },
-    template:
-      '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field"><tipe-text-input /></tipe-field></div>'
-  }))
-  .add('error input', () => ({
-    components: { TipeField, TipeTextInput },
-    computed: { style },
-    data() {
-      return {
-        field: {
-          label: 'First Name',
-          placeholder: 'What is your first name?',
-          value: ''
-        }
-      }
-    },
-    template:
-      '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field" status="error" errorMessage="Invalid name"><tipe-text-input /></tipe-field></div>'
-  }))
-  .add('success input', () => ({
-    components: { TipeField, TipeTextInput },
-    computed: { style },
-    data() {
-      return {
-        field: {
-          label: 'First Name',
-          placeholder: 'What is your first name?',
-          value: 'Olivia'
-        }
-      }
-    },
-    template:
-      '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field" status="success"><tipe-text-input /></tipe-field></div>'
-  }))
-  .add('warning input', () => ({
-    components: { TipeField, TipeTextInput },
-    computed: { style },
-    data() {
-      return {
-        field: {
-          label: 'First Name',
-          placeholder: 'What is your first name?',
-          value: 'o'
-        }
-      }
-    },
-    template:
-      '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field" status="warning" warningMessage="Warning message watch out"><tipe-text-input /></tipe-field></div>'
-  }))
-  .add('no label', () => ({
-    components: { TipeField, TipeTextInput },
-    computed: { style },
-    data() {
-      return {
-        field: {
-          placeholder: 'What is your first name?',
-          value: 'o'
-        }
-      }
-    },
-    template:
-      '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field" status="warning" warningMessage="Warning message watch out"><tipe-text-input /></tipe-field></div>'
-  }))
-  .add('no message', () => ({
-    components: { TipeField, TipeTextInput },
-    computed: { style },
-    data() {
-      return {
-        field: {
-          label: 'First Name',
-          placeholder: 'What is your first name?',
-          value: ''
-        }
-      }
-    },
-    template:
-      '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field" ><tipe-text-input /></tipe-field></div>'
-  }))
-  .add('multiple slots', () => ({
-    components: { TipeField, TipeTextInput },
-    computed: { style },
-    data() {
-      return {
-        field: {
-          label: 'First Name',
-          placeholder: 'What is your first name?',
-          value: ''
-        }
-      }
-    },
-    template:
-      '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field"><tipe-text-input /><tipe-text-input /></tipe-field></div>'
-  }))
-  .add('no slots with label', () => ({
-    components: { TipeField, TipeTextInput },
-    computed: { style },
-    data() {
-      return {
-        field: {
-          label: 'First Name',
-          placeholder: 'What is your first name?',
-          value: ''
-        }
-      }
-    },
-    template:
-      '<div :style="style"><tipe-field :label="field.label" name="firstName" :field="field" /></div>'
-  }))
-  .add('no slots with message', () => ({
-    components: { TipeField, TipeTextInput },
-    computed: { style },
-    data() {
-      return {
-        field: {
-          label: 'First Name',
-          placeholder: 'What is your first name?',
-          value: ''
-        }
-      }
-    },
-    template:
-      '<div :style="style"><tipe-field status="error" errorMessage="blah blah" name="firstName" :field="field" /></div>'
-  }))
-  .add('no slots with message and label', () => ({
-    components: { TipeField, TipeTextInput },
-    computed: { style },
-    data() {
-      return {
-        field: {
-          label: 'First Name',
-          placeholder: 'What is your first name?',
-          value: ''
-        }
-      }
-    },
-    template:
-      '<div :style="style"><tipe-field status="error" errorMessage="blah blah" :label="field.label" name="firstName" :field="field" /></div>'
-  }))
+      },
+      methods: {
+        click: action('click'),
+        focus: action('focus'),
+        blur: action('blur'),
+        change: action('change')
+      },
+      template: `
+        <div :style="style">
+          <tipe-field
+            @click="click"
+            @focus="focus"
+            @blur="blur"
+            @change="change"
+            :name="name"
+            :label="label"
+            :status="status"
+            :successMessage="successMessage"
+            :warningMessage="warningMessage"
+            :errorMessage="errorMessage"
+          >
+            <tipe-text-input
+              placeholder="What is your first name?"
+            />
+          </tipe-field>
+        </div>`
+    }))
+  )
