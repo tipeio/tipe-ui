@@ -14,17 +14,17 @@ storiesOf('Forms', module).add('Example: Signin', () => ({
     }
   },
   template: `
-    <form :style="formStyle">
-      <tipe-field label="EMAIL OR USERNAME:">
-        <tipe-text-input placeholder="example@company.io"/>
-      </tipe-field>
-      <tipe-field label="PASSWORD:">
-        <tipe-text-input placeholder="password"/>
-      </tipe-field>
-      <tipe-field>
-        <tipe-checkbox label="Remember me" name="a" />
-      </tipe-field>
-      <tipe-button size="full">LOGIN</tipe-button>
-    </form>
-  `
+      <form :style="formStyle">
+        <tipe-field label="EMAIL OR USERNAME:">
+          <tipe-text-input placeholder="example@company.io"/>
+        </tipe-field>
+        <tipe-field label="PASSWORD:">
+          <tipe-text-input placeholder="password"/>
+        </tipe-field>
+        <tipe-field>
+          <tipe-checkbox label="Remember me" name="a" />
+        </tipe-field>
+        <tipe-button size="full">LOGIN</tipe-button>
+      </form>
+    `
 }))
