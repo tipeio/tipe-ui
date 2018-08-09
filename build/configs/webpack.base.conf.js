@@ -40,5 +40,6 @@ module.exports = {
       '@': path.resolve(ROOT_DIR, './src')
     },
     extensions: ['.js', '.json', '.vue', '.css']
-  }
+  },
+  plugins: []
 }
