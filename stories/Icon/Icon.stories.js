@@ -1,14 +1,11 @@
 import { storiesOf } from '@storybook/vue'
 
 import TipeIcon from '../../src/components/Icon'
-
-const style = () => ({
-  height: '1rem',
-  width: '1rem'
-})
+import { withKnobs, select, number, color } from '@storybook/addon-knobs/vue'
+import { withMarkdownNotes } from '@storybook/addon-notes'
 
 const icons = [
-  'check',
+  'check-circle',
   'document',
   'folder',
   'key',
@@ -49,16 +46,38 @@ const icons = [
   'arrow-left'
 ]
 
-storiesOf('Icon', module).add('icons', () => ({
-  components: { TipeIcon },
-  computed: { style },
-  template:
-    '<div>' +
-    icons.reduce((template, icon) => {
-      return (
-        template +
-        `<tipe-icon :style="style" icon="${icon}" color="rgb(255,0,0)" />`
-      )
-    }, '') +
-    '</div>'
-}))
+const notes = `
+#### :props
+:icon | string |
+:height | number |
+:width | number |
+:color | string |
+`
+
+storiesOf('Icon', module)
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    withMarkdownNotes(notes)(() => ({
+      components: { TipeIcon },
+      data() {
+        return {
+          icon: select('icon', icons, 'document'),
+          height: number('height', 1),
+          width: number('width', 1),
+          color: color('color', '#000')
+        }
+      },
+      computed: {
+        h: data => `${data.height}rem`,
+        w: data => `${data.width}rem`
+      },
+      template: `
+      <tipe-icon
+        :icon="icon"
+        :height="h"
+        :width="w"
+        :color="color"
+      />`
+    }))
+  )
