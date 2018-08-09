@@ -10,10 +10,6 @@ const {
   writeFile
 } = require('./shared')
 
-const args = process.argv.slice(2)
-// --write flag will write the file when webpack watching
-const isWrite = args.filter(arg => /write/.test(arg)).length
-
 // Clean tmp directory
 cleanTmp()
 
@@ -83,9 +79,7 @@ fileWatcher
 function createWebpackWatcher() {
   let lastHash = null
   const config = require('./configs/webpack.dev.conf')
-  if (isWrite) {
-    config.plugins.push(new WriteFilePlugin())
-  }
+  config.plugins.push(new WriteFilePlugin())
   const compiler = webpack(config)
   return compiler.watch({}, (err, stats) => {
     // copy/pasta from webpack cli

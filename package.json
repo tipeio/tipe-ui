@@ -9,7 +9,7 @@
       "node build/build.js && yarn webpack --config build/configs/webpack.prod.conf.js",
     "build:dev":
       "node build/build.js && yarn webpack --config build/configs/webpack.dev.conf.js",
-    "watch:build:dev": "node build/watch.js --write",
+    "watch:build:dev": "node build/watch.js",
     "lint": "vue-cli-service lint",
     "test": "vue-cli-service test:unit",
     "storybook": "start-storybook -p 6006",
