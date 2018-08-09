@@ -1,39 +1,36 @@
 import { storiesOf } from '@storybook/vue'
+import { withKnobs, text } from '@storybook/addon-knobs/vue'
+import { withMarkdownNotes } from '@storybook/addon-notes'
 
 import TipeImage from '../../src/components/Image'
 
-const style = {
-  height: '100px',
-  width: '100px'
-}
-
-const imageLoader = () => new Promise(() => {})
+const notes = `
+#### :props
+:url | string |
+:alt | string |
+`
 
 storiesOf('Image', module)
-  .add('ok', () => ({
-    components: { TipeImage },
-    computed: {
-      style: () => style
-    },
-    template:
-      '<tipe-image url="http://placekitten.com/200/200" :style="style"/>'
-  }))
-  .add('error', () => ({
-    components: { TipeImage },
-    computed: {
-      style: () => style
-    },
-    template: '<tipe-image :style="style" />'
-  }))
-  .add('waiting', () => ({
-    components: { TipeImage },
-    data() {
-      return {
-        imageLoader
-      }
-    },
-    computed: {
-      style: () => style
-    },
-    template: '<tipe-image :__imageLoader__="imageLoader" :style="style"/>'
-  }))
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    withMarkdownNotes(notes)(() => ({
+      components: { TipeImage },
+      data() {
+        return {
+          style: {
+            height: '100px',
+            width: '100px'
+          },
+          url: text('url', 'http://placekitten.com/200/200'),
+          alt: text('alt', 'image of kitten')
+        }
+      },
+      template: `
+        <tipe-image
+          :url="url"
+          :alt="alt"
+          :style="style"
+        />`
+    }))
+  )
