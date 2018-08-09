@@ -12,7 +12,7 @@ const {
 
 const args = process.argv.slice(2)
 // --write flag will write the file when webpack watching
-const isWrite = args.filter(arg => /write/.test(arg))
+const isWrite = args.filter(arg => /write/.test(arg)).length
 
 // Clean tmp directory
 cleanTmp()
