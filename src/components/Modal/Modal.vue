@@ -2,7 +2,10 @@
   <div
     :data-tipe-ui="$options.name"
     class="background">
-    <div class="container">
+    <div
+      :style="containerStyle"
+      class="container"
+    >
       <div class="header">
         <button @click="$emit('close')">
           <tipe-icon
@@ -19,12 +22,23 @@
 </template>
 
 <script>
+import vueTypes from 'vue-types'
 import TipeIcon from '@/components/Icon'
 
 export default {
   name: 'TipeModal',
   components: {
     TipeIcon
+  },
+  props: {
+    height: vueTypes.string.def('15rem'),
+    width: vueTypes.string.def('15rem')
+  },
+  computed: {
+    containerStyle: props => ({
+      height: props.height,
+      width: props.width
+    })
   }
 }
 </script>
@@ -43,10 +57,6 @@ export default {
 }
 
 .container {
-  min-height: 15rem;
-  min-width: 15rem;
-  max-height: 90%;
-  max-width: 90%;
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 1.25rem 2.5rem 3.75rem 0 rgba(0, 0, 0, 0.1);
