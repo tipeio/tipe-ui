@@ -6,7 +6,8 @@
     <div class="icon-container">
       <tipe-icon
         :icon="icon"
-        class="icon"
+        height="1.5rem"
+        width="1.5rem"
       />
     </div>
   </button>
@@ -47,10 +48,5 @@ export default {
   height: 5rem;
   justify-content: center;
   align-items: center;
-}
-
-.icon {
-  height: 1.5rem;
-  width: 1.5rem;
 }
 </style>
