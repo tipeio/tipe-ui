@@ -1,6 +1,7 @@
 <template>
   <button
     :data-tipe-ui="$options.name"
+    :class="rootClassObject"
     @click="$emit('click', $event)"
   >
     <div class="layout">
@@ -15,7 +16,10 @@
             <tipe-icon :icon="icon"/>
           </div>
         </div>
-        <div class="cue-container">
+        <div
+          v-if="!picker"
+          class="cue-container"
+        >
           <tipe-cue />
         </div>
       </div>
@@ -24,6 +28,7 @@
 </template>
 
 <script>
+import vueTypes from 'vue-types'
 import interfaces from '@tipe/tipe-interfaces'
 import TipeIcon from '@/components/Icon'
 import TipeCue from './CueIcon'
@@ -34,7 +39,21 @@ export default {
     TipeIcon,
     TipeCue
   },
-  props: interfaces.file
+  props: {
+    picker: vueTypes.bool.def(false),
+    selected: vueTypes.bool.def(false),
+    ...interfaces.file
+  },
+  data() {
+    return {
+      internalSelected: this.selected
+    }
+  },
+  computed: {
+    rootClassObject: props => ({
+      selected: props.selected
+    })
+  }
 }
 </script>
 
@@ -74,6 +93,10 @@ export default {
   border-radius: 0.1875rem;
   box-sizing: border-box;
   box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.11);
+}
+
+.selected .file-content {
+  border: 1px solid var(--text-gray-light);
 }
 
 .header {

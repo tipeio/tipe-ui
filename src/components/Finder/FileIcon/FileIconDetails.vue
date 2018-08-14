@@ -1,8 +1,10 @@
 <template>
   <div
     :data-tipe-ui="$options.name"
+    :class="rootClassObject"
     @mouseover="hovered = true"
     @mouseout="hovered = false"
+    @click="$emit('click', $event)"
   >
     <button
       class="details-button"
@@ -25,14 +27,14 @@
       </div>
     </button>
     <button
-      v-if="hovered"
+      v-if="hovered && !picker"
       class="trash"
       @click="$emit('delete')"
     >
       <tipe-icon icon="trash"/>
     </button>
     <button
-      v-if="hovered"
+      v-if="hovered && !picker"
       class="edit"
       @click="$emit('edit')"
     >
@@ -42,6 +44,7 @@
 </template>
 
 <script>
+import vueTypes from 'vue-types'
 import moment from 'moment'
 import TipeIcon from '@/components/Icon'
 import interfaces from '@tipe/tipe-interfaces'
@@ -51,7 +54,11 @@ export default {
   components: {
     TipeIcon
   },
-  props: interfaces.file,
+  props: {
+    picker: vueTypes.bool.def(false),
+    selected: vueTypes.bool.def(false),
+    ...interfaces.file
+  },
   data() {
     return {
       hovered: false
@@ -63,7 +70,10 @@ export default {
     },
     author() {
       return `${this.createdBy.firstName} ${this.createdBy.lastName}`
-    }
+    },
+    rootClassObject: props => ({
+      selected: props.selected
+    })
   }
 }
 </script>
@@ -75,11 +85,11 @@ export default {
   grid-template-rows: 4.8125rem;
   align-items: center;
   justify-content: flex-start;
-  border-top: 1px solid var(--gray-light);
+  border-bottom: 1px solid var(--gray-light);
 }
 
-[data-tipe-ui='TipeFileIconDetails']:last-child {
-  border-bottom: 1px solid var(--gray-darker);
+[data-tipe-ui='TipeFileIconDetails']:first-child {
+  border-top: 1px solid var(--gray-light);
 }
 
 [data-tipe-ui='TipeFileIconDetails']:nth-child(odd) {
@@ -88,6 +98,10 @@ export default {
 
 [data-tipe-ui='TipeFileIconDetails']:hover {
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+[data-tipe-ui='TipeFileIconDetails'].selected {
+  background-color: rgba(0, 0, 0, 0.06);
 }
 
 .details-layout {

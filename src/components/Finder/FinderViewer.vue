@@ -2,12 +2,14 @@
   <div :data-tipe-ui="$options.name">
     <div :class="layoutClass">
       <tipe-file-icon
-        v-for="(file, i) in files"
+        v-for="({ file, selected }, i) in fileIcons"
         :key="i"
         :file="file"
         :type="icon"
+        :picker="picker"
+        :selected="selected"
         class="item"
-        @click="$emit('select', file)"
+        @click="handleSelect(file)"
       />
     </div>
   </div>
@@ -16,20 +18,25 @@
 <script>
 import vueTypes from 'vue-types'
 import interfaces from '@tipe/tipe-interfaces'
-import TipeScrollable from '@/components/Scrollable'
 
 import TipeFileIcon from './FileIcon'
 
 export default {
   name: 'TipeFinder',
   components: {
-    TipeFileIcon,
-    TipeScrollable
+    TipeFileIcon
   },
   props: {
     files: vueTypes.arrayOf(vueTypes.shape(interfaces.file)).def([]),
     layout: vueTypes.oneOf(['list', 'grid']).def('list'),
-    icon: vueTypes.oneOf(['rectangle', 'square', 'details']).def('rectangle')
+    icon: vueTypes.oneOf(['rectangle', 'square', 'details']).def('rectangle'),
+    picker: vueTypes.bool.def(false),
+    multi: vueTypes.bool.def(false)
+  },
+  data() {
+    return {
+      selected: []
+    }
   },
   computed: {
     layoutClass() {
@@ -37,6 +44,31 @@ export default {
         layout: true,
         [`${this.layout}-${this.icon}`]: true
       }
+    },
+    fileIcons() {
+      return this.files.map(file => ({
+        selected: this.isSelected(file),
+        file: file
+      }))
+    }
+  },
+  methods: {
+    handleSelect(file) {
+      this.selectFile(file)
+      this.$emit('select', this.selected)
+    },
+    selectFile(file) {
+      if (this.multi) {
+        if (!this.isSelected(file)) {
+          this.selected.push(file)
+        }
+      } else {
+        this.selected = [file]
+      }
+    },
+    isSelected(file) {
+      const byId = id => file => file.id === id
+      return this.selected.findIndex(byId(file.id)) > -1
     }
   }
 }
