@@ -33,7 +33,9 @@ describe('FinderViewer', () => {
       const propsData = { files: [mocks.file()] }
       const wrapper = mount(FinderViewer, { propsData, stubs })
 
-      expect(wrapper.find(FinderIcon).props()).toMatchObject(propsData.files[0])
+      expect(wrapper.find(FinderIcon).props().file).toMatchObject(
+        propsData.files[0]
+      )
     })
 
     it(':layout(grid) - should pass layout prop to layout class', () => {
