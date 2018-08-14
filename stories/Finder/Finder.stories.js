@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/vue'
 import { mocks } from '@tipe/tipe-test-utils'
-import { withKnobs, select, object } from '@storybook/addon-knobs/vue'
+import { withKnobs, select, object, boolean } from '@storybook/addon-knobs/vue'
 import { action } from '@storybook/addon-actions'
 import { withMarkdownNotes } from '@storybook/addon-notes'
 
@@ -32,6 +32,8 @@ storiesOf('Finder', module)
         return {
           layout: select('layout', ['grid', 'list'], 'list'),
           icon: select('icon', ['rectangle', 'square', 'details'], 'rectangle'),
+          picker: boolean('picker', false),
+          multi: boolean('multi', false),
           files: object('files', files),
           styleObject: createStyle()
         }
@@ -43,7 +45,9 @@ storiesOf('Finder', module)
         :layout="layout"
         :icon="icon"
         :style="styleObject"
+        :picker="picker"
         :files="files"
+        :multi="multi"
       />
     `
     }))

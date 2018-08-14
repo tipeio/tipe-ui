@@ -1,5 +1,9 @@
 <template>
-  <div :data-tipe-ui="$options.name">
+  <div
+    :data-tipe-ui="$options.name"
+    :class="rootClassObject"
+    @click="$emit('click', $event)"
+  >
     <button
       class="file-icon"
       @click="$emit('click', $event)"
@@ -13,6 +17,7 @@
       {{ label }}
     </button>
     <button
+      v-if="!picker"
       class="options-icon"
     >
       <tipe-icon icon="options" />
@@ -21,6 +26,7 @@
 </template>
 
 <script>
+import vueTypes from 'vue-types'
 import TipeIcon from '@/components/Icon'
 import interfaces from '@tipe/tipe-interfaces'
 
@@ -29,7 +35,16 @@ export default {
   components: {
     TipeIcon
   },
-  props: interfaces.file
+  props: {
+    picker: vueTypes.bool.def(false),
+    selected: vueTypes.bool.def(false),
+    ...interfaces.file
+  },
+  computed: {
+    rootClassObject: props => ({
+      selected: props.selected
+    })
+  }
 }
 </script>
 
@@ -44,6 +59,10 @@ export default {
   border: 1px solid var(--gray-blue-light);
   border-radius: 0.3125rem;
   box-sizing: border-box;
+}
+
+.selected {
+  border: 1px solid var(--text-gray-light);
 }
 
 button {
