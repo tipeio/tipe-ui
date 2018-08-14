@@ -5,7 +5,9 @@
     :files="files"
     :layout="layout"
     :icon="icon"
-    @select="file => $emit('select', file)"
+    :picker="picker"
+    :multi="multi"
+    @select="files => $emit('select', files)"
   />
 </template>
 
@@ -24,7 +26,9 @@ export default {
   props: {
     files: vueTypes.arrayOf(vueTypes.shape(interfaces.file)).def([]),
     layout: vueTypes.oneOf(['list', 'grid']).def('list'),
-    icon: vueTypes.oneOf(['rectangle', 'square', 'details']).def('rectangle')
+    icon: vueTypes.oneOf(['rectangle', 'square', 'details']).def('rectangle'),
+    picker: vueTypes.bool.def(false),
+    multi: vueTypes.bool.def(false)
   },
   computed: {
     empty() {

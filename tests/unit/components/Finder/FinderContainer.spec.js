@@ -39,5 +39,21 @@ describe('FinderContainer', () => {
 
       expect(wrapper.find(FinderViewer).props().layout).toBe('list')
     })
+
+    it(':picker - should pass to FinderViewer component', () => {
+      const propsData = { picker: true, files: [mocks.file()] }
+      const wrapper = shallowMount(FinderContainer, { propsData })
+
+      expect(wrapper.find(FinderViewer).props().picker).toEqual(
+        propsData.picker
+      )
+    })
+
+    it(':multi - should pass to FinderViewer component', () => {
+      const propsData = { multi: true, files: [mocks.file()] }
+      const wrapper = shallowMount(FinderContainer, { propsData })
+
+      expect(wrapper.find(FinderViewer).props().multi).toEqual(propsData.multi)
+    })
   })
 })

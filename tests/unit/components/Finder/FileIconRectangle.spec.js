@@ -32,6 +32,34 @@ describe('FileIconRectangle', () => {
 
       expect(wrapper.find(Icon).props().icon).toEqual(propsData.icon)
     })
+
+    it(':picker(false) - should render options', () => {
+      const propsData = { picker: false, ...mocks.file() }
+      const wrapper = shallowMount(FileIconRectangle, { propsData })
+
+      expect(wrapper.contains('.options-icon')).toEqual(true)
+    })
+
+    it(':picker(true) - should not render options', () => {
+      const propsData = { picker: true, ...mocks.file() }
+      const wrapper = shallowMount(FileIconRectangle, { propsData })
+
+      expect(wrapper.contains('.options-icon')).toEqual(false)
+    })
+
+    it(':selected(false) - should not have selected class', () => {
+      const propsData = { selected: false, ...mocks.file() }
+      const wrapper = shallowMount(FileIconRectangle, { propsData })
+
+      expect(wrapper.classes()).not.toContain('selected')
+    })
+
+    it(':selected(true) - should have selected class', () => {
+      const propsData = { selected: true, ...mocks.file() }
+      const wrapper = shallowMount(FileIconRectangle, { propsData })
+
+      expect(wrapper.classes()).toContain('selected')
+    })
   })
 
   describe('@events', () => {
