@@ -7,7 +7,9 @@ import tipeTestUtils from '~/tests/TipeTestUtils'
 
 describe('FileIcon', () => {
   describe('<template>', () => {
-    tipeTestUtils.test.snapshot(FileIcon, { propsData: fixtures.file() })
+    tipeTestUtils.test.snapshot(FileIcon, {
+      propsData: { file: fixtures.file() }
+    })
   })
 
   describe(':props', () => {
@@ -26,25 +28,25 @@ describe('FileIcon', () => {
     })
 
     it(':type(default) - :file - should pass file to FileIconRectangle component', () => {
-      const propsData = { type: 'rectangle', ...mocks.file() }
+      const propsData = { type: 'rectangle', file: mocks.file() }
       const wrapper = shallowMount(FileIcon, { propsData })
 
       expect(wrapper.find(FileIconRectangle).props()).toEqual(
         expect.objectContaining({
-          label: propsData.label,
-          icon: propsData.icon
+          label: propsData.file.label,
+          icon: propsData.file.icon
         })
       )
     })
 
     it(':type(square) - :file - should pass file to FileIconSquare component', () => {
-      const propsData = { type: 'square', ...mocks.file() }
+      const propsData = { type: 'square', file: mocks.file() }
       const wrapper = shallowMount(FileIcon, { propsData })
 
       expect(wrapper.find(FileIconSquare).props()).toEqual(
         expect.objectContaining({
-          label: propsData.label,
-          icon: propsData.icon
+          label: propsData.file.label,
+          icon: propsData.file.icon
         })
       )
     })
