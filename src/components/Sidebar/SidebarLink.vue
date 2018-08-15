@@ -1,8 +1,8 @@
 <template>
-  <a
+  <router-link
     :class="rootClass"
     :data-tipe-ui="$options.name"
-    :href="url"
+    :to="url"
     @mouseover="hovered = true"
     @mouseout="hovered = false"
   >
@@ -18,7 +18,7 @@
     <div
       :class="indicatorClass"
     />
-  </a>
+  </router-link>
 </template>
 
 <script>
