@@ -19,9 +19,6 @@
         />
       </nav>
     </div>
-    <div class="footer">
-      <tipe-sidebar-button icon="layout" />
-    </div>
   </div>
 </template>
 
@@ -66,8 +63,7 @@ export default {
 }
 
 .header,
-.body,
-.footer {
+.body {
   display: flex;
   flex-direction: column;
 }
