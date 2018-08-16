@@ -1,8 +1,9 @@
 <template>
   <tipe-document-block-list
     :data-tipe-ui="$options.name"
-    :blocks="document.blocks"
+    :blocks="blocks"
     :options="options"
+    :disabled="disabled"
   />
 </template>
 
@@ -19,7 +20,15 @@ export default {
     TipeDocumentNameInput
   },
   props: {
-    document: vueTypes.shape(interfaces.document)
+    document: vueTypes.shape(interfaces.document),
+    disabled: vueTypes.bool.def(false)
+  },
+  computed: {
+    blocks: props =>
+      props.document.blocks.map(block => ({
+        ...block,
+        disabled: props.disabled
+      }))
   }
 }
 </script>
