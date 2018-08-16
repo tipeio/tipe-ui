@@ -1,5 +1,8 @@
 <template>
-  <div :data-tipe-ui="$options.name">
+  <div
+    :data-tipe-ui="$options.name"
+    :class="rootClassObject"
+  >
     <div class="top-row">
       <div class="label">
         {{ label }}
@@ -28,6 +31,11 @@ export default {
     TipeDocumentBlockDescriptionInput
   },
   props: interfaces.documentBlock,
+  computed: {
+    rootClassObject: props => ({
+      disabled: props.disabled
+    })
+  },
   methods: {
     onChangeName(event) {
       this.$emit('change', { name: event.target.value })
@@ -45,6 +53,12 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+}
+
+[data-tipe-ui='TipeDocumentBlockHeader'].disabled {
+  opacity: 0.6;
 }
 
 .top-row {

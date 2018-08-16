@@ -8,16 +8,10 @@
         :key="i"
         class="block-container"
       >
-        <tipe-document-block
-          :options="options"
-          :block="block"
-        />
+        <tipe-document-block :block="block"/>
       </div>
     </template>
-    <tipe-document-empty-block
-      v-else
-      :options="options"
-    />
+    <tipe-document-empty-block v-else/>
   </div>
 </template>
 
