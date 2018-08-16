@@ -67,14 +67,14 @@ export default {
   padding-right: 0.75rem;
   box-sizing: border-box;
   color: var(--text-gray);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 800;
   letter-spacing: 0.009375rem;
 }
 
 .name {
   color: var(--text-gray);
-  font-size: 0.875rem;
+  font-size: 1rem;
   letter-spacing: 0.009375rem;
 }
 
