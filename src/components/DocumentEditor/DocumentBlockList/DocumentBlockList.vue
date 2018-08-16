@@ -41,6 +41,6 @@ export default {
 
 <style lang="postcss" scoped>
 .block-container {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 </style>
