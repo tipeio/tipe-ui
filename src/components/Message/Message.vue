@@ -13,7 +13,7 @@ import vueTypes from 'vue-types'
 export default {
   name: 'TipeMessage',
   props: {
-    status: vueTypes.oneOf(['success', 'warning', 'error']),
+    status: vueTypes.oneOf(['', 'success', 'warning', 'error']),
     successMessage: vueTypes.string.def(''),
     warningMessage: vueTypes.string.def(''),
     errorMessage: vueTypes.string.def('')
