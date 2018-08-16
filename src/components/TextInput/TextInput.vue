@@ -56,6 +56,7 @@ input {
   font-size: 0.875rem;
   display: flex;
   width: 100%;
+  background-color: transparent;
 
   &:disabled {
     color: #d4d7d9;
