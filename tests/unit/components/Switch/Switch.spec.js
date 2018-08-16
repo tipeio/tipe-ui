@@ -60,5 +60,15 @@ describe('Switch', () => {
     tipeTestUtils.test.input.events(TipeSwitch, wrapper =>
       wrapper.find('input[type="checkbox"]')
     )
+
+    it('@change - parameter should equal value after change', () => {
+      const wrapper = shallowMount(TipeSwitch)
+
+      wrapper.find('input[type="checkbox"]').trigger('change')
+
+      expect(wrapper.emitted().change[0][0]).toEqual(
+        wrapper.find('input').element.checked
+      )
+    })
   })
 })
