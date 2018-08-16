@@ -20,7 +20,7 @@
           @focus="$emit('focus', $event)"
           @blur="$emit('blur', $event)"
           @click="$emit('click', $event)"
-          @change="$emit('change', $event)"
+          @change="handleChange"
           @keyup.enter="$refs.switch.click()"
         >
         <span
@@ -62,6 +62,11 @@ export default {
     },
     sizeClass() {
       return { [this.size]: true }
+    }
+  },
+  methods: {
+    handleChange(event) {
+      this.$emit('change', event.target.checked)
     }
   }
 }
