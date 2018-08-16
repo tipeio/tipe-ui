@@ -29,7 +29,6 @@ export default {
     message() {
       switch (this.status) {
         case 'success':
-          console.log(this.successMessage)
           return this.successMessage
         case 'warning':
           return this.warningMessage
