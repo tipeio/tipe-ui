@@ -33,8 +33,11 @@ export default {
     }
   },
   methods: {
-    onChange(event) {
-      this.$emit('change', { value: event.target.value })
+    onChange(value) {
+      this.$emit('change', {
+        name: this.name,
+        value
+      })
     }
   }
 }

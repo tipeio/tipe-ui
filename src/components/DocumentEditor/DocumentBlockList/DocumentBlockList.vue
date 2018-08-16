@@ -8,7 +8,10 @@
         :key="i"
         class="block-container"
       >
-        <tipe-document-block :block="block"/>
+        <tipe-document-block
+          :block="block"
+          @change="handleChange"
+        />
       </div>
     </template>
     <tipe-document-empty-block v-else/>
@@ -29,6 +32,11 @@ export default {
   },
   props: {
     blocks: vueTypes.arrayOf(vueTypes.shape(interfaces.documentBlock)).def([])
+  },
+  methods: {
+    handleChange(block) {
+      this.$emit('change', block)
+    }
   }
 }
 </script>

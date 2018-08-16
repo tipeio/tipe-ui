@@ -1,9 +1,13 @@
 <template>
   <div :data-tipe-ui="$options.name">
-    <tipe-document-name-input :value="document.name" />
+    <tipe-document-name-input
+      :value="document.name"
+      @change="handleChangeName"
+    />
     <tipe-document-block-list
       :blocks="blocks"
       :disabled="disabled"
+      @change="handleChangeBlock"
     />
   </div>
 </template>
@@ -31,6 +35,17 @@ export default {
         ...block,
         disabled: this.isDisabled
       }))
+    }
+  },
+  methods: {
+    handleChange(document) {
+      this.$emit('change', document)
+    },
+    handleChangeName(name) {
+      this.handleChange({ name })
+    },
+    handleChangeBlock(block) {
+      this.handleChange({ blocks: [block] })
     }
   }
 }

@@ -1,6 +1,7 @@
 import { storiesOf } from '@storybook/vue'
 import { withKnobs, object } from '@storybook/addon-knobs/vue'
 import { withMarkdownNotes } from '@storybook/addon-notes'
+import { action } from '@storybook/addon-actions'
 import TipeDocumentEditor from '@/components/DocumentEditor'
 import { mocks } from '@tipe/tipe-test-utils'
 
@@ -72,10 +73,14 @@ storiesOf('DocumentEditor', module)
           document: object('document', document)
         }
       },
+      methods: {
+        change: action('change')
+      },
       template: `
       <div :style="styleObj">
         <tipe-document-editor
           :document="document"
+          @change="change"
         />
       </div>`
     }))
