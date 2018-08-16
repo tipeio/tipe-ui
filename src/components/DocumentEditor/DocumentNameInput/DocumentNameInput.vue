@@ -1,39 +1,61 @@
 <template>
-  <input
-    :value="value"
-    :data-tipe-ui="$options.name"
-    placeholder="Document Name"
-    type="text"
-    @change="$emit('change', $event)"
-  >
+  <div :data-tipe-ui="$options.name">
+    <input
+      :value="value"
+      :class="inputClassObject"
+      placeholder="Untitled"
+      type="text"
+      @change="$emit('change', $event)"
+    >
+    <tipe-message
+      :status="status"
+      warning-message="name your document"
+    />
+  </div>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
+import TipeMessage from '@/components/Message'
 
 export default {
   name: 'TipeDocumentNameInput',
+  components: {
+    TipeMessage
+  },
   props: {
     value: vueTypes.string.def('')
+  },
+  computed: {
+    status: props => (props.value === '' ? 'warning' : ''),
+    inputClassObject: props => ({
+      [`status-${props.status}`]: !!props.status
+    })
   }
 }
 </script>
 
 <style lang="postcss" scoped>
-[data-tipe-ui='TipeDocumentNameInput'] {
-  border: none;
+input {
+  height: 5rem;
+  width: 100%;
   outline: none;
-  padding: 0;
+  padding: 0 0.4rem;
   margin: 0;
-  background: transparent;
-  font-size: 2.375rem;
-  font-weight: 600;
-  height: 3.5rem;
+  border-radius: 0.1875rem;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 3.5rem;
+  font-weight: 200;
   color: var(--dark-purple);
+  box-sizing: border-box;
 }
 
-[data-tipe-ui='TipeDocumentNameInput']::-moz-placeholder,
-[data-tipe-ui='TipeDocumentNameInput']::-webkit-input-placeholder {
-  color: var(--midPurple);
+input.status-warning {
+  border-color: var(--warning);
+}
+
+input::placeholder {
+  color: var(--gray-blue-light);
 }
 </style>

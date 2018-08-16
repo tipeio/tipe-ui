@@ -1,10 +1,11 @@
 <template>
-  <tipe-document-block-list
-    :data-tipe-ui="$options.name"
-    :blocks="blocks"
-    :options="options"
-    :disabled="disabled"
-  />
+  <div :data-tipe-ui="$options.name">
+    <tipe-document-name-input :value="document.name" />
+    <tipe-document-block-list
+      :blocks="blocks"
+      :disabled="disabled"
+    />
+  </div>
 </template>
 
 <script>
@@ -24,11 +25,13 @@ export default {
     disabled: vueTypes.bool.def(false)
   },
   computed: {
-    blocks: props =>
-      props.document.blocks.map(block => ({
+    isDisabled: props => props.disabled || props.document.name === '',
+    blocks(props) {
+      return props.document.blocks.map(block => ({
         ...block,
-        disabled: props.disabled
+        disabled: this.isDisabled
       }))
+    }
   }
 }
 </script>
@@ -37,6 +40,9 @@ export default {
 [data-tipe-ui='TipeDocumentEditor'] {
   height: 100%;
   width: 100%;
+  display: grid;
+  grid-template-rows: 8rem 1fr;
+  grid-template-columns: 100%;
   overflow: hidden;
 }
 
