@@ -124,6 +124,17 @@ describe('NumberInput', () => {
       expect(wrapper.emitted().change).toBeTruthy()
     })
 
+    it('@change - parameter should equal value after change', () => {
+      const wrapper = shallowMount(NumberInput)
+
+      wrapper.find('input').setValue(1)
+      wrapper.find('input').trigger('change')
+
+      expect(wrapper.emitted().change[0][0]).toEqual(
+        parseInt(wrapper.find('input').element.value)
+      )
+    })
+
     it('@input - should emit', () => {
       const wrapper = shallowMount(NumberInput)
       wrapper.find('input').trigger('input')
