@@ -15,6 +15,7 @@
         :waiting="block.waiting"
         :disabled="block.disabled"
         :type="block.type"
+        :name="block.name"
         @change="handleChange"
       />
     </div>
