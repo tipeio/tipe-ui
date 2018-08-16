@@ -12,7 +12,7 @@
     @click="inputEmit('click')"
     @blur="inputEmit('blur')"
     @focus="inputEmit('focus')"
-    @change="inputEmit('change')">
+    @change="handleChange">
 </template>
 
 <script>
@@ -43,6 +43,9 @@ export default {
   methods: {
     inputEmit(type) {
       this.$emit(type)
+    },
+    handleChange(event) {
+      this.$emit('change', event.target.value)
     }
   }
 }
