@@ -5,25 +5,12 @@
         {{ label }}
       </div>
       <div class="name">
-        <tipe-document-block-name-input
-          :value="name"
-          :waiting="waiting"
-          :disabled="disabled"
-          @change="onChangeName"
-        />
+        {{ name }}
       </div>
     </div>
     <div class="bottom-row">
       <div class="description">
-        <tipe-document-block-description-input
-          :value="description"
-          :waiting="waiting"
-          :disabled="disabled"
-          @change="onChangeName"
-        />
-      </div>
-      <div class="apiId">
-        <span class="apiId-label">API ID: </span>{{ apiId }}
+        {{ description }}
       </div>
     </div>
   </div>
@@ -79,12 +66,26 @@ export default {
 .label {
   padding-right: 0.75rem;
   box-sizing: border-box;
+  color: var(--text-gray);
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.009375rem;
+}
+
+.name {
+  color: var(--text-gray);
+  font-size: 0.875rem;
+  letter-spacing: 0.009375rem;
 }
 
 .description {
   flex: 1 1;
   box-sizing: border-box;
   padding-right: 0.75rem;
+  text-align: left;
+  color: var(--text-gray-light);
+  font-size: 0.875rem;
+  letter-spacing: 0.009375rem;
 }
 
 .apiId {
