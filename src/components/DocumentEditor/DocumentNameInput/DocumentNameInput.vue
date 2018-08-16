@@ -5,7 +5,7 @@
       :class="inputClassObject"
       placeholder="Untitled"
       type="text"
-      @change="$emit('change', $event)"
+      @change="handleChange"
     >
     <tipe-message
       :status="status"
@@ -31,6 +31,11 @@ export default {
     inputClassObject: props => ({
       [`status-${props.status}`]: !!props.status
     })
+  },
+  methods: {
+    handleChange(event) {
+      this.$emit('change', event.target.value)
+    }
   }
 }
 </script>
