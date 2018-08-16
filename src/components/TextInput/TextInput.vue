@@ -61,7 +61,7 @@ input {
   &:disabled {
     color: #d4d7d9;
     cursor: not-allowed;
-    background-color: #fff; // for firefox
+    background-color: transparent; // for firefox
     &::placeholder {
       color: #d4d7d9;
     }
