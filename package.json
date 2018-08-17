@@ -1,8 +1,16 @@
 {
   "name": "@tipe/tipe-ui",
   "version": "1.0.0",
+  "description": "Tipe's Vue.js component library.",
   "main": "build/lib/index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tipeio/tipe-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tipeio/tipe-ui/issues"
+  },
   "scripts": {
     "release": "np",
     "build":
