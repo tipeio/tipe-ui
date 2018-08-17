@@ -1,22 +1,28 @@
 <template>
   <tipe-file-icon-rectangle
     v-if="type == 'rectangle'"
-    :icon="icon"
-    :label="label"
+    :icon="file.icon"
+    :label="file.label"
+    :picker="picker"
+    :selected="selected"
     @click="$emit('click', $event)"
   />
   <tipe-file-icon-square
     v-else-if="type == 'square'"
-    :icon="icon"
-    :label="label"
+    :icon="file.icon"
+    :label="file.label"
+    :picker="picker"
+    :selected="selected"
     @click="$emit('click', $event)"
   />
   <tipe-file-icon-details
     v-else-if="type == 'details'"
-    :icon="icon"
-    :label="label"
-    :created-by="createdBy"
-    :updated-at="updatedAt"
+    :icon="file.icon"
+    :label="file.label"
+    :created-by="file.createdBy"
+    :updated-at="file.updatedAt"
+    :picker="picker"
+    :selected="selected"
     @click="$emit('click', $event)"
   />
 </template>
@@ -38,7 +44,9 @@ export default {
   },
   props: {
     type: vueTypes.oneOf(['rectangle', 'square', 'details']).def('rectangle'),
-    ...interfaces.file
+    file: vueTypes.shape(interfaces.file),
+    picker: vueTypes.bool.def(false),
+    selected: vueTypes.bool.def(false)
   }
 }
 </script>

@@ -1031,11 +1031,11 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@tipe/tipe-constants/-/tipe-constants-1.0.0.tgz#60e62ff777e4795bfe8070eb02849dbbb49b0f46"
 
-"@tipe/tipe-interfaces@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@tipe/tipe-interfaces/-/tipe-interfaces-1.0.1.tgz#424f821d8c51ac8a41ae540ab7c7dfbe3a3b519c"
+"@tipe/tipe-interfaces@^1.0.4-0":
+  version "1.0.4-0"
+  resolved "https://registry.yarnpkg.com/@tipe/tipe-interfaces/-/tipe-interfaces-1.0.4-0.tgz#a2d3b1abc5c31caf8249820771bf345f6b9a1a3a"
   dependencies:
-    "@tipe/tipe-constants" "1.0.0"
+    "@tipe/tipe-constants" "^1.0.0"
     vue "^2.5.16"
     vue-types "^1.3.2"
 

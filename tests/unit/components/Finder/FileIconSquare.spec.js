@@ -22,6 +22,34 @@ describe('FileIconSquare', () => {
 
       expect(wrapper.find('.label').text()).toEqual(propsData.label)
     })
+
+    it(':picker(false) - should render options', () => {
+      const propsData = { picker: false, ...mocks.file() }
+      const wrapper = shallowMount(FileIconSquare, { propsData })
+
+      expect(wrapper.contains('.cue-container')).toEqual(true)
+    })
+
+    it(':picker(true) - should not render options', () => {
+      const propsData = { picker: true, ...mocks.file() }
+      const wrapper = shallowMount(FileIconSquare, { propsData })
+
+      expect(wrapper.contains('.cue-container')).toEqual(false)
+    })
+
+    it(':selected(false) - should not have selected class', () => {
+      const propsData = { selected: false, ...mocks.file() }
+      const wrapper = shallowMount(FileIconSquare, { propsData })
+
+      expect(wrapper.classes()).not.toContain('selected')
+    })
+
+    it(':selected(true) - should have selected class', () => {
+      const propsData = { selected: true, ...mocks.file() }
+      const wrapper = shallowMount(FileIconSquare, { propsData })
+
+      expect(wrapper.classes()).toContain('selected')
+    })
   })
 
   describe('@events', () => {

@@ -51,6 +51,40 @@ describe('FileIconDetails', () => {
         )
       )
     })
+
+    it(':picker(false) - should render options', () => {
+      const propsData = { picker: false, ...mocks.file() }
+      const wrapper = shallowMount(FileIconDetails, { propsData })
+
+      wrapper.trigger('mouseover')
+
+      expect(wrapper.contains('.trash')).toEqual(true)
+      expect(wrapper.contains('.edit')).toEqual(true)
+    })
+
+    it(':picker(true) - should not render options', () => {
+      const propsData = { picker: true, ...mocks.file() }
+      const wrapper = shallowMount(FileIconDetails, { propsData })
+
+      wrapper.trigger('mouseover')
+
+      expect(wrapper.contains('.trash')).toEqual(false)
+      expect(wrapper.contains('.edit')).toEqual(false)
+    })
+
+    it(':selected(false) - should not have selected class', () => {
+      const propsData = { selected: false, ...mocks.file() }
+      const wrapper = shallowMount(FileIconDetails, { propsData })
+
+      expect(wrapper.classes()).not.toContain('selected')
+    })
+
+    it(':selected(true) - should have selected class', () => {
+      const propsData = { selected: true, ...mocks.file() }
+      const wrapper = shallowMount(FileIconDetails, { propsData })
+
+      expect(wrapper.classes()).toContain('selected')
+    })
   })
 })
 

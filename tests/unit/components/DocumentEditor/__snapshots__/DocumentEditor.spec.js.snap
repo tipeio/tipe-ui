@@ -1,3 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DocumentBlock <template> matches previous snapshot 1`] = `<TipeDocumentBlockList-stub blocks="[object Object],[object Object],[object Object]" data-tipe-ui="TipeDocumentEditor"></TipeDocumentBlockList-stub>`;
+exports[`DocumentBlock <template> matches previous snapshot 1`] = `
+<div data-tipe-ui="TipeDocumentEditor">
+  <TipeDocumentNameInput-stub value="test-name"></TipeDocumentNameInput-stub>
+  <TipeDocumentBlockList-stub blocks="[object Object],[object Object],[object Object]"></TipeDocumentBlockList-stub>
+</div>
+`;

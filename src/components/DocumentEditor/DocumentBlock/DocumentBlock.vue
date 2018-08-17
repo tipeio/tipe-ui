@@ -6,10 +6,7 @@
     @mouseout="hover = false"
   >
     <div class="header">
-      <tipe-document-block-header
-        v-bind="block"
-        @change="value => $emit('change', value)"
-      />
+      <tipe-document-block-header v-bind="block"/>
     </div>
     <div class="body">
       <tipe-document-block-value-input
@@ -18,7 +15,8 @@
         :waiting="block.waiting"
         :disabled="block.disabled"
         :type="block.type"
-        @change="value => $emit('change', value)"
+        :name="block.name"
+        @change="handleChange"
       />
     </div>
     <div class="footer">
@@ -62,6 +60,11 @@ export default {
         waiting: this.block.waiting,
         disabled: this.block.disabled
       }
+    }
+  },
+  methods: {
+    handleChange(block) {
+      this.$emit('change', block)
     }
   }
 }

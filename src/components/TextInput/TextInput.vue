@@ -12,7 +12,7 @@
     @click="inputEmit('click')"
     @blur="inputEmit('blur')"
     @focus="inputEmit('focus')"
-    @change="inputEmit('change')">
+    @change="handleChange">
 </template>
 
 <script>
@@ -43,6 +43,9 @@ export default {
   methods: {
     inputEmit(type) {
       this.$emit(type)
+    },
+    handleChange(event) {
+      this.$emit('change', event.target.value)
     }
   }
 }
@@ -56,11 +59,12 @@ input {
   font-size: 0.875rem;
   display: flex;
   width: 100%;
+  background-color: transparent;
 
   &:disabled {
     color: #d4d7d9;
     cursor: not-allowed;
-    background-color: #fff; // for firefox
+    background-color: transparent; // for firefox
     &::placeholder {
       color: #d4d7d9;
     }

@@ -1,29 +1,19 @@
 <template>
-  <div :data-tipe-ui="$options.name">
+  <div
+    :data-tipe-ui="$options.name"
+    :class="rootClassObject"
+  >
     <div class="top-row">
       <div class="label">
         {{ label }}
       </div>
       <div class="name">
-        <tipe-document-block-name-input
-          :value="name"
-          :waiting="waiting"
-          :disabled="disabled"
-          @change="onChangeName"
-        />
+        {{ name }}
       </div>
     </div>
     <div class="bottom-row">
       <div class="description">
-        <tipe-document-block-description-input
-          :value="description"
-          :waiting="waiting"
-          :disabled="disabled"
-          @change="onChangeName"
-        />
-      </div>
-      <div class="apiId">
-        <span class="apiId-label">API ID: </span>{{ apiId }}
+        {{ description }}
       </div>
     </div>
   </div>
@@ -41,6 +31,11 @@ export default {
     TipeDocumentBlockDescriptionInput
   },
   props: interfaces.documentBlock,
+  computed: {
+    rootClassObject: props => ({
+      disabled: props.disabled
+    })
+  },
   methods: {
     onChangeName(event) {
       this.$emit('change', { name: event.target.value })
@@ -58,6 +53,12 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+}
+
+[data-tipe-ui='TipeDocumentBlockHeader'].disabled {
+  opacity: 0.6;
 }
 
 .top-row {
@@ -79,12 +80,26 @@ export default {
 .label {
   padding-right: 0.75rem;
   box-sizing: border-box;
+  color: var(--text-gray);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.009375rem;
+}
+
+.name {
+  color: var(--text-gray);
+  font-size: 1rem;
+  letter-spacing: 0.009375rem;
 }
 
 .description {
   flex: 1 1;
   box-sizing: border-box;
   padding-right: 0.75rem;
+  text-align: left;
+  color: var(--text-gray-light);
+  font-size: 0.875rem;
+  letter-spacing: 0.009375rem;
 }
 
 .apiId {

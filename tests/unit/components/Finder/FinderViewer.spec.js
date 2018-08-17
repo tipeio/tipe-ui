@@ -1,8 +1,7 @@
-import { shallowMount, mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import FinderViewer from '@/components/Finder/FinderViewer'
-import FinderIcon from '@/components/Finder/FileIcon'
-import Scrollable from '@/components/Scrollable'
+import TipeFileIcon from '@/components/Finder/FileIcon'
 import { mocks } from '@tipe/tipe-test-utils'
 
 describe('FinderViewer', () => {
@@ -25,26 +24,29 @@ describe('FinderViewer', () => {
   })
 
   describe(':props', () => {
-    it(':file - should pass file to FinderIcon component', () => {
-      const stubs = {
-        TipeScrollable: Scrollable,
-        TipeFileIcon: '<!---->'
-      }
+    it(':file - should pass file to FileIcon component', () => {
       const propsData = { files: [mocks.file()] }
-      const wrapper = mount(FinderViewer, { propsData, stubs })
+      const wrapper = shallowMount(FinderViewer, { propsData })
 
-      expect(wrapper.find(FinderIcon).props()).toMatchObject(propsData.files[0])
+      expect(wrapper.find(TipeFileIcon).props().file).toMatchObject(
+        propsData.files[0]
+      )
     })
 
     it(':layout(grid) - should pass layout prop to layout class', () => {
-      const stubs = {
-        TipeScrollable: Scrollable,
-        TipeFileIcon: '<!---->'
-      }
       const propsData = { layout: 'grid' }
-      const wrapper = mount(FinderViewer, { propsData, stubs })
+      const wrapper = shallowMount(FinderViewer, { propsData })
 
       expect(wrapper.find('.layout').classes()).toContain('grid-rectangle')
+    })
+
+    it(':picker - should pass to FileIcon component', () => {
+      const propsData = { picker: true, files: [mocks.file()] }
+      const wrapper = shallowMount(FinderViewer, { propsData })
+
+      expect(wrapper.find(TipeFileIcon).props().picker).toEqual(
+        propsData.picker
+      )
     })
   })
 })

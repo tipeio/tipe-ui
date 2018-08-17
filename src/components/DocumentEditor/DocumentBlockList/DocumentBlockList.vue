@@ -9,15 +9,12 @@
         class="block-container"
       >
         <tipe-document-block
-          :options="options"
           :block="block"
+          @change="handleChange"
         />
       </div>
     </template>
-    <tipe-document-empty-block
-      v-else
-      :options="options"
-    />
+    <tipe-document-empty-block v-else/>
   </div>
 </template>
 
@@ -35,12 +32,17 @@ export default {
   },
   props: {
     blocks: vueTypes.arrayOf(vueTypes.shape(interfaces.documentBlock)).def([])
+  },
+  methods: {
+    handleChange(block) {
+      this.$emit('change', block)
+    }
   }
 }
 </script>
 
 <style lang="postcss" scoped>
 .block-container {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 </style>
