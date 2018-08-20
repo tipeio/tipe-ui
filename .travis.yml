@@ -2,6 +2,7 @@ language: node_js
 sudo: false
 node_js:
   - 8
+  - 10
 cache:
   yarn: true
   directories:
@@ -11,7 +12,7 @@ env:
     - CC_TEST_REPORTER_ID=$CC_TEST_REPORTER_ID
 before_install:
   - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.6.0
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.9.4
 install:
   - yarn
 before_script:
