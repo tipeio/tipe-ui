@@ -5,5 +5,5 @@
 Install dependencies.
 
 ```
-yarn install
+yarn install @tipe/ui
 ```
