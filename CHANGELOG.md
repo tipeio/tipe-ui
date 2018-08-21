@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/tipeio/tipe-ui/compare/v2.0.2...v2.0.3) (2018-08-21)
+
+
+### Bug Fixes
+
+* include built file ([afaa08b](https://github.com/tipeio/tipe-ui/commit/afaa08b))
+
 ## [2.0.2](https://github.com/tipeio/tipe-ui/compare/v2.0.1...v2.0.2) (2018-08-21)
 
 
