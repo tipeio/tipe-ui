@@ -1,14 +1,12 @@
 {
   "name": "@tipe/ui",
-  "version": "2.0.0",
+  "version": "1.0.1",
   "main": "build/lib/index.js",
   "license": "MIT",
   "scripts": {
     "release": "np",
-    "build":
-      "node build/build.js && yarn webpack --config build/configs/webpack.prod.conf.js",
-    "build:dev":
-      "node build/build.js && yarn webpack --config build/configs/webpack.dev.conf.js",
+    "build": "node build/build.js && yarn webpack --config build/configs/webpack.prod.conf.js",
+    "build:dev": "node build/build.js && yarn webpack --config build/configs/webpack.dev.conf.js",
     "watch:build:dev": "node build/watch.js",
     "lint": "vue-cli-service lint",
     "test": "vue-cli-service test:unit",
@@ -99,14 +97,27 @@
     "semantic-release": "^15.9.9",
     "travis-deploy-once": "^5.0.2"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": ["vue-cli-service lint", "git add"],
-    "*.vue": ["vue-cli-service lint", "git add"],
-    "*.{vue,js,json,css,md}": ["prettier --write", "git add"]
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.{vue,js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "release": {
     "verifyConditions": [
@@ -120,12 +131,17 @@
       "@semantic-release/npm",
       {
         "path": "@semantic-release/git",
-        "assets": ["package.json", "CHANGELOG.md"],
-        "message":
-          "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        "assets": [
+          "package.json",
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
-    "publish": ["@semantic-release/npm", "@semantic-release/github"],
+    "publish": [
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ],
     "analyzeCommits": {
       "preset": "angular",
       "releaseRules": [
@@ -144,7 +160,11 @@
         }
       ],
       "parserOpts": {
-        "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+        "noteKeywords": [
+          "BREAKING CHANGE",
+          "BREAKING CHANGES",
+          "BREAKING"
+        ]
       }
     }
   }
