@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/tipeio/tipe-ui/compare/v2.0.1...v2.0.2) (2018-08-21)
+
+
+### Bug Fixes
+
+* ignore changelog in git ([b2e2cea](https://github.com/tipeio/tipe-ui/commit/b2e2cea))
+
 ## [2.0.1](https://github.com/tipeio/tipe-ui/compare/v2.0.0...v2.0.1) (2018-08-21)
 
 

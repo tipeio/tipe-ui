@@ -1,6 +1,6 @@
 {
   "name": "@tipe/ui",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "build/lib/index.js",
   "license": "MIT",
   "scripts": {
@@ -116,7 +116,10 @@
     ]
   },
   "release": {
-    "assets": ["package.json", "CHANGELOG.md"],
+    "assets": [
+      "package.json",
+      "CHANGELOG.md"
+    ],
     "verifyConditions": [
       "@semantic-release/changelog",
       "@semantic-release/npm",
