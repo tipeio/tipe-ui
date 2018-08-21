@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/tipeio/tipe-ui/compare/v2.0.3...v2.0.4) (2018-08-21)
+
+
+### Bug Fixes
+
+* release and ignore ([d0a44fb](https://github.com/tipeio/tipe-ui/commit/d0a44fb))
+
 ## [2.0.3](https://github.com/tipeio/tipe-ui/compare/v2.0.2...v2.0.3) (2018-08-21)
 
 

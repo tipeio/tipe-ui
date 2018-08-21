@@ -1,6 +1,6 @@
 {
   "name": "@tipe/ui",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "main": "build/lib/index.js",
   "files": [
     "dist",
@@ -128,8 +128,12 @@
       "LICENSE",
       "build/lib/index.js"
     ],
-    "success": ["@semantic-release/github"],
-    "fail": ["@semantic-release/github"],
+    "success": [
+      "@semantic-release/github"
+    ],
+    "fail": [
+      "@semantic-release/github"
+    ],
     "verifyConditions": [
       "@semantic-release/changelog",
       "@semantic-release/npm",
