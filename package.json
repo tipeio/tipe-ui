@@ -4,7 +4,6 @@
   "main": "build/lib/index.js",
   "license": "MIT",
   "scripts": {
-    "release": "np",
     "build": "node build/build.js && yarn webpack --config build/configs/webpack.prod.conf.js",
     "build:dev": "node build/build.js && yarn webpack --config build/configs/webpack.dev.conf.js",
     "watch:build:dev": "node build/watch.js",
@@ -13,7 +12,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "precommit": "lint-staged && lint && test",
+    "ci": "yarn lint && yarn test",
+    "precommit": "lint-staged && yarn lint && yarn test",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once --pro"
   },
@@ -73,7 +73,6 @@
     "file-loader": "^1.1.4",
     "husky": "^0.14.3",
     "lint-staged": "^7.1.0",
-    "np": "^3.0.4",
     "postcss": "^6.0.22",
     "postcss-color-function": "^4.0.1",
     "postcss-for": "^2.1.1",
@@ -102,9 +101,6 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
   "lint-staged": {
     "*.js": [
       "vue-cli-service lint",
