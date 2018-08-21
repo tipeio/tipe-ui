@@ -2,8 +2,12 @@
 
 [Documentation](https://tipeio.github.io/tipe-ui)
 
-Install dependencies.
+# Install
 
 ```
 yarn install @tipe/ui
 ```
+
+# Release
+
+semantic-release does the releases
