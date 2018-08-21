@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/tipeio/tipe-ui/compare/v2.0.0...v2.0.1) (2018-08-21)
+
+
+### Bug Fixes
+
+* test/lint/release ([3b32c3b](https://github.com/tipeio/tipe-ui/commit/3b32c3b))
+
 # [2.0.0](https://github.com/tipeio/tipe-ui/compare/v1.0.1...v2.0.0) (2018-08-21)
 
 
