@@ -2,6 +2,12 @@
   "name": "@tipe/ui",
   "version": "2.0.2",
   "main": "build/lib/index.js",
+  "files": [
+    "dist",
+    "LICENSE",
+    "build/lib/index.js",
+    "package.json"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "node build/build.js && yarn webpack --config build/configs/webpack.prod.conf.js",
@@ -118,7 +124,9 @@
   "release": {
     "assets": [
       "package.json",
-      "CHANGELOG.md"
+      "CHANGELOG.md",
+      "LICENSE",
+      "build/lib/index.js"
     ],
     "verifyConditions": [
       "@semantic-release/changelog",
@@ -133,7 +141,9 @@
         "path": "@semantic-release/git",
         "assets": [
           "package.json",
-          "CHANGELOG.md"
+          "CHANGELOG.md",
+          "LICENSE",
+          "build/lib/index.js"
         ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
