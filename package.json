@@ -116,6 +116,7 @@
     ]
   },
   "release": {
+    "assets": ["package.json", "CHANGELOG.md"],
     "verifyConditions": [
       "@semantic-release/changelog",
       "@semantic-release/npm",
