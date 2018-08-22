@@ -37,7 +37,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import interfaces from '@tipe/tipe-interfaces'
+import interfaces from '@/interfaces'
 import TipeIcon from '../Icon'
 
 export default {

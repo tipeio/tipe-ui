@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import interfaces from '@tipe/tipe-interfaces'
+import interfaces from '@/interfaces'
 import vueTypes from 'vue-types'
 import TipeIcon from '../Icon'
 

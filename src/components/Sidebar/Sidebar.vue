@@ -24,7 +24,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import interfaces from '@tipe/tipe-interfaces'
+import interfaces from '@/interfaces'
 import TipeSidebarLink from './SidebarLink.vue'
 import TipeSidebarButton from './SidebarButton.vue'
 
