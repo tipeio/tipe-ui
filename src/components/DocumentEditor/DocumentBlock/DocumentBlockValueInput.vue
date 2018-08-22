@@ -14,7 +14,7 @@
 
 <script>
 import interfaces from '@tipe/tipe-interfaces'
-import { getBlockValueComponent } from '@/libs/blocks'
+import { getBlockValueComponent } from '../helpers'
 import TipeSwitch from '@/components/Switch'
 import TipeNumberInput from '@/components/NumberInput'
 import TipeTextInput from '@/components/TextInput'

@@ -1,5 +1,0 @@
-export { default as getBlockTypes } from './getBlockTypes'
-export { default as getBlockLabel } from './getBlockLabel'
-export { default as getBlockIcon } from './getBlockIcon'
-export { default as getBlockDescription } from './getBlockDescription'
-export { default as getBlockValueComponent } from './getBlockValueComponent'
