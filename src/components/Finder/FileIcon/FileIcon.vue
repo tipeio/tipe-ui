@@ -30,7 +30,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import interfaces from '@tipe/tipe-interfaces'
+import interfaces from '@/interfaces'
 import TipeFileIconRectangle from './FileIconRectangle'
 import TipeFileIconSquare from './FileIconSquare'
 import TipeFileIconDetails from './FileIconDetails'

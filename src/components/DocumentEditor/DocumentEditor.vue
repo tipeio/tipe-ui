@@ -14,7 +14,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import interfaces from '@tipe/tipe-interfaces'
+import interfaces from '@/interfaces'
 import TipeDocumentBlockList from './DocumentBlockList'
 import TipeDocumentNameInput from './DocumentNameInput'
 
