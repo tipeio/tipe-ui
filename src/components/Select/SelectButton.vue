@@ -33,7 +33,7 @@
 <script>
 import vueTypes from 'vue-types'
 import ClickOutside from 'vue-click-outside'
-import interfaces from '@tipe/tipe-interfaces'
+import interfaces from '@/interfaces'
 import TipeButton from '../Button'
 import TipeSelectDropdown from './SelectDropdown'
 import TipeNativeSelect from './NativeSelect'

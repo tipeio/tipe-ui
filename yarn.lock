@@ -1147,14 +1147,6 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@tipe/tipe-constants/-/tipe-constants-1.0.0.tgz#60e62ff777e4795bfe8070eb02849dbbb49b0f46"
 
-"@tipe/tipe-interfaces@^1.0.4-0":
-  version "1.0.4-0"
-  resolved "https://registry.yarnpkg.com/@tipe/tipe-interfaces/-/tipe-interfaces-1.0.4-0.tgz#a2d3b1abc5c31caf8249820771bf345f6b9a1a3a"
-  dependencies:
-    "@tipe/tipe-constants" "^1.0.0"
-    vue "^2.5.16"
-    vue-types "^1.3.2"
-
 "@tipe/tipe-test-utils@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@tipe/tipe-test-utils/-/tipe-test-utils-1.0.2.tgz#90277c55fbc850a9dbad7dc80259d3cd0bbf8e51"
@@ -13342,12 +13334,6 @@ vue-template-es2015-compiler@^1.5.3, vue-template-es2015-compiler@^1.6.0:
 vue-types@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/vue-types/-/vue-types-1.2.3.tgz#550777d60e459c9c4c54a5a0f0f97dc981bbab9f"
-  dependencies:
-    lodash.isplainobject "4.0.6"
-
-vue-types@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/vue-types/-/vue-types-1.3.2.tgz#d28b8f7ce2d74536025eaf6f1904fe9ec965c127"
   dependencies:
     lodash.isplainobject "4.0.6"
 
