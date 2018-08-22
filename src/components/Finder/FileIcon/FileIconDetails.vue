@@ -22,7 +22,7 @@
         </div>
         <div class="dot">&#8226;</div>
         <div class="updated-at">
-          Edited {{ lastUpdate }}
+          Edited {{ updatedAt }}
         </div>
       </div>
     </button>
@@ -45,7 +45,6 @@
 
 <script>
 import vueTypes from 'vue-types'
-import moment from 'moment'
 import TipeIcon from '@/components/Icon'
 import interfaces from '@tipe/tipe-interfaces'
 
@@ -65,9 +64,6 @@ export default {
     }
   },
   computed: {
-    lastUpdate() {
-      return moment(this.updatedAt).fromNow()
-    },
     author() {
       return `${this.createdBy.firstName} ${this.createdBy.lastName}`
     },
