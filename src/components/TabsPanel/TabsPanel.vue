@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import interfaces from '@tipe/tipe-interfaces'
+import interfaces from '@/interfaces'
 
 export default {
   name: 'TipeTabsPanel',

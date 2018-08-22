@@ -22,7 +22,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import interfaces from '@tipe/tipe-interfaces'
+import interfaces from '@/interfaces'
 import TipeSidebar from '@/components/Sidebar'
 import TipeTopbar from '@/components/Topbar'
 

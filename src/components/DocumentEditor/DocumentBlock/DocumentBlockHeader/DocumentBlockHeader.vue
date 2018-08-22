@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import interfaces from '@tipe/tipe-interfaces'
+import interfaces from '@/interfaces'
 import TipeDocumentBlockNameInput from './DocumentBlockNameInput'
 import TipeDocumentBlockDescriptionInput from './DocumentBlockDescriptionInput'
 
