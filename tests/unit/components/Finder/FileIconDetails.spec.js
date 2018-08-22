@@ -1,5 +1,4 @@
 import { shallowMount } from '@vue/test-utils'
-import moment from 'moment'
 import FileIconDetails from '@/components/Finder/FileIcon/FileIconDetails'
 import Icon from '@/components/Icon'
 import { mocks, fixtures } from '@tipe/tipe-test-utils'
@@ -32,12 +31,12 @@ describe('FileIconDetails', () => {
       expect(wrapper.find(Icon).props().icon).toEqual(propsData.icon)
     })
 
-    it(':file.updatedAt - should display last updated delta', () => {
+    it(':file.updatedAt - should display last updated', () => {
       const propsData = mocks.file()
       const wrapper = shallowMount(FileIconDetails, { propsData })
 
-      expect(wrapper.find('.updated-at').text()).toMatch(
-        new RegExp(moment(propsData.updatedAt).fromNow())
+      expect(wrapper.find('.updated-at').text()).toEqual(
+        `Edited ${propsData.updatedAt}`
       )
     })
 
