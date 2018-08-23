@@ -1,3 +1,12 @@
+## [2.0.5](https://github.com/tipeio/tipe-ui/compare/v2.0.4...v2.0.5) (2018-08-23)
+
+
+### Bug Fixes
+
+* **blocks-lib:** removed unused functions, and moved to DocumentEditor component as helpers ([45a87a2](https://github.com/tipeio/tipe-ui/commit/45a87a2))
+* **FileIconDetails:** should not compute own time delta ([f573f0b](https://github.com/tipeio/tipe-ui/commit/f573f0b))
+* **interfaces:** integrated [@tipe](https://github.com/tipe)/tipe-interfaces, and removed dep ([6786ce8](https://github.com/tipeio/tipe-ui/commit/6786ce8))
+
 ## [2.0.4](https://github.com/tipeio/tipe-ui/compare/v2.0.3...v2.0.4) (2018-08-21)
 
 
