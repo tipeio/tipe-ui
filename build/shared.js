@@ -39,6 +39,7 @@ function generateFile(fileNames) {
   let output = ''
   // Styles
   output += "import '@/styles/globals'\n"
+  output += "export { default as TipeInterfaces } from '@/interfaces'\n"
 
   // Components
   output += fileNames.reduce((string, filename) => {
