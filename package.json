@@ -9,6 +9,12 @@
     "package.json",
     "README.md"
   ],
+  "keywords": [
+    "tipe",
+    "vue",
+    "ui",
+    "components"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "node build/build.js && yarn webpack --config build/configs/webpack.prod.conf.js",
