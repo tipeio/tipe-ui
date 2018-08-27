@@ -1,3 +1,12 @@
+## [2.2.1](https://github.com/tipeio/tipe-ui/compare/v2.2.0...v2.2.1) (2018-08-27)
+
+
+### Bug Fixes
+
+* automate build ([aaff5dc](https://github.com/tipeio/tipe-ui/commit/aaff5dc))
+* DocumentBlockValidation interface - added unique, maxLength, minLength ([527db26](https://github.com/tipeio/tipe-ui/commit/527db26))
+* file interface - added body ([435230e](https://github.com/tipeio/tipe-ui/commit/435230e))
+
 # [2.2.0](https://github.com/tipeio/tipe-ui/compare/v2.1.0...v2.2.0) (2018-08-27)
 
 
