@@ -1,6 +1,6 @@
 {
   "name": "@tipe/ui",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "main": "build/lib/index.js",
   "files": [
     "dist",

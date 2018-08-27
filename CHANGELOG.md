@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/tipeio/tipe-ui/compare/v2.0.5...v2.1.0) (2018-08-27)
+
+
+### Features
+
+* **interfaces:** exposing TipeInterfaces ([6a1f78b](https://github.com/tipeio/tipe-ui/commit/6a1f78b))
+
 ## [2.0.5](https://github.com/tipeio/tipe-ui/compare/v2.0.4...v2.0.5) (2018-08-23)
 
 
