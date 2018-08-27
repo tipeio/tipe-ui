@@ -8,5 +8,6 @@ export default {
   label: vueTypes.string,
   createdAt: vueTypes.integer,
   updatedAt: vueTypes.integer,
-  createdBy: vueTypes.shape(UserShape)
+  createdBy: vueTypes.shape(UserShape),
+  body: vueTypes.any
 }
