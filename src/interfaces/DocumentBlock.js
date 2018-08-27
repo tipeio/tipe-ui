@@ -15,5 +15,5 @@ export default {
   warningMessage: vueTypes.string.def(''),
   waiting: vueTypes.bool.def(false),
   disabled: vueTypes.bool.def(false),
-  validation: vueTypes.shape(DocumentBlockValidation)
+  validation: vueTypes.shape(DocumentBlockValidation).loose
 }
