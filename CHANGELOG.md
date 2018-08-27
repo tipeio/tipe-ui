@@ -1,3 +1,15 @@
+# [2.2.0](https://github.com/tipeio/tipe-ui/compare/v2.1.0...v2.2.0) (2018-08-27)
+
+
+### Bug Fixes
+
+* automate build ([cce3d17](https://github.com/tipeio/tipe-ui/commit/cce3d17))
+
+
+### Features
+
+* **TipeMarkdown:** Markdown editor and viewer ([6477122](https://github.com/tipeio/tipe-ui/commit/6477122))
+
 # [2.1.0](https://github.com/tipeio/tipe-ui/compare/v2.0.5...v2.1.0) (2018-08-27)
 
 
