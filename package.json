@@ -6,7 +6,8 @@
     "dist",
     "LICENSE",
     "build/lib/index.js",
-    "package.json"
+    "package.json",
+    "README.md"
   ],
   "license": "MIT",
   "scripts": {
@@ -121,12 +122,6 @@
     ]
   },
   "release": {
-    "assets": [
-      "package.json",
-      "CHANGELOG.md",
-      "LICENSE",
-      "build/lib/index.js"
-    ],
     "success": [
       "@semantic-release/github"
     ],
@@ -146,7 +141,10 @@
         "path": "@semantic-release/git",
         "assets": [
           "package.json",
-          "CHANGELOG.md"
+          "CHANGELOG.md",
+          "LICENSE",
+          "build/lib/index.js",
+          "README.md"
         ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
