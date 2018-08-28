@@ -19,6 +19,7 @@
   "scripts": {
     "build": "node build/build.js && yarn webpack --config build/configs/webpack.prod.conf.js",
     "build:dev": "node build/build.js && yarn webpack --config build/configs/webpack.dev.conf.js",
+    "build": "node build/build.js && yarn webpack --config build/configs/webpack.conf.js --env.ENV=production",
     "watch:build:dev": "node build/watch.js",
     "lint": "vue-cli-service lint",
     "test": "vue-cli-service test:unit",
