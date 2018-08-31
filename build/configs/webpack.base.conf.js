@@ -4,7 +4,7 @@ const ROOT_DIR = path.resolve(__dirname, '../../')
 module.exports = {
   entry: path.resolve(ROOT_DIR, 'build/tmp/index.js'),
   output: {
-    path: path.resolve(ROOT_DIR, 'build/lib'),
+    path: path.resolve(ROOT_DIR, 'dist/'),
     filename: 'index.js',
     library: '',
     libraryTarget: 'umd'

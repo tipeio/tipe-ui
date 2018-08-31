@@ -1,7 +1,7 @@
 {
   "name": "@tipe/ui",
   "version": "2.2.1",
-  "main": "build/lib/index.js",
+  "main": "dist/index.js",
   "files": [
     "dist",
     "LICENSE",
