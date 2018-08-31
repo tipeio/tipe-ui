@@ -9,6 +9,7 @@ module.exports = {
     library: '',
     libraryTarget: 'umd'
   },
+  devtool: 'source-map',
   externals: ['vue', 'vue-types'],
   module: {
     rules: [
@@ -20,18 +21,6 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
-          'postcss-loader'
-        ]
-      },
-      {
-        test: /\.svg$/,
-        use: 'svg-sprite-loader'
       }
     ]
   },
@@ -40,6 +29,5 @@ module.exports = {
       '@': path.resolve(ROOT_DIR, './src')
     },
     extensions: ['.js', '.json', '.vue', '.css']
-  },
-  plugins: []
+  }
 }
