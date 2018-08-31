@@ -2,9 +2,10 @@ const merge = require('webpack-merge')
 const base = require('./webpack.base.conf')
 const UglifyJSWebpackPlugin = require('uglifyjs-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const SpritePlugin = require('svg-sprite-loader/plugin')
 
 module.exports = merge(base, {
-  modules: {
+  module: {
     rules: [
       {
         test: /\.css$/,
@@ -38,6 +39,7 @@ module.exports = merge(base, {
       parallel: true,
       cache: true
     }),
-    new ExtractTextPlugin('styles.css')
+    new ExtractTextPlugin('styles.css'),
+    new SpritePlugin()
   ]
 })
