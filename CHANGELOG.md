@@ -1,3 +1,14 @@
+## [2.2.2](https://github.com/tipeio/tipe-ui/compare/v2.2.1...v2.2.2) (2018-09-01)
+
+
+### Bug Fixes
+
+* build - changed output path to dist ([faf46cb](https://github.com/tipeio/tipe-ui/commit/faf46cb))
+* moved postcss config to package to avoid conflicts during import ([0f066e4](https://github.com/tipeio/tipe-ui/commit/0f066e4))
+* prod build - added sprite plugin ([49841ea](https://github.com/tipeio/tipe-ui/commit/49841ea))
+* production build, extracts css, svg and uglyfies js ([e86f96a](https://github.com/tipeio/tipe-ui/commit/e86f96a))
+* removed lib ([0eadfbd](https://github.com/tipeio/tipe-ui/commit/0eadfbd))
+
 ## [2.2.1](https://github.com/tipeio/tipe-ui/compare/v2.2.0...v2.2.1) (2018-08-27)
 
 
