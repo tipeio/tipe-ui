@@ -1,3 +1,5 @@
+## [2.2.3](https://github.com/tipeio/tipe-ui/compare/v2.2.2...v2.2.3) (2018-09-03)
+
 ## [2.2.2](https://github.com/tipeio/tipe-ui/compare/v2.2.1...v2.2.2) (2018-09-01)
 
 
