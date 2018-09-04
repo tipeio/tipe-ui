@@ -2,11 +2,13 @@
 
 exports[`Markdown <template> <template> matches previous snapshot 1`] = `
 <div data-tipe-ui="TipeMarkdown" class="medium">
-  <div class="header"><button title="preview">
+  <div class="header">
+    <button title="preview">
       <TipeIcon-stub icon="view" height="1rem" width="1rem" color="#16e4a4" __iconLoader__="function _default(icon) {
   return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
 }"></TipeIcon-stub>
-    </button></div>
+    </button>
+  </div>
   <div class="body">
     <TipeMarkdownViewer-stub value=""></TipeMarkdownViewer-stub>
   </div>
