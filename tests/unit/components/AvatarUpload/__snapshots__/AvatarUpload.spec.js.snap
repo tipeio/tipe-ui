@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AvatarUpload.vue renders 1`] = `
-<div data-tipe-ui="AvatarUpload" class="add-avatar"><svg width="114px" height="114px" viewBox="0 0 114 114" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<div data-tipe-ui="AvatarUpload" class="add-avatar">
+  <svg width="114px" height="114px" viewBox="0 0 114 114" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <g id="New-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
       <g id="UI-Kit---Page-1" transform="translate(-214.000000, -2836.000000)">
         <g id="Group-70" transform="translate(156.000000, 2837.000000)">

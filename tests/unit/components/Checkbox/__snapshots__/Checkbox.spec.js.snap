@@ -6,10 +6,11 @@ exports[`Checkbox <template> matches previous snapshot 1`] = `
     <div class="check-grid">
       <TipeIcon-stub icon="check" height="8px" width="10px" color="#000" __iconLoader__="function _default(icon) {
   return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
-}" class="check-icon"></TipeIcon-stub> <input name=""
-        id="Javascript" tabindex="0" type="checkbox">
+}" class="check-icon"></TipeIcon-stub>
+      <input name="" id="Javascript" tabindex="0" type="checkbox">
     </div>
-  </div> <label for="Javascript" class="label">
+  </div>
+  <label for="Javascript" class="label">
     Javascript
   </label>
 </div>
