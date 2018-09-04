@@ -1,19 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card.vue renders 1`] = `
-VueWrapper {
-  "_emitted": Object {},
-  "_emittedByOrder": Array [],
-  "isFunctionalComponent": undefined,
-  "version": 2.5,
-}
-`;
+exports[`Card.vue renders 1`] = `<div data-tipe-ui="TipeCard" class="card"></div>`;
 
-exports[`Card.vue renders with the correct class 1`] = `
-VueWrapper {
-  "_emitted": Object {},
-  "_emittedByOrder": Array [],
-  "isFunctionalComponent": undefined,
-  "version": 2.5,
-}
-`;
+exports[`Card.vue renders with the correct class 1`] = `<div data-tipe-ui="TipeCard" class="card"></div>`;

@@ -2,12 +2,8 @@
 
 exports[`Switch <template> renders 1`] = `
 <div data-tipe-ui="TipeSwitch" class="wrapper">
-  <div class="row">
-    <label class="switch medium">
-      <input id="Share Location-switch" name="location" tabindex="0" type="checkbox"> <span class="slider round medium"></span></label>
-    <label for="Share Location-switch" class="label">
+  <div class="row"><label class="switch medium"><input id="Share Location-switch" name="location" tabindex="0" type="checkbox"> <span class="slider round medium"></span></label> <label for="Share Location-switch" class="label">
       Share Location
-    </label>
-  </div>
+    </label></div>
 </div>
 `;

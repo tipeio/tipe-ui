@@ -10,17 +10,16 @@ import roles from './Roles'
 import input from './Input'
 import tabsMenuButton from './TabsMenuButton'
 
-
 export default {
-    user,
-    blockOption,
-    document,
-    documentBlock,
-    documentBlockValidaton,
-    file,
-    link,
-    navLink,
-    roles,
-    input,
-    tabsMenuButton
+  user,
+  blockOption,
+  document,
+  documentBlock,
+  documentBlockValidaton,
+  file,
+  link,
+  navLink,
+  roles,
+  input,
+  tabsMenuButton
 }

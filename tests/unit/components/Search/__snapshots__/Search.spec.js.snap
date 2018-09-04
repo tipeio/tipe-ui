@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search <template> matches previous snapshot 1`] = `
-VueWrapper {
-  "_emitted": Object {},
-  "_emittedByOrder": Array [],
-  "isFunctionalComponent": undefined,
-  "version": 2.5,
-}
+<div data-tipe-ui="TipeSearch">
+  <typeicon-stub icon="search" height="1rem" width="1rem" color="#000" __iconloader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}" class="search-icon"></typeicon-stub> <input type="search"
+    placeholder="Find everthing...">
+</div>
 `;
