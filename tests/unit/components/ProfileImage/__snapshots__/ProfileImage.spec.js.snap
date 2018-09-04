@@ -1,10 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProfileImage <template> matches previous snapshot 1`] = `
-VueWrapper {
-  "_emitted": Object {},
-  "_emittedByOrder": Array [],
-  "isFunctionalComponent": undefined,
-  "version": 2.5,
-}
+<button data-tipe-ui="TipeProfileImage">
+  <tipeimage-stub alt="user profile image" url="" __imageloader__="function _default(url) {
+  return new Promise(function (resolve, reject) {
+    var image = new Image();
+
+    image.onload = function () {
+      return resolve();
+    };
+
+    image.onerror = function (error) {
+      return reject(error);
+    };
+
+    image.src = url;
+  });
+}"
+    class="image"></tipeimage-stub>
+</button>
 `;

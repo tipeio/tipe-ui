@@ -1,10 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TabsMenuButton <template> matches previous snapshot 1`] = `
-VueWrapper {
-  "_emitted": Object {},
-  "_emittedByOrder": Array [],
-  "isFunctionalComponent": undefined,
-  "version": 2.5,
-}
+<button data-tipe-ui="TipeTabsMenuButton" class="">
+  <div class="label-layout">
+    <!---->
+    <div class="label">
+
+    </div>
+  </div>
+</button>
 `;

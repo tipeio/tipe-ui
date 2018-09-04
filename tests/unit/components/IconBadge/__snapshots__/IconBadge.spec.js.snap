@@ -1,10 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`IconBadge.vue renders 1`] = `
-VueWrapper {
-  "_emitted": Object {},
-  "_emittedByOrder": Array [],
-  "isFunctionalComponent": undefined,
-  "version": 2.5,
-}
+<div class="card">
+  <tipeicon-stub icon="rocket" height="1.25rem" width="1.25rem" color="#000" __iconloader__="function _default(icon) {
+  return require(&quot;../../icons/&quot;.concat(icon, &quot;.svg&quot;)).default;
+}" class="icon"></tipeicon-stub>
+</div>
 `;
