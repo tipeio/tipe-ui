@@ -2,7 +2,10 @@
 
 exports[`Radio <template> matches previous snapshot 1`] = `
 <div data-tipe-ui="TipeRadio" class="radio medium">
-  <div class="radio-flex"><input name="" id="Javascript" tabindex="0" type="radio"></div> <label for="Javascript" class="label">
+  <div class="radio-flex">
+    <input name="" id="Javascript" tabindex="0" type="radio">
+  </div>
+  <label for="Javascript" class="label">
     Javascript
   </label>
 </div>
